@@ -7,7 +7,7 @@ function BasicAIActions:OnTalk(...)
 
     --error:catch(function()
     local event = HelmetOffDialog:onTalkEvent()
-    --event:handle()
+    event:handle()
     --end)
     --
     -- TODO: It is unclear actually if the following is required.
