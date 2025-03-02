@@ -1,4 +1,4 @@
-dofile("tests/mock_helmet_off_dialog_spec.lua")
+dofile("tests/mock_hod.lua")
 
 describe("triggers the on talk event", function()
     it("creates the event", function()
@@ -14,59 +14,9 @@ describe("triggers the on talk event", function()
 end)
 
 function makeFactory()
-    --mockHelmetOffDialog()
-
-    _G.Log = { info = function()
-    end, error = function()
-    end }
-    _G.Error = { catch = function(callback)
-        callback()
-    end }
-
-    _G.Script = {
-        SetTimer = function()
-        end,
-        LoadScript = function()
-        end
-    }
-    _G.System = { LogAlways = function()
-    end }
-    _G.Config = { LogAlways = function()
-    end }
-    _G.player = { Lorem = function()
-    end }
-
-    dofile("src/Data/Scripts/helmet_off_dialog/helmet_off_dialog.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/error.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/on_talk_event.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/config.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/log.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/timed_trigger.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/equipped_item.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/equipment.lua")
-
-    local Error = mock(HelmetOffDialog.ClassRegistry.Error)
-    local Log = mock(HelmetOffDialog.ClassRegistry.Log, true)
-    local OnTalkEvent = mock(HelmetOffDialog.ClassRegistry.OnTalkEvent, true)
-    local HelmetOffDialog = mock(HelmetOffDialog, true)
-    HelmetOffDialog.log = function()
-        return Log
-    end
-    HelmetOffDialog.error = function()
-        return Error
-    end
-    HelmetOffDialog.onTalkEvent = function()
-        return OnTalkEvent
-    end
-    spy.on(HelmetOffDialog, "onTalkEvent")
-    spy.on(HelmetOffDialog, "error")
-    --HelmetOffDialog.onTalkEvent = stub(OnTalkEvent)
-
-    _G.BasicAIActions = {
-        OnTalk = function()
-        end
-    }
+    local factory = dofile("tests/mock_hod.lua")
+    local mock = factory.mockHelmetOffDialog(mock, spy)
     dofile("src/Data/Scripts/Systems/hod_on_talk.lua")
 
-    return { BasicAIActions = BasicAIActions, HelmetOffDialog = HelmetOffDialog }
+    return { BasicAIActions = _G.BasicAIActions, HelmetOffDialog = mock.HelmetOffDialog }
 end
