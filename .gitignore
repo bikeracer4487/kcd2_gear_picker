@@ -1,0 +1,4 @@
+*.xml
+*.zip
+node_modules/
+.idea/
