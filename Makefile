@@ -16,3 +16,6 @@ prettier:
 
 prettier-fix:
 	docker compose run --rm build npm run prettier:fix
+
+docs:
+	docker compose run --rm build npm run generate_readme
