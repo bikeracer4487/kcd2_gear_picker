@@ -3,22 +3,19 @@ services:
     build:
       context: .
       dockerfile: docker/busted.Dockerfile
-    volumes: [ ".:/data" ]
+    volumes: [".:/data"]
     entrypoint: sh -c "busted --verbose /data"
   test_watcher:
     build:
       context: .
       dockerfile: docker/busted.Dockerfile
-    volumes: [ ".:/data" ]
+    volumes: [".:/data"]
     entrypoint: sh -c "find /data -type f | entr -c busted --verbose /data"
     tty: true
   build:
     build:
       context: .
       dockerfile: docker/nodejs.Dockerfile
-    volumes:
-      - .:/app
-    environment:
-      - MODE=dev
-      - VERSION=main
+    volumes: [".:/app"]
+    environment: ["MODE=dev", "VERSION=main"]
     command: node scripts/build.js --env=${MODE} --version=${VERSION}
