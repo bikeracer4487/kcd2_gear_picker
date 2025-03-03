@@ -12,9 +12,11 @@ function factory.mockHelmetOffDialog(mock, spy)
         end
     }
     _G.BasicAIActions = {
-        OnTalk = function()
+        OnTalk = function(self)
+            return "lorem-ipsum"
         end
     }
+    local mockedBasicAIActions = mock(_G.BasicAIActions, true)
 
     dofile("src/Data/Scripts/helmet_off_dialog/helmet_off_dialog.lua")
     dofile("src/Data/Scripts/helmet_off_dialog/utils/error.lua")
@@ -41,7 +43,10 @@ function factory.mockHelmetOffDialog(mock, spy)
     spy.on(HelmetOffDialog, "onTalkEvent")
     spy.on(HelmetOffDialog, "error")
 
-    return { HelmetOffDialog = HelmetOffDialog }
+    return {
+        HelmetOffDialog = HelmetOffDialog,
+        mockedBasicAIActions = mockedBasicAIActions
+    }
 end
 
 return factory

@@ -1,7 +1,5 @@
---
--- TODO: It is unclear actually if the following is required.
--- Need to test if having another mod that uses this action will still be working
---local original_BasicAIActions_onTalk = BasicAIActions.OnTalk;
+-- Unless the onTalk action is explicitly invoked, the player is unable to initiate dialogues.
+local original_BasicAIActions_onTalk = BasicAIActions.OnTalk;
 
 function BasicAIActions:OnTalk(...)
     local log = HelmetOffDialog:log()
@@ -12,5 +10,5 @@ function BasicAIActions:OnTalk(...)
         local event = HelmetOffDialog:onTalkEvent()
         event:handle()
     end)
-    --return original_BasicAIActions_onTalk(self, ...)
+    return original_BasicAIActions_onTalk(self, ...)
 end
