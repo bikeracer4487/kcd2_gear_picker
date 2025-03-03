@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<kcd_mod>
+    <info>
+        <name>helmet_off_dialog</name>
+        <modid>helmet_off_dialog</modid>
+        <description>This mod automatically un-equips your helmet and coif when starting a conversation with an NPC, then re-equips them when the dialog ends.</description>
+        <author>Rizarttt</author>
+        <version>1.0.0</version>
+        <created_on>01.03.2025</created_on>
+    </info>
+</kcd_mod>
