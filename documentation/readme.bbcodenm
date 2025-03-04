@@ -1,13 +1,26 @@
-[size=6]Helmet-Off Dialog[/size]
+[size=6]Helmet-Off Dialog (Beta)[/size]
 
-[url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/1023][img]https://img.shields.io/badge/Mod-Helmet–Off%20Lock%20-bf4848?style=flat-square–=nexusmods[/img][/url] [url=https://github.com/rdok/kcd2_helmet_off_dialog][img]https://img.shields.io/badge/Open-Source-2ea44f?style=flat-square&logo=github[/img][/url]
+[url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/1023][img]https://img.shields.io/badge/Mod-Helmet–Off%20Dialog%20[KCD1]-bf4848?style=flat-square–=nexusmods[/img][/url] [url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/1023][img]https://img.shields.io/badge/Mod-Helmet–Off%20Dialog%20[KCD2]-bf4848?style=flat-square–=nexusmods[/img][/url] [url=https://github.com/rdok/kcd2_helmet_off_dialog][img]https://img.shields.io/badge/Open-Source-2ea44f?style=flat-square&logo=github[/img][/url]
 
-This mod automatically unequips your helmet and coif when starting a conversation with an NPC, then re-equips them when the dialog ends.
+This mod automatically unequips your helmet and coif when starting a conversation with an NPC, then re-equips them when the dialog ends. It’s still in beta, so it’s not perfect yet. For a fully polished version, use Nexus Mods’ watch feature to track this mod and check back later.
 
-[url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/831][img]https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/showcase.gif?raw=true[/img][/url]
+[size=4]KCD 2 Showcase[/size]
+[url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/831][img]https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd2_showcase.gif?raw=true[/img][/url]
+
+[size=4]KCD 1 Showcase[/size]
+[url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/831][img]https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd1_showcase.gif?raw=true[/img][/url]
+
+Install this mod using Vortex from Nexus Mods.
 
 
-[size=4]Development[/size]
+[size=4]Things to Know[/size]
+[list]
+[*] [b]Charisma Impact[/b]: Unequipping the helmet or coif during dialogue might lower charisma, as these items contribute to that stat. I don’t plan to address this, as high charisma is achievable without them, and it’s an acceptable trade-off for the mod’s functionality.
+[*] [b]Not All Helmets[/b]: I play slowly (still on the first map after a restart), so some helmets might not work with the mod. If you find one that doesn’t, let me know.
+[*] [b]Non-Helmet Items[/b]: Gear like hats remains unaffected by this mod.
+[/list]
 
-Use WSL & Docker. See Makefile.
+[size=4]Planned Features[/size]
+
+I’m considering an alternative version to randomly un-equip the helmet—e.g., off for one dialogue, on for the next. Feedback welcome.
 
