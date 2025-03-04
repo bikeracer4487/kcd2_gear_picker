@@ -40,6 +40,7 @@ local OnTalkEvent = {
         this.log:info("OnTalkEvent.takeOffHeadChainmail called")
 
         this.equipment:takeOffHeadChainmail(function()
+            this:takeOffCoif()
         end)
     end,
 
