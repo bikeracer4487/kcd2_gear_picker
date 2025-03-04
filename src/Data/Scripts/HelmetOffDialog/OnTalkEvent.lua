@@ -1,12 +1,14 @@
 --- @class OnTalkEvent
+--- @field log Log
+--- @field equipment Equipment
 local OnTalkEvent = {
+    log = nil,
     --- @field new fun(self: OnTalkEvent, log: Log, human: _G.player.human, timedTrigger: TimedTrigger, equipment: Equipment): OnTalkEvent
     new = function(self, log, human, timedTrigger, equipment)
         if HelmetOffDialog.__factories.onTalkEvent then
             return HelmetOffDialog.__factories.onTalkEvent
         end
         local instance = {
-            --- @field log Log
             log = log,
             --- @field human _G.player.human
             human = human,
@@ -25,6 +27,7 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.handle called")
+
         this.equipment:takeOffHelmet(function()
             this:takeOffHeadChainmail()
         end)
@@ -32,6 +35,16 @@ local OnTalkEvent = {
 
     --- @field takeOffHeadChainmail fun(self: OnTalkEvent)
     takeOffHeadChainmail = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.log:info("OnTalkEvent.takeOffHeadChainmail called")
+
+        this.equipment:takeOffHeadChainmail(function()
+        end)
+    end,
+
+    --- @field takeOffCoif fun(self: OnTalkEvent)
+    takeOffCoif = function(self)
     end
 }
 
