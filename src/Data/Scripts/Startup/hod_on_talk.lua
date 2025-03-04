@@ -1,4 +1,3 @@
--- Unless the onTalk action is explicitly invoked, the player is unable to initiate dialogues.
 local original_BasicAIActions_onTalk = BasicAIActions.OnTalk;
 
 function BasicAIActions:OnTalk(...)
