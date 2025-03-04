@@ -23,14 +23,14 @@ describe("head chainmail", function()
         assert.spy(factory.onTalkEvent.takeOffCoif).was_called(1)
     end)
 end)
---
---describe("coif", function()
---    it("takes off the coif", function()
---        local factory = makeFactory()
---        factory.onTalkEvent:takeOffCoif()
---        assert.spy(factory.equipment.takeOffCoif).was_called(1)
---    end)
---end)
+
+describe("coif", function()
+    it("take it off", function()
+        local factory = makeFactory()
+        factory.onTalkEvent:takeOffCoif()
+        assert.spy(factory.equipment.takeOffCoif).was_called(1)
+    end)
+end)
 
 function makeFactory()
     _G.HelmetOffDialog = { ClassRegistry = {}, __factories = {} }

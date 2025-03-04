@@ -46,6 +46,11 @@ local OnTalkEvent = {
 
     --- @field takeOffCoif fun(self: OnTalkEvent)
     takeOffCoif = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.log:info("OnTalkEvent.takeOffCoif called")
+        this.equipment:takeOffCoif(function()
+        end)
     end
 }
 
