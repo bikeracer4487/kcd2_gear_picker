@@ -1,6 +1,4 @@
-local factory = {}
-
-function factory.mockHelmetOffDialog(mock, spy)
+local function mockHelmetOffDialog(mock, spy)
     _G.Script = {
         SetTimer = function()
         end,
@@ -18,14 +16,14 @@ function factory.mockHelmetOffDialog(mock, spy)
     }
     local mockedBasicAIActions = mock(_G.BasicAIActions, true)
 
-    dofile("src/Data/Scripts/helmet_off_dialog/helmet_off_dialog.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/error.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/on_talk_event.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/config.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/log.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/utils/timed_trigger.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/equipped_item.lua")
-    dofile("src/Data/Scripts/helmet_off_dialog/equipment.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/utils/Error.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/Config.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/utils/Log.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
+    dofile("src/Data/Scripts/HelmetOffDialog/Equipment.lua")
 
     local Error = mock(HelmetOffDialog.ClassRegistry.Error)
     local Log = mock(HelmetOffDialog.ClassRegistry.Log, true)
@@ -49,4 +47,4 @@ function factory.mockHelmetOffDialog(mock, spy)
     }
 end
 
-return factory
+return mockHelmetOffDialog

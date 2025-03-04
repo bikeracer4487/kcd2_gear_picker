@@ -42,7 +42,7 @@ HelmetOffDialog = {
         local equipment = this:equipment()
         --- @type OnTalkEvent
         local OnTalkEvent = this.ClassRegistry.OnTalkEvent
-        return OnTalkEvent:new(log, _G.player.human, timedTrigger, equipment)
+        return OnTalkEvent:new(this, log, _G.player.human, timedTrigger, equipment)
     end,
     timedTrigger = function(self)
         --- @type HelmetOffDialog
@@ -65,13 +65,13 @@ HelmetOffDialog = {
         System.LogAlways(self.MOD_NAME .. ": Initializing HelmetOffDialog")
         local modName = HelmetOffDialog.MOD_NAME
         local scripts = {
-            string.format("Scripts/%s/utils/log.lua", modName),
-            string.format("Scripts/%s/utils/error.lua", modName),
-            string.format("Scripts/%s/utils/timed_trigger.lua", modName),
-            string.format("Scripts/%s/config.lua", modName),
-            string.format("Scripts/%s/equipment.lua", modName),
-            string.format("Scripts/%s/on_talk_event.lua", modName),
-            string.format("Scripts/%s/equipped_item.lua", modName),
+            string.format("Scripts/%s/utils/Log.lua", modName),
+            string.format("Scripts/%s/utils/Error.lua", modName),
+            string.format("Scripts/%s/utils/TimedTrigger.lua", modName),
+            string.format("Scripts/%s/Config.lua", modName),
+            string.format("Scripts/%s/Equipment.lua", modName),
+            string.format("Scripts/%s/OnTalkEvent.lua", modName),
+            string.format("Scripts/%s/EquippedItem.lua", modName),
         }
         for _, script in ipairs(scripts) do
             local result = Script.LoadScript(script)

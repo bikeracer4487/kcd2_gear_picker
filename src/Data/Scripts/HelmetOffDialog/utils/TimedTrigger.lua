@@ -1,8 +1,8 @@
 --- @class TimedTrigger
---- @field new fun(self: TimedTrigger, script: _G.Script.SetTimer): TimedTrigger
+--- @field new fun(self: TimedTrigger, script: Script.SetTimer): TimedTrigger
 --- @field start fun(self: TimedTrigger, intervalMs: number, checkCallback: function, runCallback: function)
 --- @field log Log
---- @field script _G.Script
+--- @field script Script
 local TimedTrigger = {
     log = nil,
     setTimer = nil,

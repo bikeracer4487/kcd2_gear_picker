@@ -1,9 +1,9 @@
 it("starts the mod", function()
     local factory = makeFactory()
-    dofile("src/Data/Scripts/Startup/hod_startup.lua")
+    dofile("src/Data/Scripts/Startup/HodStartup.lua")
     assert.spy(factory.Script.LoadScript)
           .was
-          .called_with("Scripts/helmet_off_dialog/helmet_off_dialog.lua")
+          .called_with("Scripts/HelmetOffDialog/HelmetOffDialog.lua")
 end)
 
 function makeFactory()

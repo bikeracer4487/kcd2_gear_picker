@@ -1,5 +1,6 @@
 --- @class Equipment
 --- @field new fun(self: Equipment, log: Log, player: _G.player, equippedItem: EquippedItem): Equipment
+--- @field equippedItem EquippedItem
 local Equipment = {
     new = function(self, log, player, equippedItem)
         log:info("[Equipment] Creating new Equipment instance")
@@ -47,6 +48,8 @@ local Equipment = {
     end,
 
     unequipIfEquipped = function(self, inventoryItem, itemType, callback)
+        --- @type Equipment
+        local this = sef
         local item = ItemManager.GetItem(inventoryItem)
         if not item then
             self.log:info("[Equipment] Invalid item")
@@ -62,7 +65,7 @@ local Equipment = {
             return
         end
 
-        self.equippedItem:isEquipped(inventoryItem, function(isEquipped)
+        this.equippedItem:isEquipped(inventoryItem, function(isEquipped)
             if not isEquipped then
                 self.log:info("[Equipment] " .. itemType .. " not equipped: " .. itemName)
                 callback()
@@ -140,7 +143,7 @@ local Equipment = {
     equipCoif = function(self)
         self:equip("Coif")
     end,
-    unequipHelmet = function(self)
+    takeOffHelmet = function(self, callback)
         self.log:info("[Equipment] unequipHelmet")
         self:unequip("Helmet")
     end,
@@ -155,3 +158,5 @@ local Equipment = {
 }
 
 HelmetOffDialog.ClassRegistry.Equipment = Equipment
+
+return Equipment

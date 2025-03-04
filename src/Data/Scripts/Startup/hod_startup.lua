@@ -1,1 +1,0 @@
-Script.LoadScript("Scripts/helmet_off_dialog/helmet_off_dialog.lua")
