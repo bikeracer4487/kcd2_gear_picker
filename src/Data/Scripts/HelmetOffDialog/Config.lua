@@ -23,3 +23,5 @@ local Config = {
 }
 
 HelmetOffDialog.ClassRegistry.Config = Config
+
+return Config
