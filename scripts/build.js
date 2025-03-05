@@ -85,8 +85,8 @@ function prepareBuild(debugEnabled, hardcoreEnabled) {
     temporaryBuildDirectory,
     "Data",
     "Scripts",
-    modIdentifier,
-    `${modIdentifier}.lua`,
+    "HelmetOffDialog",
+    `HelmetOffDialog.lua`,
   );
   if (!existsSync(luaFilePath)) {
     console.error(`ERROR: '${luaFilePath}' not found.`);
