@@ -11,7 +11,7 @@ describe("Config", function()
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
-        assert.stub(factory.Script.LoadScript)
+        assert.stub(factory.script.LoadScript)
               .was.called_with("Scripts/HelmetOffDialog/Config.lua")
     end)
 end)
@@ -30,7 +30,7 @@ describe("Log", function()
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
-        assert.stub(factory.Script.LoadScript)
+        assert.stub(factory.script.LoadScript)
               .was.called_with("Scripts/HelmetOffDialog/utils/Log.lua")
     end)
 end)
@@ -52,19 +52,52 @@ describe("Equipment", function()
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
-        assert.stub(factory.Script.LoadScript)
+        assert.stub(factory.script.LoadScript)
               .was.called_with("Scripts/HelmetOffDialog/Equipment.lua")
     end)
 end)
 
+describe("UnequipGear", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:unequipGear()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.UnequipGear.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.UnequipGear),
+                factory.HelmetOffDialog,
+                factory.HelmetOffDialog:log(),
+                factory.player.actor,
+                factory.HelmetOffDialog:equippedItem(),
+                factory.HelmetOffDialog:itemCategory(),
+                factory.itemManager,
+                factory.player.inventory
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/UnequipGear.lua")
+    end)
+end)
+
 function makeFactory()
-    local player = {}
+    local player = {
+        inventory = { GetInventoryTable = function()
+        end },
+        actor = {}
+    }
     _G.System = {
         LogAlways = function()
         end
     }
-    local Script = {
+    local script = {
         LoadScript = function()
+        end
+    }
+    local itemManager = {
+        GetItem = function()
         end
     }
 
@@ -117,11 +150,21 @@ function makeFactory()
     Equipment.new = spy.new(Equipment.new)
     HelmetOffDialog.ClassRegistry.Equipment = Equipment
 
+    local UnequipGear = dofile("src/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
+    UnequipGear = mock(UnequipGear, true)
+    UnequipGear.new = function(self)
+        return UnequipGear
+    end
+    UnequipGear.new = spy.new(UnequipGear.new)
+    HelmetOffDialog.ClassRegistry.UnequipGear = UnequipGear
+
     factory.HelmetOffDialog = HelmetOffDialog
-    factory.Script = mock(Script, true)
+    factory.script = mock(script, true)
+    _G.Script = script
     factory.player = mock(player, true)
-    _G.Script = Script
     _G.player = player
+    factory.itemManager = mock(itemManager, true)
+    _G.ItemManager = itemManager
 
     return factory
 end
