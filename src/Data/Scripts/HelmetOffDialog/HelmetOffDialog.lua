@@ -103,7 +103,7 @@ local HelmetOffDialog = {
         log:info("HelmetOffDialog.itemCategory")
         --- @type ItemCategory
         local ItemCategory = this.ClassRegistry.ItemCategory
-        return ItemCategory:new(this, log, _G.player, _G.Script)
+        return ItemCategory:new(this, log, _G.ItemManager)
     end,
 
     init = function(self)

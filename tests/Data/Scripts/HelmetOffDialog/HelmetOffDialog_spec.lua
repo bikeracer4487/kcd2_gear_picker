@@ -100,6 +100,27 @@ describe("UnequipGear", function()
     end)
 end)
 
+describe("ItemCategory", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:itemCategory()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.ItemCategory.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.ItemCategory),
+                factory.HelmetOffDialog,
+                factory.HelmetOffDialog:log(),
+                factory.itemManager
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/ItemCategory.lua")
+    end)
+end)
+
 function makeFactory()
     local player = {
         inventory = { GetInventoryTable = function()
@@ -147,9 +168,7 @@ function makeFactory()
 
     local ItemCategory = dofile("src/Data/Scripts/HelmetOffDialog/ItemCategory.lua")
     ItemCategory = mock(ItemCategory, true)
-    ItemCategory.new = function(self)
-        return ItemCategory
-    end
+    ItemCategory.new = spy.new(ItemCategory.new)
     HelmetOffDialog.ClassRegistry.ItemCategory = ItemCategory
 
     local EquippedItem = dofile("src/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
@@ -181,6 +200,7 @@ function makeFactory()
         return Error
     end)
     HelmetOffDialog.ClassRegistry.Error = Error
+
 
     factory.HelmetOffDialog = HelmetOffDialog
     factory.script = mock(script, true)
