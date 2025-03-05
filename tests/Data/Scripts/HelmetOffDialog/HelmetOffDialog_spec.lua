@@ -35,6 +35,24 @@ describe("Log", function()
     end)
 end)
 
+describe("Error", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:error()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Error.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.Error),
+                factory.HelmetOffDialog:log())
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/utils/Error.lua")
+    end)
+end)
+
 describe("Equipment", function()
     it("creates a new instance", function()
         local factory = makeFactory()
@@ -152,11 +170,17 @@ function makeFactory()
 
     local UnequipGear = dofile("src/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
     UnequipGear = mock(UnequipGear, true)
-    UnequipGear.new = function(self)
+    UnequipGear.new = spy.new(function(self)
         return UnequipGear
-    end
-    UnequipGear.new = spy.new(UnequipGear.new)
+    end)
     HelmetOffDialog.ClassRegistry.UnequipGear = UnequipGear
+
+    local Error = dofile("src/Data/Scripts/HelmetOffDialog/utils/Error.lua")
+    Error = mock(Error, true)
+    Error.new = spy.new(function()
+        return Error
+    end)
+    HelmetOffDialog.ClassRegistry.Error = Error
 
     factory.HelmetOffDialog = HelmetOffDialog
     factory.script = mock(script, true)
