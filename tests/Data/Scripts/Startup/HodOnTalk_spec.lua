@@ -28,13 +28,13 @@ end)
 
 function makeFactory()
     local mockHelmetOffDialog = dofile("tests/HodMock.lua")
-    local mock = mockHelmetOffDialog(mock, spy)
-    local original_BasicAIActions_onTalk = mock.mockedBasicAIActions.OnTalk
+    local factory = mockHelmetOffDialog(mock, spy)
+    local original_BasicAIActions_onTalk = factory.mockedBasicAIActions.OnTalk
     dofile("src/Data/Scripts/Startup/HodOnTalk.lua")
 
     return {
         BasicAIActions = _G.BasicAIActions,
-        HelmetOffDialog = mock.HelmetOffDialog,
+        HelmetOffDialog = factory.HelmetOffDialog,
         original_BasicAIActions_onTalk = original_BasicAIActions_onTalk
     }
 end
