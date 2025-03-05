@@ -37,3 +37,5 @@ local Log = {
 }
 
 HelmetOffDialog.ClassRegistry.Log = Log
+
+return Log
