@@ -15,10 +15,10 @@ prod:
 	bash scripts/build-prod.sh random
 
 prettier:
-	docker compose run --rm build npm run prettier
+	docker compose run --rm ci-cd npm run prettier
 
 prettier-fix:
-	docker compose run --rm build npm run prettier:fix
+	docker compose run --rm ci-cd npm run prettier:fix
 
 docs:
-	docker compose run --rm build npm run generate_readme
+	docker compose run --rm ci-cd npm run generate_readme
