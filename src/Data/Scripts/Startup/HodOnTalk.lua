@@ -6,8 +6,8 @@ function BasicAIActions:OnTalk(...)
     local error = HelmetOffDialog:error()
 
     error:catch(function()
-                    local event = HelmetOffDialog:onTalkEvent()
-        --event:handle()
+        local event = HelmetOffDialog:onTalkEvent()
+        event:handle()
     end)
     return original_BasicAIActions_onTalk(self, ...)
 end
