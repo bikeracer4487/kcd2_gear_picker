@@ -18,6 +18,7 @@ Use WSL & Docker. Check the Makefile for details.
 ---
 
 ### TODO
+
 - Release a beta version for community feedback.
 - Scrap the prototype afterward and rebuild it with Test-Driven Development (TDD) using Busted on Docker for a solid release. TDD is done for the dialogue event so far.
 - Open-source the project on GitHub alongside the NexusMods release to share the equipped-item workaround.
@@ -26,4 +27,5 @@ Use WSL & Docker. Check the Makefile for details.
 ---
 
 ### Planned Features
+
 - Add an alternate version where the helmet unequips randomly (e.g., off for one dialogue, on for the next). Could refine it to a cycle, like 5 dialogues on, 5 off.

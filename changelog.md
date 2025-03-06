@@ -1,6 +1,6 @@
 ## Changelog
 
-#### v0.1.0 03-Mar-25
+#### v1.0.0 03-Mar-25
 
-- feat: UnEquip kettle based helmet, and coifs upon dialog start.
-- feat: Equip, previously un-equipped kettle based helmet, and coifs upon dialog end.
+- feat: UnEquip kettle based helmet, head chainmail for KCD 1, and coifs upon dialog start.
+- feat: Equip, previously un-equipped items upon dialog end.
