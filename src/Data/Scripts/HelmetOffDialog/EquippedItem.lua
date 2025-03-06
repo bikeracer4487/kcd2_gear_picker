@@ -1,47 +1,60 @@
 --- @class EquippedItem
---- @field new fun(self: Equipment, log: Log, player: _G.player, engineScript: _G.Script): Equipment
+--- @field new fun(self: Equipment, helmetOffDialog: HelmetOffDialog, log: Log, player: _G.player, engineScript: _G.Script): Equipment
 local EquippedItem = {
-    new = function(self, log, player, engineScript)
-        if HelmetOffDialog.__factories.equippedItem then
-            return HelmetOffDialog.__factories.equippedItem
+    new = function(self, helmetOffDialog, log, player, engineScript)
+        log:info("EquippedItem.new")
+        if helmetOffDialog.__factories.equippedItem then
+            return helmetOffDialog.__factories.equippedItem
         end
         local instance = { log = log, player = player, engineScript = engineScript }
         setmetatable(instance, { __index = self })
-        HelmetOffDialog.__factories.equippedItem = instance
+        helmetOffDialog.__factories.equippedItem = instance
         return instance
     end,
-    isEquipped = function(self, item, callback)
-        self.log:info("[EquippedItem] isEquipped")
+    isEquipped = function(self, inventoryItem, callback)
+        self.log:info("EquippedItem.isEquipped")
 
         local before = {
-            charisma = self.player.soul:GetDerivedStat("charisma"),
             conspicuousness = self.player.soul:GetDerivedStat("con"),
             visibility = self.player.soul:GetDerivedStat("vib")
         }
 
-        self.log:info("[EquippedItem] UnequipInventoryItem")
-        self.player.actor:UnequipInventoryItem(item)
+        self.log:info("EquippedItem.isEquipped: before.conspicuousness: " .. before.conspicuousness)
+        self.log:info("EquippedItem.isEquipped: before.visibility: " .. before.visibility)
+        self.log:info("EquippedItem.UnequipInventoryItem")
+        self.player.actor:UnequipInventoryItem(inventoryItem)
 
-        self.log:info("[EquippedItem] SetTimer")
-        self.engineScript.SetTimer(100, function()
-            self.log:info("[EquippedItem] afterStats")
+        self.log:info("EquippedItem SetTimer")
+        self.engineScript.SetTimer(50, function()
+            self.log:info("EquippedItem afterStats")
             local after = {
-                charisma = self.player.soul:GetDerivedStat("charisma"),
                 conspicuousness = self.player.soul:GetDerivedStat("con"),
                 visibility = self.player.soul:GetDerivedStat("vib")
             }
-            self.log:info("[EquippedItem] EquipInventoryItem")
-            self.player.actor:EquipInventoryItem(item)
+            self.log:info("EquippedItem.isEquipped: after.conspicuousness: " .. after.conspicuousness)
+            self.log:info("EquippedItem.isEquipped: after.visibility: " .. after.visibility)
 
-            self.log:info("[EquippedItem] isEquippedComparison")
-            local isEquipped = before.charisma ~= after.charisma
-                    or before.conspicuousness ~= after.conspicuousness
-                    or before.visibility ~= after.visibility
+            self.log:info("EquippedItem isEquippedComparison")
 
-            self.log:info("[EquippedItem] callback")
+            -- Stats like charisma, because are cap at 30, are ignored
+            -- Game has a bug where taking off KettleHat04_m02_B4 the derived stats
+            -- of visibility change even if said item is NOT equipped
+            -- As such, use an AND operator to ensure such edge cases are handled
+            local isEquipped = before.conspicuousness ~= after.conspicuousness
+                    and before.visibility ~= after.visibility
+
+            if isEquipped then
+                local item = ItemManager.GetItem(inventoryItem)
+                local itemName = ItemManager.GetItemName(item.class)
+                self.log:info("Found equipped, now unequipped item: " .. itemName)
+            end
+
+            self.log:info("EquippedItem callback")
             callback(isEquipped)
         end)
     end,
 }
 
-HelmetOffDialog.ClassRegistry.EquippedItem = EquippedItem
+_G.HelmetOffDialog.ClassRegistry.EquippedItem = EquippedItem
+
+return EquippedItem
