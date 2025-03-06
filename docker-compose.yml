@@ -12,7 +12,7 @@ services:
     volumes: [".:/data"]
     entrypoint: sh -c "find /data -type f | entr -c busted --verbose /data"
     tty: true
-  build:
+  ci-cd:
     build:
       context: .
       dockerfile: docker/nodejs.Dockerfile

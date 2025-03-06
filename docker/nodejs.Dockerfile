@@ -26,4 +26,4 @@ WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
 
-RUN npm ci
+ENTRYPOINT ["./docker/nodejs_entrypoint.sh"]

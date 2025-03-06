@@ -17,8 +17,8 @@ modVersion=$(grep -oP '<version>\K[^<]+' "$manifestFile")
 zipFileName="${modIdentifier}_${version}_${modVersion}.zip"
 zipFilePath="./$zipFileName"
 
-docker compose run --rm -e MODE="prod" -e VERSION="$version" build
+docker compose run --rm -e MODE="prod" -e VERSION="$version" ci-cd
 [ -f "$zipFilePath" ] || { echo "ERROR: ZIP $zipFilePath not found!"; exit 1; }
-docker compose down build -v
+docker compose down ci-cd -v
 
 echo "Production build complete: $zipFileName"
