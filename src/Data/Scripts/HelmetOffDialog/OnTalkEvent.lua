@@ -13,7 +13,7 @@ local OnTalkEvent = {
             log = log,
             equipment = equipment,
             helmetOffDialog = helmetOffDialog,
-            talkEndedEvent = TalkEndedEvent
+            talkEndedEvent = TalkEndedEvent,
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.onTalkEvent = instance
@@ -24,6 +24,15 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.handle")
+
+        if this.helmetOffDialog.VERSION == "random_helmet_off" then
+            local randomValue = math.random(0, 1)
+            if randomValue == 0 then
+                this.log:info("Random check failed, helmet removal aborted")
+                return
+            end
+        end
+
         this.equipment:takeOffHelmet(function()
             this:takeOffHeadChainmail()
         end)
