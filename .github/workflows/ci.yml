@@ -16,9 +16,9 @@ jobs:
         run: make prettier
 
   tests:
-    name: $tests
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Tests
-        run: make tests
+        run: make test
