@@ -23,4 +23,6 @@ local Error = {
     end
 }
 
-HelmetOffDialog.ClassRegistry.Error = Error
+_G.HelmetOffDialog.ClassRegistry.Error = Error
+
+return Error
