@@ -7,9 +7,12 @@ test-watch:
 
 dev:
 	bash scripts/build-deploy-start.sh
+dev-random-version:
+	bash scripts/build-deploy-start.sh random
 
 prod:
-	bash scripts/build-prod.sh
+	bash scripts/build-prod.sh main
+	bash scripts/build-prod.sh random
 
 prettier:
 	docker compose run --rm build npm run prettier

@@ -27,13 +27,13 @@ const version =
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
-const validVersions = ["main", "lorem-ipsum"];
+const validVersions = ["main", "random"];
 
 if (isHelpRequested) {
   console.log(`
-Usage: node build.js [--env=prod|dev] [--version=main|lorem-ipsum] [--help]
+Usage: node build.js [--env=prod|dev] [--version=main|random] [--help]
 --env=prod|dev          Sets the environment (default: prod).
---version=main|lorem-ipsum  Sets the version (default: main; lorem-ipsum is a future placeholder).
+--version=main|random   Sets the version (default: main).
 --help                  Displays this help message.
 `);
   process.exit(0);
@@ -78,7 +78,7 @@ function cleanBuildDirectory() {
   mkdirSync(temporaryBuildDirectory, { recursive: true });
 }
 
-function prepareBuild(debugEnabled, hardcoreEnabled) {
+function prepareBuild() {
   cpSync(sourceDirectory, temporaryBuildDirectory, { recursive: true });
 
   const luaFilePath = join(
@@ -98,7 +98,8 @@ function prepareBuild(debugEnabled, hardcoreEnabled) {
       /HOD_ENVIRONMENT = "([^"]+)"/,
       `HOD_ENVIRONMENT = "${environment}"`,
     )
-    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`);
+    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`)
+    .replace(/VERSION = "([^"]+)"/, `VERSION = "${version}"`);
   writeFileSync(luaFilePath, luaContent, "utf8");
 }
 
@@ -112,6 +113,7 @@ function removeScriptsDirectory() {
 function compressToPak(dataSourceDirectory, pakOutputPath) {
   // Build file list (Python's build_filelist)
   const fileList = [];
+
   function buildFileList(dir) {
     const items = readdirSync(dir);
     for (const item of items) {
@@ -125,6 +127,7 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
       }
     }
   }
+
   buildFileList(dataSourceDirectory);
 
   if (fileList.length === 0) {
@@ -215,19 +218,13 @@ function packMod(outputFileName) {
 if (environment === "prod") {
   console.log(`Building production version (${version})...`);
   cleanBuildDirectory();
-  prepareBuild(false, false);
+  prepareBuild();
   packData();
   packMod(`${modName}_${version}`);
 } else if (environment === "dev") {
   console.log(`Building development version (${version})...`);
   cleanBuildDirectory();
-  prepareBuild(true, false);
+  prepareBuild();
   packData();
   packMod(`${modName}_${version}`);
-}
-
-if (version === "lorem-ipsum") {
-  console.log(
-    "Note: lorem-ipsum version is a placeholder; no special handling yet.",
-  );
 }
