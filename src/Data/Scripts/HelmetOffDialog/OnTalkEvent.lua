@@ -1,7 +1,7 @@
 --- @class OnTalkEvent
 --- @field log Log
 --- @field equipment Equipment
---- @field TalkEndedEvent TalkEndedEvent
+--- @field talkEndedEvent TalkEndedEvent
 local OnTalkEvent = {
     new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent)
         log:info("OnTalkEvent.new")
@@ -21,7 +21,7 @@ local OnTalkEvent = {
     end,
 
     handle = function(self)
-        --- @type Equipment
+        --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.handle")
         this.equipment:takeOffHelmet(function()
@@ -30,6 +30,7 @@ local OnTalkEvent = {
     end,
 
     takeOffHeadChainmail = function(self)
+        --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffHeadChainmail")
         this.equipment:takeOffHeadChainmail(function()
@@ -38,6 +39,7 @@ local OnTalkEvent = {
     end,
 
     takeOffCoif = function(self)
+        --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffCoif")
         this.equipment:takeOffCoif(function()
