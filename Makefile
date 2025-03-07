@@ -1,3 +1,4 @@
+check: test prettier
 
 test:
 	docker compose run --rm test_runner
@@ -12,6 +13,8 @@ dev-random-version:
 
 prod:
 	bash scripts/build-prod.sh main
+	make prod-random
+prod-random:
 	bash scripts/build-prod.sh random
 
 prettier:

@@ -60,7 +60,7 @@ function makeFactory(args)
     -- Handle named arguments
     args = args or {}
     if args.randomVersion then
-        helmetOffDialog.VERSION = "random_helmet_off"
+        helmetOffDialog.VERSION = "random"
         if args.mockMathRandomToTruthy ~= nil then
             math.random = function() return args.mockMathRandomToTruthy and 1 or 0 end
         end
