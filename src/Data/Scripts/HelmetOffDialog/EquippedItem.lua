@@ -36,12 +36,13 @@ local EquippedItem = {
 
             self.log:info("EquippedItem isEquippedComparison")
 
-            -- Stats like charisma, because are cap at 30, are ignored
-            -- Game has a bug where taking off KettleHat04_m02_B4 the derived stats
+            -- 1. Stats like charisma, because are cap at 30, are ignored
+            -- 2. Game has a bug where taking off KettleHat04_m02_B4 the derived stats
             -- of visibility change even if said item is NOT equipped
             -- As such, use an AND operator to ensure such edge cases are handled
+            -- 3. Visibility stats check removed as it causes a bug where the
+            -- comparison fails if the equipped item is fully washed.
             local isEquipped = before.conspicuousness ~= after.conspicuousness
-                    and before.visibility ~= after.visibility
 
             if isEquipped then
                 local item = ItemManager.GetItem(inventoryItem)
