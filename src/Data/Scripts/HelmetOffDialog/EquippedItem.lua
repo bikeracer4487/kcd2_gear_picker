@@ -17,28 +17,24 @@ local EquippedItem = {
         local this = self
         this.log:info("EquippedItem.isEquipped")
 
-        local derivedStats = this:getDerivedStats()
-        this.log:info("Derived stats before une-quip: ", derivedStats)
+        local oldStats = this:getDerivedStats()
+        this.log:info("Derived stats before une-quip: ", oldStats)
 
         this.player.actor:UnequipInventoryItem(inventoryItem)
 
         this.log:info("EquippedItem SetTimer")
         this.engineScript.SetTimer(20, function()
             this.log:info("EquippedItem afterStats")
-            local newDerivedStats = this:getDerivedStats()
-            this.log:info("Derived stats after un-equip: ", newDerivedStats)
+            local newStats = this:getDerivedStats()
+            this.log:info("Derived stats after un-equip: ", newStats)
 
-            -- 1. Stats like charisma, because are cap at 30, are ignored
-            -- 2. Game has a bug where taking off KettleHat04_m02_B4 the derived stats
-            -- of visibility change even if said item is NOT equipped
-            --  As such, use an AND operator to ensure such edge cases are handled
-            -- 3. Visibility stats check removed as it causes a bug where the
+            -- - Stats like charisma, because are cap at 30, are ignored
+            -- - Visibility stats check removed as it causes a bug where the
             --  comparison fails if the equipped item is fully washed.
-            -- We have to use tostring because, without it the visibility was
+            -- - We have to use tostring because, without it the visibility was
             --  returning false positives. Presumably, the floating precision
-            --  check is not working.
-            local isEquipped = tostring(derivedStats.conspicuousness) ~= tostring(newDerivedStats.conspicuousness)
-                    and tostring(derivedStats.visibility) ~= tostring(newDerivedStats.visibility)
+            --  check is not working on CryEngine/KCD games.
+            local isEquipped = tostring(oldStats.conspicuousness) ~= tostring(newStats.conspicuousness)
 
             if isEquipped then
                 local item = ItemManager.GetItem(inventoryItem)
@@ -56,7 +52,7 @@ local EquippedItem = {
         local stats = {
             --cha = this.player.soul:GetDerivedStat("cha"),
             conspicuousness = this.player.soul:GetDerivedStat("con"),
-            visibility = this.player.soul:GetDerivedStat("vib"),
+            --visibility = this.player.soul:GetDerivedStat("vib"),
             --secondChances = this.player.soul:GetDerivedStat("hac"),
             --bad = this.player.soul:GetDerivedStat("bad"),
             --maxStamina = this.player.soul:GetDerivedStat("mst"),
