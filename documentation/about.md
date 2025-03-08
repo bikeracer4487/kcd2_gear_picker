@@ -17,13 +17,17 @@ Install this mod using Vortex from Nexus Mods.
 ---
 
 ### Coverage
+
 > If you identify any helmets not listed below, please provide their full names as they appear in-game.
+
 - Helmets: kettle, bascinet, helmet, scullcap (skullcap)
 - Head Chainmail (for KCD 1): coifmail, nm_ca_collar, nm_ca_hood
-- Coifs: coif, g_hood_
+- Coifs: coif, `g_hood_`
+
 ---
 
 ### Alternative Versions
+
 > Use either the main version, or one of the following. NOT both.
 
 - Random: The optional files section offers a version that unequips helmets in random dialogues rather than all of them. For instance, it might remove the helmet in one conversation but keep it on in the next. As a player, this reflects my reason for creating this mod—half because I expect I’ll grow tired of Henry’s face, and half because the helmets are really cool to look at, especially when switching between different ones.
