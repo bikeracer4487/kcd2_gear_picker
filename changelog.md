@@ -1,5 +1,8 @@
 ## Changelog
 
+#### v1.0.3 07-Mar-25 - Random Version
+- fix: Some helmets weren’t recognized as equipped because of how the game handled stat numbers.
+
 #### v1.0.2 07-Mar-25 - Random Version
 
 - fix: Alternate random version was not being enabled.
