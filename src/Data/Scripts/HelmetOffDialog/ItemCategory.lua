@@ -1,6 +1,7 @@
 --- @class ItemCategory
 --- @field new fun(self: ItemCategory, helmetOffDialog: HelmetOffDialog, log: Log, itemManager: ItemManager): ItemCategory
 --- @field is func(self, gearCategory: string, inventoryItem: userdata)
+--- @field log Log
 local ItemCategory = {
     new = function(self, helmetOffDialog, log, itemManager)
         if helmetOffDialog.__factories.itemCategory then
@@ -19,19 +20,22 @@ local ItemCategory = {
 
     --- @field is fun(self: ItemCategory, category: string, inventoryItem: any): boolean
     is = function(self, itemCategory, inventoryItem)
-        local item = self.itemManager.GetItem(inventoryItem)
+        --- @type ItemCategory
+        local this = self
+        local item = this.itemManager.GetItem(inventoryItem)
         if not item then
-            self.log:info("ItemCategory Invalid item for category check: " .. itemCategory)
+            this.log:info("ItemCategory Invalid item for category check: " .. itemCategory)
             return false
         end
 
-        local itemName = self.itemManager.GetItemName(item.class)
-        local itemUIName = self.itemManager.GetItemUIName(item.class)
+        local itemName = this.itemManager.GetItemName(item.class)
+        local itemUIName = this.itemManager.GetItemUIName(item.class)
 
         if itemCategory == "Helmet" then
             return string.lower(itemName):find("kettle")
                     or string.lower(itemName):find("bascinet")
                     or string.lower(itemName):find("helmet")
+                    or string.lower(itemName):find("skullcap")
         end
 
         if itemCategory == "HeadChainmail" then
@@ -45,7 +49,7 @@ local ItemCategory = {
                     or string.lower(itemName):find("g_hood_")
         end
 
-        self.log:info("ItemCategory Unknown category: " .. itemCategory)
+        this.log:info("ItemCategory Unknown category: " .. itemCategory)
         return false
     end
 }

@@ -43,7 +43,7 @@ local TalkEndedEvent = {
         local this = self
         this.log:info("TalkEndedEvent.queuePutOnHeadChainmail")
 
-        this.timedTrigger:start(100, function()
+        this.timedTrigger:start(10, function()
             return true
         end, function()
             this.equipment:putOnHeadChainmail()
@@ -56,7 +56,7 @@ local TalkEndedEvent = {
         local this = self
         this.log:info("TalkEndedEvent.putOnHelmet")
 
-        this.timedTrigger:start(100, function()
+        this.timedTrigger:start(10, function()
             return true
         end, function()
             this.equipment:putOnHelmet()
