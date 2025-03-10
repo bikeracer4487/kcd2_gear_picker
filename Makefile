@@ -14,8 +14,12 @@ dev-random-version:
 prod:
 	bash scripts/build-prod.sh main
 	make prod-random
+	make prod-helmet_only
+
 prod-random:
 	bash scripts/build-prod.sh random
+prod-helmet_only:
+	bash scripts/build-prod.sh helmet_only
 
 prettier:
 	docker compose run --rm ci-cd npm run prettier
