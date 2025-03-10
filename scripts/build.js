@@ -27,14 +27,14 @@ const version =
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
-const validVersions = ["main", "random"];
+const validVersions = ["main", "random", "helmet_only"];
 
 if (isHelpRequested) {
   console.log(`
-Usage: node build.js [--env=prod|dev] [--version=main|random] [--help]
---env=prod|dev          Sets the environment (default: prod).
---version=main|random   Sets the version (default: main).
---help                  Displays this help message.
+Usage: node build.js [--env=prod|dev] [--version=main|random|helmet_only] [--help]
+--env=prod|dev                      Sets the environment (default: prod).
+--version=main|random|helmet_only   Sets the version (default: main).
+--help                              Displays this help message.
 `);
   process.exit(0);
 }

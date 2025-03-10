@@ -1,10 +1,14 @@
 ## Changelog
 
-#### v1.0.3 07-Mar-25 - Random Version
+#### v1.1.0 10-Mar-25 - New Helmet-Only Variant
+
+- feat: New "Helmet-Only" variant that only takes off helmets, leaving head chainmail (KCD 1) or coifs untouched.
+
+#### v1.0.3 07-Mar-25 - Random Variant
 
 - fix: Some helmets weren’t recognized as equipped because of how the game handled stat numbers.
 
-#### v1.0.2 07-Mar-25 - Random Version
+#### v1.0.2 07-Mar-25 - Random Variant
 
 - fix: Alternate random version was not being enabled.
 
