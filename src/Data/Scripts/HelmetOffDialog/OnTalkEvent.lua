@@ -33,9 +33,15 @@ local OnTalkEvent = {
             end
         end
 
-        this.equipment:takeOffHelmet(function()
+        local callback = function()
+            if this.helmetOffDialog.VERSION == "helmet_only" then
+                this.talkEndedEvent:listen()
+                return
+            end
             this:takeOffHeadChainmail()
-        end)
+        end
+
+        this.equipment:takeOffHelmet(callback)
     end,
 
     takeOffHeadChainmail = function(self)
