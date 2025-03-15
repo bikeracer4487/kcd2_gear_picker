@@ -12,8 +12,6 @@ This mod automatically takes off your helmet, head chainmail (KCD 1) and coif wh
 
 [url=https://www.nexusmods.com/kingdomcomedeliverance2/mods/831][img]https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd1_showcase.gif?raw=true[/img][/url]
 
-Install this mod using Vortex from Nexus Mods.
-
 [size=5]Coverage[/size]
 
 [quote]
@@ -38,5 +36,5 @@ If you identify any head armour not listed below, please provide their full name
 [*] [b]Charisma Impact[/b]: Taking off the helmet or coif during dialogue will probably lower charisma, as these items contribute to that stat. I don’t plan to address this, as high charisma is achievable without them, and it’s an acceptable trade-off for the mod’s functionality.
 [*] [b]Not All Helmets[/b]: I play slowly (still on the first KCD 2 map after a restart), so I haven’t tested every helmet yet. That said, this mod should work with at least 90% of helmets—like kettles and bascinets. If you find one that doesn’t work, please let me know, so I can address it.
 [*] [b]Non-Helmet Items[/b]: Head armour like hats remains unaffected by this mod.
-[*] [b]Hack: IsEquipped[/b]: Neither KCD 2 nor KCD 1 provides a Lua API function to retrieve equipped slot items. To address this, the mod uses a hack. It iterates through all helmets and coifs in the player's inventory, taking them off. If the player's conspicuousness changes, the mod identifies that item as the one equipped.
+[*] [b]Hack: IsEquipped[/b]: Neither KCD 2 nor KCD 1 provides a Lua API function to retrieve equipped slot items. To address this, the mod uses a hack. It iterates through all helmets and coifs in the player's inventory, taking them off. If the player's equipped weight changes, the mod identifies that item as the one equipped.
 [/list]
