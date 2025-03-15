@@ -8,7 +8,7 @@ function stripContent(content) {
     .replace(/\[!\[nexus-mods-page\]\(/gi, "")
     .replace(/\[!\[github-repository\]\(/gi, "")
     .replace(/\[!\[Showcase\]\(/gi, "")
-    .replace(/^##\s*Showcase\s*(\r\n|\n|\r)*\s*/gim, "");
+    .replace(/^##.*Showcase\s*(\r\n|\n|\r)*\s*/gim, "");
 }
 
 function formatSections(content) {
