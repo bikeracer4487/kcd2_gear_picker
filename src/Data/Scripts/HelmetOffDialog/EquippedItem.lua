@@ -28,13 +28,11 @@ local EquippedItem = {
             local newStats = this:getDerivedStats()
             this.log:info("Derived stats after un-equip: ", newStats)
 
-            -- - Stats like charisma, because are cap at 30, are ignored
-            -- - Visibility stats check removed as it causes a bug where the
-            --  comparison fails if the equipped item is fully washed.
-            -- - We have to use tostring because, without it the visibility was
-            --  returning false positives. Presumably, the floating precision
-            --  check is not working on CryEngine/KCD games.
-            local isEquipped = tostring(oldStats.conspicuousness) ~= tostring(newStats.conspicuousness)
+            --  We have to use tostring because, without it the compared values
+            --  return false positives. Presumably, the floating precision
+            --  check is not working on CryEngine's Lua.
+            local isEquipped = tostring(oldStats.equippedWeight)
+                    ~= tostring(newStats.equippedWeight)
 
             if isEquipped then
                 local item = ItemManager.GetItem(inventoryItem)
@@ -46,12 +44,14 @@ local EquippedItem = {
             callback(isEquipped)
         end)
     end,
+    -- https://warhorse.youtrack.cloud/articles/KM-A-21/Stats-and-skills
     getDerivedStats = function(self)
         --- @type EquippedItem
         local this = self
         local stats = {
             --cha = this.player.soul:GetDerivedStat("cha"),
-            conspicuousness = this.player.soul:GetDerivedStat("con"),
+            --conspicuousness = this.player.soul:GetDerivedStat("con"),
+            equippedWeight = this.player.soul:GetDerivedStat("eqw")
             --visibility = this.player.soul:GetDerivedStat("vib"),
             --secondChances = this.player.soul:GetDerivedStat("hac"),
             --bad = this.player.soul:GetDerivedStat("bad"),
