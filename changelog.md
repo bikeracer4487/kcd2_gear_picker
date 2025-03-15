@@ -1,6 +1,7 @@
 ## Changelog
 
 #### v1.1.1 15-Mar-25 - New Helmet-Only Variant
+
 - fix: Use the more reliable equipped weight derived status to check for equip status.
 
 #### v1.1.0 10-Mar-25 - New Helmet-Only Variant
