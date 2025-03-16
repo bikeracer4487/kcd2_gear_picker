@@ -2,12 +2,12 @@
 --- @field isProduction fun(self: Config): boolean
 --- @field environment string
 --- @field new Config
---- @field isRangedVariant fun(self: Config): boolean
---- @field setRangedVariant fun(self: Config): boolean
---- @field setRandomVariant fun(self: Config): boolean
---- @field isRandomVariant fun(self: Config): boolean
---- @field setHelmetOnlyVariant fun(self: Config): boolean
---- @field isHelmetOnlyVariant fun(self: Config): boolean
+--- @field isRanged fun(self: Config): boolean
+--- @field setRanged fun(self: Config): boolean
+--- @field setRandom fun(self: Config): boolean
+--- @field isRandom fun(self: Config): boolean
+--- @field setHelmetOnly fun(self: Config): boolean
+--- @field isHelmetOnly fun(self: Config): boolean
 
 local Config = {
     environment = nil,
@@ -31,22 +31,22 @@ local Config = {
         local config = self
         return config.environment == "prod"
     end,
-    isRangedVariant = function(self)
+    isRanged = function(self)
         return self.ranged_variant
     end,
-    setRangedVariant = function(self, value)
+    setRanged = function(self, value)
         self.ranged_variant = self:sanitize(value)
     end,
-    isRandomVariant = function(self)
+    isRandom = function(self)
         return self.random_variant
     end,
-    setRandomVariant = function(self, value)
+    setRandom = function(self, value)
         self.random_variant = self:sanitize(value)
     end,
-    isHelmetOnlyVariant = function(self)
+    isHelmetOnly = function(self)
         return self.helmet_only_variant
     end,
-    setHelmetOnlyVariant = function(self, value)
+    setHelmetOnly = function(self, value)
         self.helmet_only_variant = self:sanitize(value)
     end,
     sanitize = function(self, value)
