@@ -41,7 +41,10 @@ local OnTalkEvent = {
             this:takeOffHeadChainmail()
         end)
 
-        if this.helmetOffDialog.VARIANT == "ranged_weapons" then
+        --- @type Config
+        local config = this.helmetOffDialog:config()
+
+        if config:isHideRangedWeapons() then
             this.equipment:takeOffFirstRangedWeapon(function()
                 this:takeOffSecondRangedWeapon()
             end)
