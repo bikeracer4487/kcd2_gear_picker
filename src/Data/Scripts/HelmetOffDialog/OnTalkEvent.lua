@@ -43,6 +43,7 @@ local OnTalkEvent = {
 
         if this.helmetOffDialog.VARIANT == "ranged_weapons" then
             this.equipment:takeOffFirstRangedWeapon(function()
+                this:takeOffSecondRangedWeapon()
             end)
         end
     end,
@@ -63,6 +64,15 @@ local OnTalkEvent = {
         this.equipment:takeOffCoif(function()
             this.talkEndedEvent:listen()
         end)
+    end,
+
+    takeOffSecondRangedWeapon = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.log:info("OnTalkEvent.takeOffSecondRangedWeapon")
+        --this.equipment:takeOffCoif(function()
+        --    this.talkEndedEvent:listen()
+        --end)
     end
 }
 

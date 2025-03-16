@@ -18,6 +18,9 @@ local function makeFactory(mock, spy, args)
     equipment.takeOffFirstRangedWeapon = spy.new(function(self, callback)
         callback()
     end)
+    equipment.takeOffSecondRangedWeapon = spy.new(function(self, callback)
+        callback()
+    end)
     local TalkEndedEvent = dofile("src/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
     local talkEndedEvent = mock(TalkEndedEvent, true)
     local log = { info = spy.new(function()
@@ -43,6 +46,7 @@ local function makeFactory(mock, spy, args)
     spy.on(onTalkEvent, "takeOffHeadChainmail")
     spy.on(onTalkEvent, "coif")
     spy.on(onTalkEvent, "takeOffCoif")
+    spy.on(onTalkEvent, "takeOffSecondRangedWeapon")
 
     return {
         equipment = equipment,
