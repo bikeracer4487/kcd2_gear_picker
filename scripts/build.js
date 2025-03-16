@@ -17,13 +17,13 @@ const { argv } = require("process");
 
 const args = argv.slice(2);
 const environment =
-    args.find((arg) => arg.startsWith("--env="))?.split("=")[1] ||
-    process.env.MODE ||
-    "dev";
+  args.find((arg) => arg.startsWith("--env="))?.split("=")[1] ||
+  process.env.MODE ||
+  "dev";
 const target =
-    args.find((arg) => arg.startsWith("--target="))?.split("=")[1] ||
-    process.env.TARGET ||
-    "all";
+  args.find((arg) => arg.startsWith("--target="))?.split("=")[1] ||
+  process.env.TARGET ||
+  "all";
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
@@ -41,14 +41,14 @@ Usage: node build.js [--env=prod|dev] [--target=all|main|random|ranged|helmet_on
 
 if (!validEnvironments.includes(environment)) {
   console.error(
-      `ERROR: Invalid --env value '${environment}'. Must be one of: ${validEnvironments.join(", ")}`,
+    `ERROR: Invalid --env value '${environment}'. Must be one of: ${validEnvironments.join(", ")}`,
   );
   process.exit(1);
 }
 
 if (!validTargets.includes(target)) {
   console.error(
-      `ERROR: Invalid --target value '${target}'. Must be one of: ${validTargets.join(", ")}`,
+    `ERROR: Invalid --target value '${target}'. Must be one of: ${validTargets.join(", ")}`,
   );
   process.exit(1);
 }
@@ -83,11 +83,11 @@ function prepareMainBuild() {
   cpSync(sourceDirectory, temporaryBuildDirectory, { recursive: true });
 
   const luaFilePath = join(
-      temporaryBuildDirectory,
-      "Data",
-      "Scripts",
-      "HelmetOffDialog",
-      `HelmetOffDialog.lua`,
+    temporaryBuildDirectory,
+    "Data",
+    "Scripts",
+    "HelmetOffDialog",
+    `HelmetOffDialog.lua`,
   );
   if (!existsSync(luaFilePath)) {
     console.error(`ERROR: '${luaFilePath}' not found.`);
@@ -95,11 +95,11 @@ function prepareMainBuild() {
   }
 
   const luaContent = readFileSync(luaFilePath, "utf8")
-      .replace(
-          /HOD_ENVIRONMENT = "([^"]+)"/,
-          `HOD_ENVIRONMENT = "${environment}"`,
-      )
-      .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`);
+    .replace(
+      /HOD_ENVIRONMENT = "([^"]+)"/,
+      `HOD_ENVIRONMENT = "${environment}"`,
+    )
+    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`);
   writeFileSync(luaFilePath, luaContent, "utf8");
 }
 
@@ -186,17 +186,17 @@ function packMainData() {
 
 function packMod(outputFileName) {
   const finalZipPath = join(
-      rootDirectory,
-      `${outputFileName}_${modVersion}.zip`,
+    rootDirectory,
+    `${outputFileName}_${modVersion}.zip`,
   );
   if (existsSync(finalZipPath)) rmSync(finalZipPath);
 
   const sevenZipBinary = join(
-      rootDirectory,
-      "node_modules",
-      "7z-bin",
-      "linux",
-      "7zzs",
+    rootDirectory,
+    "node_modules",
+    "7z-bin",
+    "linux",
+    "7zzs",
   );
   const sevenZipCommand = `"${sevenZipBinary}" a "${finalZipPath}" "${temporaryBuildDirectory}/*"`;
   console.log(`Zipping final mod: ${sevenZipCommand}`);
@@ -214,14 +214,17 @@ function prepareFeatureBuild(feature) {
   mkdirSync(temporaryBuildDirectory, { recursive: true });
 
   // Modify manifest for feature
-  const featureManifest = manifestContent.replace(
+  const featureManifest = manifestContent
+    .replace(
       `<modid>${modIdentifier}</modid>`,
       `<modid>${modIdentifier}_${feature}</modid>`,
-  ).replace(
-      `<name>${modName}</name>`,
-      `<name>${modName} - ${feature}</name>`,
+    )
+    .replace(`<name>${modName}</name>`, `<name>${modName} - ${feature}</name>`);
+  writeFileSync(
+    join(temporaryBuildDirectory, "mod.manifest"),
+    featureManifest,
+    "utf8",
   );
-  writeFileSync(join(temporaryBuildDirectory, "mod.manifest"), featureManifest, "utf8");
 
   // Create mod.cfg with specific content based on feature
   let modCfgContent;
@@ -239,7 +242,11 @@ function prepareFeatureBuild(feature) {
       console.error(`ERROR: Unknown feature '${feature}'`);
       process.exit(1);
   }
-  writeFileSync(join(temporaryBuildDirectory, "mod.cfg"), modCfgContent, "utf8");
+  writeFileSync(
+    join(temporaryBuildDirectory, "mod.cfg"),
+    modCfgContent,
+    "utf8",
+  );
 }
 
 function buildMainMod() {
