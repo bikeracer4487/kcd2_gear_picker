@@ -8,7 +8,7 @@ test-watch:
 
 dev:
 	bash scripts/build-deploy-start.sh
-dev-random-variant:
+dev-random:
 	bash scripts/build-deploy-start.sh random
 
 prod:
