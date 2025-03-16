@@ -39,7 +39,7 @@ local TalkEndedEvent = {
             --- @type Config
             local config = this.helmetOffDialog:config()
 
-            if config:isHideRangedWeapons() then
+            if config:isRanged() then
                 this.equipment:putOnFirstRangedWeapon()
                 this.equipment:putOnSecondRangedWeapon()
             end

@@ -24,11 +24,13 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.handle")
+        --- @type Config
+        local config = this.helmetOffDialog:config()
 
-        if this.helmetOffDialog.VARIANT == "random" then
+        if config:isRandom() then
             local randomValue = math.random(0, 1)
             if randomValue == 0 then
-                this.log:info("Random check failed, helmet removal aborted")
+                this.log:info("Random check failed, all features aborted")
                 return
             end
         end
@@ -41,10 +43,8 @@ local OnTalkEvent = {
             this:takeOffHeadChainmail()
         end)
 
-        --- @type Config
-        local config = this.helmetOffDialog:config()
 
-        if config:isHideRangedWeapons() then
+        if config:isRanged() then
             this.equipment:takeOffFirstRangedWeapon(function()
                 this:takeOffSecondRangedWeapon()
             end)
