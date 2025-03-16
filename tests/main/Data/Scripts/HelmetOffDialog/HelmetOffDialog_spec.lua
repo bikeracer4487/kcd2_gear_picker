@@ -141,9 +141,9 @@ function makeFactory()
     }
 
     local factory = {}
-    local HelmetOffDialog = dofile("src/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
+    local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
 
-    local Config = dofile("src/Data/Scripts/HelmetOffDialog/Config.lua")
+    local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
     Config = mock(Config, true)
     Config.new = function(self)
         return Config
@@ -151,7 +151,7 @@ function makeFactory()
     Config.new = spy.new(Config.new)
     HelmetOffDialog.ClassRegistry.Config = Config
 
-    local Log = dofile("src/Data/Scripts/HelmetOffDialog/utils/Log.lua")
+    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
     Log = mock(Log, true)
     Log.new = function(self)
         return Log
@@ -159,19 +159,19 @@ function makeFactory()
     Log.new = spy.new(Log.new)
     HelmetOffDialog.ClassRegistry.Log = Log
 
-    local UnequipGear = dofile("src/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
+    local UnequipGear = dofile("src/main/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
     UnequipGear = mock(UnequipGear, true)
     UnequipGear.new = function(self)
         return UnequipGear
     end
     HelmetOffDialog.ClassRegistry.UnequipGear = UnequipGear
 
-    local ItemCategory = dofile("src/Data/Scripts/HelmetOffDialog/ItemCategory.lua")
+    local ItemCategory = dofile("src/main/Data/Scripts/HelmetOffDialog/ItemCategory.lua")
     ItemCategory = mock(ItemCategory, true)
     ItemCategory.new = spy.new(ItemCategory.new)
     HelmetOffDialog.ClassRegistry.ItemCategory = ItemCategory
 
-    local EquippedItem = dofile("src/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
+    local EquippedItem = dofile("src/main/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
     EquippedItem = mock(EquippedItem, true)
     EquippedItem.new = function(self)
         return EquippedItem
@@ -179,7 +179,7 @@ function makeFactory()
     EquippedItem.new = spy.new(EquippedItem.new)
     HelmetOffDialog.ClassRegistry.EquippedItem = EquippedItem
 
-    local Equipment = dofile("src/Data/Scripts/HelmetOffDialog/Equipment.lua")
+    local Equipment = dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
     Equipment = mock(Equipment, true)
     Equipment.new = function(self)
         return Equipment
@@ -187,14 +187,14 @@ function makeFactory()
     Equipment.new = spy.new(Equipment.new)
     HelmetOffDialog.ClassRegistry.Equipment = Equipment
 
-    local UnequipGear = dofile("src/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
+    local UnequipGear = dofile("src/main/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
     UnequipGear = mock(UnequipGear, true)
     UnequipGear.new = spy.new(function(self)
         return UnequipGear
     end)
     HelmetOffDialog.ClassRegistry.UnequipGear = UnequipGear
 
-    local Error = dofile("src/Data/Scripts/HelmetOffDialog/utils/Error.lua")
+    local Error = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Error.lua")
     Error = mock(Error, true)
     Error.new = spy.new(function()
         return Error

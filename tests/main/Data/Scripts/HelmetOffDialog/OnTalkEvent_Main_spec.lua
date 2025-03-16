@@ -38,7 +38,7 @@ describe("coif", function()
 end)
 
 function makeFactory(args)
-    local createFactory = dofile("tests/Data/Scripts/HelmetOffDialog/OnTalkEvent_Factory.lua")
+    local createFactory = dofile("tests/main/Data/Scripts/HelmetOffDialog/OnTalkEvent_Factory.lua")
 
     return createFactory(mock, spy, args)
 end

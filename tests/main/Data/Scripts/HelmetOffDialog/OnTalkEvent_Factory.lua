@@ -1,17 +1,17 @@
 local function makeFactory(mock, spy, args)
-    dofile("src/Data/Scripts/HelmetOffDialog/utils/dd.lua")
-    local mockHelmetOffDialog = dofile("tests/HelmetOffDialogMock.lua")
+    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
+    local mockHelmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")
     local helmetOffDialogFactory = mockHelmetOffDialog(mock, spy)
     local helmetOffDialog = helmetOffDialogFactory.HelmetOffDialog
-    local OnTalkEvent = dofile("src/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
-    local Log = dofile("src/Data/Scripts/HelmetOffDialog/utils/Log.lua")
+    local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
+    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
 
     local log = mock(Log, true)
 
-    local TalkEndedEvent = dofile("src/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
+    local TalkEndedEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
     local talkEndedEvent = mock(TalkEndedEvent, true)
 
-    local Equipment = dofile("src/Data/Scripts/HelmetOffDialog/Equipment.lua")
+    local Equipment = dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
     local equipment = mock(Equipment, true)
 
     equipment.log = function()
@@ -33,7 +33,7 @@ local function makeFactory(mock, spy, args)
         callback()
     end)
 
-    local Config = dofile("src/Data/Scripts/HelmetOffDialog/Config.lua")
+    local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
     --- @type Config
     local config = mock(Config, true)
 
