@@ -2,17 +2,10 @@ Script.LoadScript("Scripts/HelmetOffDialog/HelmetOffDialog.lua")
 
 _G.HelmetOffDialog:init()
 
-local original_Entity_GetPos = Entity.GetPos
-
-function Entity.GetPos(...)
-    local log = HelmetOffDialog:log()
-    log:info("Entity.GetPos")
-    local error = HelmetOffDialog:error()
-
-    error:catch(function()
-        local event = HelmetOffDialog:onTalkEvent()
-        event:handle()
-    end)
-
-    return original_Entity_GetPos(...)
+function HelmetOffDialog:OnGameplayStart(actionName, eventName, argTable)
+    Script.LoadScript("Scripts/HelmetOffDialog/RegisterOnTalkEvents.lua")
 end
+
+UIAction.RegisterEventSystemListener(
+        HelmetOffDialog, "System", "OnGameplayStart", "OnGameplayStart"
+)

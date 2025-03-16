@@ -1,6 +1,8 @@
 local function mockHelmetOffDialog(mock, spy)
     _G.HelmetOffDialog = nil
 
+    _G.UIAction = { RegisterEventSystemListener = function()
+    end }
     _G.Script = {
         SetTimer = function()
         end,

@@ -131,7 +131,7 @@ local HelmetOffDialog = {
             end
         end
         System.LogAlways("$5[" .. HelmetOffDialog.MOD_NAME .. ".INFO] All classes loaded.")
-    end
+    end,
 }
 
 _G.HelmetOffDialog = _G.HelmetOffDialog or HelmetOffDialog

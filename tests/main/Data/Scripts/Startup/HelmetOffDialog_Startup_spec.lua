@@ -18,6 +18,8 @@ function makeFactory()
     end }
     _G.Entity = { GetPos = function()
     end }
+    _G.UIAction = { RegisterEventSystemListener = function()
+    end }
     _G.HelmetOffDialog = nil
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     factory.HelmetOffDialog = mock(HelmetOffDialog, true)
