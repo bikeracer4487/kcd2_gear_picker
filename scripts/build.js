@@ -184,12 +184,25 @@ function packMainData() {
   removeScriptsDirectory();
 }
 
-function packMod(outputFileName) {
+function packMod(outputFileName, feature = null) {
   const finalZipPath = join(
     rootDirectory,
     `${outputFileName}_${modVersion}.zip`,
   );
   if (existsSync(finalZipPath)) rmSync(finalZipPath);
+
+  const modDirName = feature ? `${modIdentifier}_${feature}` : modIdentifier;
+  const modIdDirectory = join(temporaryBuildDirectory, modDirName);
+  mkdirSync(modIdDirectory, { recursive: true });
+
+  const items = readdirSync(temporaryBuildDirectory).filter(
+    (item) => item !== modDirName,
+  );
+  for (const item of items) {
+    const srcPath = join(temporaryBuildDirectory, item);
+    const destPath = join(modIdDirectory, item);
+    renameSync(srcPath, destPath);
+  }
 
   const sevenZipBinary = join(
     rootDirectory,
@@ -198,7 +211,7 @@ function packMod(outputFileName) {
     "linux",
     "7zzs",
   );
-  const sevenZipCommand = `"${sevenZipBinary}" a "${finalZipPath}" "${temporaryBuildDirectory}/*"`;
+  const sevenZipCommand = `"${sevenZipBinary}" a "${finalZipPath}" "${modIdDirectory}"`;
   console.log(`Zipping final mod: ${sevenZipCommand}`);
   execSync(sevenZipCommand);
 
@@ -260,7 +273,7 @@ function buildMainMod() {
 function buildFeatureMod(feature) {
   console.log(`Building feature mod: ${feature}...`);
   prepareFeatureBuild(feature);
-  packMod(`${modName}_${feature}`);
+  packMod(`${modName}_${feature}`, feature);
 }
 
 function buildAllMods() {
