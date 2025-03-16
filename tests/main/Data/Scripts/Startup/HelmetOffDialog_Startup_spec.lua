@@ -16,6 +16,8 @@ function makeFactory()
     local factory = {}
     _G.Script = { LoadScript = function()
     end }
+    _G.Entity = { GetPos = function()
+    end }
     _G.HelmetOffDialog = nil
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     factory.HelmetOffDialog = mock(HelmetOffDialog, true)

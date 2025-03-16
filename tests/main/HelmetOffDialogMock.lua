@@ -11,12 +11,12 @@ local function mockHelmetOffDialog(mock, spy)
         LogAlways = function()
         end
     }
-    _G.BasicAIActions = {
-        OnTalk = function(self)
+    _G.Entity = {
+        GetPos = function(self)
             return "lorem-ipsum"
         end
     }
-    local mockedBasicAIActions = mock(_G.BasicAIActions, true)
+    local mockedEntity = mock(_G.Entity, true)
 
     dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Error.lua")
@@ -49,7 +49,7 @@ local function mockHelmetOffDialog(mock, spy)
 
     return {
         HelmetOffDialog = HelmetOffDialog,
-        mockedBasicAIActions = mockedBasicAIActions
+        mockedEntity = mockedEntity
     }
 end
 
