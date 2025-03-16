@@ -3,6 +3,9 @@
 ### v1.3.0 16-Mar-25
 - feat: Added support for helmet removal during cutscenes and dialogues initiated by NPCs.
 - feat: Added support for helmet removal when talking to Mutt in KCD 1.
+
+### v1.2.2 16-Mar-25
+- fix: Fixed an issue where the mod was not ready to handle the on talk events.
  
 ### v1.2.1 16-Mar-25
 - feat: Support for KCD 1 & Steam Workshop for the new structure supporting multiple optional mods.
