@@ -122,6 +122,7 @@ local HelmetOffDialog = {
             string.format("Scripts/%s/ItemCategory.lua", modName),
             string.format("Scripts/%s/utils/dd.lua", modName),
             string.format("Scripts/%s/utils/Inspect.lua", modName),
+            string.format("Scripts/%s/SettingsCommands.lua", modName),
         }
         for _, script in ipairs(scripts) do
             local result = Script.LoadScript(script)
