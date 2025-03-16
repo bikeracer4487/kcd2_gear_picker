@@ -5,7 +5,7 @@
         <modid>helmet_off_dialog_random</modid>
         <description>Takes off the helmet, head chainmail (KCD 1), and coif in random dialogues (e.g., gear might come off in one conversation but stay on in the next).</description>
         <author>Rizarttt</author>
-        <version>1.2.1</version>
+        <version>1.3.0</version>
         <created_on>01.03.2025</created_on>
     </info>
 </kcd_mod>
