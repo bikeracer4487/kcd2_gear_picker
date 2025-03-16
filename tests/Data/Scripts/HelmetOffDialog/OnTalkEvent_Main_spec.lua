@@ -1,4 +1,4 @@
-describe("Main variant", function()
+describe("Main", function()
     it("takes it off", function()
         local factory = makeFactory()
         factory.onTalkEvent:handle()
