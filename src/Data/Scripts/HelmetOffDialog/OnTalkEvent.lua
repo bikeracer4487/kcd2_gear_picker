@@ -10,10 +10,10 @@ local OnTalkEvent = {
             return helmetOffDialog.__factories.onTalkEvent
         end
         local instance = {
+            helmetOffDialog = helmetOffDialog,
             log = log,
             equipment = equipment,
-            helmetOffDialog = helmetOffDialog,
-            talkEndedEvent = TalkEndedEvent,
+            talkEndedEvent = TalkEndedEvent
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.onTalkEvent = instance
