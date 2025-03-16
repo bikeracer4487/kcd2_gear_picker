@@ -10,10 +10,10 @@ local OnTalkEvent = {
             return helmetOffDialog.__factories.onTalkEvent
         end
         local instance = {
+            helmetOffDialog = helmetOffDialog,
             log = log,
             equipment = equipment,
-            helmetOffDialog = helmetOffDialog,
-            talkEndedEvent = TalkEndedEvent,
+            talkEndedEvent = TalkEndedEvent
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.onTalkEvent = instance
@@ -24,24 +24,31 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.handle")
+        --- @type Config
+        local config = this.helmetOffDialog:config()
 
-        if this.helmetOffDialog.VERSION == "random" then
+        if config:isRandom() then
             local randomValue = math.random(0, 1)
             if randomValue == 0 then
-                this.log:info("Random check failed, helmet removal aborted")
+                this.log:info("Random check failed, all features aborted")
                 return
             end
         end
 
-        local callback = function()
-            if this.helmetOffDialog.VERSION == "helmet_only" then
+        this.equipment:takeOffHelmet(function()
+            if config:isHelmetOnly() then
                 this.talkEndedEvent:listen()
                 return
             end
             this:takeOffHeadChainmail()
-        end
+        end)
 
-        this.equipment:takeOffHelmet(callback)
+
+        if config:isRanged() then
+            this.equipment:takeOffFirstRangedWeapon(function()
+                this:takeOffSecondRangedWeapon()
+            end)
+        end
     end,
 
     takeOffHeadChainmail = function(self)
@@ -58,6 +65,15 @@ local OnTalkEvent = {
         local this = self
         this.log:info("OnTalkEvent.takeOffCoif")
         this.equipment:takeOffCoif(function()
+            this.talkEndedEvent:listen()
+        end)
+    end,
+
+    takeOffSecondRangedWeapon = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.log:info("OnTalkEvent.takeOffSecondRangedWeapon")
+        this.equipment:takeOffSecondRangedWeapon(function()
             this.talkEndedEvent:listen()
         end)
     end

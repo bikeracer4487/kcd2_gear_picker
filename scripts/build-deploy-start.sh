@@ -6,26 +6,26 @@ exeName="KingdomCome.exe"
 exeSubPath="Bin/Win64MasterMasterSteamPGO/${exeName}"
 modsPath="${gamePath}/Mods"
 modOrderFile="$modsPath/mod_order.txt"
-defaultVersion="main"
+defaultVariant="main"
 
-version="${1:-$defaultVersion}"
+variant="${1:-$defaultVariant}"
 
 taskkill.exe /F /IM "${exeName}"
 sleep 1
 
-echo "Running dev build and deploy (version: $version)..."
+echo "Running dev build and deploy (variant: $variant)..."
 
 cd "$projectRoot" || { echo "ERROR: Cannot change to $projectRoot"; exit 1; }
 
 manifestFile="$projectRoot/src/mod.manifest"
 modIdentifier=$(grep -oP '<modid>\K[^<]+' "$manifestFile")
 modVersion=$(grep -oP '<version>\K[^<]+' "$manifestFile")
-[ "$modIdentifier" ] && [ "$modVersion" ] || { echo "ERROR: Could not extract modid or version from $manifestFile"; exit 1; }
+[ "$modIdentifier" ] && [ "$modVersion" ] || { echo "ERROR: Could not extract modid or variant from $manifestFile"; exit 1; }
 
-zipFileName="${modIdentifier}_${version}_${modVersion}.zip"
+zipFileName="${modIdentifier}_${variant}_${modVersion}.zip"
 zipFilePath="./$zipFileName"
 
-docker compose run --rm -e MODE="dev" -e VERSION="$version" ci-cd
+docker compose run --rm -e MODE="dev" -e VARIANT="$variant" ci-cd
 [ -f "$zipFilePath" ] || { echo "ERROR: ZIP $zipFilePath not found!"; exit 1; }
 docker compose down ci-cd -v
 

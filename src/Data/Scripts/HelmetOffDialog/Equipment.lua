@@ -3,6 +3,8 @@
 --- @field putOnCoif fun(self: Equipment)
 --- @field putOnHelmet fun(self: Equipment)
 --- @field putOnHeadChainmail fun(self: Equipment)
+--- @field putOnFirstRangedWeapon fun(self: Equipment)
+--- @field putOnSecondRangedWeapon fun(self: Equipment)
 --- @field log Log
 --- @field unequipGear UnequipGear
 local Equipment = {
@@ -18,7 +20,9 @@ local Equipment = {
             helmetOffDialog = helmetOffDialog,
             unequippedHelmet = nil,
             unequippedHeadChainmail = nil,
-            unequippedCoif = nil
+            unequippedCoif = nil,
+            firstRangedWeapon = nil,
+            secondRangedWeapon = nil
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.equipment = instance
@@ -75,12 +79,47 @@ local Equipment = {
     takeOffCoif = function(self, callback)
         self.log:info("Equipment.takeOffCoif")
         self.unequipGear:takeOff("Coif", function(unequippedCoif)
-            if unequippedCoif  then
+            if unequippedCoif then
                 self.unequippedCoif = unequippedCoif
             end
             callback()
         end)
-    end
+    end,
+
+    takeOffFirstRangedWeapon = function(self, callback)
+        self.log:info("Equipment.takeOffFirstRangedWeapon")
+        self.unequipGear:takeOff("RangedWeapon", function(unequippedRangedWeapon)
+            if unequippedRangedWeapon then
+                self.firstRangedWeapon = unequippedRangedWeapon
+            end
+            callback()
+        end)
+    end,
+    takeOffSecondRangedWeapon = function(self, callback)
+        self.log:info("Equipment.takeOffSecondRangedWeapon")
+        self.unequipGear:takeOff("RangedWeapon", function(unequippedRangedWeapon)
+            if unequippedRangedWeapon then
+                self.secondRangedWeapon = unequippedRangedWeapon
+            end
+            callback()
+        end)
+    end,
+
+    putOnFirstRangedWeapon = function(self)
+        self.log:info("Equipment.putOnFirstRangedWeapon")
+        if self.firstRangedWeapon then
+            self.player.actor:EquipInventoryItem(self.firstRangedWeapon)
+            self.firstRangedWeapon = nil
+        end
+    end,
+    putOnSecondRangedWeapon = function(self)
+        self.log:info("Equipment.putOnSecondRangedWeapon")
+        if self.secondRangedWeapon then
+            self.player.actor:EquipInventoryItem(self.secondRangedWeapon)
+            self.secondRangedWeapon = nil
+        end
+    end,
+
 }
 
 _G.HelmetOffDialog.ClassRegistry.Equipment = Equipment

@@ -17,5 +17,5 @@ services:
       context: .
       dockerfile: docker/nodejs.Dockerfile
     volumes: [".:/app"]
-    environment: ["MODE=dev", "VERSION=main"]
-    command: node scripts/build.js --env=${MODE} --version=${VERSION}
+    environment: ["MODE=dev", "TARGET=main"]
+    command: node scripts/build.js --env=${MODE} --TARGET=${TARGET}

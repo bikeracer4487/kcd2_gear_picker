@@ -2,7 +2,6 @@
 local HelmetOffDialog = {
     MOD_NAME = "__DYNAMICALLY_INJECTED__",
     HOD_ENVIRONMENT = "__DYNAMICALLY_INJECTED__",
-    VERSION = "__DYNAMICALLY_INJECTED__",
 
     ClassRegistry = {},
     __factories = {},
@@ -134,6 +133,6 @@ local HelmetOffDialog = {
     end
 }
 
-_G.HelmetOffDialog = HelmetOffDialog
+_G.HelmetOffDialog = _G.HelmetOffDialog or HelmetOffDialog
 
 return HelmetOffDialog;

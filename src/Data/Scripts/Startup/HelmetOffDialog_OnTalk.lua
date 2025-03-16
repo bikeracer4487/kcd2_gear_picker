@@ -9,5 +9,6 @@ function BasicAIActions:OnTalk(...)
         local event = HelmetOffDialog:onTalkEvent()
         event:handle()
     end)
+
     return original_BasicAIActions_onTalk(self, ...)
 end

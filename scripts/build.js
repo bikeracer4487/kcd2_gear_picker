@@ -20,21 +20,21 @@ const environment =
   args.find((arg) => arg.startsWith("--env="))?.split("=")[1] ||
   process.env.MODE ||
   "dev";
-const version =
-  args.find((arg) => arg.startsWith("--version="))?.split("=")[1] ||
-  process.env.VERSION ||
-  "main";
+const target =
+  args.find((arg) => arg.startsWith("--target="))?.split("=")[1] ||
+  process.env.TARGET ||
+  "all";
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
-const validVersions = ["main", "random", "helmet_only"];
+const validTargets = ["all", "main", "random", "ranged", "helmet_only"];
 
 if (isHelpRequested) {
   console.log(`
-Usage: node build.js [--env=prod|dev] [--version=main|random|helmet_only] [--help]
---env=prod|dev                      Sets the environment (default: prod).
---version=main|random|helmet_only   Sets the version (default: main).
---help                              Displays this help message.
+Usage: node build.js [--env=prod|dev] [--target=all|main|random|ranged|helmet_only] [--help]
+--env=prod|dev                     Sets the environment (default: dev).
+--target=all|main|random|ranged|helmet_only  Sets the build target (default: all).
+--help                             Displays this help message.
 `);
   process.exit(0);
 }
@@ -46,9 +46,9 @@ if (!validEnvironments.includes(environment)) {
   process.exit(1);
 }
 
-if (!validVersions.includes(version)) {
+if (!validTargets.includes(target)) {
   console.error(
-    `ERROR: Invalid --version value '${version}'. Must be one of: ${validVersions.join(", ")}`,
+    `ERROR: Invalid --target value '${target}'. Must be one of: ${validTargets.join(", ")}`,
   );
   process.exit(1);
 }
@@ -57,6 +57,7 @@ const rootDirectory = resolve(__dirname, "..");
 const sourceDirectory = join(rootDirectory, "src");
 const manifestFile = join(sourceDirectory, "mod.manifest");
 const temporaryBuildDirectory = join(rootDirectory, "temp_build");
+const features = ["random", "ranged", "helmet_only"];
 
 if (!existsSync(manifestFile)) {
   console.error("ERROR: mod.manifest not found in src!");
@@ -78,7 +79,7 @@ function cleanBuildDirectory() {
   mkdirSync(temporaryBuildDirectory, { recursive: true });
 }
 
-function prepareBuild() {
+function prepareMainBuild() {
   cpSync(sourceDirectory, temporaryBuildDirectory, { recursive: true });
 
   const luaFilePath = join(
@@ -98,8 +99,7 @@ function prepareBuild() {
       /HOD_ENVIRONMENT = "([^"]+)"/,
       `HOD_ENVIRONMENT = "${environment}"`,
     )
-    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`)
-    .replace(/VERSION = "([^"]+)"/, `VERSION = "${version}"`);
+    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`);
   writeFileSync(luaFilePath, luaContent, "utf8");
 }
 
@@ -111,7 +111,6 @@ function removeScriptsDirectory() {
 }
 
 function compressToPak(dataSourceDirectory, pakOutputPath) {
-  // Build file list (Python's build_filelist)
   const fileList = [];
 
   function buildFileList(dir) {
@@ -120,9 +119,8 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
       const fullPath = join(dir, item);
       const stat = statSync(fullPath);
       if (stat.isDirectory()) {
-        buildFileList(fullPath); // Recursive
+        buildFileList(fullPath);
       } else if (!fullPath.toLowerCase().endsWith(".pak")) {
-        // Skip nested paks
         fileList.push(fullPath);
       }
     }
@@ -135,8 +133,7 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
     process.exit(1);
   }
 
-  // Pak creation with size splitting
-  const maxSizeBytes = 2 * 1024 * 1024 * 1024; // 2GB limit (optional)
+  const maxSizeBytes = 2 * 1024 * 1024 * 1024;
   let fileIdx = 0;
   let pakPartNo = 0;
   let totalFiles = fileList.length;
@@ -156,11 +153,10 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
       if (pakSize + fileSize > maxSizeBytes) break;
       pakSize += fileSize;
       const relPath = relative(dataSourceDirectory, file);
-      filesToPack.push(relPath); // Use relative paths
+      filesToPack.push(relPath);
       fileIdx++;
     }
 
-    // Updated zip command with -9 (max compression) and -X (no extra attributes) for KCD compatibility
     const cmd = `zip -r -9 -X "${pakPath}" ${filesToPack.map((f) => `"${f}"`).join(" ")}`;
     console.log(`Creating pak part ${pakPartNo}: ${cmd}`);
     execSync(cmd, { cwd: dataSourceDirectory, stdio: "inherit" });
@@ -172,7 +168,6 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
 
     if (fileIdx < totalFiles) {
       if (pakPartNo === 0) {
-        // Rename first pak to -part0
         const newPath = pakOutputPath.replace(".pak", "-part0.pak");
         renameSync(pakPath, newPath);
       }
@@ -181,21 +176,33 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
   }
 }
 
-function packData() {
+function packMainData() {
   const dataDirectory = join(temporaryBuildDirectory, "Data");
   const modPakFile = join(dataDirectory, `${modIdentifier}.pak`);
 
   compressToPak(dataDirectory, modPakFile);
-
   removeScriptsDirectory();
 }
 
-function packMod(outputFileName) {
+function packMod(outputFileName, feature = null) {
   const finalZipPath = join(
     rootDirectory,
     `${outputFileName}_${modVersion}.zip`,
   );
   if (existsSync(finalZipPath)) rmSync(finalZipPath);
+
+  const modDirName = feature ? `${modIdentifier}_${feature}` : modIdentifier;
+  const modIdDirectory = join(temporaryBuildDirectory, modDirName);
+  mkdirSync(modIdDirectory, { recursive: true });
+
+  const items = readdirSync(temporaryBuildDirectory).filter(
+    (item) => item !== modDirName,
+  );
+  for (const item of items) {
+    const srcPath = join(temporaryBuildDirectory, item);
+    const destPath = join(modIdDirectory, item);
+    renameSync(srcPath, destPath);
+  }
 
   const sevenZipBinary = join(
     rootDirectory,
@@ -204,7 +211,7 @@ function packMod(outputFileName) {
     "linux",
     "7zzs",
   );
-  const sevenZipCommand = `"${sevenZipBinary}" a "${finalZipPath}" "${temporaryBuildDirectory}/*"`;
+  const sevenZipCommand = `"${sevenZipBinary}" a "${finalZipPath}" "${modIdDirectory}"`;
   console.log(`Zipping final mod: ${sevenZipCommand}`);
   execSync(sevenZipCommand);
 
@@ -215,16 +222,83 @@ function packMod(outputFileName) {
   return finalZipPath;
 }
 
-if (environment === "prod") {
-  console.log(`Building production version (${version})...`);
+function prepareFeatureBuild(feature) {
   cleanBuildDirectory();
-  prepareBuild();
-  packData();
-  packMod(`${modName}_${version}`);
-} else if (environment === "dev") {
-  console.log(`Building development version (${version})...`);
+  mkdirSync(temporaryBuildDirectory, { recursive: true });
+
+  // Modify manifest for feature
+  const featureManifest = manifestContent
+    .replace(
+      `<modid>${modIdentifier}</modid>`,
+      `<modid>${modIdentifier}_${feature}</modid>`,
+    )
+    .replace(`<name>${modName}</name>`, `<name>${modName} - ${feature}</name>`);
+  writeFileSync(
+    join(temporaryBuildDirectory, "mod.manifest"),
+    featureManifest,
+    "utf8",
+  );
+
+  // Create mod.cfg with specific content based on feature
+  let modCfgContent;
+  switch (feature) {
+    case "random":
+      modCfgContent = `helmet_off_dialog__set_random = true`;
+      break;
+    case "ranged":
+      modCfgContent = `helmet_off_dialog__set_ranged = true`;
+      break;
+    case "helmet_only":
+      modCfgContent = `helmet_off_dialog__set_helmet_only = true`;
+      break;
+    default:
+      console.error(`ERROR: Unknown feature '${feature}'`);
+      process.exit(1);
+  }
+  writeFileSync(
+    join(temporaryBuildDirectory, "mod.cfg"),
+    modCfgContent,
+    "utf8",
+  );
+}
+
+function buildMainMod() {
+  console.log(`Building main mod...`);
   cleanBuildDirectory();
-  prepareBuild();
-  packData();
-  packMod(`${modName}_${version}`);
+  prepareMainBuild();
+  packMainData();
+  packMod(`${modName}_main`);
+}
+
+function buildFeatureMod(feature) {
+  console.log(`Building feature mod: ${feature}...`);
+  prepareFeatureBuild(feature);
+  packMod(`${modName}_${feature}`, feature);
+}
+
+function buildAllMods() {
+  buildMainMod();
+  for (const feature of features) {
+    buildFeatureMod(feature);
+  }
+}
+
+// Execute based on target
+if (environment === "prod" || environment === "dev") {
+  switch (target) {
+    case "all":
+      buildAllMods();
+      break;
+    case "main":
+      buildMainMod();
+      break;
+    case "random":
+    case "ranged":
+    case "helmet_only":
+      buildFeatureMod(target);
+      break;
+    default:
+      console.error(`ERROR: Unhandled target '${target}'`);
+      process.exit(1);
+  }
 }
