@@ -20,20 +20,20 @@ const environment =
   args.find((arg) => arg.startsWith("--env="))?.split("=")[1] ||
   process.env.MODE ||
   "dev";
-const version =
-  args.find((arg) => arg.startsWith("--version="))?.split("=")[1] ||
-  process.env.VERSION ||
+const variant =
+  args.find((arg) => arg.startsWith("--variant="))?.split("=")[1] ||
+  process.env.VARIANT ||
   "main";
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
-const validVersions = ["main", "random", "helmet_only"];
+const validVariant = ["main", "random", "helmet_only"];
 
 if (isHelpRequested) {
   console.log(`
-Usage: node build.js [--env=prod|dev] [--version=main|random|helmet_only] [--help]
+Usage: node build.js [--env=prod|dev] [--variant=main|random|helmet_only] [--help]
 --env=prod|dev                      Sets the environment (default: prod).
---version=main|random|helmet_only   Sets the version (default: main).
+--variant=main|random|helmet_only   Sets the variant (default: main).
 --help                              Displays this help message.
 `);
   process.exit(0);
@@ -46,9 +46,9 @@ if (!validEnvironments.includes(environment)) {
   process.exit(1);
 }
 
-if (!validVersions.includes(version)) {
+if (!validVariant.includes(variant)) {
   console.error(
-    `ERROR: Invalid --version value '${version}'. Must be one of: ${validVersions.join(", ")}`,
+    `ERROR: Invalid --variant value '${variant}'. Must be one of: ${validVariant.join(", ")}`,
   );
   process.exit(1);
 }
@@ -99,7 +99,7 @@ function prepareBuild() {
       `HOD_ENVIRONMENT = "${environment}"`,
     )
     .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`)
-    .replace(/VERSION = "([^"]+)"/, `VERSION = "${version}"`);
+    .replace(/VARIANT = "([^"]+)"/, `VARIANT = "${variant}"`);
   writeFileSync(luaFilePath, luaContent, "utf8");
 }
 
@@ -216,15 +216,15 @@ function packMod(outputFileName) {
 }
 
 if (environment === "prod") {
-  console.log(`Building production version (${version})...`);
+  console.log(`Building production variant (${variant})...`);
   cleanBuildDirectory();
   prepareBuild();
   packData();
-  packMod(`${modName}_${version}`);
+  packMod(`${modName}_${variant}`);
 } else if (environment === "dev") {
-  console.log(`Building development version (${version})...`);
+  console.log(`Building development variant (${variant})...`);
   cleanBuildDirectory();
   prepareBuild();
   packData();
-  packMod(`${modName}_${version}`);
+  packMod(`${modName}_${variant}`);
 }

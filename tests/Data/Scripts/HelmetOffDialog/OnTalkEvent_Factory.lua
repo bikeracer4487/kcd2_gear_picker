@@ -21,17 +21,19 @@ local function makeFactory(mock, spy, args)
     end) }
 
     args = args or {}
-    if args.helmetOnlyVersion then
-        helmetOffDialog.VERSION = "helmet_only"
-    elseif args.randomVersion then
-        helmetOffDialog.VERSION = "random"
+    if args.helmetOnlyVariant then
+        helmetOffDialog.VARIANT = "helmet_only"
+    elseif args.randomVariant then
+        helmetOffDialog.VARIANT = "random"
         if args.mockMathRandomToTruthy ~= nil then
             math.random = function()
                 return args.mockMathRandomToTruthy and 1 or 0
             end
         end
+    elseif args.rangedWeaponsVariant then
+            helmetOffDialog.VARIANT = "helmet_only"
     else
-        helmetOffDialog.VERSION = "default"
+        helmetOffDialog.VARIANT = "default"
     end
 
     local onTalkEvent = OnTalkEvent:new(helmetOffDialog, log, equipment, talkEndedEvent)

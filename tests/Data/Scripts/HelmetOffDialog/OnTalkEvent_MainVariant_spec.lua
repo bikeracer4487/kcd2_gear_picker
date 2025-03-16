@@ -1,4 +1,4 @@
-describe("helmet: ", function()
+describe("Main variant", function()
     it("takes it off", function()
         local factory = makeFactory()
         factory.onTalkEvent:handle()

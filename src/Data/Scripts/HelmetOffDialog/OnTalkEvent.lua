@@ -25,7 +25,7 @@ local OnTalkEvent = {
         local this = self
         this.log:info("OnTalkEvent.handle")
 
-        if this.helmetOffDialog.VERSION == "random" then
+        if this.helmetOffDialog.VARIANT == "random" then
             local randomValue = math.random(0, 1)
             if randomValue == 0 then
                 this.log:info("Random check failed, helmet removal aborted")
@@ -34,7 +34,7 @@ local OnTalkEvent = {
         end
 
         local callback = function()
-            if this.helmetOffDialog.VERSION == "helmet_only" then
+            if this.helmetOffDialog.VARIANT == "helmet_only" then
                 this.talkEndedEvent:listen()
                 return
             end
