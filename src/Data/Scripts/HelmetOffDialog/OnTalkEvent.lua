@@ -33,15 +33,18 @@ local OnTalkEvent = {
             end
         end
 
-        local callback = function()
+        this.equipment:takeOffHelmet(function()
             if this.helmetOffDialog.VARIANT == "helmet_only" then
                 this.talkEndedEvent:listen()
                 return
             end
             this:takeOffHeadChainmail()
-        end
+        end)
 
-        this.equipment:takeOffHelmet(callback)
+        if this.helmetOffDialog.VARIANT == "ranged_weapons" then
+            this.equipment:takeOffFirstRangedWeapon(function()
+            end)
+        end
     end,
 
     takeOffHeadChainmail = function(self)

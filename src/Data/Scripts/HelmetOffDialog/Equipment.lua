@@ -75,12 +75,15 @@ local Equipment = {
     takeOffCoif = function(self, callback)
         self.log:info("Equipment.takeOffCoif")
         self.unequipGear:takeOff("Coif", function(unequippedCoif)
-            if unequippedCoif  then
+            if unequippedCoif then
                 self.unequippedCoif = unequippedCoif
             end
             callback()
         end)
-    end
+    end,
+
+    takeOffFirstRangedWeapon = function(self, callback)
+    end,
 }
 
 _G.HelmetOffDialog.ClassRegistry.Equipment = Equipment

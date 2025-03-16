@@ -1,0 +1,23 @@
+describe("Ranged weapons variant", function()
+    it("takes off first ranged weapon", function()
+        local factory = makeFactory({ variant = "ranged_weapons" })
+        factory.onTalkEvent:handle()
+        assert.spy(factory.equipment.takeOffFirstRangedWeapon).was_called(1)
+    end)
+    it("does not take off ranged weapon if not enabled", function()
+        local factory = makeFactory()
+        factory.onTalkEvent:handle()
+        assert.spy(factory.equipment.takeOffFirstRangedWeapon).was_not_called()
+    end)
+    --it("takes off second ranged weapon", function()
+    --    local factory = makeFactory({ variant = "ranged_weapons" })
+    --    factory.onTalkEvent:handle()
+    --    assert.spy(factory.equipment.takeOffSecondRangedWeapon).was_called(1)
+    --end)
+end)
+
+function makeFactory(args)
+    local createFactory = dofile("tests/Data/Scripts/HelmetOffDialog/OnTalkEvent_Factory.lua")
+
+    return createFactory(mock, spy, args)
+end
