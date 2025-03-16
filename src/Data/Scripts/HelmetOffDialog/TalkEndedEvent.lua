@@ -35,6 +35,14 @@ local TalkEndedEvent = {
             this.log:info("Starting put gear on.")
             this.equipment:putOnCoif()
             this:queuePutOnHeadChainmail()
+
+            --- @type Config
+            local config = this.helmetOffDialog:config()
+
+            if config:isHideRangedWeapons() then
+                this.equipment:putOnFirstRangedWeapon()
+                this.equipment:putOnSecondRangedWeapon()
+            end
         end)
     end,
 
@@ -61,7 +69,7 @@ local TalkEndedEvent = {
         end, function()
             this.equipment:putOnHelmet()
         end)
-    end
+    end,
 }
 
 _G.HelmetOffDialog.ClassRegistry.TalkEndedEvent = TalkEndedEvent
