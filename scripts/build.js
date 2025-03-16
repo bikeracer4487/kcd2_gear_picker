@@ -106,7 +106,7 @@ function prepareModBuild(modName) {
           /HOD_ENVIRONMENT = "([^"]+)"/,
           `HOD_ENVIRONMENT = "${environment}"`,
         )
-        .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${displayName}"`);
+        .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modIdentifier}"`);
       writeFileSync(luaFilePath, luaContent, "utf8");
     }
   }
@@ -244,8 +244,7 @@ function packMod(modIdentifier, modVersion) {
 function buildMod(modType) {
   console.log(`Building ${modType} mod...`);
   cleanBuildDirectory();
-  const modDir = modType === "main" ? "main" : modType;
-  const { modIdentifier, modVersion } = prepareModBuild(modDir);
+  const { modIdentifier, modVersion } = prepareModBuild(modType);
 
   packModData(modIdentifier);
   packMod(modIdentifier, modVersion);
