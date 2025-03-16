@@ -23,17 +23,17 @@ const environment =
 const target =
   args.find((arg) => arg.startsWith("--target="))?.split("=")[1] ||
   process.env.TARGET ||
-  "all";
+  "main";
 const isHelpRequested = args.includes("--help");
 
 const validEnvironments = ["prod", "dev"];
-const validTargets = ["all", "main", "random", "ranged", "helmet_only"];
+const validTargets = ["main", "random", "ranged", "helmet_only"];
 
 if (isHelpRequested) {
   console.log(`
-Usage: node build.js [--env=prod|dev] [--target=all|main|random|ranged|helmet_only] [--help]
+Usage: node build.js [--env=prod|dev] [--target=main|random|ranged|helmet_only] [--help]
 --env=prod|dev                     Sets the environment (default: dev).
---target=all|main|random|ranged|helmet_only  Sets the build target (default: all).
+--target=main|random|ranged|helmet_only  Sets the build target (default: main).
 --help                             Displays this help message.
 `);
   process.exit(0);
@@ -55,52 +55,63 @@ if (!validTargets.includes(target)) {
 
 const rootDirectory = resolve(__dirname, "..");
 const sourceDirectory = join(rootDirectory, "src");
-const manifestFile = join(sourceDirectory, "mod.manifest");
 const temporaryBuildDirectory = join(rootDirectory, "temp_build");
-const features = ["random", "ranged", "helmet_only"];
-
-if (!existsSync(manifestFile)) {
-  console.error("ERROR: mod.manifest not found in src!");
-  process.exit(1);
-}
-
-const manifestContent = readFileSync(manifestFile, "utf8");
-const modIdentifier = /<modid>(.+?)<\/modid>/.exec(manifestContent)?.[1];
-const modVersion = /<version>(.+?)<\/version>/.exec(manifestContent)?.[1];
-const modName = /<name>(.+?)<\/name>/.exec(manifestContent)?.[1];
-
-if (!modIdentifier || !modVersion || !modName) {
-  console.error("ERROR: Missing required fields in mod.manifest.");
-  process.exit(1);
-}
+const eulaFile = join(sourceDirectory, "modding_eula.txt");
 
 function cleanBuildDirectory() {
   rmSync(temporaryBuildDirectory, { recursive: true, force: true });
   mkdirSync(temporaryBuildDirectory, { recursive: true });
 }
 
-function prepareMainBuild() {
-  cpSync(sourceDirectory, temporaryBuildDirectory, { recursive: true });
-
-  const luaFilePath = join(
-    temporaryBuildDirectory,
-    "Data",
-    "Scripts",
-    "HelmetOffDialog",
-    `HelmetOffDialog.lua`,
-  );
-  if (!existsSync(luaFilePath)) {
-    console.error(`ERROR: '${luaFilePath}' not found.`);
+function prepareModBuild(modName) {
+  const modSourceDir = join(sourceDirectory, modName);
+  if (!existsSync(modSourceDir)) {
+    console.error(`ERROR: Source directory '${modSourceDir}' not found.`);
     process.exit(1);
   }
 
-  const luaContent = readFileSync(luaFilePath, "utf8")
-    .replace(
-      /HOD_ENVIRONMENT = "([^"]+)"/,
-      `HOD_ENVIRONMENT = "${environment}"`,
-    )
-    .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${modName}"`);
-  writeFileSync(luaFilePath, luaContent, "utf8");
+  cpSync(modSourceDir, temporaryBuildDirectory, { recursive: true });
+
+  const manifestFile = join(temporaryBuildDirectory, "mod.manifest");
+  if (!existsSync(manifestFile)) {
+    console.error(`ERROR: mod.manifest not found in ${modName}!`);
+    process.exit(1);
+  }
+
+  const manifestContent = readFileSync(manifestFile, "utf8");
+  const modIdentifier = /<modid>(.+?)<\/modid>/.exec(manifestContent)?.[1];
+  const modVersion = /<version>(.+?)<\/version>/.exec(manifestContent)?.[1];
+  const displayName = /<name>(.+?)<\/name>/.exec(manifestContent)?.[1];
+
+  if (!modIdentifier || !modVersion || !displayName) {
+    console.error(
+      `ERROR: Missing required fields in ${modName}'s mod.manifest`,
+    );
+    process.exit(1);
+  }
+
+  // Only modify HelmetOffDialog.lua for main mod
+  if (modName === "main") {
+    const luaFilePath = join(
+      temporaryBuildDirectory,
+      "Data",
+      "Scripts",
+      "HelmetOffDialog",
+      `HelmetOffDialog.lua`,
+    );
+
+    if (existsSync(luaFilePath)) {
+      const luaContent = readFileSync(luaFilePath, "utf8")
+        .replace(
+          /HOD_ENVIRONMENT = "([^"]+)"/,
+          `HOD_ENVIRONMENT = "${environment}"`,
+        )
+        .replace(/MOD_NAME = "([^"]+)"/, `MOD_NAME = "${displayName}"`);
+      writeFileSync(luaFilePath, luaContent, "utf8");
+    }
+  }
+
+  return { modIdentifier, modVersion, displayName };
 }
 
 function removeScriptsDirectory() {
@@ -110,7 +121,7 @@ function removeScriptsDirectory() {
   }
 }
 
-function compressToPak(dataSourceDirectory, pakOutputPath) {
+function compressToPak(dataDirectory, pakOutputPath) {
   const fileList = [];
 
   function buildFileList(dir) {
@@ -126,10 +137,10 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
     }
   }
 
-  buildFileList(dataSourceDirectory);
+  buildFileList(dataDirectory);
 
   if (fileList.length === 0) {
-    console.error(`ERROR: No files found in '${dataSourceDirectory}' to pack.`);
+    console.error(`ERROR: No files found in '${dataDirectory}' to pack.`);
     process.exit(1);
   }
 
@@ -152,14 +163,14 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
       const fileSize = statSync(file).size;
       if (pakSize + fileSize > maxSizeBytes) break;
       pakSize += fileSize;
-      const relPath = relative(dataSourceDirectory, file);
+      const relPath = relative(dataDirectory, file);
       filesToPack.push(relPath);
       fileIdx++;
     }
 
     const cmd = `zip -r -9 -X "${pakPath}" ${filesToPack.map((f) => `"${f}"`).join(" ")}`;
     console.log(`Creating pak part ${pakPartNo}: ${cmd}`);
-    execSync(cmd, { cwd: dataSourceDirectory, stdio: "inherit" });
+    execSync(cmd, { cwd: dataDirectory, stdio: "inherit" });
 
     if (!existsSync(pakPath)) {
       console.error(`ERROR: Failed to create '${pakPath}'.`);
@@ -176,27 +187,35 @@ function compressToPak(dataSourceDirectory, pakOutputPath) {
   }
 }
 
-function packMainData() {
+function packModData(modId) {
   const dataDirectory = join(temporaryBuildDirectory, "Data");
-  const modPakFile = join(dataDirectory, `${modIdentifier}.pak`);
+  const modPakFile = join(dataDirectory, `${modId}.pak`);
 
-  compressToPak(dataDirectory, modPakFile);
-  removeScriptsDirectory();
+  if (existsSync(dataDirectory)) {
+    compressToPak(dataDirectory, modPakFile);
+    removeScriptsDirectory();
+  }
 }
 
-function packMod(outputFileName, feature = null) {
+function packMod(modIdentifier, modVersion) {
   const finalZipPath = join(
     rootDirectory,
-    `${outputFileName}_${modVersion}.zip`,
+    `${modIdentifier}_${modVersion}.zip`,
   );
   if (existsSync(finalZipPath)) rmSync(finalZipPath);
 
-  const modDirName = feature ? `${modIdentifier}_${feature}` : modIdentifier;
-  const modIdDirectory = join(temporaryBuildDirectory, modDirName);
+  const modIdDirectory = join(temporaryBuildDirectory, modIdentifier);
   mkdirSync(modIdDirectory, { recursive: true });
 
+  // Require modding_eula.txt to exist
+  if (!existsSync(eulaFile)) {
+    console.error(`ERROR: Required file 'src/modding_eula.txt' not found.`);
+    process.exit(1);
+  }
+  cpSync(eulaFile, join(temporaryBuildDirectory, "modding_eula.txt"));
+
   const items = readdirSync(temporaryBuildDirectory).filter(
-    (item) => item !== modDirName,
+    (item) => item !== modIdentifier,
   );
   for (const item of items) {
     const srcPath = join(temporaryBuildDirectory, item);
@@ -217,88 +236,22 @@ function packMod(outputFileName, feature = null) {
 
   rmSync(temporaryBuildDirectory, { recursive: true, force: true });
 
-  console.log(`Built ${outputFileName} mod: ${finalZipPath}`);
+  console.log(`Built ${modIdentifier} mod: ${finalZipPath}`);
   console.log(`ZIP_FILE:${finalZipPath}`);
   return finalZipPath;
 }
 
-function prepareFeatureBuild(feature) {
+function buildMod(modType) {
+  console.log(`Building ${modType} mod...`);
   cleanBuildDirectory();
-  mkdirSync(temporaryBuildDirectory, { recursive: true });
+  const modDir = modType === "main" ? "main" : modType;
+  const { modIdentifier, modVersion } = prepareModBuild(modDir);
 
-  // Modify manifest for feature
-  const featureManifest = manifestContent
-    .replace(
-      `<modid>${modIdentifier}</modid>`,
-      `<modid>${modIdentifier}_${feature}</modid>`,
-    )
-    .replace(`<name>${modName}</name>`, `<name>${modName} - ${feature}</name>`);
-  writeFileSync(
-    join(temporaryBuildDirectory, "mod.manifest"),
-    featureManifest,
-    "utf8",
-  );
-
-  // Create mod.cfg with specific content based on feature
-  let modCfgContent;
-  switch (feature) {
-    case "random":
-      modCfgContent = `helmet_off_dialog__set_random = true`;
-      break;
-    case "ranged":
-      modCfgContent = `helmet_off_dialog__set_ranged = true`;
-      break;
-    case "helmet_only":
-      modCfgContent = `helmet_off_dialog__set_helmet_only = true`;
-      break;
-    default:
-      console.error(`ERROR: Unknown feature '${feature}'`);
-      process.exit(1);
-  }
-  writeFileSync(
-    join(temporaryBuildDirectory, "mod.cfg"),
-    modCfgContent,
-    "utf8",
-  );
-}
-
-function buildMainMod() {
-  console.log(`Building main mod...`);
-  cleanBuildDirectory();
-  prepareMainBuild();
-  packMainData();
-  packMod(`${modName}_main`);
-}
-
-function buildFeatureMod(feature) {
-  console.log(`Building feature mod: ${feature}...`);
-  prepareFeatureBuild(feature);
-  packMod(`${modName}_${feature}`, feature);
-}
-
-function buildAllMods() {
-  buildMainMod();
-  for (const feature of features) {
-    buildFeatureMod(feature);
-  }
+  packModData(modIdentifier);
+  packMod(modIdentifier, modVersion);
 }
 
 // Execute based on target
 if (environment === "prod" || environment === "dev") {
-  switch (target) {
-    case "all":
-      buildAllMods();
-      break;
-    case "main":
-      buildMainMod();
-      break;
-    case "random":
-    case "ranged":
-    case "helmet_only":
-      buildFeatureMod(target);
-      break;
-    default:
-      console.error(`ERROR: Unhandled target '${target}'`);
-      process.exit(1);
-  }
+  buildMod(target);
 }

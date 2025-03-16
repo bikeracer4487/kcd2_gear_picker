@@ -8,6 +8,10 @@ test-watch:
 
 dev:
 	bash scripts/build-deploy-start.sh
+
+dev-kcd1:
+	bash scripts/build-deploy-start.sh kcd1
+
 dev-random:
 	bash scripts/build-deploy-start.sh random
 
