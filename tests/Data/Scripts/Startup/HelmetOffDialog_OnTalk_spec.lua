@@ -1,4 +1,4 @@
-dofile("tests/HodMock.lua")
+dofile("tests/HelmetOffDialogMock.lua")
 
 describe("triggers the on talk event", function()
     it("creates the event", function()
@@ -27,7 +27,7 @@ describe("player can still start dialogues", function()
 end)
 
 function makeFactory()
-    local mockHelmetOffDialog = dofile("tests/HodMock.lua")
+    local mockHelmetOffDialog = dofile("tests/HelmetOffDialogMock.lua")
     local factory = mockHelmetOffDialog(mock, spy)
     local original_BasicAIActions_onTalk = factory.mockedBasicAIActions.OnTalk
     dofile("src/Data/Scripts/Startup/HelmetOffDialog_OnTalk.lua")
