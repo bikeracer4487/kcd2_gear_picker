@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <kcd_mod>
     <info>
-        <name>helmet_off_dialog</name>
+        <name>Helmet Off Dialog - Main</name>
         <modid>helmet_off_dialog</modid>
         <description>This mod automatically unequips your helmet, head chainmail, and coif when starting a conversation with an NPC, then re-equips them when the dialog ends. </description>
         <author>Rizarttt</author>

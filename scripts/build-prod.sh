@@ -32,7 +32,7 @@ modName=$(grep -oP '<name>\K[^<]+' "$manifestFile")
 }
 
 # Define expected zip file name using modName instead of modIdentifier_target
-zipFileName="${modName}_${modVersion}.zip"
+zipFileName="${modIdentifier}_${modVersion}.zip"
 zipFilePath="$projectRoot/$zipFileName"
 
 # Run the build in Docker
