@@ -84,6 +84,8 @@ local Equipment = {
 
     takeOffFirstRangedWeapon = function(self, callback)
     end,
+    takeOffSecondRangedWeapon = function(self, callback)
+    end,
 }
 
 _G.HelmetOffDialog.ClassRegistry.Equipment = Equipment

@@ -70,9 +70,9 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffSecondRangedWeapon")
-        --this.equipment:takeOffCoif(function()
-        --    this.talkEndedEvent:listen()
-        --end)
+        this.equipment:takeOffSecondRangedWeapon(function()
+            this.talkEndedEvent:listen()
+        end)
     end
 }
 
