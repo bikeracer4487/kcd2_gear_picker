@@ -134,6 +134,6 @@ local HelmetOffDialog = {
     end
 }
 
-_G.HelmetOffDialog = HelmetOffDialog
+_G.HelmetOffDialog = _G.HelmetOffDialog or HelmetOffDialog
 
 return HelmetOffDialog;
