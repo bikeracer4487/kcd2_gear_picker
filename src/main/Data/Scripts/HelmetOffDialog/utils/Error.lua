@@ -17,7 +17,8 @@ local Error = {
     catch = function(self, func, ...)
         local success, result = pcall(func, ...)
         if not success then
-            HelmetOffDialog:log():error(tostring(result))
+            local stackTrace = debug.traceback(tostring(result))
+            HelmetOffDialog:log():error(tostring(stackTrace))
         end
         return success, result
     end
