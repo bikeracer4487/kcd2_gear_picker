@@ -18,6 +18,19 @@ This mod automatically takes off your helmet, head chainmail (KCD 1) and coif wh
 
 [![Showcase](https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd1_showcase.gif?raw=true)](https://www.nexusmods.com/kingdomcomedeliverance2/mods/831)
 
+***
+
+## Mod Overview
+- **Main Version (Required):** Takes off the helmet, head chainmail (KCD 1), and coif at the start of every dialogue and puts them back on when the conversation ends.
+  - Install this base mod to enable the core takeoff functionality.
+- **Optional Mods:** Enhance the main version with additional takeoff features, which can be loaded on demand. Install any combination of the following optional mods *after* the main version to ensure proper loading (otherwise, you’ll need to manually adjust your `mod_order.txt`):
+  - **Helmet-Only Takeoff:** Takes off only the helmet at the start of every dialogue and puts it back on when the conversation ends, leaving head chainmail (KCD 1) and coif unchanged.
+  - **Random Gear Takeoff:** Takes off the helmet, head chainmail (KCD 1), and coif in random dialogues (e.g., gear might come off in one conversation but stay on in the next).
+    - *Player Note:* This reflects my reason for creating this mod—half because I expect I’ll tire of seeing Henry’s face, and half because the helmets are cool to look at, especially when switching between them.
+  - **Ranged Weapon Takeoff:** Takes off ranged weapons at the start of dialogues and puts them back on when the conversation ends (requires the main version for gear context).
+
+***
+
 ## Coverage
 
 > If you identify any head armour not listed below, please provide their full names as they appear in-game.
@@ -25,15 +38,8 @@ This mod automatically takes off your helmet, head chainmail (KCD 1) and coif wh
 - Helmets: kettle, bascinet, helmet, skullcap
 - Head Chainmail (for KCD 1): coifmail, nm_ca_collar, nm_ca_hood
 - Coifs: coif, `g_hood_`
+- Ranged weapons: bow
 
----
-
-## Mod Variants
-
-- **Main:** Takes off helmet, head chainmail (KCD 1), and coif at the start of every dialogue and puts them back on when the conversation ends. Install only one mod variant.
-- **Random:** Takes off helmet, head chainmail (KCD 1), and coif in random dialogues rather than every time. For instance, it might take them off in one conversation but keep them on in the next. Install only one mod variant.
-  - As a player, this reflects my reason for creating this mod—half because I expect I’ll grow tired of Henry’s face, and half because the helmets are really cool to look at, especially when switching between different ones.
-- **Helmet-Only:** Takes off helmet at the start of every dialogue and puts them back on when the conversation ends, unlike the main variant, leaving head chainmail (KCD 1) and coif unchanged. Install only one mod variant.
 
 ## Caveats
 
