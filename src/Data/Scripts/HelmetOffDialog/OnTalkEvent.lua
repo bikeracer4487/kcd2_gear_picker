@@ -36,7 +36,7 @@ local OnTalkEvent = {
         end
 
         this.equipment:takeOffHelmet(function()
-            if this.helmetOffDialog.VARIANT == "helmet_only" then
+            if config:isHelmetOnly() then
                 this.talkEndedEvent:listen()
                 return
             end
