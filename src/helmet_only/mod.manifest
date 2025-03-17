@@ -5,7 +5,7 @@
         <modid>helmet_off_dialog_helmet_only</modid>
         <description>Enables the helmet only feature from the main helmet_off_dialog mod.</description>
         <author>Rizarttt</author>
-        <version>1.3.0</version>
+        <version>1.3.1</version>
         <created_on>01.03.2025</created_on>
     </info>
 </kcd_mod>
