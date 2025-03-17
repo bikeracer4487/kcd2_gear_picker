@@ -35,7 +35,9 @@ local OnTalkEvent = {
             this.log:info("Random feature is enabled.")
             this.randomCounter = this.randomCounter + 1
             local threshold = this.randomCounter * 0.2
-            if threshold > 1.0 then threshold = 1.0 end  -- Cap at 100%
+            if threshold > 1.0 then
+                threshold = 1.0
+            end
             if math.random() > threshold then
                 this.log:info("Random check failed, counter: " .. this.randomCounter)
                 return

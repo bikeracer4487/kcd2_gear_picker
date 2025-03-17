@@ -48,6 +48,7 @@ local function makeFactory(mock, spy, args)
 
     local features = args and args.features or {}
     features = type(features) == "string" and { features } or (features or {})
+    local randomCounter
 
     for _, feature in ipairs(features) do
         if feature == "helmet_only" then
@@ -59,8 +60,16 @@ local function makeFactory(mock, spy, args)
                 return true
             end
             if args.mockMathRandomToTruthy ~= nil then
+                if args.mockMathRandomToTruthy then
+                    randomCounter = 100
+                else
+                    randomCounter = -100
+                end
                 math.random = function()
-                    return args.mockMathRandomToTruthy and 1 or 0
+                    if args.mockMathRandomToTruthy then
+                        return 1
+                    end
+                    return 0
                 end
             end
         elseif feature == "ranged" then
@@ -98,12 +107,13 @@ local function makeFactory(mock, spy, args)
     spy.on(onTalkEvent, "handleTalkEndedEvent")
 
     local eventInProgress = false
-
     if args and args.eventInProgress ~= nil then
         eventInProgress = args.eventInProgress
     end
-
     onTalkEvent.eventInProgress = eventInProgress
+    if randomCounter ~= nil then
+        onTalkEvent.randomCounter = randomCounter
+    end
 
     return {
         equipment = equipment,

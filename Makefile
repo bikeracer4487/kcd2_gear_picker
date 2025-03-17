@@ -3,10 +3,10 @@ check: test prettier
 test:
 	docker compose run --rm test_runner sh -c "busted --verbose /data"
 
-# Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
+## Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
 test-watch:
 	pattern_arg=$(if $(pattern),--pattern=$(pattern)) && \
-	docker compose run --rm test_watcher \
+	docker compose run --rm --entrypoint "" test_watcher \
 		sh -c "find /data -type f | entr -c busted $$pattern_arg --verbose /data"
 
 test-coverage:
