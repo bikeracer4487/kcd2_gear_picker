@@ -10,7 +10,7 @@ const briefInfo = path.join(documentationPath, "brief_info.md");
 const showCase = path.join(documentationPath, "showcase.md");
 const contentPath = path.join(documentationPath, "content.md");
 const faqPath = path.join(documentationPath, "faq.md");
-const changeLogs = path.join(documentationPath, "changelog.md");
+const changeLogs = path.join(path.join(__dirname, "../.."), "changelog.md");
 
 nexusMods([title, badgesPath, briefInfo, showCase, contentPath]);
 steamWorkshop([title, briefInfo, contentPath, faqPath, changeLogs]);
