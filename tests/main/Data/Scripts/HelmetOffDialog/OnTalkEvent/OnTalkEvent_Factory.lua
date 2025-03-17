@@ -61,9 +61,13 @@ local function makeFactory(mock, spy, args)
         return config
     end
 
+    local human = { IsInDialog = function()
+        return true
+    end }
+
     --- @type OnTalkEvent
     local onTalkEvent = OnTalkEvent:new(
-            helmetOffDialog, log, equipment, talkEndedEvent
+            helmetOffDialog, log, equipment, talkEndedEvent, human
     )
     spy.on(onTalkEvent, "takeOffHeadChainmail")
     spy.on(onTalkEvent, "coif")
