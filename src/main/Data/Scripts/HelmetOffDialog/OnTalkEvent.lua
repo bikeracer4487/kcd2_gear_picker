@@ -3,9 +3,7 @@
 --- @field equipment Equipment
 --- @field talkEndedEvent TalkEndedEvent
 local OnTalkEvent = {
-    new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent)
-        log:info("OnTalkEvent.new")
-
+    new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent, human)
         if helmetOffDialog.__factories.onTalkEvent then
             return helmetOffDialog.__factories.onTalkEvent
         end
@@ -13,7 +11,9 @@ local OnTalkEvent = {
             helmetOffDialog = helmetOffDialog,
             log = log,
             equipment = equipment,
-            talkEndedEvent = TalkEndedEvent
+            talkEndedEvent = TalkEndedEvent,
+            human = human,
+            eventInProgress = false
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.onTalkEvent = instance
@@ -23,11 +23,24 @@ local OnTalkEvent = {
     handle = function(self)
         --- @type OnTalkEvent
         local this = self
-        this.log:info("OnTalkEvent.handle")
+        local isInDialog = this.human:IsInDialog()
+
+        if not isInDialog then
+            this.log:info("Not in dialogue. Aborting.")
+            this.eventInProgress = false
+            return
+        end
+
+        if self.eventInProgress == true then
+            this.log:info("OnTalkEvent in progress, aborting.")
+            return
+        end
+
         --- @type Config
         local config = this.helmetOffDialog:config()
 
         if config:isRandom() then
+            this.log:info("Random feature is enabled.")
             local randomValue = math.random(0, 1)
             if randomValue == 0 then
                 this.log:info("Random check failed, all features aborted")
@@ -35,20 +48,20 @@ local OnTalkEvent = {
             end
         end
 
+        self.eventInProgress = true
+
         this.equipment:takeOffHelmet(function()
-            if config:isHelmetOnly() then
-                this.talkEndedEvent:listen()
+            if not config:isHelmetOnly() then
+                this:takeOffHeadChainmail()
                 return
             end
-            this:takeOffHeadChainmail()
+
+            if config:isRanged() then
+                this:takeOffFirstRangedWeapon()
+            else
+                this:handleTalkEndedEvent()
+            end
         end)
-
-
-        if config:isRanged() then
-            this.equipment:takeOffFirstRangedWeapon(function()
-                this:takeOffSecondRangedWeapon()
-            end)
-        end
     end,
 
     takeOffHeadChainmail = function(self)
@@ -64,8 +77,26 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffCoif")
+        --- @type Config
+        local config = this.helmetOffDialog:config()
+
         this.equipment:takeOffCoif(function()
-            this.talkEndedEvent:listen()
+            local isRanged = config:isRanged()
+            if isRanged then
+                this:takeOffFirstRangedWeapon()
+                return
+            end
+
+            this:handleTalkEndedEvent()
+        end)
+    end,
+
+    takeOffFirstRangedWeapon = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.log:info("OnTalkEvent.takeOffFirstRangedWeapon")
+        this.equipment:takeOffFirstRangedWeapon(function()
+            this:takeOffSecondRangedWeapon()
         end)
     end,
 
@@ -74,8 +105,15 @@ local OnTalkEvent = {
         local this = self
         this.log:info("OnTalkEvent.takeOffSecondRangedWeapon")
         this.equipment:takeOffSecondRangedWeapon(function()
-            this.talkEndedEvent:listen()
+            this:handleTalkEndedEvent()
         end)
+    end,
+    handleTalkEndedEvent = function(self)
+        --- @type OnTalkEvent
+        local this = self
+        this.talkEndedEvent:listen()
+        this.log:info("OnTalkEvent: finished")
+        this.eventInProgress = false
     end
 }
 

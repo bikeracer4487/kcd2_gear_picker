@@ -14,6 +14,8 @@ end)
 
 function makeFactory()
     local factory = {}
+    _G.System = { LoadScript = function()
+    end }
     _G.Script = { LoadScript = function()
     end }
     _G.Entity = { GetPos = function()
