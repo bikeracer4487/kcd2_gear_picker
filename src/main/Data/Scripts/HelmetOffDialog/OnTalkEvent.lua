@@ -56,10 +56,11 @@ local OnTalkEvent = {
                 return
             end
 
+
             if config:isRanged() then
                 this:takeOffFirstRangedWeapon()
             else
-                this:handleTalkEndedEvent()
+                this:handleTalkEndedEvent("triggeredByHandler")
             end
         end)
     end,
@@ -87,7 +88,7 @@ local OnTalkEvent = {
                 return
             end
 
-            this:handleTalkEndedEvent()
+            this:handleTalkEndedEvent("triggeredByTakeOffCoif")
         end)
     end,
 
@@ -105,7 +106,7 @@ local OnTalkEvent = {
         local this = self
         this.log:info("OnTalkEvent.takeOffSecondRangedWeapon")
         this.equipment:takeOffSecondRangedWeapon(function()
-            this:handleTalkEndedEvent()
+            this:handleTalkEndedEvent("triggeredByRanged")
         end)
     end,
     handleTalkEndedEvent = function(self)

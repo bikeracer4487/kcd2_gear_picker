@@ -1,5 +1,15 @@
--- todo handle not in dialogue
--- todo handle event already in progress
+it("aborts if player is not in dialogue", function()
+    local factory = makeFactory({ isInDialog = false })
+    factory.onTalkEvent:handle()
+    assert.spy(factory.equipment.takeOffHelmet).was_not_called()
+end)
+
+it("aborts if another on talk even is in progress", function()
+    local factory = makeFactory({ eventInProgress = true })
+    factory.onTalkEvent:handle()
+    assert.spy(factory.equipment.takeOffHelmet).was_not_called()
+end)
+
 it("takes off helmet", function()
     local factory = makeFactory()
     factory.onTalkEvent:handle()

@@ -36,24 +36,37 @@ local function makeFactory(mock, spy, args)
     local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
     --- @type Config
     local config = mock(Config, true)
+    config.isHelmetOnly = function()
+        return false
+    end
+    config.isRandom = function()
+        return false
+    end
+    config.isRanged = function()
+        return false
+    end
 
-    args = args or {}
-    if args.target == "helmet_only" then
-        config.isHelmetOnly = function()
-            return true
-        end
-    elseif args.target == "random" then
-        config.isRandom = function()
-            return true
-        end
-        if args.mockMathRandomToTruthy ~= nil then
-            math.random = function()
-                return args.mockMathRandomToTruthy and 1 or 0
+    local features = args and args.features or {}
+    features = type(features) == "string" and { features } or (features or {})
+
+    for _, feature in ipairs(features) do
+        if feature == "helmet_only" then
+            config.isHelmetOnly = function()
+                return true
             end
-        end
-    elseif args.target == "ranged" then
-        config.isRanged = function()
-            return true
+        elseif feature == "random" then
+            config.isRandom = function()
+                return true
+            end
+            if args.mockMathRandomToTruthy ~= nil then
+                math.random = function()
+                    return args.mockMathRandomToTruthy and 1 or 0
+                end
+            end
+        elseif feature == "ranged" then
+            config.isRanged = function()
+                return true
+            end
         end
     end
 
@@ -61,9 +74,17 @@ local function makeFactory(mock, spy, args)
         return config
     end
 
-    local human = { IsInDialog = function()
-        return true
-    end }
+    local human = {
+        IsInDialog = function(self)
+            local isInDialog = true
+
+            if args and args.isInDialog ~= nil then
+                isInDialog = args.isInDialog
+            end
+
+            return isInDialog
+        end
+    }
 
     --- @type OnTalkEvent
     local onTalkEvent = OnTalkEvent:new(
@@ -74,6 +95,15 @@ local function makeFactory(mock, spy, args)
     spy.on(onTalkEvent, "takeOffCoif")
     spy.on(onTalkEvent, "takeOffFirstRangedWeapon")
     spy.on(onTalkEvent, "takeOffSecondRangedWeapon")
+    spy.on(onTalkEvent, "handleTalkEndedEvent")
+
+    local eventInProgress = false
+
+    if args and args.eventInProgress ~= nil then
+        eventInProgress = args.eventInProgress
+    end
+
+    onTalkEvent.eventInProgress = eventInProgress
 
     return {
         equipment = equipment,
