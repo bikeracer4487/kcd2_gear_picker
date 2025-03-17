@@ -1,14 +1,17 @@
-const markdown = require("./markdown");
+const nexusMods = require("./markdown");
 const steamWorkshop = require("./steamWorkshop");
 const bbcodenm = require("./bbcodenm");
 const path = require("path");
 
 const documentationPath = path.join(__dirname, "../../documentation");
-const aboutPath = path.join(documentationPath, "about.md");
+const title = path.join(documentationPath, "title.md");
+const badgesPath = path.join(documentationPath, "badges.md");
+const briefInfo = path.join(documentationPath, "brief_info.md");
+const showCase = path.join(documentationPath, "showcase.md");
 const contentPath = path.join(documentationPath, "content.md");
-const steamNotes = path.join(documentationPath, "steam_notes.md");
+const faqPath = path.join(documentationPath, "faq.md");
 const changeLogs = path.join(path.join(__dirname, "../.."), "changelog.md");
 
-markdown([aboutPath, contentPath]);
-steamWorkshop([aboutPath, steamNotes, contentPath, changeLogs]);
+nexusMods([title, badgesPath, briefInfo, showCase, contentPath]);
+steamWorkshop([title, briefInfo, contentPath, faqPath, changeLogs]);
 bbcodenm();

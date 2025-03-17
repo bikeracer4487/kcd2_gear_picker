@@ -18,4 +18,4 @@ services:
       dockerfile: docker/nodejs.Dockerfile
     volumes: [".:/app"]
     environment: ["MODE=dev", "TARGET=main"]
-    command: node scripts/build.js --env=${MODE} --TARGET=${TARGET}
+    command: node scripts/build.js --env=${MODE} --target=${TARGET}
