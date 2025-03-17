@@ -3,7 +3,6 @@
 --- @field log Log
 local EquippedItem = {
     new = function(self, helmetOffDialog, log, player, engineScript)
-        log:info("EquippedItem.new")
         if helmetOffDialog.__factories.equippedItem then
             return helmetOffDialog.__factories.equippedItem
         end
@@ -15,16 +14,13 @@ local EquippedItem = {
     isEquipped = function(self, inventoryItem, callback)
         --- @type EquippedItem
         local this = self
-        this.log:info("EquippedItem.isEquipped")
 
         local oldStats = this:getDerivedStats()
         this.log:info("Derived stats before une-quip: ", oldStats)
 
         this.player.actor:UnequipInventoryItem(inventoryItem)
 
-        this.log:info("EquippedItem SetTimer")
         this.engineScript.SetTimer(20, function()
-            this.log:info("EquippedItem afterStats")
             local newStats = this:getDerivedStats()
             this.log:info("Derived stats after un-equip: ", newStats)
 
@@ -40,7 +36,6 @@ local EquippedItem = {
                 this.log:info("Found equipped, now unequipped item: " .. itemName)
             end
 
-            this.log:info("EquippedItem callback")
             callback(isEquipped)
         end)
     end,
