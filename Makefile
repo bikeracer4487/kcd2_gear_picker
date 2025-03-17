@@ -1,10 +1,19 @@
 check: test prettier
 
 test:
-	docker compose run --rm test_runner
+	docker compose run --rm test_runner sh -c "busted --verbose /data"
 
+# Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
 test-watch:
-	docker compose run --rm test_watcher
+	pattern_arg=$(if $(pattern),--pattern=$(pattern)) && \
+	docker compose run --rm test_watcher \
+		sh -c "find /data -type f | entr -c busted $$pattern_arg --verbose /data"
+
+test-coverage:
+	docker compose run --rm test_runner \
+	  sh -c "busted --verbose --coverage /data \
+		&& luacov -r html \
+		&& mv luacov.report.out luacov.report.html"
 
 dev:
 	bash scripts/build-deploy-start.sh
