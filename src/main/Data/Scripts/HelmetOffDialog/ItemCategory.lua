@@ -50,7 +50,8 @@ local ItemCategory = {
         end
 
         if itemCategory == "RangedWeapon" then
-            return string.lower(itemName):find("bow")
+            return string.lower(itemName):find("bow_")
+                    or string.lower(itemName):find("crossbow")
         end
 
         this.log:info("ItemCategory Unknown category: " .. itemCategory)
