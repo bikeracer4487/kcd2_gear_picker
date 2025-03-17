@@ -9,7 +9,6 @@
 --- @field unequipGear UnequipGear
 local Equipment = {
     new = function(self, helmetOffDialog, log, player, unequipGear)
-        log:info("Equipment.new")
         if helmetOffDialog.__factories.equipment then
             return helmetOffDialog.__factories.equipment
         end
@@ -31,24 +30,30 @@ local Equipment = {
     end,
 
     putOnHelmet = function(self)
-        self.log:info("Equipment.putOnHelmet")
         if self.unequippedHelmet then
+            local item = ItemManager.GetItem(self.unequippedHelmet)
+            local itemName = ItemManager.GetItemName(item.class)
+            self.log:info("Putting on helmet: ", itemName)
             self.player.actor:EquipInventoryItem(self.unequippedHelmet)
             self.unequippedHelmet = nil
         end
     end,
 
     putOnHeadChainmail = function(self)
-        self.log:info("Equipment.putOnHeadChainmail")
         if self.unequippedHeadChainmail then
+            local item = ItemManager.GetItem(self.unequippedHeadChainmail)
+            local itemName = ItemManager.GetItemName(item.class)
+            self.log:info("Putting on head chainmail: ", itemName)
             self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
             self.unequippedHeadChainmail = nil
         end
     end,
 
     putOnCoif = function(self)
-        self.log:info("Equipment.putOnCoif")
         if self.unequippedCoif then
+            local item = ItemManager.GetItem(self.unequippedCoif)
+            local itemName = ItemManager.GetItemName(item.class)
+            self.log:info("Putting on coif: ", itemName)
             self.player.actor:EquipInventoryItem(self.unequippedCoif)
             self.unequippedCoif = nil
         end
@@ -106,15 +111,19 @@ local Equipment = {
     end,
 
     putOnFirstRangedWeapon = function(self)
-        self.log:info("Equipment.putOnFirstRangedWeapon")
         if self.firstRangedWeapon then
+            local item = ItemManager.GetItem(self.firstRangedWeapon)
+            local itemName = ItemManager.GetItemName(item.class)
+            self.log:info("Putting on first ranged weapon: ", itemName)
             self.player.actor:EquipInventoryItem(self.firstRangedWeapon)
             self.firstRangedWeapon = nil
         end
     end,
     putOnSecondRangedWeapon = function(self)
-        self.log:info("Equipment.putOnSecondRangedWeapon")
         if self.secondRangedWeapon then
+            local item = ItemManager.GetItem(self.secondRangedWeapon)
+            local itemName = ItemManager.GetItemName(item.class)
+            self.log:info("Putting on second ranged weapon: ", itemName)
             self.player.actor:EquipInventoryItem(self.secondRangedWeapon)
             self.secondRangedWeapon = nil
         end
