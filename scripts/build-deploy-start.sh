@@ -2,8 +2,8 @@
 
 projectRoot="$(dirname "$(realpath "$0")")/.."
 defaultGamePath="/mnt/c/Steam/steamapps/common/KingdomComeDeliverance2"
-defaultExeSubPath="Bin/Win64MasterMasterSteamPGO/${exeName}"
 exeName="KingdomCome.exe"
+defaultExeSubPath="Bin/Win64MasterMasterSteamPGO/${exeName}"
 defaultTarget="main"
 
 # List of all valid mod targets (mirrors validTargets in build.js)
