@@ -2,7 +2,7 @@ local original_Entity_GetPos = Entity.GetPos
 
 function Entity.GetPos(...)
     local log = HelmetOffDialog:log()
-    log:info("Entity.GetPos")
+    log:info("OnTalkEvent: Triggered by Entity.GetPos")
     local error = HelmetOffDialog:error()
 
     error:catch(function()

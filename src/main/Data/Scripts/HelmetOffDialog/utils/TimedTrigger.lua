@@ -21,8 +21,6 @@ local TimedTrigger = {
         --- @type TimedTrigger
         local this = self
 
-        self.log:info("TimedTrigger.start")
-
         this.script.SetTimer(intervalMs, function()
             if checkCallback() then
                 runCallback()

@@ -5,8 +5,6 @@
 --- @field human _G.player.human
 local TalkEndedEvent = {
     new = function(self, helmetOffDialog, log, equipment, timedTrigger, human)
-        log:info("TalkEndedEvent.new")
-
         if helmetOffDialog.__factories.talkEndedEvent then
             return helmetOffDialog.__factories.talkEndedEvent
         end
@@ -25,11 +23,10 @@ local TalkEndedEvent = {
     listen = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.listen > putOnCoif")
+        this.log:info("TalkEndedEvent.listen")
 
         this.timedTrigger:start(100, function()
             local isInDialog = this.human:IsInDialog()
-            this.log:info("isInDialog: " .. tostring(isInDialog))
             return not isInDialog
         end, function()
             this.log:info("Starting put gear on.")

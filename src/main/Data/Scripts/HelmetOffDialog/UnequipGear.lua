@@ -13,8 +13,6 @@ local UnequipGear = {
             itemManager,
             inventory
     )
-        log:info("UnequipGear.new")
-
         if helmetOffDialog.__factories.unequipGear then
             return helmetOffDialog.__factories.unequipGear
         end
