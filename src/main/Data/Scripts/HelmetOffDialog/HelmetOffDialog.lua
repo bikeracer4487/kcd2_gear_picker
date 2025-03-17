@@ -21,9 +21,7 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.equipment")
         local unequipGear = this:unequipGear()
-        log:info("HelmetOffDialog.equipment.after")
         --- @type Equipment
         local Equipment = this.ClassRegistry.Equipment
         return Equipment:new(this, log, _G.player, unequipGear)
@@ -31,8 +29,6 @@ local HelmetOffDialog = {
     unequipGear = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
-        log:info("HelmetOffDialog.unequipGear")
         --- @type UnequipGear
         local UnequipGear = this.ClassRegistry.UnequipGear
         return UnequipGear:new(
@@ -49,7 +45,6 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.error")
         --- @type Error
         local Error = this.ClassRegistry.Error
         return Error:new(log)
@@ -58,7 +53,6 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.talkEndedEvent")
         local equipment = this:equipment()
         local human = _G.player.human
         local timedTrigger = this:timedTrigger()
@@ -70,19 +64,18 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.onTalkEvent")
         local equipment = this:equipment()
         --- @type TalkEndedEvent
         local talkEndedEvent = this:talkEndedEvent()
+        local human = _G.player.human
         --- @type OnTalkEvent
         local OnTalkEvent = this.ClassRegistry.OnTalkEvent
-        return OnTalkEvent:new(this, log, equipment, talkEndedEvent)
+        return OnTalkEvent:new(this, log, equipment, talkEndedEvent, human)
     end,
     timedTrigger = function(self)
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.timedTrigger")
         --- @type TimedTrigger
         local TimedTrigger = this.ClassRegistry.TimedTrigger
         return TimedTrigger:new(log, _G.Script)
@@ -91,7 +84,6 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.equippedItem")
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
         return EquippedItem:new(this, log, _G.player, _G.Script)
@@ -100,14 +92,12 @@ local HelmetOffDialog = {
         --- @type HelmetOffDialog
         local this = self
         local log = this:log()
-        log:info("HelmetOffDialog.itemCategory")
         --- @type ItemCategory
         local ItemCategory = this.ClassRegistry.ItemCategory
         return ItemCategory:new(this, log, _G.ItemManager)
     end,
 
     init = function(self)
-        System.LogAlways(self.MOD_NAME .. ": Initializing HelmetOffDialog")
         local modName = "HelmetOffDialog"
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),
