@@ -6,8 +6,12 @@ const documentationDir = path.join(rootDir, "documentation");
 
 function bbcode() {
   const readmeFile = path.join(rootDir, "readme.md");
-  const readmeFileBbcode = path.join(rootDir, "documentation", "readme.bbcode");
-  execSync(`markdown_to_bbcodenm -i ${readmeFile} > ${readmeFileBbcode}`);
+  const nexusModsReadmeBbcode = path.join(
+    rootDir,
+    "documentation",
+    "readme_nexus_mods.bbcode",
+  );
+  execSync(`markdown_to_bbcodenm -i ${readmeFile} > ${nexusModsReadmeBbcode}`);
 
   const faqFile = path.join(documentationDir, "faq.md");
   const faqFileBbcode = path.join(documentationDir, "faq.bbcode");

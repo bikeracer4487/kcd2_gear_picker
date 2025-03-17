@@ -1,21 +1,11 @@
-## KCD 2 Showcase
-
-[![Showcase](https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd2_showcase.gif?raw=true)](https://www.nexusmods.com/kingdomcomedeliverance2/mods/831)
-
-## KCD 1 Showcase
-
-[![Showcase](https://github.com/rdok/kcd2_helmet_off_dialog/blob/main/documentation/kcd1_showcase.gif?raw=true)](https://www.nexusmods.com/kingdomcomedeliverance2/mods/831)
-
-***
-
 ## Mod Overview
 - **Main Version (Required):** Takes off the helmet, head chainmail (KCD 1), and coif at the start of every dialogue and puts them back on when the conversation ends.
   - Install this base mod to enable the core takeoff functionality.
 - **Optional Mods:** Enhance the main version with additional takeoff features, which can be loaded on demand. Install any combination of the following optional mods *after* the main version to ensure proper loading (otherwise, you’ll need to manually adjust your `mod_order.txt`):
-  - **Helmet-Only Takeoff:** Takes off only the helmet at the start of every dialogue and puts it back on when the conversation ends, leaving head chainmail (KCD 1) and coif unchanged.
-  - **Random Gear Takeoff:** Takes off the helmet, head chainmail (KCD 1), and coif in random dialogues (e.g., gear might come off in one conversation but stay on in the next).
+  - **Helmet-Only:** Takes off only the helmet at the start of every dialogue and puts it back on when the conversation ends, leaving head chainmail (KCD 1) and coif unchanged.
+  - **Random:** Takes off the helmet, head chainmail (KCD 1), and coif in random dialogues (e.g., gear might come off in one conversation but stay on in the next).
     - *Player Note:* This reflects my reason for creating this mod—half because I expect I’ll tire of seeing Henry’s face, and half because the helmets are cool to look at, especially when switching between them.
-  - **Ranged Weapon Takeoff:** Takes off ranged weapons at the start of dialogues and puts them back on when the conversation ends (requires the main version for gear context).
+  - **Ranged:** Takes off ranged weapons at the start of dialogues and puts them back on when the conversation ends (requires the main version for gear context).
 
 ***
 
@@ -23,10 +13,10 @@
 
 > If you identify any head armour not listed below, please provide their full names as they appear in-game.
 
-- Helmets: kettle, bascinet, helmet, skullcap
-- Head Chainmail (for KCD 1): coifmail, nm_ca_collar, nm_ca_hood
-- Coifs: coif, `g_hood_`
-- Ranged weapons: bow
+- Helmets: `kettle`, `bascinet`, `helmet`, `skullcap`
+- Head Chainmail (for KCD 1): `coifmail`, `nm_ca_collar`, `nm_ca_hood`
+- Coifs: coif, `coif`, `g_hood_`
+- Ranged weapons: `bow_`, `crossbow`
 
 
 ## Caveats
