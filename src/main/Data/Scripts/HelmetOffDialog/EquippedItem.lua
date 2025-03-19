@@ -16,6 +16,13 @@ local EquippedItem = {
         local this = self
 
         local oldStats = this:getDerivedStats()
+
+        if tostring(oldStats.equippedWeight) == "0" then
+            this.log:info("Falsy, due to: ", oldStats,
+                    " Player is either in intro game, or wearing no gear")
+            return false
+        end
+
         this.log:info("Derived stats before une-quip: ", oldStats)
 
         this.player.actor:UnequipInventoryItem(inventoryItem)
