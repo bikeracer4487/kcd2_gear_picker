@@ -1,5 +1,5 @@
 --- @class Log
---- @field info fun(self: Log, msg: string)
+--- @field info fun(self: Log, ...: any)
 --- @field error fun(self: Log, msg: string)
 --- @field modName string
 --- @field config table

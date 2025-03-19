@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.3.2 19-march-25
+- fix: Resolved issue in "Easy Riders" quest where progress was blocked due to helmet being removed; helmet now remains equipped, enabling uninterrupted sparring with Hans.
+
 ### 1.3.1 17-march-25
 - fix: Crossbow are properly detected, allowing the player to use them.
 - fix: Compatability with Steam Workshop, NexusMods, and KCD 1.

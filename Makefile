@@ -15,6 +15,7 @@ test-coverage:
 		&& luacov -r html \
 		&& mv luacov.report.out luacov.report.html"
 
+.PHONY: dev
 dev:
 	bash scripts/build-deploy-start.sh
 

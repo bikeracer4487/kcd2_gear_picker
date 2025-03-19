@@ -1,3 +1,8 @@
+--- @class OnTalkEvent
+--- @field log Log
+--- @field equipment Equipment
+--- @field talkEndedEvent TalkEndedEvent
+--- @field handle func(self: OnTalkEvent)
 local OnTalkEvent = {
     new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent, human)
         if helmetOffDialog.__factories.onTalkEvent then
@@ -18,19 +23,24 @@ local OnTalkEvent = {
     end,
 
     handle = function(self)
+        --- @type OnTalkEvent
         local this = self
+        local log = this.log
+
         if not this.human:IsInDialog() then
-            this.log:info("Not in dialogue. Aborting.")
+            log:info("Not in dialogue. Aborting.")
             this.eventInProgress = false
             return
         end
 
         if this.eventInProgress then
-            this.log:info("OnTalkEvent in progress, aborting.")
+            log:info("OnTalkEvent in progress, aborting.")
             return
         end
 
+        --- @type Config
         local config = this.helmetOffDialog:config()
+
         if config:isRandom() then
             this.log:info("Random feature is enabled.")
             this.randomCounter = this.randomCounter + 1
@@ -39,10 +49,10 @@ local OnTalkEvent = {
                 threshold = 1.0
             end
             if math.random() > threshold then
-                this.log:info("Random check failed, counter: " .. this.randomCounter)
+                this.log:info("Aborting due to random check passing.")
                 return
             end
-            this.log:info("Random check passed, counter: " .. this.randomCounter)
+            this.log:info("Not aborting due to random check failing ")
         end
 
         this.eventInProgress = true
@@ -96,12 +106,13 @@ local OnTalkEvent = {
     end,
 
     handleTalkEndedEvent = function(self)
+        --- @type OnTalkEvent
         local this = self
         this.talkEndedEvent:listen()
         this.log:info("OnTalkEvent: finished")
         this.eventInProgress = false
         this.randomCounter = 0
-    end
+    end,
 }
 
 _G.HelmetOffDialog.ClassRegistry.OnTalkEvent = OnTalkEvent
