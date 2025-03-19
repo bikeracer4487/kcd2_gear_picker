@@ -20,7 +20,7 @@ local EquippedItem = {
         if tostring(oldStats.equippedWeight) == "0" then
             this.log:info("Falsy, due to: ", oldStats,
                     " Player is either in intro game, or wearing no gear")
-            return false
+            return callback(false)
         end
 
         this.log:info("Derived stats before une-quip: ", oldStats)
