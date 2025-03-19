@@ -6,8 +6,8 @@ Yes, it’s uploaded.
 ### How do I install it?
 Use Steam Workshop, Vortex Mod Manager or manually extract the contents of the mod into the `{Game}\Mods` folder.
 
-### Why does it remove helmets in quests, blocking progress (KCD2) ?
-Helmets or ranged weapons are removed during a particular quest (e.g., sparring with Hans), halting progression when the quest requires them to remain equipped. As of game version 1.2 (March 13, 2025), the unexposed QuestSystem prevents direct fixes. A potential solution is in progress, possibly linked to how the game handles equipment requirements for this quest, though this is still under review.
+### "Easy Riders" Quest Now Unblocked in KCD2
+In the "Easy Riders" quest, players can now progress seamlessly. As of version 1.3.2 (March 19, 2025), the update fixes the previous issue where helmets or was removed, preventing you from sparring with Hans.
 
 ### Why aren’t some helmets detected?
 Early versions struggled with helmet detection. Improved in 1.0.3, and the version 1.1.1 (March 15, 2025) uses a better method for equipped gear identification.

@@ -38,6 +38,7 @@ local OnTalkEvent = {
             return
         end
 
+        --- @type Config
         local config = this.helmetOffDialog:config()
 
         if config:isRandom() then
@@ -105,6 +106,7 @@ local OnTalkEvent = {
     end,
 
     handleTalkEndedEvent = function(self)
+        --- @type OnTalkEvent
         local this = self
         this.talkEndedEvent:listen()
         this.log:info("OnTalkEvent: finished")
