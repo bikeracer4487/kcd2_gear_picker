@@ -62,7 +62,6 @@ local Equipment = {
     takeOffHelmet = function(self, callback)
         --- @type Equipment
         local this = self
-        this.log:info("Equipment.takeOffHelmet")
         this.unequipGear:takeOff("Helmet", function(unequippedHelmet)
             if unequippedHelmet then
                 self.unequippedHelmet = unequippedHelmet
@@ -92,7 +91,6 @@ local Equipment = {
     end,
 
     takeOffFirstRangedWeapon = function(self, callback)
-        self.log:info("Equipment.takeOffFirstRangedWeapon")
         self.unequipGear:takeOff("RangedWeapon", function(unequippedRangedWeapon)
             if unequippedRangedWeapon then
                 self.firstRangedWeapon = unequippedRangedWeapon
