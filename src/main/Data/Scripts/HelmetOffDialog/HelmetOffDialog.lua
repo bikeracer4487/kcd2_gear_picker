@@ -6,11 +6,13 @@ local HelmetOffDialog = {
     ClassRegistry = {},
     __factories = {},
 
+    --- @type Config
     config = function(self)
         --- @type Config
         local Config = self.ClassRegistry.Config
         return Config:new(self.HOD_ENVIRONMENT)
     end,
+    --- @type Log
     log = function(self)
         local config = self:config()
         --- @type Log
