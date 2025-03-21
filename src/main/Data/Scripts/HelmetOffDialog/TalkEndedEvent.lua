@@ -3,6 +3,7 @@
 --- @field equipment Equipment
 --- @field timedTrigger TimedTrigger
 --- @field human _G.player.human
+--- @field helmetOffDialog HelmetOffDialog
 local TalkEndedEvent = {
     new = function(self, helmetOffDialog, log, equipment, timedTrigger, human)
         if helmetOffDialog.__factories.talkEndedEvent then
@@ -32,14 +33,6 @@ local TalkEndedEvent = {
             this.log:info("Starting put gear on.")
             this.equipment:putOnCoif()
             this:queuePutOnHeadChainmail()
-
-            --- @type Config
-            local config = this.helmetOffDialog:config()
-
-            if config:isRanged() then
-                this.equipment:putOnFirstRangedWeapon()
-                this.equipment:putOnSecondRangedWeapon()
-            end
         end)
     end,
 
@@ -48,7 +41,7 @@ local TalkEndedEvent = {
         local this = self
         this.log:info("TalkEndedEvent.queuePutOnHeadChainmail")
 
-        this.timedTrigger:start(10, function()
+        this.timedTrigger:start(50, function()
             return true
         end, function()
             this.equipment:putOnHeadChainmail()
@@ -61,10 +54,40 @@ local TalkEndedEvent = {
         local this = self
         this.log:info("TalkEndedEvent.putOnHelmet")
 
-        this.timedTrigger:start(10, function()
+        this.timedTrigger:start(50, function()
             return true
         end, function()
             this.equipment:putOnHelmet()
+            this:queuePutOnFirstRangedWeapon()
+        end)
+    end,
+
+    queuePutOnFirstRangedWeapon = function(self)
+        --- @type TalkEndedEvent
+        local this = self
+        this.log:info("TalkEndedEvent.queuePutOnFirstRangedWeapon")
+
+        if not this.helmetOffDialog:config():isRanged() then
+            return
+        end
+
+        this.timedTrigger:start(50, function()
+            return true
+        end, function()
+            this.equipment:putOnFirstRangedWeapon()
+            this:queuePutOnSecondRangedWeapon()
+        end)
+    end,
+
+    queuePutOnSecondRangedWeapon = function(self)
+        --- @type TalkEndedEvent
+        local this = self
+        this.log:info("TalkEndedEvent.queuePutOnSecondRangedWeapon")
+
+        this.timedTrigger:start(50, function()
+            return true
+        end, function()
+            this.equipment:putOnSecondRangedWeapon()
         end)
     end,
 }
