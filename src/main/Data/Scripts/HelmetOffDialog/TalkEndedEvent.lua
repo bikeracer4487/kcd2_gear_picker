@@ -2,10 +2,10 @@
 --- @field log Log
 --- @field equipment Equipment
 --- @field timedTrigger TimedTrigger
---- @field human _G.player.human
+--- @field player _G.player
 --- @field helmetOffDialog HelmetOffDialog
 local TalkEndedEvent = {
-    new = function(self, helmetOffDialog, log, equipment, timedTrigger, human)
+    new = function(self, helmetOffDialog, log, equipment, timedTrigger, player)
         if helmetOffDialog.__factories.talkEndedEvent then
             return helmetOffDialog.__factories.talkEndedEvent
         end
@@ -14,7 +14,7 @@ local TalkEndedEvent = {
             equipment = equipment,
             helmetOffDialog = helmetOffDialog,
             timedTrigger = timedTrigger,
-            human = human,
+            player = player,
         }
         setmetatable(instance, { __index = self })
         helmetOffDialog.__factories.talkEndedEvent = instance
@@ -27,8 +27,9 @@ local TalkEndedEvent = {
         this.log:info("TalkEndedEvent.listen")
 
         this.timedTrigger:start(100, function()
-            local isInDialog = this.human:IsInDialog()
-            return not isInDialog
+            local isInDialog = this.player.human:IsInDialog()
+            local hasEquippedGear = tostring(this.player.soul:GetDerivedStat("eqw")) ~= "0"
+            return not isInDialog and hasEquippedGear
         end, function()
             this.log:info("Starting put gear on.")
             this.equipment:putOnCoif()

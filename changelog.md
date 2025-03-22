@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.3.3 22-march-25
+- fix: Wait until after Henry some equipped gear before attempting to put back on previously take off gear.
+
 ### 1.3.2 19-march-25
 - fix: Resolved issue in "Easy Riders" quest where progress was blocked due to helmet being removed; helmet now remains equipped, enabling uninterrupted sparring with Hans.
 

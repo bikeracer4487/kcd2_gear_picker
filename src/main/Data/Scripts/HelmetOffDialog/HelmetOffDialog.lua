@@ -56,11 +56,10 @@ local HelmetOffDialog = {
         local this = self
         local log = this:log()
         local equipment = this:equipment()
-        local human = _G.player.human
         local timedTrigger = this:timedTrigger()
         --- @type TalkEndedEvent
         local TalkEndedEvent = this.ClassRegistry.TalkEndedEvent
-        return TalkEndedEvent:new(this, log, equipment, timedTrigger, human)
+        return TalkEndedEvent:new(this, log, equipment, timedTrigger, _G.player)
     end,
     onTalkEvent = function(self)
         --- @type HelmetOffDialog
