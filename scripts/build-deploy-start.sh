@@ -4,10 +4,11 @@ projectRoot="$(dirname "$(realpath "$0")")/.."
 defaultGamePath="/mnt/c/Steam/steamapps/common/KingdomComeDeliverance2"
 exeName="KingdomCome.exe"
 defaultExeSubPath="Bin/Win64MasterMasterSteamPGO/${exeName}"
-defaultTarget="main"
 
 # List of all valid mod targets (mirrors validTargets in build.js)
-validTargets=("main" "random" "ranged" "helmet_only")
+#validTargets=("main" "random")
+validTargets=("main" "ranged")
+#validTargets=("main" "random" "ranged" "helmet_only")
 
 echo "Script called with arguments: $@"
 
