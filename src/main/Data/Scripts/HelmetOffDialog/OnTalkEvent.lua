@@ -28,7 +28,7 @@ local OnTalkEvent = {
         local log = this.log
 
         if not this.human:IsInDialog() then
-            log:info("Not in dialogue. Aborting.")
+            log:info("Aborting because player is not in dialog")
             this.eventInProgress = false
             return
         end

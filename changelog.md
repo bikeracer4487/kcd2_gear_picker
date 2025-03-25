@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.3.4 25-march-25
+- fix: Put on gear when trading.
+
 ### 1.3.3 22-march-25
 - fix: Wait until after Henry some equipped gear before attempting to put back on previously take off gear.
 
