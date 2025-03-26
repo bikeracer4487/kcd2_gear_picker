@@ -1,0 +1,52 @@
+name: Coverage Report
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  coverage:
+    name: Test and Coverage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Tests and Coverage
+        run: make test-coverage
+
+      - name: Upload HTML Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: luacov.report.html
+
+      - name: Extract Coverage Percentage
+        id: coverage
+        run: |
+          source ./coverage.env
+          echo "percentage=$percentage" >> $GITHUB_OUTPUT
+
+      - name: Generate Coverage Badge
+        uses: schneegans/dynamic-badges-action@v1.6.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: c8127f736b3cb0097c7094efe1882299
+          filename: kcd2_helmet_off_dialog_badges.json
+          label: Coverage
+          message: ${{ steps.coverage.outputs.percentage }}%
+          color: green
+          valColorRange: ${{ steps.coverage.outputs.percentage }}
+          maxColorRange: 100
+          minColorRange: 0
+
+      - name: Update Badges in README and badges.md
+        run: |
+          sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' README.md
+          sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' documentantion/badges.md
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add README.md documentantion/badges.md
+          git commit -m "Update coverage badge link" || echo "No changes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

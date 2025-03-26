@@ -1,7 +1,7 @@
 check: test prettier
 
 test:
-	docker compose run --rm test_runner sh -c "busted --verbose /data"
+	docker compose run --rm --entrypoint "" test_runner sh -c "busted --verbose /data"
 
 ## Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
 test-watch:
