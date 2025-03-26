@@ -13,7 +13,7 @@ describe("triggers the on talk event", function()
     end)
 end)
 
-describe("player can still start dialogues", function()
+describe("player can still start dialogues: ", function()
     test("original OnTalk function is called", function()
         local factory = makeFactory()
         factory.Entity.GetPos()
