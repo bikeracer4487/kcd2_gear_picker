@@ -4,9 +4,13 @@ local function makeFactory(mock, spy, args)
     local helmetOffDialogFactory = mockHelmetOffDialog(mock, spy)
     local helmetOffDialog = helmetOffDialogFactory.HelmetOffDialog
     local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
-    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
 
+    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
     local log = mock(Log, true)
+
+    local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
+    local metaRole = mock(MetaRole, true)
+
 
     local TalkEndedEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
     local talkEndedEvent = mock(TalkEndedEvent, true)
@@ -83,21 +87,27 @@ local function makeFactory(mock, spy, args)
         return config
     end
 
-    local human = {
-        IsInDialog = function(self)
-            local isInDialog = true
+    local player = {
+        human = {
+            IsInDialog = function(self)
+                local isInDialog = true
 
-            if args and args.isInDialog ~= nil then
-                isInDialog = args.isInDialog
+                if args and args.isInDialog ~= nil then
+                    isInDialog = args.isInDialog
+                end
+
+                return isInDialog
             end
-
-            return isInDialog
-        end
+        }
     }
+
+    local twinEntity = { GetName = function(self)
+        return "lorem-ipsum"
+    end }
 
     --- @type OnTalkEvent
     local onTalkEvent = OnTalkEvent:new(
-            helmetOffDialog, log, equipment, talkEndedEvent, human
+            helmetOffDialog, log, equipment, talkEndedEvent, player, metaRole
     )
     spy.on(onTalkEvent, "takeOffHeadChainmail")
     spy.on(onTalkEvent, "coif")
@@ -118,7 +128,8 @@ local function makeFactory(mock, spy, args)
     return {
         equipment = equipment,
         onTalkEvent = onTalkEvent,
-        talkEndedEvent = talkEndedEvent
+        talkEndedEvent = talkEndedEvent,
+        twinEntity = twinEntity
     }
 end
 
