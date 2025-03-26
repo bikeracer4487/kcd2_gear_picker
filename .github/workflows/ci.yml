@@ -14,11 +14,36 @@ jobs:
       - uses: actions/checkout@v4
       - name: Prettier
         run: make prettier
-
   tests:
-    name: Test
+    name: Test and Coverage
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Tests
-        run: make test
+
+      - name: Tests and Coverage
+        run: make test-coverage
+
+      - name: Upload HTML Report Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: luacov.report.html
+
+      - name: Extract Coverage Percentage
+        id: coverage
+        run: |
+          source ./coverage.env
+          echo "percentage=$percentage" >> $GITHUB_OUTPUT
+
+      - name: Generate Coverage Badge
+        uses: schneegans/dynamic-badges-action@v1.7.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: ${{ secrets.GIST_ID }}
+          filename: kcd2_helmet_off_dialog_badges.json
+          label: Coverage
+          message: ${{ steps.coverage.outputs.percentage }}%
+          color: green
+          valColorRange: ${{ steps.coverage.outputs.percentage }}
+          maxColorRange: 100
+          minColorRange: 0

@@ -12,7 +12,6 @@ services:
     volumes:
       - "./src:/data/src"
       - "./tests:/data/tests"
-      - "./.luacov:/data/.luacov"
     entrypoint: sh -c "find /data -type f | entr -c busted --verbose /data"
     tty: true
   ci-cd:
