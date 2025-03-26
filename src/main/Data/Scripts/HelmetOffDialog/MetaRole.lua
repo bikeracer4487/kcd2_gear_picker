@@ -1,6 +1,7 @@
 --- @class MetaRole
 --- @field new fun(self: MetaRole, helmetOffDialog: HelmetOffDialog, log: Log): MetaRole
---- @field is hasBathhouseBooking(self, gearCategory: string, inventoryItem: userdata)
+--- @field hasBathhouseBooking fun(self, gearCategory: string, entityName: string)
+--- @field hasArcheryCompetition fun(self, gearCategory: string, entityName: string)
 --- @field log Log
 local MetaRole = {
     new = function(self, helmetOffDialog, log)
@@ -33,6 +34,32 @@ local MetaRole = {
             if role == bathhouseBooking then
                 log:info('Entity serves bath services.')
                 return true
+            end
+        end
+
+        return false
+    end,
+
+    --- @field is fun(self: MetaRole, entityName: string): boolean
+    hasArcheryCompetition = function(self, entityName)
+        --- @type MetaRole
+        local this = self
+        local log = this.log
+
+        local entity = System.GetEntityByName(entityName)
+
+        local countLinks = entity:CountLinks()
+        log:info("countLinks: ", countLinks)
+
+        for index = 0, (countLinks - 1) do
+            local link = entity:GetLink(index)
+            log:info("Link:", index, link)
+            if link ~= nil then
+                local name = link:GetName()
+                if string.find(string.lower(name), "shootingrange") then
+                    log:info("Identified an entity with archery competition.")
+                    return true
+                end
             end
         end
 

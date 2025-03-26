@@ -77,7 +77,7 @@ local OnTalkEvent = {
             if not config:isHelmetOnly() then
                 this:takeOffHeadChainmail()
             elseif config:isRanged() then
-                this:takeOffFirstRangedWeapon()
+                this:takeOffFirstRangedWeapon(entityName)
             else
                 this:handleTalkEndedEvent("triggeredByHandler")
             end
@@ -105,9 +105,17 @@ local OnTalkEvent = {
         end)
     end,
 
-    takeOffFirstRangedWeapon = function(self)
+    takeOffFirstRangedWeapon = function(self, entityName)
+        --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffFirstRangedWeapon")
+
+        if this.metaRole:hasArcheryCompetition(entityName) then
+            this.log:info("Aborting taking off ranged weapons because entity offers archery competition")
+            this:handleTalkEndedEvent("triggeredByRanged")
+            return
+        end
+
         this.equipment:takeOffFirstRangedWeapon(function()
             this:takeOffSecondRangedWeapon()
         end)

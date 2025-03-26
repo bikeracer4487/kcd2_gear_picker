@@ -35,3 +35,6 @@ As of version 1.3.0 (16-Mar-25), helmet removal when speaking to Mutt is now sup
 
 ### Why doesn’t my gear get taken off when speaking to people offering bathhouse services?
 As of version 1.3.4, the mod skips gear take-off when interacting with bathhouse NPCs. This is a temporary workaround to avoid the issue where headgear taken off during the interaction isn’t washed. Once a method is developed to detect when Henry confirms the dialogue option to wash his clothes, gear take-off will be re-enabled.
+
+### Why doesn’t my gear get taken off when speaking to people offering archery competitions?
+As of version 1.3.4, the mod skips removing gear when interacting with archery competition NPCs. This change prevents a bug that blocks the competition from starting. Once a method is developed to detect when Henry confirms the dialogue option to begin the competition, this feature will be re-enabled.
