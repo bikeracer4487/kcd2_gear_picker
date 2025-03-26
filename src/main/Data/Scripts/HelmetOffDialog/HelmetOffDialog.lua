@@ -61,6 +61,14 @@ local HelmetOffDialog = {
         local TalkEndedEvent = this.ClassRegistry.TalkEndedEvent
         return TalkEndedEvent:new(this, log, equipment, timedTrigger, _G.player)
     end,
+    metaRole = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        local log = this:log()
+        --- @type MetaRole
+        local MetaRole = this.ClassRegistry.MetaRole
+        return MetaRole:new(this, log)
+    end,
     onTalkEvent = function(self)
         --- @type HelmetOffDialog
         local this = self
@@ -68,10 +76,11 @@ local HelmetOffDialog = {
         local equipment = this:equipment()
         --- @type TalkEndedEvent
         local talkEndedEvent = this:talkEndedEvent()
-        local human = _G.player.human
+        --- @type MetaRole
+        local metaRole = this:metaRole()
         --- @type OnTalkEvent
         local OnTalkEvent = this.ClassRegistry.OnTalkEvent
-        return OnTalkEvent:new(this, log, equipment, talkEndedEvent, human)
+        return OnTalkEvent:new(this, log, equipment, talkEndedEvent, _G.player, metaRole)
     end,
     timedTrigger = function(self)
         --- @type HelmetOffDialog
@@ -114,6 +123,7 @@ local HelmetOffDialog = {
             string.format("Scripts/%s/utils/dd.lua", modName),
             string.format("Scripts/%s/utils/Inspect.lua", modName),
             string.format("Scripts/%s/SettingsCommands.lua", modName),
+            string.format("Scripts/%s/MetaRole.lua", modName),
         }
         for _, script in ipairs(scripts) do
             local result = Script.LoadScript(script)

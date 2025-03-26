@@ -29,4 +29,4 @@ function HelmetOffDialog:ApseCharacterOnInit(elementName, instanceId, eventName,
     local event = HelmetOffDialog:talkEndedEvent()
     event:forcePutOn()
 end
-UIAction.RegisterElementListener(Debugger, "ApseCharacter", -1, "", "ApseCharacterOnInit")
+UIAction.RegisterElementListener(HelmetOffDialog, "ApseCharacter", -1, "", "ApseCharacterOnInit")
