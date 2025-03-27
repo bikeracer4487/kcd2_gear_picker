@@ -27,7 +27,7 @@ jobs:
           echo "percentage=$percentage" >> $GITHUB_OUTPUT
 
       - name: Generate Coverage Badge
-        uses: schneegans/dynamic-badges-action@v1.6.0
+        uses: schneegans/dynamic-badges-action@v1.7.0
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: c8127f736b3cb0097c7094efe1882299
