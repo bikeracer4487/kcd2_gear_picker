@@ -17,16 +17,6 @@ describe("Config", function()
 end)
 
 describe("Log", function()
-    it("creates a new instance", function()
-        local factory = makeFactory()
-        factory.HelmetOffDialog:log()
-        assert.stub(factory.HelmetOffDialog.ClassRegistry.Log.new)
-              .was.called_with(
-                match.is_ref(factory.HelmetOffDialog.ClassRegistry.Log),
-                factory.HelmetOffDialog.MOD_NAME,
-                factory.HelmetOffDialog:config())
-    end)
-
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -40,9 +30,7 @@ describe("Error", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:error()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.Error.new)
-              .was.called_with(
-                match.is_ref(factory.HelmetOffDialog.ClassRegistry.Error),
-                factory.HelmetOffDialog:log())
+              .was.called_with(match.is_ref(factory.HelmetOffDialog.ClassRegistry.Error))
     end)
 
     it("loads the script", function()
@@ -61,7 +49,6 @@ describe("Equipment", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.Equipment),
                 factory.HelmetOffDialog,
-                factory.HelmetOffDialog:log(),
                 factory.player,
                 factory.HelmetOffDialog:unequipGear()
         )
@@ -83,7 +70,6 @@ describe("UnequipGear", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.UnequipGear),
                 factory.HelmetOffDialog,
-                factory.HelmetOffDialog:log(),
                 factory.player.actor,
                 factory.HelmetOffDialog:equippedItem(),
                 factory.HelmetOffDialog:itemCategory(),
@@ -108,7 +94,6 @@ describe("ItemCategory", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.ItemCategory),
                 factory.HelmetOffDialog,
-                factory.HelmetOffDialog:log(),
                 factory.itemManager
         )
     end)
@@ -120,6 +105,16 @@ describe("ItemCategory", function()
               .was.called_with("Scripts/HelmetOffDialog/ItemCategory.lua")
     end)
 end)
+
+-- TODO
+--it("uses the cached factory", function()
+--    local factory = makeFactory()
+--    local cachedOnTalkEvent = factory.onTalkEvent:new(
+--            factory.helmetOffDialog, factory.player
+--    )
+--    assert.equal(cachedOnTalkEvent, factory.onTalkEvent)
+--end)
+--
 
 function makeFactory()
     local player = {
@@ -200,7 +195,6 @@ function makeFactory()
         return Error
     end)
     HelmetOffDialog.ClassRegistry.Error = Error
-
 
     factory.HelmetOffDialog = HelmetOffDialog
     factory.script = mock(script, true)

@@ -1,8 +1,8 @@
 local original_Entity_GetPos = Entity.GetPos
+local Log = HelmetOffDialog.Log
 
 function Entity.GetPos(...)
-    local log = HelmetOffDialog:log()
-    log:info("OnTalkEvent: Triggered by Entity.GetPos")
+    Log.info("OnTalkEvent: Triggered by Entity.GetPos")
 
     --- @type _G.Entity
     local this = ...
@@ -10,7 +10,7 @@ function Entity.GetPos(...)
     HelmetOffDialog:error():catch(function()
         --- @type OnTalkEvent
         local event = HelmetOffDialog:onTalkEvent()
-        event:handle(this)
+        event:handle(this, _G.player)
     end)
 
     return original_Entity_GetPos(...)

@@ -1,8 +1,7 @@
-local log = _G.HelmetOffDialog:log()
 local config = _G.HelmetOffDialog:config()
 
 function _G.HelmetOffDialog:setHelmetOnly(input)
-    log:info("setHelmetOnly called with argument: ", input)
+    Log.info("setHelmetOnly called with argument: ", input)
     config:setHelmetOnly(input)
 end
 
@@ -14,7 +13,7 @@ _G.System.AddCCommand(
 
 
 function _G.HelmetOffDialog:setRandom(rawInput)
-    log:info("setRandom called with argument: ", rawInput)
+    Log.info("setRandom called with argument: ", rawInput)
     config:setRandom(rawInput)
 end
 
@@ -25,7 +24,7 @@ _G.System.AddCCommand(
 );
 
 function _G.HelmetOffDialog:setRanged(rawInput)
-    log:info("setRanged called with argument: ", rawInput)
+    Log.info("setRanged called with argument: ", rawInput)
     config:setRanged(rawInput)
 end
 

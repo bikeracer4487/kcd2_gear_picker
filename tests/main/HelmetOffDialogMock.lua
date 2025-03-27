@@ -20,23 +20,24 @@ local function mockHelmetOffDialog(mock, spy)
     }
     local mockedEntity = mock(_G.Entity, true)
 
+    local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
+    local HelmetOffDialog = mock(HelmetOffDialog, true)
+
+    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
+    local log = mock(Log, true)
+    _G.HelmetOffDialog.Log = log
+
     dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Error.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
-    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
 
     local Error = mock(HelmetOffDialog.ClassRegistry.Error)
-    local Log = mock(HelmetOffDialog.ClassRegistry.Log, true)
     local OnTalkEvent = mock(HelmetOffDialog.ClassRegistry.OnTalkEvent, true)
     local Config = mock(HelmetOffDialog.ClassRegistry.Config, true)
-    local HelmetOffDialog = mock(HelmetOffDialog, true)
-    HelmetOffDialog.log = function()
-        return Log
-    end
     HelmetOffDialog.error = function()
         return Error
     end

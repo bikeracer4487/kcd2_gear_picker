@@ -29,6 +29,7 @@ end)
 function makeFactory()
     local mockHelmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")
     local factory = mockHelmetOffDialog(mock, spy)
+
     local original_Entity_GetPos = factory.mockedEntity.GetPos
     dofile("src/main/Data/Scripts/HelmetOffDialog/RegisterOnTalkEvents.lua")
 

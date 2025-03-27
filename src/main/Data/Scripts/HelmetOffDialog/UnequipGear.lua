@@ -1,12 +1,13 @@
+local Log = HelmetOffDialog.Log
+
 --- @class UnequipGear
---- @field new fun(self: UnequipGear, helmetOffDialog: HelmetOffDialog, log: Log, actor: _G.player.actor, equippedItem: EquippedItem, itemCategory: ItemCategory, itemManager: ItemManager): UnequipGear
+--- @field new fun(self: UnequipGear, helmetOffDialog: HelmetOffDialog, actor: _G.player.actor, equippedItem: EquippedItem, itemCategory: ItemCategory, itemManager: ItemManager): UnequipGear
 --- @field itemCategory ItemCategory
 --- @field equippedItem EquippedItem
 local UnequipGear = {
     new = function(
             self,
             helmetOffDialog,
-            log,
             actor,
             equippedItem,
             itemCategory,
@@ -18,7 +19,6 @@ local UnequipGear = {
         end
         local instance = {
             helmetOffDialog = helmetOffDialog,
-            log = log,
             actor = actor,
             equippedItem = equippedItem,
             itemCategory = itemCategory,
@@ -35,17 +35,17 @@ local UnequipGear = {
         local this = self
         local item = this.itemManager.GetItem(inventoryItem)
         local itemName = this.itemManager.GetItemName(item.class)
-        this.log:info("Checking if " .. itemType .. " is equipped: " .. itemName)
+        Log.info("Checking if " .. itemType .. " is equipped: " .. itemName)
 
         this.equippedItem:isEquipped(inventoryItem, function(isEquipped)
             if not isEquipped then
-                this.log:info("UnequipGear " .. itemType .. " not equipped")
+                Log.info("UnequipGear " .. itemType .. " not equipped")
                 callback(nil)
                 return
             end
 
             this.actor:UnequipInventoryItem(inventoryItem)
-            this.log:info("UnequipGear Unequipped " .. itemType .. ": " .. itemName)
+            Log.info("UnequipGear Unequipped " .. itemType .. ": " .. itemName)
             callback(inventoryItem)
         end)
     end,
@@ -53,7 +53,7 @@ local UnequipGear = {
     takeOff = function(self, itemCategory, callback)
         --- @type UnequipGear
         local this = self
-        this.log:info("UnequipGear.takeOff: " .. itemCategory)
+        Log.info("UnequipGear.takeOff: " .. itemCategory)
         local itemsToCheck = {}
 
         for _, inventoryItem in pairs(this.inventory:GetInventoryTable()) do
@@ -63,14 +63,14 @@ local UnequipGear = {
         end
 
         if #itemsToCheck == 0 then
-            this.log:info("UnequipGear: No equipped " .. itemCategory .. " found")
+            Log.info("UnequipGear: No equipped " .. itemCategory .. " found")
             return callback()
         end
 
         local index = 1
         local function processNext()
             if index > #itemsToCheck then
-                self.log:info("UnequipGear Finished taking off " .. itemCategory)
+                Log.info("UnequipGear Finished taking off " .. itemCategory)
                 return callback()
             end
             local inventoryItem = itemsToCheck[index]

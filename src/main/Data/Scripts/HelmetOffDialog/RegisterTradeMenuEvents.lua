@@ -1,8 +1,7 @@
 function HelmetOffDialog:ApseCharacterOnInit(
         elementName, instanceId, eventName, argTable
 )
-    local log = HelmetOffDialog:log()
-    log:info("ApseCharacterOnInit", elementName, instanceId, eventName, argTable)
+    Log.info("ApseCharacterOnInit", elementName, instanceId, eventName, argTable)
 
     if eventName ~= "OnInit" then
         return
