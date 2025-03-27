@@ -10,6 +10,12 @@ it("aborts if the given entity is that of the player", function()
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
+it("aborts if the given entity offers bathhouse services", function()
+    local factory = makeFactory({ hasBathhouseBooking = true })
+    factory.onTalkEvent:handle(factory.twinEntity)
+    assert.spy(factory.equipment.takeOffHelmet).was_not_called()
+end)
+
 it("aborts if another on talk even is in progress", function()
     local factory = makeFactory({ eventInProgress = true })
     factory.onTalkEvent:handle(factory.twinEntity)
