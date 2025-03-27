@@ -1,39 +1,35 @@
+local Log = HelmetOffDialog.Log
+
 --- @class TalkEndedEvent
---- @field log Log
 --- @field equipment Equipment
 --- @field timedTrigger TimedTrigger
+--- @field config Config
 --- @field player _G.player
---- @field helmetOffDialog HelmetOffDialog
 local TalkEndedEvent = {
-    new = function(self, helmetOffDialog, log, equipment, timedTrigger, player)
-        if helmetOffDialog.__factories.talkEndedEvent then
-            return helmetOffDialog.__factories.talkEndedEvent
-        end
+    new = function(self, config, equipment, timedTrigger, player)
         local instance = {
-            log = log,
+            config = config,
             equipment = equipment,
-            helmetOffDialog = helmetOffDialog,
             timedTrigger = timedTrigger,
             player = player,
         }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.talkEndedEvent = instance
         return instance
     end,
 
     listen = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.listen")
+        Log.info("TalkEndedEvent.listen")
 
         this.timedTrigger:start(200, function()
             local isInDialog = this.player.human:IsInDialog()
-            this.log:info("isInDialog", isInDialog)
+            Log.info("isInDialog", isInDialog)
             local hasEquippedGear = tostring(this.player.soul:GetDerivedStat("eqw")) ~= "0"
-            this.log:info("hasEquippedGear", hasEquippedGear)
+            Log.info("hasEquippedGear", hasEquippedGear)
             return not isInDialog and hasEquippedGear
         end, function()
-            this.log:info("Starting put gear on.")
+            Log.info("Starting put gear on.")
             this.equipment:putOnCoif()
             this:queuePutOnHeadChainmail()
         end)
@@ -42,7 +38,7 @@ local TalkEndedEvent = {
     forcePutOn = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.force")
+        Log.info("TalkEndedEvent.force")
 
         this.equipment:putOnCoif()
         this.equipment:putOnHeadChainmail()
@@ -54,7 +50,7 @@ local TalkEndedEvent = {
     queuePutOnHeadChainmail = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.queuePutOnHeadChainmail")
+        Log.info("TalkEndedEvent.queuePutOnHeadChainmail")
 
         this.timedTrigger:start(50, function()
             return true
@@ -67,7 +63,7 @@ local TalkEndedEvent = {
     queuePutOnHelmet = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.putOnHelmet")
+        Log.info("TalkEndedEvent.putOnHelmet")
 
         this.timedTrigger:start(50, function()
             return true
@@ -80,9 +76,9 @@ local TalkEndedEvent = {
     queuePutOnFirstRangedWeapon = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.queuePutOnFirstRangedWeapon")
+        Log.info("TalkEndedEvent.queuePutOnFirstRangedWeapon")
 
-        if not this.helmetOffDialog:config():isRanged() then
+        if not this.config():isRanged() then
             return
         end
 
@@ -97,7 +93,7 @@ local TalkEndedEvent = {
     queuePutOnSecondRangedWeapon = function(self)
         --- @type TalkEndedEvent
         local this = self
-        this.log:info("TalkEndedEvent.queuePutOnSecondRangedWeapon")
+        Log.info("TalkEndedEvent.queuePutOnSecondRangedWeapon")
 
         this.timedTrigger:start(50, function()
             return true

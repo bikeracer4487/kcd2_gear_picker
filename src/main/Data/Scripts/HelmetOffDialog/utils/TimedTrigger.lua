@@ -1,16 +1,14 @@
 --- @class TimedTrigger
 --- @field new fun(self: TimedTrigger, script: Script.SetTimer): TimedTrigger
 --- @field start fun(self: TimedTrigger, intervalMs: number, checkCallback: function, runCallback: function)
---- @field log Log
 --- @field script Script
 local TimedTrigger = {
-    log = nil,
     setTimer = nil,
-    new = function(self, log, script)
+    new = function(self, script)
         if HelmetOffDialog.__factories.timedTrigger then
             return HelmetOffDialog.__factories.timedTrigger
         end
-        local instance = { log = log, script = script, }
+        local instance = { script = script, }
         setmetatable(instance, { __index = self })
         HelmetOffDialog.__factories.timedTrigger = instance
 
@@ -32,3 +30,5 @@ local TimedTrigger = {
 }
 
 HelmetOffDialog.ClassRegistry.TimedTrigger = TimedTrigger
+
+return TimedTrigger

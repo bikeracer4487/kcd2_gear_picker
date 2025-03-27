@@ -1,15 +1,14 @@
---- @class Error
---- @field new fun(self: Error, log: Log): Log
---- @field catch fun(self: Error, func: function, ...): boolean, any
---- @field log Log
+local Log = HelmetOffDialog.Log
 
+--- @class Error
+--- @field new fun(self: Error): Error
+--- @field catch fun(self: Error, func: function, ...): boolean, any
 local Error = {
-    log = nil,
-    new = function(self, log)
+    new = function(self)
         if HelmetOffDialog.__factories.error then
             return HelmetOffDialog.__factories.error
         end
-        local instance = { log = log }
+        local instance = {}
         setmetatable(instance, { __index = self })
         HelmetOffDialog.__factories.error = instance
         return instance
@@ -18,7 +17,7 @@ local Error = {
         local success, result = pcall(func, ...)
         if not success then
             local stackTrace = debug.traceback(tostring(result))
-            HelmetOffDialog:log():error(tostring(stackTrace))
+            Log.error(tostring(stackTrace))
         end
         return success, result
     end

@@ -12,102 +12,119 @@ local HelmetOffDialog = {
         local Config = self.ClassRegistry.Config
         return Config:new(self.HOD_ENVIRONMENT)
     end,
-    --- @type Log
-    log = function(self)
-        local config = self:config()
-        --- @type Log
-        local Log = self.ClassRegistry.Log
-        return Log:new(self.MOD_NAME, config)
+    error = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        --- @type Error
+        local Error = this.ClassRegistry.Error
+        return Error:new()
     end,
     equipment = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
-        local unequipGear = this:unequipGear()
         --- @type Equipment
+        if this.__factories.equipment then
+            return this.__factories.equipment
+        end
         local Equipment = this.ClassRegistry.Equipment
-        return Equipment:new(this, log, _G.player, unequipGear)
+        this.__factories.equipment = Equipment:new(_G.player, this:unequipGear())
+        return this.__factories.equipment
     end,
     unequipGear = function(self)
         --- @type HelmetOffDialog
         local this = self
         --- @type UnequipGear
         local UnequipGear = this.ClassRegistry.UnequipGear
-        return UnequipGear:new(
-                this,
-                this:log(),
-                _G.player.actor,
-                this:equippedItem(),
-                this:itemCategory(),
-                _G.ItemManager,
-                _G.player.inventory
+
+        if this.__factories.unequipGear then
+            return this.__factories.unequipGear
+        end
+
+        this.__factories.unequipGear = UnequipGear:new(
+                _G.player, this:equippedItem(), this:itemCategory(), _G.ItemManager
         )
-    end,
-    error = function(self)
-        --- @type HelmetOffDialog
-        local this = self
-        local log = this:log()
-        --- @type Error
-        local Error = this.ClassRegistry.Error
-        return Error:new(log)
+
+        return this.__factories.unequipGear
     end,
     talkEndedEvent = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
-        local equipment = this:equipment()
-        local timedTrigger = this:timedTrigger()
+
+        if this.__factories.talkEndedEvent then
+            return this.__factories.talkEndedEvent
+        end
+
         --- @type TalkEndedEvent
         local TalkEndedEvent = this.ClassRegistry.TalkEndedEvent
-        return TalkEndedEvent:new(this, log, equipment, timedTrigger, _G.player)
+        this.__factories.talkEndedEvent = TalkEndedEvent:new(
+                this:config(), this:equipment(), this:timedTrigger(), _G.player
+        )
+        return this.__factories.talkEndedEvent
     end,
     metaRole = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
+
+        if this.__factories.MetaRole then
+            return this.__factories.MetaRole
+        end
+
         --- @type MetaRole
         local MetaRole = this.ClassRegistry.MetaRole
-        return MetaRole:new(this, log)
+        this.__factories.MetaRole = MetaRole:new()
+
+        return this.__factories.MetaRole
     end,
     onTalkEvent = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
-        local equipment = this:equipment()
-        --- @type TalkEndedEvent
-        local talkEndedEvent = this:talkEndedEvent()
-        --- @type MetaRole
-        local metaRole = this:metaRole()
+        if this.__factories.onTalkEvent then
+            return this.__factories.onTalkEvent
+        end
         --- @type OnTalkEvent
         local OnTalkEvent = this.ClassRegistry.OnTalkEvent
-        return OnTalkEvent:new(this, log, equipment, talkEndedEvent, _G.player, metaRole)
+        this.__factories.onTalkEvent = OnTalkEvent:new(
+                this:equipment(),
+                this:talkEndedEvent(),
+                this:metaRole(),
+                this:config()
+        )
+        return this.__factories.onTalkEvent
     end,
     timedTrigger = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
         --- @type TimedTrigger
         local TimedTrigger = this.ClassRegistry.TimedTrigger
-        return TimedTrigger:new(log, _G.Script)
+        return TimedTrigger:new(_G.Script)
     end,
     equippedItem = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
+
+        if this.__factories.equippedItem then
+            return this.__factories.equippedItem
+        end
+
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
-        return EquippedItem:new(this, log, _G.player, _G.Script)
+        this.__factories.equippedItem = EquippedItem:new(_G.player, _G.Script)
+
+        return this.__factories.equippedItem
     end,
     itemCategory = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local log = this:log()
+        if this.__factories.itemCategory then
+            return this.__factories.itemCategory
+        end
         --- @type ItemCategory
         local ItemCategory = this.ClassRegistry.ItemCategory
-        return ItemCategory:new(this, log, _G.ItemManager)
+        this.__factories.itemCategory = ItemCategory:new(_G.ItemManager)
+        return this.__factories.itemCategory
     end,
 
-    init = function(self)
+    init = function()
         local modName = "HelmetOffDialog"
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),

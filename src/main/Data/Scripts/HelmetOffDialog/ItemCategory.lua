@@ -1,20 +1,12 @@
+local Log = HelmetOffDialog.Log
+
 --- @class ItemCategory
---- @field new fun(self: ItemCategory, helmetOffDialog: HelmetOffDialog, log: Log, itemManager: ItemManager): ItemCategory
 --- @field is func(self, gearCategory: string, inventoryItem: userdata)
---- @field log Log
 local ItemCategory = {
-    new = function(self, helmetOffDialog, log, itemManager)
-        if helmetOffDialog.__factories.itemCategory then
-            return helmetOffDialog.__factories.itemCategory
-        end
-        local instance = {
-            log = log,
-            itemManager = itemManager,
-            helmetOffDialog = helmetOffDialog
-        }
+    new = function(self, itemManager)
+        local instance = { itemManager = itemManager }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.itemCategory = instance
-        log:info("ItemCategory New instance created")
+        Log.info("ItemCategory New instance created")
         return instance
     end,
 
@@ -24,7 +16,7 @@ local ItemCategory = {
         local this = self
         local item = this.itemManager.GetItem(inventoryItem)
         if not item then
-            this.log:info("ItemCategory Invalid item for category check: " .. itemCategory)
+            Log.info("ItemCategory Invalid item for category check: " .. itemCategory)
             return false
         end
 
@@ -54,7 +46,7 @@ local ItemCategory = {
                     or string.lower(itemName):find("crossbow")
         end
 
-        this.log:info("ItemCategory Unknown category: " .. itemCategory)
+        Log.info("ItemCategory Unknown category: " .. itemCategory)
         return false
     end
 }

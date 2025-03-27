@@ -1,14 +1,10 @@
+local Log = HelmetOffDialog.Log
+
 --- @class EquippedItem
---- @field new fun(self: Equipment, helmetOffDialog: HelmetOffDialog, log: Log, player: _G.player, engineScript: _G.Script): Equipment
---- @field log Log
 local EquippedItem = {
-    new = function(self, helmetOffDialog, log, player, engineScript)
-        if helmetOffDialog.__factories.equippedItem then
-            return helmetOffDialog.__factories.equippedItem
-        end
-        local instance = { log = log, player = player, engineScript = engineScript }
+    new = function(self, player, engineScript)
+        local instance = { player = player, engineScript = engineScript }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.equippedItem = instance
         return instance
     end,
     isEquipped = function(self, inventoryItem, callback)
@@ -18,18 +14,18 @@ local EquippedItem = {
         local oldStats = this:getDerivedStats()
 
         if tostring(oldStats.equippedWeight) == "0" then
-            this.log:info("Falsy, due to: ", oldStats,
+            Log.info("Falsy, due to: ", oldStats,
                     " Player is either in intro game, or wearing no gear")
             return callback(false)
         end
 
-        this.log:info("Derived stats before une-quip: ", oldStats)
+        Log.info("Derived stats before une-quip: ", oldStats)
 
         this.player.actor:UnequipInventoryItem(inventoryItem)
 
         this.engineScript.SetTimer(20, function()
             local newStats = this:getDerivedStats()
-            this.log:info("Derived stats after un-equip: ", newStats)
+            Log.info("Derived stats after un-equip: ", newStats)
 
             --  We have to use tostring because, without it the compared values
             --  return false positives. Presumably, the floating precision
@@ -40,7 +36,7 @@ local EquippedItem = {
             if isEquipped then
                 local item = ItemManager.GetItem(inventoryItem)
                 local itemName = ItemManager.GetItemName(item.class)
-                this.log:info("Found equipped, now unequipped item: " .. itemName)
+                Log.info("Found equipped, now unequipped item: " .. itemName)
             end
 
             callback(isEquipped)

@@ -1,36 +1,36 @@
 it("aborts if player is not in dialogue", function()
     local factory = makeFactory({ isInDialog = false })
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("aborts if the given entity is that of the player", function()
     local factory = makeFactory({ isDude = true })
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("aborts if the given entity offers bathhouse services", function()
     local factory = makeFactory({ hasBathhouseBooking = true })
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("aborts if another on talk even is in progress", function()
     local factory = makeFactory({ eventInProgress = true })
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("takes off helmet", function()
     local factory = makeFactory()
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.equipment.takeOffHelmet).was_called(1)
 end)
 
 it("queues take off for head chainmail", function()
     local factory = makeFactory()
-    factory.onTalkEvent:handle(factory.twinEntity)
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
     assert.spy(factory.onTalkEvent.takeOffHeadChainmail).was_called(1)
 end)
 
@@ -60,6 +60,5 @@ end)
 
 function makeFactory(args)
     local createFactory = dofile("tests/main/Data/Scripts/HelmetOffDialog/OnTalkEvent/OnTalkEvent_Factory.lua")
-
     return createFactory(mock, spy, args)
 end

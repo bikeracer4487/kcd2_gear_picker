@@ -5,9 +5,6 @@ local function makeFactory(mock, spy, args)
     local helmetOffDialog = helmetOffDialogFactory.HelmetOffDialog
     local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
 
-    local Log = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Log.lua")
-    local log = mock(Log, true)
-
     local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
     local metaRole = mock(MetaRole, true)
     metaRole.hasBathhouseBooking = spy.new(function(self)
@@ -116,7 +113,7 @@ local function makeFactory(mock, spy, args)
 
     --- @type OnTalkEvent
     local onTalkEvent = OnTalkEvent:new(
-            helmetOffDialog, log, equipment, talkEndedEvent, player, metaRole
+            equipment, talkEndedEvent, metaRole, config
     )
     spy.on(onTalkEvent, "takeOffHeadChainmail")
     spy.on(onTalkEvent, "coif")
@@ -138,7 +135,9 @@ local function makeFactory(mock, spy, args)
         equipment = equipment,
         onTalkEvent = onTalkEvent,
         talkEndedEvent = talkEndedEvent,
-        twinEntity = twinEntity
+        twinEntity = twinEntity,
+        player = player,
+        helmetOffDialog = helmetOffDialog,
     }
 end
 

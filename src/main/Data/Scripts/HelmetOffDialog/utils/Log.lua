@@ -1,31 +1,13 @@
---- @class Log
---- @field info fun(self: Log, ...: any)
---- @field error fun(self: Log, msg: string)
---- @field modName string
---- @field config table
---- @field new fun(self: Log, modName: string, config: Config)
-
 local Log = {
-    modName = nil,
-    config = nil,
-    new = function(self, modName, config)
-        if HelmetOffDialog.__factories.log then
-            return HelmetOffDialog.__factories.log
-        end
-        local instance = { modName = modName, config = config }
-        setmetatable(instance, { __index = self })
-        HelmetOffDialog.__factories.log = instance
-        return instance
-    end,
-    getLocalTime = function(self)
+    getLocalTime = function()
         local localTime = System.GetLocalOSTime()
         return string.format("%04d-%02d-%02d %02d:%02d:%02d",
                 localTime.year + 1900, localTime.mon + 1, localTime.mday,
                 localTime.hour, localTime.min, localTime.sec)
     end,
-    _log = function(self, level, colorCode, ...)
-        local localTime = self:getLocalTime()
-        local args = {...}
+    _log = function(level, colorCode, ...)
+        local localTime = Log.getLocalTime()
+        local args = { ... }
         local messageParts = {}
 
         for _, arg in ipairs(args) do
@@ -57,20 +39,20 @@ local Log = {
         end
 
         local message = table.concat(messageParts, " ")
+        local modName = HelmetOffDialog.MOD_NAME
         System.LogAlways(string.format("%s[%s] [%s.%s] %s",
-                colorCode, localTime, self.modName, level, message))
+                colorCode, localTime, modName, level, message))
     end,
-    info = function(self, ...)
-        local config = self.config
-        if not config:isProduction() then
-            self:_log("INFO", "$5", ...)
+    info = function(...)
+        if not HelmetOffDialog:config():isProduction() then
+            HelmetOffDialog.Log._log("INFO", "$5", ...)
         end
     end,
-    error = function(self, ...)
-        self:_log("ERROR", "$4", ...)
+    error = function(...)
+        HelmetOffDialog.Log._log("ERROR", "$4", ...)
     end
 }
 
-HelmetOffDialog.ClassRegistry.Log = Log
+HelmetOffDialog.Log = Log
 
 return Log
