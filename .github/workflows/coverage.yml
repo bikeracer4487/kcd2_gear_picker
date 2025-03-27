@@ -48,5 +48,3 @@ jobs:
           git add readme.md documentation/badges.md
           git commit -m "Update coverage badge link [skip ci]" || echo "No changes"
           git push
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
