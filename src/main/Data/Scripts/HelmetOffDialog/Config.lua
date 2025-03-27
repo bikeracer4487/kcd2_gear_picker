@@ -1,13 +1,6 @@
 --- @class Config
---- @field isProduction fun(self: Config): boolean
---- @field environment string
---- @field isRanged fun(self: Config): boolean
---- @field setRanged fun(self: Config, value: boolean)
---- @field isRandom fun(self: Config): boolean
---- @field setRandom fun(self: Config, value: boolean)
---- @field isHelmetOnly fun(self: Config): boolean
---- @field setHelmetOnly fun(self: Config, value: boolean)
 local Config = {
+    --- @field environment string
     environment = nil,
     new = function(self, environment)
         local instance = {
@@ -28,23 +21,23 @@ local Config = {
         return self.ranged
     end,
     setRanged = function(self, value)
-        self.ranged = self:sanitize(value)
+        self.ranged = self:parseSettingValue(value)
     end,
     isRandom = function(self)
         return self.random
     end,
     setRandom = function(self, value)
-        self.random = self:sanitize(value)
+        self.random = self:parseSettingValue(value)
     end,
     isHelmetOnly = function(self)
         return self.helmet_only
     end,
     setHelmetOnly = function(self, value)
-        self.helmet_only = self:sanitize(value)
+        self.helmet_only = self:parseSettingValue(value)
     end,
-    sanitize = function(value)
-        local sanitized = (tostring(value):match("^%s*=?%s*(.-)%s*$") or "")
-        return sanitized:lower() == "true" or sanitized == "1"
+    parseSettingValue = function(self, arg)
+        local value = (tostring(arg):match("^%s*=?%s*(.-)%s*$") or "")
+        return value:lower() == "true" or value == "1"
     end
 }
 

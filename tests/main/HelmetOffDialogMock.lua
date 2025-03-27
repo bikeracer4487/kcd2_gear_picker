@@ -1,4 +1,6 @@
 local function mockHelmetOffDialog(mock, spy)
+    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
+
     _G.HelmetOffDialog = nil
 
     _G.UIAction = { RegisterEventSystemListener = function()
