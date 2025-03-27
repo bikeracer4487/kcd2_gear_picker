@@ -68,7 +68,7 @@ for target in "${targets[@]}"; do
     zipFilePath="./$zipFileName"
 
     # Run the build for this target
-    docker compose run --rm -e MODE="dev" -e TARGET="$target" ci-cd
+    docker compose run --rm -e MODE="dev" -e TARGET="$target" dev
     [ -f "$zipFilePath" ] || { echo "ERROR: ZIP $zipFilePath not found!"; exit 1; }
 
     # Extract the zip to the mods folder
