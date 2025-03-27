@@ -3,6 +3,7 @@ name: Coverage Report
 on:
   push:
     branches: [main]
+    paths: ["src/**", "tests/**"]
 
 jobs:
   coverage:
