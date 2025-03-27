@@ -107,9 +107,16 @@ local HelmetOffDialog = {
     timedTrigger = function(self)
         --- @type HelmetOffDialog
         local this = self
+
+        if this.__factories.timedTrigger then
+            return this.__factories.timedTrigger
+        end
+
         --- @type TimedTrigger
         local TimedTrigger = this.ClassRegistry.TimedTrigger
-        return TimedTrigger:new(_G.Script)
+        this.__factories.timedTrigger = TimedTrigger:new(_G.Script)
+
+        return this.__factories.timedTrigger
     end,
     equippedItem = function(self)
         --- @type HelmetOffDialog
@@ -142,7 +149,7 @@ local HelmetOffDialog = {
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),
             string.format("Scripts/%s/utils/Error.lua", modName),
-            string.format("Scripts/%s/utils/TimedTrigger.lua", modName),
+            string.format("Scripts/%s/TimedTrigger.lua", modName),
             string.format("Scripts/%s/Config.lua", modName),
             string.format("Scripts/%s/Equipment.lua", modName),
             string.format("Scripts/%s/EquippedItem.lua", modName),
