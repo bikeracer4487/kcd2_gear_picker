@@ -110,7 +110,10 @@ describe("MetaRole", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:metaRole()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.MetaRole.new)
-              .was.called_with(match.is_ref(factory.HelmetOffDialog.ClassRegistry.MetaRole))
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.MetaRole),
+                factory.system
+        )
     end)
 
     it("loads the script", function()
@@ -202,25 +205,36 @@ describe("EquippedItem", function()
 end)
 
 function makeFactory()
+    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
+    local factory = {}
     local player = {
         inventory = { GetInventoryTable = function()
         end },
         actor = {}
     }
-    _G.System = {
+    local mockSystem = dofile("tests/main/SystemMock.lua")
+    local mockedSystem = mockSystem(mock, spy).system
+    _G.System = mockedSystem
+
+    local mockScript = dofile("tests/main/ScriptMock.lua")
+    local mockedScript = mockScript(mock, spy)
+    _G.Script = mockedScript
+    factory.script = mockedScript
+
+    local system = {
+        GetEntityByName = function()
+        end,
         LogAlways = function()
         end
     }
-    local script = {
-        LoadScript = function()
-        end
-    }
+    factory.system = mock(system, true)
+    _G.System = system
+
     local itemManager = {
         GetItem = function()
         end
     }
 
-    local factory = {}
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
 
     local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
@@ -310,8 +324,6 @@ function makeFactory()
     HelmetOffDialog.ClassRegistry.OnTalkEvent = onTalkEvent
 
     factory.HelmetOffDialog = HelmetOffDialog
-    factory.script = mock(script, true)
-    _G.Script = script
     factory.player = mock(player, true)
     _G.player = player
     factory.itemManager = mock(itemManager, true)

@@ -14,10 +14,13 @@ end)
 
 function makeFactory()
     local factory = {}
-    _G.System = { LoadScript = function()
-    end }
-    _G.Script = { LoadScript = function()
-    end }
+    local mockSystem = dofile("tests/main/SystemMock.lua")
+    _G.System = mockSystem(mock, spy, args)
+
+    local mockScript = dofile("tests/main/ScriptMock.lua")
+    local mockedScript = mockScript(mock, spy)
+    _G.Script = mockedScript
+
     _G.Entity = { GetPos = function()
     end }
     _G.UIAction = { RegisterEventSystemListener = function()
