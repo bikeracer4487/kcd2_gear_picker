@@ -1,7 +1,7 @@
 local Log = HelmetOffDialog.Log
 
 --- @class Equipment
---- @field new fun(self: Equipment, helmetOffDialog: HelmetOffDialog, player: _G.player, equippedItem: EquippedItem, itemCategory: ItemCategory, unequipGear: UnequipGear): Equipment
+--- @field new fun(self: Equipment, player: _G.player, unequipGear: UnequipGear): Equipment
 --- @field putOnCoif fun(self: Equipment)
 --- @field putOnHelmet fun(self: Equipment)
 --- @field putOnHeadChainmail fun(self: Equipment)
@@ -9,14 +9,10 @@ local Log = HelmetOffDialog.Log
 --- @field putOnSecondRangedWeapon fun(self: Equipment)
 --- @field unequipGear UnequipGear
 local Equipment = {
-    new = function(self, helmetOffDialog, player, unequipGear)
-        if helmetOffDialog.__factories.equipment then
-            return helmetOffDialog.__factories.equipment
-        end
+    new = function(self, player, unequipGear)
         local instance = {
             player = player,
             unequipGear = unequipGear,
-            helmetOffDialog = helmetOffDialog,
             unequippedHelmet = nil,
             unequippedHeadChainmail = nil,
             unequippedCoif = nil,
@@ -24,7 +20,6 @@ local Equipment = {
             secondRangedWeapon = nil
         }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.equipment = instance
         Log.info("Equipment New instance created")
         return instance
     end,

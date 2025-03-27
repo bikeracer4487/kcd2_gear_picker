@@ -1,32 +1,18 @@
 local Log = HelmetOffDialog.Log
 
 --- @class UnequipGear
---- @field new fun(self: UnequipGear, helmetOffDialog: HelmetOffDialog, actor: _G.player.actor, equippedItem: EquippedItem, itemCategory: ItemCategory, itemManager: ItemManager): UnequipGear
+--- @field new fun(self: UnequipGear, player: _G.player, equippedItem: EquippedItem, itemCategory: ItemCategory, itemManager: ItemManager): UnequipGear
 --- @field itemCategory ItemCategory
 --- @field equippedItem EquippedItem
 local UnequipGear = {
-    new = function(
-            self,
-            helmetOffDialog,
-            actor,
-            equippedItem,
-            itemCategory,
-            itemManager,
-            inventory
-    )
-        if helmetOffDialog.__factories.unequipGear then
-            return helmetOffDialog.__factories.unequipGear
-        end
+    new = function(self, player, equippedItem, itemCategory, itemManager)
         local instance = {
-            helmetOffDialog = helmetOffDialog,
-            actor = actor,
+            player = player,
             equippedItem = equippedItem,
             itemCategory = itemCategory,
-            itemManager = itemManager,
-            inventory = inventory
+            itemManager = itemManager
         }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.unequipGear = instance
         return instance
     end,
 
@@ -44,7 +30,7 @@ local UnequipGear = {
                 return
             end
 
-            this.actor:UnequipInventoryItem(inventoryItem)
+            this.player.actor:UnequipInventoryItem(inventoryItem)
             Log.info("UnequipGear Unequipped " .. itemType .. ": " .. itemName)
             callback(inventoryItem)
         end)
@@ -56,7 +42,7 @@ local UnequipGear = {
         Log.info("UnequipGear.takeOff: " .. itemCategory)
         local itemsToCheck = {}
 
-        for _, inventoryItem in pairs(this.inventory:GetInventoryTable()) do
+        for _, inventoryItem in pairs(this.player.inventory:GetInventoryTable()) do
             if this.itemCategory:is(itemCategory, inventoryItem) then
                 table.insert(itemsToCheck, inventoryItem)
             end

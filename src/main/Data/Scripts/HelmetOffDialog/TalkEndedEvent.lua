@@ -3,21 +3,17 @@ local Log = HelmetOffDialog.Log
 --- @class TalkEndedEvent
 --- @field equipment Equipment
 --- @field timedTrigger TimedTrigger
+--- @field config Config
 --- @field player _G.player
---- @field helmetOffDialog HelmetOffDialog
 local TalkEndedEvent = {
-    new = function(self, helmetOffDialog, equipment, timedTrigger, player)
-        if helmetOffDialog.__factories.talkEndedEvent then
-            return helmetOffDialog.__factories.talkEndedEvent
-        end
+    new = function(self, config, equipment, timedTrigger, player)
         local instance = {
+            config = config,
             equipment = equipment,
-            helmetOffDialog = helmetOffDialog,
             timedTrigger = timedTrigger,
             player = player,
         }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.talkEndedEvent = instance
         return instance
     end,
 
@@ -82,7 +78,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.queuePutOnFirstRangedWeapon")
 
-        if not this.helmetOffDialog:config():isRanged() then
+        if not this.config():isRanged() then
             return
         end
 

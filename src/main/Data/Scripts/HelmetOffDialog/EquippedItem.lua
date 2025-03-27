@@ -1,15 +1,10 @@
 local Log = HelmetOffDialog.Log
 
 --- @class EquippedItem
---- @field new fun(self: Equipment, helmetOffDialog: HelmetOffDialog, player: _G.player, engineScript: _G.Script): Equipment
 local EquippedItem = {
-    new = function(self, helmetOffDialog, player, engineScript)
-        if helmetOffDialog.__factories.equippedItem then
-            return helmetOffDialog.__factories.equippedItem
-        end
+    new = function(self, player, engineScript)
         local instance = { player = player, engineScript = engineScript }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.equippedItem = instance
         return instance
     end,
     isEquipped = function(self, inventoryItem, callback)

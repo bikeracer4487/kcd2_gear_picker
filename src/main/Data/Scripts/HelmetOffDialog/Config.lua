@@ -1,14 +1,12 @@
 --- @class Config
 --- @field isProduction fun(self: Config): boolean
 --- @field environment string
---- @field new Config
 --- @field isRanged fun(self: Config): boolean
 --- @field setRanged fun(self: Config, value: boolean)
 --- @field isRandom fun(self: Config): boolean
 --- @field setRandom fun(self: Config, value: boolean)
 --- @field isHelmetOnly fun(self: Config): boolean
 --- @field setHelmetOnly fun(self: Config, value: boolean)
-
 local Config = {
     environment = nil,
     new = function(self, environment)

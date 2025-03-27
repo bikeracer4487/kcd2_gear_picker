@@ -48,7 +48,6 @@ describe("Equipment", function()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.Equipment.new)
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.Equipment),
-                factory.HelmetOffDialog,
                 factory.player,
                 factory.HelmetOffDialog:unequipGear()
         )
@@ -69,12 +68,10 @@ describe("UnequipGear", function()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.UnequipGear.new)
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.UnequipGear),
-                factory.HelmetOffDialog,
-                factory.player.actor,
+                factory.player,
                 factory.HelmetOffDialog:equippedItem(),
                 factory.HelmetOffDialog:itemCategory(),
-                factory.itemManager,
-                factory.player.inventory
+                factory.itemManager
         )
     end)
 

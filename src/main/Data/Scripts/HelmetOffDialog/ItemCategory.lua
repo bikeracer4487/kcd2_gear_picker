@@ -1,19 +1,11 @@
 local Log = HelmetOffDialog.Log
 
 --- @class ItemCategory
---- @field new fun(self: ItemCategory, helmetOffDialog: HelmetOffDialog, itemManager: ItemManager): ItemCategory
 --- @field is func(self, gearCategory: string, inventoryItem: userdata)
 local ItemCategory = {
-    new = function(self, helmetOffDialog, itemManager)
-        if helmetOffDialog.__factories.itemCategory then
-            return helmetOffDialog.__factories.itemCategory
-        end
-        local instance = {
-            itemManager = itemManager,
-            helmetOffDialog = helmetOffDialog
-        }
+    new = function(self, itemManager)
+        local instance = { itemManager = itemManager }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.itemCategory = instance
         Log.info("ItemCategory New instance created")
         return instance
     end,

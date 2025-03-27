@@ -15,24 +15,29 @@ local HelmetOffDialog = {
     equipment = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local unequipGear = this:unequipGear()
         --- @type Equipment
+        if this.__factories.equipment then
+            return this.__factories.equipment
+        end
         local Equipment = this.ClassRegistry.Equipment
-        return Equipment:new(this, _G.player, unequipGear)
+        this.__factories.equipment = Equipment:new(_G.player, this:unequipGear())
+        return this.__factories.equipment
     end,
     unequipGear = function(self)
         --- @type HelmetOffDialog
         local this = self
         --- @type UnequipGear
         local UnequipGear = this.ClassRegistry.UnequipGear
-        return UnequipGear:new(
-                this,
-                _G.player.actor,
-                this:equippedItem(),
-                this:itemCategory(),
-                _G.ItemManager,
-                _G.player.inventory
+
+        if this.__factories.unequipGear then
+            return this.__factories.unequipGear
+        end
+
+        this.__factories.unequipGear = UnequipGear:new(
+                _G.player, this:equippedItem(), this:itemCategory(), _G.ItemManager
         )
+
+        return this.__factories.unequipGear
     end,
     error = function(self)
         --- @type HelmetOffDialog
@@ -44,18 +49,30 @@ local HelmetOffDialog = {
     talkEndedEvent = function(self)
         --- @type HelmetOffDialog
         local this = self
-        local equipment = this:equipment()
-        local timedTrigger = this:timedTrigger()
+
+        if this.__factories.talkEndedEvent then
+            return this.__factories.talkEndedEvent
+        end
+
         --- @type TalkEndedEvent
         local TalkEndedEvent = this.ClassRegistry.TalkEndedEvent
-        return TalkEndedEvent:new(this, equipment, timedTrigger, _G.player)
+        this.__factories.talkEndedEvent = TalkEndedEvent:new(
+                this:config(), this:equipment(), this:timedTrigger(), _G.player
+        )
+        return this.__factories.talkEndedEvent
     end,
     metaRole = function(self)
         --- @type HelmetOffDialog
         local this = self
-        --- @type MetaRole
+
+        if this.__factories.MetaRole then
+            return this.__factories.MetaRole
+        end
+
         local MetaRole = this.ClassRegistry.MetaRole
-        return MetaRole:new(this)
+        this.__factories.MetaRole = MetaRole:new(this)
+
+        return this.__factories.MetaRole
     end,
     onTalkEvent = function(self)
         --- @type HelmetOffDialog
@@ -63,7 +80,9 @@ local HelmetOffDialog = {
         if this.__factories.onTalkEvent then
             return this.__factories.onTalkEvent
         end
-        this.__factories.onTalkEvent = this.ClassRegistry.OnTalkEvent:new(
+        --- @type OnTalkEvent
+        local OnTalkEvent = this.ClassRegistry.OnTalkEvent
+        this.__factories.onTalkEvent = OnTalkEvent:new(
                 this:equipment(),
                 this:talkEndedEvent(),
                 this:metaRole(),
@@ -81,16 +100,27 @@ local HelmetOffDialog = {
     equippedItem = function(self)
         --- @type HelmetOffDialog
         local this = self
+
+        if this.__factories.equippedItem then
+            return this.__factories.equippedItem
+        end
+
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
-        return EquippedItem:new(this, _G.player, _G.Script)
+        this.__factories.equippedItem = EquippedItem:new(this, _G.player, _G.Script)
+
+        return this.__factories.equippedItem
     end,
     itemCategory = function(self)
         --- @type HelmetOffDialog
         local this = self
+        if this.__factories.itemCategory then
+            return this.__factories.itemCategory
+        end
         --- @type ItemCategory
         local ItemCategory = this.ClassRegistry.ItemCategory
-        return ItemCategory:new(this, _G.ItemManager)
+        this.__factories.itemCategory = ItemCategory:new(this, _G.ItemManager)
+        return this.__factories.itemCategory
     end,
 
     init = function()

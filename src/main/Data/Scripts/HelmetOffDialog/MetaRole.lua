@@ -1,19 +1,14 @@
 local Log = HelmetOffDialog.Log
 
 --- @class MetaRole
---- @field new fun(self: MetaRole, helmetOffDialog: HelmetOffDialog): MetaRole
+--- @field new fun(self: MetaRole): MetaRole
 --- @field hasBathhouseBooking fun(self, gearCategory: string, entityName: string)
 --- @field hasArcheryCompetition fun(self, gearCategory: string, entityName: string)
 local MetaRole = {
-    new = function(self, helmetOffDialog)
-        if helmetOffDialog.__factories.MetaRole then
-            return helmetOffDialog.__factories.MetaRole
-        end
+    new = function(self)
         local instance = {
-            helmetOffDialog = helmetOffDialog
         }
         setmetatable(instance, { __index = self })
-        helmetOffDialog.__factories.MetaRole = instance
         Log.info("MetaRole New instance created")
         return instance
     end,
