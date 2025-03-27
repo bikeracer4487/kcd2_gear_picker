@@ -2,4 +2,4 @@
 [![Nexus Mods KCD2](https://img.shields.io/badge/Nexus%20Mods-KCD2-bf4848?style=flat-square&logo=nexusmods)](https://www.nexusmods.com/kingdomcomedeliverance2/mods/1023)
 [![Steam Workshop](https://img.shields.io/badge/Steam%20Workshop-1b2838?style=flat-square&logo=steam)](https://steamcommunity.com/sharedfiles/filedetails/?id=3443915670)
 [![GitHub](https://img.shields.io/badge/GitHub-Open%20Source-2ea44f?style=flat-square&logo=github)](https://github.com/rdok/kcd2_helmet_off_dialog)
-[![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rdok/c8127f736b3cb0097c7094efe1882299/raw/kcd2_helmet_off_dialog_badges.json&label=Coverage&logo=codecov)](https://github.com/rdok/kcd2_helmet_off_dialog/actions/runs/14095431183)
+[![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/rdok/c8127f736b3cb0097c7094efe1882299/raw/kcd2_helmet_off_dialog_badges.json&label=Coverage&logo=codecov)](https://github.com/rdok/kcd2_helmet_off_dialog/actions/runs/14096785267)
