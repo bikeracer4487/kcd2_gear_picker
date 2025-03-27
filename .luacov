@@ -1,4 +1,3 @@
 return {
-  reporter = "html",
   include = { "src/.*" }
 }

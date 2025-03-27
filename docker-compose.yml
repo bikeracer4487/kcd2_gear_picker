@@ -9,13 +9,20 @@ services:
     build:
       context: .
       dockerfile: docker/busted.Dockerfile
-    volumes: [".:/data"]
+    volumes:
+      - "./src:/data/src"
+      - "./tests:/data/tests"
     entrypoint: sh -c "find /data -type f | entr -c busted --verbose /data"
     tty: true
-  ci-cd:
+  dev:
+    build:
+      context: .
+      dockerfile: docker/dev.Dockerfile
+    volumes: [".:/app"]
+    environment: ["MODE=dev", "TARGET=main"]
+    command: node scripts/build.js --env=${MODE} --target=${TARGET}
+  nodejs:
     build:
       context: .
       dockerfile: docker/nodejs.Dockerfile
     volumes: [".:/app"]
-    environment: ["MODE=dev", "TARGET=main"]
-    command: node scripts/build.js --env=${MODE} --target=${TARGET}

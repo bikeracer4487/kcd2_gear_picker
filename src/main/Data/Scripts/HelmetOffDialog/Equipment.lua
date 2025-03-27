@@ -84,7 +84,7 @@ local Equipment = {
 
     putOnCoif = function(self)
         self.log:info("Equipment.putOnCoif:called")
-        if not self.unequippedCoif then
+        if nil == self.unequippedCoif then
             return
         end
 
@@ -97,7 +97,7 @@ local Equipment = {
 
     putOnHeadChainmail = function(self)
         self.log:info("Equipment.putOnHeadChainmail:called")
-        if not self.unequippedHeadChainmail then
+        if nil == self.unequippedHeadChainmail then
             return
         end
 
@@ -110,7 +110,7 @@ local Equipment = {
 
     putOnHelmet = function(self)
         self.log:info("Equipment.putOnHelmet:called")
-        if not self.unequippedHelmet then
+        if nil == self.unequippedHelmet then
             return
         end
 
@@ -123,7 +123,7 @@ local Equipment = {
 
     putOnFirstRangedWeapon = function(self)
         self.log:info("Equipment.putOnFirstRangedWeapon:called")
-        if not self.firstRangedWeapon then
+        if nil == self.firstRangedWeapon then
             return
         end
 
@@ -136,7 +136,7 @@ local Equipment = {
 
     putOnSecondRangedWeapon = function(self)
         self.log:info("Equipment.putOnSecondRangedWeapon:called")
-        if not self.secondRangedWeapon then
+        if nil == self.secondRangedWeapon then
             return
         end
 

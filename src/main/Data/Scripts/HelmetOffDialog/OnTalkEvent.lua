@@ -2,9 +2,10 @@
 --- @field log Log
 --- @field equipment Equipment
 --- @field talkEndedEvent TalkEndedEvent
---- @field handle func(self: OnTalkEvent)
+--- @field metaRole MetaRole
+--- @field handle func(self: OnTalkEvent, twinEntity: _G.Entity)
 local OnTalkEvent = {
-    new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent, human)
+    new = function(self, helmetOffDialog, log, equipment, TalkEndedEvent, player, metaRole)
         if helmetOffDialog.__factories.onTalkEvent then
             return helmetOffDialog.__factories.onTalkEvent
         end
@@ -13,7 +14,8 @@ local OnTalkEvent = {
             log = log,
             equipment = equipment,
             talkEndedEvent = TalkEndedEvent,
-            human = human,
+            player = player,
+            metaRole = metaRole,
             eventInProgress = false,
             randomCounter = 0
         }
@@ -22,19 +24,33 @@ local OnTalkEvent = {
         return instance
     end,
 
-    handle = function(self)
+    handle = function(self, twinEntity)
         --- @type OnTalkEvent
         local this = self
         local log = this.log
 
-        if not this.human:IsInDialog() then
-            log:info("Not in dialogue. Aborting.")
+        if this.eventInProgress then
+            log:info("OnTalkEvent in progress, aborting.")
+            return
+        end
+
+        local twiName = twinEntity:GetName()
+        local entityName = string.gsub(twiName, "DialogTwin_", "")
+        log:info('EntityName:', entityName)
+
+        if entityName == "Dude" then
+            log:info('Aborting because entity is player.')
+            return
+        end
+
+        if not this.player.human:IsInDialog() then
+            log:info("Aborting because player is not in dialog")
             this.eventInProgress = false
             return
         end
 
-        if this.eventInProgress then
-            log:info("OnTalkEvent in progress, aborting.")
+        if this.metaRole:hasBathhouseBooking(entityName) then
+            log:info("Aborting because entity serves bathhouse services.")
             return
         end
 
@@ -61,7 +77,7 @@ local OnTalkEvent = {
             if not config:isHelmetOnly() then
                 this:takeOffHeadChainmail()
             elseif config:isRanged() then
-                this:takeOffFirstRangedWeapon()
+                this:takeOffFirstRangedWeapon(entityName)
             else
                 this:handleTalkEndedEvent("triggeredByHandler")
             end
@@ -89,9 +105,17 @@ local OnTalkEvent = {
         end)
     end,
 
-    takeOffFirstRangedWeapon = function(self)
+    takeOffFirstRangedWeapon = function(self, entityName)
+        --- @type OnTalkEvent
         local this = self
         this.log:info("OnTalkEvent.takeOffFirstRangedWeapon")
+
+        if this.metaRole:hasArcheryCompetition(entityName) then
+            this.log:info("Aborting taking off ranged weapons because entity offers archery competition")
+            this:handleTalkEndedEvent("triggeredByRanged")
+            return
+        end
+
         this.equipment:takeOffFirstRangedWeapon(function()
             this:takeOffSecondRangedWeapon()
         end)

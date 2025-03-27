@@ -1,7 +1,7 @@
 check: test prettier
 
 test:
-	docker compose run --rm test_runner sh -c "busted --verbose /data"
+	docker compose run --rm --entrypoint "" test_runner sh -c "busted --verbose /data"
 
 ## Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
 test-watch:
@@ -10,12 +10,13 @@ test-watch:
 		sh -c "find /data -type f | entr -c busted $$pattern_arg --verbose /data"
 
 test-coverage:
-	docker compose run --rm test_runner \
-	  sh -c "busted --verbose --coverage /data \
-		&& luacov -r html \
-		&& mv luacov.report.out luacov.report.html"
+	docker compose run --rm --entrypoint "" test_runner \
+        sh -c "busted --verbose --coverage /data \
+          && luacov \
+          && tail -n 1 luacov.report.out | awk '{print \"percentage=\" \$$NF}' | sed 's/%//' > /data/coverage.env \
+          && luacov -r html \
+          && mv luacov.report.out luacov.report.html"
 
-.PHONY: dev
 dev:
 	bash scripts/build-deploy-start.sh
 
@@ -39,10 +40,10 @@ prod-ranged:
 	bash scripts/build-prod.sh ranged
 
 prettier:
-	docker compose run --rm ci-cd npm run prettier
+	docker compose run --rm nodejs npm run prettier
 
 prettier-fix:
-	docker compose run --rm ci-cd npm run prettier:fix
+	docker compose run --rm nodejs npm run prettier:fix
 
 docs:
-	docker compose run --rm ci-cd npm run generate_readme
+	docker compose run --rm dev npm run generate_readme

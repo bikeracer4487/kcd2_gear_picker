@@ -1,6 +1,11 @@
 
 ## Changelog
 
+### 1.3.4 26-march-25
+- fix: Gear is now equipped when the trading menu is opened
+- fix: Gear take off is skipped when interacting with NPCs offering bathhouse services
+- fix: Ranged weapons take off is skipped when interacting with NPCs offering archery competition.
+
 ### 1.3.3 22-march-25
 - fix: Wait until after Henry some equipped gear before attempting to put back on previously take off gear.
 

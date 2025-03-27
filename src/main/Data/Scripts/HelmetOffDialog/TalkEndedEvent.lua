@@ -26,15 +26,29 @@ local TalkEndedEvent = {
         local this = self
         this.log:info("TalkEndedEvent.listen")
 
-        this.timedTrigger:start(100, function()
+        this.timedTrigger:start(200, function()
             local isInDialog = this.player.human:IsInDialog()
+            this.log:info("isInDialog", isInDialog)
             local hasEquippedGear = tostring(this.player.soul:GetDerivedStat("eqw")) ~= "0"
+            this.log:info("hasEquippedGear", hasEquippedGear)
             return not isInDialog and hasEquippedGear
         end, function()
             this.log:info("Starting put gear on.")
             this.equipment:putOnCoif()
             this:queuePutOnHeadChainmail()
         end)
+    end,
+
+    forcePutOn = function(self)
+        --- @type TalkEndedEvent
+        local this = self
+        this.log:info("TalkEndedEvent.force")
+
+        this.equipment:putOnCoif()
+        this.equipment:putOnHeadChainmail()
+        this.equipment:putOnHelmet()
+        this.equipment:putOnFirstRangedWeapon()
+        this.equipment:putOnSecondRangedWeapon()
     end,
 
     queuePutOnHeadChainmail = function(self)

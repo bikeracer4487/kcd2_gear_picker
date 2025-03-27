@@ -1,24 +1,24 @@
 it("aborts if player is not in dialogue", function()
     local factory = makeFactory({ isInDialog = false })
-    factory.onTalkEvent:handle()
+    factory.onTalkEvent:handle(factory.twinEntity)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("aborts if another on talk even is in progress", function()
     local factory = makeFactory({ eventInProgress = true })
-    factory.onTalkEvent:handle()
+    factory.onTalkEvent:handle(factory.twinEntity)
     assert.spy(factory.equipment.takeOffHelmet).was_not_called()
 end)
 
 it("takes off helmet", function()
     local factory = makeFactory()
-    factory.onTalkEvent:handle()
+    factory.onTalkEvent:handle(factory.twinEntity)
     assert.spy(factory.equipment.takeOffHelmet).was_called(1)
 end)
 
 it("queues take off for head chainmail", function()
     local factory = makeFactory()
-    factory.onTalkEvent:handle()
+    factory.onTalkEvent:handle(factory.twinEntity)
     assert.spy(factory.onTalkEvent.takeOffHeadChainmail).was_called(1)
 end)
 
