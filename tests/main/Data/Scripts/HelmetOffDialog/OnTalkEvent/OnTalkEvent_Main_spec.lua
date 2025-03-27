@@ -1,6 +1,7 @@
 it("uses the cached factory", function()
-    local factory = makeFactory({ cachedOnTalkEvent = true })
-    assert.equal(factory.cachedOnTalkEvent, factory.onTalkEvent)
+    local factory = makeFactory()
+    local cachedOnTalkEvent = factory.onTalkEvent:new(factory.helmetOffDialog)
+    assert.equal(cachedOnTalkEvent, factory.onTalkEvent)
 end)
 
 it("aborts if player is not in dialogue", function()
