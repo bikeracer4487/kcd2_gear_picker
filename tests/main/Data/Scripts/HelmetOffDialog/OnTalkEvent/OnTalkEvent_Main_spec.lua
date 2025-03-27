@@ -1,3 +1,8 @@
+it("uses the cached factory", function()
+    local factory = makeFactory({ cachedOnTalkEvent = true })
+    assert.equal(factory.cachedOnTalkEvent, factory.onTalkEvent)
+end)
+
 it("aborts if player is not in dialogue", function()
     local factory = makeFactory({ isInDialog = false })
     factory.onTalkEvent:handle(factory.twinEntity)
@@ -60,6 +65,5 @@ end)
 
 function makeFactory(args)
     local createFactory = dofile("tests/main/Data/Scripts/HelmetOffDialog/OnTalkEvent/OnTalkEvent_Factory.lua")
-
     return createFactory(mock, spy, args)
 end

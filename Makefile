@@ -6,8 +6,9 @@ test:
 ## Pattern Usage: make test-watch pattern=OnTalkEvent_HelmetOnly
 test-watch:
 	pattern_arg=$(if $(pattern),--pattern=$(pattern)) && \
+	filter_arg=$(if $(filter),--filter=$(filter)) && \
 	docker compose run --rm --entrypoint "" test_watcher \
-		sh -c "find /data -type f | entr -c busted $$pattern_arg --verbose /data"
+		sh -c "find /data -type f | entr -c busted $$pattern_arg $$filter_arg --verbose /data"
 
 test-coverage:
 	docker compose run --rm --entrypoint "" test_runner \

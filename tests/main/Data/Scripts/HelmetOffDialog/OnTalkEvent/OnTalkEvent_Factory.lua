@@ -114,6 +114,12 @@ local function makeFactory(mock, spy, args)
         return "lorem-ipsum"
     end }
 
+    local cachedOnTalkEvent
+    if args and args.cachedOnTalkEvent then
+        cachedOnTalkEvent = mock(OnTalkEvent, false)
+        helmetOffDialog.__factories.onTalkEvent = cachedOnTalkEvent
+    end
+
     --- @type OnTalkEvent
     local onTalkEvent = OnTalkEvent:new(
             helmetOffDialog, log, equipment, talkEndedEvent, player, metaRole
@@ -138,7 +144,8 @@ local function makeFactory(mock, spy, args)
         equipment = equipment,
         onTalkEvent = onTalkEvent,
         talkEndedEvent = talkEndedEvent,
-        twinEntity = twinEntity
+        twinEntity = twinEntity,
+        cachedOnTalkEvent = cachedOnTalkEvent
     }
 end
 
