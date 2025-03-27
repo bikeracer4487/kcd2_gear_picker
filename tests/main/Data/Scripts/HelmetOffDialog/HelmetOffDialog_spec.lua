@@ -205,18 +205,21 @@ describe("EquippedItem", function()
 end)
 
 function makeFactory()
+    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
     local factory = {}
     local player = {
         inventory = { GetInventoryTable = function()
         end },
         actor = {}
     }
-    local script = {
-        LoadScript = function()
-        end
-    }
-    factory.script = mock(script, true)
-    _G.Script = script
+    local mockSystem = dofile("tests/main/SystemMock.lua")
+    local mockedSystem = mockSystem(mock, spy).system
+    _G.System = mockedSystem
+
+    local mockScript = dofile("tests/main/ScriptMock.lua")
+    local mockedScript = mockScript(mock, spy)
+    _G.Script = mockedScript
+    factory.script = mockedScript
 
     local system = {
         GetEntityByName = function()

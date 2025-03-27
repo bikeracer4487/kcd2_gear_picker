@@ -33,9 +33,7 @@ local function mockSystem(mock, spy, args)
 
     local system = mock(System, false)
 
-    return {
-        system = system,
-    }
+    return system
 end
 
 return mockSystem

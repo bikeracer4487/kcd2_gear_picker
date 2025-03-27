@@ -27,7 +27,7 @@ function makeFactory(args)
     _G.HelmetOffDialog = { ClassRegistry = {}, Log = { info = function()
     end } }
     local mockSystem = dofile("tests/main/SystemMock.lua")
-    local system = mockSystem(mock, spy, args).system
+    local system = mockSystem(mock, spy, args)
 
     --- @type MetaRole
     local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
