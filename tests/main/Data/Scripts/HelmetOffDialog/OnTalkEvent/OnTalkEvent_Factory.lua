@@ -11,14 +11,11 @@ local function makeFactory(mock, spy, args)
     local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
     local metaRole = mock(MetaRole, true)
     metaRole.hasBathhouseBooking = spy.new(function(self)
-        if args and args.hasBathhouseBooking then
-            return true
-        end
-
-        return false
+        return args and args.hasBathhouseBooking
     end)
-
-    --
+    metaRole.hasArcheryCompetition = spy.new(function(self)
+        return args and args.hasArcheryCompetition
+    end)
 
     local TalkEndedEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
     local talkEndedEvent = mock(TalkEndedEvent, true)

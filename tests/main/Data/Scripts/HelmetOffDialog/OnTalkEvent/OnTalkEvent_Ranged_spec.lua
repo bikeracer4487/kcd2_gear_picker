@@ -10,6 +10,12 @@ it("does not take first ranged weapon off if not enabled", function()
     assert.spy(factory.equipment.takeOffFirstRangedWeapon).was_not_called()
 end)
 
+it("aborts if given entity offers shooting competition", function()
+    local factory = makeFactory({ hasArcheryCompetition = true, features = "ranged" })
+    factory.onTalkEvent:handle(factory.twinEntity)
+    assert.spy(factory.equipment.takeOffFirstRangedWeapon).was_not_called()
+end)
+
 it("queues take off for second ranged weapon", function()
     local factory = makeFactory({ features = "ranged" })
     factory.onTalkEvent:handle(factory.twinEntity)
