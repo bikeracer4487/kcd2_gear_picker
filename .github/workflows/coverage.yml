@@ -39,13 +39,13 @@ jobs:
           maxColorRange: 100
           minColorRange: 0
 
-      - name: Update Badges in README and badges.md
+      - name: Update Badges
         run: |
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' readme.md
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' documentation/badges.md
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
-          git add README.md documentantion/badges.md
+          git add readme.md documentation/badges.md
           git commit -m "Update coverage badge link [skip ci]" || echo "No changes"
           git push
         env:
