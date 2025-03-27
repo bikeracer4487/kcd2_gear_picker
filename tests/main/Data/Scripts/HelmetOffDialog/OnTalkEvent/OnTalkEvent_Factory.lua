@@ -102,6 +102,10 @@ local function makeFactory(mock, spy, args)
     }
 
     local twinEntity = { GetName = function(self)
+        if args and args.isDude then
+          return "DialogTwin_Dude"
+        end
+
         return "lorem-ipsum"
     end }
 
