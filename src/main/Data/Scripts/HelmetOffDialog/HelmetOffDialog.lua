@@ -8,16 +8,29 @@ local HelmetOffDialog = {
 
     --- @type Config
     config = function(self)
-        --- @type Config
+        --- @type HelmetOffDialog
+        local this = self
+
+        if this.__factories.config then
+            return this.__factories.config
+        end
+
         local Config = self.ClassRegistry.Config
-        return Config:new(self.HOD_ENVIRONMENT)
+        this.__factories.config = Config:new(self.HOD_ENVIRONMENT)
+
+        return this.__factories.config
     end,
     error = function(self)
         --- @type HelmetOffDialog
         local this = self
+
+        if this.__factories.error then
+            return this.__factories.error
+        end
         --- @type Error
         local Error = this.ClassRegistry.Error
-        return Error:new()
+        this.__factories.error = Error:new()
+        return this.__factories.error
     end,
     equipment = function(self)
         --- @type HelmetOffDialog
@@ -94,9 +107,16 @@ local HelmetOffDialog = {
     timedTrigger = function(self)
         --- @type HelmetOffDialog
         local this = self
+
+        if this.__factories.timedTrigger then
+            return this.__factories.timedTrigger
+        end
+
         --- @type TimedTrigger
         local TimedTrigger = this.ClassRegistry.TimedTrigger
-        return TimedTrigger:new(_G.Script)
+        this.__factories.timedTrigger = TimedTrigger:new(_G.Script)
+
+        return this.__factories.timedTrigger
     end,
     equippedItem = function(self)
         --- @type HelmetOffDialog
@@ -129,7 +149,7 @@ local HelmetOffDialog = {
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),
             string.format("Scripts/%s/utils/Error.lua", modName),
-            string.format("Scripts/%s/utils/TimedTrigger.lua", modName),
+            string.format("Scripts/%s/TimedTrigger.lua", modName),
             string.format("Scripts/%s/Config.lua", modName),
             string.format("Scripts/%s/Equipment.lua", modName),
             string.format("Scripts/%s/EquippedItem.lua", modName),
