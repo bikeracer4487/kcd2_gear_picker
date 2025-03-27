@@ -12,6 +12,13 @@ local HelmetOffDialog = {
         local Config = self.ClassRegistry.Config
         return Config:new(self.HOD_ENVIRONMENT)
     end,
+    error = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        --- @type Error
+        local Error = this.ClassRegistry.Error
+        return Error:new()
+    end,
     equipment = function(self)
         --- @type HelmetOffDialog
         local this = self
@@ -39,13 +46,6 @@ local HelmetOffDialog = {
 
         return this.__factories.unequipGear
     end,
-    error = function(self)
-        --- @type HelmetOffDialog
-        local this = self
-        --- @type Error
-        local Error = this.ClassRegistry.Error
-        return Error:new()
-    end,
     talkEndedEvent = function(self)
         --- @type HelmetOffDialog
         local this = self
@@ -69,8 +69,9 @@ local HelmetOffDialog = {
             return this.__factories.MetaRole
         end
 
+        --- @type MetaRole
         local MetaRole = this.ClassRegistry.MetaRole
-        this.__factories.MetaRole = MetaRole:new(this)
+        this.__factories.MetaRole = MetaRole:new()
 
         return this.__factories.MetaRole
     end,
@@ -107,7 +108,7 @@ local HelmetOffDialog = {
 
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
-        this.__factories.equippedItem = EquippedItem:new(this, _G.player, _G.Script)
+        this.__factories.equippedItem = EquippedItem:new(_G.player, _G.Script)
 
         return this.__factories.equippedItem
     end,
@@ -119,7 +120,7 @@ local HelmetOffDialog = {
         end
         --- @type ItemCategory
         local ItemCategory = this.ClassRegistry.ItemCategory
-        this.__factories.itemCategory = ItemCategory:new(this, _G.ItemManager)
+        this.__factories.itemCategory = ItemCategory:new(_G.ItemManager)
         return this.__factories.itemCategory
     end,
 

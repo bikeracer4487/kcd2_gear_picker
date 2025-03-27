@@ -6,8 +6,7 @@ local Log = HelmetOffDialog.Log
 --- @field hasArcheryCompetition fun(self, gearCategory: string, entityName: string)
 local MetaRole = {
     new = function(self)
-        local instance = {
-        }
+        local instance = { }
         setmetatable(instance, { __index = self })
         Log.info("MetaRole New instance created")
         return instance

@@ -30,3 +30,5 @@ local TimedTrigger = {
 }
 
 HelmetOffDialog.ClassRegistry.TimedTrigger = TimedTrigger
+
+return TimedTrigger

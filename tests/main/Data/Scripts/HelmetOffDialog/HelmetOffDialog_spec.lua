@@ -83,6 +83,85 @@ describe("UnequipGear", function()
     end)
 end)
 
+describe("TalkEndedEvent", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:talkEndedEvent()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.TalkEndedEvent.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.TalkEndedEvent),
+                factory.HelmetOffDialog:config(),
+                factory.HelmetOffDialog:equipment(),
+                factory.HelmetOffDialog:timedTrigger(),
+                factory.player
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/TalkEndedEvent.lua")
+    end)
+end)
+
+describe("MetaRole", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:metaRole()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.MetaRole.new)
+              .was.called_with(match.is_ref(factory.HelmetOffDialog.ClassRegistry.MetaRole))
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/MetaRole.lua")
+    end)
+end)
+
+describe("OnTalkEvent", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:onTalkEvent()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.OnTalkEvent.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.OnTalkEvent),
+                factory.HelmetOffDialog:equipment(),
+                factory.HelmetOffDialog:talkEndedEvent(),
+                factory.HelmetOffDialog:metaRole(),
+                factory.HelmetOffDialog:config()
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/OnTalkEvent.lua")
+    end)
+end)
+
+describe("TimedTrigger", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:timedTrigger()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.TimedTrigger.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.TimedTrigger),
+                factory.script
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+    end)
+end)
+
 describe("ItemCategory", function()
     it("creates a new instance", function()
         local factory = makeFactory()
@@ -90,7 +169,6 @@ describe("ItemCategory", function()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.ItemCategory.new)
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.ItemCategory),
-                factory.HelmetOffDialog,
                 factory.itemManager
         )
     end)
@@ -103,15 +181,25 @@ describe("ItemCategory", function()
     end)
 end)
 
--- TODO
---it("uses the cached factory", function()
---    local factory = makeFactory()
---    local cachedOnTalkEvent = factory.onTalkEvent:new(
---            factory.helmetOffDialog, factory.player
---    )
---    assert.equal(cachedOnTalkEvent, factory.onTalkEvent)
---end)
---
+describe("EquippedItem", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:equippedItem()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.EquippedItem.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.EquippedItem),
+                factory.player,
+                factory.script
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/EquippedItem.lua")
+    end)
+end)
 
 function makeFactory()
     local player = {
@@ -180,18 +268,46 @@ function makeFactory()
     HelmetOffDialog.ClassRegistry.Equipment = Equipment
 
     local UnequipGear = dofile("src/main/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
-    UnequipGear = mock(UnequipGear, true)
-    UnequipGear.new = spy.new(function(self)
-        return UnequipGear
+    local unequipGear = mock(UnequipGear, true)
+    unequipGear.new = spy.new(function(self)
+        return unequipGear
     end)
-    HelmetOffDialog.ClassRegistry.UnequipGear = UnequipGear
+    HelmetOffDialog.ClassRegistry.UnequipGear = unequipGear
+
+    local TalkEndedEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/TalkEndedEvent.lua")
+    local talkEndedEvent = mock(TalkEndedEvent, true)
+    TalkEndedEvent.new = spy.new(function(self)
+        return talkEndedEvent
+    end)
+    HelmetOffDialog.ClassRegistry.TalkEndedEvent = talkEndedEvent
+
+    local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
+    local metaRole = mock(MetaRole, true)
+    metaRole.new = spy.new(function()
+        return talkEndedEvent
+    end)
+    HelmetOffDialog.ClassRegistry.MetaRole = MetaRole
+
+    local TimedTrigger = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+    local timedTrigger = mock(TimedTrigger, true)
+    timedTrigger.new = spy.new(function()
+        return timedTrigger
+    end)
+    HelmetOffDialog.ClassRegistry.TimedTrigger = TimedTrigger
 
     local Error = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Error.lua")
-    Error = mock(Error, true)
-    Error.new = spy.new(function()
-        return Error
+    local error = mock(Error, true)
+    error.new = spy.new(function()
+        return error
     end)
-    HelmetOffDialog.ClassRegistry.Error = Error
+    HelmetOffDialog.ClassRegistry.Error = error
+
+    local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
+    local onTalkEvent = mock(OnTalkEvent, true)
+    onTalkEvent.new = spy.new(function()
+        return onTalkEvent
+    end)
+    HelmetOffDialog.ClassRegistry.OnTalkEvent = onTalkEvent
 
     factory.HelmetOffDialog = HelmetOffDialog
     factory.script = mock(script, true)
