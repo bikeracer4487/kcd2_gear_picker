@@ -5,12 +5,8 @@
 local TimedTrigger = {
     setTimer = nil,
     new = function(self, script)
-        if HelmetOffDialog.__factories.timedTrigger then
-            return HelmetOffDialog.__factories.timedTrigger
-        end
         local instance = { script = script, }
         setmetatable(instance, { __index = self })
-        HelmetOffDialog.__factories.timedTrigger = instance
 
         return instance
     end,

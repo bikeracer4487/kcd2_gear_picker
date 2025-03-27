@@ -33,7 +33,7 @@ local function mockHelmetOffDialog(mock, spy)
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/Error.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
-    dofile("src/main/Data/Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+    dofile("src/main/Data/Scripts/HelmetOffDialog/TimedTrigger.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/EquippedItem.lua")
     dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
 

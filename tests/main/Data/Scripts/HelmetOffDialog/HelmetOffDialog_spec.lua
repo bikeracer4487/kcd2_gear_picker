@@ -158,7 +158,7 @@ describe("TimedTrigger", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
         assert.stub(factory.script.LoadScript)
-              .was.called_with("Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+              .was.called_with("Scripts/HelmetOffDialog/TimedTrigger.lua")
     end)
 end)
 
@@ -288,7 +288,7 @@ function makeFactory()
     end)
     HelmetOffDialog.ClassRegistry.MetaRole = MetaRole
 
-    local TimedTrigger = dofile("src/main/Data/Scripts/HelmetOffDialog/utils/TimedTrigger.lua")
+    local TimedTrigger = dofile("src/main/Data/Scripts/HelmetOffDialog/TimedTrigger.lua")
     local timedTrigger = mock(TimedTrigger, true)
     timedTrigger.new = spy.new(function()
         return timedTrigger
