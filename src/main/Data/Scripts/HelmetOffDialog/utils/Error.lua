@@ -5,12 +5,8 @@ local Log = HelmetOffDialog.Log
 --- @field catch fun(self: Error, func: function, ...): boolean, any
 local Error = {
     new = function(self)
-        if HelmetOffDialog.__factories.error then
-            return HelmetOffDialog.__factories.error
-        end
         local instance = {}
         setmetatable(instance, { __index = self })
-        HelmetOffDialog.__factories.error = instance
         return instance
     end,
     catch = function(self, func, ...)

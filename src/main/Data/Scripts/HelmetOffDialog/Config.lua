@@ -10,19 +10,13 @@
 local Config = {
     environment = nil,
     new = function(self, environment)
-        if _G.HelmetOffDialog.__factories.config then
-            return _G.HelmetOffDialog.__factories.config
-        end
         local instance = {
             environment = environment,
             ranged = false,
             helmet_only = false,
             random = false
         }
-
         setmetatable(instance, { __index = self })
-        _G.HelmetOffDialog.__factories.config = instance
-
         return instance
     end,
     isProduction = function(self)
@@ -48,7 +42,7 @@ local Config = {
     setHelmetOnly = function(self, value)
         self.helmet_only = self:sanitize(value)
     end,
-    sanitize = function(self, value)
+    sanitize = function(value)
         local sanitized = (tostring(value):match("^%s*=?%s*(.-)%s*$") or "")
         return sanitized:lower() == "true" or sanitized == "1"
     end

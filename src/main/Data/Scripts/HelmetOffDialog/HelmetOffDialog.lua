@@ -8,16 +8,29 @@ local HelmetOffDialog = {
 
     --- @type Config
     config = function(self)
-        --- @type Config
+        --- @type HelmetOffDialog
+        local this = self
+
+        if this.__factories.config then
+            return this.__factories.config
+        end
+
         local Config = self.ClassRegistry.Config
-        return Config:new(self.HOD_ENVIRONMENT)
+        this.__factories.config = Config:new(self.HOD_ENVIRONMENT)
+
+        return this.__factories.config
     end,
     error = function(self)
         --- @type HelmetOffDialog
         local this = self
+
+        if this.__factories.error then
+            return this.__factories.error
+        end
         --- @type Error
         local Error = this.ClassRegistry.Error
-        return Error:new()
+        this.__factories.error = Error:new()
+        return this.__factories.error
     end,
     equipment = function(self)
         --- @type HelmetOffDialog
