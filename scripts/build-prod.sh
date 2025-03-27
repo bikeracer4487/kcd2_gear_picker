@@ -36,7 +36,7 @@ zipFileName="${modIdentifier}_${modVersion}.zip"
 zipFilePath="$projectRoot/$zipFileName"
 
 # Run the build in Docker
-docker compose run --rm -e MODE="prod" -e TARGET="$target" ci-cd
+docker compose run --rm -e MODE="prod" -e TARGET="$target" dev
 
 # Verify the zip file exists (no need to copy since volume is shared)
 [ -f "$zipFilePath" ] || {
