@@ -1,7 +1,5 @@
 --- @class Config
 local Config = {
-    --- @field environment string
-    environment = nil,
     new = function(self, environment)
         local instance = {
             environment = environment,
@@ -13,9 +11,7 @@ local Config = {
         return instance
     end,
     isProduction = function(self)
-        --- @type Config
-        local config = self
-        return config.environment == "prod"
+        return self.environment == "prod"
     end,
     isRanged = function(self)
         return self.ranged

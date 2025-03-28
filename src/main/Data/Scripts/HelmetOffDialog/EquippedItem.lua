@@ -2,8 +2,8 @@ local Log = HelmetOffDialog.Log
 
 --- @class EquippedItem
 local EquippedItem = {
-    new = function(self, player, engineScript)
-        local instance = { player = player, engineScript = engineScript }
+    new = function(self, player, script)
+        local instance = { player = player, script = script }
         setmetatable(instance, { __index = self })
         return instance
     end,
@@ -21,9 +21,15 @@ local EquippedItem = {
 
         Log.info("Derived stats before une-quip: ", oldStats)
 
-        this.player.actor:UnequipInventoryItem(inventoryItem)
+        local item = ItemManager.GetItem(inventoryItem)
+        local itemName = ItemManager.GetItemName(item.class)
 
-        this.engineScript.SetTimer(20, function()
+        Log.info("Taking off item:", itemName)
+        local response = this.player.actor:UnequipInventoryItem(item.id)
+        Log.info("this.player.actor:UnequipInventoryItem:Response:", response)
+        Log.info("this.player.actor:UnequipInventoryItem:Response.tostring:", tostring(response))
+
+        this.script.SetTimer(30, function()
             local newStats = this:getDerivedStats()
             Log.info("Derived stats after un-equip: ", newStats)
 
@@ -34,8 +40,6 @@ local EquippedItem = {
                     ~= tostring(newStats.equippedWeight)
 
             if isEquipped then
-                local item = ItemManager.GetItem(inventoryItem)
-                local itemName = ItemManager.GetItemName(item.class)
                 Log.info("Found equipped, now unequipped item: " .. itemName)
             end
 

@@ -67,7 +67,7 @@ local OnTalkEvent = {
 
         this.equipment:takeOffHelmet(function()
             if not this.config:isHelmetOnly() then
-                this:takeOffHeadChainmail()
+                this:takeOffHeadChainmail(entityName)
             elseif this.config:isRanged() then
                 this:takeOffFirstRangedWeapon(entityName)
             else
@@ -76,20 +76,21 @@ local OnTalkEvent = {
         end)
     end,
 
-    takeOffHeadChainmail = function(self)
+    takeOffHeadChainmail = function(self, entityName)
         local this = self
         Log.info("OnTalkEvent.takeOffHeadChainmail")
         this.equipment:takeOffHeadChainmail(function()
-            this:takeOffCoif()
+            this:takeOffCoif(entityName)
         end)
     end,
 
-    takeOffCoif = function(self)
+    takeOffCoif = function(self, entityName)
+        --- OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffCoif")
         this.equipment:takeOffCoif(function()
             if this.config:isRanged() then
-                this:takeOffFirstRangedWeapon()
+                this:takeOffFirstRangedWeapon(entityName)
             else
                 this:handleTalkEndedEvent("triggeredByTakeOffCoif")
             end

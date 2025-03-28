@@ -22,7 +22,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.listen")
 
-        this.timedTrigger:start(200, function()
+        this.timedTrigger:start(2000, function()
             local isInDialog = this.player.human:IsInDialog()
             Log.info("isInDialog", isInDialog)
             local hasEquippedGear = tostring(this.player.soul:GetDerivedStat("eqw")) ~= "0"
@@ -78,7 +78,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.queuePutOnFirstRangedWeapon")
 
-        if not this.config():isRanged() then
+        if not this.config:isRanged() then
             return
         end
 

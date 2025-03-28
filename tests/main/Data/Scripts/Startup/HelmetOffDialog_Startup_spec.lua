@@ -1,14 +1,14 @@
 it("loads the mod", function()
     local factory = makeFactory()
-    dofile("src/main/Data/Scripts/Startup/HelmetOffDialog_Startup.lua")
+    dofile("src/main/Data/Scripts/Systems/HelmetOffDialog_Listeners.lua")
     assert.spy(factory.Script.LoadScript)
           .was
           .called_with("Scripts/HelmetOffDialog/HelmetOffDialog.lua")
 end)
 
-it("initializes the mod", function()
+it("initializes the mod for KCD 1", function()
     local factory = makeFactory()
-    dofile("src/main/Data/Scripts/Startup/HelmetOffDialog_Startup.lua")
+    HelmetOffDialog:OnGameplayStartKcdOne()
     assert.spy(factory.HelmetOffDialog.init).was.called()
 end)
 
@@ -29,6 +29,7 @@ function makeFactory()
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     factory.HelmetOffDialog = mock(HelmetOffDialog, true)
     factory.Script = mock(Script, true)
+    dofile("src/main/Data/Scripts/Startup/HelmetOffDialog_Startup.lua")
 
     return factory
 end

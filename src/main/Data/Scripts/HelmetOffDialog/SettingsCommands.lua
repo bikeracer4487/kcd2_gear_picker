@@ -1,4 +1,5 @@
 local config = _G.HelmetOffDialog:config()
+local Log = _G.HelmetOffDialog.Log
 
 function _G.HelmetOffDialog:setHelmetOnly(input)
     Log.info("setHelmetOnly called with argument: ", input)
