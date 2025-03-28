@@ -33,8 +33,11 @@ Many users have suggested an optional mod where the visor stays in its manually 
 ### What about when speaking to Mutt (KCD 1)?
 As of version 1.3.0 (16-Mar-25), helmet removal when speaking to Mutt is now supported.
 
-### Why doesn’t my gear get taken off when speaking to people offering bathhouse services?
-As of version 1.3.4, the mod skips gear take-off when interacting with bathhouse NPCs. This is a temporary workaround to avoid the issue where headgear taken off during the interaction isn’t washed. Once a method is developed to detect when Henry confirms the dialogue option to wash his clothes, gear take-off will be re-enabled.
+### Why doesn’t my gear get taken off when speaking to people nearby offering bathhouse services?
+As of version 1.3.4, the mod skips gear take-off when interacting with bathhouse NPCs within 3 meters. This avoids the issue where headgear taken off during the interaction isn’t washed.
 
-### Why doesn’t my gear get taken off when speaking to people offering archery competitions?
-As of version 1.3.4, the mod skips removing gear when interacting with archery competition NPCs. This change prevents a bug that blocks the competition from starting. Once a method is developed to detect when Henry confirms the dialogue option to begin the competition, this feature will be re-enabled.
+### Why doesn’t my gear get taken off when speaking to people nearby offering archery competitions?
+As of version 1.3.4, the mod no longer removes gear when interacting with archery competition NPCs within 3 meters. This prevents a bug that could stop the competition from starting. Note: You may need to draw your ranged weapon again (or re-equip it) due to a bug outlined in the FAQ under "Unstable Ranged Behavior."
+
+### Unstable Ranged Behavior
+When putting away ranged weapons like bows or crossbows, the equipped weight stat—used by this mod to track equipped items—doesn’t update consistently. This issue is likely a flaw in the base game; I am pretty certain because the same code works in KCD1. Despite this, the unequip function still works, and the game automatically puts on your ranged weapons after exiting the dialog. However, this quirk means you’ll need to draw your ranged weapon again (or re-equip it), when preparing to join an archery competition.
