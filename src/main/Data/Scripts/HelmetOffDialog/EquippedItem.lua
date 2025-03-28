@@ -25,9 +25,7 @@ local EquippedItem = {
         local itemName = ItemManager.GetItemName(item.class)
 
         Log.info("Taking off item:", itemName)
-        local response = this.player.actor:UnequipInventoryItem(item.id)
-        Log.info("this.player.actor:UnequipInventoryItem:Response:", response)
-        Log.info("this.player.actor:UnequipInventoryItem:Response.tostring:", tostring(response))
+        this.player.actor:UnequipInventoryItem(item.id)
 
         this.script.SetTimer(30, function()
             local newStats = this:getDerivedStats()
