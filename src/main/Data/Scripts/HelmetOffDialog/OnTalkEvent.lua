@@ -67,42 +67,42 @@ local OnTalkEvent = {
 
         this.equipment:takeOffHelmet(function()
             if not this.config:isHelmetOnly() then
-                this:takeOffHeadChainmail(entityName)
+                this:takeOffHeadChainmail(twinEntity)
             elseif this.config:isRanged() then
-                this:takeOffFirstRangedWeapon(entityName)
+                this:takeOffFirstRangedWeapon(twinEntity)
             else
                 this:handleTalkEndedEvent("triggeredByHandler")
             end
         end)
     end,
 
-    takeOffHeadChainmail = function(self, entityName)
+    takeOffHeadChainmail = function(self, entity)
         local this = self
         Log.info("OnTalkEvent.takeOffHeadChainmail")
         this.equipment:takeOffHeadChainmail(function()
-            this:takeOffCoif(entityName)
+            this:takeOffCoif(entity)
         end)
     end,
 
-    takeOffCoif = function(self, entityName)
+    takeOffCoif = function(self, entity)
         --- OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffCoif")
         this.equipment:takeOffCoif(function()
             if this.config:isRanged() then
-                this:takeOffFirstRangedWeapon(entityName)
+                this:takeOffFirstRangedWeapon(entity)
             else
                 this:handleTalkEndedEvent("triggeredByTakeOffCoif")
             end
         end)
     end,
 
-    takeOffFirstRangedWeapon = function(self, entityName)
+    takeOffFirstRangedWeapon = function(self, entity)
         --- @type OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffFirstRangedWeapon")
 
-        if this.metaRole:hasArcheryCompetition(entityName) then
+        if this.metaRole:hasArcheryCompetition(entity) then
             Log.info("Aborting taking off ranged weapons because entity offers archery competition")
             this:handleTalkEndedEvent("triggeredByRanged")
             return
