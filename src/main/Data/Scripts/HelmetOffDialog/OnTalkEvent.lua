@@ -44,7 +44,7 @@ local OnTalkEvent = {
             return
         end
 
-        if this.metaRole:hasBathhouseBooking(entityName) then
+        if this.metaRole:hasBathhouseBooking(twinEntity, player) then
             Log.info("Aborting because entity serves bathhouse services.")
             return
         end

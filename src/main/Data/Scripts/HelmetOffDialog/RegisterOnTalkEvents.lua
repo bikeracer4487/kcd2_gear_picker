@@ -2,7 +2,7 @@ local original_Entity_GetPos = Entity.GetPos
 local Log = HelmetOffDialog.Log
 
 function Entity.GetPos(...)
-    Log.info("OnTalkEvent: Triggered by Entity.GetPos")
+    Log.info("Entity.GetPos")
 
     --- @type _G.Entity
     local this = ...

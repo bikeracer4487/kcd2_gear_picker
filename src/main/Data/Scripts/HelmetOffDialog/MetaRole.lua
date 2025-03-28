@@ -5,28 +5,38 @@ local Log = HelmetOffDialog.Log
 --- @field hasBathhouseBooking fun(self, gearCategory: string, entityName: string)
 --- @field hasArcheryCompetition fun(self, gearCategory: string, entityName: string)
 --- @field system _G.System
+--- @field player _G.player
 local MetaRole = {
-    new = function(self, system)
-        local instance = { system = system }
+    new = function(self, system, player)
+        local instance = { system = system, player = player }
         setmetatable(instance, { __index = self })
         Log.info("MetaRole New instance created")
         return instance
     end,
 
     --- @field is fun(self: MetaRole, entity: string): boolean
-    hasBathhouseBooking = function(self, entityName)
+    hasBathhouseBooking = function(self, twinEntity)
         --- @type MetaRole
         local this = self
-        local entity = this.system.GetEntityByName(entityName)
+        Log.info("GetName:", twinEntity:GetName())
 
-        local metaRoles = entity.soul:GetMetaRoles()
-        Log.info('GetMetaRoles:', metaRoles)
-        local bathhouseBooking = "LAZEBNICE_OBJEDNANI"
+        local metaRoleIdKcd1 = "367"
+        local metaRoleNameKcd2 = "LAZEBNICE_OBJEDNANI"
+        local playerPos = this.player:GetPos()
+        local nearbyEntities = this.system.GetEntitiesInSphereByClass(
+                playerPos, 3, twinEntity.class
+        )
 
-        for _, role in ipairs(metaRoles) do
-            if role == bathhouseBooking then
-                Log.info('Entity serves bath services.')
-                return true
+        for _, entity in pairs(nearbyEntities) do
+            Log.info("Nearby entity" .. entity:GetName())
+            local metaRoles = entity.soul:GetMetaRoles()
+            Log.info('GetMetaRoles:', metaRoles)
+            for _, rawRole in ipairs(metaRoles) do
+                local role = tostring(rawRole)
+                if role == metaRoleNameKcd2 or role == metaRoleIdKcd1 then
+                    Log.info('Entity serves bath services.')
+                    return true
+                end
             end
         end
 
@@ -34,6 +44,12 @@ local MetaRole = {
     end,
 
     --- @field is fun(self: MetaRole, entityName: string): boolean
+    --[[
+        This function doesn’t handle KCD1 logic, since Henry can join the
+        archery contest without a bow equipped. If there is such a need in the
+        future, then it should be refactored to follow the same pattern as the
+        hasBathhouseBooking function.
+    ]]
     hasArcheryCompetition = function(self, entityName)
         --- @type MetaRole
         local this = self

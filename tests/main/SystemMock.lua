@@ -1,4 +1,6 @@
 local function mockSystem(mock, spy, args)
+    local mockEntity = dofile("tests/main/EntityMock.lua")
+
     local linkedEntity = {
         GetName = function(self)
             return args and args.linkedEntity and "LoremShootingRangeIpsum" or nil
@@ -28,7 +30,15 @@ local function mockSystem(mock, spy, args)
 
         LogAlways = function()
             return "test"
-        end
+        end,
+
+        GetEntitiesInSphereByClass = function()
+            if args and args.bathhouse_kcd1 then
+                return { mockEntity(mock, spy, { bathhouse_kcd1 = true }) }
+            end
+
+            return {}
+        end,
     }
 
     local system = mock(System, false)
