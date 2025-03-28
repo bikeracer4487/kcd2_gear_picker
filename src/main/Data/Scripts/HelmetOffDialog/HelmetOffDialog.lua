@@ -145,7 +145,11 @@ local HelmetOffDialog = {
         return this.__factories.itemCategory
     end,
 
-    init = function()
+    init = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        this.__factories = {}
+
         local modName = "HelmetOffDialog"
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),
@@ -173,6 +177,6 @@ local HelmetOffDialog = {
     end,
 }
 
-_G.HelmetOffDialog = _G.HelmetOffDialog or HelmetOffDialog
+_G.HelmetOffDialog = HelmetOffDialog
 
 return HelmetOffDialog;
