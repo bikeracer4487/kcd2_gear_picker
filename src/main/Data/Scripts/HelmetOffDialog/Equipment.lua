@@ -84,8 +84,8 @@ local Equipment = {
     end,
 
     putOnCoif = function(self)
-        Log.info("Equipment.putOnCoif:called")
         if nil == self.unequippedCoif then
+            Log.info("Equipment.putOnCoif: Aborting due to no unequipped coif found")
             return
         end
 
@@ -97,8 +97,8 @@ local Equipment = {
     end,
 
     putOnHeadChainmail = function(self)
-        Log.info("Equipment.putOnHeadChainmail:called")
         if nil == self.unequippedHeadChainmail then
+            Log.info("Equipment.putOnHeadChainmail: Aborting due to no unequipped coif found")
             return
         end
 
@@ -110,8 +110,8 @@ local Equipment = {
     end,
 
     putOnHelmet = function(self)
-        Log.info("Equipment.putOnHelmet:called")
         if nil == self.unequippedHelmet then
+            Log.info("Aborting due to no unequipped helmet found")
             return
         end
 
@@ -123,7 +123,6 @@ local Equipment = {
     end,
 
     putOnFirstRangedWeapon = function(self)
-        Log.info("Equipment.putOnFirstRangedWeapon:called")
         if nil == self.firstRangedWeapon then
             Log.info("Aborting due to no first ranged weapon")
             return
@@ -137,7 +136,6 @@ local Equipment = {
     end,
 
     putOnSecondRangedWeapon = function(self)
-        Log.info("Equipment.putOnSecondRangedWeapon:called")
         if nil == self.secondRangedWeapon then
             Log.info("Aborting due to no second ranged weapon")
             return

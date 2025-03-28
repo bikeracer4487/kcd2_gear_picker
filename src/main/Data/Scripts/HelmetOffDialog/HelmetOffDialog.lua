@@ -173,10 +173,10 @@ local HelmetOffDialog = {
                 System.LogAlways("$4[" .. HelmetOffDialog.MOD_NAME .. ".ERROR] Unable to load script: " .. script)
             end
         end
-        System.LogAlways("$5[" .. HelmetOffDialog.MOD_NAME .. ".INFO] All classes loaded.")
+        HelmetOffDialog.Log.info("All classes loaded.")
     end,
 }
 
-_G.HelmetOffDialog = HelmetOffDialog
+_G.HelmetOffDialog = _G.HelmetOffDialog or HelmetOffDialog
 
 return HelmetOffDialog;
