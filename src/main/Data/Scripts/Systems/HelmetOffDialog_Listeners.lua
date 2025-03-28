@@ -1,5 +1,6 @@
 function HelmetOffDialog:OnLoadingCompleteKcdTwo()
-    _G.HelmetOffDialog:init()
+    HelmetOffDialog:init()
+    HelmetOffDialog.KCD2 = true
     Script.LoadScript("Scripts/HelmetOffDialog/RegisterOnTalkEvents.lua")
     Script.LoadScript("Scripts/HelmetOffDialog/RegisterTradeMenuEvents.lua")
 end

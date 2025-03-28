@@ -1,19 +1,19 @@
 local Log = HelmetOffDialog.Log
 
-function HelmetOffDialog:ApseCharacterOnInit(
-        elementName, instanceId, eventName, argTable
-)
-    Log.info("ApseCharacterOnInit", elementName, instanceId, eventName, argTable)
+function HelmetOffDialog:OnTradeMenuOpen(element, instanceId, event, args)
+    Log.info("HelmetOffDialog:OnTradeMenuOpen", element, instanceId, event, args)
 
-    if eventName ~= "OnInit" then
-        return
-    end
+    ------- @type TalkEndedEvent
+    local talkEndedEvent = HelmetOffDialog:talkEndedEvent()
+    talkEndedEvent:forcePutOn()
+end
 
-    --- @type TalkEndedEvent
-    local event = HelmetOffDialog:talkEndedEvent()
-    event:forcePutOn()
+local element = 'ApseCharacter'
+
+if HelmetOffDialog.KCD1 then
+    element = 'inventory'
 end
 
 UIAction.RegisterElementListener(
-        HelmetOffDialog, "ApseCharacter", -1, "", "ApseCharacterOnInit"
+        HelmetOffDialog, element, -1, "OnShow", "OnTradeMenuOpen"
 )
