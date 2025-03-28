@@ -30,8 +30,6 @@ local UnequipGear = {
                 return
             end
 
-            this.player.actor:UnequipInventoryItem(inventoryItem)
-            Log.info("UnequipGear Unequipped " .. itemType .. ": " .. itemName)
             callback(inventoryItem)
         end)
     end,

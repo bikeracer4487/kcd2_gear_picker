@@ -59,9 +59,12 @@ local Equipment = {
 
     takeOffFirstRangedWeapon = function(self, callback)
         Log.info("Equipment.takeOffFirstRangedWeapon:called")
-        self.unequipGear:takeOff("RangedWeapon", function(item)
-            if item then
-                self.firstRangedWeapon = item
+        self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
+            if takenOffItem then
+                local item = ItemManager.GetItem(takenOffItem)
+                local itemName = ItemManager.GetItemName(item.class)
+                Log.info("Taking off ranged first weapon", itemName)
+                self.firstRangedWeapon = takenOffItem
             end
             callback()
         end)
@@ -69,9 +72,12 @@ local Equipment = {
 
     takeOffSecondRangedWeapon = function(self, callback)
         Log.info("Equipment.takeOffSecondRangedWeapon:called")
-        self.unequipGear:takeOff("RangedWeapon", function(item)
-            if item then
-                self.secondRangedWeapon = item
+        self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
+            if takenOffItem then
+                local item = ItemManager.GetItem(takenOffItem)
+                local itemName = ItemManager.GetItemName(item.class)
+                Log.info("Taking off ranged second weapon", itemName)
+                self.secondRangedWeapon = takenOffItem
             end
             callback()
         end)
@@ -119,6 +125,7 @@ local Equipment = {
     putOnFirstRangedWeapon = function(self)
         Log.info("Equipment.putOnFirstRangedWeapon:called")
         if nil == self.firstRangedWeapon then
+            Log.info("Aborting due to no first ranged weapon")
             return
         end
 
@@ -132,6 +139,7 @@ local Equipment = {
     putOnSecondRangedWeapon = function(self)
         Log.info("Equipment.putOnSecondRangedWeapon:called")
         if nil == self.secondRangedWeapon then
+            Log.info("Aborting due to no second ranged weapon")
             return
         end
 

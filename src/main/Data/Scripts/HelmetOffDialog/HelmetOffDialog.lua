@@ -15,8 +15,9 @@ local HelmetOffDialog = {
             return this.__factories.config
         end
 
-        local Config = self.ClassRegistry.Config
-        this.__factories.config = Config:new(self.HOD_ENVIRONMENT)
+        --- @type Config
+        local Config = this.ClassRegistry.Config
+        this.__factories.config = Config:new(HelmetOffDialog.HOD_ENVIRONMENT)
 
         return this.__factories.config
     end,

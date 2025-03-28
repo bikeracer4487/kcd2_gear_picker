@@ -1,3 +1,5 @@
+local Log = HelmetOffDialog.Log
+
 function HelmetOffDialog:ApseCharacterOnInit(
         elementName, instanceId, eventName, argTable
 )
