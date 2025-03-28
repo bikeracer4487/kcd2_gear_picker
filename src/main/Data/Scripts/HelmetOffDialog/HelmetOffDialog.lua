@@ -85,7 +85,7 @@ local HelmetOffDialog = {
 
         --- @type MetaRole
         local MetaRole = this.ClassRegistry.MetaRole
-        this.__factories.MetaRole = MetaRole:new(_G.System)
+        this.__factories.MetaRole = MetaRole:new(_G.System, _G.player)
 
         return this.__factories.MetaRole
     end,
