@@ -34,6 +34,8 @@ prod:
 	make prod-helmet_only
 	make prod-ranged
 
+prod-main:
+	bash scripts/build-prod.sh main
 prod-random:
 	bash scripts/build-prod.sh random
 prod-helmet_only:
