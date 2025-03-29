@@ -1,8 +1,6 @@
 local function makeFactory(mock, spy, args)
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
-    local mockHelmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")
-    local helmetOffDialogFactory = mockHelmetOffDialog(mock, spy)
-    local helmetOffDialog = helmetOffDialogFactory.HelmetOffDialog
+    local helmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy, args)
     local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
 
     local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")

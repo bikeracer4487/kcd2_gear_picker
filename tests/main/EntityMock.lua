@@ -17,9 +17,14 @@ local function mockEntity(mock, spy, args)
         GetLink = function(self, index)
             return args and args.linkedEntity == "ShootingRange"
                     and linkedEntity or nil
+        end,
+        GetPos = function(self)
         end
     }
     Entity.soul = mockSoul(mock, spy, args)
+    local entity = mock(Entity, false)
+
+    _G.Entity = entity
 
     return mock(Entity, false)
 end
