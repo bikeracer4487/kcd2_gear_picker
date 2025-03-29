@@ -2,7 +2,9 @@ local function mockSoul(mock, spy, args)
 
     local soul = {
         GetMetaRoles = function(self)
-            if not args then return {} end
+            if not args then
+                return {}
+            end
             if args.metaRole == "bathhouse_kcd1" then
                 return { "367" }
             end
@@ -12,6 +14,13 @@ local function mockSoul(mock, spy, args)
             end
 
             return { "invalid" }
+        end,
+        GetDerivedStat = function()
+            if not args or args.GetDerivedStat == nil then
+                return nil
+            end
+
+            return args.GetDerivedStat
         end
     }
 

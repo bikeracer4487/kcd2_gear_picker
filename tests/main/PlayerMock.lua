@@ -11,6 +11,7 @@ local function mockPlayer(mock, spy, args)
             return nil
         end
     }
+    player.soul = dofile("tests/main/SoulMock.lua")(mock, spy, args)
 
     return mock(player, false)
 end

@@ -104,7 +104,6 @@ function makeFactory(args)
     --- @type ItemCategory
     local ItemCategory = dofile("src/main/Data/Scripts/HelmetOffDialog/ItemCategory.lua")
     factory.itemCategory = ItemCategory:new(itemManager)
-    factory.item = item
 
     return factory
 end
