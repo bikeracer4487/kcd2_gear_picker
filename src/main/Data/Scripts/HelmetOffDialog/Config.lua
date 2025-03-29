@@ -8,7 +8,7 @@ local Config = {
             ranged = false,
             helmet_only = false,
             random = false,
-            turn_off = true
+            is_mod_off = false
         }
         setmetatable(instance, { __index = self })
         return instance
@@ -40,11 +40,11 @@ local Config = {
         local value = (tostring(arg):match("^%s*=?%s*(.-)%s*$") or "")
         return value:lower() == "true" or value == "1"
     end,
-    isTurnOff = function(self)
-        return self.turn_off
+    isModOff = function(self)
+        return self.is_mod_off
     end,
-    setTurnOff = function(self, value)
-        self.turn_off = self:_parseSettingValue(value)
+    setModOff = function(self, value)
+        self.is_mod_off = self:_parseSettingValue(value)
     end,
 }
 
