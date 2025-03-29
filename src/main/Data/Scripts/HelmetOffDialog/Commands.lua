@@ -5,82 +5,44 @@ local Log = _G.HelmetOffDialog.Log
 --- @field system _G.System
 --- @field config Config
 local Commands = {
-    new = function(self, system, config, helmetOffDialog)
-        local instance = {
-            system = system, config = config, helmetOffDialog = helmetOffDialog
-        }
+    new = function(self, system, config)
+        local instance = { system = system, config = config }
         setmetatable(instance, { __index = self })
         Log.info("Commands New instance created")
         return instance
     end,
-    handle = function(self)
+    init = function(self)
         --- @type Commands
         local this = self
 
+        this.system.AddCCommand("helmet_off_dialog__set_ranged", "HelmetOffDialog:commands():setRanged(%line)", "")
+        this.system.AddCCommand("helmet_off_dialog__set_random", "HelmetOffDialog:commands():setRandom(%line)", "")
         this.system.AddCCommand(
-                "helmet_off_dialog__set_ranged",
-                "HelmetOffDialog:setRanged(%line)"
+                "helmet_off_dialog__set_helmet_only", "HelmetOffDialog:commands():setHelmetOnly(%line)", ""
         )
-        this.helmetOffDialog.setRanged = function(self, input)
-            Log.info("setRanged called with argument: ", input)
-            this.config:setRanged(input)
-        end
+        this.system.AddCCommand("helmet_off_dialog__set_turn_off", "HelmetOffDialog:commands():setTurnOff(%line)", "")
+        
+        this.system.AddCCommand("helmet_off_dialog__set_turn_off", "HelmetOffDialog:commands():setTurnOff(%line)", "")
+    end,
 
-        this.system.AddCCommand(
-                "helmet_off_dialog__set_random",
-                "HelmetOffDialog:setRandom(%line)"
-        )
-        this.helmetOffDialog.setRandom = function(self, input)
-            Log.info("setRandom called with argument: ", input)
-            this.config:setRandom(input)
-        end
-
-        this.system.AddCCommand(
-                "helmet_off_dialog__set_helmet_only",
-                "HelmetOffDialog:setHelmetOnly(%line)"
-        )
-        this.helmetOffDialog.setHelmetOnly = function(self, input)
-            Log.info("setHelmetOnly called with argument: ", input)
-            this.config:setHelmetOnly(input)
-        end
-
-        this.system.AddCCommand(
-                "helmet_off_dialog__set_turn_off",
-                "HelmetOffDialog:setTurnOff(%line)"
-        )
-        this.helmetOffDialog.setTurnOff = function(self, input)
-            Log.info("setTurnOff called with argument: ", input)
-            this.config:setTurnOff(input)
-        end
+    setRanged = function(self, input)
+        Log.info("setRanged called with argument: ", input)
+        self.config:setRanged(input)
+    end,
+    setRandom = function(self, input)
+        Log.info("setRandom called with argument: ", input)
+        self.config:setRandom(input)
+    end,
+    setHelmetOnly = function(self, input)
+        Log.info("setHelmetOnly called with argument: ", input)
+        self.config:setHelmetOnly(input)
+    end,
+    setTurnOff = function(self, input)
+        Log.info("setTurnOff called with argument: ", input)
+        self.config:setTurnOff(input)
     end
 }
 
 _G.HelmetOffDialog.ClassRegistry.Commands = Commands
 
 return Commands
---
---function _G.HelmetOffDialog:setRandom(rawInput)
---    Log.info("setRandom called with argument: ", rawInput)
---    config:setRandom(rawInput)
---end
---
---function _G.HelmetOffDialog:setRanged(rawInput)
---    Log.info("setRanged called with argument: ", rawInput)
---    config:setRanged(rawInput)
---end
---
---_G.System.AddCCommand(
---        "helmet_off_dialog__set_ranged",
---        "HelmetOffDialog:setRanged(%line)",
---        ""
---);
-----
---function _G.HelmetOffDialog:setTurnOff(self, input)
---    Log.info("setTurnOff called with argument: ", input)
---    config:setTurnOff(input)
---end
---
---_G.System.AddCCommand(
---        "helmet_off_dialog__set_turn_off",
---        "HelmetOffDialog:setTurnOff(%line)"
---);

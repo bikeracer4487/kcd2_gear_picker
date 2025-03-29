@@ -1,3 +1,5 @@
+local Log = HelmetOffDialog.Log
+
 --- @class Config
 local Config = {
     new = function(self, environment)
@@ -21,10 +23,12 @@ local Config = {
         self.ranged = self:_parseSettingValue(value)
     end,
     isRandom = function(self)
+        Log.info("Config:isRandom: ", self.random)
         return self.random
     end,
     setRandom = function(self, value)
         self.random = self:_parseSettingValue(value)
+        Log.info("Config:setRandom: ", self.random)
     end,
     isHelmetOnly = function(self)
         return self.helmet_only
