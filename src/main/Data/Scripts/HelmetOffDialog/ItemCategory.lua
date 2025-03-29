@@ -33,9 +33,9 @@ local ItemCategory = {
         end
 
         if category == "HeadChainmail" then
-            return lcName:find("coifmail")
-                    or lcUiName:find("nm_ca_collar")
-                    or lcUiName:find("nm_ca_hood")
+            return lcName:find("coifmail") ~= nil
+                    or lcUiName:find("nm_ca_collar") ~= nil
+                    or lcUiName:find("nm_ca_hood") ~= nil
         end
 
         if category == "Coif" then
