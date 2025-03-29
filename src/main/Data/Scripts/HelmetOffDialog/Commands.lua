@@ -1,16 +1,40 @@
-local Log = HelmetOffDialog.Log
+local Log = _G.HelmetOffDialog.Log
 
 --- @class Commands
 --- @field new fun(self: Commands, system: _G.System): Commands
 --- @field system _G.System
 --- @field config Config
 local Commands = {
-    new = function(self, system, config)
-        local instance = { system = system, config = config }
+    new = function(self, system, config, helmetOffDialog)
+        local instance = {
+            system = system, config = config, helmetOffDialog = helmetOffDialog
+        }
         setmetatable(instance, { __index = self })
         Log.info("Commands New instance created")
         return instance
     end,
+    handle = function(self)
+        --- @type Commands
+        local this = self
+
+        this.system.AddCCommand(
+                "helmet_off_dialog__set_helmet_only",
+                "HelmetOffDialog:setHelmetOnly(%line)"
+        )
+        this.helmetOffDialog.setHelmetOnly = function(self, input)
+            Log.info("setHelmetOnly called with argument: ", input)
+            this.config:setHelmetOnly(input)
+        end
+
+        this.system.AddCCommand(
+                "helmet_off_dialog__set_turn_off",
+                "HelmetOffDialog:setTurnOff(%line)"
+        )
+        this.helmetOffDialog.setTurnOff = function(self, input)
+            Log.info("setTurnOff called with argument: ", input)
+            this.config:setTurnOff(input)
+        end
+    end
 }
 
 _G.HelmetOffDialog.ClassRegistry.Commands = Commands
