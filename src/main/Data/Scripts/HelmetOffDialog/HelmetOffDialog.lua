@@ -152,7 +152,7 @@ local HelmetOffDialog = {
         end
         --- @type Commands
         local Commands = this.ClassRegistry.Commands
-        this.__factories.commands = Commands:new(_G.System, this:config())
+        this.__factories.commands = Commands:new(_G.System, this:config(), this)
         return this.__factories.commands
     end,
 

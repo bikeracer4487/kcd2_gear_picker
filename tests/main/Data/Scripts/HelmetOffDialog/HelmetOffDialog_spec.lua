@@ -213,7 +213,8 @@ describe("Commands", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.Commands),
                 factory.system,
-                factory.HelmetOffDialog:config()
+                factory.HelmetOffDialog:config(),
+                match.is_ref(factory.HelmetOffDialog)
         )
     end)
 
