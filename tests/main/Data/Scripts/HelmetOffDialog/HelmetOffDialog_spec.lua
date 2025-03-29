@@ -231,15 +231,15 @@ describe("TimedTrigger", function()
 end)
 
 describe("ItemCategory", function()
-    --it("creates a new instance", function()
-    --    local factory = makeFactory()
-    --    factory.HelmetOffDialog:itemCategory()
-    --    assert.stub(factory.HelmetOffDialog.ClassRegistry.ItemCategory.new)
-    --          .was.called_with(
-    --            match.is_ref(factory.HelmetOffDialog.ClassRegistry.ItemCategory),
-    --            factory.itemManager
-    --    )
-    --end)
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:itemCategory()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.ItemCategory.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.ItemCategory),
+                factory.itemManager
+        )
+    end)
 
     it("caches the instance", function()
         local factory = makeFactory()
@@ -249,12 +249,12 @@ describe("ItemCategory", function()
               .was.called(1)
     end)
 
-    --it("loads the script", function()
-    --    local factory = makeFactory()
-    --    factory.HelmetOffDialog:init()
-    --    assert.stub(factory.script.LoadScript)
-    --          .was.called_with("Scripts/HelmetOffDialog/ItemCategory.lua")
-    --end)
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/ItemCategory.lua")
+    end)
 end)
 
 describe("EquippedItem", function()
@@ -265,7 +265,8 @@ describe("EquippedItem", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.EquippedItem),
                 factory.player,
-                factory.script
+                factory.script,
+                factory.itemManager
         )
     end)
 

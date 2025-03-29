@@ -132,7 +132,9 @@ local HelmetOffDialog = {
 
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
-        this.__factories.equippedItem = EquippedItem:new(_G.player, _G.Script)
+        this.__factories.equippedItem = EquippedItem:new(
+                _G.player, _G.Script, _G.ItemManager
+        )
 
         return this.__factories.equippedItem
     end,
