@@ -63,6 +63,11 @@ local OnTalkEvent = {
             Log.info("Not aborting due to random check failing ")
         end
 
+        if this.metaRole:hasArcheryCompetition(entityName) then
+            Log.info("Aborting taking off ranged weapons because entity offers archery competition")
+            return
+        end
+
         this.eventInProgress = true
 
         this.equipment:takeOffHelmet(function()
@@ -101,12 +106,6 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffFirstRangedWeapon")
-
-        if this.metaRole:hasArcheryCompetition(entityName) then
-            Log.info("Aborting taking off ranged weapons because entity offers archery competition")
-            this:handleTalkEndedEvent("triggeredByRanged")
-            return
-        end
 
         this.equipment:takeOffFirstRangedWeapon(function()
             this:takeOffSecondRangedWeapon()

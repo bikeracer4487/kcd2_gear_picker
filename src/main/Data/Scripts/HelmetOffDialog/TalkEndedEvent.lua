@@ -22,7 +22,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.listen")
 
-        this.timedTrigger:start(2000, function()
+        this.timedTrigger:start(100, function()
             local isInDialog = this.player.human:IsInDialog()
             Log.info("isInDialog", isInDialog)
             local hasEquippedGear = tostring(this.player.soul:GetDerivedStat("eqw")) ~= "0"
@@ -52,7 +52,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.queuePutOnHeadChainmail")
 
-        this.timedTrigger:start(50, function()
+        this.timedTrigger:start(20, function()
             return true
         end, function()
             this.equipment:putOnHeadChainmail()
@@ -65,7 +65,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.putOnHelmet")
 
-        this.timedTrigger:start(50, function()
+        this.timedTrigger:start(20, function()
             return true
         end, function()
             this.equipment:putOnHelmet()
@@ -82,7 +82,7 @@ local TalkEndedEvent = {
             return
         end
 
-        this.timedTrigger:start(50, function()
+        this.timedTrigger:start(20, function()
             return true
         end, function()
             this.equipment:putOnFirstRangedWeapon()
@@ -95,7 +95,7 @@ local TalkEndedEvent = {
         local this = self
         Log.info("TalkEndedEvent.queuePutOnSecondRangedWeapon")
 
-        this.timedTrigger:start(50, function()
+        this.timedTrigger:start(20, function()
             return true
         end, function()
             this.equipment:putOnSecondRangedWeapon()
