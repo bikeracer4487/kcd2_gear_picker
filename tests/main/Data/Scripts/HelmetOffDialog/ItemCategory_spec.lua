@@ -13,6 +13,13 @@ describe("Helmet", function()
             assert.is_true(actual)
         end)
     end
+
+    it("falsy for invalid items", function()
+        local factory = makeFactory({ name = "invalid" })
+        local actual = factory.itemCategory:is("Helmet", factory.item)
+        assert.is_false(actual)
+    end)
+
 end)
 
 describe("HeadChainmail", function()
@@ -59,6 +66,12 @@ describe("RangedWeapon", function()
             assert.is_true(actual)
         end)
     end
+end)
+
+it("falsy for unknown categories", function()
+    local factory = makeFactory({ name = "helmet" })
+    local actual = factory.itemCategory:is("Unknown", factory.item)
+    assert.is_false(actual)
 end)
 
 function makeFactory(args)
