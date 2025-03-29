@@ -112,7 +112,8 @@ describe("MetaRole", function()
         assert.stub(factory.HelmetOffDialog.ClassRegistry.MetaRole.new)
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.MetaRole),
-                factory.system
+                factory.system,
+                factory.player
         )
     end)
 
@@ -207,14 +208,14 @@ end)
 function makeFactory()
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
     local factory = {}
-    local player = {
-        inventory = { GetInventoryTable = function()
-        end },
-        actor = {}
-    }
     local mockSystem = dofile("tests/main/SystemMock.lua")
     local mockedSystem = mockSystem(mock, spy).system
     _G.System = mockedSystem
+
+    local mockPlayer = dofile("tests/main/PlayerMock.lua")
+    local player = mockPlayer(mock, spy)
+    _G.player = player
+    factory.player = player
 
     local mockScript = dofile("tests/main/ScriptMock.lua")
     local mockedScript = mockScript(mock, spy)
@@ -230,12 +231,9 @@ function makeFactory()
     factory.system = mock(system, true)
     _G.System = system
 
-    local itemManager = {
-        GetItem = function()
-        end
-    }
 
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
+    factory.HelmetOffDialog = HelmetOffDialog
 
     local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
     Config = mock(Config, true)
@@ -322,12 +320,6 @@ function makeFactory()
         return onTalkEvent
     end)
     HelmetOffDialog.ClassRegistry.OnTalkEvent = onTalkEvent
-
-    factory.HelmetOffDialog = HelmetOffDialog
-    factory.player = mock(player, true)
-    _G.player = player
-    factory.itemManager = mock(itemManager, true)
-    _G.ItemManager = itemManager
 
     return factory
 end

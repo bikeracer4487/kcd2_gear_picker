@@ -19,7 +19,7 @@ local OnTalkEvent = {
         return instance
     end,
 
-    --- @field handle func(self: OnTalkEvent, twinEntity: _G.Entity)
+    --- @field handle func(self: OnTalkEvent, entityName: _G.Entity)
     handle = function(self, twinEntity, player)
         ----- @type OnTalkEvent
         local this = self
@@ -29,8 +29,8 @@ local OnTalkEvent = {
             return
         end
 
-        local twiName = twinEntity:GetName()
-        local entityName = string.gsub(twiName, "DialogTwin_", "")
+        local twinName = twinEntity:GetName()
+        local entityName = string.gsub(twinName, "DialogTwin_", "")
         Log.info('EntityName:', entityName)
 
         if entityName == "Dude" then
@@ -44,7 +44,7 @@ local OnTalkEvent = {
             return
         end
 
-        if this.metaRole:hasBathhouseBooking(entityName) then
+        if this.metaRole:hasBathhouseBooking(twinEntity, player) then
             Log.info("Aborting because entity serves bathhouse services.")
             return
         end
@@ -63,6 +63,11 @@ local OnTalkEvent = {
             Log.info("Not aborting due to random check failing ")
         end
 
+        if this.metaRole:hasArcheryCompetition(entityName) then
+            Log.info("Aborting taking off ranged weapons because entity offers archery competition")
+            return
+        end
+
         this.eventInProgress = true
 
         this.equipment:takeOffHelmet(function()
@@ -76,11 +81,11 @@ local OnTalkEvent = {
         end)
     end,
 
-    takeOffHeadChainmail = function(self, entityName)
+    takeOffHeadChainmail = function(self, entity)
         local this = self
         Log.info("OnTalkEvent.takeOffHeadChainmail")
         this.equipment:takeOffHeadChainmail(function()
-            this:takeOffCoif(entityName)
+            this:takeOffCoif(entity)
         end)
     end,
 
@@ -101,12 +106,6 @@ local OnTalkEvent = {
         --- @type OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffFirstRangedWeapon")
-
-        if this.metaRole:hasArcheryCompetition(entityName) then
-            Log.info("Aborting taking off ranged weapons because entity offers archery competition")
-            this:handleTalkEndedEvent("triggeredByRanged")
-            return
-        end
 
         this.equipment:takeOffFirstRangedWeapon(function()
             this:takeOffSecondRangedWeapon()

@@ -1,5 +1,9 @@
 local Log = {}
 
+-- Size limit constant (false or -1 disables breaking)
+local MAX_LINE_LENGTH = false
+
+-- Get timestamp
 Log.getLocalTime = function()
     local localTime = System.GetLocalOSTime()
     return string.format("%04d-%02d-%02d %02d:%02d:%02d",
@@ -7,47 +11,61 @@ Log.getLocalTime = function()
             localTime.hour, localTime.min, localTime.sec)
 end
 
-Log._log = function(level, colorCode, ...)
-    local localTime = Log.getLocalTime()
-    local args = { ... }
-    local messageParts = {}
-
+-- Simplified message building
+local function buildMessage(args)
+    local parts = {}
     for _, arg in ipairs(args) do
         if type(arg) == "table" then
-            local isSequential = true
-            for k in pairs(arg) do
-                if type(k) ~= "number" or k < 1 or math.floor(k) ~= k then
-                    isSequential = false
-                    break
-                end
+            local items = {}
+            for k, v in pairs(arg) do
+                items[#items + 1] = tostring(k) .. "=" .. tostring(v)
             end
-
-            if isSequential then
-                local tableParts = {}
-                for _, v in ipairs(arg) do
-                    tableParts[#tableParts + 1] = tostring(v)
-                end
-                messageParts[#messageParts + 1] = table.concat(tableParts, ", ")
-            else
-                local tableParts = {}
-                for k, v in pairs(arg) do
-                    tableParts[#tableParts + 1] = tostring(k) .. "=" .. tostring(v)
-                end
-                messageParts[#messageParts + 1] = "{" .. table.concat(tableParts, ", ") .. "}"
-            end
+            parts[#parts + 1] = "{" .. table.concat(items, ",") .. "}"
         else
-            messageParts[#messageParts + 1] = tostring(arg)
+            parts[#parts + 1] = tostring(arg)
         end
     end
+    return table.concat(parts, " "):gsub("%s+", " ")
+end
 
-    local message = table.concat(messageParts, " ")
+-- Main logging function
+Log._log = function(level, colorCode, ...)
+    -- Check dependencies
+    if not System or not System.LogAlways or not HelmetOffDialog or not HelmetOffDialog.MOD_NAME then
+        return -- Silently fail if dependencies are missing
+    end
+
+    local timestamp = Log.getLocalTime()
     local modName = HelmetOffDialog.MOD_NAME
-    System.LogAlways(string.format("%s[%s] [%s.%s] %s",
-            colorCode, localTime, modName, level, message))
+    local message = buildMessage({...})
+    local prefix = string.format("%s[%s %s.%s] ", colorCode, timestamp, modName, level)
+    local fullMessage = prefix .. message
+
+    -- If MAX_LINE_LENGTH is false or -1, log full message without breaking
+    if MAX_LINE_LENGTH == false or MAX_LINE_LENGTH == -1 then
+        System.LogAlways(fullMessage)
+    elseif #fullMessage <= MAX_LINE_LENGTH then
+        System.LogAlways(fullMessage)
+    else
+        -- First line: exactly MAX_LINE_LENGTH
+        local firstLine = fullMessage:sub(1, MAX_LINE_LENGTH)
+        System.LogAlways(firstLine)
+
+        -- Remaining message in chunks
+        local remaining = fullMessage:sub(MAX_LINE_LENGTH + 1)
+        local maxChunkLength = MAX_LINE_LENGTH - 5 -- Account for "    " indent
+        while #remaining > 0 do
+            local chunk = remaining:sub(1, maxChunkLength)
+            if #chunk > 0 then
+                System.LogAlways(colorCode .. "    " .. chunk)
+            end
+            remaining = remaining:sub(maxChunkLength + 1)
+        end
+    end
 end
 
 Log.info = function(...)
-    if not HelmetOffDialog:config():isProduction() then
+    if HelmetOffDialog and HelmetOffDialog:config() and not HelmetOffDialog:config():isProduction() then
         Log._log("INFO", "$5", ...)
     end
 end
@@ -57,5 +75,4 @@ Log.error = function(...)
 end
 
 HelmetOffDialog.Log = Log
-
 return Log

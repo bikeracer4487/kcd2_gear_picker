@@ -7,7 +7,15 @@ target="${1:-$defaultTarget}"
 
 # Validate target
 valid_targets=("main" "random" "ranged" "helmet_only")
-if [[ ! " ${valid_targets[@]} " =~ " ${target} " ]]; then
+found_target=false
+for valid_target in "${valid_targets[@]}"; do
+  if [[ "$valid_target" == "$target" ]]; then
+    found_target=true
+    break
+  fi
+done
+
+if [[ "$found_target" == false ]]; then
   echo "ERROR: Invalid target '$target'. Must be one of: ${valid_targets[*]}"
   exit 1
 fi

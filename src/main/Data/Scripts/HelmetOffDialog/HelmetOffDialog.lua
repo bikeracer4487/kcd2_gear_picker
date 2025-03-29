@@ -85,7 +85,7 @@ local HelmetOffDialog = {
 
         --- @type MetaRole
         local MetaRole = this.ClassRegistry.MetaRole
-        this.__factories.MetaRole = MetaRole:new(_G.System)
+        this.__factories.MetaRole = MetaRole:new(_G.System, _G.player)
 
         return this.__factories.MetaRole
     end,
@@ -145,7 +145,11 @@ local HelmetOffDialog = {
         return this.__factories.itemCategory
     end,
 
-    init = function()
+    init = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        this.__factories = {}
+
         local modName = "HelmetOffDialog"
         local scripts = {
             string.format("Scripts/%s/utils/Log.lua", modName),
@@ -169,7 +173,7 @@ local HelmetOffDialog = {
                 System.LogAlways("$4[" .. HelmetOffDialog.MOD_NAME .. ".ERROR] Unable to load script: " .. script)
             end
         end
-        System.LogAlways("$5[" .. HelmetOffDialog.MOD_NAME .. ".INFO] All classes loaded.")
+        HelmetOffDialog.Log.info("All classes loaded.")
     end,
 }
 
