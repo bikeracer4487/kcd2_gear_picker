@@ -12,14 +12,16 @@ local function mockItemManager(mock, spy, args)
             return dofile("tests/main/ItemMock.lua")(mock, spy, args)
         end,
         GetItemName = function()
-            if args and args.name then
-                return args.name
+            if args and args.GetItemName then
+                return args.GetItemName
             end
+            return "lorem-ipsum"
         end,
         GetItemUIName = function()
-            if args and args.name then
-                return "ui_" .. args.name
+            if args and args.GetItemUIName then
+                return "ui_" .. args.GetItemUIName
             end
+            return "ui_lorem-ipsum"
         end
     }
 

@@ -60,7 +60,6 @@ describe("Coif", function()
         end)
     end
 
-
     it("falsy for invalid items", function()
         local factory = makeFactory({ name = "invalid" })
         local actual = factory.itemCategory:is(category, factory.item)
@@ -98,7 +97,13 @@ end)
 
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
-    local itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, args)
+    local itemManagerArgs = {}
+    if args and args.name ~= nil then
+        itemManagerArgs.GetItem = true
+        itemManagerArgs.GetItemName = args.name
+        itemManagerArgs.GetItemUIName = args.name
+    end
+    local itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, itemManagerArgs)
 
     local factory = {}
     --- @type ItemCategory
