@@ -39,8 +39,8 @@ local ItemCategory = {
         end
 
         if category == "Coif" then
-            return lcName:find("coif")
-                    or lcName:find("g_hood_")
+            return lcName:find("coif") ~= nil
+                    or lcName:find("g_hood_") ~= nil
         end
 
         if category == "RangedWeapon" then

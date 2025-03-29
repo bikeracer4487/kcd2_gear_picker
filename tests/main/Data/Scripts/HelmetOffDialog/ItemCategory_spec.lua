@@ -15,6 +15,21 @@ describe("Helmet", function()
     end
 end)
 
+describe("Coif", function()
+    local test_cases = {
+        { name = "lorem-coif_ipsum", keyword = "coif" },
+        { name = "lorem-g_hood_ipsum", keyword = "g_hood" },
+    }
+
+    for _, case in ipairs(test_cases) do
+        it("truthy for: " .. case.keyword, function()
+            local factory = makeFactory({ name = case.name })
+            local actual = factory.itemCategory:is("Coif", factory.item)
+            assert.is_true(actual)
+        end)
+    end
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, args)
