@@ -33,6 +33,16 @@ it("truthy isHelmetOnly", function()
     assert.is_true(factory.config:isHelmetOnly())
 end)
 
+it("default falsy isModOff", function()
+    local factory = makeFactory()
+    assert.is_false(factory.config:isModOff())
+end)
+
+it("truthy isModOff", function()
+    local factory = makeFactory({ isModOff = true })
+    assert.is_true(factory.config:isModOff())
+end)
+
 it("falsy isHelmetOnly", function()
     local factory = makeFactory()
     assert.is_false(factory.config:isHelmetOnly())
@@ -40,12 +50,12 @@ end)
 
 it("parses a truthy setting value", function()
     local factory = makeFactory()
-    assert.is_true(factory.config:parseSettingValue("= true"))
+    assert.is_true(factory.config:_parseSettingValue("= true"))
 end)
 
 it("parses a falsy setting value", function()
     local factory = makeFactory()
-    assert.is_false(factory.config:parseSettingValue("= false"))
+    assert.is_false(factory.config:_parseSettingValue("= false"))
 end)
 
 function makeFactory(args)
@@ -58,6 +68,10 @@ function makeFactory(args)
     config:setRanged(args and args.isRanged and "= true" or "= false")
     config:setRandom(args and args.isRandom and "= true" or "= false")
     config:setHelmetOnly(args and args.isHelmetOnly and "= true" or "= false")
+
+    if args and args.isModOff then
+        config:setModOff(args.isModOff == true and "= true" or "= false")
+    end
 
     return { config = config }
 end

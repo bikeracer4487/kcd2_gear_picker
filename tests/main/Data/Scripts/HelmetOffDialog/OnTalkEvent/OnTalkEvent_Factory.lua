@@ -1,8 +1,6 @@
 local function makeFactory(mock, spy, args)
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
-    local mockHelmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")
-    local helmetOffDialogFactory = mockHelmetOffDialog(mock, spy)
-    local helmetOffDialog = helmetOffDialogFactory.HelmetOffDialog
+    local helmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy, args)
     local OnTalkEvent = dofile("src/main/Data/Scripts/HelmetOffDialog/OnTalkEvent.lua")
 
     local MetaRole = dofile("src/main/Data/Scripts/HelmetOffDialog/MetaRole.lua")
@@ -42,15 +40,6 @@ local function makeFactory(mock, spy, args)
     local Config = dofile("src/main/Data/Scripts/HelmetOffDialog/Config.lua")
     --- @type Config
     local config = mock(Config, true)
-    config.isHelmetOnly = function()
-        return false
-    end
-    config.isRandom = function()
-        return false
-    end
-    config.isRanged = function()
-        return false
-    end
 
     local features = args and args.features or {}
     features = type(features) == "string" and { features } or (features or {})
@@ -80,6 +69,10 @@ local function makeFactory(mock, spy, args)
             end
         elseif feature == "ranged" then
             config.isRanged = function()
+                return true
+            end
+        elseif feature == "mod_is_turned_off" then
+            config.isModOff = function()
                 return true
             end
         end

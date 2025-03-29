@@ -205,6 +205,26 @@ describe("EquippedItem", function()
     end)
 end)
 
+describe("Commands", function()
+    it("creates a new instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:commands()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Commands.new)
+              .was.called_with(
+                match.is_ref(factory.HelmetOffDialog.ClassRegistry.Commands),
+                factory.system,
+                factory.HelmetOffDialog:config()
+        )
+    end)
+
+    it("loads the script", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:init()
+        assert.stub(factory.script.LoadScript)
+              .was.called_with("Scripts/HelmetOffDialog/Commands.lua")
+    end)
+end)
+
 function makeFactory()
     dofile("src/main/Data/Scripts/HelmetOffDialog/utils/dd.lua")
     local factory = {}
@@ -230,7 +250,6 @@ function makeFactory()
     }
     factory.system = mock(system, true)
     _G.System = system
-
 
     local HelmetOffDialog = dofile("src/main/Data/Scripts/HelmetOffDialog/HelmetOffDialog.lua")
     factory.HelmetOffDialog = HelmetOffDialog
@@ -320,6 +339,13 @@ function makeFactory()
         return onTalkEvent
     end)
     HelmetOffDialog.ClassRegistry.OnTalkEvent = onTalkEvent
+
+    local Commands = dofile("src/main/Data/Scripts/HelmetOffDialog/Commands.lua")
+    local commands = mock(Commands, true)
+    commands.new = spy.new(function()
+        return commands
+    end)
+    HelmetOffDialog.ClassRegistry.Commands = commands
 
     return factory
 end

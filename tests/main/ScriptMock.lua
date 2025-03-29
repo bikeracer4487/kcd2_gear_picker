@@ -5,6 +5,7 @@ local function mockScript(mock, spy, args)
     }
 
     local script = mock(Script, true)
+    _G.Script = script
 
     return script
 end
