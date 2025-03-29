@@ -1,4 +1,24 @@
-describe("helmet only command", function()
+describe("random setting", function()
+    it("registers the command", function()
+        local factory = makeFactory()
+        factory.commands:handle()
+        assert.spy(factory.system.AddCCommand).was.called_with(
+                "helmet_off_dialog__set_random",
+                "HelmetOffDialog:setRandom(%line)"
+        )
+    end)
+
+    it("handles the command", function()
+        local factory = makeFactory()
+        factory.commands:handle()
+        factory.helmetOffDialog:setRandom("setRandom-lorem-ipsum")
+        assert.spy(factory.config.setRandom).was.called_with(
+                match.is_ref(factory.config),
+                "setRandom-lorem-ipsum"
+        )
+    end)
+end)
+describe("helmet only setting", function()
     it("registers the command", function()
         local factory = makeFactory()
         factory.commands:handle()
@@ -11,15 +31,15 @@ describe("helmet only command", function()
     it("handles the command", function()
         local factory = makeFactory()
         factory.commands:handle()
-        factory.helmetOffDialog:setHelmetOnly('lorem-ipsum')
+        factory.helmetOffDialog:setHelmetOnly("setHelmetOnly_lorem-ipsum")
         assert.spy(factory.config.setHelmetOnly).was.called_with(
                 match.is_ref(factory.config),
-                "lorem-ipsum"
+                "setHelmetOnly_lorem-ipsum"
         )
     end)
 end)
 
-describe("turn off mod command", function()
+describe("turn off mod setting", function()
     it("registers the command", function()
         local factory = makeFactory()
         factory.commands:handle()
@@ -32,10 +52,10 @@ describe("turn off mod command", function()
     it("handles the command", function()
         local factory = makeFactory()
         factory.commands:handle()
-        factory.helmetOffDialog:setTurnOff('lorem-ipsum')
+        factory.helmetOffDialog:setTurnOff("setTurnOff_lorem-ipsum")
         assert.spy(factory.config.setTurnOff).was.called_with(
                 match.is_ref(factory.config),
-                "lorem-ipsum"
+                "setTurnOff_lorem-ipsum"
         )
     end)
 end)

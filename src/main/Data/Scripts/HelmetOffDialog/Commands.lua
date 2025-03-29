@@ -18,6 +18,15 @@ local Commands = {
         local this = self
 
         this.system.AddCCommand(
+                "helmet_off_dialog__set_random",
+                "HelmetOffDialog:setRandom(%line)"
+        )
+        this.helmetOffDialog.setRandom = function(self, input)
+            Log.info("setRandom called with argument: ", input)
+            this.config:setRandom(input)
+        end
+
+        this.system.AddCCommand(
                 "helmet_off_dialog__set_helmet_only",
                 "HelmetOffDialog:setHelmetOnly(%line)"
         )
@@ -40,30 +49,11 @@ local Commands = {
 _G.HelmetOffDialog.ClassRegistry.Commands = Commands
 
 return Commands
---local config = _G.HelmetOffDialog:config()
---local Log = _G.HelmetOffDialog.Log
---
---function _G.HelmetOffDialog:setHelmetOnly(input)
---    Log.info("setHelmetOnly called with argument: ", input)
---    config:setHelmetOnly(input)
---end
---
---_G.System.AddCCommand(
---        "helmet_off_dialog__set_helmet_only",
---        "HelmetOffDialog:setHelmetOnly(%line)",
---        ""
---);
 --
 --function _G.HelmetOffDialog:setRandom(rawInput)
 --    Log.info("setRandom called with argument: ", rawInput)
 --    config:setRandom(rawInput)
 --end
---
---_G.System.AddCCommand(
---        "helmet_off_dialog__set_random",
---        "HelmetOffDialog:setRandom(%line)",
---        ""
---);
 --
 --function _G.HelmetOffDialog:setRanged(rawInput)
 --    Log.info("setRanged called with argument: ", rawInput)
