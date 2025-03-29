@@ -144,6 +144,17 @@ local HelmetOffDialog = {
         this.__factories.itemCategory = ItemCategory:new(_G.ItemManager)
         return this.__factories.itemCategory
     end,
+    commands = function(self)
+        --- @type HelmetOffDialog
+        local this = self
+        if this.__factories.commands then
+            return this.__factories.commands
+        end
+        --- @type Commands
+        local Commands = this.ClassRegistry.Commands
+        this.__factories.commands = Commands:new(_G.System, this:config())
+        return this.__factories.commands
+    end,
 
     init = function(self)
         --- @type HelmetOffDialog
@@ -164,8 +175,9 @@ local HelmetOffDialog = {
             string.format("Scripts/%s/ItemCategory.lua", modName),
             string.format("Scripts/%s/utils/dd.lua", modName),
             string.format("Scripts/%s/utils/Inspect.lua", modName),
-            string.format("Scripts/%s/SettingsCommands.lua", modName),
+            string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/MetaRole.lua", modName),
+            string.format("Scripts/%s/Commands.lua", modName),
         }
         for _, script in ipairs(scripts) do
             local result = Script.LoadScript(script)
