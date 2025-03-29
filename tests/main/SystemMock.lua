@@ -11,8 +11,8 @@ local function mockSystem(mock, spy, args)
         end,
 
         GetEntitiesInSphereByClass = function()
-            if args and args.bathhouse then
-                return { mockEntity(mock, spy, { bathhouse = args.bathhouse }) }
+            if args and args.metaRole then
+                return { mockEntity(mock, spy, { metaRole = args.metaRole }) }
             end
 
             return {}

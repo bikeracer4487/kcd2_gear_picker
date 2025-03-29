@@ -19,7 +19,7 @@ local OnTalkEvent = {
         return instance
     end,
 
-    --- @field handle func(self: OnTalkEvent, twinEntity: _G.Entity)
+    --- @field handle func(self: OnTalkEvent, entityName: _G.Entity)
     handle = function(self, twinEntity, player)
         ----- @type OnTalkEvent
         local this = self
@@ -29,8 +29,8 @@ local OnTalkEvent = {
             return
         end
 
-        local twiName = twinEntity:GetName()
-        local entityName = string.gsub(twiName, "DialogTwin_", "")
+        local twinName = twinEntity:GetName()
+        local entityName = string.gsub(twinName, "DialogTwin_", "")
         Log.info('EntityName:', entityName)
 
         if entityName == "Dude" then
@@ -67,9 +67,9 @@ local OnTalkEvent = {
 
         this.equipment:takeOffHelmet(function()
             if not this.config:isHelmetOnly() then
-                this:takeOffHeadChainmail(twinEntity)
+                this:takeOffHeadChainmail(entityName)
             elseif this.config:isRanged() then
-                this:takeOffFirstRangedWeapon(twinEntity)
+                this:takeOffFirstRangedWeapon(entityName)
             else
                 this:handleTalkEndedEvent("triggeredByHandler")
             end
@@ -84,25 +84,25 @@ local OnTalkEvent = {
         end)
     end,
 
-    takeOffCoif = function(self, entity)
+    takeOffCoif = function(self, entityName)
         --- OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffCoif")
         this.equipment:takeOffCoif(function()
             if this.config:isRanged() then
-                this:takeOffFirstRangedWeapon(entity)
+                this:takeOffFirstRangedWeapon(entityName)
             else
                 this:handleTalkEndedEvent("triggeredByTakeOffCoif")
             end
         end)
     end,
 
-    takeOffFirstRangedWeapon = function(self, entity)
+    takeOffFirstRangedWeapon = function(self, entityName)
         --- @type OnTalkEvent
         local this = self
         Log.info("OnTalkEvent.takeOffFirstRangedWeapon")
 
-        if this.metaRole:hasArcheryCompetition(entity) then
+        if this.metaRole:hasArcheryCompetition(entityName) then
             Log.info("Aborting taking off ranged weapons because entity offers archery competition")
             this:handleTalkEndedEvent("triggeredByRanged")
             return

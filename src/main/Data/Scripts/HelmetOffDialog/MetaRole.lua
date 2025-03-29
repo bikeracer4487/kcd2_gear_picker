@@ -50,7 +50,10 @@ local MetaRole = {
         future, then it should be refactored to follow the same pattern as the
         hasBathhouseBooking function.
     ]]
-    hasArcheryCompetition = function(self, entity)
+    hasArcheryCompetition = function(self, entityName)
+        --- MetaRole
+        local this = self
+        local entity = this.system.GetEntityByName(entityName)
         local countLinks = entity:CountLinks()
         Log.info("countLinks: ", countLinks)
 

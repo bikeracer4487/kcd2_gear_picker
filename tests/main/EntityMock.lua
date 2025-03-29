@@ -12,11 +12,10 @@ local function mockEntity(mock, spy, args)
             return "ipsum"
         end,
         CountLinks = function(self)
-            return args and args.linkedEntity and #args.linkedEntity or 0
+            return args and args.linkedEntity and 1 or 0
         end,
         GetLink = function(self, index)
-            return args and args.linkedEntity
-                    and args.linkedEntity[1] == "ShootingRange"
+            return args and args.linkedEntity == "ShootingRange"
                     and linkedEntity or nil
         end
     }
