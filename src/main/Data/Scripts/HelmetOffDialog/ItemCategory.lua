@@ -11,42 +11,44 @@ local ItemCategory = {
     end,
 
     --- @field is fun(self: ItemCategory, category: string, inventoryItem: any): boolean
-    is = function(self, itemCategory, inventoryItem)
+    is = function(self, category, inventoryItem)
         --- @type ItemCategory
         local this = self
         local item = this.itemManager.GetItem(inventoryItem)
         if not item then
-            Log.info("ItemCategory Invalid item for category check: " .. itemCategory)
+            Log.info("ItemCategory Invalid item for category check: " .. category)
             return false
         end
 
         local itemName = this.itemManager.GetItemName(item.class)
         local itemUIName = this.itemManager.GetItemUIName(item.class)
+        local lcName = string.lower(itemName)
+        local lcUiName = string.lower(itemUIName)
 
-        if itemCategory == "Helmet" then
-            return string.lower(itemName):find("kettle")
-                    or string.lower(itemName):find("bascinet")
-                    or string.lower(itemName):find("helmet")
-                    or string.lower(itemName):find("skullcap")
+        if category == "Helmet" then
+            return lcName:find("kettle") ~= nil
+                    or lcName:find("bascinet") ~= nil
+                    or lcName:find("helmet") ~= nil
+                    or lcName:find("skullcap") ~= nil
         end
 
-        if itemCategory == "HeadChainmail" then
-            return string.lower(itemName):find("coifmail")
-                    or string.lower(itemUIName):find("nm_ca_collar")
-                    or string.lower(itemUIName):find("nm_ca_hood")
+        if category == "HeadChainmail" then
+            return lcName:find("coifmail") ~= nil
+                    or lcUiName:find("nm_ca_collar") ~= nil
+                    or lcUiName:find("nm_ca_hood") ~= nil
         end
 
-        if itemCategory == "Coif" then
-            return string.lower(itemName):find("coif")
-                    or string.lower(itemName):find("g_hood_")
+        if category == "Coif" then
+            return lcName:find("coif") ~= nil
+                    or lcName:find("g_hood_") ~= nil
         end
 
-        if itemCategory == "RangedWeapon" then
-            return string.lower(itemName):find("bow_")
-                    or string.lower(itemName):find("crossbow")
+        if category == "RangedWeapon" then
+            return lcName:find("bow_") ~= nil
+                    or lcName:find("crossbow") ~= nil
         end
 
-        Log.info("ItemCategory Unknown category: " .. itemCategory)
+        Log.info("ItemCategory Unknown category: " .. category)
         return false
     end
 }
