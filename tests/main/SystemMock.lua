@@ -17,6 +17,8 @@ local function mockSystem(mock, spy, args)
 
             return {}
         end,
+        AddCCommand = function()
+        end
     }
 
     local system = mock(System, false)
