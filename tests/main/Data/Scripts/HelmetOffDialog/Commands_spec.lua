@@ -69,8 +69,8 @@ describe("turn off mod setting", function()
         local factory = makeFactory()
         factory.commands:init()
         assert.spy(factory.system.AddCCommand).was.called_with(
-                "helmet_off_dialog__set_turn_off",
-                "HelmetOffDialog:commands():setTurnOff(%line)",
+                "helmet_off_dialog__set_mod_off",
+                "HelmetOffDialog:commands():setModOff(%line)",
                 ""
         )
     end)
@@ -78,10 +78,10 @@ describe("turn off mod setting", function()
     it("handles the command", function()
         local factory = makeFactory()
         factory.commands:init()
-        factory.commands:setTurnOff("setTurnOff_lorem-ipsum")
-        assert.spy(factory.config.setTurnOff).was.called_with(
+        factory.commands:setModOff("setModOff_lorem-ipsum")
+        assert.spy(factory.config.setModOff).was.called_with(
                 match.is_ref(factory.config),
-                "setTurnOff_lorem-ipsum"
+                "setModOff_lorem-ipsum"
         )
     end)
 end)

@@ -15,14 +15,13 @@ local Commands = {
         --- @type Commands
         local this = self
 
+        this.system.AddCCommand("helmet_off_dialog__set_mod_off", "HelmetOffDialog:commands():setModOff(%line)", "")
         this.system.AddCCommand("helmet_off_dialog__set_ranged", "HelmetOffDialog:commands():setRanged(%line)", "")
         this.system.AddCCommand("helmet_off_dialog__set_random", "HelmetOffDialog:commands():setRandom(%line)", "")
         this.system.AddCCommand(
                 "helmet_off_dialog__set_helmet_only", "HelmetOffDialog:commands():setHelmetOnly(%line)", ""
         )
-        this.system.AddCCommand("helmet_off_dialog__set_turn_off", "HelmetOffDialog:commands():setTurnOff(%line)", "")
-        
-        this.system.AddCCommand("helmet_off_dialog__set_turn_off", "HelmetOffDialog:commands():setTurnOff(%line)", "")
+
     end,
 
     setRanged = function(self, input)
@@ -37,9 +36,9 @@ local Commands = {
         Log.info("setHelmetOnly called with argument: ", input)
         self.config:setHelmetOnly(input)
     end,
-    setTurnOff = function(self, input)
-        Log.info("setTurnOff called with argument: ", input)
-        self.config:setTurnOff(input)
+    setModOff = function(self, input)
+        Log.info("setModOff called with argument: ", input)
+        self.config:setModOff(input)
     end
 }
 
