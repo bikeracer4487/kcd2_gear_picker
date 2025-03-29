@@ -6,6 +6,9 @@ Yes, it’s uploaded.
 ### How do I install it?
 Use Steam Workshop, Vortex Mod Manager or manually extract the contents of the mod into the `{Game}\Mods` folder.
 
+### Gear Coming Off When It Shouldn’t
+While the mod keeps your gear on for most scenarios requiring it, some cases aren’t yet covered. To address this, press `~` (top left of your keyboard) to open the in-game console, type `helmet_off_dialog__set_mod_off true`, and hit enter to disable it, keeping your gear on as needed; to re-enable it, type `helmet_off_dialog__set_mod_off false` and hit enter.
+
 ### "Easy Riders" Quest Now Unblocked in KCD2
 In the "Easy Riders" quest, players can now progress seamlessly. As of version 1.3.2 (March 19, 2025), the update fixes the previous issue where helmets or was removed, preventing you from sparring with Hans.
 

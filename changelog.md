@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.4.0 29-march-25
+- feat: Add in-game command to toggle the mod on or off as needed.
+
 ### 1.3.4 26-march-25
 - fix: Gear is now equipped when the trading menu is opened.
 - fix: Gear take off is skipped when interacting with NPCs offering bathhouse services.
