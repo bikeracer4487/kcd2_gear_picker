@@ -46,6 +46,21 @@ describe("Coif", function()
     end
 end)
 
+describe("RangedWeapon", function()
+    local test_cases = {
+        { name = "lorem-bow__ipsum", keyword = "bow_" },
+        { name = "lorem-crossbow_ipsum", keyword = "crossbow" },
+    }
+
+    for _, case in ipairs(test_cases) do
+        it("truthy for: " .. case.keyword, function()
+            local factory = makeFactory({ name = case.name })
+            local actual = factory.itemCategory:is("RangedWeapon", factory.item)
+            assert.is_true(actual)
+        end)
+    end
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, args)

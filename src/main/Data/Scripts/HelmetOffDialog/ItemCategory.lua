@@ -44,8 +44,8 @@ local ItemCategory = {
         end
 
         if category == "RangedWeapon" then
-            return lcName:find("bow_")
-                    or lcName:find("crossbow")
+            return lcName:find("bow_") ~= nil
+                    or lcName:find("crossbow") ~= nil
         end
 
         Log.info("ItemCategory Unknown category: " .. category)
