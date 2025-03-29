@@ -18,6 +18,15 @@ local Commands = {
         local this = self
 
         this.system.AddCCommand(
+                "helmet_off_dialog__set_ranged",
+                "HelmetOffDialog:setRanged(%line)"
+        )
+        this.helmetOffDialog.setRanged = function(self, input)
+            Log.info("setRanged called with argument: ", input)
+            this.config:setRanged(input)
+        end
+
+        this.system.AddCCommand(
                 "helmet_off_dialog__set_random",
                 "HelmetOffDialog:setRandom(%line)"
         )

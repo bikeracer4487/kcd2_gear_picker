@@ -1,3 +1,24 @@
+describe("ranged setting", function()
+    it("registers the command", function()
+        local factory = makeFactory()
+        factory.commands:handle()
+        assert.spy(factory.system.AddCCommand).was.called_with(
+                "helmet_off_dialog__set_ranged",
+                "HelmetOffDialog:setRanged(%line)"
+        )
+    end)
+
+    it("handles the command", function()
+        local factory = makeFactory()
+        factory.commands:handle()
+        factory.helmetOffDialog:setRanged("setRanged-lorem-ipsum")
+        assert.spy(factory.config.setRanged).was.called_with(
+                match.is_ref(factory.config),
+                "setRanged-lorem-ipsum"
+        )
+    end)
+end)
+
 describe("random setting", function()
     it("registers the command", function()
         local factory = makeFactory()
@@ -18,6 +39,7 @@ describe("random setting", function()
         )
     end)
 end)
+
 describe("helmet only setting", function()
     it("registers the command", function()
         local factory = makeFactory()
