@@ -1,3 +1,9 @@
+it("aborts if mod is disabled", function()
+    local factory = makeFactory({ features = "mod_is_turned_off" })
+    factory.onTalkEvent:handle(factory.twinEntity, factory.player)
+    assert.spy(factory.equipment.takeOffHelmet).was_not_called()
+end)
+
 it("aborts if player is not in dialogue", function()
     local factory = makeFactory({ isInDialog = false })
     factory.onTalkEvent:handle(factory.twinEntity, factory.player)

@@ -29,6 +29,11 @@ local OnTalkEvent = {
             return
         end
 
+        if this.config:isModOff() then
+            Log.info("Aborting because mod is turned off")
+            return
+        end
+
         local twinName = twinEntity:GetName()
         local entityName = string.gsub(twinName, "DialogTwin_", "")
         Log.info('EntityName:', entityName)
