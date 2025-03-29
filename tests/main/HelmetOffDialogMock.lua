@@ -37,10 +37,7 @@ local function mockHelmetOffDialog(mock, spy)
     HelmetOffDialog.error = function()
         return Error
     end
-    --local Config = mock(HelmetOffDialog.ClassRegistry.Config, true)
-    --HelmetOffDialog.config = function()
-    --    return Config
-    --end
+
     HelmetOffDialog.onTalkEvent = function()
         return OnTalkEvent
     end

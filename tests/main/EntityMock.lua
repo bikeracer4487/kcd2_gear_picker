@@ -26,7 +26,7 @@ local function mockEntity(mock, spy, args)
 
     _G.Entity = entity
 
-    return mock(Entity, false)
+    return entity
 end
 
 return mockEntity

@@ -22,6 +22,7 @@ local function mockSystem(mock, spy, args)
     }
 
     local system = mock(System, false)
+    _G.System = system
 
     return system
 end
