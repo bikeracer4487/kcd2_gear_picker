@@ -1,6 +1,10 @@
 local function mockItemManager(mock, spy, args)
     local ItemManager = {
         GetItem = function()
+            if args and args.GetItem == "invalid" then
+                return false
+            end
+
             if args and args.name then
                 return dofile("tests/main/ItemMock.lua")(mock, spy, args)
             end

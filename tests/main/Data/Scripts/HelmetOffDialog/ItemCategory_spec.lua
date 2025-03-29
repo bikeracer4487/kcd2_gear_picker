@@ -91,8 +91,8 @@ describe("RangedWeapon", function()
 end)
 
 it("falsy for unknown categories", function()
-    local factory = makeFactory({ name = "helmet" })
-    local actual = factory.itemCategory:is("Unknown", factory.item)
+    local factory = makeFactory({ GetItem = "invalid", name = "helmet" })
+    local actual = factory.itemCategory:is("invalid", factory.item)
     assert.is_false(actual)
 end)
 
