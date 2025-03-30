@@ -43,7 +43,7 @@ local EquippedItem = {
                 Log.info("Found equipped, now unequipped item: " .. itemName)
             end
 
-            callback(isEquipped)
+            return callback(isEquipped)
         end)
     end,
     -- https://warhorse.youtrack.cloud/articles/KM-A-21/Stats-and-skills

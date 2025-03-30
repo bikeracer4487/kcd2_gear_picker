@@ -1,9 +1,22 @@
-it("falsy having zero equipped weight", function()
+it("detects having zero equipped weight", function()
     local factory = makeFactory({ equipped_weight = "zero" })
-    local actual = factory.equippedItem:isEquipped(factory.inventoryItem, function(output)
-        return output
+    factory.equippedItem:isEquipped(factory.inventoryItem, function(actual)
+        assert.is_false(actual)
     end)
-    assert.is_false(actual)
+end)
+
+it("detects having equipped weight changed", function()
+    local factory = makeFactory({ equipped_weight = "changed" })
+    factory.equippedItem:isEquipped(factory.inventoryItem, function(actual)
+        assert.is_true(actual)
+    end)
+end)
+
+it("detects having equipped weight unchanged", function()
+    local factory = makeFactory({ equipped_weight = "unchanged" })
+    factory.equippedItem:isEquipped(factory.inventoryItem, function(actual)
+        assert.is_false(actual)
+    end)
 end)
 
 function makeFactory(args)
@@ -17,7 +30,14 @@ function makeFactory(args)
     if args and args.equipped_weight == "zero" then
         soulArgs.GetDerivedStat = "0"
     end
+    if args and args.equipped_weight == "changed" then
+        soulArgs.GetDerivedStat = { "50", "80" }
+    end
+    if args and args.equipped_weight == "unchanged" then
+        soulArgs.GetDerivedStat = { "50", "50" }
+    end
     player.soul = dofile("tests/main/SoulMock.lua")(mock, spy, soulArgs)
+    player.actor = dofile("tests/main/ActorMock.lua")(mock, spy, soulArgs)
     factory.player = player
 
     factory.script = dofile("tests/main/ScriptMock.lua")(mock, spy, args)
@@ -25,6 +45,12 @@ function makeFactory(args)
     local itemManagerArgs = {}
     if args and args.equipped_weight == "zero" then
         itemManagerArgs.GetItem = "valid"
+    end
+    if args and args.equipped_weight == "changed" then
+        itemManagerArgs.GetItem = "changed"
+    end
+    if args and args.equipped_weight == "unchanged" then
+        itemManagerArgs.GetItem = "unchanged"
     end
     factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, itemManagerArgs)
 
