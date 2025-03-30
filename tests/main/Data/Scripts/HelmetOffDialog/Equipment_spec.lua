@@ -135,12 +135,12 @@ describe("putOnCoif", function()
 
     it("resets equipped item", function()
         local factory = makeFactory({ hasUnequippedCoif = true })
-        assert.is_not_nil(factory.equipment.unequippedCoif )
+        assert.is_not_nil(factory.equipment.unequippedCoif)
         factory.equipment:putOnCoif()
-        assert.is_nil(factory.equipment.unequippedCoif )
+        assert.is_nil(factory.equipment.unequippedCoif)
     end)
 
-    it("skips equipping having none equipped", function()
+    it("aborts having none equipped", function()
         local factory = makeFactory()
         factory.equipment:putOnCoif()
         assert.spy(factory.player.actor.EquipInventoryItem)
@@ -160,9 +160,9 @@ describe("putOnHeadChainmail", function()
 
     it("resets equipped item", function()
         local factory = makeFactory({ hasUnequippedHeadChainmail = true })
-        assert.is_not_nil(factory.equipment.unequippedHeadChainmail )
+        assert.is_not_nil(factory.equipment.unequippedHeadChainmail)
         factory.equipment:putOnHeadChainmail()
-        assert.is_nil(factory.equipment.unequippedHeadChainmail )
+        assert.is_nil(factory.equipment.unequippedHeadChainmail)
     end)
 
     it("skips equipping having none equipped", function()
@@ -175,7 +175,9 @@ end)
 
 describe("putOnHelmet", function()
     it("equips item", function()
-        local factory = makeFactory({ hasUnequippedHelmet = true })
+        local factory = makeFactory({
+            hasUnequippedHelmet = true, inventoryHasItem = true
+        })
         factory.equipment:putOnHelmet()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
                 match.is_ref(factory.player.actor),
@@ -185,13 +187,22 @@ describe("putOnHelmet", function()
 
     it("resets equipped item", function()
         local factory = makeFactory({ hasUnequippedHelmet = true })
-        assert.is_not_nil(factory.equipment.unequippedHelmet )
+        assert.is_not_nil(factory.equipment.unequippedHelmet)
         factory.equipment:putOnHelmet()
-        assert.is_nil(factory.equipment.unequippedHelmet )
+        assert.is_nil(factory.equipment.unequippedHelmet)
     end)
 
     it("skips equipping having none equipped", function()
         local factory = makeFactory()
+        factory.equipment:putOnHelmet()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+
+    it("aborts having no such item in inventory", function()
+        local factory = makeFactory({
+            hasUnequippedHelmet = true, inventoryHasItem = false
+        })
         factory.equipment:putOnHelmet()
         assert.spy(factory.player.actor.EquipInventoryItem)
               .was_not_called()
@@ -210,9 +221,9 @@ describe("putOnFirstRangedWeapon", function()
 
     it("resets equipped item", function()
         local factory = makeFactory({ hasUnequippedFirstRangedWeapon = true })
-        assert.is_not_nil(factory.equipment.unequippedFirstRangedWeapon )
+        assert.is_not_nil(factory.equipment.unequippedFirstRangedWeapon)
         factory.equipment:putOnFirstRangedWeapon()
-        assert.is_nil(factory.equipment.unequippedFirstRangedWeapon )
+        assert.is_nil(factory.equipment.unequippedFirstRangedWeapon)
     end)
 
     it("skips equipping having none equipped", function()
@@ -235,9 +246,9 @@ describe("putOnSecondRangedWeapon", function()
 
     it("resets equipped item", function()
         local factory = makeFactory({ hasUnequippedSecondRangedWeapon = true })
-        assert.is_not_nil(factory.equipment.unequippedSecondRangedWeapon )
+        assert.is_not_nil(factory.equipment.unequippedSecondRangedWeapon)
         factory.equipment:putOnSecondRangedWeapon()
-        assert.is_nil(factory.equipment.unequippedSecondRangedWeapon )
+        assert.is_nil(factory.equipment.unequippedSecondRangedWeapon)
     end)
 
     it("skips equipping having none equipped", function()
@@ -252,7 +263,12 @@ function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
 
-    factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, args)
+    local playerArgs = {}
+    if args and args.inventoryHasItem ~= nil then
+        playerArgs.inventoryArgs = { hasItem = args.inventoryHasItem }
+    end
+
+    factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, playerArgs)
     factory.unequipGear = dofile("tests/main/UnequipGearMock.lua")(mock, spy, args)
     factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, { GetItem = "valid" })
 

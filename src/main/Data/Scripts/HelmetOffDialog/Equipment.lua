@@ -32,7 +32,7 @@ local Equipment = {
             if item then
                 self.unequippedHelmet = item
             end
-           return callback("done")
+            return callback("done")
         end)
     end,
 
@@ -117,7 +117,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedHelmet)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on helmet: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedHelmet)
+
+        if self.player.inventory:HasItem(self.unequippedHelmet) then
+            self.player.actor:EquipInventoryItem(self.unequippedHelmet)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedHelmet = nil
     end,
 
