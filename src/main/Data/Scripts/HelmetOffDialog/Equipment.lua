@@ -73,12 +73,12 @@ local Equipment = {
         Log.info("Equipment.takeOffSecondRangedWeapon:called")
         self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
             if takenOffItem then
-                local item = ItemManager.GetItem(takenOffItem)
-                local itemName = ItemManager.GetItemName(item.class)
+                local item = self.itemManager.GetItem(takenOffItem)
+                local itemName = self.itemManager.GetItemName(item.class)
                 Log.info("Taking off ranged second weapon", itemName)
                 self.secondRangedWeapon = takenOffItem
             end
-            callback()
+            callback("done")
         end)
     end,
 

@@ -98,6 +98,31 @@ describe("takeOffFirstRangedWeapon", function()
     end)
 end)
 
+describe("takeOffSecondRangedWeapon", function()
+    it("stores unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "second_ranged_item" })
+        factory.equipment:takeOffSecondRangedWeapon(function()
+        end)
+        assert.are_equal("mock_second_ranged", factory.equipment.secondRangedWeapon)
+    end)
+
+    it("does not store having no unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "no_item" })
+        factory.equipment:takeOffSecondRangedWeapon(function()
+        end)
+        assert.is_nil(factory.equipment.secondRangedWeapon)
+    end)
+
+    it("calls the callback", function()
+        local factory = makeFactory({ takeoff_result = "second_ranged_item" })
+        local actual
+        factory.equipment:takeOffSecondRangedWeapon(function(callback)
+            actual = callback
+        end)
+        assert.are_equal("done", actual)
+    end)
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
@@ -130,6 +155,10 @@ function makeFactory(args)
 
         if args.takeoff_result == "first_ranged_item" then
             return callback("mock_first_ranged")
+        end
+
+        if args.takeoff_result == "second_ranged_item" then
+            return callback("mock_second_ranged")
         end
 
     end)
