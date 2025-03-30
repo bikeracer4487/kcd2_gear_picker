@@ -88,8 +88,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedCoif)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedCoif)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on coif: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedCoif)
         self.unequippedCoif = nil
@@ -101,8 +101,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedHeadChainmail)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedHeadChainmail)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on head chainmail: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
         self.unequippedHeadChainmail = nil
@@ -114,8 +114,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedHelmet)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedHelmet)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on helmet: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedHelmet)
         self.unequippedHelmet = nil
@@ -127,8 +127,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.firstRangedWeapon)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.firstRangedWeapon)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on first ranged weapon: ", itemName)
         self.player.actor:EquipInventoryItem(self.firstRangedWeapon)
         self.firstRangedWeapon = nil
@@ -140,8 +140,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.secondRangedWeapon)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.secondRangedWeapon)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on second ranged weapon: ", itemName)
         self.player.actor:EquipInventoryItem(self.secondRangedWeapon)
         self.secondRangedWeapon = nil
