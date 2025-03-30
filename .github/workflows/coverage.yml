@@ -46,7 +46,7 @@ jobs:
         run: |
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' readme.md
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' documentation/badges.md
-          
+
           sed -i 's|kcd2_helmet_off_dialog_badges[^/]*\.json|kcd2_helmet_off_dialog_badges_${{ github.run_id }}.json|' readme.md
           sed -i 's|kcd2_helmet_off_dialog_badges[^/]*\.json|kcd2_helmet_off_dialog_badges_${{ github.run_id }}.json|' documentation/badges.md
 
