@@ -223,6 +223,31 @@ describe("putOnFirstRangedWeapon", function()
     end)
 end)
 
+describe("putOnSecondRangedWeapon", function()
+    it("equips item", function()
+        local factory = makeFactory({ hasUnequippedSecondRangedWeapon = true })
+        factory.equipment:putOnSecondRangedWeapon()
+        assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
+                match.is_ref(factory.player.actor),
+                factory.unequippedSecondRangedWeapon
+        )
+    end)
+
+    it("resets equipped item", function()
+        local factory = makeFactory({ hasUnequippedSecondRangedWeapon = true })
+        assert.is_not_nil(factory.equipment.unequippedSecondRangedWeapon )
+        factory.equipment:putOnSecondRangedWeapon()
+        assert.is_nil(factory.equipment.unequippedSecondRangedWeapon )
+    end)
+
+    it("skips equipping having none equipped", function()
+        local factory = makeFactory()
+        factory.equipment:putOnSecondRangedWeapon()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
@@ -255,6 +280,10 @@ function makeFactory(args)
         factory.unequippedFirstRangedWeapon = factory.equipment.unequippedFirstRangedWeapon
     end
 
+    if args and args.hasUnequippedSecondRangedWeapon then
+        factory.equipment.unequippedSecondRangedWeapon = "SecondRangedWeapon-lorem-ipsum"
+        factory.unequippedSecondRangedWeapon = factory.equipment.unequippedSecondRangedWeapon
+    end
 
     return factory
 end

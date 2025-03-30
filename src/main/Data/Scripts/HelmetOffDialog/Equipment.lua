@@ -135,16 +135,16 @@ local Equipment = {
     end,
 
     putOnSecondRangedWeapon = function(self)
-        if nil == self.secondRangedWeapon then
+        if nil == self.unequippedSecondRangedWeapon then
             Log.info("Aborting due to no second ranged weapon")
             return
         end
 
-        local item = self.itemManager.GetItem(self.secondRangedWeapon)
+        local item = self.itemManager.GetItem(self.unequippedSecondRangedWeapon)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on second ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.secondRangedWeapon)
-        self.secondRangedWeapon = nil
+        self.player.actor:EquipInventoryItem(self.unequippedSecondRangedWeapon)
+        self.unequippedSecondRangedWeapon = nil
     end,
 
 }
