@@ -12,7 +12,9 @@ describe("KCD2", function()
     it("registers the trade menu events", function()
         local factory = makeFactory()
         factory.helmetOffDialog:OnLoadingCompleteKcdTwo()
-        assert.spy(factory.script.LoadScript).was.called_with("Scripts/HelmetOffDialog/RegisterTradeMenuEvents.lua")
+        assert.spy(factory.script.LoadScript).was.called_with(
+                "Scripts/HelmetOffDialog/RegisterTradeMenuEvents.lua"
+        )
     end)
 
     it("registers on loading complete system event", function()
@@ -34,6 +36,7 @@ function makeFactory()
     factory.helmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     factory.uiAction = dofile("tests/main/UIActionMock.lua")(mock, spy)
     factory.script = dofile("tests/main/ScriptMock.lua")(mock, spy)
+    _G.Script = factory.script
 
     dofile("src/main/Data/Scripts/Systems/HelmetOffDialog_Listeners.lua")
 

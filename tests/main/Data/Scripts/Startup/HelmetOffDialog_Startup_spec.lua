@@ -46,6 +46,7 @@ function makeFactory()
     factory.helmetOffDialog = dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     factory.uiAction = dofile("tests/main/UIActionMock.lua")(mock, spy)
     factory.script = dofile("tests/main/ScriptMock.lua")(mock, spy)
+    _G.Script = factory.script
 
     dofile("src/main/Data/Scripts/Startup/HelmetOffDialog_Startup.lua")
 
