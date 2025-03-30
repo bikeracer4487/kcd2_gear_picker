@@ -26,4 +26,5 @@ services:
       context: .
       dockerfile: docker/nodejs.Dockerfile
     volumes: [".:/app"]
-    user: node
+    environment:
+      - NPM_CONFIG_CACHE=/app/.npm-cache

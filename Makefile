@@ -10,15 +10,17 @@ test-watch:
 	docker compose run --rm test_watcher \
 		sh -c "find /data -type f | entr -c busted $$pattern_arg $$filter_arg --verbose /data"
 
-test-report:
-	docker compose run --rm --entrypoint "" test_runner sh -c "busted -o gtest /data > tests_report.gtest"
-test-coverage:
+test-tap-report:
+	docker compose run --rm --entrypoint "" test_runner sh -c "busted --coverage  -o TAP /data > tests_report.tap"
+test-tap-html-report: test-tap-report
+	docker compose run --rm nodejs sh -c "npx tap-html < tests_report.tap > tap_tests_report.html"
+test-coverage-report:
 	docker compose run --rm --entrypoint "" test_runner \
 		sh -c "busted --verbose --coverage /data \
 		  && luacov \
 		  && tail -n 1 luacov.report.out | awk '{print \"percentage=\" \$$NF}' | sed 's/%//' > /data/coverage.env \
 		  && luacov -r html \
-		  && mv luacov.report.out tests_coverage_report.html"
+		  && mv luacov.report.out coverage_tests_report.html"
 
 .PHONY: dev
 dev:
@@ -55,4 +57,4 @@ docs:
 	docker compose run --rm dev npm run generate_readme
 
 nodejs-sh:
-	docker compose run --rm -it -u node nodejs sh
+	docker compose run --rm nodejs sh

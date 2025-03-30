@@ -1,4 +1,4 @@
-describe("KCD2", function()
+describe("KCD2:", function()
     it("it enables the game id", function()
         local factory = makeFactory()
         factory.helmetOffDialog:OnLoadingCompleteKcdTwo()

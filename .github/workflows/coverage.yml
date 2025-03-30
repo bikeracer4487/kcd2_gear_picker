@@ -1,4 +1,4 @@
-name: Coverage Report
+name: Tests Coverage Report
 
 on:
   push:
@@ -7,25 +7,26 @@ on:
 
 jobs:
   coverage:
-    name: Test and Coverage
+    name: Tests Coverage
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
 
-      - name: Generate tests reports
-        run: |
-          make test-coverage
-          make test-report
+      - name: Generate coverage report
+        run: make test-coverage-report
 
-      - name: Upload Tests Artifacts
+      - name: Generate tap report
+        run: make test-tap-html-report
+
+      - name: Upload report artifacts
         uses: actions/upload-artifact@v4
         with:
           name: test-reports
           path: |
-            tests_coverage_report.html
-            tests_report.gtest
+            coverage_tests_report.html
+            tap_tests_report.html
 
       - name: Extract Coverage Percentage
         id: coverage

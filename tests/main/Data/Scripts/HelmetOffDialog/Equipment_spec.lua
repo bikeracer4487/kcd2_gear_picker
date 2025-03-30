@@ -1,4 +1,4 @@
-describe("takeOffHelmet", function()
+describe("Equipment.takeOffHelmet:", function()
     it("stores unequipped item", function()
         local factory = makeFactory({ takeoff_result = "helmet_item" })
         factory.equipment:takeOffHelmet(function()
@@ -23,7 +23,7 @@ describe("takeOffHelmet", function()
     end)
 end)
 
-describe("takeOffHeadChainmail", function()
+describe("Equipment.takeOffHeadChainmail:", function()
     it("stores unequipped item", function()
         local factory = makeFactory({ takeoff_result = "head_chainmail_item" })
         factory.equipment:takeOffHeadChainmail(function()
@@ -48,7 +48,7 @@ describe("takeOffHeadChainmail", function()
     end)
 end)
 
-describe("takeOffCoif", function()
+describe("Equipment.takeOffCoif:", function()
     it("stores unequipped item", function()
         local factory = makeFactory({ takeoff_result = "coif_item" })
         factory.equipment:takeOffCoif(function()
@@ -73,7 +73,7 @@ describe("takeOffCoif", function()
     end)
 end)
 
-describe("takeOffFirstRangedWeapon", function()
+describe("Equipment.takeOffFirstRangedWeapon:", function()
     it("stores unequipped item", function()
         local factory = makeFactory({ takeoff_result = "first_ranged_item" })
         factory.equipment:takeOffFirstRangedWeapon(function()
@@ -98,7 +98,7 @@ describe("takeOffFirstRangedWeapon", function()
     end)
 end)
 
-describe("takeOffSecondRangedWeapon", function()
+describe("Equipment.takeOffSecondRangedWeapon:", function()
     it("stores unequipped item", function()
         local factory = makeFactory({ takeoff_result = "second_ranged_item" })
         factory.equipment:takeOffSecondRangedWeapon(function()
@@ -123,7 +123,7 @@ describe("takeOffSecondRangedWeapon", function()
     end)
 end)
 
-describe("putOnCoif", function()
+describe("Equipment.putOnCoif:", function()
     it("equips item", function()
         local factory = makeFactory({
             hasUnequippedCoif = true, hasInventoryItem = true
@@ -159,7 +159,7 @@ describe("putOnCoif", function()
     end)
 end)
 
-describe("putOnHeadChainmail", function()
+describe("Equipment.putOnHeadChainmail:", function()
     it("equips item", function()
         local factory = makeFactory({
             hasUnequippedHeadChainmail = true,
@@ -196,7 +196,7 @@ describe("putOnHeadChainmail", function()
     end)
 end)
 
-describe("putOnHelmet", function()
+describe("Equipment.putOnHelmet:", function()
     it("equips item", function()
         local factory = makeFactory({
             hasUnequippedHelmet = true, hasInventoryItem = true
@@ -232,7 +232,7 @@ describe("putOnHelmet", function()
     end)
 end)
 
-describe("putOnFirstRangedWeapon", function()
+describe("Equipment.putOnFirstRangedWeapon:", function()
     it("equips item", function()
         local factory = makeFactory({
             hasUnequippedFirstRangedWeapon = true, hasInventoryItem = true
@@ -268,7 +268,7 @@ describe("putOnFirstRangedWeapon", function()
     end)
 end)
 
-describe("putOnSecondRangedWeapon", function()
+describe("Equipment.putOnSecondRangedWeapon:", function()
     it("equips item", function()
         local factory = makeFactory({
             hasUnequippedSecondRangedWeapon = true,

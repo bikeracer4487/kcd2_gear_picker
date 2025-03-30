@@ -1,4 +1,4 @@
-describe("Helmet", function()
+describe("ItemCategory.is: Helmet", function()
     local category = "Helmet"
     local test_cases = {
         { name = "lorem-kettle_ipsum", keyword = "kettle" },
@@ -8,21 +8,21 @@ describe("Helmet", function()
     }
 
     for _, case in ipairs(test_cases) do
-        it("truthy for: " .. case.keyword, function()
+        it("is truthy for: " .. case.keyword, function()
             local factory = makeFactory({ name = case.name })
             local actual = factory.itemCategory:is(category, factory.item)
             assert.is_true(actual)
         end)
     end
 
-    it("falsy for invalid items", function()
+    it("is falsy for invalid items", function()
         local factory = makeFactory({ name = "invalid" })
         local actual = factory.itemCategory:is(category, factory.item)
         assert.is_false(actual)
     end)
 end)
 
-describe("HeadChainmail", function()
+describe("ItemCategory.is: HeadChainmail", function()
     local category = "HeadChainmail"
     local test_cases = {
         { name = "lorem-coifmail_ipsum", keyword = "coifmail" },
@@ -31,21 +31,21 @@ describe("HeadChainmail", function()
     }
 
     for _, case in ipairs(test_cases) do
-        it("truthy for: " .. case.keyword, function()
+        it("is truthy for: " .. case.keyword, function()
             local factory = makeFactory({ name = case.name })
             local actual = factory.itemCategory:is(category, factory.item)
             assert.is_true(actual)
         end)
     end
 
-    it("falsy for invalid items", function()
+    it("is falsy for invalid items", function()
         local factory = makeFactory({ name = "invalid" })
         local actual = factory.itemCategory:is(category, factory.item)
         assert.is_false(actual)
     end)
 end)
 
-describe("Coif", function()
+describe("ItemCategory.is: Coif", function()
     local category = "Coif"
     local test_cases = {
         { name = "lorem-coif_ipsum", keyword = "coif" },
@@ -53,21 +53,21 @@ describe("Coif", function()
     }
 
     for _, case in ipairs(test_cases) do
-        it("truthy for: " .. case.keyword, function()
+        it("is truthy for: " .. case.keyword, function()
             local factory = makeFactory({ name = case.name })
             local actual = factory.itemCategory:is(category, factory.item)
             assert.is_true(actual)
         end)
     end
 
-    it("falsy for invalid items", function()
+    it("is falsy for invalid items", function()
         local factory = makeFactory({ name = "invalid" })
         local actual = factory.itemCategory:is(category, factory.item)
         assert.is_false(actual)
     end)
 end)
 
-describe("RangedWeapon", function()
+describe("ItemCategory.is: RangedWeapon", function()
     local category = "RangedWeapon"
     local test_cases = {
         { name = "lorem-bow__ipsum", keyword = "bow_" },
@@ -75,21 +75,21 @@ describe("RangedWeapon", function()
     }
 
     for _, case in ipairs(test_cases) do
-        it("truthy for: " .. case.keyword, function()
+        it("is truthy for: " .. case.keyword, function()
             local factory = makeFactory({ name = case.name })
             local actual = factory.itemCategory:is(category, factory.item)
             assert.is_true(actual)
         end)
     end
 
-    it("falsy for invalid items", function()
+    it("is falsy for invalid items", function()
         local factory = makeFactory({ name = "invalid" })
         local actual = factory.itemCategory:is(category, factory.item)
         assert.is_false(actual)
     end)
 end)
 
-it("falsy for unknown categories", function()
+it("ItemCategory.is: falsy for unknown categories", function()
     local factory = makeFactory({ GetItem = "invalid", name = "helmet" })
     local actual = factory.itemCategory:is("invalid", factory.item)
     assert.is_false(actual)
