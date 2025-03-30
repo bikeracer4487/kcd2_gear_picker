@@ -7,8 +7,9 @@ defaultExeSubPath="Bin/Win64MasterMasterSteamPGO/${exeName}"
 
 # List of all valid mod targets (mirrors validTargets in build.js)
 #validTargets=("main" "random")
-validTargets=("main" "ranged")
-#validTargets=("main" "random" "ranged" "helmet_only")
+#validTargets=("main" "ranged")
+#validTargets=("main")
+validTargets=("main" "random" "ranged" "helmet_only")
 
 echo "Script called with arguments: $@"
 
