@@ -173,6 +173,31 @@ describe("putOnHeadChainmail", function()
     end)
 end)
 
+describe("putOnHelmet", function()
+    it("equips item", function()
+        local factory = makeFactory({ hasUnequippedHelmet = true })
+        factory.equipment:putOnHelmet()
+        assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
+                match.is_ref(factory.player.actor),
+                factory.unequippedHelmet
+        )
+    end)
+
+    it("resets equipped item", function()
+        local factory = makeFactory({ hasUnequippedHelmet = true })
+        assert.is_not_nil(factory.equipment.unequippedHelmet )
+        factory.equipment:putOnHelmet()
+        assert.is_nil(factory.equipment.unequippedHelmet )
+    end)
+
+    it("skips equipping having none equipped", function()
+        local factory = makeFactory()
+        factory.equipment:putOnHelmet()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
@@ -193,6 +218,11 @@ function makeFactory(args)
     if args and args.hasUnequippedHeadChainmail then
         factory.equipment.unequippedHeadChainmail = "head-chain-mail-lorem-ipsum"
         factory.unequippedHeadChainmail = factory.equipment.unequippedHeadChainmail
+    end
+
+    if args and args.hasUnequippedHelmet then
+        factory.equipment.unequippedHelmet = "helmet-lorem-ipsum"
+        factory.unequippedHelmet = factory.equipment.unequippedHelmet
     end
 
 
