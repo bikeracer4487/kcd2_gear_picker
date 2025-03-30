@@ -110,7 +110,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedHeadChainmail)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on head chainmail: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
+
+        if self.player.inventory:HasItem(self.unequippedHeadChainmail) then
+            self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedHeadChainmail = nil
     end,
 

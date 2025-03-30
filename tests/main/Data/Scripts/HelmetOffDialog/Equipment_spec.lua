@@ -126,7 +126,7 @@ end)
 describe("putOnCoif", function()
     it("equips item", function()
         local factory = makeFactory({
-            hasUnequippedCoif = true, inventoryHasItem = true
+            hasUnequippedCoif = true, hasInventoryItem = true
         })
         factory.equipment:putOnCoif()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
@@ -151,7 +151,7 @@ describe("putOnCoif", function()
 
     it("aborts having no such item in inventory", function()
         local factory = makeFactory({
-            hasUnequippedCoif = true, inventoryHasItem = false
+            hasUnequippedCoif = true, hasInventoryItem = false
         })
         factory.equipment:putOnCoif()
         assert.spy(factory.player.actor.EquipInventoryItem)
@@ -161,7 +161,10 @@ end)
 
 describe("putOnHeadChainmail", function()
     it("equips item", function()
-        local factory = makeFactory({ hasUnequippedHeadChainmail = true })
+        local factory = makeFactory({
+            hasUnequippedHeadChainmail = true,
+            hasInventoryItem = true
+        })
         factory.equipment:putOnHeadChainmail()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
                 match.is_ref(factory.player.actor),
@@ -182,12 +185,21 @@ describe("putOnHeadChainmail", function()
         assert.spy(factory.player.actor.EquipInventoryItem)
               .was_not_called()
     end)
+
+    it("aborts having no such item in inventory", function()
+        local factory = makeFactory({
+            hasUnequippedHeadChainmail = true, hasInventoryItem = false
+        })
+        factory.equipment:putOnHeadChainmail()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
 end)
 
 describe("putOnHelmet", function()
     it("equips item", function()
         local factory = makeFactory({
-            hasUnequippedHelmet = true, inventoryHasItem = true
+            hasUnequippedHelmet = true, hasInventoryItem = true
         })
         factory.equipment:putOnHelmet()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
@@ -212,7 +224,7 @@ describe("putOnHelmet", function()
 
     it("aborts having no such item in inventory", function()
         local factory = makeFactory({
-            hasUnequippedHelmet = true, inventoryHasItem = false
+            hasUnequippedHelmet = true, hasInventoryItem = false
         })
         factory.equipment:putOnHelmet()
         assert.spy(factory.player.actor.EquipInventoryItem)
@@ -275,8 +287,8 @@ function makeFactory(args)
     local factory = {}
 
     local playerArgs = {}
-    if args and args.inventoryHasItem ~= nil then
-        playerArgs.inventoryArgs = { hasItem = args.inventoryHasItem }
+    if args and args.hasInventoryItem ~= nil then
+        playerArgs.inventoryArgs = { hasItem = args.hasInventoryItem }
     end
 
     factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, playerArgs)
