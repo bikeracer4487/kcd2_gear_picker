@@ -1,6 +1,5 @@
 local function mockItem(mock, spy, args)
-    local Item = {
-    }
+    local Item = { class = "lorem-ipsum" }
 
     local item = mock(Item, false)
 
