@@ -51,7 +51,7 @@ local Equipment = {
             if item then
                 self.unequippedCoif = item
             end
-            callback()
+            callback("done")
         end)
     end,
 

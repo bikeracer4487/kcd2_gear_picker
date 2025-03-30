@@ -48,6 +48,31 @@ describe("takeOffHeadChainmail", function()
     end)
 end)
 
+describe("takeOffCoif", function()
+    it("stores unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "coif_item" })
+        factory.equipment:takeOffCoif(function()
+        end)
+        assert.are_equal("mock_coif", factory.equipment.unequippedCoif)
+    end)
+
+    it("does not store having no unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "no_item" })
+        factory.equipment:takeOffCoif(function()
+        end)
+        assert.is_nil(factory.equipment.unequippedCoif)
+    end)
+
+    it("calls the callback", function()
+        local factory = makeFactory({ takeoff_result = "coif_item" })
+        local actual
+        factory.equipment:takeOffCoif(function(callback)
+            actual = callback
+        end)
+        assert.are_equal("done", actual)
+    end)
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
@@ -70,6 +95,10 @@ function makeFactory(args)
 
         if args.takeoff_result == "head_chainmail_item" then
             return callback("mock_head_chainmail")
+        end
+
+        if args.takeoff_result == "coif_item" then
+            return callback("mock_coif")
         end
     end)
 
