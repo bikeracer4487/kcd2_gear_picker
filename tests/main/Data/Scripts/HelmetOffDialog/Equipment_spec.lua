@@ -270,7 +270,10 @@ end)
 
 describe("putOnSecondRangedWeapon", function()
     it("equips item", function()
-        local factory = makeFactory({ hasUnequippedSecondRangedWeapon = true })
+        local factory = makeFactory({
+            hasUnequippedSecondRangedWeapon = true,
+            hasInventoryItem = true
+        })
         factory.equipment:putOnSecondRangedWeapon()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
                 match.is_ref(factory.player.actor),
@@ -287,6 +290,15 @@ describe("putOnSecondRangedWeapon", function()
 
     it("skips equipping having none equipped", function()
         local factory = makeFactory()
+        factory.equipment:putOnSecondRangedWeapon()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+
+    it("aborts having no such item in inventory", function()
+        local factory = makeFactory({
+            hasUnequippedSecondRangedWeapon = true, hasInventoryItem = false
+        })
         factory.equipment:putOnSecondRangedWeapon()
         assert.spy(factory.player.actor.EquipInventoryItem)
               .was_not_called()
