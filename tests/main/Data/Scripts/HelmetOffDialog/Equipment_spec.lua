@@ -73,10 +73,37 @@ describe("takeOffCoif", function()
     end)
 end)
 
+describe("takeOffFirstRangedWeapon", function()
+    it("stores unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "first_ranged_item" })
+        factory.equipment:takeOffFirstRangedWeapon(function()
+        end)
+        assert.are_equal("mock_first_ranged", factory.equipment.firstRangedWeapon)
+    end)
+
+    it("does not store having no unequipped item", function()
+        local factory = makeFactory({ takeoff_result = "no_item" })
+        factory.equipment:takeOffFirstRangedWeapon(function()
+        end)
+        assert.is_nil(factory.equipment.firstRangedWeapon)
+    end)
+
+    it("calls the callback", function()
+        local factory = makeFactory({ takeoff_result = "first_ranged_item" })
+        local actual
+        factory.equipment:takeOffFirstRangedWeapon(function(callback)
+            actual = callback
+        end)
+        assert.are_equal("done", actual)
+    end)
+end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
 
+    local itemManagerArgs = { GetItem = "valid" }
+    factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, itemManagerArgs)
     factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, args)
     local UnequipGear = dofile("src/main/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
     factory.unequipGear = mock(UnequipGear, true)
@@ -100,10 +127,17 @@ function makeFactory(args)
         if args.takeoff_result == "coif_item" then
             return callback("mock_coif")
         end
+
+        if args.takeoff_result == "first_ranged_item" then
+            return callback("mock_first_ranged")
+        end
+
     end)
 
     local Equipment = dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
-    factory.equipment = Equipment:new(factory.player, factory.unequipGear)
+    factory.equipment = Equipment:new(
+            factory.player, factory.unequipGear, factory.itemManager
+    )
 
     return factory
 end

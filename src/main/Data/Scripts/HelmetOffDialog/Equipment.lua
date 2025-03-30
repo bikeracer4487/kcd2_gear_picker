@@ -9,10 +9,11 @@ local Log = HelmetOffDialog.Log
 --- @field putOnSecondRangedWeapon fun(self: Equipment)
 --- @field unequipGear UnequipGear
 local Equipment = {
-    new = function(self, player, unequipGear)
+    new = function(self, player, unequipGear, itemManager)
         local instance = {
             player = player,
             unequipGear = unequipGear,
+            itemManager = itemManager,
             unequippedHelmet = nil,
             unequippedHeadChainmail = nil,
             unequippedCoif = nil,
@@ -59,12 +60,12 @@ local Equipment = {
         Log.info("Equipment.takeOffFirstRangedWeapon:called")
         self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
             if takenOffItem then
-                local item = ItemManager.GetItem(takenOffItem)
-                local itemName = ItemManager.GetItemName(item.class)
+                local item = self.itemManager.GetItem(takenOffItem)
+                local itemName = self.itemManager.GetItemName(item.class)
                 Log.info("Taking off ranged first weapon", itemName)
                 self.firstRangedWeapon = takenOffItem
             end
-            callback()
+            callback("done")
         end)
     end,
 
