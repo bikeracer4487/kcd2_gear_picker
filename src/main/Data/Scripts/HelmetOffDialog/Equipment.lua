@@ -148,7 +148,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedFirstRangedWeapon)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on first ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedFirstRangedWeapon)
+
+        if self.player.inventory:HasItem(self.unequippedFirstRangedWeapon) then
+            self.player.actor:EquipInventoryItem(self.unequippedFirstRangedWeapon)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedFirstRangedWeapon = nil
     end,
 
