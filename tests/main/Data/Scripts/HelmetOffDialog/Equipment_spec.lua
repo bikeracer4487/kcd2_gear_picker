@@ -141,8 +141,33 @@ describe("putOnCoif", function()
     end)
 
     it("skips equipping having none equipped", function()
-        local factory = makeFactory({ takeoff_result = "no_item" })
+        local factory = makeFactory()
         factory.equipment:putOnCoif()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+end)
+
+describe("putOnHeadChainmail", function()
+    it("equips item", function()
+        local factory = makeFactory({ hasUnequippedHeadChainmail = true })
+        factory.equipment:putOnHeadChainmail()
+        assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
+                match.is_ref(factory.player.actor),
+                factory.unequippedHeadChainmail
+        )
+    end)
+
+    it("resets equipped item", function()
+        local factory = makeFactory({ hasUnequippedHeadChainmail = true })
+        assert.is_not_nil(factory.equipment.unequippedHeadChainmail )
+        factory.equipment:putOnHeadChainmail()
+        assert.is_nil(factory.equipment.unequippedHeadChainmail )
+    end)
+
+    it("skips equipping having none equipped", function()
+        local factory = makeFactory()
+        factory.equipment:putOnHeadChainmail()
         assert.spy(factory.player.actor.EquipInventoryItem)
               .was_not_called()
     end)
@@ -161,9 +186,15 @@ function makeFactory(args)
             factory.player, factory.unequipGear, factory.itemManager
     )
     if args and args.hasUnequippedCoif then
-        factory.equipment.unequippedCoif = "lorem-ipsum"
+        factory.equipment.unequippedCoif = "coif-lorem-ipsum"
         factory.unequippedCoif = factory.equipment.unequippedCoif
     end
+
+    if args and args.hasUnequippedHeadChainmail then
+        factory.equipment.unequippedHeadChainmail = "head-chain-mail-lorem-ipsum"
+        factory.unequippedHeadChainmail = factory.equipment.unequippedHeadChainmail
+    end
+
 
     return factory
 end
