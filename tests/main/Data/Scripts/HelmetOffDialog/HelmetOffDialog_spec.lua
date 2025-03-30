@@ -65,7 +65,8 @@ describe("Equipment", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.Equipment),
                 factory.player,
-                factory.HelmetOffDialog:unequipGear()
+                factory.HelmetOffDialog:unequipGear(),
+                factory.itemManager
         )
     end)
 

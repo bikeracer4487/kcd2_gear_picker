@@ -41,7 +41,9 @@ local HelmetOffDialog = {
             return this.__factories.equipment
         end
         local Equipment = this.ClassRegistry.Equipment
-        this.__factories.equipment = Equipment:new(_G.player, this:unequipGear())
+        this.__factories.equipment = Equipment:new(
+                _G.player, this:unequipGear(), _G.ItemManager
+        )
         return this.__factories.equipment
     end,
     unequipGear = function(self)
