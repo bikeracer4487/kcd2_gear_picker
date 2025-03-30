@@ -1,4 +1,0 @@
-return {
-    output = 'plain',
-    default = true
-}

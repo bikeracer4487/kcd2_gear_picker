@@ -14,14 +14,18 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Tests and Coverage
-        run: make test-coverage
+      - name: Generate tests reports
+        run: |
+          make test-coverage
+          make test-report
 
-      - name: Upload HTML Report Artifact
+      - name: Upload Tests Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: coverage-report
-          path: luacov.report.html
+          name: test-reports
+          path: |
+            tests_coverage_report.html
+            tests_report.gtest
 
       - name: Extract Coverage Percentage
         id: coverage

@@ -7,16 +7,18 @@ test:
 test-watch:
 	pattern_arg=$(if $(pattern),--pattern=$(pattern)) && \
 	filter_arg=$(if $(filter),--filter=$(filter)) && \
-	docker compose run --rm --entrypoint "" test_watcher \
+	docker compose run --rm test_watcher \
 		sh -c "find /data -type f | entr -c busted $$pattern_arg $$filter_arg --verbose /data"
 
+test-report:
+	docker compose run --rm --entrypoint "" test_runner sh -c "busted -o gtest /data > tests_report.gtest"
 test-coverage:
 	docker compose run --rm --entrypoint "" test_runner \
-        sh -c "busted --verbose --coverage /data \
-          && luacov \
-          && tail -n 1 luacov.report.out | awk '{print \"percentage=\" \$$NF}' | sed 's/%//' > /data/coverage.env \
-          && luacov -r html \
-          && mv luacov.report.out luacov.report.html"
+		sh -c "busted --verbose --coverage /data \
+		  && luacov \
+		  && tail -n 1 luacov.report.out | awk '{print \"percentage=\" \$$NF}' | sed 's/%//' > /data/coverage.env \
+		  && luacov -r html \
+		  && mv luacov.report.out tests_coverage_report.html"
 
 .PHONY: dev
 dev:
@@ -51,3 +53,6 @@ prettier-fix:
 
 docs:
 	docker compose run --rm dev npm run generate_readme
+
+nodejs-sh:
+	docker compose run --rm -it -u node nodejs sh
