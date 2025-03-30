@@ -8,6 +8,14 @@ describe("Config", function()
                 factory.HelmetOffDialog.MOD_NAME)
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:config()
+        factory.HelmetOffDialog:config()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Config.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -33,6 +41,14 @@ describe("Error", function()
               .was.called_with(match.is_ref(factory.HelmetOffDialog.ClassRegistry.Error))
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:error()
+        factory.HelmetOffDialog:error()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Error.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -49,8 +65,17 @@ describe("Equipment", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.Equipment),
                 factory.player,
-                factory.HelmetOffDialog:unequipGear()
+                factory.HelmetOffDialog:unequipGear(),
+                factory.itemManager
         )
+    end)
+
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:equipment()
+        factory.HelmetOffDialog:equipment()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Equipment.new)
+              .was.called(1)
     end)
 
     it("loads the script", function()
@@ -75,6 +100,14 @@ describe("UnequipGear", function()
         )
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:unequipGear()
+        factory.HelmetOffDialog:unequipGear()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.UnequipGear.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -97,6 +130,14 @@ describe("TalkEndedEvent", function()
         )
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:talkEndedEvent()
+        factory.HelmetOffDialog:talkEndedEvent()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.TalkEndedEvent.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -115,6 +156,14 @@ describe("MetaRole", function()
                 factory.system,
                 factory.player
         )
+    end)
+
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:metaRole()
+        factory.HelmetOffDialog:metaRole()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.MetaRole.new)
+              .was.called(1)
     end)
 
     it("loads the script", function()
@@ -139,6 +188,14 @@ describe("OnTalkEvent", function()
         )
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:onTalkEvent()
+        factory.HelmetOffDialog:onTalkEvent()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.OnTalkEvent.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -156,6 +213,14 @@ describe("TimedTrigger", function()
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.TimedTrigger),
                 factory.script
         )
+    end)
+
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:timedTrigger()
+        factory.HelmetOffDialog:timedTrigger()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.TimedTrigger.new)
+              .was.called(1)
     end)
 
     it("loads the script", function()
@@ -177,6 +242,14 @@ describe("ItemCategory", function()
         )
     end)
 
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:itemCategory()
+        factory.HelmetOffDialog:itemCategory()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.ItemCategory.new)
+              .was.called(1)
+    end)
+
     it("loads the script", function()
         local factory = makeFactory()
         factory.HelmetOffDialog:init()
@@ -193,8 +266,17 @@ describe("EquippedItem", function()
               .was.called_with(
                 match.is_ref(factory.HelmetOffDialog.ClassRegistry.EquippedItem),
                 factory.player,
-                factory.script
+                factory.script,
+                factory.itemManager
         )
+    end)
+
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:equippedItem()
+        factory.HelmetOffDialog:equippedItem()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.EquippedItem.new)
+              .was.called(1)
     end)
 
     it("loads the script", function()
@@ -215,6 +297,14 @@ describe("Commands", function()
                 factory.system,
                 factory.HelmetOffDialog:config()
         )
+    end)
+
+    it("caches the instance", function()
+        local factory = makeFactory()
+        factory.HelmetOffDialog:commands()
+        factory.HelmetOffDialog:commands()
+        assert.stub(factory.HelmetOffDialog.ClassRegistry.Commands.new)
+              .was.called(1)
     end)
 
     it("loads the script", function()
@@ -279,6 +369,9 @@ function makeFactory()
 
     local ItemCategory = dofile("src/main/Data/Scripts/HelmetOffDialog/ItemCategory.lua")
     ItemCategory = mock(ItemCategory, true)
+    ItemCategory.new = function(self)
+        return ItemCategory
+    end
     ItemCategory.new = spy.new(ItemCategory.new)
     HelmetOffDialog.ClassRegistry.ItemCategory = ItemCategory
 

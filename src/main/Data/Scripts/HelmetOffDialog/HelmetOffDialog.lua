@@ -41,7 +41,9 @@ local HelmetOffDialog = {
             return this.__factories.equipment
         end
         local Equipment = this.ClassRegistry.Equipment
-        this.__factories.equipment = Equipment:new(_G.player, this:unequipGear())
+        this.__factories.equipment = Equipment:new(
+                _G.player, this:unequipGear(), _G.ItemManager
+        )
         return this.__factories.equipment
     end,
     unequipGear = function(self)
@@ -55,7 +57,10 @@ local HelmetOffDialog = {
         end
 
         this.__factories.unequipGear = UnequipGear:new(
-                _G.player, this:equippedItem(), this:itemCategory(), _G.ItemManager
+                _G.player,
+                this:equippedItem(),
+                this:itemCategory(),
+                _G.ItemManager
         )
 
         return this.__factories.unequipGear
@@ -129,20 +134,22 @@ local HelmetOffDialog = {
 
         --- @type EquippedItem
         local EquippedItem = this.ClassRegistry.EquippedItem
-        this.__factories.equippedItem = EquippedItem:new(_G.player, _G.Script)
+        this.__factories.equippedItem = EquippedItem:new(
+                _G.player, _G.Script, _G.ItemManager
+        )
 
         return this.__factories.equippedItem
     end,
     itemCategory = function(self)
-        --- @type HelmetOffDialog
-        local this = self
-        if this.__factories.itemCategory then
-            return this.__factories.itemCategory
+        if self.__factories.itemCategory then
+            return self.__factories.itemCategory
         end
+
         --- @type ItemCategory
-        local ItemCategory = this.ClassRegistry.ItemCategory
-        this.__factories.itemCategory = ItemCategory:new(_G.ItemManager)
-        return this.__factories.itemCategory
+        local ItemCategory = self.ClassRegistry.ItemCategory
+        self.__factories.itemCategory = ItemCategory:new(_G.ItemManager)
+
+        return self.__factories.itemCategory
     end,
     --- @type Commands
     commands = function(self)

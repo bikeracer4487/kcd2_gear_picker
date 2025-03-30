@@ -9,10 +9,11 @@ local Log = HelmetOffDialog.Log
 --- @field putOnSecondRangedWeapon fun(self: Equipment)
 --- @field unequipGear UnequipGear
 local Equipment = {
-    new = function(self, player, unequipGear)
+    new = function(self, player, unequipGear, itemManager)
         local instance = {
             player = player,
             unequipGear = unequipGear,
+            itemManager = itemManager,
             unequippedHelmet = nil,
             unequippedHeadChainmail = nil,
             unequippedCoif = nil,
@@ -26,14 +27,12 @@ local Equipment = {
 
     takeOffHelmet = function(self, callback)
         Log.info("Equipment.takeOffHelmet:called")
-        --- @type Equipment
-        local this = self
 
-        this.unequipGear:takeOff("Helmet", function(item)
+        self.unequipGear:takeOff("Helmet", function(item)
             if item then
                 self.unequippedHelmet = item
             end
-            callback()
+           return callback("done")
         end)
     end,
 
@@ -43,7 +42,7 @@ local Equipment = {
             if item then
                 self.unequippedHeadChainmail = item
             end
-            callback()
+            return callback("done")
         end)
     end,
 
@@ -53,7 +52,7 @@ local Equipment = {
             if item then
                 self.unequippedCoif = item
             end
-            callback()
+            callback("done")
         end)
     end,
 
@@ -61,12 +60,12 @@ local Equipment = {
         Log.info("Equipment.takeOffFirstRangedWeapon:called")
         self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
             if takenOffItem then
-                local item = ItemManager.GetItem(takenOffItem)
-                local itemName = ItemManager.GetItemName(item.class)
+                local item = self.itemManager.GetItem(takenOffItem)
+                local itemName = self.itemManager.GetItemName(item.class)
                 Log.info("Taking off ranged first weapon", itemName)
                 self.firstRangedWeapon = takenOffItem
             end
-            callback()
+            callback("done")
         end)
     end,
 
@@ -74,12 +73,12 @@ local Equipment = {
         Log.info("Equipment.takeOffSecondRangedWeapon:called")
         self.unequipGear:takeOff("RangedWeapon", function(takenOffItem)
             if takenOffItem then
-                local item = ItemManager.GetItem(takenOffItem)
-                local itemName = ItemManager.GetItemName(item.class)
+                local item = self.itemManager.GetItem(takenOffItem)
+                local itemName = self.itemManager.GetItemName(item.class)
                 Log.info("Taking off ranged second weapon", itemName)
                 self.secondRangedWeapon = takenOffItem
             end
-            callback()
+            callback("done")
         end)
     end,
 
@@ -89,8 +88,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedCoif)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedCoif)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on coif: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedCoif)
         self.unequippedCoif = nil
@@ -102,8 +101,8 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedHeadChainmail)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedHeadChainmail)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on head chainmail: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
         self.unequippedHeadChainmail = nil
@@ -115,37 +114,37 @@ local Equipment = {
             return
         end
 
-        local item = ItemManager.GetItem(self.unequippedHelmet)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedHelmet)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on helmet: ", itemName)
         self.player.actor:EquipInventoryItem(self.unequippedHelmet)
         self.unequippedHelmet = nil
     end,
 
     putOnFirstRangedWeapon = function(self)
-        if nil == self.firstRangedWeapon then
+        if nil == self.unequippedFirstRangedWeapon then
             Log.info("Aborting due to no first ranged weapon")
             return
         end
 
-        local item = ItemManager.GetItem(self.firstRangedWeapon)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedFirstRangedWeapon)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on first ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.firstRangedWeapon)
-        self.firstRangedWeapon = nil
+        self.player.actor:EquipInventoryItem(self.unequippedFirstRangedWeapon)
+        self.unequippedFirstRangedWeapon = nil
     end,
 
     putOnSecondRangedWeapon = function(self)
-        if nil == self.secondRangedWeapon then
+        if nil == self.unequippedSecondRangedWeapon then
             Log.info("Aborting due to no second ranged weapon")
             return
         end
 
-        local item = ItemManager.GetItem(self.secondRangedWeapon)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = self.itemManager.GetItem(self.unequippedSecondRangedWeapon)
+        local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on second ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.secondRangedWeapon)
-        self.secondRangedWeapon = nil
+        self.player.actor:EquipInventoryItem(self.unequippedSecondRangedWeapon)
+        self.unequippedSecondRangedWeapon = nil
     end,
 
 }

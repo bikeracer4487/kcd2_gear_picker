@@ -2,8 +2,10 @@ local Log = HelmetOffDialog.Log
 
 --- @class EquippedItem
 local EquippedItem = {
-    new = function(self, player, script)
-        local instance = { player = player, script = script }
+    new = function(self, player, script, itemManager)
+        local instance = {
+            player = player, script = script, itemManager = itemManager
+        }
         setmetatable(instance, { __index = self })
         return instance
     end,
@@ -21,8 +23,8 @@ local EquippedItem = {
 
         Log.info("Derived stats before une-quip: ", oldStats)
 
-        local item = ItemManager.GetItem(inventoryItem)
-        local itemName = ItemManager.GetItemName(item.class)
+        local item = this.itemManager.GetItem(inventoryItem)
+        local itemName = this.itemManager.GetItemName(item.class)
 
         Log.info("Taking off item:", itemName)
         this.player.actor:UnequipInventoryItem(item.id)
@@ -41,13 +43,14 @@ local EquippedItem = {
                 Log.info("Found equipped, now unequipped item: " .. itemName)
             end
 
-            callback(isEquipped)
+            return callback(isEquipped)
         end)
     end,
     -- https://warhorse.youtrack.cloud/articles/KM-A-21/Stats-and-skills
     getDerivedStats = function(self)
         --- @type EquippedItem
         local this = self
+
         local stats = {
             --cha = this.player.soul:GetDerivedStat("cha"),
             --conspicuousness = this.player.soul:GetDerivedStat("con"),
