@@ -33,7 +33,7 @@ local Equipment = {
             if item then
                 self.unequippedHelmet = item
             end
-            callback()
+           return callback("done")
         end)
     end,
 
