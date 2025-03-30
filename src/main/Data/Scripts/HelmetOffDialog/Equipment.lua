@@ -26,10 +26,8 @@ local Equipment = {
 
     takeOffHelmet = function(self, callback)
         Log.info("Equipment.takeOffHelmet:called")
-        --- @type Equipment
-        local this = self
 
-        this.unequipGear:takeOff("Helmet", function(item)
+        self.unequipGear:takeOff("Helmet", function(item)
             if item then
                 self.unequippedHelmet = item
             end
@@ -43,7 +41,7 @@ local Equipment = {
             if item then
                 self.unequippedHeadChainmail = item
             end
-            callback()
+            return callback("done")
         end)
     end,
 
