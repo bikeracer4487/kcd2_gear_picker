@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.4.1 30-march-25
+- fix: Prevent crash when selling equipped items by checking if Henry's removed gear is still in inventory before re-equipping.
+
 ### 1.4.0 29-march-25
 - feat: Add in-game command to toggle the mod on or off as needed.
 

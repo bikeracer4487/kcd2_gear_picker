@@ -32,7 +32,7 @@ local Equipment = {
             if item then
                 self.unequippedHelmet = item
             end
-           return callback("done")
+            return callback("done")
         end)
     end,
 
@@ -91,7 +91,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedCoif)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on coif: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedCoif)
+
+        if self.player.inventory:HasItem(self.unequippedCoif) then
+            self.player.actor:EquipInventoryItem(self.unequippedCoif)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedCoif = nil
     end,
 
@@ -104,7 +110,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedHeadChainmail)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on head chainmail: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
+
+        if self.player.inventory:HasItem(self.unequippedHeadChainmail) then
+            self.player.actor:EquipInventoryItem(self.unequippedHeadChainmail)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedHeadChainmail = nil
     end,
 
@@ -117,7 +129,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedHelmet)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on helmet: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedHelmet)
+
+        if self.player.inventory:HasItem(self.unequippedHelmet) then
+            self.player.actor:EquipInventoryItem(self.unequippedHelmet)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedHelmet = nil
     end,
 
@@ -130,7 +148,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedFirstRangedWeapon)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on first ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedFirstRangedWeapon)
+
+        if self.player.inventory:HasItem(self.unequippedFirstRangedWeapon) then
+            self.player.actor:EquipInventoryItem(self.unequippedFirstRangedWeapon)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedFirstRangedWeapon = nil
     end,
 
@@ -143,7 +167,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedSecondRangedWeapon)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on second ranged weapon: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedSecondRangedWeapon)
+
+        if self.player.inventory:HasItem(self.unequippedSecondRangedWeapon) then
+            self.player.actor:EquipInventoryItem(self.unequippedSecondRangedWeapon)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedSecondRangedWeapon = nil
     end,
 

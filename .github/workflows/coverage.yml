@@ -34,7 +34,7 @@ jobs:
         with:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: c8127f736b3cb0097c7094efe1882299
-          filename: kcd2_helmet_off_dialog_badges.json
+          filename: kcd2_helmet_off_dialog_badges_${{ github.run_id }}.json
           label: Coverage
           message: ${{ steps.coverage.outputs.percentage }}%
           color: green
@@ -46,6 +46,9 @@ jobs:
         run: |
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' readme.md
           sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' documentation/badges.md
+
+          sed -i 's|kcd2_helmet_off_dialog_badges[^/]*\.json|kcd2_helmet_off_dialog_badges_${{ github.run_id }}.json|' readme.md
+          sed -i 's|kcd2_helmet_off_dialog_badges[^/]*\.json|kcd2_helmet_off_dialog_badges_${{ github.run_id }}.json|' documentation/badges.md
 
           git config --global user.name "GitHub Action"
           git config --global user.email "action@github.com"
