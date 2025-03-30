@@ -35,9 +35,10 @@ jobs:
           auth: ${{ secrets.GIST_SECRET }}
           gistID: a6eccd074fae4e9bc56ab2e8b0eb579f
           filename: kcd2_helmet_off_dialog_badges_${{ github.run_id }}.svg
-          label: Coverage
+          label: Tests Coverage
           message: ${{ steps.coverage.outputs.percentage }}%
           color: green
+          style: flat-square
           valColorRange: ${{ steps.coverage.outputs.percentage }}
           maxColorRange: 100
           minColorRange: 0
