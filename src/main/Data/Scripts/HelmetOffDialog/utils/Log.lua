@@ -37,7 +37,7 @@ Log._log = function(level, colorCode, ...)
 
     local timestamp = Log.getLocalTime()
     local modName = HelmetOffDialog.MOD_NAME
-    local message = buildMessage({...})
+    local message = buildMessage({ ... })
     local prefix = string.format("%s[%s %s.%s] ", colorCode, timestamp, modName, level)
     local fullMessage = prefix .. message
 
@@ -65,7 +65,10 @@ Log._log = function(level, colorCode, ...)
 end
 
 Log.info = function(...)
-    if HelmetOffDialog and HelmetOffDialog:config() and not HelmetOffDialog:config():isProduction() then
+    if not HelmetOffDialog or not HelmetOffDialog:config() then
+        return
+    end
+    if not HelmetOffDialog:config():isProduction() then
         Log._log("INFO", "$5", ...)
     end
 end
@@ -75,4 +78,5 @@ Log.error = function(...)
 end
 
 HelmetOffDialog.Log = Log
+
 return Log
