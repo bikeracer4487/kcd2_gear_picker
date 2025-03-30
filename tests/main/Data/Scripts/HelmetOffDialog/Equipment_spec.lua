@@ -123,36 +123,47 @@ describe("takeOffSecondRangedWeapon", function()
     end)
 end)
 
---describe("putOnCoif", function()
---    it("equips item", function()
---        local factory = makeFactory({ takeoff_result = "second_ranged_item" })
---        factory.equipment:putOnCoif()
---        assert.spy(factory.player.actor.EquipInventoryItem)
---              .was.called_with(factory.unequippedCoif)
---    end)
---
---    it("skips equipping having none equpiped", function()
---        local factory = makeFactory({ takeoff_result = "no_item" })
---        factory.equipment:takeOffSecondRangedWeapon(function()
---        end)
---        assert.spy(factory.player.actor.EquipInventoryItem)
---              .was_not_called()
---    end)
---end)
+describe("putOnCoif", function()
+    it("equips item", function()
+        local factory = makeFactory({ hasUnequippedCoif = true })
+        factory.equipment:putOnCoif()
+        assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
+                match.is_ref(factory.player.actor),
+                factory.unequippedCoif
+        )
+    end)
+
+    it("resets equipped item", function()
+        local factory = makeFactory({ hasUnequippedCoif = true })
+        assert.is_not_nil(factory.equipment.unequippedCoif )
+        factory.equipment:putOnCoif()
+        assert.is_nil(factory.equipment.unequippedCoif )
+    end)
+
+    it("skips equipping having none equipped", function()
+        local factory = makeFactory({ takeoff_result = "no_item" })
+        factory.equipment:putOnCoif()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+end)
 
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
 
-    local itemManagerArgs = { GetItem = "valid" }
-    factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, itemManagerArgs)
     factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, args)
     factory.unequipGear = dofile("tests/main/UnequipGearMock.lua")(mock, spy, args)
+    factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, { GetItem = "valid" })
 
     local Equipment = dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
     factory.equipment = Equipment:new(
             factory.player, factory.unequipGear, factory.itemManager
     )
+    if args and args.hasUnequippedCoif then
+        factory.equipment.unequippedCoif = "lorem-ipsum"
+        factory.unequippedCoif = factory.equipment.unequippedCoif
+    end
 
     return factory
 end

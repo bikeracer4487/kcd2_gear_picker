@@ -1,10 +1,14 @@
 local function mockActor(mock, spy, args)
-    local Actor = {
-        UnequipInventoryItem = function()
+    local actor = {
+        UnequipInventoryItem = function(self, item)
+            return 'lorem'
+        end,
+        EquipInventoryItem = function(self, item)
+            return 'lorem'
         end
     }
 
-    return mock(Actor, false)
+    return mock(actor, false)
 end
 
 return mockActor
