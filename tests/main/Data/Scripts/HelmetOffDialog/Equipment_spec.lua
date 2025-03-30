@@ -125,7 +125,9 @@ end)
 
 describe("putOnCoif", function()
     it("equips item", function()
-        local factory = makeFactory({ hasUnequippedCoif = true })
+        local factory = makeFactory({
+            hasUnequippedCoif = true, inventoryHasItem = true
+        })
         factory.equipment:putOnCoif()
         assert.spy(factory.player.actor.EquipInventoryItem).was.called_with(
                 match.is_ref(factory.player.actor),
@@ -142,6 +144,15 @@ describe("putOnCoif", function()
 
     it("aborts having none equipped", function()
         local factory = makeFactory()
+        factory.equipment:putOnCoif()
+        assert.spy(factory.player.actor.EquipInventoryItem)
+              .was_not_called()
+    end)
+
+    it("aborts having no such item in inventory", function()
+        local factory = makeFactory({
+            hasUnequippedCoif = true, inventoryHasItem = false
+        })
         factory.equipment:putOnCoif()
         assert.spy(factory.player.actor.EquipInventoryItem)
               .was_not_called()

@@ -91,7 +91,13 @@ local Equipment = {
         local item = self.itemManager.GetItem(self.unequippedCoif)
         local itemName = self.itemManager.GetItemName(item.class)
         Log.info("Putting on coif: ", itemName)
-        self.player.actor:EquipInventoryItem(self.unequippedCoif)
+
+        if self.player.inventory:HasItem(self.unequippedCoif) then
+            self.player.actor:EquipInventoryItem(self.unequippedCoif)
+        else
+            Log.info("Aborting because item not inventory")
+        end
+
         self.unequippedCoif = nil
     end,
 
