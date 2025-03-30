@@ -123,6 +123,23 @@ describe("takeOffSecondRangedWeapon", function()
     end)
 end)
 
+--describe("putOnCoif", function()
+--    it("equips item", function()
+--        local factory = makeFactory({ takeoff_result = "second_ranged_item" })
+--        factory.equipment:putOnCoif()
+--        assert.spy(factory.player.actor.EquipInventoryItem)
+--              .was.called_with(factory.unequippedCoif)
+--    end)
+--
+--    it("skips equipping having none equpiped", function()
+--        local factory = makeFactory({ takeoff_result = "no_item" })
+--        factory.equipment:takeOffSecondRangedWeapon(function()
+--        end)
+--        assert.spy(factory.player.actor.EquipInventoryItem)
+--              .was_not_called()
+--    end)
+--end)
+
 function makeFactory(args)
     dofile("tests/main/HelmetOffDialogMock.lua")(mock, spy)
     local factory = {}
@@ -130,38 +147,7 @@ function makeFactory(args)
     local itemManagerArgs = { GetItem = "valid" }
     factory.itemManager = dofile("tests/main/ItemManagerMock.lua")(mock, spy, itemManagerArgs)
     factory.player = dofile("tests/main/PlayerMock.lua")(mock, spy, args)
-    local UnequipGear = dofile("src/main/Data/Scripts/HelmetOffDialog/UnequipGear.lua")
-    factory.unequipGear = mock(UnequipGear, true)
-    factory.unequipGear.takeOff = spy.new(function(self, category, callback)
-        if not args then
-            return nil
-        end
-
-        if args.takeoff_result == 'no_item' then
-            return callback(nil)
-        end
-
-        if args.takeoff_result == "helmet_item" then
-            return callback("mock_helmet")
-        end
-
-        if args.takeoff_result == "head_chainmail_item" then
-            return callback("mock_head_chainmail")
-        end
-
-        if args.takeoff_result == "coif_item" then
-            return callback("mock_coif")
-        end
-
-        if args.takeoff_result == "first_ranged_item" then
-            return callback("mock_first_ranged")
-        end
-
-        if args.takeoff_result == "second_ranged_item" then
-            return callback("mock_second_ranged")
-        end
-
-    end)
+    factory.unequipGear = dofile("tests/main/UnequipGearMock.lua")(mock, spy, args)
 
     local Equipment = dofile("src/main/Data/Scripts/HelmetOffDialog/Equipment.lua")
     factory.equipment = Equipment:new(
