@@ -69,7 +69,7 @@ local OnTalkEvent = {
         end
 
         if this.metaRole:hasArcheryCompetition(entityName) then
-            Log.info("Aborting taking off ranged weapons because entity offers archery competition")
+            Log.info("Aborting taking off gear because entity offers archery competition.")
             return
         end
 

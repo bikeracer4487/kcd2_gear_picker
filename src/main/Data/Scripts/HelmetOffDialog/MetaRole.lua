@@ -40,6 +40,8 @@ local MetaRole = {
             end
         end
 
+        Log.info("Entity offers no bathhouse booking services")
+
         return false
     end,
 
@@ -62,12 +64,15 @@ local MetaRole = {
             Log.info("Link:", index, link)
             if link ~= nil then
                 local name = link:GetName()
+                Log.info("Link name: ", name)
                 if string.find(string.lower(name), "shootingrange") then
                     Log.info("Identified an entity with archery competition.")
                     return true
                 end
             end
         end
+
+        Log.info("Entity offers no archery competition")
 
         return false
     end

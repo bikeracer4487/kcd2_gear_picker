@@ -73,7 +73,7 @@ Log.info = function(...)
     local isProd = config:isProduction()
     local isDebug = config:isDebug()
 
-    if not isProd and not isDebug then
+    if isProd and not isDebug then
         return
     end
 

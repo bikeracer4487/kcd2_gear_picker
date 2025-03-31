@@ -47,11 +47,11 @@ local Config = {
     setModOff = function(self, value)
         self.is_mod_off = self:_parseSettingValue(value)
     end,
-    setDebug = function(self, value)
-        self.is_debug = self:_parseSettingValue(value)
-    end,
     isDebug = function(self)
         return self.is_debug
+    end,
+    setDebug = function(self, value)
+        self.is_debug = self:_parseSettingValue(value)
     end
 }
 
