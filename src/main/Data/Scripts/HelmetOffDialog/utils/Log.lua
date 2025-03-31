@@ -68,9 +68,16 @@ Log.info = function(...)
     if not HelmetOffDialog or not HelmetOffDialog:config() then
         return
     end
-    if not HelmetOffDialog:config():isProduction() then
-        Log._log("INFO", "$5", ...)
+
+    local config = HelmetOffDialog:config()
+    local isProd = config:isProduction()
+    local isDebug = config:isDebug()
+
+    if isProd and not isDebug then
+        return
     end
+
+    Log._log("INFO", "$5", ...)
 end
 
 Log.error = function(...)

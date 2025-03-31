@@ -1,6 +1,4 @@
 #!/bin/bash
-
-
 projectRoot="$(dirname "$(realpath "$0")")/.."
 defaultTarget="main"
 

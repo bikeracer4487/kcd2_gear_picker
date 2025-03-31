@@ -1,6 +1,9 @@
 
 ## Changelog
 
+### 1.4.2 31-march-25
+- chore: Added `helmet_off_dialog__set_debug` command to turn on debug mode and log why gear is taken off or left on.
+
 ### 1.4.1 30-march-25
 - fix: Prevent crash when selling equipped items by checking if Henry's removed gear is still in inventory before re-equipping.
 
