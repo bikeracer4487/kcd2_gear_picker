@@ -1,5 +1,7 @@
-
 ## Changelog
+
+### 1.4.3 31-march-25
+- fix: Do not skip gear take off having not enabled the ranged optional mod and the NPC offers archery competition.
 
 ### 1.4.2 31-march-25
 - chore: Added `helmet_off_dialog__set_debug` command to turn on debug mode and log why gear is taken off or left on.

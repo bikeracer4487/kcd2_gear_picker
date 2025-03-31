@@ -68,7 +68,7 @@ local OnTalkEvent = {
             Log.info("Not aborting due to random check failing ")
         end
 
-        if this.metaRole:hasArcheryCompetition(entityName) then
+        if this.config:isRanged() and this.metaRole:hasArcheryCompetition(entityName) then
             Log.info("Aborting taking off gear because entity offers archery competition.")
             return
         end
