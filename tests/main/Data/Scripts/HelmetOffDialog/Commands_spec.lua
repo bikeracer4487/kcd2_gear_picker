@@ -5,7 +5,7 @@ describe("Commands Ranged Setting:", function()
         assert.spy(factory.system.AddCCommand).was.called_with(
                 "helmet_off_dialog__set_ranged",
                 "HelmetOffDialog:commands():setRanged(%line)",
-                ""
+                "Enables or disables removing ranged weapons."
         )
     end)
 
@@ -27,7 +27,7 @@ describe("Commands Random Setting:", function()
         assert.spy(factory.system.AddCCommand).was.called_with(
                 "helmet_off_dialog__set_random",
                 "HelmetOffDialog:commands():setRandom(%line)",
-                ""
+                "Turns random gear removal on or off."
         )
     end)
 
@@ -49,7 +49,7 @@ describe("Commands Helmet-Only Setting:", function()
         assert.spy(factory.system.AddCCommand).was.called_with(
                 "helmet_off_dialog__set_helmet_only",
                 "HelmetOffDialog:commands():setHelmetOnly(%line)",
-                ""
+                "Sets the mod to remove only the helmet, leaving coif and chainmail on."
         )
     end)
 
@@ -71,7 +71,7 @@ describe("Commands Mod-Off Setting:", function()
         assert.spy(factory.system.AddCCommand).was.called_with(
                 "helmet_off_dialog__set_mod_off",
                 "HelmetOffDialog:commands():setModOff(%line)",
-                ""
+                "Turns mods on or off."
         )
     end)
 
@@ -82,6 +82,28 @@ describe("Commands Mod-Off Setting:", function()
         assert.spy(factory.config.setModOff).was.called_with(
                 match.is_ref(factory.config),
                 "setModOff_lorem-ipsum"
+        )
+    end)
+end)
+
+describe("Commands Debug Setting:", function()
+    it("registers command", function()
+        local factory = makeFactory()
+        factory.commands:init()
+        assert.spy(factory.system.AddCCommand).was.called_with(
+                "helmet_off_dialog__set_debug",
+                "HelmetOffDialog:commands():setDebug(%line)",
+                "Enables debug mode to output logs to check why gear was or wasn’t removed."
+        )
+    end)
+
+    it("handles command", function()
+        local factory = makeFactory()
+        factory.commands:init()
+        factory.commands:setDebug("setDebug_lorem-ipsum")
+        assert.spy(factory.config.setDebug).was.called_with(
+                match.is_ref(factory.config),
+                "setDebug_lorem-ipsum"
         )
     end)
 end)

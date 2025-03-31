@@ -46,6 +46,8 @@ local Config = {
     setModOff = function(self, value)
         self.is_mod_off = self:_parseSettingValue(value)
     end,
+    setDebug = function(self, value)
+    end
 }
 
 _G.HelmetOffDialog.ClassRegistry.Config = Config
