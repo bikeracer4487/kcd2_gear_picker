@@ -8,7 +8,8 @@ local Config = {
             ranged = false,
             helmet_only = false,
             random = false,
-            is_mod_off = false
+            is_mod_off = false,
+            is_debug = false
         }
         setmetatable(instance, { __index = self })
         return instance
@@ -47,6 +48,10 @@ local Config = {
         self.is_mod_off = self:_parseSettingValue(value)
     end,
     setDebug = function(self, value)
+        self.is_debug = self:_parseSettingValue(value)
+    end,
+    isDebug = function(self, value)
+        return self.is_debug
     end
 }
 

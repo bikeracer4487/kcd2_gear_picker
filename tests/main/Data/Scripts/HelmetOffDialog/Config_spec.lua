@@ -49,6 +49,16 @@ describe("Config:", function()
         assert.is_false(factory.config:isHelmetOnly())
     end)
 
+    it("falsy debug", function()
+        local factory = makeFactory()
+        assert.is_false(factory.config:isDebug())
+    end)
+
+    it("truthy debug", function()
+        local factory = makeFactory({ isDebug = true })
+        assert.is_true(factory.config:isDebug())
+    end)
+
     it("parses a truthy setting value", function()
         local factory = makeFactory()
         assert.is_true(factory.config:_parseSettingValue("= true"))
@@ -73,6 +83,10 @@ function makeFactory(args)
 
     if args and args.isModOff then
         config:setModOff(args.isModOff == true and "= true" or "= false")
+    end
+
+    if args and args.isDebug then
+        config:setDebug(args.isDebug == true and "= true" or "= false")
     end
 
     return { config = config }
