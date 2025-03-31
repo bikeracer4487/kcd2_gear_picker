@@ -7,7 +7,7 @@ test:
 test-watch:
 	pattern_arg=$(if $(pattern),--pattern=$(pattern)) && \
 	filter_arg=$(if $(filter),--filter=$(filter)) && \
-	docker compose run --rm test_watcher \
+	docker compose run --rm --entrypoint "" test_watcher \
 		sh -c "find /data -type f | entr -c busted $$pattern_arg $$filter_arg --verbose /data"
 
 test-tap-report:

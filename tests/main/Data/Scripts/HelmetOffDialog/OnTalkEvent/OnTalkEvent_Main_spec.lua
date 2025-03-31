@@ -64,6 +64,12 @@ describe("OnTalkEvent_Main:", function()
         factory.onTalkEvent:takeOffCoif()
         assert.spy(factory.talkEndedEvent.listen).was_called(1)
     end)
+
+    it("does not abort having archery competition", function()
+        local factory = makeFactory({ hasArcheryCompetition = true })
+        factory.onTalkEvent:handle(factory.twinEntity, factory.player)
+        assert.spy(factory.equipment.takeOffHelmet).was_called(1)
+    end)
 end)
 
 function makeFactory(args)
