@@ -1,12 +1,39 @@
-*.xml
+# Build and distribution files
 *.zip
-node_modules/
-.idea/
-*.log
-*:Zone.Identifier
-luacov.*
-dev/
-*.env
+*.xml
 *.html
 *.tap
+dev/
+
+# Node.js
+node_modules/
 .npm-cache/
+*.log
+
+# Lua
+luacov.*
+
+# Environment and settings
+*.env
+**/.claude/settings.local.json
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*:Zone.Identifier
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

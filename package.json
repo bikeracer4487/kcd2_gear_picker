@@ -1,10 +1,10 @@
 {
   "repository": {
     "type": "git",
-    "url": "https://github.com/rdok/kcd2_helmet_off_dialog"
+    "url": "https://github.com/bikeracer4487/kcd2_gear_picker"
   },
-  "author": "Rizart Dokollari",
-  "name": "kcd2_helmet_off_dialog",
+  "author": "Doug Mason",
+  "name": "kcd2_gear_picker",
   "license": "GPL-3.0",
   "devDependencies": {
     "7z-bin": "Nexus-Mods/7z-bin",
