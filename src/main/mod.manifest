@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <kcd_mod>
     <info>
-        <name>Helmet Off Dialog</name>
-        <modid>helmet_off_dialog</modid>
-        <description>This mod automatically unequips your helmet, head chainmail, and coif when starting a conversation with an NPC, then re-equips them when the dialog ends. </description>
-        <author>Rizarttt</author>
-        <version>1.4.3</version>
-        <created_on>01.03.2025</created_on>
+        <name>Gear Picker</name>
+        <modid>gear_picker</modid>
+        <description>This mod helps optimize gear selection for maximum armor/protection, stealth, or charisma based on specific parameters. It builds upon the helmet unequip functionality to select optimal gear combinations. </description>
+        <author>Doug Mason</author>
+        <version>1.0.0</version>
+        <created_on>12.05.2025</created_on>
     </info>
 </kcd_mod>
