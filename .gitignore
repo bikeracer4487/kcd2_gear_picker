@@ -10,3 +10,4 @@ dev/
 *.html
 *.tap
 .npm-cache/
+.DS_Store
