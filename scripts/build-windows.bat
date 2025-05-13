@@ -175,7 +175,7 @@ if "%1"=="deploy" (
     REM Clean existing mod files before deployment
     set "MOD_DESTINATION=%MODS_DIR%\%MOD_ID%"
     if exist "%MOD_DESTINATION%" (
-        echo Removing existing mod files from %MOD_DESTINATION%...
+        echo Removing existing mod files from "%MOD_DESTINATION%"...
         rmdir /s /q "%MOD_DESTINATION%"
     )
     
@@ -205,8 +205,12 @@ if "%1"=="deploy" (
     echo =============================================
     echo Mod deployed successfully to "%MOD_DESTINATION%"
     echo =============================================
+    goto :eof
 )
 
+goto :end
+
+:end
 echo.
 echo All done!
 exit /b 0
