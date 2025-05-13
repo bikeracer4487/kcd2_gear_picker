@@ -105,8 +105,8 @@ echo Creating PAK file (!PAK_FILE!)...
 REM Get current directory to return to it later
 pushd "%DATA_DIR%"
 
-REM Create the PAK file using 7-Zip
-"%SEVENZIP_PATH%" a -tzip -mx9 "!MOD_ID!.pak" -r *.* -x!*.pak
+REM Create the PAK file using 7-Zip - fixed wildcard issue
+"%SEVENZIP_PATH%" a -tzip -mx9 "!MOD_ID!.pak" *
 if %ERRORLEVEL% neq 0 (
     echo ERROR: Failed to create PAK file
     popd
