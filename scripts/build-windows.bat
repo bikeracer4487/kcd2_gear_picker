@@ -150,19 +150,21 @@ if "%1"=="deploy" (
     
     REM Allow custom path as second argument
     if not "%2"=="" (
-        set "KCD2_DIR=%2"
+        set "KCD2_DIR=%~2"
     )
     
+    echo Checking for KCD2 at: "%KCD2_DIR%"
     if not exist "%KCD2_DIR%" (
-        echo ERROR: KCD2 directory not found at %KCD2_DIR%
+        echo ERROR: KCD2 directory not found at "%KCD2_DIR%"
         echo Please specify the correct path as the second argument.
         echo Example: build-windows.bat deploy "D:\Steam\steamapps\common\KingdomComeDeliverance2"
         exit /b 1
     )
     
-    echo Deploying mod to KCD2 at %KCD2_DIR%
+    echo Deploying mod to KCD2 at "%KCD2_DIR%"
     
     set "MODS_DIR=%KCD2_DIR%\Mods"
+    echo Setting up mods directory at: "%MODS_DIR%"
     if not exist "%MODS_DIR%" mkdir "%MODS_DIR%"
     
     REM Clean existing mod files before deployment
@@ -178,19 +180,25 @@ if "%1"=="deploy" (
     
     REM Update mod_order.txt
     set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
+    echo Checking mod_order.txt at: "%MOD_ORDER_FILE%"
     if not exist "%MOD_ORDER_FILE%" (
+        echo Writing new mod_order.txt file...
         echo %MOD_ID%> "%MOD_ORDER_FILE%"
         echo Created mod_order.txt and added %MOD_ID%
     ) else (
+        echo Checking if mod is already in mod_order.txt...
         findstr /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
         if !ERRORLEVEL! neq 0 (
+            echo Appending mod ID to mod_order.txt...
             echo %MOD_ID%>> "%MOD_ORDER_FILE%"
             echo Added %MOD_ID% to mod_order.txt
+        ) else (
+            echo Mod already exists in mod_order.txt
         )
     )
     
     echo =============================================
-    echo Mod deployed successfully to %MOD_DESTINATION%
+    echo Mod deployed successfully to "%MOD_DESTINATION%"
     echo =============================================
 )
 
