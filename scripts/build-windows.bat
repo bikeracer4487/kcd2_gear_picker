@@ -1,12 +1,8 @@
 @echo off
-setlocal enabledelayedexpansion
+setlocal EnableDelayedExpansion
 
-REM GearPicker Mod build script for Windows
-REM This script builds the mod and optionally deploys it to KCD2
-
-echo =============================================
-echo Building GearPicker Mod for KCD2...
-echo =============================================
+REM Updated build script for Windows
+REM This builds the GearPicker mod into a PAK file compatible with KCD2
 
 REM Set variables for paths
 set "PROJECT_ROOT=%~dp0.."
@@ -15,10 +11,14 @@ set "MOD_SRC_DIR=%PROJECT_ROOT%\src\%TARGET%"
 set "BUILD_DIR=%PROJECT_ROOT%\build_windows"
 set "TEMP_DIR=%BUILD_DIR%\temp"
 
+echo =============================================
+echo Building GearPicker Mod for KCD2...
+echo =============================================
+
 REM Check for 7-Zip installation
 set "SEVENZIP_PATH=C:\Program Files\7-Zip\7z.exe"
 if not exist "%SEVENZIP_PATH%" (
-    echo ERROR: 7-Zip not found at %SEVENZIP_PATH%
+    echo ERROR: 7-Zip not found at "%SEVENZIP_PATH%"
     echo Please install 7-Zip from https://www.7-zip.org/
     echo or update this script with the correct path
     exit /b 1
@@ -33,7 +33,7 @@ mkdir "%TEMP_DIR%\Data\Scripts"
 REM Read manifest file to get mod details
 set "MANIFEST_FILE=%MOD_SRC_DIR%\mod.manifest"
 if not exist "%MANIFEST_FILE%" (
-    echo ERROR: Manifest file not found at %MANIFEST_FILE%
+    echo ERROR: Manifest file not found at "%MANIFEST_FILE%"
     exit /b 1
 )
 
@@ -65,7 +65,7 @@ set "PAK_FILE=%DATA_DIR%\%MOD_ID%.pak"
 
 echo Verifying file structure...
 if not exist "%DATA_DIR%\Scripts\GearPicker\" (
-    echo WARN: GearPicker scripts directory not found at %DATA_DIR%\Scripts\GearPicker
+    echo WARN: GearPicker scripts directory not found at "%DATA_DIR%\Scripts\GearPicker"
     
     REM Check if we have HelmetOffDialog directory instead and GearPicker.lua
     if exist "%DATA_DIR%\Scripts\HelmetOffDialog\" (
@@ -87,18 +87,13 @@ for %%f in (%CRITICAL_FILES%) do (
     )
 )
 
-echo Creating PAK file (%PAK_FILE%)...
+echo Creating PAK file ("%PAK_FILE%")...
 
 REM Get current directory to return to it later
 pushd "%DATA_DIR%"
 
-REM Create the PAK file using 7-Zip - fixed wildcard issue
+REM Create the PAK file using 7-Zip
 "%SEVENZIP_PATH%" a -tzip -mx9 "%MOD_ID%.pak" *
-if %ERRORLEVEL% neq 0 (
-    echo ERROR: Failed to create PAK file
-    popd
-    exit /b 1
-)
 
 REM Return to previous directory
 popd
@@ -124,31 +119,27 @@ REM Create final mod structure
 mkdir "%TEMP_DIR%\%MOD_ID%"
 move "%DATA_DIR%" "%TEMP_DIR%\%MOD_ID%\"
 copy "%MOD_SRC_DIR%\mod.manifest" "%TEMP_DIR%\%MOD_ID%\"
-copy "%PROJECT_ROOT%\src\modding_eula.txt" "%TEMP_DIR%\%MOD_ID%\"
 
-echo Copied mod.manifest and modding_eula.txt to mod package
+echo Copied mod.manifest to mod package
 
 REM Create final zip file
 set "ZIP_FILE=%BUILD_DIR%\%MOD_ID%_%MOD_VERSION%.zip"
-echo Creating final ZIP file (%ZIP_FILE%)...
+echo Creating final ZIP file ("%ZIP_FILE%")...
 
 pushd "%TEMP_DIR%"
 "%SEVENZIP_PATH%" a -tzip -mx9 "%ZIP_FILE%" "%MOD_ID%"
 popd
-
-echo Verifying ZIP file contents...
-"%SEVENZIP_PATH%" l "%ZIP_FILE%"
 
 echo.
 echo =============================================
 echo Build complete!
 echo Mod file created at: "%ZIP_FILE%"
 echo =============================================
-echo.
 
 REM Check for deploy argument
 if /i not "%1"=="deploy" goto :end
 
+echo.
 echo Deploying mod to KCD2...
 
 REM Default KCD2 path
@@ -201,6 +192,7 @@ if not exist "%MOD_ORDER_FILE%" (
     )
 )
 
+echo.
 echo =============================================
 echo Mod deployed successfully to "%MOD_DESTINATION%"
 echo =============================================
