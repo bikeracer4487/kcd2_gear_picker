@@ -98,12 +98,21 @@ find "$DATA_DIR" -type d -empty -delete
 # Create final mod structure
 mkdir -p "$TEMP_DIR/$MOD_ID"
 mv "$DATA_DIR" "$TEMP_DIR/$MOD_ID/"
+
+# Copy manifest and modding EULA to the mod folder
+cp "$MOD_SRC_DIR/mod.manifest" "$TEMP_DIR/$MOD_ID/"
 cp "$PROJECT_ROOT/src/modding_eula.txt" "$TEMP_DIR/$MOD_ID/"
+
+echo "Copied mod.manifest and modding_eula.txt to mod package"
 
 # Create final zip file
 cd "$TEMP_DIR"
 ZIP_FILE="$BUILD_DIR/${MOD_ID}_${MOD_VERSION}.zip"
 zip -r -9 -X "$ZIP_FILE" "$MOD_ID"
+
+# Verify zip content
+echo "Verifying ZIP file contents..."
+unzip -l "$ZIP_FILE"
 
 ZIP_SIZE=$(du -h "$ZIP_FILE" | cut -f1)
 echo "Build complete! Mod file created at: $ZIP_FILE ($ZIP_SIZE)"
