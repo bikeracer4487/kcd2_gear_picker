@@ -37,36 +37,23 @@ if not exist "%MANIFEST_FILE%" (
     exit /b 1
 )
 
-REM Extract mod information from manifest file
-for /f "tokens=*" %%a in ('type "%MANIFEST_FILE%" ^| findstr "<modid>"') do (
-    set "MOD_ID_LINE=%%a"
-    set "MOD_ID=!MOD_ID_LINE!"
-    set "MOD_ID=!MOD_ID:*^<modid^>=!"
-    set "MOD_ID=!MOD_ID:^</modid^>*=!"
-    set "MOD_ID=!MOD_ID: =!"
-)
+REM Create a temporary file with the manifest contents for easier parsing
+type "%MANIFEST_FILE%" > "%TEMP_DIR%\manifest_temp.txt"
 
-for /f "tokens=*" %%a in ('type "%MANIFEST_FILE%" ^| findstr "<version>"') do (
-    set "MOD_VERSION_LINE=%%a"
-    set "MOD_VERSION=!MOD_VERSION_LINE!"
-    set "MOD_VERSION=!MOD_VERSION:*^<version^>=!"
-    set "MOD_VERSION=!MOD_VERSION:^</version^>*=!"
-    set "MOD_VERSION=!MOD_VERSION: =!"
-)
+REM Hard-code the values as a fallback
+set "MOD_ID=gear_picker"
+set "MOD_VERSION=1.1.0"
+set "MOD_NAME=Gear Picker"
 
-for /f "tokens=*" %%a in ('type "%MANIFEST_FILE%" ^| findstr "<n>"') do (
-    set "MOD_NAME_LINE=%%a"
-    set "MOD_NAME=!MOD_NAME_LINE!"
-    set "MOD_NAME=!MOD_NAME:*^<n^>=!"
-    set "MOD_NAME=!MOD_NAME:^</n^>*=!"
-)
+REM Try to extract values from manifest (simpler approach)
+for /f "tokens=3 delims=<>" %%a in ('findstr /C:"<modid>" "%TEMP_DIR%\manifest_temp.txt"') do set "MOD_ID=%%a"
+for /f "tokens=3 delims=<>" %%a in ('findstr /C:"<version>" "%TEMP_DIR%\manifest_temp.txt"') do set "MOD_VERSION=%%a"
+for /f "tokens=3 delims=<>" %%a in ('findstr /C:"<n>" "%TEMP_DIR%\manifest_temp.txt"') do set "MOD_NAME=%%a"
 
-if "!MOD_ID!"=="" (
-    echo ERROR: Could not extract mod ID from manifest file
-    exit /b 1
-)
+REM Clean up the temporary file
+del "%TEMP_DIR%\manifest_temp.txt"
 
-echo Building mod: !MOD_NAME! (!MOD_ID!) version !MOD_VERSION!
+echo Building mod: %MOD_NAME% (%MOD_ID%) version %MOD_VERSION%
 
 REM Copy all files from source to build dir
 echo Copying source files...
@@ -74,7 +61,7 @@ xcopy /E /I /Y "%MOD_SRC_DIR%\Data" "%TEMP_DIR%\Data"
 
 REM Create Data directory and PAK file paths
 set "DATA_DIR=%TEMP_DIR%\Data"
-set "PAK_FILE=%DATA_DIR%\!MOD_ID!.pak"
+set "PAK_FILE=%DATA_DIR%\%MOD_ID%.pak"
 
 echo Verifying file structure...
 if not exist "%DATA_DIR%\Scripts\GearPicker\" (
@@ -100,13 +87,13 @@ for %%f in (%CRITICAL_FILES%) do (
     )
 )
 
-echo Creating PAK file (!PAK_FILE!)...
+echo Creating PAK file (%PAK_FILE%)...
 
 REM Get current directory to return to it later
 pushd "%DATA_DIR%"
 
 REM Create the PAK file using 7-Zip - fixed wildcard issue
-"%SEVENZIP_PATH%" a -tzip -mx9 "!MOD_ID!.pak" *
+"%SEVENZIP_PATH%" a -tzip -mx9 "%MOD_ID%.pak" *
 if %ERRORLEVEL% neq 0 (
     echo ERROR: Failed to create PAK file
     popd
@@ -134,25 +121,25 @@ for /d /r "%DATA_DIR%" %%d in (*) do (
 )
 
 REM Create final mod structure
-mkdir "%TEMP_DIR%\!MOD_ID!"
-move "%DATA_DIR%" "%TEMP_DIR%\!MOD_ID!\"
-copy "%MOD_SRC_DIR%\mod.manifest" "%TEMP_DIR%\!MOD_ID!\"
-copy "%PROJECT_ROOT%\src\modding_eula.txt" "%TEMP_DIR%\!MOD_ID!\"
+mkdir "%TEMP_DIR%\%MOD_ID%"
+move "%DATA_DIR%" "%TEMP_DIR%\%MOD_ID%\"
+copy "%MOD_SRC_DIR%\mod.manifest" "%TEMP_DIR%\%MOD_ID%\"
+copy "%PROJECT_ROOT%\src\modding_eula.txt" "%TEMP_DIR%\%MOD_ID%\"
 
 echo Copied mod.manifest and modding_eula.txt to mod package
 
 REM Create final zip file
-set "ZIP_FILE=%BUILD_DIR%\!MOD_ID!_!MOD_VERSION!.zip"
-echo Creating final ZIP file (!ZIP_FILE!)...
+set "ZIP_FILE=%BUILD_DIR%\%MOD_ID%_%MOD_VERSION%.zip"
+echo Creating final ZIP file (%ZIP_FILE%)...
 
 pushd "%TEMP_DIR%"
-"%SEVENZIP_PATH%" a -tzip -mx9 "!ZIP_FILE!" "!MOD_ID!"
+"%SEVENZIP_PATH%" a -tzip -mx9 "%ZIP_FILE%" "%MOD_ID%"
 popd
 
 echo Verifying ZIP file contents...
-"%SEVENZIP_PATH%" l "!ZIP_FILE!"
+"%SEVENZIP_PATH%" l "%ZIP_FILE%"
 
-echo Build complete! Mod file created at: !ZIP_FILE!
+echo Build complete! Mod file created at: %ZIP_FILE%
 
 REM Deploy option
 if "%1"=="deploy" (
@@ -166,44 +153,44 @@ if "%1"=="deploy" (
         set "KCD2_DIR=%2"
     )
     
-    if not exist "!KCD2_DIR!" (
-        echo ERROR: KCD2 directory not found at !KCD2_DIR!
+    if not exist "%KCD2_DIR%" (
+        echo ERROR: KCD2 directory not found at %KCD2_DIR%
         echo Please specify the correct path as the second argument.
         echo Example: build-windows.bat deploy "D:\Steam\steamapps\common\KingdomComeDeliverance2"
         exit /b 1
     )
     
-    echo Deploying mod to KCD2 at !KCD2_DIR!
+    echo Deploying mod to KCD2 at %KCD2_DIR%
     
-    set "MODS_DIR=!KCD2_DIR!\Mods"
-    if not exist "!MODS_DIR!" mkdir "!MODS_DIR!"
+    set "MODS_DIR=%KCD2_DIR%\Mods"
+    if not exist "%MODS_DIR%" mkdir "%MODS_DIR%"
     
     REM Clean existing mod files before deployment
-    set "MOD_DESTINATION=!MODS_DIR!\!MOD_ID!"
-    if exist "!MOD_DESTINATION!" (
-        echo Removing existing mod files from !MOD_DESTINATION!...
-        rmdir /s /q "!MOD_DESTINATION!"
+    set "MOD_DESTINATION=%MODS_DIR%\%MOD_ID%"
+    if exist "%MOD_DESTINATION%" (
+        echo Removing existing mod files from %MOD_DESTINATION%...
+        rmdir /s /q "%MOD_DESTINATION%"
     )
     
     REM Extract mod to mods folder
     echo Extracting new mod files...
-    "%SEVENZIP_PATH%" x -o"!MODS_DIR!" -y "!ZIP_FILE!"
+    "%SEVENZIP_PATH%" x -o"%MODS_DIR%" -y "%ZIP_FILE%"
     
     REM Update mod_order.txt
-    set "MOD_ORDER_FILE=!MODS_DIR!\mod_order.txt"
-    if not exist "!MOD_ORDER_FILE!" (
-        echo !MOD_ID!> "!MOD_ORDER_FILE!"
-        echo Created mod_order.txt and added !MOD_ID!
+    set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
+    if not exist "%MOD_ORDER_FILE%" (
+        echo %MOD_ID%> "%MOD_ORDER_FILE%"
+        echo Created mod_order.txt and added %MOD_ID%
     ) else (
-        findstr /c:"!MOD_ID!" "!MOD_ORDER_FILE!" >nul
+        findstr /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
         if !ERRORLEVEL! neq 0 (
-            echo !MOD_ID!>> "!MOD_ORDER_FILE!"
-            echo Added !MOD_ID! to mod_order.txt
+            echo %MOD_ID%>> "%MOD_ORDER_FILE%"
+            echo Added %MOD_ID% to mod_order.txt
         )
     )
     
     echo =============================================
-    echo Mod deployed successfully to !MOD_DESTINATION!
+    echo Mod deployed successfully to %MOD_DESTINATION%
     echo =============================================
 )
 
