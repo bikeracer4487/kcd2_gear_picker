@@ -2,7 +2,7 @@
 
 ## Overview
 
-The KCD2 Gear Picker mod will use the underlying logic and tooling from the "Helmet Off Dialog" mod but will be completely repurposed for gear optimization. This document describes the original mod's functionality that we'll adapt.
+The KCD2 Gear Picker mod will use the underlying logic and tooling from the "Helmet Off Dialog" mod but will be completely repurposed for gear optimization. This document describes the original mod's functionality that we'll adapt and the new armor system requirements we need to account for.
 
 ## Original Mod Functionality
 
@@ -104,3 +104,83 @@ Items are categorized by pattern matching on item names/IDs. The current categor
 - Head chainmail (mail protection for the head)
 - Coifs (cloth head coverings)
 - Ranged weapons (bows and crossbows)
+
+## KCD2 Armor System Requirements
+
+Based on our analysis of KCD2's armor mechanics, we need to incorporate the following into our implementation:
+
+### 1. The 16 Armor Slots
+
+KCD2 has 16 distinct armor slots that our system must track and manage:
+
+1. **Helmet:** Primary head protection (e.g., Bascinet, Kettle Hat)
+2. **Cap:** Worn under helmets or as standalone headwear
+3. **Hood:** Outer head/shoulder covering (affects appearance & stealth)
+4. **Coif:** Padded or mail head/neck protection
+5. **Neck Guard:** Additional neck protection (e.g., Gorget, Aventail)
+6. **Chest Plate:** Rigid torso protection (e.g., Cuirass)
+7. **Coat:** Outer torso garment, worn over other layers
+8. **Gambeson:** Essential padded torso armor, worn under mail/plate
+9. **Shirt:** Basic undergarment
+10. **Sleeves:** Arm protection, sometimes separate components
+11. **Gloves:** Hand protection (e.g., Gauntlets, Leather Gloves)
+12. **Quilted Hose:** Padded legwear, worn under mail/plate leg armor
+13. **Shoes:** Basic footwear, required for other foot additions
+14. **Rowel Spurs:** Accessories for riding, attached to shoes/boots
+15. **Jewelry (Slot 1):** Rings, necklaces (affect Charisma)
+16. **Jewelry (Slot 2):** Second accessory slot
+
+### 2. Mandatory Layering Dependencies
+
+Our implementation must respect these critical layering requirements:
+
+- **Head:** A Coif must be equipped before a rigid Helmet
+- **Body:** A Gambeson or Arming Doublet must be equipped before a Chest Plate or Mail Hauberk
+- **Legs:** Quilted Hose or Padded Chausses must be equipped before Mail Chausses or Plate Leg Armor
+- **Accessories:** Some items like Rowel Spurs require appropriate footwear to be equipped
+
+### 3. Key Armor Statistics
+
+The Gear Picker needs to track and optimize for these stat categories:
+
+**Defensive Stats:**
+- **Stab Defense:** Protection against piercing attacks
+- **Slash Defense:** Protection against cutting attacks
+- **Blunt Defense:** Protection against impact forces
+
+**Stealth Stats:**
+- **Visibility:** How easily Henry is visually detected (lower is better)
+- **Conspicuousness:** How much Henry stands out or attracts attention
+- **Noise:** Sound generated during movement (critical for stealth)
+
+**Social & Utility Stats:**
+- **Charisma:** Influences dialogue checks and NPC disposition
+- **Weight:** Impacts encumbrance, movement speed, and stamina consumption
+- **Condition:** Current state of repair (affects effectiveness and appearance)
+- **Dirt & Blood:** Cleanliness affects Charisma and potentially Conspicuousness
+
+### 4. Stat Calculation Methods
+
+The system must properly implement how KCD2 calculates different stats:
+
+- **Visibility & Conspicuousness:** Primarily driven by outermost layers (outer layer dominance)
+- **Noise:** Cumulative from all equipped items (can't be muffled by outer layers)
+- **Charisma:** Influenced by visible gear, condition, and cleanliness
+- **Protection:** Cumulative across all armor pieces
+
+### 5. Material-Based Considerations
+
+The system must recognize and optimize for material-specific properties:
+
+- **Cloth/Padded:** Very lightweight, quiet, minimal protection
+- **Leather:** Moderate weight, relatively quiet, low-medium protection
+- **Chainmail:** Medium weight, noisy, good protection against slashing
+- **Plate:** Very heavy, very noisy, highest protection
+
+### 6. Optimization Profiles
+
+The mod will implement three primary optimization targets that mirror KCD2's preset system:
+
+1. **Maximum Armor/Protection:** Prioritizing defensive stats with weighted balance
+2. **Maximum Stealth:** Minimizing noise, visibility, and conspicuousness
+3. **Maximum Charisma:** Optimizing appearance for social interactions
