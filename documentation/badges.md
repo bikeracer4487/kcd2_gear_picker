@@ -1,3 +1,0 @@
-<!-- Nexus and Steam Workshop badges will be added when the mod is published -->
-[![GitHub](https://gist.githubusercontent.com/bikeracer4487/a6eccd074fae4e9bc56ab2e8b0eb579f/raw/edef5b7e7b9d24b00627ec3d7c435bcd1a1697d9/github.svg)](https://github.com/bikeracer4487/kcd2_gear_picker)
-[![Test Coverage](https://gist.githubusercontent.com/bikeracer4487/a6eccd074fae4e9bc56ab2e8b0eb579f/raw/kcd2_gear_picker_badges_14181091728.svg?label=Coverage&logo=codecov&cache=14155710125&cache=14155978998&cache=14156417417&cache=14158553417&cache=14165713884&cache=14181091728)](https://github.com/bikeracer4487/kcd2_gear_picker/actions/runs/14181091728)
