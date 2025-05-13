@@ -139,7 +139,12 @@ popd
 echo Verifying ZIP file contents...
 "%SEVENZIP_PATH%" l "%ZIP_FILE%"
 
-echo Build complete! Mod file created at: %ZIP_FILE%
+echo.
+echo =============================================
+echo Build complete!
+echo Mod file created at: "%ZIP_FILE%"
+echo =============================================
+echo.
 
 REM Deploy option
 if "%1"=="deploy" (
@@ -202,5 +207,6 @@ if "%1"=="deploy" (
     echo =============================================
 )
 
+echo.
 echo All done!
 exit /b 0
