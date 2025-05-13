@@ -184,3 +184,75 @@ The mod will implement three primary optimization targets that mirror KCD2's pre
 1. **Maximum Armor/Protection:** Prioritizing defensive stats with weighted balance
 2. **Maximum Stealth:** Minimizing noise, visibility, and conspicuousness
 3. **Maximum Charisma:** Optimizing appearance for social interactions
+
+## KCD2 Game Data Structure
+
+Analysis of the game's data files reveals important information about how equipment and armor are structured in KCD2:
+
+### Equipment Parts
+
+KCD2 defines the following equipment parts (`equipment_part.tbl`):
+- Head related: `head`, `neck`, `face`, `beard`
+- Body related: `torso`, `arms`, `hands`, `legs`, `feet`, `waist`, `belt`
+- Accessories: `dog_fur`, `dog_eyes`, etc.
+
+### Body Parts and Subparts
+
+The game divides the body into main parts (`body_part.tbl`) and more specific subparts (`body_subpart.tbl`):
+
+**Main Parts:**
+- `head`, `torso`, `arm_left`, `arm_right`, `leg_left`, `leg_right`
+
+**Subparts include:**
+- Head: `head_up`, `head_back`, `head_sides`, `head_face`, `head_neck`, `head_necklace`, `head_beard`
+- Body: `body_front_up`, `body_back_up`, `body_side`, `body_front_down`, `body_back_down`, `body_belt`, `body_pouch`, `body_scabbard`
+- Arms: `arm_left_shoulder_front`, `arm_left_upper_front`, `arm_left_forearm_front`, etc.
+- Hands: `hand_left`, `hand_right`, `hand_ring`
+- Legs: `leg_left_upper_front`, `leg_left_lower_front`, `foot_left_boots`, etc.
+
+### Layering System
+
+The game uses a sophisticated layering system (`body_layer.tbl`) with these specific layers:
+- `body`: Base layer
+- `cloth_inner`, `chainmail_inner`, `plate_inner`, `decoration_inner`: Inner equipment layers
+- `cloth_outer`, `chainmail_outer`, `plate_outer`, `decoration_outer`: Outer equipment layers
+- `underwear`: Base clothing layer
+
+### Armor Archetypes
+
+KCD2 categorizes armor into detailed archetypes (`armor_archetype.tbl`) that indicate specific armor configurations:
+
+**Head Gear:**
+- `HeadClothCap`, `HeadChainCap`, `HeadPlateHatSmall`, `HeadPlateHelmOpen`, `HeadPlateHelmFull`
+- Variants with collars: `HeadPlateHelmOpen_collar`, `HeadPlateHelmFull_collar`
+- Hood variations: `HoodOn`, `HoodDown`
+
+**Body Armor:**
+- Plate variations: `BodyPlateCuirassFullLong`, `BodyPlateCuirassFullShort`, etc.
+- Chain variations: `BodyChainVestShort`, `BodyChainShirt_longSleeves`, etc.
+- Cloth variations: `BodyClothShirt_noSleeves`, `BodyClothShirtLong_shortSleeves`, etc.
+
+**Arm Protection:**
+- `ArmsPlateShoulderGuards`, `ArmsPlateFullGuardsLong`, `ArmsPlateBackGuardsShort`, etc.
+
+**Leg Protection:**
+- `LegsClothTrousersLong`, `LegsPlateProtsUpperFront`, `LegsPlateProtsLongFull_withFeet`, etc.
+
+### Armor Types
+
+The game classifies armor into specific types (`armor_type.tbl`) such as:
+- `CoifCap`, `CoifSmall`, `CoifLarge`, `CoifMail`
+- `Cap`, `KettleHat`, `SkullCap`, `BascinetOpen`, `BascinetVisor`
+- `TunicShort`, `TunicLong`, `GambesonShort`, `GambesonLong`
+- `MailShort`, `MailLong`, `Cuirass`, `Brigandine`
+- Footwear: `Shoes`, `BootsAnkle`, `BootsKnee`
+- Accessories: `Spurs`, `Ring`, `Belt`, `Pouch`
+
+### Attachment System
+
+Equipment items use specific attachment slots (`attachment_slot.tbl`) including:
+- Generic: `slot1` through `slot6`
+- Weapons: `LeftWeapon`, `RightWeapon`
+- Ranged: `quiver`, `bow`, `crossbow`, `shield`
+
+These details provide crucial insights into how the game structures equipment, which will be essential for implementing accurate gear optimization in our mod.
