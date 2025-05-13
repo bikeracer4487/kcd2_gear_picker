@@ -1,0 +1,23 @@
+name: CI Checks
+
+on:
+  pull_request:
+    branches: [main]
+    paths: ["src/**", "tests/**"]
+
+jobs:
+  prettier:
+    name: Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Prettier
+        run: make prettier
+
+  tests:
+    name: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tests
+        run: make test

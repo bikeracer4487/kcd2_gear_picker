@@ -15,6 +15,7 @@ local Commands = {
         --- @type Commands
         local this = self
 
+        -- Original mod commands
         this.system.AddCCommand(
                 "helmet_off_dialog__set_mod_off",
                 "HelmetOffDialog:commands():setModOff(%line)",
@@ -38,11 +39,23 @@ local Commands = {
         this.system.AddCCommand(
                 "helmet_off_dialog__set_debug",
                 "HelmetOffDialog:commands():setDebug(%line)",
-                "Enables debug mode to output logs to check why gear was or wasn’t removed."
+                "Enables debug mode to output logs to check why gear was or wasn't removed."
         )
-
+        
+        -- New gear picker commands
+        this.system.AddCCommand(
+                "gear_picker__scan_inventory",
+                "HelmetOffDialog:commands():scanInventory()",
+                "Scans and logs all inventory items with stats"
+        )
+        
+        -- Bind F6 key to inventory scan for easy testing
+        this.system.ExecuteCommand("bind f6 gear_picker__scan_inventory")
+        
+        Log.info("All commands registered. Gear scan is bound to F6 key.")
     end,
 
+    -- Original mod commands
     setRanged = function(self, input)
         Log.info("setRanged called with argument: ", input)
         self.config:setRanged(input)
@@ -62,6 +75,18 @@ local Commands = {
     setDebug = function(self, input)
         Log.info("setDebug called with argument: ", input)
         self.config:setDebug(input)
+    end,
+    
+    -- New gear picker commands
+    scanInventory = function(self)
+        Log.info("Starting inventory scan...")
+        System.LogAlways("$3[GearPicker] Starting inventory scan. Results will be logged to console.")
+        
+        local gearScan = HelmetOffDialog:gearScan()
+        gearScan:scanInventory(function(inventoryItems, equippedItems)
+            System.LogAlways("$3[GearPicker] Scan complete: " .. #inventoryItems .. " gear items found, " .. #equippedItems .. " equipped")
+            gearScan:logInventoryDetails()
+        end)
     end
 }
 

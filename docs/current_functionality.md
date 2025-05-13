@@ -2,43 +2,50 @@
 
 ## Overview
 
-The KCD2 Gear Picker mod will use the underlying logic and tooling from the "Helmet Off Dialog" mod but will be completely repurposed for gear optimization. This document describes the original mod's functionality that we'll adapt and the new armor system requirements we need to account for.
+The KCD2 Gear Picker mod has been completely repurposed from the original "Helmet Off Dialog" mod to focus on gear optimization. This document describes the current functionality of the mod after the significant refactoring work.
 
-## Original Mod Functionality
+## Core Functionality
 
-The original "Helmet Off Dialog" mod was designed to automatically manage equipment during dialogues in Kingdom Come Deliverance 2. Its core functionality identifies and temporarily unequips specific gear when entering conversations, then re-equips it when dialogues end.
+The Gear Picker mod provides the following key functionalities:
 
-Unlike the original mod, the Gear Picker mod will not maintain separate optional modules but instead will integrate all optimization features into a single mod.
+1. **Inventory Scanning**: Analyzes all gear items in the player's inventory with detailed stats logging
+2. **Gear Optimization**: Optimizes gear selection for three primary scenarios:
+   - Maximum Armor/Protection
+   - Maximum Stealth
+   - Maximum Charisma
+3. **Preset Management**: Allows saving and loading custom gear loadouts
+4. **Customizable Priorities**: Allows adjusting the weight of different stats in optimization calculations
 
-### Reference Code
+## Reference Code
 
-The code in the following directories is kept for reference purposes only and will not be used in our implementation:
+The code in the following directories is kept for reference purposes only and is not used in our implementation:
 - `src/helmet_only/`: Contains code for the helmet-only variant of the original mod
 - `src/random/`: Contains code for the random unequipping variant of the original mod
 - `src/ranged/`: Contains code for the ranged weapons variant of the original mod
 
-These directories contain variations of the code in `src/main/` and each has its own manifest file because they were designed as separate optional modules for the original mod. Our implementation will focus solely on extending and modifying the code in `src/main/`.
+Additionally, the original HelmetOffDialog-related files have been archived to `archived_mod/` for reference while we continue development of the GearPicker functionality.
 
-### Core Classes
+## Core Classes
 
-#### HelmetOffDialog
+### GearPicker
 
 The main class that initializes the mod and provides access to all other components through factory methods. It loads required scripts and connects the various components.
 
-#### Equipment
+### Equipment
 
 Manages equipped gear with capabilities to:
-- Track which items have been unequipped
-- Remove/equip helmets, coifs, head chainmail, and ranged weapons
-- Store references to removed items for re-equipping later
+- Track which items are equipped in each slot
+- Apply complete gear sets with proper layering rules
+- Handle unequipping and re-equipping of items
 
-#### UnequipGear
+### UnequipGear
 
 Handles the detection and removal of gear with methods:
 - `takeOff`: Takes off specific gear types (helmets, chainmail, etc.)
 - `unequipIfEquipped`: Verifies if an item is equipped before removing it
+- `takeOffAll`: Removes all equipped gear 
 
-#### EquippedItem
+### EquippedItem
 
 Provides the critical weight-based detection mechanism to identify equipped items:
 1. Measures the player's equipment weight
@@ -46,32 +53,53 @@ Provides the critical weight-based detection mechanism to identify equipped item
 3. Measures weight again
 4. If weight changed, the item was equipped
 
-#### ItemCategory
+Additionally, now provides comprehensive stat collection for items:
+- Defensive stats (Stab/Slash/Blunt)
+- Stealth stats (Visibility/Conspicuousness/Noise)
+- Social stats (Charisma)
+- Physical properties (Weight/Condition)
 
-Defines item categories and checks if items belong to specific categories:
-- Helmet: Items containing "kettle", "bascinet", "helmet", or "skullcap"
-- HeadChainmail: Items containing "coifmail" or with UI names containing "nm_ca_collar" or "nm_ca_hood"
-- Coif: Items containing "coif" or "g_hood_"
-- RangedWeapon: Items containing "bow_" or "crossbow"
+### ItemCategory
 
-#### OnTalkEvent
+Defines item categories and checks if items belong to specific categories across all 16 equipment slots:
+- Head gear: Helmet, Cap, Hood, Coif, HeadChainmail
+- Torso gear: ChestPlate, Coat, Gambeson, Shirt
+- Arm gear: Sleeves
+- Hand gear: Gloves
+- Leg gear: QuiltedHose
+- Foot gear: Shoes, RowelSpurs
+- Accessories: Jewelry1, Jewelry2
 
-Handles the dialogue event triggers and orchestrates the unequipping sequence:
-- Determines if gear should be removed based on settings and context
-- Sequentially removes helmet, chainmail, coif, and ranged weapons as appropriate
-- Sets up event handlers for re-equipping when dialogue ends
+Also provides material detection to identify cloth, leather, chainmail, and plate items.
 
-#### TalkEndedEvent
+### GearScan
 
-Listens for dialogue end events and triggers re-equipping of items.
+New class for comprehensive inventory scanning:
+- Scans all items in player inventory
+- Collects detailed stats for each item
+- Categorizes items by slot and material
+- Logs comprehensive analysis of inventory contents
 
-#### Config
+### GearOptimizer
+
+New class for optimization calculations:
+- Implements algorithms for armor, stealth, and charisma optimization
+- Handles stat calculations with configurable weights
+- Ensures layering requirements are respected
+
+### GearSwitcher
+
+New class for managing gear loadouts:
+- Handles switching between different gear configurations
+- Manages preset saving and loading
+- Ensures proper equipping order for layered gear
+
+### Config
 
 Manages mod settings including:
-- Ranged mode (remove ranged weapons)
-- Helmet-only mode (only remove helmets)
-- Random mode (randomly remove gear)
-- Enable/disable the entire mod
+- Optimization priorities and weights
+- Feature flags and preferences
+- Limit settings for weight and other constraints
 
 ## Technical Implementation Details
 
@@ -90,28 +118,78 @@ The mod uses an innovative approach to identify equipped items since the game do
    local isEquipped = tostring(oldStats.equippedWeight) ~= tostring(newStats.equippedWeight)
    ```
 
-### Event Handling
+### Optimization Approach
 
-The mod hooks into the game's dialogue system:
-- `HelmetOffDialog_Listeners.lua` sets up event listeners for dialogue start events
-- When player enters dialogue, the mod triggers the item removal process
-- When dialogue ends, items are re-equipped
+The mod optimizes gear using a weighted scoring system:
 
-### Item Categories
+1. **Armor Optimization**:
+   - Prioritizes combined defensive stats (stab/slash/blunt)
+   - Ensures proper layering (coif before helmet, etc.)
+   - Considers weight constraints
 
-Items are categorized by pattern matching on item names/IDs. The current categories are:
-- Helmets (full protection headgear)
-- Head chainmail (mail protection for the head)
-- Coifs (cloth head coverings)
-- Ranged weapons (bows and crossbows)
+2. **Stealth Optimization**:
+   - Minimizes noise, visibility, and conspicuousness
+   - Prioritizes dark, quiet clothing
+   - Balances some protection with stealth properties
+
+3. **Charisma Optimization**:
+   - Maximizes charisma value of visible layers
+   - Considers cleanliness and condition
+   - Selects appropriate noble/high-status items
+
+### Material Detection
+
+Items are categorized by material type through naming pattern analysis:
+- **Plate**: Items containing terms like "plate", "cuirass", "bascinet"
+- **Chainmail**: Items containing "mail", "chain", "hauberk"
+- **Leather**: Items containing "leather", "hide"
+- **Cloth**: Items containing "cloth", "linen", "silk", "wool", "gambeson"
+
+### Preset Management
+
+The GearSwitcher class manages custom presets:
+- Saves current loadouts with custom names
+- Loads presets while respecting layering requirements
+- Provides listing and deletion functionality
+
+## User Interface & Controls
+
+### Commands
+
+The mod provides various console commands:
+
+**Core Optimization Commands**:
+- `gear_picker__optimize_armor`: Optimize for maximum protection
+- `gear_picker__optimize_stealth`: Optimize for maximum stealth
+- `gear_picker__optimize_charisma`: Optimize for maximum charisma
+
+**Preset Management**:
+- `gear_picker__save_preset [name]`: Save current gear as named preset
+- `gear_picker__load_preset [name]`: Load a previously saved preset
+- `gear_picker__list_presets`: List all available presets
+- `gear_picker__delete_preset [name]`: Delete a named preset
+
+**Configuration**:
+- `gear_picker__set_priority_armor [0-100]`: Set armor priority weight
+- `gear_picker__set_priority_stealth [0-100]`: Set stealth priority weight
+- `gear_picker__set_priority_charisma [0-100]`: Set charisma priority weight
+- Various other commands for fine-tuning optimization priorities
+
+### Hotkeys
+
+The mod provides hotkey bindings for quick access:
+- **F6**: Scan and log inventory items
+- **F7**: Optimize for maximum armor protection
+- **F8**: Optimize for maximum stealth
+- **F9**: Optimize for maximum charisma
 
 ## KCD2 Armor System Requirements
 
-Based on our analysis of KCD2's armor mechanics, we need to incorporate the following into our implementation:
+Based on our analysis of KCD2's armor mechanics, the mod implements support for:
 
 ### 1. The 16 Armor Slots
 
-KCD2 has 16 distinct armor slots that our system must track and manage:
+KCD2 has 16 distinct armor slots that our system tracks and manages:
 
 1. **Helmet:** Primary head protection (e.g., Bascinet, Kettle Hat)
 2. **Cap:** Worn under helmets or as standalone headwear
@@ -132,7 +210,7 @@ KCD2 has 16 distinct armor slots that our system must track and manage:
 
 ### 2. Mandatory Layering Dependencies
 
-Our implementation must respect these critical layering requirements:
+The implementation respects these critical layering requirements:
 
 - **Head:** A Coif must be equipped before a rigid Helmet
 - **Body:** A Gambeson or Arming Doublet must be equipped before a Chest Plate or Mail Hauberk
@@ -141,7 +219,7 @@ Our implementation must respect these critical layering requirements:
 
 ### 3. Key Armor Statistics
 
-The Gear Picker needs to track and optimize for these stat categories:
+The Gear Picker tracks and optimizes for these stat categories:
 
 **Defensive Stats:**
 - **Stab Defense:** Protection against piercing attacks
@@ -158,101 +236,3 @@ The Gear Picker needs to track and optimize for these stat categories:
 - **Weight:** Impacts encumbrance, movement speed, and stamina consumption
 - **Condition:** Current state of repair (affects effectiveness and appearance)
 - **Dirt & Blood:** Cleanliness affects Charisma and potentially Conspicuousness
-
-### 4. Stat Calculation Methods
-
-The system must properly implement how KCD2 calculates different stats:
-
-- **Visibility & Conspicuousness:** Primarily driven by outermost layers (outer layer dominance)
-- **Noise:** Cumulative from all equipped items (can't be muffled by outer layers)
-- **Charisma:** Influenced by visible gear, condition, and cleanliness
-- **Protection:** Cumulative across all armor pieces
-
-### 5. Material-Based Considerations
-
-The system must recognize and optimize for material-specific properties:
-
-- **Cloth/Padded:** Very lightweight, quiet, minimal protection
-- **Leather:** Moderate weight, relatively quiet, low-medium protection
-- **Chainmail:** Medium weight, noisy, good protection against slashing
-- **Plate:** Very heavy, very noisy, highest protection
-
-### 6. Optimization Profiles
-
-The mod will implement three primary optimization targets that mirror KCD2's preset system:
-
-1. **Maximum Armor/Protection:** Prioritizing defensive stats with weighted balance
-2. **Maximum Stealth:** Minimizing noise, visibility, and conspicuousness
-3. **Maximum Charisma:** Optimizing appearance for social interactions
-
-## KCD2 Game Data Structure
-
-Analysis of the game's data files reveals important information about how equipment and armor are structured in KCD2:
-
-### Equipment Parts
-
-KCD2 defines the following equipment parts (`equipment_part.tbl`):
-- Head related: `head`, `neck`, `face`, `beard`
-- Body related: `torso`, `arms`, `hands`, `legs`, `feet`, `waist`, `belt`
-- Accessories: `dog_fur`, `dog_eyes`, etc.
-
-### Body Parts and Subparts
-
-The game divides the body into main parts (`body_part.tbl`) and more specific subparts (`body_subpart.tbl`):
-
-**Main Parts:**
-- `head`, `torso`, `arm_left`, `arm_right`, `leg_left`, `leg_right`
-
-**Subparts include:**
-- Head: `head_up`, `head_back`, `head_sides`, `head_face`, `head_neck`, `head_necklace`, `head_beard`
-- Body: `body_front_up`, `body_back_up`, `body_side`, `body_front_down`, `body_back_down`, `body_belt`, `body_pouch`, `body_scabbard`
-- Arms: `arm_left_shoulder_front`, `arm_left_upper_front`, `arm_left_forearm_front`, etc.
-- Hands: `hand_left`, `hand_right`, `hand_ring`
-- Legs: `leg_left_upper_front`, `leg_left_lower_front`, `foot_left_boots`, etc.
-
-### Layering System
-
-The game uses a sophisticated layering system (`body_layer.tbl`) with these specific layers:
-- `body`: Base layer
-- `cloth_inner`, `chainmail_inner`, `plate_inner`, `decoration_inner`: Inner equipment layers
-- `cloth_outer`, `chainmail_outer`, `plate_outer`, `decoration_outer`: Outer equipment layers
-- `underwear`: Base clothing layer
-
-### Armor Archetypes
-
-KCD2 categorizes armor into detailed archetypes (`armor_archetype.tbl`) that indicate specific armor configurations:
-
-**Head Gear:**
-- `HeadClothCap`, `HeadChainCap`, `HeadPlateHatSmall`, `HeadPlateHelmOpen`, `HeadPlateHelmFull`
-- Variants with collars: `HeadPlateHelmOpen_collar`, `HeadPlateHelmFull_collar`
-- Hood variations: `HoodOn`, `HoodDown`
-
-**Body Armor:**
-- Plate variations: `BodyPlateCuirassFullLong`, `BodyPlateCuirassFullShort`, etc.
-- Chain variations: `BodyChainVestShort`, `BodyChainShirt_longSleeves`, etc.
-- Cloth variations: `BodyClothShirt_noSleeves`, `BodyClothShirtLong_shortSleeves`, etc.
-
-**Arm Protection:**
-- `ArmsPlateShoulderGuards`, `ArmsPlateFullGuardsLong`, `ArmsPlateBackGuardsShort`, etc.
-
-**Leg Protection:**
-- `LegsClothTrousersLong`, `LegsPlateProtsUpperFront`, `LegsPlateProtsLongFull_withFeet`, etc.
-
-### Armor Types
-
-The game classifies armor into specific types (`armor_type.tbl`) such as:
-- `CoifCap`, `CoifSmall`, `CoifLarge`, `CoifMail`
-- `Cap`, `KettleHat`, `SkullCap`, `BascinetOpen`, `BascinetVisor`
-- `TunicShort`, `TunicLong`, `GambesonShort`, `GambesonLong`
-- `MailShort`, `MailLong`, `Cuirass`, `Brigandine`
-- Footwear: `Shoes`, `BootsAnkle`, `BootsKnee`
-- Accessories: `Spurs`, `Ring`, `Belt`, `Pouch`
-
-### Attachment System
-
-Equipment items use specific attachment slots (`attachment_slot.tbl`) including:
-- Generic: `slot1` through `slot6`
-- Weapons: `LeftWeapon`, `RightWeapon`
-- Ranged: `quiver`, `bow`, `crossbow`, `shield`
-
-These details provide crucial insights into how the game structures equipment, which will be essential for implementing accurate gear optimization in our mod.

@@ -2,7 +2,7 @@
 
 ## Current Status
 
-**Project Stage**: Initial Setup
+**Project Stage**: Refactoring and Core Implementation
 
 **Last Updated**: May 13, 2025
 
@@ -17,77 +17,97 @@
 4. ✅ Updated project to use a single mod structure instead of multiple optional mods
 5. ✅ Set up project with proper folder structure and organization
 6. ✅ Analyzed KCD2 game data files to understand the equipment and armor systems
+7. ✅ Analyzed existing code structure to understand current gear handling mechanisms
+8. ✅ Created detailed implementation plan for Phase 1 (Inventory Logging)
+9. ✅ Implemented inventory scanning and logging functionality
+10. ✅ Extended core classes for comprehensive stat collection
+11. ✅ Created GearScan class for inventory analysis
+12. ✅ Renamed and restructured mod for gear optimization functionality
+13. ✅ Created new GearPicker namespace (replacing HelmetOffDialog)
+14. ✅ Archived original dialog-related functionality for reference
+15. ✅ Implemented GearOptimizer placeholder for optimization algorithms
+16. ✅ Created GearSwitcher class for handling gear switching functionality
+17. ✅ Updated commands to support gear optimization and preset management
 
 ## In Progress
 
-1. 🔄 Analyzing the existing code structure to understand current gear handling mechanisms
-2. 🔄 Designing the new gear optimization systems
+1. 🔄 Implementing optimization algorithms for different gear scenarios (armor, stealth, charisma)
+2. 🔄 Creating preset management system for saved loadouts
+3. 🔄 Testing and refining core functionality
 
-## Code Organization Notes
+## Code Organization Updates
 
-- The main implementation will focus exclusively on the code in `src/main/` directory
-- The code in `src/helmet_only/`, `src/random/`, and `src/ranged/` is kept for reference only and will not be used
-- These reference directories contain variations of the original mod, each with their own manifest files
+- Renamed primary namespace from `HelmetOffDialog` to `GearPicker`
+- Moved all core files from `Scripts/HelmetOffDialog/` to `Scripts/GearPicker/`
+- Removed dialog-specific files that are not needed for gear optimization
+- Created new utility classes specific to gear optimization
+- Added compatibility reference in GearPicker.lua to support legacy references to HelmetOffDialog
 
-## Recent Findings
+## New Core Files
 
-From our analysis of the KCD2 game data files, we've gained valuable insights into the game's equipment system:
+1. **GearPicker.lua**: Main class that initializes the mod and provides factory methods for other components
+2. **GearScan.lua**: Implements comprehensive inventory scanning and analysis
+3. **GearOptimizer.lua**: Handles optimization calculations for different scenarios
+4. **GearSwitcher.lua**: Manages switching between different gear loadouts and presets
 
-1. **Equipment Classification System**: KCD2 has a complex equipment classification system with clearly defined:
-   - Equipment parts (head, torso, arms, etc.)
-   - Body parts and subparts (detailed anatomical mapping)
-   - Layering system (inner/outer layers for different materials)
-   - Armor archetypes (detailed specifications for different armor configurations)
-   - Armor types (categorization of specific armor styles)
+## Recent Findings & Changes
 
-2. **Attachment System**: The game uses specific attachment slots for equipment, which will be essential for our gear management.
+1. **Enhanced Stats Collection**: We've successfully implemented comprehensive stat collection for all gear items:
+   - Defensive stats (Stab/Slash/Blunt)
+   - Stealth stats (Visibility/Conspicuousness/Noise)
+   - Social stats (Charisma)
+   - Physical properties (Weight/Condition/Cleanliness)
+   
+2. **Material Detection**: Implemented reliable material type detection for different gear:
+   - Plate armor detection based on naming patterns
+   - Chainmail detection for mail items
+   - Leather and cloth material identification
+   - Comprehensive categorization for all 16 armor slots
 
-3. **Layering Mechanics**: The game data confirms our understanding of the layering system, with clear distinctions between:
-   - Base layer (body)
-   - Inner layers (cloth_inner, chainmail_inner, plate_inner)
-   - Outer layers (cloth_outer, chainmail_outer, plate_outer)
-   - Decorative elements (decoration_inner, decoration_outer)
-   - Underwear (base clothing)
+3. **Hotkey Configuration**: Updated hotkeys to support gear functionality:
+   - F6: Scan and log inventory items (previously F5)
+   - F7: Optimize for maximum armor protection
+   - F8: Optimize for maximum stealth
+   - F9: Optimize for maximum charisma
 
-These findings validate our implementation approach and provide the necessary details to develop accurate gear categorization and optimization algorithms.
+4. **Command Structure**: Implemented comprehensive command system:
+   - Equipment optimization commands
+   - Preset management (save/load/list/delete)
+   - Configuration options for optimization priorities
 
 ## Next Steps
 
-1. 📝 Extend our item detection mechanisms to use the KCD2 equipment classification system
-2. 📝 Implement comprehensive categorization system for all gear types based on the game data
-3. 📝 Create layering compatibility validation system
-4. 📝 Implement gear stats analysis system
-5. 📝 Develop optimization algorithms for Protection, Stealth, and Charisma
-6. 📝 Create a command interface for the optimization features
+1. 📝 Complete implementation of optimization algorithms in GearOptimizer.lua
+2. 📝 Add layering enforcement to ensure proper gear dependencies
+3. 📝 Implement weighted scoring for different optimization scenarios
+4. 📝 Create preset saving and loading functionality
+5. 📝 Implement auto-detection of combat/stealth situations
+6. 📝 Add UI elements for easier interaction with the mod
+7. 📝 Create comprehensive testing scenarios for all core features
 
 ## Challenges and Solutions
 
-### Challenge: Identifying Equipped Items
-The game doesn't provide a direct way to detect which items are equipped. The existing mod uses a weight-based detection system.
+### Challenge: Implementing Proper Layering Logic
+To ensure that armor is equipped in the correct order, we need to carefully manage the layering dependencies.
 
-**Solution**: We'll extend this approach to work with all types of gear by tracking weight differences for each gear slot, using our improved understanding of the game's equipment system.
+**Solution**: Implemented layering rules in GearSwitcher and Equipment classes to ensure that necessary base layers are equipped before outer layers.
 
-### Challenge: Item Categorization
-The game has many different items, and we need to properly categorize them for our optimization algorithms.
+### Challenge: Balancing Multiple Optimization Goals
+Optimizing for different scenarios requires balancing multiple competing stats.
 
-**Solution**: Leverage the game's own categorization system from the data files to accurately classify items based on their types, archetypes, material, and body parts.
+**Solution**: Created configurable weighting system that allows different priorities for various stats based on the optimization goal (armor, stealth, charisma).
 
-### Challenge: Layering Compatibility
-We need to ensure that optimized loadouts respect the game's layering requirements.
+### Challenge: Efficient Gear Switching
+Switching between different gear loadouts needs to be efficient and handle dependencies.
 
-**Solution**: Use the body_layer.tbl data to create validation rules that enforce proper layering during optimization.
-
-### Challenge: Balancing Stats
-For stealth and charisma modes, we need to balance multiple competing stats.
-
-**Solution**: Implement a weighted scoring system that allows configurable priorities between stats, using the game's own stat categories as a foundation.
+**Solution**: Implemented GearSwitcher class that manages the sequential unequipping and equipping of items in the correct order.
 
 ## Future Considerations
 
-1. Adding UI elements to make the mod more user-friendly
+1. Adding support for custom gear mods
 2. Creating visual indicators for the current optimization mode
-3. Making the system compatible with other equipment mods
-4. Adding support for saved equipment profiles for different situations
+3. Adding contextual awareness for automatic optimization based on situation
+4. Creating a more advanced UI for preset management
 
 ---
 

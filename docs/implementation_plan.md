@@ -60,20 +60,29 @@ KCD2 has distinct armor material categories with inherent tradeoffs:
 
 ## Implementation Strategy
 
-### Phase 1: Foundation & Analysis
+### Phase 1: Foundation & Inventory Logging
 
-1. **Extend Item Detection Mechanism**
+1. **Implement Inventory Scanning & Logging**
+   - Create a comprehensive inventory scanning system that logs all gear items
+   - Implement detailed stat logging for each item (defensive, stealth, social stats)
+   - Add commands to trigger inventory scans for testing and debugging
+   - Verify access to all required item stats and properties
+   - Create a reference system to confirm we can detect item types and materials
+
+2. **Extend Item Detection Mechanism**
    - Enhance the existing weight-based detection to work with all gear types
    - Create new ItemCategory definitions for all 16 armor slots and their variations
    - Implement a comprehensive gear scanning system that respects layering requirements
    - Detect and catalog underlying dependencies (e.g., which items require specific underlayers)
 
-2. **Gear Stats Analysis**
+3. **Gear Stats Analysis**
    - Create a system to analyze and store complete gear statistics (all defensive, stealth, and social stats)
    - Implement methods to read the three defense values (Stab, Slash, Blunt)
    - Add analysis for stealth properties (Visibility, Conspicuousness, Noise)
    - Include Charisma, Weight, Condition, and cleanliness tracking
    - Build a gear database that tracks all items in inventory and their attributes
+
+Refer to [Phase 1: Inventory Logging Implementation Plan](phase1_inventory_logging.md) for detailed implementation steps.
 
 ### Phase 2: Core Optimization Features
 
@@ -266,25 +275,30 @@ end
 
 ## Project Timeline
 
-1. **Phase 1: Foundation (3-4 weeks)**
+1. **Phase 1: Foundation & Inventory Logging (2-3 weeks)**
+   - Implement inventory scanning and comprehensive stat logging
+   - Verify access to all required item stats and properties
    - Complete system analysis and armor mechanics documentation
-   - Implement comprehensive gear detection for all 16 slots
-   - Create layering dependency tracking
    - Develop detailed stat tracking mechanisms for all armor properties
 
-2. **Phase 2: Core Features (4-5 weeks)**
+2. **Phase 2: Item Classification & Detection (2-3 weeks)**
+   - Implement comprehensive gear detection for all 16 slots
+   - Create layering dependency tracking
+   - Build material detection and classification system
+
+3. **Phase 3: Core Optimization Features (4-5 weeks)**
    - Implement the three optimization algorithms with layering requirements
    - Create gear swapping functionality that respects dependencies
    - Test and refine core functionality with different gear combinations
 
-3. **Phase 3: User Interface (2-3 weeks)**
+4. **Phase 4: User Interface (2-3 weeks)**
    - Add command system
    - Implement profile management
    - Create configuration options
 
-4. **Phase 4: Advanced Features (3-4 weeks)**
+5. **Phase 5: Advanced Features (3-4 weeks)**
    - Add situation detection
    - Implement compatibility enhancements
    - Conduct extensive testing
 
-Total estimated timeline: 12-16 weeks for full implementation
+Total estimated timeline: 13-18 weeks for full implementation

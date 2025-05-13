@@ -1,0 +1,66 @@
+name: Tests Coverage Report
+
+on:
+  push:
+    branches: [main]
+    paths: ["src/**", "tests/**"]
+
+jobs:
+  coverage:
+    name: Tests Coverage
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate coverage report
+        run: make test-coverage-report
+
+      - name: Generate tap report
+        run: make test-tap-html-report
+
+      - name: Upload report artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-reports
+          path: |
+            coverage_tests_report.html
+            tap_tests_report.html
+
+      - name: Extract Coverage Percentage
+        id: coverage
+        run: |
+          source ./coverage.env
+          echo "percentage=$percentage" >> $GITHUB_OUTPUT
+
+      - name: Generate Coverage Badge
+        uses: schneegans/dynamic-badges-action@v1.7.0
+        with:
+          auth: ${{ secrets.GIST_SECRET }}
+          gistID: a6eccd074fae4e9bc56ab2e8b0eb579f
+          filename: kcd2_helmet_off_dialog_badges_${{ github.run_id }}.svg
+          label: Tests Coverage
+          message: ${{ steps.coverage.outputs.percentage }}%
+          color: green
+          style: flat-square
+          valColorRange: ${{ steps.coverage.outputs.percentage }}
+          maxColorRange: 100
+          minColorRange: 0
+
+      - name: Update Badges
+        run: |
+          sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' readme.md
+          sed -i 's|actions/runs/[0-9]\+|actions/runs/${{ github.run_id }}|' documentation/badges.md
+
+          # Update badge filename and add cache-busting parameter
+          sed -i 's|kcd2_helmet_off_dialog_badges[^/?]*\(\.svg\)\([^)]*\)|kcd2_helmet_off_dialog_badges_${{ github.run_id }}\1\2\&cache=${{ github.run_id }}|' readme.md
+          sed -i 's|kcd2_helmet_off_dialog_badges[^/?]*\(\.svg\)\([^)]*\)|kcd2_helmet_off_dialog_badges_${{ github.run_id }}\1\2\&cache=${{ github.run_id }}|' documentation/badges.md
+
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+
+          git add readme.md documentation/badges.md
+          git commit -m "Update coverage badge link [skip ci]" || echo "No changes"
+
+          git push
