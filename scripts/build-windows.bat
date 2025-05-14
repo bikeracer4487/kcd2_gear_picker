@@ -92,8 +92,16 @@ echo Creating PAK file ("%PAK_FILE%")...
 REM Get current directory to return to it later
 pushd "%DATA_DIR%"
 
-REM Create the PAK file using 7-Zip
-"%SEVENZIP_PATH%" a -tzip -mx9 "%MOD_ID%.pak" *
+REM Create a list of files to pack
+echo Creating file list...
+dir /s /b /a-d | findstr /v "\.pak$" > filelist.txt
+
+REM Create the PAK file using zip format with specific options for game compatibility
+echo Packing files into PAK file...
+"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mx=9 -mfb=258 -mpass=15 "%MOD_ID%.pak" @filelist.txt
+
+REM Delete the temporary file list
+del filelist.txt
 
 REM Return to previous directory
 popd
@@ -127,7 +135,12 @@ set "ZIP_FILE=%BUILD_DIR%\%MOD_ID%_%MOD_VERSION%.zip"
 echo Creating final ZIP file ("%ZIP_FILE%")...
 
 pushd "%TEMP_DIR%"
-"%SEVENZIP_PATH%" a -tzip -mx9 "%ZIP_FILE%" "%MOD_ID%"
+REM Use the same zip parameters as for the PAK file to ensure consistency
+"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mx=9 -mfb=258 -mpass=15 "%ZIP_FILE%" "%MOD_ID%"
+
+REM Verify zip content
+echo Verifying ZIP file contents...
+"%SEVENZIP_PATH%" l "%ZIP_FILE%"
 popd
 
 echo.
