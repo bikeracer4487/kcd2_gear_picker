@@ -92,13 +92,18 @@ echo Creating PAK file ("%PAK_FILE%")...
 REM Get current directory to return to it later
 pushd "%DATA_DIR%"
 
-REM Create a list of files to pack
+REM Create a list of files to pack (excluding any existing PAK files)
 echo Creating file list...
 dir /s /b /a-d | findstr /v "\.pak$" > filelist.txt
 
-REM Create the PAK file using zip format with specific options for game compatibility
-echo Packing files into PAK file...
-"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mx=9 -mfb=258 -mpass=15 "%MOD_ID%.pak" @filelist.txt
+REM Count total files to pack
+for /f %%A in ('type filelist.txt ^| find /c /v ""') do set "TOTAL_FILES=%%A"
+echo Packing %TOTAL_FILES% files into PAK...
+
+REM Use standard zip with options -r -9 -X to match the archived mod
+echo Creating the PAK file using compatible zip format...
+REM Note: We use 7-Zip but with parameters that create compatible zip format
+"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mfb=128 -mpass=10 -mx=9 "%MOD_ID%.pak" @filelist.txt
 
 REM Delete the temporary file list
 del filelist.txt
@@ -135,8 +140,9 @@ set "ZIP_FILE=%BUILD_DIR%\%MOD_ID%_%MOD_VERSION%.zip"
 echo Creating final ZIP file ("%ZIP_FILE%")...
 
 pushd "%TEMP_DIR%"
-REM Use the same zip parameters as for the PAK file to ensure consistency
-"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mx=9 -mfb=258 -mpass=15 "%ZIP_FILE%" "%MOD_ID%"
+REM Use the same zip parameters that match the archived mod
+echo Creating the final ZIP file...
+"%SEVENZIP_PATH%" a -tzip -mm=Deflate -mfb=128 -mpass=10 -mx=9 "%ZIP_FILE%" "%MOD_ID%"
 
 REM Verify zip content
 echo Verifying ZIP file contents...
@@ -182,16 +188,60 @@ set "MODS_DIR=%KCD2_DIR%\Mods"
 echo Setting up mods directory at: "%MODS_DIR%"
 if not exist "%MODS_DIR%" mkdir "%MODS_DIR%"
 
-REM Clean existing mod files before deployment
+REM Stop the game process if it's running
+echo Checking if KCD2 is running...
+taskkill /F /IM "KingdomCome.exe" 2>nul
+if %ERRORLEVEL% EQU 0 (
+    echo KCD2 was running and has been closed.
+    timeout /t 2 > nul
+) else (
+    echo KCD2 is not running or could not be closed.
+)
+
+REM Clean existing mod files before deployment - thorough cleanup to prevent issues
 set "MOD_DESTINATION=%MODS_DIR%\%MOD_ID%"
+
+REM Check for residual PAK files in other locations that might interfere
+if exist "%MODS_DIR%\Data\%MOD_ID%.pak" (
+    echo Removing leftover PAK file from incorrect location...
+    del /F /Q "%MODS_DIR%\Data\%MOD_ID%.pak"
+)
+
 if exist "%MOD_DESTINATION%" (
     echo Removing existing mod files from "%MOD_DESTINATION%"...
     rmdir /s /q "%MOD_DESTINATION%"
+    
+    REM Verify the directory was actually deleted
+    if exist "%MOD_DESTINATION%" (
+        echo WARNING: Could not fully remove "%MOD_DESTINATION%". Trying again...
+        timeout /t 1 > nul
+        rmdir /s /q "%MOD_DESTINATION%"
+    )
+)
+
+REM Additional cleanup to ensure PAK file isn't causing issues
+set "MOD_PAK_FILE=%MOD_DESTINATION%\Data\%MOD_ID%.pak"
+if exist "%MOD_PAK_FILE%" (
+    echo Removing existing PAK file from "%MOD_PAK_FILE%"...
+    del /F /Q "%MOD_PAK_FILE%"
 )
 
 REM Extract mod to mods folder
 echo Extracting new mod files...
 "%SEVENZIP_PATH%" x -o"%MODS_DIR%" -y "%ZIP_FILE%"
+
+REM Verify deployment was successful
+if not exist "%MOD_DESTINATION%" (
+    echo ERROR: Mod directory was not created at "%MOD_DESTINATION%"
+    exit /b 1
+)
+
+if not exist "%MOD_DESTINATION%\Data\%MOD_ID%.pak" (
+    echo ERROR: PAK file was not deployed correctly to "%MOD_DESTINATION%\Data\%MOD_ID%.pak"
+    exit /b 1
+)
+
+echo Successfully deployed new version of %MOD_ID% mod
 
 REM Update mod_order.txt
 set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
@@ -205,21 +255,29 @@ if not exist "%MOD_ORDER_FILE%" (
 
 REM Check if mod is already in the file
 echo Checking if mod is already in mod_order.txt...
-findstr /b /e /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
+
+REM Use findstr with proper options to find exact matches
+findstr /x /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
 if %ERRORLEVEL% neq 0 (
-    REM Check if file ends with newline
-    for /f "usebackq delims=" %%a in ("%MOD_ORDER_FILE%") do set "LAST_LINE=%%a"
-    
-    REM Add a newline first if needed
+    REM Ensure file has proper ending
     setlocal EnableDelayedExpansion
-    for %%a in ("%MOD_ORDER_FILE%") do set "size=%%~za"
-    if !size! gtr 0 (
-        echo.>> "%MOD_ORDER_FILE%"
-    )
     
-    REM Now append mod ID
-    echo Appending mod ID to mod_order.txt...
+    REM Create a temporary file for processing
+    set "TEMP_ORDER_FILE=%TEMP%\temp_mod_order.txt"
+    
+    REM Remove any empty lines at the end of file
+    type "%MOD_ORDER_FILE%" | findstr /v /r "^$" > "%TEMP_ORDER_FILE%"
+    
+    REM Copy back to original, ensuring a single newline at end
+    copy /y "%TEMP_ORDER_FILE%" "%MOD_ORDER_FILE%" >nul
+    
+    REM Now append mod ID with a single newline
+    echo.>> "%MOD_ORDER_FILE%"
     echo %MOD_ID%>> "%MOD_ORDER_FILE%"
+    
+    REM Clean up temp file
+    del "%TEMP_ORDER_FILE%"
+    
     echo Added %MOD_ID% to mod_order.txt
 ) else (
     echo Mod already exists in mod_order.txt
