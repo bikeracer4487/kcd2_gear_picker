@@ -294,13 +294,6 @@ if not exist "%MOD_ORDER_FILE%" (
     goto :after_mod_order_update
 )
 
-REM Save current error level before the findstr command
-set "CURRENT_ERROR_LEVEL=%ERRORLEVEL%"
-
-REM Use findstr with proper options to find exact matches
-findstr /x /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul 2>&1
-set "FINDSTR_ERROR_LEVEL=%ERRORLEVEL%"
-
 REM Check if file is empty
 for %%A in ("%MOD_ORDER_FILE%") do set "FILE_SIZE=%%~zA"
 if %FILE_SIZE% EQU 0 (
@@ -310,35 +303,10 @@ if %FILE_SIZE% EQU 0 (
     goto :after_mod_order_update
 )
 
-if %FINDSTR_ERROR_LEVEL% neq 0 (
-    REM We need to add the mod to the file
-    echo "Mod not found in mod_order.txt, adding now..."
-    
-    REM Create a temporary file for processing
-    set "TEMP_ORDER_FILE=%TEMP%\temp_mod_order.txt"
-    
-    REM Remove any empty lines at the end of file (safely)
-    type "%MOD_ORDER_FILE%" > "%TEMP_ORDER_FILE%" 2>nul
-    if exist "%TEMP_ORDER_FILE%" (
-        REM Now append mod ID with a single newline
-        echo.>> "%TEMP_ORDER_FILE%"
-        echo %MOD_ID%>> "%TEMP_ORDER_FILE%"
-        
-        REM Copy back to original (create backup first in case something goes wrong)
-        copy "%MOD_ORDER_FILE%" "%MOD_ORDER_FILE%.bak" >nul 2>&1
-        copy /y "%TEMP_ORDER_FILE%" "%MOD_ORDER_FILE%" >nul 2>&1
-        
-        REM Clean up temp file
-        del "%TEMP_ORDER_FILE%" >nul 2>&1
-        
-        echo Added %MOD_ID% to mod_order.txt
-    ) else (
-        echo "WARNING: Could not create temp file. Manual intervention required."
-        echo %MOD_ID%>> "%MOD_ORDER_FILE%"
-    )
-) else (
-    echo Mod already exists in mod_order.txt
-)
+REM Use PowerShell to check if mod exists and add it if needed
+REM This properly handles line breaks and exact matches
+powershell -Command "$file = '%MOD_ORDER_FILE%'; $modId = '%MOD_ID%'; $content = Get-Content -Path $file -Raw; $lines = $content -split '\r?\n' | Where-Object { $_ -ne '' }; if ($lines -contains $modId) { Write-Host 'Mod already exists in mod_order.txt'; exit 0 } else { Write-Host 'Mod not found in mod_order.txt, adding now...'; $newContent = ($lines -join [Environment]::NewLine) + [Environment]::NewLine + $modId + [Environment]::NewLine; Set-Content -Path $file -Value $newContent -NoNewline; Write-Host 'Added ' + $modId + ' to mod_order.txt'; exit 0 }"
+
 :after_mod_order_update
 
 echo.
