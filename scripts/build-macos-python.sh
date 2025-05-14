@@ -149,14 +149,43 @@ fi
 echo ""
 echo "Deploying mod to KCD2..."
 
-# Default KCD2 path for macOS
+# Default KCD2 paths for macOS - check multiple common locations
 DEFAULT_KCD2_DIR="$HOME/Library/Application Support/Steam/steamapps/common/KingdomComeDeliverance2"
+ALT_KCD2_DIR="/Applications/Steam/steamapps/common/KingdomComeDeliverance2"
+ALT2_KCD2_DIR="$HOME/Documents/Steam/steamapps/common/KingdomComeDeliverance2"
+ALT3_KCD2_DIR="$HOME/Steam/steamapps/common/KingdomComeDeliverance2"
 
 # Determine KCD2 directory
 KCD2_DIR="$DEFAULT_KCD2_DIR"
+
+# If a path is explicitly provided, use it
 if [ ! -z "$2" ]; then
     KCD2_DIR="$2"
+    echo "Using user-provided game directory: [$KCD2_DIR]"
+else
+    # Auto-detection of installation directory
+    echo "Attempting to auto-detect KCD2 installation directory..."
+    
+    if [ -d "$DEFAULT_KCD2_DIR" ]; then
+        KCD2_DIR="$DEFAULT_KCD2_DIR"
+        echo "Found KCD2 at default path: [$KCD2_DIR]"
+    elif [ -d "$ALT_KCD2_DIR" ]; then
+        KCD2_DIR="$ALT_KCD2_DIR"
+        echo "Found KCD2 at alternative path 1: [$KCD2_DIR]"
+    elif [ -d "$ALT2_KCD2_DIR" ]; then
+        KCD2_DIR="$ALT2_KCD2_DIR"
+        echo "Found KCD2 at alternative path 2: [$KCD2_DIR]"
+    elif [ -d "$ALT3_KCD2_DIR" ]; then
+        KCD2_DIR="$ALT3_KCD2_DIR"
+        echo "Found KCD2 at alternative path 3: [$KCD2_DIR]"
+    else
+        echo "WARNING: Could not auto-detect KCD2 installation directory."
+        echo "Using default directory: [$KCD2_DIR]"
+        echo "If this is incorrect, please specify the path manually."
+    fi
 fi
+
+echo "Debug: Final KCD2_DIR is set to: [$KCD2_DIR]"
 
 echo "Checking for KCD2 at: $KCD2_DIR"
 if [ ! -d "$KCD2_DIR" ]; then
@@ -213,24 +242,42 @@ fi
 echo "Successfully deployed new version of $MOD_ID mod"
 
 # Update mod_order.txt
-MOD_ORDER_FILE="$MODS_DIR/mod_order.txt"
+echo "Updating mod_order.txt..."
+
+# Explicitly use the mod_order.txt in the game directory provided by KCD2_DIR
+MOD_ORDER_FILE="$KCD2_DIR/Mods/mod_order.txt"
 echo "Checking mod_order.txt at: $MOD_ORDER_FILE"
+
 if [ ! -f "$MOD_ORDER_FILE" ]; then
     echo "Writing new mod_order.txt file..."
     echo "$MOD_ID" > "$MOD_ORDER_FILE"
     echo "Created mod_order.txt and added $MOD_ID"
 else
-    # Check if mod is already in the file
-    echo "Checking if mod is already in mod_order.txt..."
-    if ! grep -q "^$MOD_ID$" "$MOD_ORDER_FILE"; then
-        # Remove trailing blank lines
-        sed -i '' -e :a -e '/^\n*$/{$d;N;ba' -e '}' "$MOD_ORDER_FILE"
-        # Add newline and mod_id
-        echo "" >> "$MOD_ORDER_FILE"
-        echo "$MOD_ID" >> "$MOD_ORDER_FILE"
-        echo "Added $MOD_ID to mod_order.txt"
+    # Check if file is empty
+    if [ ! -s "$MOD_ORDER_FILE" ]; then
+        echo "Empty mod_order.txt found, adding mod to file..."
+        echo "$MOD_ID" > "$MOD_ORDER_FILE"
+        echo "Added $MOD_ID to empty mod_order.txt"
     else
-        echo "Mod already exists in mod_order.txt"
+        # Check if mod is already in the file
+        echo "Checking if mod is already in mod_order.txt..."
+        if ! grep -q "^$MOD_ID$" "$MOD_ORDER_FILE"; then
+            echo "Mod not found in mod_order.txt, adding now..."
+            
+            # Create a backup first
+            cp "$MOD_ORDER_FILE" "${MOD_ORDER_FILE}.bak" 2>/dev/null
+            
+            # Remove trailing blank lines and add mod_id
+            # Use a more compatible approach
+            awk 'NF > 0' "$MOD_ORDER_FILE" > "${MOD_ORDER_FILE}.tmp"
+            echo "" >> "${MOD_ORDER_FILE}.tmp"
+            echo "$MOD_ID" >> "${MOD_ORDER_FILE}.tmp"
+            mv "${MOD_ORDER_FILE}.tmp" "$MOD_ORDER_FILE"
+            
+            echo "Added $MOD_ID to mod_order.txt"
+        else
+            echo "Mod already exists in mod_order.txt"
+        fi
     fi
 fi
 

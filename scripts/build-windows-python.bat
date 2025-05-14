@@ -151,14 +151,43 @@ echo DEBUG: Script argument 2 is: [%2]
 set "ARG2=%~2"
 echo DEBUG: ARG2 (after %~2) is: [%ARG2%]
 
-REM Default KCD2 path
+REM Default KCD2 paths - check multiple common locations
 set "DEFAULT_KCD2_DIR=C:\Program Files (x86)\Steam\steamapps\common\KingdomComeDeliverance2"
+set "ALT_KCD2_DIR=D:\Steam\steamapps\common\KingdomComeDeliverance2"
+set "ALT2_KCD2_DIR=C:\Program Files\Steam\steamapps\common\KingdomComeDeliverance2"
+set "ALT3_KCD2_DIR=E:\Steam\steamapps\common\KingdomComeDeliverance2"
 
 REM Determine KCD2 directory
 set "KCD2_DIR=%DEFAULT_KCD2_DIR%"
-if not "%ARG2%"=="" set "KCD2_DIR=%ARG2%"
 
-echo DEBUG: KCD2_DIR is set to: ["%KCD2_DIR%"]
+REM If a path is explicitly provided, use it
+if not "%ARG2%"=="" (
+    set "KCD2_DIR=%ARG2%"
+    echo Using user-provided game directory: ["%KCD2_DIR%"]
+) else (
+    REM Auto-detection of installation directory
+    echo Attempting to auto-detect KCD2 installation directory...
+    
+    if exist "%DEFAULT_KCD2_DIR%" (
+        set "KCD2_DIR=%DEFAULT_KCD2_DIR%"
+        echo Found KCD2 at default path: ["%KCD2_DIR%"]
+    ) else if exist "%ALT_KCD2_DIR%" (
+        set "KCD2_DIR=%ALT_KCD2_DIR%"
+        echo Found KCD2 at alternative path 1: ["%KCD2_DIR%"]
+    ) else if exist "%ALT2_KCD2_DIR%" (
+        set "KCD2_DIR=%ALT2_KCD2_DIR%"
+        echo Found KCD2 at alternative path 2: ["%KCD2_DIR%"]
+    ) else if exist "%ALT3_KCD2_DIR%" (
+        set "KCD2_DIR=%ALT3_KCD2_DIR%"
+        echo Found KCD2 at alternative path 3: ["%KCD2_DIR%"]
+    ) else (
+        echo WARNING: Could not auto-detect KCD2 installation directory.
+        echo Using default directory: ["%KCD2_DIR%"]
+        echo If this is incorrect, please specify the path manually.
+    )
+)
+
+echo Debug: Final KCD2_DIR is set to: ["%KCD2_DIR%"]
 
 echo Checking for KCD2 at: "%KCD2_DIR%"
 if not exist "%KCD2_DIR%\" (
@@ -230,8 +259,23 @@ if not exist "%MOD_DESTINATION%\Data\%MOD_ID%.pak" (
 echo Successfully deployed new version of %MOD_ID% mod
 
 REM Update mod_order.txt
-set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
+echo "Updating mod_order.txt..."
+
+REM Explicitly use the mod_order.txt in the game directory provided by KCD2_DIR
+set "MOD_ORDER_FILE=%KCD2_DIR%\Mods\mod_order.txt"
 echo Checking mod_order.txt at: "%MOD_ORDER_FILE%"
+
+REM Make sure the Mods directory exists
+if not exist "%KCD2_DIR%\Mods" (
+    echo "Creating Mods directory at: %KCD2_DIR%\Mods"
+    mkdir "%KCD2_DIR%\Mods" 2>nul
+    if errorlevel 1 (
+        echo "WARNING: Could not create Mods directory. Check permissions."
+        echo "Skipping mod_order.txt update."
+        goto :after_mod_order_update
+    )
+)
+
 if not exist "%MOD_ORDER_FILE%" (
     echo Writing new mod_order.txt file...
     echo %MOD_ID%> "%MOD_ORDER_FILE%"
@@ -239,32 +283,59 @@ if not exist "%MOD_ORDER_FILE%" (
     goto :after_mod_order_update
 )
 
-REM Check if mod is already in the file
+REM Check if mod is already in the file - Ensure the file exists first
 echo Checking if mod is already in mod_order.txt...
 
+REM Ensure the file exists and is accessible
+if not exist "%MOD_ORDER_FILE%" (
+    echo "WARNING: mod_order.txt not found at %MOD_ORDER_FILE% - creating new file"
+    echo %MOD_ID%> "%MOD_ORDER_FILE%"
+    echo Created new mod_order.txt and added %MOD_ID%
+    goto :after_mod_order_update
+)
+
+REM Save current error level before the findstr command
+set "CURRENT_ERROR_LEVEL=%ERRORLEVEL%"
+
 REM Use findstr with proper options to find exact matches
-findstr /x /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
-if %ERRORLEVEL% neq 0 (
-    REM Ensure file has proper ending
-    setlocal EnableDelayedExpansion
+findstr /x /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul 2>&1
+set "FINDSTR_ERROR_LEVEL=%ERRORLEVEL%"
+
+REM Check if file is empty
+for %%A in ("%MOD_ORDER_FILE%") do set "FILE_SIZE=%%~zA"
+if %FILE_SIZE% EQU 0 (
+    echo "Empty mod_order.txt found, adding mod to file..."
+    echo %MOD_ID%> "%MOD_ORDER_FILE%"
+    echo Added %MOD_ID% to empty mod_order.txt
+    goto :after_mod_order_update
+)
+
+if %FINDSTR_ERROR_LEVEL% neq 0 (
+    REM We need to add the mod to the file
+    echo "Mod not found in mod_order.txt, adding now..."
     
     REM Create a temporary file for processing
     set "TEMP_ORDER_FILE=%TEMP%\temp_mod_order.txt"
     
-    REM Remove any empty lines at the end of file
-    type "%MOD_ORDER_FILE%" | findstr /v /r "^$" > "%TEMP_ORDER_FILE%"
-    
-    REM Copy back to original, ensuring a single newline at end
-    copy /y "%TEMP_ORDER_FILE%" "%MOD_ORDER_FILE%" >nul
-    
-    REM Now append mod ID with a single newline
-    echo.>> "%MOD_ORDER_FILE%"
-    echo %MOD_ID%>> "%MOD_ORDER_FILE%"
-    
-    REM Clean up temp file
-    del "%TEMP_ORDER_FILE%"
-    
-    echo Added %MOD_ID% to mod_order.txt
+    REM Remove any empty lines at the end of file (safely)
+    type "%MOD_ORDER_FILE%" > "%TEMP_ORDER_FILE%" 2>nul
+    if exist "%TEMP_ORDER_FILE%" (
+        REM Now append mod ID with a single newline
+        echo.>> "%TEMP_ORDER_FILE%"
+        echo %MOD_ID%>> "%TEMP_ORDER_FILE%"
+        
+        REM Copy back to original (create backup first in case something goes wrong)
+        copy "%MOD_ORDER_FILE%" "%MOD_ORDER_FILE%.bak" >nul 2>&1
+        copy /y "%TEMP_ORDER_FILE%" "%MOD_ORDER_FILE%" >nul 2>&1
+        
+        REM Clean up temp file
+        del "%TEMP_ORDER_FILE%" >nul 2>&1
+        
+        echo Added %MOD_ID% to mod_order.txt
+    ) else (
+        echo "WARNING: Could not create temp file. Manual intervention required."
+        echo %MOD_ID%>> "%MOD_ORDER_FILE%"
+    )
 ) else (
     echo Mod already exists in mod_order.txt
 )
