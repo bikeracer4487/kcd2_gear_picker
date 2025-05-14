@@ -112,7 +112,7 @@ for /r "%DATA_DIR%" %%f in (*) do (
     if not "%%~xf"==".pak" del "%%f"
 )
 for /d /r "%DATA_DIR%" %%d in (*) do (
-    rmdir "%%d" 2>nul
+    rmdir /s /q "%%d" 2>nul
 )
 
 REM Create final mod structure
@@ -189,9 +189,22 @@ if not exist "%MOD_ORDER_FILE%" (
     echo Created mod_order.txt and added %MOD_ID%
     goto :after_mod_order_update
 )
+
+REM Check if mod is already in the file
 echo Checking if mod is already in mod_order.txt...
-findstr /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
+findstr /b /e /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
 if %ERRORLEVEL% neq 0 (
+    REM Check if file ends with newline
+    for /f "usebackq delims=" %%a in ("%MOD_ORDER_FILE%") do set "LAST_LINE=%%a"
+    
+    REM Add a newline first if needed
+    setlocal EnableDelayedExpansion
+    for %%a in ("%MOD_ORDER_FILE%") do set "size=%%~za"
+    if !size! gtr 0 (
+        echo.>> "%MOD_ORDER_FILE%"
+    )
+    
+    REM Now append mod ID
     echo Appending mod ID to mod_order.txt...
     echo %MOD_ID%>> "%MOD_ORDER_FILE%"
     echo Added %MOD_ID% to mod_order.txt
