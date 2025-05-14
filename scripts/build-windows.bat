@@ -171,7 +171,7 @@ if exist "%MOD_DESTINATION%" (
 
 REM Extract mod to mods folder
 echo Extracting new mod files...
-"%SEVENZIP_PATH%" x -o"%MODS_DIR%" -y "%ZIP_FILE%"
+"%SEVENZIP_PATH%" x "-o%MODS_DIR%" -y "%ZIP_FILE%"
 
 REM Update mod_order.txt
 set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
