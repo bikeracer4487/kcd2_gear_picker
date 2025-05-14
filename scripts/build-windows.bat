@@ -142,16 +142,23 @@ if /i not "%1"=="deploy" goto :end
 echo.
 echo Deploying mod to KCD2...
 
-REM Default KCD2 path
-set "KCD2_DIR=C:\Program Files (x86)\Steam\steamapps\common\KingdomComeDeliverance2"
+echo DEBUG: Script argument 2 is: [%2]
+set "ARG2=%~2"
+echo DEBUG: ARG2 (after %~2) is: [%ARG2%]
 
-REM Allow custom path as second argument
-if not "%2"=="" set "KCD2_DIR=%~2"
+REM Default KCD2 path
+set "DEFAULT_KCD2_DIR=C:\Program Files (x86)\Steam\steamapps\common\KingdomComeDeliverance2"
+
+REM Determine KCD2 directory
+set "KCD2_DIR=%DEFAULT_KCD2_DIR%"
+if not "%ARG2%"=="" set "KCD2_DIR=%ARG2%"
+
+echo DEBUG: KCD2_DIR is set to: ["%KCD2_DIR%"]
 
 echo Checking for KCD2 at: "%KCD2_DIR%"
-if not exist "%KCD2_DIR%" (
+if not exist "%KCD2_DIR%\" (
     echo ERROR: KCD2 directory not found at "%KCD2_DIR%"
-    echo Please specify the correct path as the second argument.
+    echo Please specify the correct path as the second argument or ensure the default path is correct.
     echo Example: build-windows.bat deploy "D:\Steam\steamapps\common\KingdomComeDeliverance2"
     goto :end
 )
@@ -171,7 +178,7 @@ if exist "%MOD_DESTINATION%" (
 
 REM Extract mod to mods folder
 echo Extracting new mod files...
-"%SEVENZIP_PATH%" x "-o%MODS_DIR%" -y "%ZIP_FILE%"
+"%SEVENZIP_PATH%" x -o"%MODS_DIR%" -y "%ZIP_FILE%"
 
 REM Update mod_order.txt
 set "MOD_ORDER_FILE=%MODS_DIR%\mod_order.txt"
@@ -180,17 +187,18 @@ if not exist "%MOD_ORDER_FILE%" (
     echo Writing new mod_order.txt file...
     echo %MOD_ID%> "%MOD_ORDER_FILE%"
     echo Created mod_order.txt and added %MOD_ID%
-) else (
-    echo Checking if mod is already in mod_order.txt...
-    findstr /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
-    if !ERRORLEVEL! neq 0 (
-        echo Appending mod ID to mod_order.txt...
-        echo %MOD_ID%>> "%MOD_ORDER_FILE%"
-        echo Added %MOD_ID% to mod_order.txt
-    ) else (
-        echo Mod already exists in mod_order.txt
-    )
+    goto :after_mod_order_update
 )
+echo Checking if mod is already in mod_order.txt...
+findstr /c:"%MOD_ID%" "%MOD_ORDER_FILE%" >nul
+if %ERRORLEVEL% neq 0 (
+    echo Appending mod ID to mod_order.txt...
+    echo %MOD_ID%>> "%MOD_ORDER_FILE%"
+    echo Added %MOD_ID% to mod_order.txt
+) else (
+    echo Mod already exists in mod_order.txt
+)
+:after_mod_order_update
 
 echo.
 echo =============================================
