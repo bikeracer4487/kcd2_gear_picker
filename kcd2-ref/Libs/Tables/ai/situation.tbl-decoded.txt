@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/situation.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2136070346
+  Layout Hash ........... 2509227721
+  Table Version ......... 1
+  Line Count ............ 16
+  String Data Size ...... 344
+  Unique String Count ... 16
+  File Size ............. 1524
+  Calculated Line Size .. 72 (rem. 0)
+String Table:
+  [0] situation_gossip
+  [1] situation_lostItem
+  [2] situation_gateToll
+  [3] situation_opilyManzel
+  [4] situation_event_pranyr
+  [5] situation_questSermiri
+  [6] situation_storyteller
+  [7] situation_beggar
+  [8] situation_event_rvacka
+  [9] situation_flutist
+  [10] situation_friendlyFight_audience
+  [11] situation_gossip_bandit
+  [12] situation_event_hlasatel
+  [13] situation_majitelkaLazni
+  [14] watching
+  [15] havirskyTurnaj_announcer

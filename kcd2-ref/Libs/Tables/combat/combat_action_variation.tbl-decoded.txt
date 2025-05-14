@@ -1,0 +1,69 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_variation.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 945105661
+  Layout Hash ........... 3446121200
+  Table Version ......... 30
+  Line Count ............ 175
+  String Data Size ...... 2350
+  Unique String Count ... 55
+  File Size ............. 33178
+  Calculated Line Size .. 176 (rem. 0)
+String Table:
+  [0] CombatIdleVarLoopGen
+  [1] l_longsword+r_longsword+injured+sZ5+rightGuard
+  [2] l_longsword+r_longsword+injured+sZ1+rightGuard
+  [3] l_longsword+r_longsword+injured+sZ2+leftGuard
+  [4] l_longsword+r_longsword+injured+sZ0+leftGuard
+  [5] l_shield+injured+sZ2+leftGuard+r_swords
+  [6] l_shield+injured+sZ1+rightGuard+r_bluntWeapon
+  [7] injured+sZ2+leftGuard+r_bluntWeapon+l_noShieldOrTorch
+  [8] injured+sZ1+rightGuard+r_shortSwords+l_noShieldOrTorch
+  [9] injured+sZ0+leftGuard+r_bluntWeapon+l_noShieldOrTorch
+  [10] injured+sZ1+rightGuard+r_bluntWeapon+l_noShieldOrTorch
+  [11] injured+sZ0+leftGuard+r_shortSwords+l_noShieldOrTorch
+  [12] r_noweapon+injured+sZ2+leftGuard+l_noShield
+  [13] l_shield+injured+sZ2+leftGuard+r_bluntWeapon
+  [14] r_noweapon+injured+sZ1+rightGuard+l_noShield
+  [15] injured+sZ2+leftGuard+r_shortSwords+l_noShieldOrTorch
+  [16] injured+sZ5+rightGuard+r_shortSwords+l_noShieldOrTorch
+  [17] l_shield+injured+sZ0+leftGuard+r_bluntWeapon
+  [18] l_shield+injured+sZ1+rightGuard+r_swords
+  [19] l_shield+injured+sZ5+rightGuard+r_swords
+  [20] r_noweapon+injured+sZ5+rightGuard+l_noShield
+  [21] l_shield+injured+sZ0+leftGuard+r_swords
+  [22] CombatIdleVarGen
+  [23] l_halberd+r_halberd+sZ1+rightGuard
+  [24] l_halberd+r_halberd+sZ5+rightGuard
+  [25] l_halberd+r_halberd+sZ2+leftGuard
+  [26] l_longsword+r_longsword+uncovered_face+sZ5+rightGuard
+  [27] l_longsword+r_longsword+noob+sZ0+leftGuard
+  [28] l_longsword+r_longsword+pro+sZ1+rightGuard
+  [29] l_longsword+r_longsword+sZ1+rightGuard
+  [30] l_longsword+r_longsword+sZ5+rightGuard
+  [31] l_longsword+r_longsword+sZ2+leftGuard
+  [32] l_longsword+r_longsword+sZ0+leftGuard
+  [33] sZ1+rightGuard+r_shortSwords+l_noShieldOrTorch
+  [34] l_shield+sZ5+rightGuard+r_swords
+  [35] r_noweapon+sZ5+rightGuard+l_noShield
+  [36] sZ5+rightGuard+r_shortSwords+l_noShieldOrTorch
+  [37] l_shield+sZ1+rightGuard+r_swords
+  [38] r_noweapon+sZ2+leftGuard+l_noShield
+  [39] sZ0+leftGuard+r_shortSwords+l_noShieldOrTorch
+  [40] sZ1+rightGuard+r_bluntWeapon+l_noShieldOrTorch
+  [41] l_shield+sZ0+leftGuard+r_swords
+  [42] sZ2+leftGuard+r_bluntWeapon+l_noShieldOrTorch
+  [43] sZ2+leftGuard+r_shortSwords+l_noShieldOrTorch
+  [44] sZ0+leftGuard+r_bluntWeapon+l_noShieldOrTorch
+  [45] l_shield+sZ2+leftGuard+r_bluntWeapon
+  [46] l_shield+sZ0+leftGuard+r_bluntWeapon
+  [47] l_shield+sZ1+rightGuard+r_bluntWeapon
+  [48] r_noweapon+sZ1+rightGuard+l_noShield
+  [49] l_shield+sZ2+leftGuard+r_swords
+  [50] CombatIdleVarFBGen
+  [51] l_halberd+r_halberd+exclude_movement+sZ5+rightGuard
+  [52] l_halberd+r_halberd+exclude_movement+sZ2+leftGuard
+  [53] l_halberd+r_halberd+exclude_movement+sZ1+rightGuard
+  [54] exclude_movement+sZ5+rightGuard+r_shortSwords+l_noShieldOrTorch

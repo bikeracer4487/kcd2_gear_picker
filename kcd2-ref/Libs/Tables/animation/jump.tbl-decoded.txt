@@ -1,0 +1,85 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/jump.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 511625702
+  Layout Hash ........... 1998286349
+  Table Version ......... 4
+  Line Count ............ 99
+  String Data Size ...... 1168
+  Unique String Count ... 71
+  File Size ............. 8324
+  Calculated Line Size .. 72 (rem. 0)
+String Table:
+  [0] MotionJump
+  [1] backward
+  [2] backward+l_torch
+  [3] backward+l_torch+r_axe
+  [4] backward+l_torch+r_longsword
+  [5] backward+l_torch+r_mace
+  [6] backward+l_torch+r_sabre
+  [7] backward+l_torch+r_sword
+  [8] backward+r_axe
+  [9] backward+r_longsword
+  [10] backward+r_mace
+  [11] backward+r_sabre
+  [12] backward+r_sword
+  [13] l_torch
+  [14] l_torch+r_axe
+  [15] l_torch+r_longsword
+  [16] l_torch+r_mace
+  [17] l_torch+r_sabre
+  [18] l_torch+r_sword
+  [19] r_axe
+  [20] r_longsword
+  [21] r_mace
+  [22] r_sabre
+  [23] r_sword
+  [24] dash
+  [25] run
+  [26] sprint
+  [27] walk
+  [28] backward+l_bow
+  [29] backward+l_crossbow
+  [30] backward+l_dagger
+  [31] backward+l_halberd+r_halberd
+  [32] backward+l_shield
+  [33] backward+l_shield+r_axe
+  [34] backward+l_shield+r_longsword
+  [35] backward+l_shield+r_mace
+  [36] backward+l_shield+r_sabre
+  [37] backward+l_shield+r_sword
+  [38] backward+r_rifle
+  [39] horse
+  [40] horse+dash
+  [41] horse+dash+l_bow+prime
+  [42] horse+dash+l_crossbow
+  [43] horse+dash+r_rifle
+  [44] horse+l_bow+prime
+  [45] horse+l_crossbow
+  [46] horse+r_rifle
+  [47] horse+run
+  [48] horse+run+l_bow+prime
+  [49] horse+run+l_crossbow
+  [50] horse+run+r_rifle
+  [51] horse+sprint
+  [52] horse+sprint+l_bow+prime
+  [53] horse+sprint+l_crossbow
+  [54] horse+sprint+r_rifle
+  [55] horse+walk
+  [56] horse+walk+l_bow+prime
+  [57] horse+walk+l_crossbow
+  [58] horse+walk+r_rifle
+  [59] l_bow
+  [60] l_bow+prime
+  [61] l_crossbow
+  [62] l_dagger
+  [63] l_halberd+r_halberd
+  [64] l_shield
+  [65] l_shield+r_axe
+  [66] l_shield+r_longsword
+  [67] l_shield+r_mace
+  [68] l_shield+r_sabre
+  [69] l_shield+r_sword
+  [70] r_rifle

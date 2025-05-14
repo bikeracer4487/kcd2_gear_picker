@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/prefab/prefab_phase.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1094146054
+  Layout Hash ........... 1963206541
+  Table Version ......... 1
+  Line Count ............ 71
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1732
+  Calculated Line Size .. 24 (rem. 0)

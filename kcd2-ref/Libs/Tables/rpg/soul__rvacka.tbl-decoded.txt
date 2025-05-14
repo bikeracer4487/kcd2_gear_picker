@@ -1,0 +1,64 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__rvacka.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 24
+  String Data Size ...... 1097
+  Unique String Count ... 50
+  File Size ............. 4197
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] rvacka_firstCzech_3
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_COMMONER_19
+  [3] rvacka_cuman_2
+  [4] Cumans
+  [5] char_GENERIC_MAN_CUMAN_02
+  [6] rvacka_apprentice_3
+  [7] char_GENERIC_MAN_COMMONER_11
+  [8] rvacka_firstCzech_1
+  [9] char_GENERIC_MAN_COMMONER_07
+  [10] rvacka_cuman_3
+  [11] char_GENERIC_MAN_CUMAN_03
+  [12] rvacka_apprentice_1
+  [13] char_GENERIC_MAN_COMMONER_08
+  [14] rvacka_cuman_1
+  [15] char_GENERIC_MAN_CUMAN_01
+  [16] rvacka_girl
+  [17] char_GENERIC_WOMAN_COMMONER_01
+  [18] rvacka_voyeur
+  [19] char_GENERIC_MAN_COMMONER_04
+  [20] rvacka_secondCzech_2
+  [21] char_GENERIC_MAN_COMMONER_23
+  [22] rvacka_neighbour_1
+  [23] char_GENERIC_MAN_COMMONER_24
+  [24] rvacka_neighbour_2
+  [25] char_GENERIC_MAN_COMMONER_25
+  [26] rvacka_player_2
+  [27] char_GENERIC_MAN_COMMONER_02
+  [28] rvacka_drunkard
+  [29] char_OPILEC
+  [30] rvacka_jealous
+  [31] char_GENERIC_MAN_COMMONER_03
+  [32] rvacka_cuman_4
+  [33] char_GENERIC_MAN_CUMAN_04
+  [34] rvacka_player_1
+  [35] char_GENERIC_MAN_COMMONER_01
+  [36] rvacka_secondCzech_1
+  [37] char_GENERIC_MAN_COMMONER_20
+  [38] rvacka_cheater
+  [39] char_GENERIC_MAN_COMMONER_05
+  [40] rvacka_bouncer_2
+  [41] char_VYHAZOVAC_2
+  [42] rvacka_apprentice_2
+  [43] char_GENERIC_MAN_COMMONER_10
+  [44] rvacka_bouncer_1
+  [45] char_VYHAZOVAC
+  [46] rvacka_secondCzech_3
+  [47] char_GENERIC_MAN_COMMONER_26
+  [48] rvacka_firstCzech_2
+  [49] char_GENERIC_MAN_COMMONER_18

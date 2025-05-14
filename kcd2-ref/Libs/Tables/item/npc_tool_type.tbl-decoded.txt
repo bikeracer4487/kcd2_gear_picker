@@ -1,0 +1,41 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/npc_tool_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3797004500
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 27
+  String Data Size ...... 241
+  Unique String Count ... 27
+  File Size ............. 701
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] default
+  [1] axe
+  [2] basket
+  [3] broom
+  [4] bucket
+  [5] cage_left
+  [6] cage_right
+  [7] hammer
+  [8] fishing_rod
+  [9] leather_scraper
+  [10] chicken_tray
+  [11] sack
+  [12] shovel
+  [13] stein
+  [14] tankard
+  [15] washing_stick
+  [16] rasp
+  [17] semifinished_sword
+  [18] treasure_chest
+  [19] hoe
+  [20] rope
+  [21] cleaver
+  [22] knife
+  [23] two_handed_knife
+  [24] meat
+  [25] meal_tray
+  [26] light

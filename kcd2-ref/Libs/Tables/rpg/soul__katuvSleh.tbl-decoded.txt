@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__katuvSleh.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 175
+  Unique String Count ... 8
+  File Size ............. 587
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] katuvSleh_looter
+  [1] kutnohorsko_settlements_sedlec_commonFolk
+  [2] char_NERVOZNI_ZLODEJ
+  [3] katuvSleh_hangman
+  [4] deadBodies
+  [5] char_MRTVY_GAMBLER_KATUV_SLEH
+  [6] katuvSleh_horse
+  [7] animal_wild_neutral

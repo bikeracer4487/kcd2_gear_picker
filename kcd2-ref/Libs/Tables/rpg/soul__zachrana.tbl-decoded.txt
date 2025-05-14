@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zachrana.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 411
+  Unique String Count ... 16
+  File Size ............. 1335
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zachrana_horse_markvart_dream
+  [1] trosecko_settlements_trosky_soldiers_militia
+  [2] zachrana_henry_bloodMaskAndBandages
+  [3] deadBodies
+  [4] zachrana_mrtvola
+  [5] trosecko_settlements_tvrzNebakov_soldiers
+  [6] char_BORES_ZIZKOVA_BANDA
+  [7] zachrana_seeker1
+  [8] char_GENERIC_MAN_COMMONER_01
+  [9] zachrana_seeker2
+  [10] char_GENERIC_MAN_COMMONER_26
+  [11] zachrana_fatherOfHenry
+  [12] players_friends_fatherMartin
+  [13] char_MARTIN_OTEC_JINDRICHA
+  [14] zachrana_stag
+  [15] animal_wild_neutral

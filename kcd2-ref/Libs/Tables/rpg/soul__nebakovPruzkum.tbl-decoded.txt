@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__nebakovPruzkum.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 158
+  Unique String Count ... 7
+  File Size ............. 570
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] placeholder_player_horse
+  [1] test_npcs
+  [2] char_KUN_HERYNK
+  [3] nebakovPruzkum_hertlHorse
+  [4] trosecko_settlements_tvrzNebakov_soldiers
+  [5] nebakovPruzkum_herynk
+  [6] animalCompanions

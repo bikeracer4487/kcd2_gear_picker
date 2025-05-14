@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/document_reward.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1634087195
+  Layout Hash ........... 516410557
+  Table Version ......... 1
+  Line Count ............ 16
+  String Data Size ...... 1656
+  Unique String Count ... 16
+  File Size ............. 2068
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] RPG.AddStatXP(event, soul, "vitality", 500, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
+  [1] RPG.AddStatXP(event, soul, "speech", 500, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
+  [2] RPG.AddStatXP(event, soul, "vitality", 350, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
+  [3] RPG.AddStatXP(event, soul, "strength", 450, oldProgress, newProgress);RPG.NotifyLevelXpGain("strength");
+  [4] RPG.AddStatXP(event, soul, "agility", 250, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
+  [5] RPG.AddStatXP(event, soul, "vitality", 200, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
+  [6] RPG.AddStatXP(event, soul, "speech", 700, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
+  [7] RPG.AddStatXP(event, soul, "speech", 300, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
+  [8] RPG.AddStatXP(event, soul, "speech", 100, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
+  [9] RPG.AddStatXP(event, soul, "vitality", 100, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
+  [10] RPG.AddStatXP(event, soul, "strength", 100, oldProgress, newProgress);RPG.NotifyLevelXpGain("strength");
+  [11] RPG.AddStatXP(event, soul, "agility", 100, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
+  [12] RPG.AddStatXP(event, soul, "agility", 600, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
+  [13] RPG.AddStatXP(event, soul, "strength", 250, oldProgress, newProgress);RPG.NotifyLevelXpGain("strength");
+  [14] RPG.AddStatXP(event, soul, "agility", 400, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
+  [15] RPG.AddStatXP(event, soul, "strength", 500, oldProgress, newProgress);RPG.NotifyLevelXpGain("strength");

@@ -1,0 +1,28 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__budovaniLazni.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 433
+  Unique String Count ... 14
+  File Size ............. 1357
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] budovaniLazni_wagonHorse2
+  [1] kutnohorsko_allies_newBuddies_budovaniLazniCarriage
+  [2] budovaniLazni_drunkard4
+  [3] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_chmelna_budovaniLazniDrunkard
+  [4] char_GENERIC_MAN_SOLDIER_29
+  [5] budovaniLazni_drunkard1
+  [6] char_GENERIC_MAN_SOLDIER_13
+  [7] budovaniLazni_drunkard2
+  [8] char_GENERIC_MAN_SOLDIER_03
+  [9] budovaniLazni_macek
+  [10] char_VOZKA_MACEK
+  [11] budovaniLazni_drunkard3
+  [12] char_GENERIC_MAN_SOLDIER_33
+  [13] budovaniLazni_wagonHorse1

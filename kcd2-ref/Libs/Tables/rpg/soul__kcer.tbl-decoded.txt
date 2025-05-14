@@ -1,0 +1,75 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kcer.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 27
+  String Data Size ...... 1419
+  Unique String Count ... 61
+  File Size ............. 4903
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kcer_man_1
+  [1] kutnohorsko_settlements_certovka_commonFolk_tavern
+  [2] Merchants
+  [3] char_GENERIC_MAN_COMMONER_16
+  [4] kcer_meduza
+  [5] kutnohorsko_settlements_certovka_soldiers_brabantSoldiers
+  [6] char_KUN_MEDUSA
+  [7] kcer_man_2
+  [8] char_GENERIC_MAN_MERCHANT_CZECH_01
+  [9] kcer_kubenka
+  [10] kutnohorsko_allies_newBuddies_kubenka
+  [11] char_KUBENKA
+  [12] kcer_brabantSoldier_5
+  [13] char_PETR_SADLO
+  [14] kcer_man_3
+  [15] kutnohorsko_settlements_certovka_commonFolk_bathhouse
+  [16] char_GENERIC_MAN_COMMONER_13
+  [17] kcer_woman_4
+  [18] kutnohorsko_settlements_certovka_commonFolk_bathhouse_staff
+  [19] char_GENERIC_WOMAN_COMMONER_12
+  [20] kcer_brabantSoldier_1
+  [21] char_URSO_VON_MORGENSTERN
+  [22] kcer_hektor
+  [23] char_KUN_HEKTOR
+  [24] kcer_woman_5
+  [25] char_GENERIC_WOMAN_COMMONER_11
+  [26] kcer_woman_1
+  [27] char_GENERIC_WOMAN_COMMONER_10
+  [28] kcer_kubenkaHorse
+  [29] char_KUN_KUBENKUV
+  [30] kcer_woman_3
+  [31] kutnohorsko_settlements_certovka_commonFolk_tavern_staff
+  [32] char_SENKYRKA_Z_HOSPODY_V_CERTOVCE_2
+  [33] kcer_horse_1
+  [34] kcer_deserter
+  [35] kutnohorsko_enemies_bandits_zikmunduvTaborDefectors
+  [36] Bandits
+  [37] char_DEZERTER_POI_CERTOVKA
+  [38] kcer_horse_3
+  [39] kcer_woman_6
+  [40] char_GENERIC_WOMAN_COMMONER_07
+  [41] kcer_suchyCert
+  [42] kutnohorsko_allies_newBuddies_suchyCert
+  [43] char_SUCHY_CERT
+  [44] kcer_brabantSoldier_3
+  [45] char_BERTA
+  [46] kcer_brabantSoldier_4
+  [47] char_STIKA
+  [48] kcer_brabantSoldier_2
+  [49] char_HANS_ROTTA
+  [50] kcer_woman_8
+  [51] char_GENERIC_WOMAN_COMMONER_09
+  [52] kcer_woman_2
+  [53] char_SENKYRKA_Z_HOSPODY_V_CERTOVCE_1
+  [54] kcer_innkeeper
+  [55] char_HOSPODSKY_TICHACEK
+  [56] kcer_man_4
+  [57] char_GENERIC_MAN_MERCHANT_CZECH_03
+  [58] kcer_woman_7
+  [59] char_MAJITELKA_LAZNI_SMOLKA
+  [60] kcer_horse_2

@@ -1,0 +1,73 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__hlasatel.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 33
+  String Data Size ...... 1344
+  Unique String Count ... 59
+  File Size ............. 5596
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] hlasatel_man_4
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_COMMONER_04
+  [3] hlasatel_man_9
+  [4] char_GENERIC_MAN_COMMONER_09
+  [5] hlasatel_man_12
+  [6] char_GENERIC_MAN_COMMONER_12
+  [7] hlasatel_man_19
+  [8] char_GENERIC_MAN_COMMONER_19
+  [9] hlasatel_man_1
+  [10] char_GENERIC_MAN_COMMONER_01
+  [11] hlasatel_man_16
+  [12] char_GENERIC_MAN_COMMONER_16
+  [13] hlasatel_man_15
+  [14] char_GENERIC_MAN_COMMONER_15
+  [15] hlasatel_man_17
+  [16] char_GENERIC_MAN_COMMONER_17
+  [17] hlasatel_man_21
+  [18] char_GENERIC_MAN_COMMONER_21
+  [19] hlasatel_man_14
+  [20] char_GENERIC_MAN_COMMONER_14
+  [21] hlasatel_man_24
+  [22] char_GENERIC_MAN_COMMONER_24
+  [23] hlasatel_man_25
+  [24] char_GENERIC_MAN_COMMONER_25
+  [25] hlasatel_man_7
+  [26] char_GENERIC_MAN_COMMONER_07
+  [27] hlasatel_man_11
+  [28] char_GENERIC_MAN_COMMONER_11
+  [29] hlasatel_man_3
+  [30] char_GENERIC_MAN_COMMONER_03
+  [31] hlasatel_janHus_man_2
+  [32] hlasatel_man_23
+  [33] char_GENERIC_MAN_COMMONER_23
+  [34] hlasatel_janHus_man_1
+  [35] hlasatel_man_8
+  [36] char_GENERIC_MAN_COMMONER_08
+  [37] hlasatel_man_10
+  [38] char_GENERIC_MAN_COMMONER_10
+  [39] hlasatel_man_2
+  [40] char_GENERIC_MAN_COMMONER_02
+  [41] hlasatel_man_6
+  [42] char_GENERIC_MAN_COMMONER_06
+  [43] hlasatel_man_13
+  [44] char_GENERIC_MAN_COMMONER_13
+  [45] hlasatel_man_5
+  [46] char_GENERIC_MAN_COMMONER_05
+  [47] hlasatel_man_26
+  [48] char_GENERIC_MAN_COMMONER_26
+  [49] hlasatel_sinfulWomen_man_2
+  [50] hlasatel_man_18
+  [51] char_GENERIC_MAN_COMMONER_18
+  [52] hlasatel_sinfulWomen_man_3
+  [53] hlasatel_man_20
+  [54] char_GENERIC_MAN_COMMONER_20
+  [55] hlasatel_sinfulMen_man_3
+  [56] hlasatel_sinfulWomen_man_1
+  [57] hlasatel_sinfulMen_man_1
+  [58] hlasatel_sinfulMen_man_2

@@ -1,0 +1,1599 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk__kcd2.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2181424497
+  Layout Hash ........... 3183551129
+  Table Version ......... 1
+  Line Count ............ 422
+  String Data Size ...... 35092
+  Unique String Count ... 1585
+  File Size ............. 85760
+  Calculated Line Size .. 120 (rem. 0)
+String Table:
+  [0] Featherweight
+  [1] perk_featherweight_name
+  [2] perk_featherweight_desc
+  [3] perk_featherweight_lore_desc
+  [4] perk_like_a_feather
+  [5] Onslaught
+  [6] perk_onslaught_name
+  [7] perk_onslaught_desc
+  [8] perk_onslaught_lore_desc
+  [9] perk_onslaught
+  [10] Cistota pul zdravi_ability
+  [11] Basic law fine
+  [12] Locksmith - thievery
+  [13] replaceme
+  [14] Final offer
+  [15] perk_haggle_secondChance_name
+  [16] perk_haggle_secondChance_desc
+  [17] perk_haggle_secondChance_lore_desc
+  [18] perk_final_offer
+  [19] Steadfast
+  [20] perk_steadfast_name
+  [21] perk_steadfast_desc
+  [22] perk_steadfast_lore_desc
+  [23] perk_steadfast
+  [24] Against all odds
+  [25] perk_against_all_odds_name
+  [26] perk_against_all_odds_desc
+  [27] perk_against_all_odds_lore_desc
+  [28] perk_against_all_odds
+  [29] Bigger they are harder they fall
+  [30] perk_bigger_they_are_harder_they_fall_name
+  [31] perk_bigger_they_are_harder_they_fall_desc
+  [32] perk_bigger_they_are_harder_they_fall_lore_desc
+  [33] perk_bigger_they_are_harder_they_fall
+  [34] Jack of all trades
+  [35] perk_jack_of_all_trades_name
+  [36] perk_jack_of_all_trades_desc
+  [37] perk_jack_of_all_trades_lore_desc
+  [38] perk_jack_of_all_trades
+  [39] Lehka hlava tvrdy zada - kocovina
+  [40] Let'em come! Buff
+  [41] Silent fiddler
+  [42] perk_silent_fiddler_name
+  [43] perk_silent_fiddler_desc
+  [44] perk_silent_fiddler_lore_desc
+  [45] perk_silent_fiddler
+  [46] Train hard, fight easy
+  [47] perk_train_hard_fight_easy_name
+  [48] perk_train_hard_fight_easy_desc
+  [49] perk_train_hard_fight_easy_lore_desc
+  [50] perk_train_hard_fight_easy
+  [51] Resistance
+  [52] perk_resistance_name
+  [53] perk_resistance_desc
+  [54] perk_resistance_lore_desc
+  [55] perk_resistance
+  [56] Master thief
+  [57] perk_master_thief_name
+  [58] perk_master_thief_desc
+  [59] perk_master_thief_lore_desc
+  [60] perk_master_thief
+  [61] Driven by Vengeance
+  [62] perk_driven_by_vengeance_name
+  [63] perk_driven_by_vengeance_desc
+  [64] perk_driven_by_vengeance_lore_desc
+  [65] perk_driven_by_vengeance
+  [66] loyal companion - companion
+  [67] Infantryman meta
+  [68] perk_infantryman_name
+  [69] perk_infantryman_desc
+  [70] perk_infantryman_lore_desc
+  [71] perk_infantryman
+  [72] Water of life
+  [73] perk_water_of_life_name
+  [74] perk_water_of_life_desc
+  [75] perk_water_of_life_lore_desc
+  [76] perk_water_of_life
+  [77] Trafficker
+  [78] Blood of Siegfried
+  [79] perk_blood_of_siegfried_name
+  [80] perk_blood_of_siegfried_desc
+  [81] perk_blood_of_siegfried_lore_desc
+  [82] perk_blood_of_siegfried
+  [83] Grand slam II
+  [84] perk_grand_slam_ii_name
+  [85] perk_grand_slam_ii_desc
+  [86] perk_grand_slam_ii_lore_desc
+  [87] perk_grand_slam_ii
+  [88] Wonders of Nature
+  [89] perk_wonder_of_nature_name
+  [90] perk_wonder_of_nature_desc
+  [91] perk_wonder_of_nature_lore_desc
+  [92] perk_wonder_of_nature
+  [93] Poison specialist
+  [94] perk_poison_specialist_name
+  [95] perk_poison_specialist_desc
+  [96] perk_poison_specialist_lore_desc
+  [97] perk_poison_specialist
+  [98] Revenant
+  [99] perk_revenant_name
+  [100] perk_revenant_desc
+  [101] perk_revenant_lore_desc
+  [102] perk_revenant
+  [103] Tlama plna zubu - companion
+  [104] Hidden pockets
+  [105] perk_hidden_pockets_name
+  [106] perk_hidden_pockets_desc
+  [107] perk_hidden_pockets_lore_desc
+  [108] perk_hidden_pockets
+  [109] attack order - companion
+  [110] Heavy duty
+  [111] perk_heavy_duty_name
+  [112] perk_heavy_duty_desc
+  [113] perk_heavy_duty_lore_desc
+  [114] perk_heavy_duty
+  [115] Wildrider
+  [116] perk_wildrider_name
+  [117] perk_wildrider_desc
+  [118] perk_wildrider_lore_desc
+  [119] perk_wildrider
+  [120] Thief Sight
+  [121] perk_thief_sight_name
+  [122] perk_thief_sight_desc
+  [123] perk_thief_sight_lore_desc
+  [124] perk_thief_sight
+  [125] Masterchef
+  [126] perk_masterchef_name
+  [127] perk_masterchef_desc
+  [128] perk_masterchef_lore_desc
+  [129] perk_masterchef
+  [130] It's a trap!
+  [131] perk_its_a_trap_name
+  [132] perk_its_a_trap_desc
+  [133] perk_its_a_trap_lore_desc
+  [134] perk_its_a_trap
+  [135] Looter - dead bodies loot
+  [136] Tire'em to take'em 
+  [137] perk_tire_em_to_take_em_name
+  [138] perk_tire_em_to_take_em_desc
+  [139] perk_tire_em_to_take_em_lore_desc
+  [140] perk_tire_em_to_take_em
+  [141] Locksmith
+  [142] perk_locksmith_name
+  [143] perk_locksmith_desc
+  [144] perk_locksmith_lore_desc
+  [145] perk_locksmith
+  [146] Black arts apprentice - alchemy
+  [147] Cmuchal
+  [148] perk_cmuchal_name
+  [149] perk_cmuchal_desc
+  [150] perk_cmuchal_lore_desc
+  [151] perk_cmuchal
+  [152] Perfect Vigour
+  [153] perk_perfect_vigour_name
+  [154] perk_perfect_vigour_desc
+  [155] perk_perfect_vigour_lore_desc
+  [156] perk_perfect_vigour
+  [157] Experimental powder
+  [158] perk_experimental_powder_name
+  [159] perk_experimental_powder_desc
+  [160] perk_experimental_powder_lore_desc
+  [161] perk_experimental_powder
+  [162] One Man Army
+  [163] perk_one_man_army_name
+  [164] perk_one_man_army_desc
+  [165] perk_one_man_army_lore_desc
+  [166] perk_one_man_army
+  [167] Swordmakers wisdom - craftsmanship
+  [168] Kaminka
+  [169] perk_kaminka_name
+  [170] perk_kaminka_desc
+  [171] perk_kaminka_lore_desc
+  [172] perk_kaminka
+  [173] Master strike
+  [174] perk_master_strike_name
+  [175] perk_master_strike_desc
+  [176] perk_master_strike_lore_desc
+  [177] perk_master_strike
+  [178] Heracles
+  [179] perk_heracles_name
+  [180] perk_heracles_desc
+  [181] perk_heracles_lore_desc
+  [182] perk_heracles
+  [183] Cushion
+  [184] Pacifist
+  [185] perk_pacifist_name
+  [186] perk_pacifist_desc
+  [187] perk_pacifist_lore_desc
+  [188] perk_pacifist
+  [189] Defender
+  [190] perk_defender_name
+  [191] perk_defender_desc
+  [192] perk_defender_lore_desc
+  [193] perk_defender
+  [194] Iron Harvest
+  [195] perk_iron_harvest_name
+  [196] perk_iron_harvest_desc
+  [197] perk_iron_harvest_lore_desc
+  [198] perk_iron_harvest
+  [199] Vanguard
+  [200] perk_vanguard_name
+  [201] perk_vanguard_desc
+  [202] perk_vanguard_lore_desc
+  [203] perk_vanguard
+  [204] Rytirsky vycvik
+  [205] perk_knight_training_name
+  [206] perk_knight_training_desc
+  [207] perk_knight_training_lore_desc
+  [208] perk_knight_training
+  [209] Hard to kill
+  [210] perk_hard_to_kill_name
+  [211] perk_hard_to_kill_desc
+  [212] perk_hard_to_kill_lore_desc
+  [213] perk_hard_to_kill
+  [214] Flower power
+  [215] perk_flower_power_name
+  [216] perk_flower_power_desc
+  [217] perk_flower_power_lore_desc
+  [218] perk_flower_power
+  [219] Quick escape
+  [220] perk_quick_escape_name
+  [221] perk_quick_escape_desc
+  [222] perk_quick_escape_lore_desc
+  [223] perk_quick_escape
+  [224] Painkiller
+  [225] perk_painkiller_name
+  [226] perk_painkiller_desc
+  [227] perk_painkiller_lore_desc
+  [228] perk_painkiller
+  [229] Trhej - companion
+  [230] Crippling hit II
+  [231] perk_crippling_hit_ii_name
+  [232] perk_crippling_hit_ii_desc
+  [233] perk_crippling_hit_ii_lore_desc
+  [234] perk_crippling_hit_ii
+  [235] Thrasher
+  [236] perk_thrasher_name
+  [237] perk_thrasher_desc
+  [238] perk_thrasher_lore_desc
+  [239] perk_thrasher
+  [240] Night crawler
+  [241] perk_night_crawler_name
+  [242] perk_night_crawler_desc
+  [243] perk_night_crawler_lore_desc
+  [244] perk_night_crawler
+  [245] Dobrej batvat to je zaklad
+  [246] perk_dobrej_batvat_to_je_zaklad_name
+  [247] perk_dobrej_batvat_to_je_zaklad_desc
+  [248] perk_dobrej_batvat_to_je_zaklad_lore_desc
+  [249] perk_dobrej_batvat_to_je_zaklad
+  [250] Finest goods
+  [251] perk_finest_goods_name
+  [252] perk_finest_goods_desc
+  [253] perk_finest_goods_lore_desc
+  [254] perk_finest_goods
+  [255] Cistota pul zdravi
+  [256] perk_cistota_pul_zdravi_name
+  [257] perk_cistota_pul_zdravi_desc
+  [258] perk_cistota_pul_zdravi_lore_desc
+  [259] perk_cistota_pul_zdravi
+  [260] Magister Dimicator
+  [261] perk_magister_dimicator_name
+  [262] perk_magister_dimicator_desc
+  [263] perk_magister_dimicator_lore_desc
+  [264] perk_magister_dimicator
+  [265] Mischief artist
+  [266] perk_mischief_artist_name
+  [267] perk_mischief_artist_desc
+  [268] perk_mischief_artist_lore_desc
+  [269] perk_mischief_artist
+  [270] Na zdravi - leceni
+  [271] Discoverer
+  [272] perk_discoverer_name
+  [273] perk_discoverer_desc
+  [274] perk_discoverer_lore_desc
+  [275] perk_discoverer
+  [276] Henry shot first II
+  [277] perk_henry_shot_first_ii_name
+  [278] perk_henry_shot_first_ii_desc
+  [279] perk_henry_shot_first_ii_lore_desc
+  [280] perk_henry_shot_first_ii
+  [281] Oportunista
+  [282] perk_oportunista_name
+  [283] perk_oportunista_desc
+  [284] perk_oportunista_lore_desc
+  [285] perk_oportunista
+  [286] Totentanz_ability
+  [287] Hunt
+  [288] perk_hunt_name
+  [289] perk_hunt_desc
+  [290] perk_hunt_lore_desc
+  [291] perk_hunt
+  [292] Finesse II
+  [293] perk_finesse_ii_name
+  [294] perk_finesse_ii_desc
+  [295] perk_finesse_ii_lore_desc
+  [296] perk_finesse_ii
+  [297] Basic medicine II
+  [298] perk_basic_medicine_ii_name
+  [299] perk_basic_medicine_ii_desc
+  [300] perk_basic_medicine_ii_lore_desc
+  [301] perk_basic_medicine_ii
+  [302] Wonders of Man
+  [303] perk_wonder_of_man_name
+  [304] perk_wonder_of_man_desc
+  [305] perk_wonder_of_man_lore_desc
+  [306] perk_wonder_of_man
+  [307] Disarm Strike
+  [308] perk_disarm_strike
+  [309] perk_disarm_strike_desc
+  [310] perk_disarm_strike_lore_desc
+  [311] Eagle eye
+  [312] perk_eagle_eye_name
+  [313] perk_eagle_eye_desc
+  [314] perk_eagle_eye_lore_desc
+  [315] perk_eagle_eye
+  [316] Hidden pockets script perk
+  [317] Good Natured - skillcheck bonus
+  [318] Lucky day
+  [319] perk_lucky_day_name
+  [320] perk_lucky_day_desc
+  [321] perk_lucky_day_lore_desc
+  [322] perk_lucky_day
+  [323] Hejkal II
+  [324] perk_ghillie_suit_ii_name
+  [325] perk_ghillie_suit_ii_desc
+  [326] perk_ghillie_suit_ii_lore_desc
+  [327] perk_ghillie_suit_ii
+  [328] Incapable drunk
+  [329] perk_incapable_drunk_name
+  [330] perk_incapable_drunk_desc
+  [331] perk_incapable_drunk_lore_desc
+  [332] perk_incapable_drunk
+  [333] Fast as wind II
+  [334] perk_fast_as_wind_ii_name
+  [335] perk_fast_as_wind_ii_desc
+  [336] perk_fast_as_wind_ii_lore_desc
+  [337] perk_fast_as_wind_ii
+  [338] Shieldbreaker
+  [339] perk_shieldbreaker_name
+  [340] perk_shieldbreaker_desc
+  [341] perk_shieldbreaker_lore_desc
+  [342] perk_shieldbreaker
+  [343] Harvester
+  [344] perk_harvester_name
+  [345] perk_harvester_desc
+  [346] perk_harvester_lore_desc
+  [347] perk_harvester
+  [348] Dreaded warrior II
+  [349] perk_dreaded_warrior_ii_name
+  [350] perk_dreaded_warrior_ii_desc
+  [351] perk_dreaded_warrior_ii_lore_desc
+  [352] perk_dreaded_warrior_ii
+  [353] Fast as wind - companion
+  [354] Spiteful creature 
+  [355] perk_spiteful_creature_name
+  [356] perk_spiteful_creature_desc
+  [357] perk_spiteful_creature_lore_desc
+  [358] perk_spiteful_creature
+  [359] Through and through I
+  [360] perk_through_and_through_name
+  [361] perk_through_and_through_desc
+  [362] perk_through_and_through_lore_desc
+  [363] perk_through_and_through
+  [364] Kurzkampf II
+  [365] perk_kurzkampf_ii_name
+  [366] perk_kurzkampf_ii_desc
+  [367] perk_kurzkampf_ii_lore_desc
+  [368] perk_kurzkampf_ii
+  [369] Feint
+  [370] perk_feint_name
+  [371] perk_feint_desc
+  [372] perk_feint_lore_desc
+  [373] perk_feint
+  [374] Militia training
+  [375] perk_militia_training_name
+  [376] perk_militia_training_desc
+  [377] perk_militia_training_lore_desc
+  [378] perk_militia_training
+  [379] Enthusiast
+  [380] perk_enthusiast_name
+  [381] perk_enthusiast_desc
+  [382] perk_enthusiast_lore_desc
+  [383] perk_enthusiast
+  [384] Wonders of Beasts
+  [385] perk_wonder_of_beasts_name
+  [386] perk_wonder_of_beasts_desc
+  [387] perk_wonder_of_beasts_lore_desc
+  [388] perk_wonder_of_beasts
+  [389] They will never know
+  [390] perk_they_will_never_know_name
+  [391] perk_they_will_never_know_desc
+  [392] perk_they_will_never_know_lore_desc
+  [393] perk_they_will_never_know
+  [394] Sagittarius
+  [395] perk_sagittarius_name
+  [396] perk_sagittarius_desc
+  [397] perk_sagittarius_lore_desc
+  [398] perk_sagittarius
+  [399] Tlama pln? zub? - companion
+  [400] Purple haze II
+  [401] perk_purple_haze_ii_name
+  [402] perk_purple_haze_ii_desc
+  [403] perk_purple_haze_ii_lore_desc
+  [404] perk_purple_haze_ii
+  [405] Totentanz
+  [406] perk_totentanz_name
+  [407] perk_totentanz_desc
+  [408] perk_totentanz_lore_desc
+  [409] perk_totentanz
+  [410] Combo Leg destroyer meta
+  [411] Combo Knock Knock meta
+  [412] Combo Lower Left Halberd
+  [413] Combo Lower Right Halberd
+  [414] Combo Stomachache Halberd meta
+  [415] Combo Get back up Halberd meta
+  [416] Combo Hammer Unarmed meta
+  [417] Combo Backhand Unarmed meta
+  [418] Combo Zvedak loktem Unarmed
+  [419] Combo Strih Unarmed meta
+  [420] Combo Left Hook Unarmed meta
+  [421] Combo Direct Unarmed meta
+  [422] Combo Narazeni Unarmed meta
+  [423] Combo Prehoz Unarmed
+  [424] Combo Knock Knock
+  [425] Combo Knee cut
+  [426] Combo Hammer Unarmed
+  [427] Combo Kurtzhau
+  [428] Combo Blunt
+  [429] Combo Stomachache Halberd
+  [430] Combo Backhand Unarmed
+  [431] Combo Push away
+  [432] Combo Mittle high
+  [433] Combo Flying man
+  [434] Combo Get back up Halberd
+  [435] Combo Left Hook Unarmed
+  [436] Combo Pommel strike
+  [437] Combo False edge
+  [438] Combo Leverage
+  [439] Combo Strih Unarmed
+  [440] Combo Scissors
+  [441] Combo Fiore Halfswrd
+  [442] Combo Leg destroyer
+  [443] Combo Narazeni Unarmed
+  [444] Combo Rossen
+  [445] Combo Direct Unarmed
+  [446] Combo Mittlehau
+  [447] Combo Oben ahnemen
+  [448] Combo LowerLeft
+  [449] Combo LowerRight
+  [450] Combo Mittlehau meta
+  [451] Combo Oben ahnemen meta
+  [452] Combo Knee cut meta
+  [453] Combo Push away meta
+  [454] Combo Kurtzhau meta
+  [455] Combo Fiore Halfswrd meta
+  [456] Combo Pommel strike meta
+  [457] Combo Rossen meta
+  [458] Combo Blunt meta
+  [459] Combo Mittle high meta
+  [460] Combo False edge meta
+  [461] Combo Scissors meta
+  [462] Combo Leverage meta
+  [463] Combo Flying man meta
+  [464] Ratman_crimeDoor
+  [465] Infantryman
+  [466] The secret of blacksmith Martin
+  [467] perk_the_secret_of_blacksmith_martin_name
+  [468] perk_the_secret_of_blacksmith_martin_desc
+  [469] perk_the_secret_of_blacksmith_martin_lore_desc
+  [470] perk_the_secret_of_blacksmith_martin
+  [471] Hardened steel
+  [472] perk_hardened_steel_name
+  [473] perk_hardened_steel_desc
+  [474] perk_hardened_steel_lore_desc
+  [475] perk_hardened_steel
+  [476] Startovni vyhoda
+  [477] perk_undercut_name
+  [478] perk_undercut_desc
+  [479] perk_undercut_lore_desc
+  [480] perk_undercut
+  [481] Breaking the law!
+  [482] perk_breaking_the_law_name
+  [483] perk_breaking_the_law_desc
+  [484] perk_breaking_the_law_lore_desc
+  [485] perk_breaking_the_law
+  [486] Leg day
+  [487] perk_leg_day_name
+  [488] perk_leg_day_desc
+  [489] perk_leg_day_lore_desc
+  [490] perk_leg_day
+  [491] Good old Pebbles 
+  [492] perk_good_old_pebbles_name
+  [493] perk_good_old_pebbles_desc
+  [494] perk_good_old_pebbles_lore_desc
+  [495] perk_good_old_pebbles
+  [496] Good Natured
+  [497] perk_good_natured_name
+  [498] perk_good_natured_desc
+  [499] perk_good_natured_lore_desc
+  [500] perk_good_natured
+  [501] Smelinar
+  [502] perk_smelinar_name
+  [503] perk_smelinar_desc
+  [504] perk_smelinar_lore_desc
+  [505] perk_smelinar
+  [506] Secrets of matter II
+  [507] perk_secrets_of_matter_ii_name
+  [508] perk_secrets_of_matter_ii_desc
+  [509] perk_secrets_of_matter_ii_lore_desc
+  [510] perk_secrets_of_matter_ii
+  [511] Rage
+  [512] perk_rage_name
+  [513] perk_rage_desc
+  [514] perk_rage_lore_desc
+  [515] perk_rage
+  [516] Lehka hlava tvrdy zada
+  [517] perk_lehka_hlava_tvrdy_zada_name
+  [518] perk_lehka_hlava_tvrdy_zada_desc
+  [519] perk_lehka_hlava_tvrdy_zada_lore_desc
+  [520] perk_lehka_hlava_tvrdy_zada
+  [521] Slice and dice
+  [522] perk_slice_and_dice_name
+  [523] perk_slice_and_dice_desc
+  [524] perk_slice_and_dice_lore_desc
+  [525] perk_slice_and_dice
+  [526] Adept of mystic arts
+  [527] perk_adept_of_mystic_arts_name
+  [528] perk_adept_of_mystic_arts_desc
+  [529] perk_adept_of_mystic_arts_lore_desc
+  [530] perk_adept_of_mystic_arts
+  [531] Weaponmaster I
+  [532] Skirmishing cavalry player
+  [533] Skirmishing cavalry - companion
+  [534] Townsman
+  [535] perk_townsman_name
+  [536] perk_townsman_desc
+  [537] perk_townsman_lore_desc
+  [538] perk_townsman
+  [539] Trafficker meta
+  [540] perk_trafficker_name
+  [541] perk_trafficker_desc
+  [542] perk_trafficker_lore_desc
+  [543] perk_trafficker
+  [544] Black arts apprentice
+  [545] perk_black_arts_apprentice_name
+  [546] perk_black_arts_apprentice_desc
+  [547] perk_black_arts_apprentice_lore_desc
+  [548] perk_black_arts_apprentice
+  [549] Warmonger
+  [550] perk_warmonger_name
+  [551] perk_warmonger_desc
+  [552] perk_warmonger_lore_desc
+  [553] perk_warmonger
+  [554] Weasel boy
+  [555] perk_weasel_boy_name
+  [556] perk_weasel_boy_desc
+  [557] perk_weasel_boy_lore_desc
+  [558] perk_weasel_boy
+  [559] Harvester - ability
+  [560] Hledej-companion
+  [561] Sagittarius - buff
+  [562] Let'em come!
+  [563] perk_let_em_come_name
+  [564] perk_let_em_come_desc
+  [565] perk_let_em_come_lore_desc
+  [566] perk_let_em_come
+  [567] Creative soul
+  [568] perk_creative_soul_name
+  [569] perk_creative_soul_desc
+  [570] perk_creative_soul_lore_desc
+  [571] perk_creative_soul
+  [572] Beast of a dog
+  [573] perk_beast_of_a_dog_name
+  [574] perk_beast_of_a_dog_desc
+  [575] perk_beast_of_a_dog_lore_desc
+  [576] perk_beast_of_a_dog
+  [577] Clean cut
+  [578] perk_clean_cut_name
+  [579] perk_clean_cut_desc
+  [580] perk_clean_cut_lore_desc
+  [581] perk_clean_cut
+  [582] No pain no gain
+  [583] perk_no_pain_no_gain_name
+  [584] perk_no_pain_no_gain_desc
+  [585] perk_no_pain_no_gain_lore_desc
+  [586] perk_no_pain_no_gain
+  [587] Na zdravi
+  [588] perk_na_zdravi_name
+  [589] perk_na_zdravi_desc
+  [590] perk_na_zdravi_lore_desc
+  [591] perk_na_zdravi
+  [592] Tight grip
+  [593] perk_tight_grip_name
+  [594] perk_tight_grip_desc
+  [595] perk_tight_grip_lore_desc
+  [596] perk_tight_grip
+  [597] Charming lad - discounts
+  [598] Bailman
+  [599] perk_bailman_name
+  [600] perk_bailman_desc
+  [601] perk_bailman
+  [602] Criminal - stat bonus
+  [603] Ascetic
+  [604] perk_ascetic_name
+  [605] perk_ascetic_desc
+  [606] perk_ascetic_lore_desc
+  [607] perk_ascetic
+  [608] Secrets of equilibrium II
+  [609] perk_secrets_of_equilibrium_ii_name
+  [610] perk_secrets_of_equilibrium_ii_desc
+  [611] perk_secrets_of_equilibrium_ii_lore_desc
+  [612] perk_secrets_of_equilibrium_ii
+  [613] Zkusenej kalic
+  [614] perk_zkusenej_kalic_name
+  [615] perk_zkusenej_kalic_desc
+  [616] perk_zkusenej_kalic_lore_desc
+  [617] perk_zkusenej_kalic
+  [618] Contemplative
+  [619] perk_contemplative_name
+  [620] perk_contemplative_desc
+  [621] perk_contemplative_lore_desc
+  [622] perk_contemplative
+  [623] Sedlar - repairkit
+  [624] Thunderous blast
+  [625] perk_thunderous_blast_name
+  [626] perk_thunderous_blast_desc
+  [627] perk_thunderous_blast_lore_desc
+  [628] perk_thunderous_blast
+  [629] Prizen sv. Bibiany
+  [630] perk_prizen_sv_bibiany_name
+  [631] perk_prizen_sv_bibiany_desc
+  [632] perk_prizen_sv_bibiany_lore_desc
+  [633] perk_prizen_sv_bibiany
+  [634] Hidden pockets buff
+  [635] Natural camouflage 
+  [636] perk_natural_camouflage_name
+  [637] perk_natural_camouflage_desc
+  [638] perk_natural_camouflage_lore_desc
+  [639] perk_natural_camouflage
+  [640] Battle cry
+  [641] perk_battle_cry_name
+  [642] perk_battle_cry_desc
+  [643] perk_battle_cry_lore_desc
+  [644] perk_battle_cry
+  [645] Dog person
+  [646] perk_dog_person_name
+  [647] perk_dog_person_desc
+  [648] perk_dog_person_lore_desc
+  [649] perk_dog_person
+  [650] Navrátilec - companion
+  [651] Tool master
+  [652] perk_tool_master_name
+  [653] perk_tool_master_desc
+  [654] perk_tool_master_lore_desc
+  [655] perk_tool_master
+  [656] Zaklady bohoslovectvi meta
+  [657] perk_basic_theology_name
+  [658] perk_basic_theology_desc
+  [659] perk_basic_theology_lore_desc
+  [660] perk_basic_theology
+  [661] Towering menace
+  [662] perk_towering_menace_name
+  [663] perk_towering_menace_desc
+  [664] perk_towering_menace_lore_desc
+  [665] perk_towering_menace
+  [666] Weaponmaster II
+  [667] Trustworthy partner
+  [668] perk_trustworthypartner_name
+  [669] perk_trustworthypartner_desc
+  [670] perk_trustworthypartner_lore_desc
+  [671] perk_trustworthypartner
+  [672] Tlama plna zubu
+  [673] perk_tlama_plna_zubu_name
+  [674] perk_tlama_plna_zubu_desc
+  [675] perk_tlama_plna_zubu_lore_desc
+  [676] perk_tlama_plna_zubu
+  [677] Unbreakable
+  [678] perk_unbreakable_name
+  [679] perk_unbreakable_desc
+  [680] perk_unbreakable_lore_desc
+  [681] perk_unbreakable
+  [682] Basic law II
+  [683] perk_basic_law_ii_name
+  [684] perk_basic_law_ii_desc
+  [685] perk_basic_law_ii_lore_desc
+  [686] perk_basic_law_ii
+  [687] Start me up
+  [688] perk_start_me_up_name
+  [689] perk_start_me_up_desc
+  [690] perk_start_me_up_lore_desc
+  [691] perk_start_me_up
+  [692] Whirlwind
+  [693] perk_whirlwind_name
+  [694] perk_whirlwind_desc
+  [695] perk_whirlwind_lore_desc
+  [696] perk_whirlwind
+  [697] Quick on hands
+  [698] perk_quick_o_hands_name
+  [699] perk_quick_o_hands_desc
+  [700] perk_quick_o_hands_lore_desc
+  [701] perk_quick_o_hands
+  [702] Let'em come! Ability
+  [703] Purple haze
+  [704] perk_purple_haze_name
+  [705] perk_purple_haze_desc
+  [706] perk_purple_haze_lore_desc
+  [707] perk_purple_haze
+  [708] Jeste kousek II
+  [709] perk_no_rest_for_the_wicked_ii_name
+  [710] perk_no_rest_for_the_wicked_ii_desc
+  [711] perk_no_rest_for_the_wicked_ii_lore_desc
+  [712] perk_no_rest_for_the_wicked_ii
+  [713] Fleeing Shadow I
+  [714] perk_fleeing_shadow_i_name
+  [715] perk_fleeing_shadow_i_desc
+  [716] perk_fleeing_shadow_i_lore_desc
+  [717] perk_fleeing_shadow_i
+  [718] Nezdolny pijan
+  [719] perk_nezdolny_pijan_name
+  [720] perk_nezdolny_pijan_desc
+  [721] perk_nezdolny_pijan_lore_desc
+  [722] perk_nezdolny_pijan
+  [723] Bushman
+  [724] perk_bushman_name
+  [725] perk_bushman_desc
+  [726] perk_bushman_lore_desc
+  [727] perk_bushman
+  [728] Hardworking lad_carrying_body
+  [729] Hardworking lad_inv_capacity
+  [730] Dodger
+  [731] perk_dodger_name
+  [732] perk_dodger_desc
+  [733] perk_dodger_lore_desc
+  [734] perk_dodger
+  [735] Skirmishing cavalry - companion forward
+  [736] Inconspicuous
+  [737] perk_inconspicuous_name
+  [738] perk_inconspicuous_desc
+  [739] perk_inconspicuous_lore_desc
+  [740] perk_inconspicuous
+  [741] Deceiving strike
+  [742] perk_deceiving_strike_name
+  [743] perk_deceiving_strike_desc
+  [744] perk_deceiving_strike_lore_desc
+  [745] perk_deceiving_strike
+  [746] Liberal arts
+  [747] Jeste kousek
+  [748] perk_no_rest_for_the_wicked_name
+  [749] perk_no_rest_for_the_wicked_desc
+  [750] perk_no_rest_for_the_wicked_lore_desc
+  [751] perk_no_rest_for_the_wicked
+  [752] Skirmishing cavalry
+  [753] perk_skirmishing_cavalry_name
+  [754] perk_skirmishing_cavalry_desc
+  [755] perk_skirmishing_cavalry_lore_desc
+  [756] perk_skirmishing_cavalry
+  [757] Spiritual guidance - traveni alkoholu
+  [758] Mule
+  [759] perk_mule_name
+  [760] perk_mule_desc
+  [761] perk_mule_lore_desc
+  [762] perk_mule
+  [763] Charlatan
+  [764] perk_charlatan_name
+  [765] perk_charlatan_desc
+  [766] perk_charlatan_lore_desc
+  [767] perk_charlatan
+  [768] Sevenleague II
+  [769] perk_sevenleague_ii_name
+  [770] perk_sevenleague_ii_desc
+  [771] perk_sevenleague_ii_lore_desc
+  [772] perk_sevenleague_ii
+  [773] Local hero
+  [774] perk_local_hero_name
+  [775] perk_local_hero_desc
+  [776] perk_local_hero_lore_desc
+  [777] perk_local_hero
+  [778] Aim to maim
+  [779] perk_aim_to_maim_name
+  [780] perk_aim_to_maim_desc
+  [781] perk_aim_to_maim_lore_desc
+  [782] perk_aim_to_maim
+  [783] Razor sharp
+  [784] perk_razor_sharp_name
+  [785] perk_razor_sharp_desc
+  [786] perk_razor_sharp_lore_desc
+  [787] perk_razor_sharp
+  [788] Help in the workshop
+  [789] perk_help_in_the_workshop_name
+  [790] perk_help_in_the_workshop_desc
+  [791] perk_help_in_the_workshop_lore_desc
+  [792] perk_help_in_the_workshop
+  [793] Zaklady bohoslovectvi  II
+  [794] perk_basic_theology_ii_name
+  [795] perk_basic_theology_ii_desc
+  [796] perk_basic_theology_ii_lore_desc
+  [797] perk_basic_theology_ii
+  [798] Cutting edge
+  [799] perk_cutting_edge_name
+  [800] perk_cutting_edge_desc
+  [801] perk_cutting_edge_lore_desc
+  [802] perk_cutting_edge
+  [803] Harvester - script
+  [804] Cushion meta
+  [805] perk_cushion_name
+  [806] perk_cushion_desc
+  [807] perk_cushion_lore_desc
+  [808] perk_cushion
+  [809] Train hard, fight easy ii
+  [810] perk_train_hard_fight_easy_ii_name
+  [811] perk_train_hard_fight_easy_ii_desc
+  [812] perk_train_hard_fight_easy_ii_lore_desc
+  [813] perk_train_hard_fight_easy_ii
+  [814] Lehka hlava tvrdy zada - kvalita posteli
+  [815] Hranicarsky beh
+  [816] perk_hranicarsky_beh_name
+  [817] perk_hranicarsky_beh_desc
+  [818] perk_hranicarsky_beh_lore_desc
+  [819] perk_hranicarsky_beh
+  [820] Pub brawler
+  [821] perk_pub_brawler_name
+  [822] perk_pub_brawler_desc
+  [823] perk_pub_brawler_lore_desc
+  [824] perk_pub_brawler
+  [825] Stealth kill
+  [826] perk_stealth_kill_name
+  [827] perk_stealth_kill_desc
+  [828] perk_stealth_kill_lore_desc
+  [829] perk_stealth_kill
+  [830] Steer
+  [831] perk_steer_name
+  [832] perk_steer_desc
+  [833] perk_steer_lore_desc
+  [834] perk_steer
+  [835] Hardened veteran
+  [836] perk_hardened_veteran_name
+  [837] perk_hardened_veteran_desc
+  [838] perk_hardened_veteran_lore_desc
+  [839] perk_hardened_veteran
+  [840] Escape artist II
+  [841] perk_escape_artist_ii_name
+  [842] perk_escape_artist_II_desc
+  [843] perk_escape_artist_II_lore_desc
+  [844] perk_escape_artist_ii
+  [845] Undaunted cavalier
+  [846] perk_undaunted_cavalier_name
+  [847] perk_undaunted_cavalier_desc
+  [848] perk_undaunted_cavalier_lore_desc
+  [849] perk_undaunted_cavalier
+  [850] My Father sir Radzig
+  [851] perk_my_father_sir_radzig_name
+  [852] perk_my_father_sir_radzig_desc
+  [853] perk_my_father_sir_radzig_lore_desc
+  [854] perk_my_father_sir_radzig
+  [855] Strange man
+  [856] perk_strange_man_name
+  [857] perk_strange_man_desc
+  [858] perk_strange_man_lore_desc
+  [859] perk_strange_man
+  [860] Green knight
+  [861] perk_green_knight_name
+  [862] perk_green_knight_desc
+  [863] perk_green_knight_lore_desc
+  [864] perk_green_knight
+  [865] Forbidden weapon
+  [866] perk_forbidden_weapon_name
+  [867] perk_forbidden_weapon_desc
+  [868] perk_forbidden_weapon_lore_desc
+  [869] perk_forbidden_weapon
+  [870] Sympatak
+  [871] perk_sympatak_name
+  [872] perk_sympatak_desc
+  [873] perk_sympatak_lore_desc
+  [874] perk_sympatak
+  [875] Sandman
+  [876] perk_sandman_name
+  [877] perk_sandman_desc
+  [878] perk_sandman_lore_desc
+  [879] perk_sandman
+  [880] Deft hands
+  [881] perk_deft_hands_name
+  [882] perk_deft_hands_desc
+  [883] perk_deft_hands_lore_desc
+  [884] perk_deft_hands
+  [885] Keeping distance
+  [886] perk_keeping_distance_name
+  [887] perk_keeping_distance_desc
+  [888] perk_keeping_distance_lore_desc
+  [889] perk_keeping_distance
+  [890] Swordmakers wisdom
+  [891] perk_swordmakers_wisdom_name
+  [892] perk_swordmakers_wisdom_desc
+  [893] perk_swordmakers_wisdom_lore_desc
+  [894] perk_swordmakers_wisdom
+  [895] Airgiyn tav
+  [896] perk_airgyn_tav_name
+  [897] perk_airgyn_tav_desc
+  [898] perk_airgyn_tav_lore_desc
+  [899] perk_airgyn_tav
+  [900] Na pytlacke stezce
+  [901] perk_poacher_trail_name
+  [902] perk_poacher_trail_desc
+  [903] perk_poacher_trail_lore_desc
+  [904] perk_poacher_trail
+  [905] Opening strike
+  [906] perk_opening_strike_name
+  [907] perk_opening_strike_desc
+  [908] perk_opening_strike_lore_desc
+  [909] perk_opening_strike
+  [910] Frejir_clean_improvement
+  [911] Opening strike II
+  [912] perk_opening_strike_II_name
+  [913] perk_opening_strike_II_desc
+  [914] perk_opening_strike_II_lore_desc
+  [915] perk_opening_strike_II
+  [916] On the road - companion
+  [917] Tormenting strike
+  [918] perk_tormenting_strike_name
+  [919] perk_tormenting_strike_desc
+  [920] perk_tormenting_strike_lore_desc
+  [921] perk_tormenting_strike
+  [922] Thorough maintenance
+  [923] perk_thorough_maintenance_name
+  [924] perk_thorough_maintenance_desc
+  [925] perk_thorough_maintenance_lore_desc
+  [926] perk_thorough_maintenance
+  [927] One shot at glory
+  [928] perk_one_shot_at_glory_name
+  [929] perk_one_shot_at_glory_desc
+  [930] perk_one_shot_at_glory_lore_desc
+  [931] perk_one_shot_at_glory
+  [932] Hledej
+  [933] perk_hledej_name
+  [934] perk_hledej_desc
+  [935] perk_hledej_lore_desc
+  [936] perk_hledej
+  [937] Trhej
+  [938] perk_trhej_name
+  [939] perk_trhej_desc
+  [940] perk_trhej_lore_desc
+  [941] perk_trhej
+  [942] Sevenleague
+  [943] perk_sevenleague_name
+  [944] perk_sevenleague_desc
+  [945] perk_sevenleague_lore_desc
+  [946] perk_sevenleague
+  [947] Never Surrender
+  [948] perk_never_surrender_name
+  [949] perk_never_surrender_desc
+  [950] perk_never_surrender_lore_desc
+  [951] perk_never_surrender
+  [952] Crippling hit
+  [953] perk_crippling_hit_name
+  [954] perk_crippling_hit_desc
+  [955] perk_crippling_hit_lore_desc
+  [956] perk_crippling_hit
+  [957] Basic law
+  [958] perk_basic_law_name
+  [959] perk_basic_law_desc
+  [960] perk_basic_law_lore_desc
+  [961] perk_basic_law
+  [962] Criminal
+  [963] perk_criminal_name
+  [964] perk_criminal_desc
+  [965] perk_criminal_lore_desc
+  [966] perk_criminal
+  [967] Grand slam
+  [968] perk_grand_slam_name
+  [969] perk_grand_slam_desc
+  [970] perk_grand_slam_lore_desc
+  [971] perk_grand_slam
+  [972] Boid friend
+  [973] Viper II
+  [974] perk_viper_ii_name
+  [975] perk_viper_ii_desc
+  [976] perk_viper_ii_lore_desc
+  [977] perk_viper_ii
+  [978] Criminal - price bonus
+  [979] Thorough maintenance II
+  [980] perk_thorough_maintenance_ii_name
+  [981] perk_thorough_maintenance_ii_desc
+  [982] perk_thorough_maintenance_ii_lore_desc
+  [983] perk_thorough_maintenance_ii
+  [984] Fast as wind
+  [985] perk_fast_as_wind_name
+  [986] perk_fast_as_wind_desc
+  [987] perk_fast_as_wind_lore_desc
+  [988] perk_fast_as_wind
+  [989] Sedlar
+  [990] perk_sedlar_name
+  [991] perk_sedlar_desc
+  [992] perk_sedlar_lore_desc
+  [993] perk_sedlar
+  [994] Basic medicine
+  [995] perk_basic_medicine_name
+  [996] perk_basic_medicine_desc
+  [997] perk_basic_medicine_lore_desc
+  [998] perk_basic_medicine
+  [999] Silver tongue script
+  [1000] Archer
+  [1001] perk_archer_name
+  [1002] perk_archer_desc
+  [1003] perk_archer_lore_desc
+  [1004] perk_archer
+  [1005] Plizivej prizrak
+  [1006] perk_plizivej_prizrak_name
+  [1007] perk_plizivej_prizrak_desc
+  [1008] perk_plizivej_prizrak_lore_desc
+  [1009] perk_plizivej_prizrak
+  [1010] Lucky Find
+  [1011] perk_lucky_find_name
+  [1012] perk_lucky_find_desc
+  [1013] perk_lucky_find_lore_desc
+  [1014] perk_lucky_find
+  [1015] On the Road companion
+  [1016] Plizivej prizrak II
+  [1017] perk_plizivej_prizrak_ii_name
+  [1018] perk_plizivej_prizrak_ii_desc
+  [1019] perk_plizivej_prizrak_ii_lore_desc
+  [1020] perk_plizivej_prizrak_ii
+  [1021] Pivoslapek
+  [1022] perk_pivoslapek_name
+  [1023] perk_pivoslapek_desc
+  [1024] perk_pivoslapek_lore_desc
+  [1025] perk_pivoslapek
+  [1026] Lab dweller
+  [1027] perk_lab_dweller_name
+  [1028] perk_lab_dweller_desc
+  [1029] perk_lab_dweller_lore_desc
+  [1030] perk_lab_dweller
+  [1031] Frightening presence
+  [1032] perk_frightening_presence_name
+  [1033] perk_frightening_presence_desc
+  [1034] perk_frightening_presence_lore_desc
+  [1035] perk_frightening_presence
+  [1036] Smart bootstraping
+  [1037] perk_smart_bootstraping_name
+  [1038] perk_smart_bootstraping_desc
+  [1039] perk_smart_bootstraping_lore_desc
+  [1040] perk_smart_bootstraping
+  [1041] Black arts apprentice - dialog
+  [1042] Charming lad - spa discounts
+  [1043] Ratman_crouch
+  [1044] Hardworking lad
+  [1045] perk_hardworking_lad_name
+  [1046] perk_hardworking_lad_desc
+  [1047] perk_hardworking_lad_lore_desc
+  [1048] perk_hardworking_lad
+  [1049] Brute force II
+  [1050] perk_brute_force_ii_name
+  [1051] perk_brute_force_ii_desc
+  [1052] perk_brute_force_ii_lore_desc
+  [1053] perk_brute_force_ii
+  [1054] Defender - companion
+  [1055] Long reach II
+  [1056] perk_long_reach_ii_name
+  [1057] perk_long_reach_ii_desc
+  [1058] perk_long_reach_ii_lore_desc
+  [1059] perk_long_reach_ii
+  [1060] Charming lad - skillchecks
+  [1061] Startovni vyhoda II
+  [1062] perk_undercut_ii_name
+  [1063] perk_undercut_ii_desc
+  [1064] perk_undercut_ii_lore_desc
+  [1065] perk_undercut_ii
+  [1066] Battering ram
+  [1067] perk_battering_ram_name
+  [1068] perk_battering_ram_desc
+  [1069] perk_battering_ram_lore_desc
+  [1070] perk_battering_ram
+  [1071] Cistota pul zdravi_buff
+  [1072] Charming lad
+  [1073] perk_charming_lad_name
+  [1074] perk_charming_lad_desc
+  [1075] perk_charming_lad_lore_desc
+  [1076] perk_charming_lad
+  [1077] Deft hands II
+  [1078] perk_deft_hands_ii_name
+  [1079] perk_deft_hands_ii_desc
+  [1080] perk_deft_hands_ii_lore_desc
+  [1081] perk_deft_hands_ii
+  [1082] Hardened veteran II
+  [1083] perk_hardened_veteran_ii_name
+  [1084] perk_hardened_veteran_ii_desc
+  [1085] perk_hardened_veteran_ii_lore_desc
+  [1086] perk_hardened_veteran_ii
+  [1087] Routinist
+  [1088] perk_routinist_name
+  [1089] perk_routinist_desc
+  [1090] perk_routinist_lore_desc
+  [1091] perk_routinist
+  [1092] Locksmith - lockpicks
+  [1093] Fast as wind II - companion
+  [1094] Knight in shining armor
+  [1095] perk_knight_in_shining_armor_name
+  [1096] perk_knight_in_shining_armor_desc
+  [1097] perk_knight_in_shining_armor_lore_desc
+  [1098] perk_knigh_in_shining_armor
+  [1099] Poison specialist II
+  [1100] perk_poison_specialist_ii_name
+  [1101] perk_poison_specialist_ii_desc
+  [1102] perk_poison_specialist_ii_lore_desc
+  [1103] perk_poison_specialist_ii
+  [1104] Kurzkampf
+  [1105] perk_kurzkampf_name
+  [1106] perk_kurzkampf_desc
+  [1107] perk_kurzkampf_lore_desc
+  [1108] perk_kurzkampf
+  [1109] Hammerer
+  [1110] perk_hammerer_name
+  [1111] perk_hammerer_desc
+  [1112] perk_hammerer_lore_desc
+  [1113] perk_hammerer
+  [1114] Balanced diet
+  [1115] perk_balanced_diet_name
+  [1116] perk_balanced_diet_desc
+  [1117] perk_balanced_diet_lore_desc
+  [1118] perk_balanced_diet
+  [1119] First strike 
+  [1120] perk_first_strike_name
+  [1121] perk_first_strike_desc
+  [1122] perk_first_strike_lore_desc
+  [1123] perk_first_strike
+  [1124] Steady aim II
+  [1125] perk_steady_aim_ii_name
+  [1126] perk_steady_aim_ii_desc
+  [1127] perk_steady_aim_ii_lore_desc
+  [1128] perk_steady_aim_ii
+  [1129] Cleaver
+  [1130] perk_cleaver_name
+  [1131] perk_cleaver_desc
+  [1132] perk_cleaver_lore_desc
+  [1133] perk_cleaver
+  [1134] Battle cry II
+  [1135] perk_battle_cry_ii_name
+  [1136] perk_battle_cry_ii_desc
+  [1137] perk_battle_cry_ii_lore_desc
+  [1138] perk_battle_cry_ii
+  [1139] Down to size
+  [1140] perk_down_to_size_name
+  [1141] perk_down_to_size_desc
+  [1142] perk_down_to_size_lore_desc
+  [1143] perk_down_to_size
+  [1144] Furor Teutonicus
+  [1145] perk_furor_teutonicus_name
+  [1146] perk_furor_teutonicus_desc
+  [1147] perk_furor_teutonicus_lore_desc
+  [1148] perk_furor_teutonicus
+  [1149] Master Fletcher
+  [1150] perk_master_fletcher_name
+  [1151] perk_master_fletcher_desc
+  [1152] perk_master_fletcher_lore_desc
+  [1153] perk_master_fletcher
+  [1154] Wildrider companion
+  [1155] Vycvicenej pajsl
+  [1156] perk_vycvicenej_pajsl_name
+  [1157] perk_vycvicenej_pajsl_desc
+  [1158] perk_vycvicenej_pajsl_lore_desc
+  [1159] perk_vycvicenej_pajsl
+  [1160] Verny spolecnik
+  [1161] perk_verny_spolecnik_name
+  [1162] perk_verny_spolecnik_desc
+  [1163] perk_verny_spolecnik_lore_desc
+  [1164] perk_verny_spolecnik
+  [1165] Hack and Slash
+  [1166] perk_hack_and_slash_name
+  [1167] perk_hack_and_slash_desc
+  [1168] perk_hack_and_slash_lore_desc
+  [1169] perk_hack_and_slash
+  [1170] Hardwood
+  [1171] perk_hardwood_name
+  [1172] perk_hardwood_desc
+  [1173] perk_hardwood_lore_desc
+  [1174] perk_hardwood
+  [1175] Keen eye
+  [1176] perk_keen_eye_name
+  [1177] perk_keen_eye_desc
+  [1178] perk_keen_eye_lore_desc
+  [1179] perk_keen_eye
+  [1180] Enhancing mixture
+  [1181] perk_enhancing_mixture_name
+  [1182] perk_enhancing_mixture_desc
+  [1183] perk_enhancing_mixture_lore_desc
+  [1184] perk_enhancing_mixture
+  [1185] Heartseeker
+  [1186] perk_heartseeker_name
+  [1187] perk_heartseeker_desc
+  [1188] perk_heartseeker_lore_desc
+  [1189] perk_heartseeker
+  [1190] Showtime
+  [1191] perk_showtime_name
+  [1192] perk_showtime_desc
+  [1193] perk_showtime_lore_desc
+  [1194] perk_showtime
+  [1195] Well built
+  [1196] perk_well_built_name
+  [1197] perk_well_built_desc
+  [1198] perk_well_built_lore_desc
+  [1199] perk_well_built
+  [1200] hunt - companion
+  [1201] Basic law skillcheck
+  [1202] Liberal arts meta
+  [1203] perk_liberal_arts_name
+  [1204] perk_liberal_arts_desc
+  [1205] perk_liberal_arts_lore_desc
+  [1206] perk_liberal_arts
+  [1207] Thickblooded
+  [1208] perk_thickblooded_name
+  [1209] perk_thickblooded_desc
+  [1210] perk_thickblooded_lore_desc
+  [1211] perk_thickblooded
+  [1212] Secrets of equilibrium I
+  [1213] perk_secrets_of_equilibrium_i_name
+  [1214] perk_secrets_of_equilibrium_i_desc
+  [1215] perk_secrets_of_equilibrium_i_lore_desc
+  [1216] perk_secrets_of_equilibrium_i
+  [1217] Bonebreaker
+  [1218] perk_bonebreaker_name
+  [1219] perk_bonebreaker_desc
+  [1220] perk_bonebreaker_lore_desc
+  [1221] perk_bonebreaker
+  [1222] Just an ordinary man
+  [1223] perk_just_an_ordinary_man_name
+  [1224] perk_just_an_ordinary_man_desc
+  [1225] perk_just_an_ordinary_man_lore_desc
+  [1226] perk_just_an_ordinary_man
+  [1227] Looter - extra money pickpocket
+  [1228] Runaway boy
+  [1229] perk_runaway_boy_name
+  [1230] perk_runaway_boy_desc
+  [1231] perk_runaway_boy_lore_desc
+  [1232] perk_runaway_boy
+  [1233] One way or the other 
+  [1234] perk_one_way_or_the_other_name
+  [1235] perk_one_way_or_the_other_desc
+  [1236] perk_one_way_or_the_other_lore_desc
+  [1237] perk_one_way_or_the_other
+  [1238] The Mountain
+  [1239] perk_the_mountain_name
+  [1240] perk_the_mountain_desc
+  [1241] perk_the_mountain_lore_desc
+  [1242] perk_the_mountain
+  [1243] Frejir
+  [1244] perk_frejir_name
+  [1245] perk_frejir_desc
+  [1246] perk_frejir_lore_desc
+  [1247] perk_frejir
+  [1248] Zadny srani
+  [1249] perk_fuck_shit_up_name
+  [1250] perk_fuck_shit_up_desc
+  [1251] perk_fuck_shit_up_lore_desc
+  [1252] perk_fuck_shit_up
+  [1253] Strong arm
+  [1254] perk_strong_arm_name
+  [1255] perk_strong_arm_desc
+  [1256] perk_strong_arm_lore_desc
+  [1257] perk_strong_arm
+  [1258] Jawbreaker
+  [1259] perk_jawbreaker_name
+  [1260] perk_jawbreaker_desc
+  [1261] perk_jawbreaker_lore_desc
+  [1262] perk_jawbreaker
+  [1263] Fleeing Shadow II
+  [1264] perk_fleeing_shadow_ii_name
+  [1265] perk_fleeing_shadow_ii_desc
+  [1266] perk_fleeing_shadow_ii_lore_desc
+  [1267] perk_fleeing_shadow_ii
+  [1268] Dreaded warrior
+  [1269] perk_dreaded_warrior_name
+  [1270] perk_dreaded_warrior_desc
+  [1271] perk_dreaded_warrior_lore_desc
+  [1272] perk_dreaded_warrior
+  [1273] Zaklady bohoslovectvi 
+  [1274] Navratilec
+  [1275] perk_navratilec_name
+  [1276] perk_navratilec_desc
+  [1277] perk_navratilec_lore_desc
+  [1278] perk_navratilec
+  [1279] Perfect Block
+  [1280] perk_perfect_block_name
+  [1281] perk_perfect_block_desc
+  [1282] perk_perfect_block_lore_desc
+  [1283] perk_perfect_block
+  [1284] Trample
+  [1285] perk_trample_name
+  [1286] perk_trample_desc
+  [1287] perk_trample_lore_desc
+  [1288] perk_trample
+  [1289] Na zdravi - protijed
+  [1290] Nimble stance
+  [1291] perk_nimble_stance_name
+  [1292] perk_nimble_stance_desc
+  [1293] perk_nimble_stance_lore_desc
+  [1294] perk_nimble_stance
+  [1295] Artisan
+  [1296] perk_artisan_name
+  [1297] perk_artisan_desc
+  [1298] perk_artisan_lore_desc
+  [1299] perk_artisan
+  [1300] search - companion
+  [1301] Arm of Beowulf
+  [1302] perk_arm_of_beowulf_name
+  [1303] perk_arm_of_beowulf_desc
+  [1304] perk_arm_of_beowulf_lore_desc
+  [1305] perk_arm_of_beowulf
+  [1306] Hledej-script
+  [1307] Bark - companion
+  [1308] Wanderer
+  [1309] perk_wanderer_name
+  [1310] perk_wanderer_desc
+  [1311] perk_wanderer_lore_desc
+  [1312] perk_wanderer
+  [1313] Trample - companion
+  [1314] Memorable
+  [1315] perk_memorable_name
+  [1316] perk_memorable_desc
+  [1317] perk_memorable_lore_desc
+  [1318] perk_memorable
+  [1319] Gentle touch
+  [1320] perk_gentle_touch_name
+  [1321] perk_gentle_touch_desc
+  [1322] perk_gentle_touch_lore_desc
+  [1323] perk_gentle_touch
+  [1324] Salva
+  [1325] perk_salva_name
+  [1326] perk_salva_desc
+  [1327] perk_salva_lore_desc
+  [1328] perk_salva
+  [1329] Red Herring
+  [1330] perk_red_herring_name
+  [1331] perk_red_herring_desc
+  [1332] perk_red_herring_lore_desc
+  [1333] perk_red_herring
+  [1334] Ratman
+  [1335] perk_ratman_name
+  [1336] perk_ratman_desc
+  [1337] perk_ratman_lore_desc
+  [1338] perk_ratman
+  [1339] Frejir_dirt_decrease
+  [1340] Ringenmeister
+  [1341] perk_ringenmeister_name
+  [1342] perk_ringenmeister_desc
+  [1343] perk_ringenmeister_lore_desc
+  [1344] perk_ringenmeister
+  [1345] Through and through II
+  [1346] perk_through_and_through_ii_name
+  [1347] perk_through_and_through_ii_desc
+  [1348] perk_through_and_through_ii_lore_desc
+  [1349] perk_through_and_through_ii
+  [1350] Brute force
+  [1351] perk_brute_force_name
+  [1352] perk_brute_force_desc
+  [1353] perk_brute_force_lore_desc
+  [1354] perk_brute_force
+  [1355] Masterful feint
+  [1356] perk_masterful_feint_name
+  [1357] perk_masterful_feint_desc
+  [1358] perk_masterful_feint_lore_desc
+  [1359] perk_masterful_feint
+  [1360] Skirmisher
+  [1361] perk_skirmisher_name
+  [1362] perk_skirmisher_desc
+  [1363] perk_skirmisher_lore_desc
+  [1364] perk_skirmisher
+  [1365] Sedlar - theivery
+  [1366] On the Road
+  [1367] perk_on_the_road_name
+  [1368] perk_on_the_road_desc
+  [1369] perk_on_the_road_lore_desc
+  [1370] perk_on_the_road
+  [1371] Stealth takedown
+  [1372] perk_stealth_takedown_name
+  [1373] perk_stealth_takedown_desc
+  [1374] perk_stealth_takedown_lore_desc
+  [1375] perk_stealth_takedown
+  [1376] Towering menace - companion
+  [1377] Lifesaver
+  [1378] perk_lifesaver_name
+  [1379] perk_lifesaver_desc
+  [1380] perk_lifesaver_lore_desc
+  [1381] perk_life_saver
+  [1382] Good Natured - self help
+  [1383] The River
+  [1384] perk_the_river_name
+  [1385] perk_the_river_desc
+  [1386] perk_the_river_lore_desc
+  [1387] perk_the_river
+  [1388] Finesse
+  [1389] perk_finesse_name
+  [1390] perk_finesse_desc
+  [1391] perk_finesse_lore_desc
+  [1392] perk_finesse
+  [1393] Sundering blow II
+  [1394] perk_sundering_blow_ii_name
+  [1395] perk_sundering_blow_ii_desc
+  [1396] perk_sundering_blow_ii_lore_desc
+  [1397] perk_sundering_blow_ii
+  [1398] Steak tartare
+  [1399] perk_steak_tartare_name
+  [1400] perk_steak_tartare_desc
+  [1401] perk_steak_tartare_lore_desc
+  [1402] perk_steak_tartare
+  [1403] Iron rain
+  [1404] perk_iron_name_name
+  [1405] perk_iron_name_desc
+  [1406] perk_iron_name_lore_desc
+  [1407] perk_iron_name
+  [1408] Steady aim
+  [1409] perk_steady_aim_name
+  [1410] perk_steady_aim_desc
+  [1411] perk_steady_aim_lore_desc
+  [1412] perk_steady_aim
+  [1413] Totentanz_buff
+  [1414] Long reach I
+  [1415] perk_long_reach_name
+  [1416] perk_long_reach_desc
+  [1417] perk_long_reach_lore_desc
+  [1418] perk_long_reach
+  [1419] Opilecke stesti
+  [1420] perk_opilecke_stesti_name
+  [1421] perk_opilecke_stesti_desc
+  [1422] perk_opilecke_stesti_lore_desc
+  [1423] perk_opilecke_stesti
+  [1424] Unarmed master strike
+  [1425] perk_unarmed_master_strike_name
+  [1426] perk_unarmed_master_strike_desc
+  [1427] perk_unarmed_master_strike_lore_desc
+  [1428] perk_unarmed_master_strike
+  [1429] Riposte
+  [1430] perk_riposte_name
+  [1431] perk_riposte_desc
+  [1432] perk_riposte_lore_desc
+  [1433] perk_riposte
+  [1434] Into the fray
+  [1435] perk_into_the_fray_name
+  [1436] perk_into_the_fray_desc
+  [1437] perk_into_the_fray_lore_desc
+  [1438] perk_into_the_fray
+  [1439] Viper
+  [1440] perk_viper_name
+  [1441] perk_viper_desc
+  [1442] perk_viper_lore_desc
+  [1443] perk_viper
+  [1444] The hammer and the anvil
+  [1445] perk_the_hammer_and_the_anvil_name
+  [1446] perk_the_hammer_and_the_anvil_desc
+  [1447] perk_the_hammer_and_the_anvil_lore_desc
+  [1448] perk_the_hammer_and_the_anvil
+  [1449] Escape artist I
+  [1450] perk_escape_artist_I_name
+  [1451] perk_escape_artist_I_desc
+  [1452] perk_escape_artist_I_lore_desc
+  [1453] perk_escape_artist_i
+  [1454] My father blacksmith Martin
+  [1455] perk_my_father_blacksmith_martin_name
+  [1456] perk_my_father_blacksmith_martin_desc
+  [1457] perk_my_father_blacksmith_martin_lore_desc
+  [1458] perk_my_father_blacksmith_martin
+  [1459] Gladiator
+  [1460] perk_gladiator_name
+  [1461] perk_gladiator_desc
+  [1462] perk_gladiator_lore_desc
+  [1463] perk_gladiator
+  [1464] Looter
+  [1465] perk_looter_name
+  [1466] perk_looter_desc
+  [1467] perk_looter_lore_desc
+  [1468] perk_looter
+  [1469] Dominant hand
+  [1470] perk_dominant_hand_name
+  [1471] perk_dominant_hand_desc
+  [1472] perk_dominant_hand_lore_desc
+  [1473] perk_dominant_hand
+  [1474] Veteran od Kosova pole
+  [1475] perk_veteran_od_kosova_pole_name
+  [1476] perk_veteran_od_kosova_pole_desc
+  [1477] perk_veteran_od_kosova_pole_lore_desc
+  [1478] perk_veteran_od_kosova_pole
+  [1479] Precise strike
+  [1480] perk_precise_strike_name
+  [1481] perk_precise_strike_desc
+  [1482] perk_precise_strike_lore_desc
+  [1483] perk_precise_strike
+  [1484] Silver tongue
+  [1485] perk_silver_tongue_name
+  [1486] perk_silver_tongue_desc
+  [1487] perk_silver_tongue_lore_desc
+  [1488] perk_silver_tongue
+  [1489] Horrendous Wounds
+  [1490] perk_horrendous_wounds_name
+  [1491] perk_horrendous_wounds_desc
+  [1492] perk_horrendous_wounds_lore_desc
+  [1493] perk_horrendous_wounds
+  [1494] In Vino Veritas
+  [1495] perk_in_vino_veritas_name
+  [1496] perk_in_vino_veritas_desc
+  [1497] perk_in_vino_veritas_lore_desc
+  [1498] perk_in_vino_veritas
+  [1499] Henry shot first
+  [1500] perk_henry_shot_first_name
+  [1501] perk_henry_shot_first_desc
+  [1502] perk_henry_shot_first_lore_desc
+  [1503] perk_henry_shot_first
+  [1504] Black arts apprentice - script
+  [1505] Swordmakers wisdom - weapon usage
+  [1506] Totally legit
+  [1507] perk_totally_legit_name
+  [1508] perk_totally_legit_desc
+  [1509] perk_totally_legit_lore_desc
+  [1510] perk_totally_legit
+  [1511] Strider
+  [1512] perk_strider_name
+  [1513] perk_strider_desc
+  [1514] perk_strider_lore_desc
+  [1515] perk_strider
+  [1516] Salva - ability
+  [1517] Heartseeker II
+  [1518] perk_heartseeker_ii_name
+  [1519] perk_heartseeker_ii_desc
+  [1520] perk_heartseeker_ii_lore_desc
+  [1521] perk_heartseeker_ii
+  [1522] Secret of secrets
+  [1523] perk_secret_of_secrets_name
+  [1524] perk_secret_of_secrets_desc
+  [1525] perk_secret_of_secrets_lore_desc
+  [1526] perk_secret_of_secrets
+  [1527] Ironclad
+  [1528] perk_ironclad_name
+  [1529] perk_ironclad_desc
+  [1530] perk_ironclad_lore_desc
+  [1531] perk_ironclad
+  [1532] Back alley style
+  [1533] perk_back_alley_style_name
+  [1534] perk_back_alley_style_desc
+  [1535] perk_back_alley_style_lore_desc
+  [1536] perk_back_alley_style
+  [1537] Spiritual guidance - bonusy
+  [1538] equipment_deterioration_reduction
+  [1539] Revenant II
+  [1540] perk_revenant_ii_name
+  [1541] perk_revenant_ii_desc
+  [1542] perk_revenant_ii_lore_desc
+  [1543] perk_revenant_ii
+  [1544] Hejkal
+  [1545] perk_ghillie_suit_name
+  [1546] perk_ghillie_suit_desc
+  [1547] perk_ghillie_suit_lore_desc
+  [1548] perk_ghillie_suit
+  [1549] Secrets of matter I
+  [1550] perk_secrets_of_matter_i_name
+  [1551] perk_secrets_of_matter_i_desc
+  [1552] perk_secrets_of_matter_i_lore_desc
+  [1553] perk_secrets_of_matter_i
+  [1554] Sundering blow
+  [1555] perk_sundering_blow_name
+  [1556] perk_sundering_blow_desc
+  [1557] perk_sundering_blow_lore_desc
+  [1558] perk_sundering_blow
+  [1559] Bark
+  [1560] perk_stekej_name
+  [1561] perk_stekej_desc
+  [1562] perk_stekej_lore_desc
+  [1563] perk_stekej
+  [1564] Art of preservation
+  [1565] perk_art_of_preservation_name
+  [1566] perk_art_of_preservation_desc
+  [1567] perk_art_of_preservation_lore_desc
+  [1568] perk_art_of_preservation
+  [1569] Zapasnik
+  [1570] perk_zapasnik_name
+  [1571] perk_zapasnik_desc
+  [1572] perk_zapasnik_lore_desc
+  [1573] perk_zapasnik
+  [1574] Wildrider - companion
+  [1575] Spiritual guidance
+  [1576] perk_spiritual_guidance_name
+  [1577] perk_spiritual_guidance_desc
+  [1578] perk_spiritual_guidance_lore_desc
+  [1579] perk_spiritual_guidance
+  [1580] Lovely companion
+  [1581] perk_lovely_companion_name
+  [1582] perk_lovely_companion_desc
+  [1583] perk_lovely_companion_lore_desc
+  [1584] perk_lovely_companion

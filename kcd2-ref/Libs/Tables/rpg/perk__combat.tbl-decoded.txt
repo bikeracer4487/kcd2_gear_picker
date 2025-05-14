@@ -1,0 +1,269 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk__combat.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2181424497
+  Layout Hash ........... 3183551129
+  Table Version ......... 1
+  Line Count ............ 51
+  String Data Size ...... 5406
+  Unique String Count ... 255
+  File Size ............. 11554
+  Calculated Line Size .. 120 (rem. 0)
+String Table:
+  [0] C09 (unarmed)
+  [1] perk_combo_C09_unarmed
+  [2] perk_combo_C09_desc_unarmed
+  [3] perk_combo_C09_lore_unarmed
+  [4] Unarmed_08
+  [5] C03 (unarmed)
+  [6] perk_combo_C03_unarmed
+  [7] perk_combo_C03_desc_unarmed
+  [8] perk_combo_C03_lore_unarmed
+  [9] Unarmed_03
+  [10] C02 (sword+shield)
+  [11] perk_combo_C02_sword_shield
+  [12] perk_combo_C02_desc_sword_shield
+  [13] perk_combo_C02_lore_sword_shield
+  [14] ShortswordShield_01
+  [15] C04 (sword)
+  [16] perk_combo_C04_sword
+  [17] perk_combo_C04_desc_sword
+  [18] perk_combo_C04_lore_sword
+  [19] Shortsword_03
+  [20] C06 (unarmed)
+  [21] perk_combo_C06_unarmed
+  [22] perk_combo_C06_desc_unarmed
+  [23] perk_combo_C06_lore_unarmed
+  [24] Unarmed_05
+  [25] C01 (unarmed)
+  [26] perk_combo_C01_unarmed
+  [27] perk_combo_C01_desc_unarmed
+  [28] perk_combo_C01_lore_unarmed
+  [29] Unarmed_01
+  [30] C15 (blunt)
+  [31] perk_combo_C15_blunt
+  [32] perk_combo_C15_desc_blunt
+  [33] perk_combo_C15_lore_blunt
+  [34] Blunt_06
+  [35] C02 (blunt+shield)
+  [36] perk_combo_C02_blunt_shield
+  [37] perk_combo_C02_desc_blunt_shield
+  [38] perk_combo_C02_lore_blunt_shield
+  [39] BluntShield_01
+  [40] C16 (blunt+shield)
+  [41] perk_combo_C16_blunt_shield
+  [42] perk_combo_C16_desc_blunt_shield
+  [43] perk_combo_C16_lore_blunt_shield
+  [44] BluntShield_07
+  [45] C06 (sword+shield)
+  [46] perk_combo_C06_sword_shield
+  [47] perk_combo_C06_desc_sword_shield
+  [48] perk_combo_C06_lore_sword_shield
+  [49] ShortswordShield_05
+  [50] C06 (sword)
+  [51] perk_combo_C06_sword
+  [52] perk_combo_C06_desc_sword
+  [53] perk_combo_C06_lore_sword
+  [54] Shortsword_05
+  [55] C03 (blunt)
+  [56] perk_combo_C03_blunt
+  [57] perk_combo_C03_desc_blunt
+  [58] perk_combo_C03_lore_blunt
+  [59] Blunt_02
+  [60] C01 (longsword)
+  [61] perk_combo_C01
+  [62] perk_combo_C01_lowerLeft
+  [63] perk_combo_C01_lore_lowerLeft
+  [64] Longsword_01
+  [65] C11 (sword)
+  [66] perk_combo_C11_sword
+  [67] perk_combo_C11_desc_sword
+  [68] perk_combo_C11_lore_sword
+  [69] Shortsword_06
+  [70] C08 (unarmed)
+  [71] perk_combo_C08_unarmed
+  [72] perk_combo_C08_desc_unarmed
+  [73] perk_combo_C08_lore_unarmed
+  [74] Unarmed_07
+  [75] C14 (sword)
+  [76] perk_combo_C14_sword
+  [77] perk_combo_C14_desc_sword
+  [78] perk_combo_C14_lore_sword
+  [79] Shortsword_09
+  [80] C05 (blunt+shield)
+  [81] perk_combo_C05_blunt_shield
+  [82] perk_combo_C05_desc_blunt_shield
+  [83] perk_combo_C05_lore_blunt_shield
+  [84] BluntShield_04
+  [85] C03 (blunt+shield)
+  [86] perk_combo_C03_blunt_shield
+  [87] perk_combo_C03_desc_blunt_shield
+  [88] perk_combo_C03_lore_blunt_shield
+  [89] BluntShield_02
+  [90] C11 (longsword)
+  [91] perk_combo_C11
+  [92] perk_combo_C11_desc
+  [93] perk_combo_C11_lore
+  [94] Longsword_08
+  [95] C12 (longsword)
+  [96] perk_combo_C12
+  [97] perk_combo_C12_desc
+  [98] perk_combo_C12_lore_LongSword
+  [99] Longsword_09
+  [100] C04 (sword+shield)
+  [101] perk_combo_C04_sword_shield
+  [102] perk_combo_C04_desc_sword_shield
+  [103] perk_combo_C04_lore_sword_shield
+  [104] ShortswordShield_03
+  [105] C04 (blunt)
+  [106] perk_combo_C04_blunt
+  [107] perk_combo_C04_desc_lowerLeft
+  [108] perk_combo_C04_lore_blunt
+  [109] Blunt_03
+  [110] C12 (sword)
+  [111] perk_combo_C12_sword
+  [112] perk_combo_C12_desc_sword
+  [113] perk_combo_C12_lore_sword
+  [114] Shortsword_07
+  [115] C01 (sword)
+  [116] perk_combo_C01_sword
+  [117] perk_combo_C01_desc_sword
+  [118] perk_combo_C01_lore_sword
+  [119] Shortsword_01
+  [120] C05 (sword+shield)
+  [121] perk_combo_C05_sword_shield
+  [122] perk_combo_C05_desc_sword_shield
+  [123] perk_combo_C05_lore_sword_shield
+  [124] ShortswordShield_04
+  [125] C02 (unarmed)
+  [126] perk_combo_C02_unarmed
+  [127] perk_combo_C02_desc_unarmed
+  [128] perk_combo_C02_lore_unarmed
+  [129] Unarmed_02
+  [130] C04 (blunt+shield)
+  [131] perk_combo_C04_blunt_shield
+  [132] perk_combo_C04_desc_blunt_shield
+  [133] perk_combo_C04_lore_blunt_shield
+  [134] BluntShield_03
+  [135] C05 (unarmed)
+  [136] perk_combo_C05_unarmed
+  [137] perk_combo_C05_desc_unarmed
+  [138] perk_combo_C05_lore_unarmed
+  [139] Unarmed_04
+  [140] C15 (blunt+shield)
+  [141] perk_combo_C15_blunt_shield
+  [142] perk_combo_C15_desc_blunt_shield
+  [143] perk_combo_C15_lore_blunt_shield
+  [144] BluntShield_06
+  [145] C06 (longsword)
+  [146] perk_combo_C06
+  [147] perk_combo_C06_desc
+  [148] perk_combo_C06_lore
+  [149] Longsword_04
+  [150] C04 (halberd)
+  [151] perk_combo_C04_halberd
+  [152] perk_combo_C04_desc_halberd
+  [153] perk_combo_C04_lore_halberd
+  [154] Halberd_02
+  [155] C05 (sword)
+  [156] perk_combo_C05_sword
+  [157] perk_combo_C05_desc_sword
+  [158] perk_combo_C05_lore_sword
+  [159] Shortsword_04
+  [160] C05 (longsword)
+  [161] perk_combo_C05
+  [162] perk_combo_C05_desc
+  [163] perk_combo_C05_lore
+  [164] Longsword_03
+  [165] C07 (halberd)
+  [166] perk_combo_C07_halberd
+  [167] perk_combo_C07_desc_halberd
+  [168] perk_combo_C07_lore_halberd
+  [169] Halberd_04
+  [170] C08 (longsword)
+  [171] perk_combo_C08
+  [172] perk_combo_C08_desc
+  [173] perk_combo_C08_lore
+  [174] Longsword_06
+  [175] C03 (sword)
+  [176] perk_combo_C03_sword
+  [177] perk_combo_C03_desc_sword
+  [178] perk_combo_C03_lore_sword
+  [179] Shortsword_02
+  [180] C01 (blunt)
+  [181] perk_combo_C01_blunt
+  [182] perk_combo_C01_desc_blunt
+  [183] perk_combo_C01_lore_blunt
+  [184] Blunt_01
+  [185] C09 (blunt+shield)
+  [186] perk_combo_C09_blunt_shield
+  [187] perk_combo_C09_desc_blunt_shield
+  [188] perk_combo_C09_lore_blunt_shield
+  [189] BluntShield_05
+  [190] C14 (sword+shield)
+  [191] perk_combo_C14_sword_shield
+  [192] perk_combo_C14_desc_sword_shield
+  [193] perk_combo_C14_lore_sword_shield
+  [194] ShortswordShield_07
+  [195] C13 (longsword)
+  [196] perk_combo_C13
+  [197] perk_combo_C13_desc
+  [198] perk_combo_C13_lore_Rossen
+  [199] Longsword_10
+  [200] C13 (sword)
+  [201] perk_combo_C13_sword
+  [202] perk_combo_C13_desc_sword
+  [203] perk_combo_C13_lore_sword
+  [204] Shortsword_08
+  [205] C09 (longsword)
+  [206] perk_combo_C09
+  [207] perk_combo_C09_desc
+  [208] perk_combo_C09_lore
+  [209] Longsword_07
+  [210] C03 (halberd)
+  [211] perk_combo_C03_halberd
+  [212] perk_combo_C03_desc_halberd
+  [213] perk_combo_C03_lore_halberd
+  [214] Halberd_01
+  [215] C09 (blunt)
+  [216] perk_combo_C09_blunt
+  [217] perk_combo_C09_desc_blunt
+  [218] perk_combo_C09_lore_blunt
+  [219] Blunt_05
+  [220] C07 (longsword)
+  [221] perk_combo_C07
+  [222] perk_combo_C07_desc
+  [223] perk_combo_C07_lore
+  [224] Longsword_05
+  [225] C07 (unarmed)
+  [226] perk_combo_C07_unarmed
+  [227] perk_combo_C07_desc_unarmed
+  [228] perk_combo_C07_lore_unarmed
+  [229] Unarmed_06
+  [230] C02 (longsword)
+  [231] perk_combo_C02
+  [232] perk_combo_C02_desc
+  [233] perk_combo_C02_lore
+  [234] Longsword_02
+  [235] C05 (halberd)
+  [236] perk_combo_C05_halberd
+  [237] perk_combo_C05_desc_halberd
+  [238] perk_combo_C05_lore_halberd
+  [239] Halberd_03
+  [240] C03 (sword+shield)
+  [241] perk_combo_C03_sword_shield
+  [242] perk_combo_C03_desc_sword_shield
+  [243] perk_combo_C03_lore_sword_shield
+  [244] ShortswordShield_02
+  [245] C05 (blunt)
+  [246] perk_combo_C05_blunt
+  [247] perk_combo_C05_desc_blunt
+  [248] perk_combo_C05_lore_blunt
+  [249] Blunt_04
+  [250] C11 (sword+shield)
+  [251] perk_combo_C11_sword_shield
+  [252] perk_combo_C11_desc_sword_shield
+  [253] perk_combo_C11_lore_sword_shield
+  [254] ShortswordShield_06

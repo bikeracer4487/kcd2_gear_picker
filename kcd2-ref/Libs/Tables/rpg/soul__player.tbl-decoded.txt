@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__player.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 194
+  Unique String Count ... 12
+  File Size ............. 1118
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] player_horse_spawnedOnWhistle
+  [1] test_npcs
+  [2] player_bohuta
+  [3] player
+  [4] char_BOHUTA
+  [5] player_henry
+  [6] 26
+  [7] player_horse
+  [8] player_owned_horse_placeholder
+  [9] player_placeholder
+  [10] player_naked
+  [11] char_GENERIC_MAN_COMMONER_23

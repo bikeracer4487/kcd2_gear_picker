@@ -1,0 +1,262 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/skald/voice.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 403996935
+  Layout Hash ........... 1807636333
+  Table Version ......... 1
+  Line Count ............ 87
+  String Data Size ...... 2826
+  Unique String Count ... 248
+  File Size ............. 7030
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] UNDEFINED
+  [1] und
+  [2] Petr Fejk
+  [3] fejk
+  [4] Petra Fejková
+  [5] fejka
+  [6] Matthew Wolf
+  [7] mwol
+  [8] matthewWolf
+  [9] Mia Allis
+  [10] aric
+  [11] abigailRice
+  [12] Brian Caspe
+  [13] bcas
+  [14] brianCaspe
+  [15] Dan Brown
+  [16] dbro
+  [17] danBrown
+  [18] Gabriel Andrews
+  [19] gand
+  [20] gabrielAndrews
+  [21] Gregory Gudgeon
+  [22] ggud
+  [23] gregoryGudgeon
+  [24] Chris Clarke
+  [25] ccla
+  [26] chrisClarke
+  [27] Christopher Dukes
+  [28] cduk
+  [29] christopherDukes
+  [30] Jennifer Preston
+  [31] jpres
+  [32] jenniferPreston
+  [33] Jim High
+  [34] jhig1
+  [35] jimHigh
+  [36] Logan Hillier
+  [37] lhil
+  [38] loganHillier
+  [39] Luke Dale
+  [40] ldal
+  [41] lukeDale
+  [42] Marc Cram
+  [43] mcra
+  [44] marcCram
+  [45] Michael Pitthan
+  [46] mpit
+  [47] michaelPitthan
+  [48] Paul Dean
+  [49] pdea
+  [50] paulDean
+  [51] Peter Hosking (Hanuš)
+  [52] phos1
+  [53] peterHosking_hanus
+  [54] Sam Barlien
+  [55] sbar
+  [56] samBarlien
+  [57] Sinead Phelps
+  [58] sphe
+  [59] sineadPhelps
+  [60] Tom McKay
+  [61] tmck
+  [62] tomMcKay
+  [63] Peter Hosking (Generic)
+  [64] phos2
+  [65] peterHosking_generic
+  [66] Dan Collins
+  [67] dcol
+  [68] danCollins
+  [69] James Beaumont
+  [70] jbea
+  [71] jamesBeaumont
+  [72] Adrian Bouchet
+  [73] abou
+  [74] adrianBouchet
+  [75] Alex Montyro
+  [76] amon
+  [77] alechMontyro
+  [78] Angela Alsop
+  [79] aals
+  [80] angelaAlsop
+  [81] Sandra Osgerby
+  [82] bmcf
+  [83] beccaMcfadden
+  [84] Daniel Osgerby
+  [85] dosg
+  [86] danielOsgerby
+  [87] Daniel Zappi
+  [88] dzap
+  [89] danielZappi
+  [90] Douglas Russell
+  [91] drus
+  [92] douglasRussel
+  [93] Euan Macnaughton
+  [94] emac
+  [95] euanMacnaughton
+  [96] Ian Champion
+  [97] icha
+  [98] ianChampion
+  [99] Jamie Marshall
+  [100] jmar
+  [101] jamieMarshall
+  [102] Janina Anderson
+  [103] jand
+  [104] janinaAnderson
+  [105] Jean-Philippe Ricci
+  [106] jric
+  [107] jeanPhilippeRicci
+  [108] Jonathan Milshaw
+  [109] jmil
+  [110] jonathanMilshaw
+  [111] Mads Hjulmand
+  [112] mhju
+  [113] madsHjulmand
+  [114] Martin Bishop
+  [115] mbis
+  [116] martinBishop
+  [117] Michael Glantschnig
+  [118] mgla
+  [119] michaelGlantschnig
+  [120] Milton Welsh
+  [121] mwel
+  [122] miltonWelsh
+  [123] Paul Coltofeanu
+  [124] pcol
+  [125] paulColtofeanu
+  [126] Richard Kiess
+  [127] rkie
+  [128] richardKiess
+  [129] Scott Young
+  [130] syou
+  [131] scottYoung
+  [132] Juergen Straub
+  [133] jstra
+  [134] juergenStraub
+  [135] Marek Vašut
+  [136] mvas
+  [137] marekVasut
+  [138] Kenneth Christensen
+  [139] kchr
+  [140] kennethChristensen
+  [141] Katie Griffiths
+  [142] kgri
+  [143] katieGriffiths
+  [144] Hainsley Bennet
+  [145] hben
+  [146] hainsleyBennet
+  [147] George Lenz
+  [148] glen
+  [149] georgeLenz
+  [150] Arnošt Goldflam
+  [151] agol
+  [152] arnostGoldflam
+  [153] Muž Cuman 1
+  [154] M28
+  [155] Barnabas Reti (Cuman 2)
+  [156] M29
+  [157] Ivan Kamaras (Cuman 3)
+  [158] M30
+  [159] Christian Bako (Cuman 4)
+  [160] M31
+  [161] Rozalie Andělová (German)
+  [162] rand
+  [163] rozalieAndelova
+  [164] Martina Klier (German)
+  [165] mryc
+  [166] marketaRychterova
+  [167] Veronika Kokyová (Marika Roma)
+  [168] F48
+  [169] Sandra Lasoková (Aranka Roma)
+  [170] F49
+  [171] Nikolas Ferenc (Tibor Roma 1)
+  [172] M24
+  [173] Gregory Gudgeon (Vajda Roma 2)
+  [174] M25
+  [175] Michal Žolták (Mikolaj Roma 3)
+  [176] M26
+  [177] Lukáš Latinák
+  [178] llat
+  [179] lukasLatinak
+  [180] Konrad Eleryk
+  [181] kele
+  [182] konradEleryk
+  [183] Bob Bordeaux
+  [184] bbor
+  [185] bobBordeaux
+  [186] Rebecca Risness
+  [187] rris
+  [188] rebeccaRisness
+  [189] Stewart Moore
+  [190] smoo
+  [191] stewartMoore
+  [192] Roy McCrerey
+  [193] rmmc
+  [194] royMccrerey
+  [195] Tomas Zielinski
+  [196] tzie
+  [197] tomasZielinski
+  [198] John Comer
+  [199] jcom
+  [200] johnComer
+  [201] Lily Carr
+  [202] lcar
+  [203] lilyCarr
+  [204] Joncie Elmore
+  [205] jelm
+  [206] joncieElmore
+  [207] James Nunn
+  [208] jnun
+  [209] jamesNunn
+  [210] Rupert Lazurus
+  [211] rlaz
+  [212] rupertLazurus
+  [213] Jack Parr
+  [214] jpar
+  [215] jackParr
+  [216] Steen Agro
+  [217] sagr
+  [218] steenAgro
+  [219] Bethan Rose Young
+  [220] bros
+  [221] bethanRoseYoung
+  [222] Tegen Short
+  [223] tsho
+  [224] tegenShort
+  [225] Jade Becker
+  [226] jber
+  [227] jadeBecker
+  [228] Tina Gray 
+  [229] tgra
+  [230] zenaHodneStara
+  [231] Andrea Miltnerová
+  [232] amil
+  [233] andreaMiltnerova
+  [234] Animal or Dead body
+  [235] anim
+  [236] animalOrDeadBody
+  [237] Tonya Graves
+  [238] tonya
+  [239] tonyaGraves
+  [240] Marcel Costea (Vajda2 Roma)
+  [241] mcos
+  [242] marcelCostea
+  [243] Žena Roma Mladá (Marika2)
+  [244] F50
+  [245] Sandra Schneider
+  [246] ssch
+  [247] sandraSchneider

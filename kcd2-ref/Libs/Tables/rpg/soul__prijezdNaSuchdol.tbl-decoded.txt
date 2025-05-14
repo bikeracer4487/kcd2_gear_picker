@@ -1,0 +1,60 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__prijezdNaSuchdol.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 27
+  String Data Size ...... 1459
+  Unique String Count ... 46
+  File Size ............. 4943
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] prijezdNaSuchdol_atmosphereCartHorseLeft
+  [1] kutnohorsko_settlements_suchdol_commonFolk_peasants_prijezdNaSuchdol_horses
+  [2] prijezdNaSuchdol_hayFemale_1
+  [3] kutnohorsko_settlements_suchdol_commonFolk_peasants_prijezdNaSuchdol_workers
+  [4] char_GENERIC_WOMAN_COMMONER_07
+  [5] prijezdNaSuchdol_scribe_jobst
+  [6] cutsceneOnly
+  [7] char_GENERIC_MAN_NOBLEMAN_03
+  [8] prijezdNaSuchdol_soldier_jobst_3
+  [9] char_GENERIC_MAN_SOLDIER_38
+  [10] prijezdNaSuchdol_soldier_jobst_4
+  [11] char_GENERIC_MAN_SOLDIER_31
+  [12] prijezdNaSuchdol_soldier_jobst_2
+  [13] char_GENERIC_MAN_SOLDIER_25
+  [14] prijezdNaSuchdol_playerCartHorseRight
+  [15] prijezdNaSuchdol_hayFemale_2
+  [16] placeholder_horse_player
+  [17] animalCompanions
+  [18] prijezdNaSuchdol_hayFemale_3
+  [19] prijezdNaSuchdol_hoeMale_2
+  [20] char_GENERIC_MAN_COMMONER_10
+  [21] prijezdNaSuchdol_hayFemale_4
+  [22] prijezdNaSuchdol_atmosphereCartFarmer
+  [23] char_GENERIC_MAN_COMMONER_02
+  [24] prijezdNaSuchdol_hoeFemale_2
+  [25] char_GENERIC_WOMAN_COMMONER_03
+  [26] prijezdNaSuchdol_hoeFemale_3
+  [27] char_GENERIC_WOMAN_COMMONER_11
+  [28] prijezdNaSuchdol_hoeFemale_1
+  [29] prijezdNaSuchdol_hoeFemale_4
+  [30] char_GENERIC_WOMAN_COMMONER_02
+  [31] prijezdNaSuchdol_hayFemale_5
+  [32] prijezdNaSuchdol_hoeMale_1
+  [33] char_GENERIC_MAN_COMMONER_24
+  [34] prijezdNaSuchdol_playerCartHorseLeft
+  [35] prijezdNaSuchdol_hoeFemale_5
+  [36] prijezdNaSuchdol_soldier_jobst_1
+  [37] char_GENERIC_MAN_SOLDIER_19
+  [38] prijezdNaSuchdol_hoeMale_5
+  [39] char_GENERIC_MAN_COMMONER_05
+  [40] prijezdNaSuchdol_hoeMale_3
+  [41] char_GENERIC_MAN_COMMONER_14
+  [42] prijezdNaSuchdol_hoeMale_4
+  [43] char_GENERIC_MAN_COMMONER_04
+  [44] prijezdNaSuchdol_hayFemale_6
+  [45] prijezdNaSuchdol_atmosphereCartHorseRight

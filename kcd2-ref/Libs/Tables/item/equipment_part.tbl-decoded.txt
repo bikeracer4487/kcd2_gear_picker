@@ -1,0 +1,41 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/equipment_part.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 226572004
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 27
+  String Data Size ...... 253
+  Unique String Count ... 27
+  File Size ............. 713
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] head
+  [1] torso
+  [2] arms
+  [3] hands
+  [4] legs
+  [5] feet
+  [6] horse_head
+  [7] horse_torso
+  [8] horse_legs
+  [9] neck
+  [10] waist
+  [11] belt
+  [12] horse_back
+  [13] horse_tail
+  [14] dog_torso
+  [15] cattle_torso
+  [16] sheep_torso
+  [17] pig_torso
+  [18] red_deer_stag_torso
+  [19] red_deer_doe_torso
+  [20] roe_deer_torso
+  [21] face
+  [22] beard
+  [23] dog_fur
+  [24] hare_torso
+  [25] dog_eyes
+  [26] sheep_head

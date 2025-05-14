@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/positioning_shape.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3634898161
+  Layout Hash ........... 516410557
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 28
+  Unique String Count ... 3
+  File Size ............. 128
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] Conversation
+  [1] Triangle
+  [2] Dance

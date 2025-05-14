@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_hit_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1292262291
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 2
+  String Data Size ...... 37
+  Unique String Count ... 4
+  File Size ............. 113
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] minor
+  [1] hitTypeLow
+  [2] major
+  [3] hitTypeNormal

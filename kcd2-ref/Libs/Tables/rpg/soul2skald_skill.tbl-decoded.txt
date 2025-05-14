@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul2skald_skill.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3946032523
+  Layout Hash ........... 1068378577
+  Table Version ......... 1
+  Line Count ............ 1340
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 32188
+  Calculated Line Size .. 24 (rem. 0)

@@ -1,0 +1,50 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zbranePanaSemina.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 16
+  String Data Size ...... 1064
+  Unique String Count ... 36
+  File Size ............. 3140
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zbranePanaSemina_moravak_4
+  [1] trosecko_settlements_semin_nobility_zbranePanaSeminaMoravak
+  [2] char_GENERIC_MAN_NOBLEMAN_04
+  [3] zbranePanaSemina_moravak_3
+  [4] char_GENERIC_MAN_NOBLEMAN_10
+  [5] zbranePanaSemina_moravak_1
+  [6] char_MORAVAK_1
+  [7] zbranePanaSemina_bandit_7
+  [8] trosecko_enemies_bandits_zbranePanaSemina
+  [9] Bandits
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [11] zbranePanaSemina_bandit_1
+  [12] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [13] zbranePanaSemina_bandit_3
+  [14] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [15] zbranePanaSemina_bandit_2
+  [16] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [17] zbranePanaSemina_bandit_8
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [19] zbranePanaSemina_bandit_5
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [21] zbranePanaSemina_bandit_4
+  [22] zbranePanaSemina_pacholekFrancek
+  [23] trosecko_settlements_semin_commonFolk_peasants_studFarm
+  [24] char_PACHOLEK_FRANCEK
+  [25] zbranePanaSemina_moravak_2
+  [26] char_MORAVAK_2
+  [27] zbranePanaSemina_moravak_5
+  [28] char_GENERIC_MAN_NOBLEMAN_08
+  [29] zbranePanaSemina_moravak_jurko
+  [30] char_MORAVAK_JURKO
+  [31] zbranePanaSemina_pacholek
+  [32] trosecko_settlements_tachov_commonFolk_noparcel
+  [33] char_PACHOLEK_VENCA_APOLENA
+  [34] zbranePanaSemina_bandit_6
+  [35] char_GENERIC_MAN_ENEMY_BANDIT_11

@@ -1,0 +1,29 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__pranyr.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 313
+  Unique String Count ... 15
+  File Size ............. 1237
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] pranyr_david
+  [1] eventNPCs_civilians_friends
+  [2] char_DAVID
+  [3] pranyr_prisoner_1
+  [4] char_GENERIC_MAN_COMMONER_01
+  [5] pranyr_prisoner_3
+  [6] char_GENERIC_MAN_COMMONER_03
+  [7] pranyr_prisoner_4
+  [8] char_GENERIC_MAN_COMMONER_04
+  [9] pranyr_prisoner_2
+  [10] char_GENERIC_MAN_COMMONER_02
+  [11] pranyr_prisoner_5
+  [12] char_GENERIC_MAN_COMMONER_05
+  [13] pranyr_michal
+  [14] char_MICHAL

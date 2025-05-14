@@ -1,0 +1,57 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tzda.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 22
+  String Data Size ...... 867
+  Unique String Count ... 43
+  File Size ............. 3711
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tzda_man_11
+  [1] trosecko_enemies_bandits_campZdar
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [4] tzda_man_1
+  [5] trosecko_outskirts_farms_zdar_east
+  [6] char_GENERIC_MAN_COMMONER_26
+  [7] tzda_dog_1
+  [8] trosecko_outskirts_farms_zdar_west
+  [9] tzda_woman_2
+  [10] char_GENERIC_WOMAN_COMMONER_07
+  [11] tzda_woman_1
+  [12] char_GENERIC_WOMAN_COMMONER_11
+  [13] tzda_man_2
+  [14] char_GENERIC_MAN_COMMONER_20
+  [15] tzda_drimal
+  [16] trosecko_outskirts_herdsmen_zdar
+  [17] char_DRIMAL
+  [18] tzda_man_5
+  [19] char_GENERIC_MAN_COMMONER_04
+  [20] tzda_man_3
+  [21] Merchants
+  [22] char_GENERIC_MAN_MERCHANT_CZECH_03
+  [23] tzda_woman_3
+  [24] char_GENERIC_WOMAN_COMMONER_04
+  [25] tzda_man_4
+  [26] char_GENERIC_MAN_COMMONER_01
+  [27] tzda_man_7
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [29] tzda_man_8
+  [30] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [31] tzda_dog_4
+  [32] tzda_man_6
+  [33] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [34] tzda_horse_2
+  [35] tzda_man_12
+  [36] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [37] tzda_horse_1
+  [38] tzda_man_9
+  [39] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [40] tzda_dog_5
+  [41] tzda_woman_4
+  [42] tzda_man_10

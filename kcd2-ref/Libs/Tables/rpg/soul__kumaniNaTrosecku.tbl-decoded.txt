@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kumaniNaTrosecku.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 2
+  String Data Size ...... 185
+  Unique String Count ... 7
+  File Size ............. 469
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kumaniNaTrosecku_troskoviceExtraGuard
+  [1] trosecko_settlements_troskovice_soldiers_guards
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_02
+  [4] kumaniNaTrosecku_dogInForest
+  [5] animal_wild_neutral
+  [6] char_PODIVNY_PES

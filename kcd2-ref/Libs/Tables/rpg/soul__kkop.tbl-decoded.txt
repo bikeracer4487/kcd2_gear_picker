@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kkop.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 382
+  Unique String Count ... 16
+  File Size ............. 1306
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kkop_bandit_6
+  [1] kutnohorsko_enemies_bandits_sedmStatecnych2CampKopecVysoka
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [4] kkop_bandit_5
+  [5] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [6] kkop_bandit_3
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [8] kkop_bandit_1
+  [9] char_CELNIK_MATOUS
+  [10] kkop_bandit_7
+  [11] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [12] kkop_bandit_2
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [14] kkop_bandit_4
+  [15] char_GENERIC_MAN_ENEMY_BANDIT_08

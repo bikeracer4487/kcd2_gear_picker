@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_switching.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1680731372
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 160
+  Unique String Count ... 7
+  File Size ............. 348
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] animal/basic/switch/switch.xml
+  [1] root
+  [2] _lukas/test_daycycle.xml
+  [3] onUpdate
+  [4] player/switch/switch.xml
+  [5] npc/basic/switch/switch.xml
+  [6] closedCastle\switch_closedCastle.xml

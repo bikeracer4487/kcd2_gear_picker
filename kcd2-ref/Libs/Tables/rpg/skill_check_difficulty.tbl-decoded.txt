@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/skill_check_difficulty.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2993484885
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 118
+  Unique String Count ... 11
+  File Size ............. 410
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] AutoSuccess
+  [1] RidiculouslyEasy
+  [2] ExtremelyEasy
+  [3] VeryEasy
+  [4] Easy
+  [5] Medium
+  [6] Hard
+  [7] VeryHard
+  [8] ExtremelyHard
+  [9] RidiculouslyHard
+  [10] AutoFail

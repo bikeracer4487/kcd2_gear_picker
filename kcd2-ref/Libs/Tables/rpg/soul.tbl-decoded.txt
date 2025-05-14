@@ -1,0 +1,34 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 11
+  String Data Size ...... 586
+  Unique String Count ... 20
+  File Size ............. 2022
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] pogrom_synagogueDefender3
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_zidovska_parcel05
+  [2] char_GENERIC_MAN_JEW_03
+  [3] Horse2
+  [4] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel03
+  [5] kkut_horse_5
+  [6] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_ceska_parcel01
+  [7] cutscene_zizkaScar
+  [8] cutsceneOnly
+  [9] kbyl_horse_2
+  [10] kutnohorsko_settlements_bylany_commonFolk_tavern_staff
+  [11] bazilisciVejce_wildDog_3
+  [12] animal_wild_enemy_trosecko
+  [13] bazilisciVejce_wildDog_1
+  [14] pogrom_synagogueDefender4
+  [15] char_GENERIC_MAN_JEW_02
+  [16] pogrom_synagogueDefender5
+  [17] char_GENERIC_MAN_JEW_04
+  [18] kbyl_horse_1
+  [19] bazilisciVejce_wildDog_2

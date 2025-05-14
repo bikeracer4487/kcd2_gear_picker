@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__rasuvUcen.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 15
+  String Data Size ...... 722
+  Unique String Count ... 28
+  File Size ............. 2670
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] rasuvUcen_wolf_1
+  [1] animal_wild_enemy_trosecko
+  [2] rasuvUcen_mountedPatrol_soldier_2
+  [3] trosecko_settlements_trosky_soldiers_guards
+  [4] char_GENERIC_MAN_SOLDIER_02
+  [5] rasuvUcen_wildlifeRun_wolf2
+  [6] animal_wild
+  [7] rasuvUcen_wolf_3
+  [8] rasuvUcen_wildlifeRun_wolf
+  [9] rasuvUcen_herdsman_man
+  [10] trosecko_outskirts_herdsmen
+  [11] char_GENERIC_MAN_COMMONER_08
+  [12] rasuvUcen_ambusherTalker
+  [13] trosecko_settlements_troskovice_commonFolk_peasants_rasuvUcenAmbushers
+  [14] char_POMSTYCHTIVEC_3
+  [15] rasuvUcen_mountedPatrol_horse_2
+  [16] rasuvUcen_ambusher1
+  [17] char_POMSTYCHTIVEC_1
+  [18] rasuvUcen_mountedPatrol_soldier_1
+  [19] char_GENERIC_MAN_SOLDIER_16
+  [20] rasuvUcen_ambusher2
+  [21] char_POMSTYCHTIVEC_2
+  [22] rasuvUcen_wolf_2
+  [23] rasuvUcen_herdsman_sheep
+  [24] rasuvUcen_dog
+  [25] animal_home
+  [26] char_PES_CISAR
+  [27] rasuvUcen_mountedPatrol_horse_1

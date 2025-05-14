@@ -1,0 +1,122 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__utokNaMalesov.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 68
+  String Data Size ...... 3637
+  Unique String Count ... 108
+  File Size ............. 12369
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] utokNaMalesov_innerCourtyardDefender_4
+  [1] kutnohorsko_settlements_malesov_soldiers_utokNaMalesov
+  [2] char_GENERIC_MAN_SOLDIER_11
+  [3] utokNaMalesov_innerCourtyardDefender_2
+  [4] char_GENERIC_MAN_SOLDIER_19
+  [5] utokNaMalesov_additionalVillageReinforcement_1
+  [6] char_GENERIC_MAN_SOLDIER_21
+  [7] utokNaMalesov_innerCourtyardDefender_7
+  [8] char_GENERIC_MAN_SOLDIER_29
+  [9] utokNaMalesov_brabantSoldier_9
+  [10] cutsceneOnly
+  [11] char_GENERIC_MAN_SOLDIER_06
+  [12] utokNaMalesov_outerCourtyardDefender_17
+  [13] char_GENERIC_MAN_SOLDIER_32
+  [14] utokNaMalesov_brabantSoldier_7
+  [15] utokNaMalesov_innerCourtyardDefender_5
+  [16] char_GENERIC_MAN_SOLDIER_27
+  [17] utokNaMalesov_malesovTowerShooter_3
+  [18] char_GENERIC_MAN_SOLDIER_14
+  [19] utokNaMalesov_outerCourtyardShooter_1
+  [20] char_GENERIC_MAN_SOLDIER_12
+  [21] utokNaMalesov_outerCourtyardDefender_8
+  [22] utokNaMalesov_malesovTowerShooter_1
+  [23] char_GENERIC_MAN_SOLDIER_25
+  [24] utokNaMalesov_deadBody_1
+  [25] utokNaMalesov_livingDead_female_3
+  [26] char_GENERIC_WOMAN_COMMONER_04
+  [27] utokNaMalesov_livingDead_male_2
+  [28] char_GENERIC_MAN_COMMONER_05
+  [29] utokNaMalesov_brabantSoldier_6
+  [30] utokNaMalesov_livingDead_male_1
+  [31] char_GENERIC_MAN_COMMONER_23
+  [32] utokNaMalesov_brabantSoldier_2
+  [33] char_GENERIC_MAN_SOLDIER_31
+  [34] utokNaMalesov_outerCourtyardDefender_14
+  [35] utokNaMalesov_outerCourtyardShooter_6
+  [36] char_GENERIC_MAN_SOLDIER_22
+  [37] utokNaMalesov_deadBody_3
+  [38] utokNaMalesov_malesovTowerDefender_4
+  [39] char_GENERIC_MAN_SOLDIER_05
+  [40] utokNaMalesov_outerCourtyardShooter_7
+  [41] char_GENERIC_MAN_SOLDIER_13
+  [42] utokNaMalesov_additionalVillageReinforcement_6
+  [43] char_GENERIC_MAN_SOLDIER_37
+  [44] utokNaMalesov_brabantSoldier_1
+  [45] char_GENERIC_MAN_SOLDIER_33
+  [46] utokNaMalesov_outerCourtyardDefender_12
+  [47] char_GENERIC_MAN_SOLDIER_07
+  [48] utokNaMalesov_livingDead_female_2
+  [49] char_GENERIC_WOMAN_COMMONER_02
+  [50] utokNaMalesov_malesovTowerDefender_1
+  [51] utokNaMalesov_malesovTowerShooter_2
+  [52] char_GENERIC_MAN_SOLDIER_16
+  [53] utokNaMalesov_livingDead_female_1
+  [54] char_GENERIC_WOMAN_COMMONER_11
+  [55] utokNaMalesov_outerCourtyardShooter_2
+  [56] char_GENERIC_MAN_SOLDIER_18
+  [57] utokNaMalesov_brabantSoldier_8
+  [58] utokNaMalesov_innerCourtyardDefender_6
+  [59] utokNaMalesov_brabantSoldier_5
+  [60] utokNaMalesov_innerCourtyardDefender_3
+  [61] char_GENERIC_MAN_SOLDIER_17
+  [62] utokNaMalesov_additionalVillageReinforcement_3
+  [63] char_GENERIC_MAN_SOLDIER_20
+  [64] utokNaMalesov_outerCourtyardDefender_11
+  [65] utokNaMalesov_additionalVillageReinforcement_4
+  [66] char_GENERIC_MAN_SOLDIER_15
+  [67] utokNaMalesov_brabantSoldier_3
+  [68] utokNaMalesov_outerCourtyardDefender_2
+  [69] utokNaMalesov_outerCourtyardDefender_9
+  [70] utokNaMalesov_outerCourtyardDefender_13
+  [71] utokNaMalesov_additionalVillageReinforcement_2
+  [72] utokNaMalesov_innerCourtyardDefender_1
+  [73] utokNaMalesov_malesovTowerDefender_3
+  [74] char_GENERIC_MAN_SOLDIER_02
+  [75] utokNaMalesov_outerCourtyardDefender_4
+  [76] utokNaMalesov_outerCourtyardDefender_5
+  [77] char_GENERIC_MAN_SOLDIER_08
+  [78] utokNaMalesov_malesovTowerDefender_5
+  [79] char_GENERIC_MAN_SOLDIER_38
+  [80] utokNaMalesov_outerCourtyardDefender_16
+  [81] utokNaMalesov_deadBody_2
+  [82] utokNaMalesov_outerCourtyardShooter_5
+  [83] char_GENERIC_MAN_SOLDIER_30
+  [84] utokNaMalesov_additionalVillageReinforcement_5
+  [85] utokNaMalesov_outerCourtyardDefender_6
+  [86] utokNaMalesov_brabantSoldier_10
+  [87] utokNaMalesov_malesovTowerDefender_2
+  [88] char_GENERIC_MAN_SOLDIER_26
+  [89] utokNaMalesov_outerCourtyardShooter_3
+  [90] utokNaMalesov_outerCourtyardShooter_8
+  [91] utokNaMalesov_corpseStumble
+  [92] char_GENERIC_MAN_COMMONER_10
+  [93] utokNaMalesov_outerCourtyardDefender_15
+  [94] char_GENERIC_MAN_SOLDIER_03
+  [95] utokNaMalesov_outerCourtyardDefender_18
+  [96] char_GENERIC_MAN_SOLDIER_01
+  [97] utokNaMalesov_outerCourtyardDefender_10
+  [98] utokNaMalesov_brabantSoldier_4
+  [99] utokNaMalesov_deadBody_5
+  [100] utokNaMalesov_outerCourtyardShooter_4
+  [101] char_GENERIC_MAN_SOLDIER_10
+  [102] utokNaMalesov_outerCourtyardDefender_1
+  [103] char_GENERIC_MAN_SOLDIER_28
+  [104] utokNaMalesov_outerCourtyardDefender_7
+  [105] utokNaMalesov_deadBody_4
+  [106] utokNaMalesov_outerCourtyardDefender_3
+  [107] char_GENERIC_MAN_SOLDIER_23

@@ -1,0 +1,38 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__taboryLapkuNaTrosecku.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 9
+  String Data Size ...... 649
+  Unique String Count ... 24
+  File Size ............. 1829
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] taboryLapku_plesnivec
+  [1] trosecko_enemies_bandits_campZdar
+  [2] Bandits
+  [3] char_PLESNIVEC
+  [4] taboryLapku_karlik
+  [5] trosecko_enemies_bandits_taboryLapkuKarlik
+  [6] char_HEZOUN_KARLIK
+  [7] taboryLapkuTrosecko_lapka_4
+  [8] char_ZEBRAVY_MNICH_OD_PLESNIVCE
+  [9] taboryLapku_kaspar
+  [10] trosecko_enemies_bandits_taboryLapkuKaspar_kaspar
+  [11] char_KASPAR
+  [12] taboryLapkuTrosecko_lapka_3
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [14] tsem_cervenak
+  [15] trosecko_settlements_semin_soldiers_taboryLapkuCervenak
+  [16] char_RAUBRITTER_CERVENAK
+  [17] taboryLapkuTrosecko_lapka_2
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [19] taboryLapkuTrosecko_lapka_1
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [21] taboryLapku_tlama
+  [22] trosecko_enemies_bandits_campVezicko
+  [23] char_JAN_TLAMA

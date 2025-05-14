@@ -1,0 +1,31 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sedmStatecnych2.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 8
+  String Data Size ...... 537
+  Unique String Count ... 17
+  File Size ............. 1589
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] sedmStatecnych2_villager_4
+  [1] kutnohorsko_settlements_pritoky_commonFolk_peasants_sedmStatecnych2Villagers
+  [2] char_GENERIC_MAN_COMMONER_16
+  [3] sedmStatecnych2_cow
+  [4] cutsceneOnly
+  [5] sedmStatecnych2_villager_3
+  [6] char_GENERIC_MAN_COMMONER_11
+  [7] sedmStatecnych2_ambush_deadBody_1
+  [8] deadBodies
+  [9] sedmStatecnych2_villager_1
+  [10] char_GENERIC_MAN_COMMONER_20
+  [11] sedmStatecnych2_deadBody
+  [12] kutnohorsko_settlements_bylany_commonFolk_peasants_sedmStatecnych2Villagers
+  [13] char_LUKOSTRELEC_RANEK
+  [14] sedmStatecnych2_ambush_deadBody_2
+  [15] sedmStatecnych2_villager_2
+  [16] char_GENERIC_MAN_COMMONER_08

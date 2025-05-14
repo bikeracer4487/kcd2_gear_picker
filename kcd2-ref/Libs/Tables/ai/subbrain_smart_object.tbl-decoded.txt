@@ -1,0 +1,130 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_smart_object.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1422771110
+  Layout Hash ........... 3731343146
+  Table Version ......... 1
+  Line Count ............ 105
+  String Data Size ...... 3298
+  Unique String Count ... 116
+  File Size ............. 10046
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] default.xml
+  [1] default
+  [2] test/pp/test_sub_so_conceptAiTypes.xml
+  [3] onUpdate
+  [4] world/so_bell.xml
+  [5] animal/so_birdsTakeoff.xml
+  [6] quests/kajicnaPout/so_kajicnaPout.xml
+  [7] special/so_horseArchery.xml
+  [8] profession\lumberjack\so_choppingWood.xml
+  [9] onRequest
+  [10] profession\camper\so_campBuffable.xml
+  [11] onMLWakeUp
+  [12] quests/test_vitek.xml
+  [13] _dan/test_so_gamescom.xml
+  [14] quests/vezniNaTroskach/vezniNaTroskach_apolena.xml
+  [15] special/so_clearItems.xml
+  [16] quests/zranenyLovci/campFire.xml
+  [17] quests/test_jakub_sa_pytlak_3.xml
+  [18] npc/basic/so_interrupt_onUpdate.xml
+  [19] special/moveableInteractionTrigger.xml
+  [20] test\honza.vegricht\test_doortest.xml
+  [21] world\so_door.xml
+  [22] door_on_request
+  [23] door_on_release
+  [24] door_on_update
+  [25] _smejki/test_so_smejki_upcall_trees_holder.xml
+  [26] _smejki/test_so_js_graphsearchbug.xml
+  [27] _testing/test_so_sazava_traffic.xml
+  [28] test\skirmish\so_test_skirmish_messageRouter.xml
+  [29] world/so_bed.xml
+  [30] world\so_ladder.xml
+  [31] ladder_onRequest
+  [32] ladder_onRelease
+  [33] ladder_onUpdate
+  [34] _smejki/test_js_so_behavsHolder.xml
+  [35] _lukas/test_so_helper.xml
+  [36] temp/test_so_hidingCabinet.xml
+  [37] world/so_sitPlace.xml
+  [38] test/common/test_so_levelDirector.xml
+  [39] _smejki/test_saveload_brain.xml
+  [40] quests/lovvlku/lovvlku.xml
+  [41] test/tv/so_test_tomasv_3.xml
+  [42] _smejki/test_forceDialogSubdecision.xml
+  [43] quests/pracenavinici/trespass.xml
+  [44] _lukas/test_so_lukas.xml
+  [45] _testing/test_radek_so.xml
+  [46] quests/kucharskaKniha.xml
+  [47] _smejki/test_expression_crash.xml
+  [48] test_lukas_newSb.xml
+  [49] world/so_diceTable_new.xml
+  [50] test/tv/so_test_dialog.xml
+  [51] _smejki/test_so_monk_director.xml
+  [52] test/tv/test_so_tomasV.xml
+  [53] quests/zranenyLovci/zranenyLovci.xml
+  [54] quests/eliciting.xml
+  [55] _smejki/test_lod_load2.xml
+  [56] onUpdate_2
+  [57] _smejki/test_lod_load.xml
+  [58] carts\carts.xml
+  [59] quests/zaby/zaby.xml
+  [60] onRelease
+  [61] special/so_graveHole.xml
+  [62] quests/fistfights/so_fistfightsFanAudio.xml
+  [63] _lukas/playerDog.xml
+  [64] _lukas/test_so_lukas_quest.xml
+  [65] test\ma\test_so_gate.xml
+  [66] world/so_fireplace.xml
+  [67] _smejki/test_so_atomic_areapresence.xml
+  [68] test/tv/so_test_itemnodes.xml
+  [69] quests/test_distGateCrashBug.xml
+  [70] test/jan.smejkal/a03a_tests.xml
+  [71] world/so_rentRoom.xml
+  [72] crime/expectedSafeguard.xml
+  [73] quests/test_js_qsotree_v09_2016.xml
+  [74] world/kzik_openworld_brain.xml
+  [75] world/so_waterTube.xml
+  [76] autotest\horse\test_so_horseAction.xml
+  [77] quests\zachranaPtacka\zachranaptacka.xml
+  [78] quests/test_triggerAreas.xml
+  [79] closedCastle/so_closedCastle.xml
+  [80] situation/flutist/so_flutistController.xml
+  [81] special/so_horseHandler_parking.xml
+  [82] battles/battleGroupController.xml
+  [83] world/so_waterResource.xml
+  [84] temp/so_sound.xml
+  [85] final/so_dummyObject.xml
+  [86] test\battle\BattleTest.xml
+  [87] quests/finale/so_finale.xml
+  [88] battle/battleLadderController.xml
+  [89] battles/switchAnimcharController.xml
+  [90] situation/flutist/so_flutist.xml
+  [91] test\lod\test_lod_anims.xml
+  [92] battleWakingController.xml
+  [93] _testing/test_code_combat_smartObject.xml
+  [94] world\so_animalCare_pig.xml
+  [95] world/so_door.xml
+  [96] special/so_crossCountry.xml
+  [97] world/so_animalCare_dog.xml
+  [98] quests/zoufalaObranaZaBohutu/zoufalaObranaZaBohutuBattlePart.xml
+  [99] _ph/test_so
+  [100] quests/kajicnaPout/kajicnaPout.xml
+  [101] world\so_smokehouse.xml
+  [102] test/ts/battleBenchmark.xml
+  [103] special/so_indulgence_box.xml
+  [104] quests/test_quest_jakub.xml
+  [105] battles/formationHolder.xml
+  [106] quests/zlatyMedailon.xml
+  [107] trainingGrounds/trainingGrounds.xml
+  [108] battles/battleGateController.xml
+  [109] quests/test_ondra.xml
+  [110] crime/so_crime_extraGuards.xml
+  [111] world\so_pigFeeder.xml
+  [112] quests/test_q_tereza_1.xml
+  [113] test/common/ActorStateTestDirector.xml
+  [114] _dan/test_so_callback.xml
+  [115] world/so_lavabo.xml

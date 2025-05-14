@@ -1,0 +1,56 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__traskavePoselstvi.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 19
+  String Data Size ...... 1275
+  Unique String Count ... 42
+  File Size ............. 3735
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] traskavePoselstvi_guard_4
+  [1] kutnohorsko_settlements_kutnaHora_nobility_commander
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_15
+  [4] traskavePoselstvi_carriageGuard_1
+  [5] kutnohorsko_settlements_zikmundovo_soldiers_mercenaries
+  [6] char_FOUSKOVA_STRAZ_1
+  [7] traskavePoselstvi_guard_5
+  [8] char_GENERIC_MAN_GUARD_02
+  [9] traskavePoselstvi_zikmundSoldier_2
+  [10] char_VOJAK_Z_TABORA_2
+  [11] traskavePoselstvi_zikmundSoldier_1
+  [12] char_VOJAK_Z_TABORA_1
+  [13] traskavePoselstvi_courier
+  [14] kutnohorsko_settlements_kutnaHora_commonFolk_tavernDira_guests
+  [15] char_POSEL_TOVARYSSTVA
+  [16] traskavePoselstvi_journeyman_4
+  [17] char_GENERIC_MAN_MINER_01
+  [18] traskavePoselstvi_guard_3
+  [19] char_GENERIC_MAN_GUARD_14
+  [20] traskavePoselstvi_carriageHorse_2
+  [21] traskavePoselstvi_guard_2
+  [22] char_GENERIC_MAN_GUARD_16
+  [23] traskavePoselstvi_journeyman_1
+  [24] char_GENERIC_MAN_MINER_03
+  [25] traskavePoselstvi_guardCommander
+  [26] kutnohorsko_settlements_kutnaHora_soldiers_guards
+  [27] char_VELITEL_MESTSKE_STRAZE
+  [28] traskavePoselstvi_journeyman_2
+  [29] char_GENERIC_MAN_MINER_02
+  [30] traskavePoselstvi_journeyman_3
+  [31] char_GENERIC_MAN_MINER_04
+  [32] traskavePoselstvi_guard_1
+  [33] char_GENERIC_MAN_GUARD_18
+  [34] traskavePoselstvi_miner
+  [35] kutnohorsko_settlements_horany_commonFolk_peasants_parcel01
+  [36] char_GENERIC_MAN_COMMONER_02
+  [37] traskavePoselstvi_carriageGuard_2
+  [38] char_FOUSKOVA_STRAZ_2
+  [39] traskavePoselstvi_carriageHorse_1
+  [40] traskavePoselstvi_cartDriver
+  [41] char_FOUSEK

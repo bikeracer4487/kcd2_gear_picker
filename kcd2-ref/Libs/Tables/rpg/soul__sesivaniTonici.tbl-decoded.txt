@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sesivaniTonici.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 320
+  Unique String Count ... 8
+  File Size ............. 732
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] sesivaniTonici_jorgReplacement
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tavernSvatych_sesivaniToniciDicePlayers
+  [2] char_BART_CHRISTMAN
+  [3] sesivaniTonici_fighter_2
+  [4] kutnohorsko_settlements_kutnaHora_commonFolk_tavernSvatych_sesivaniToniciFighters
+  [5] char_GENERIC_MAN_MINER_03
+  [6] sesivaniTonici_fighter_1
+  [7] char_GENERIC_MAN_MINER_02

@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/ointment_item_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 712876396
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 70
+  Unique String Count ... 8
+  File Size ............. 226
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] weapon
+  [1] armor
+  [2] clothes
+  [3] shoes
+  [4] bow
+  [5] perfumeShortStrong
+  [6] perfumeLongWeak
+  [7] gun

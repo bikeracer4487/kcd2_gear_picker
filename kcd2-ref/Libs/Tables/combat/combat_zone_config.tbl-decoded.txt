@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_zone_config.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3829504272
+  Layout Hash ........... 755521017
+  Table Version ......... 1
+  Line Count ............ 17
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 640
+  Calculated Line Size .. 36 (rem. 0)

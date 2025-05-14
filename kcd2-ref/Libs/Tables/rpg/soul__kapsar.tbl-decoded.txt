@@ -1,0 +1,43 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kapsar.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 14
+  String Data Size ...... 698
+  Unique String Count ... 29
+  File Size ............. 2518
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kapsar_bandit_3
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [3] kapsar_preacher
+  [4] char_GENERIC_MAN_COMMONER_09
+  [5] kapsar_bandit_5
+  [6] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [7] kapsar_bandit_10
+  [8] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [9] kapsar_bandit_4
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [11] kapsar_bandit_7
+  [12] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [13] kapsar_bandit_9
+  [14] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [15] kapsar_bandit_8
+  [16] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [17] kapsar_bandit_2
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [19] kapsar_bandit_1
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [21] kapsar_lostBag
+  [22] char_GENERIC_MAN_COMMONER_12
+  [23] kapsar_bandit_6
+  [24] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [25] kapsar_newcomer
+  [26] char_GENERIC_MAN_COMMONER_06
+  [27] kapsar_drunkard
+  [28] char_GENERIC_MAN_COMMONER_13

@@ -1,0 +1,35 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__pytlakPtacek.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 9
+  String Data Size ...... 601
+  Unique String Count ... 21
+  File Size ............. 1781
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] pytlakPtacek_camp3_wolf_1
+  [1] animal_wild_enemy_trosecko
+  [2] pytlakPtacek_camp3_wolf_3
+  [3] pytlakPtacek_poacher_bandit_2
+  [4] trosecko_enemies_poachers_campPodseminsko
+  [5] Bandits
+  [6] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [7] pytlakPtacek_poacher_bandit_3
+  [8] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [9] pytlakPtacek_poacher_bandit_1
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [11] pytlakPtacek_poacher_1
+  [12] trosecko_outskirts_poachers_campVidlak
+  [13] char_PYTLAK_Z_VIDLAKU
+  [14] pytlakPtacek_poacher_2
+  [15] trosecko_outskirts_poachers_campVezicko
+  [16] char_PYTLAK_Z_VEZAKU
+  [17] pytlakPtacek_camp3_wolf_2
+  [18] pytlakPtacek_poacherSlatejov
+  [19] trosecko_enemies_poachers_campSlatejov
+  [20] char_PYTLAK_SLATEJOV

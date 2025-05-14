@@ -1,0 +1,84 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/armor_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3183242707
+  Layout Hash ........... 3236857677
+  Table Version ......... 1
+  Line Count ............ 65
+  String Data Size ...... 684
+  Unique String Count ... 70
+  File Size ............. 4352
+  Calculated Line Size .. 56 (rem. 0)
+String Table:
+  [0] CoifCap
+  [1] mat_fabric
+  [2] CoifSmall
+  [3] CoifLarge
+  [4] CoifMail
+  [5] mat_chainmail
+  [6] Cap
+  [7] KettleHat
+  [8] mat_plate
+  [9] SkullCap
+  [10] BascinetOpen
+  [11] BascinetVisor
+  [12] CollarPadded
+  [13] CollarMail
+  [14] Hood
+  [15] TunicShort
+  [16] TunicLong
+  [17] GambesonShort
+  [18] GambesonLong
+  [19] Caftan
+  [20] Pourpoint
+  [21] MailShort
+  [22] MailLong
+  [23] Cuirass
+  [24] Brigandine
+  [25] mat_leather
+  [26] Coat
+  [27] Waffenrock
+  [28] Habit
+  [29] ArmBrigandine
+  [30] ArmPlate
+  [31] Gauntlets
+  [32] Gloves
+  [33] HoseJoined
+  [34] HoseLoose
+  [35] HoseSeparate
+  [36] LegsPadded
+  [37] LegsChain
+  [38] LegsBrigandine
+  [39] LegsPlate
+  [40] Shoes
+  [41] BootsAnkle
+  [42] BootsKnee
+  [43] Spurs
+  [44] Scabbard
+  [45] Ring
+  [46] Necklace
+  [47] Bridle
+  [48] Saddle
+  [49] Caparison
+  [50] HorsePlate
+  [51] HorseShoe
+  [52] HorsePadded
+  [53] F_Hood
+  [54] F_Bonnet
+  [55] F_CapAndWimple
+  [56] F_Shoes
+  [57] F_SimpleDress
+  [58] F_Smock
+  [59] F_Hat
+  [60] F_HoodOpen
+  [61] F_Veil
+  [62] F_VeilAndWimple
+  [63] Belt
+  [64] Pouch
+  [65] Spectacles
+  [66] Bells
+  [67] mat_bells
+  [68] LeatherCap
+  [69] LeatherApron

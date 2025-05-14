@@ -1,0 +1,16 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_dialog.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1680731372
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 1
+  String Data Size ...... 34
+  Unique String Count ... 2
+  File Size ............. 94
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] _lukas/test_daycycle.xml
+  [1] onUpdate

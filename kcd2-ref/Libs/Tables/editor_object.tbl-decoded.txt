@@ -1,0 +1,61 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/editor_object.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3185306406
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 42
+  String Data Size ...... 649
+  Unique String Count ... 47
+  File Size ............. 2021
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] TP_Home5_Bed
+  [1] TagPoint
+  [2] primitive_cube6
+  [3] Brush
+  [4] teapot1
+  [5] blacksmith_house4
+  [6] smithery3
+  [7] primitive_cube7
+  [8] uberlod_village2
+  [9] SA_Pub1
+  [10] SmartArea
+  [11] SpawnPoint1
+  [12] Entity
+  [13] mill_main_building_interior1
+  [14] TP_Home5_Chair
+  [15] TP_Smithy1_Bucket
+  [16] primitive_sphere1
+  [17] bed_cottage_1
+  [18] blacksmith_house7
+  [19] blacksmith_house5
+  [20] blacksmith_house2
+  [21] TP_Home3_Bed
+  [22] TP_Smithy1_Furnace
+  [23] woodshed_3
+  [24] primitive_cube8
+  [25] primitive_cube5
+  [26] smithery2
+  [27] SA_Home5
+  [28] bucket_1
+  [29] SoundEventSpot1
+  [30] SoundEventSpot
+  [31] primitive_cube10
+  [32] primitive_cube1
+  [33] mazhaus_big_10
+  [34] blacksmith_house1
+  [35] bad_straw25
+  [36] blacksmith_house6
+  [37] kwerk_house_01_2
+  [38] blacksmith_house3
+  [39] table_large_3
+  [40] Furnace_dummy
+  [41] GeomEntity
+  [42] SA_shop
+  [43] primitive_cube9
+  [44] fens
+  [45] Group
+  [46] GeomEntity2

@@ -1,0 +1,37 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/ladder.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4274385672
+  Layout Hash ........... 1560650013
+  Table Version ......... 5
+  Line Count ............ 22
+  String Data Size ...... 349
+  Unique String Count ... 23
+  File Size ............. 1785
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] LadderClimb
+  [1] loop
+  [2] LadderGetOff
+  [3] down
+  [4] up
+  [5] LadderGetOn
+  [6] loop+steepStairs
+  [7] down+maypole
+  [8] player+up
+  [9] up+palisade
+  [10] up+palisade+l_pick_shield+r_pick_axe
+  [11] shield
+  [12] axe
+  [13] up+palisade+l_pick_shield+r_pick_longsword
+  [14] longsword
+  [15] up+palisade+l_pick_shield+r_pick_mace
+  [16] mace
+  [17] up+palisade+l_pick_shield+r_pick_sword
+  [18] sword
+  [19] up+palisade+r_pick_longsword
+  [20] down+225
+  [21] down+575
+  [22] up+maypole

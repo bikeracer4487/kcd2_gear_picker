@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_action_type_group.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1664515705
+  Layout Hash ........... 431051889
+  Table Version ......... 1
+  Line Count ............ 20
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 188
+  Calculated Line Size .. 8 (rem. 0)

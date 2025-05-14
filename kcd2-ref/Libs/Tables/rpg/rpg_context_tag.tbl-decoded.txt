@@ -1,0 +1,38 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/rpg_context_tag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 887421229
+  Layout Hash ........... 2895892273
+  Table Version ......... 1
+  Line Count ............ 14
+  String Data Size ...... 226
+  Unique String Count ... 24
+  File Size ............. 702
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] normal
+  [1] injured
+  [2] lamacek
+  [3] noob
+  [4] stredak
+  [5] medium
+  [6] profik
+  [7] pro
+  [8] head
+  [9] torso
+  [10] leftArm
+  [11] left_arm
+  [12] rightArm
+  [13] right_arm
+  [14] leftLeg
+  [15] left_leg
+  [16] rightLeg
+  [17] right_leg
+  [18] onlyMovement
+  [19] only_movement
+  [20] excludeMovement
+  [21] exclude_movement
+  [22] uncoveredFace
+  [23] uncovered_face

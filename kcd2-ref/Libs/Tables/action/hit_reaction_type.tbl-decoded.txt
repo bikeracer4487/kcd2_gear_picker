@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/hit_reaction_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 881966389
+  Layout Hash ........... 2895892273
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 106
+  Unique String Count ... 10
+  File Size ............. 294
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] Ragdoll
+  [1] ragdoll
+  [2] AnimatedWeak
+  [3] weak_hit
+  [4] AnimatedMinor
+  [5] minor_hit
+  [6] AnimatedMajor
+  [7] major_hit
+  [8] AnimatedDeath
+  [9] death

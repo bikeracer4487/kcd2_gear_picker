@@ -1,0 +1,145 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tvez.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 65
+  String Data Size ...... 2775
+  Unique String Count ... 131
+  File Size ............. 11123
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tvez_woman_3
+  [1] trosecko_outskirts_romaniCamp_commonFolk_gypsies
+  [2] char_GENERIC_WOMAN_ROMA_01
+  [3] tvez_utopenec_1
+  [4] deadBodies
+  [5] tvez_woman_4
+  [6] char_GENERIC_WOMAN_ROMA_02
+  [7] tvez_opilecAVandrak_man_1
+  [8] trosecko_enemies_bandits_poiOpilecAVandrak
+  [9] char_GENERIC_MAN_COMMONER_11
+  [10] tvez_man_20
+  [11] char_GENERIC_MAN_ROMA_02
+  [12] tvez_horse_2
+  [13] trosecko_outskirts_romaniCamp_commonFolk_cumans
+  [14] char_KUN_TU_MNII_EH
+  [15] tvez_zizkaGuardPOI_1
+  [16] trosecko_enemies_bandits_zizkaGuardPOI
+  [17] Bandits
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [19] tvez_man_11
+  [20] Cumans
+  [21] char_GENERIC_MAN_CUMAN_03
+  [22] tvez_man_9
+  [23] char_GENERIC_MAN_CUMAN_01
+  [24] tvez_kopidlo
+  [25] trosecko_outskirts_romaniCamp_commonFolk_criminals
+  [26] char_VANDRAK_KOPIDLO
+  [27] tvez_man_17
+  [28] trosecko_enemies_bandits_campVezicko
+  [29] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [30] tvez_vorech
+  [31] animalCompanions
+  [32] 667
+  [33] tvez_man_3
+  [34] trosecko_outskirts_romaniCamp_soldiers_guards
+  [35] char_GENERIC_MAN_ROMA_03
+  [36] tvez_man_16
+  [37] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [38] tvez_dedek
+  [39] trosecko_outskirts_romaniCamp_commonFolk_tradersAndCraftmen_generalMerchant_Shady
+  [40] Merchants
+  [41] char_PREKUPNIK_DEDEK
+  [42] tvez_chramosta
+  [43] char_VANDARK_CHRAMOSTA
+  [44] tvez_kobera
+  [45] char_GENERIC_MAN_COMMONER_05
+  [46] tvez_man_15
+  [47] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [48] tvez_aranka
+  [49] char_ARANKA
+  [50] tvez_man_4
+  [51] tvez_woman_1
+  [52] tvez_man_18
+  [53] tvez_marika
+  [54] trosecko_outskirts_apolenaHideout
+  [55] char_MARIKA
+  [56] tvez_woman_2
+  [57] tvez_poacher_1
+  [58] trosecko_enemies_poachers_campVezicko
+  [59] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [60] tvez_man_2
+  [61] trosecko_outskirts_romaniCamp_commonFolk_czechs
+  [62] char_GENERIC_MAN_COMMONER_06
+  [63] tvez_bozena
+  [64] trosecko_outskirts_herbalist_vezicko
+  [65] char_BOZENA_KORENARKA_VEZICKO
+  [66] tvez_man_14
+  [67] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [68] tvez_man_21
+  [69] tvez_bibrek
+  [70] char_BIBREK
+  [71] tvez_pavlena
+  [72] UltralightMerchants
+  [73] char_PAVLENA_VEZICKO
+  [74] tvez_man_13
+  [75] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [76] tvez_man_5
+  [77] tvez_man_8
+  [78] char_KUMAN_JASAK
+  [79] tvez_man_6
+  [80] trosecko_outskirts_romaniCamp_commonFolk_tradersAndCraftmen_generalMerchant_Jude
+  [81] char_MORDECHAJ_HAIM
+  [82] tvez_poacher_2
+  [83] tvez_tibor
+  [84] char_TIBOR
+  [85] tvez_vajda
+  [86] char_VAJDA
+  [87] tvez_man_12
+  [88] char_GENERIC_MAN_CUMAN_02
+  [89] tvez_vasko
+  [90] char_VASKO
+  [91] tvez_mikolaj
+  [92] trosecko_outskirts_romaniCamp_commonFolk_tradersAndCraftmen_horsetrader
+  [93] char_MIKOLAJ
+  [94] tvez_concubine
+  [95] trosecko_outskirts_romaniCamp_commonFolk_refugees
+  [96] char_ENNELEYN
+  [97] tvez_man_22
+  [98] tvez_henrysMother
+  [99] players_friends_fatherMartin
+  [100] char_JINDRICHOVA_MATKA
+  [101] tvez_lovciPokladu_man_3
+  [102] tvez_horse_6
+  [103] tvez_utopenec_3
+  [104] tvez_zizkaGuardPOI_3
+  [105] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [106] tvez_horse_8
+  [107] korenarka_dog
+  [108] char_PES_KORENARKY_BOZENY
+  [109] tvez_woman_6
+  [110] tvez_utopenec_2
+  [111] tvez_horse_7
+  [112] tvez_man_19
+  [113] tvez_kocour
+  [114] trosecko_outskirts_romaniCamp_soldiers
+  [115] char_MISTR_KOCOUR
+  [116] tvez_woman_5
+  [117] tvez_zizkaGuardPOI_2
+  [118] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [119] tvez_divozenka
+  [120] char_DIVOZENKA
+  [121] tvez_man_23
+  [122] tvez_horse_3
+  [123] char_KOCOVNICKY_KUN_CON
+  [124] tvez_horse_4
+  [125] char_TIBORUV_KUN_DZAR
+  [126] tvez_lovciPokladu_man_2
+  [127] tvez_horse_1
+  [128] char_KUN_DAND
+  [129] tvez_lovciPokladu_man_1
+  [130] tvez_horse_5

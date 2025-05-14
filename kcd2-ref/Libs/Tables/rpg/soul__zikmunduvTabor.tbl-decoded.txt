@@ -1,0 +1,70 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zikmunduvTabor.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 31
+  String Data Size ...... 1805
+  Unique String Count ... 56
+  File Size ............. 5801
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zikmunduvTabor_cannonAmbush_horse_7
+  [1] animal
+  [2] zikmunduvTabor_cannonAmbushEnemy_1
+  [3] kutnohorsko_settlements_zikmundovo_soldiers_zikmunduvTaborAmbushEnemies
+  [4] char_GENERIC_MAN_COMMONER_23
+  [5] zikmunduvTabor_cannonAmbush_horse_1
+  [6] zikmunduvTabor_cannonAmbush_horse_6
+  [7] zikmunduvTabor_cannonAmbushEnemy_2
+  [8] char_GENERIC_MAN_COMMONER_02
+  [9] zikmunduvTabor_cannonAmbush_horse_5
+  [10] zikmunduvTabor_defector_2
+  [11] kutnohorsko_enemies_bandits_zikmunduvTaborDefectors
+  [12] Bandits
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [14] zikmunduvTabor_defector_1
+  [15] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [16] zikmunduvTabor_cannonAmbushEnemy_6
+  [17] char_GENERIC_MAN_COMMONER_09
+  [18] zikmunduvTabor_ambushEnemy_dead_4
+  [19] zikmunduvTabor_cannonAmbush_horse_4
+  [20] zikmunduvTabor_defector_4
+  [21] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [22] zikmunduvTabor_cannonAmbush_horse_3
+  [23] zikmunduvTabor_cannonAmbushEnemy_10
+  [24] char_GENERIC_MAN_COMMONER_03
+  [25] zikmunduvTabor_cannonAmbushEnemy_7
+  [26] char_GENERIC_MAN_COMMONER_19
+  [27] zikmunduvTabor_cannonAmbushEnemy_5
+  [28] char_GENERIC_MAN_COMMONER_08
+  [29] zikmunduvTabor_cherthanMurderGuard1
+  [30] kutnohorsko_settlements_zikmundovo_soldiers_mercenaries
+  [31] Guards
+  [32] char_STRAZNY_PATRIK_ZIKMUNDOVO
+  [33] zikmunduvTabor_defector_3
+  [34] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [35] zikmunduvTabor_ambushEnemy_dead_3
+  [36] zikmunduvTabor_musaGuard
+  [37] char_GENERIC_MAN_GUARD_05
+  [38] zikmunduvTabor_cherthanMurderGuard2
+  [39] char_STRAZNY_MATEJ_ZIKMUNDOVO
+  [40] zikmunduvTabor_cannonAmbush_horse_8
+  [41] zikmunduvTabor_ambushEnemy_dead_5
+  [42] zikmunduvTabor_cannonAmbushDead_2
+  [43] char_GENERIC_MAN_COMMONER_07
+  [44] zikmunduvTabor_cannonAmbush_horse_2
+  [45] zikmunduvTabor_cannonAmbushEnemy_9
+  [46] char_GENERIC_MAN_COMMONER_17
+  [47] zikmunduvTabor_cannonAmbushEnemy_4
+  [48] char_GENERIC_MAN_COMMONER_04
+  [49] zikmunduvTabor_cannonAmbushEnemy_8
+  [50] char_GENERIC_MAN_COMMONER_21
+  [51] zikmunduvTabor_cannonAmbushDead_1
+  [52] char_GENERIC_MAN_COMMONER_25
+  [53] zikmunduvTabor_defector_5
+  [54] zikmunduvTabor_cannonAmbushEnemy_3
+  [55] char_GENERIC_MAN_COMMONER_14

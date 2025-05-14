@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/editor_object_binding.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1446613887
+  Layout Hash ........... 2159396485
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 279
+  Unique String Count ... 10
+  File Size ............. 499
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] Smith_and_dummy_smartObject
+  [1] 1397.895874,2229.754150,70.211372
+  [2] 0.000000,0.000000,0.669131,0.743145
+  [3] 1.040000,1.040000,1.040000
+  [4] Respawn
+  [5] 976.368164,1373.161621,62.982292
+  [6] 0.000000,0.000000,0.000000,1.000000
+  [7] 1.000000,1.000000,1.000000
+  [8] Ozvuceni kostela
+  [9] 976.368164,1376.496338,62.982292

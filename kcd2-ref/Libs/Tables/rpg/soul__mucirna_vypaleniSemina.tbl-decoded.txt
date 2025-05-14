@@ -1,0 +1,40 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__mucirna_vypaleniSemina.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 18
+  String Data Size ...... 817
+  Unique String Count ... 26
+  File Size ............. 3149
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] mucirna_vypaleniSemina_man_4
+  [1] trosecko_settlements_trosky_soldiers_mucirnaVypaleniSeminaSoldiers
+  [2] char_GENERIC_MAN_SOLDIER_22
+  [3] mucirna_vypaleniSemina_horse_7
+  [4] mucirna_vypaleniSemina_man_3
+  [5] char_GENERIC_MAN_SOLDIER_27
+  [6] mucirna_vypaleniSemina_horse_5
+  [7] mucirna_vypaleniSemina_horse_6
+  [8] mucirna_vypaleniSemina_horse_4
+  [9] mucirna_vypaleniSemina_man_2
+  [10] char_GENERIC_MAN_SOLDIER_16
+  [11] mucirna_vypaleniSemina_horse_1
+  [12] mucirna_vypaleniSemina_man_1
+  [13] char_GENERIC_MAN_SOLDIER_30
+  [14] mucirna_vypaleniSemina_ptaceks_horse
+  [15] mucirna_vypaleniSemina_horse_3
+  [16] mucirna_vypaleniSemina_man_5
+  [17] char_GENERIC_MAN_SOLDIER_28
+  [18] mucirna_vypaleniSemina_horse_2
+  [19] mucirna_vypaleniSemina_hetmans_horse
+  [20] mucirna_vypaleniSemina_man_6
+  [21] char_GENERIC_MAN_SOLDIER_01
+  [22] mucirna_vypaleniSemina_man_7
+  [23] char_GENERIC_MAN_SOLDIER_05
+  [24] mucirna_vypaleniSemina_horse_8
+  [25] mucirna_vypaleniSemina_man_8

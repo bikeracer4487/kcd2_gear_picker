@@ -1,0 +1,29 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sermiri.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 6
+  String Data Size ...... 374
+  Unique String Count ... 15
+  File Size ............. 1170
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] sermiri_kumelBodyguard_1
+  [1] kutnohorsko_settlements_kutnaHora_soldiers_guards
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_02
+  [4] sermiri_townhallGuard_2
+  [5] char_GENERIC_MAN_GUARD_08
+  [6] sermiry_cinInjuredArne
+  [7] cutsceneOnly
+  [8] char_GENERIC_MAN_COMMONER_16
+  [9] sermiri_townhallGuard_3
+  [10] char_GENERIC_MAN_GUARD_03
+  [11] sermiri_townhallGuard_1
+  [12] char_GENERIC_MAN_GUARD_05
+  [13] sermiri_kumelBodyguard_2
+  [14] char_GENERIC_MAN_GUARD_13

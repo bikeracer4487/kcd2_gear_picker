@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/crafting_material_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1376816614
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 27
+  Unique String Count ... 3
+  File Size ............. 103
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] herb
+  [1] special
+  [2] blacksmithing

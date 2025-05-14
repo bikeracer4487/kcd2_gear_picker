@@ -1,0 +1,114 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__karavanyVeSvete.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 75
+  String Data Size ...... 3584
+  Unique String Count ... 100
+  File Size ............. 13212
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] karavanyVeSvete_horse_1
+  [1] animal_home
+  [2] karavanyVeSvete_armedCaravan_soldier_5
+  [3] eventNPCs_civilians_friends
+  [4] char_GENERIC_MAN_TOWNSMAN_06
+  [5] karavanyVeSvete_armedCaravan_cuman_2
+  [6] Cumans
+  [7] char_GENERIC_MAN_CUMAN_02
+  [8] karavanyVeSvete_merchantCaravan_guard_3
+  [9] char_GENERIC_MAN_TOWNSMAN_09
+  [10] karavanyVeSvete_civilianCaravan_civilian_man_3
+  [11] char_GENERIC_MAN_TOWNSMAN_03
+  [12] karavanyVeSvete_civilianCaravan_collier_6
+  [13] karavanyVeSvete_civilianCaravan_mason_1
+  [14] char_GENERIC_MAN_TOWNSMAN_01
+  [15] karavanyVeSvete_civilianCaravan_farmer_man_5
+  [16] char_GENERIC_MAN_TOWNSMAN_08
+  [17] karavanyVeSvete_armedCaravan_soldier_7
+  [18] char_GENERIC_MAN_TOWNSMAN_02
+  [19] karavanyVeSvete_civilianCaravan_mason_3
+  [20] karavanyVeSvete_armedCaravan_cuman_8
+  [21] char_GENERIC_MAN_CUMAN_04
+  [22] karavanyVeSvete_civilianCaravan_farmer_man_1
+  [23] char_GENERIC_MAN_TOWNSMAN_04
+  [24] karavanyVeSvete_armedCaravan_german_8
+  [25] char_GENERIC_MAN_GERMAN_03
+  [26] karavanyVeSvete_merchantCaravan_worker_4
+  [27] karavanyVeSvete_horse_8
+  [28] karavanyVeSvete_merchantCaravan_worker_2
+  [29] karavanyVeSvete_armedCaravan_german_6
+  [30] char_GENERIC_MAN_GERMAN_01
+  [31] karavanyVeSvete_armedCaravan_cuman_3
+  [32] char_GENERIC_MAN_CUMAN_03
+  [33] karavanyVeSvete_civilianCaravan_farmer_woman_2
+  [34] char_GENERIC_WOMAN_TOWNSWOMAN_03
+  [35] karavanyVeSvete_armedCaravan_cuman_7
+  [36] karavanyVeSvete_armedCaravan_german_1
+  [37] karavanyVeSvete_armedCaravan_soldier_4
+  [38] char_GENERIC_MAN_TOWNSMAN_05
+  [39] karavanyVeSvete_civilianCaravan_civilian_woman_1
+  [40] char_GENERIC_WOMAN_TOWNSWOMAN_01
+  [41] karavanyVeSvete_civilianCaravan_civilian_man_5
+  [42] karavanyVeSvete_horse_9
+  [43] karavanyVeSvete_civilianCaravan_farmer_man_4
+  [44] char_GENERIC_MAN_TOWNSMAN_07
+  [45] karavanyVeSvete_armedCaravan_cuman_4
+  [46] karavanyVeSvete_armedCaravan_cuman_5
+  [47] char_GENERIC_MAN_CUMAN_01
+  [48] karavanyVeSvete_armedCaravan_cuman_6
+  [49] karavanyVeSvete_armedCaravan_soldier_1
+  [50] karavanyVeSvete_merchantCaravan_guard_2
+  [51] karavanyVeSvete_horse_2
+  [52] karavanyVeSvete_merchantCaravan_worker_1
+  [53] karavanyVeSvete_civilianCaravan_civilian_man_1
+  [54] karavanyVeSvete_civilianCaravan_mason_6
+  [55] karavanyVeSvete_armedCaravan_cuman_1
+  [56] karavanyVeSvete_armedCaravan_german_5
+  [57] char_GENERIC_MAN_GERMAN_05
+  [58] karavanyVeSvete_civilianCaravan_collier_3
+  [59] karavanyVeSvete_horse_3
+  [60] karavanyVeSvete_armedCaravan_soldier_3
+  [61] karavanyVeSvete_armedCaravan_german_2
+  [62] char_GENERIC_MAN_GERMAN_02
+  [63] karavanyVeSvete_merchantCaravan_worker_3
+  [64] karavanyVeSvete_civilianCaravan_mason_4
+  [65] karavanyVeSvete_civilianCaravan_collier_1
+  [66] karavanyVeSvete_civilianCaravan_farmer_man_3
+  [67] karavanyVeSvete_civilianCaravan_collier_5
+  [68] karavanyVeSvete_horse_5
+  [69] karavanyVeSvete_horse_12
+  [70] karavanyVeSvete_horse_11
+  [71] karavanyVeSvete_armedCaravan_german_7
+  [72] karavanyVeSvete_civilianCaravan_mason_5
+  [73] karavanyVeSvete_civilianCaravan_farmer_man_6
+  [74] karavanyVeSvete_armedCaravan_soldier_6
+  [75] karavanyVeSvete_merchantCaravan_merchant_2
+  [76] karavanyVeSvete_merchantCaravan_merchant_1
+  [77] karavanyVeSvete_civilianCaravan_civilian_man_4
+  [78] karavanyVeSvete_civilianCaravan_civilian_woman_3
+  [79] karavanyVeSvete_merchantCaravan_guard_1
+  [80] karavanyVeSvete_civilianCaravan_civilian_man_2
+  [81] karavanyVeSvete_civilianCaravan_civilian_man_6
+  [82] karavanyVeSvete_horse_10
+  [83] karavanyVeSvete_horse_7
+  [84] karavanyVeSvete_civilianCaravan_collier_2
+  [85] karavanyVeSvete_civilianCaravan_farmer_man_2
+  [86] karavanyVeSvete_armedCaravan_german_4
+  [87] char_GENERIC_MAN_GERMAN_04
+  [88] karavanyVeSvete_horse_6
+  [89] karavanyVeSvete_civilianCaravan_mason_2
+  [90] karavanyVeSvete_civilianCaravan_farmer_woman_1
+  [91] char_GENERIC_WOMAN_TOWNSWOMAN_02
+  [92] karavanyVeSvete_armedCaravan_soldier_2
+  [93] karavanyVeSvete_civilianCaravan_farmer_woman_3
+  [94] char_GENERIC_WOMAN_TOWNSWOMAN_04
+  [95] karavanyVeSvete_civilianCaravan_civilian_woman_2
+  [96] karavanyVeSvete_armedCaravan_german_3
+  [97] karavanyVeSvete_horse_4
+  [98] karavanyVeSvete_civilianCaravan_collier_4
+  [99] karavanyVeSvete_armedCaravan_soldier_8

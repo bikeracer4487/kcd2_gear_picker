@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_zone_distance.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2320404825
+  Layout Hash ........... 2945972389
+  Table Version ......... 1
+  Line Count ............ 25
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 428
+  Calculated Line Size .. 16 (rem. 0)

@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/dog_action.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1801833174
+  Layout Hash ........... 2605817352
+  Table Version ......... 2
+  Line Count ............ 43
+  String Data Size ...... 283
+  Unique String Count ... 28
+  File Size ............. 8911
+  Calculated Line Size .. 200 (rem. 0)
+String Table:
+  [0] Mark
+  [1] sideLeft
+  [2] sideRight
+  [3] TailWaving
+  [4] CodeSitting
+  [5] CodeLying
+  [6] GrowlUpperbody
+  [7] Dig
+  [8] Drink
+  [9] BarkingUpperbody
+  [10] walk+backward
+  [11] sprint
+  [12] run
+  [13] walk
+  [14] dash
+  [15] Fail
+  [16] Eating
+  [17] sittingGround
+  [18] Petting
+  [19] ShakeOff
+  [20] CodeIdleVar
+  [21] sitting
+  [22] Lying
+  [23] PlayerDogSniffingHand
+  [24] relatedMale
+  [25] TreeSniffing
+  [26] CounterSniffing
+  [27] WaterTubDrinking

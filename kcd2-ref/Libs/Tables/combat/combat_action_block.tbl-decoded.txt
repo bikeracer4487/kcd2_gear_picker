@@ -1,0 +1,148 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_block.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3992428140
+  Layout Hash ........... 1318305025
+  Table Version ......... 30
+  Line Count ............ 222
+  String Data Size ...... 7333
+  Unique String Count ... 134
+  File Size ............. 78401
+  Calculated Line Size .. 320 (rem. 0)
+String Table:
+  [0] CombatBlockGen
+  [1] l_halberd+r_halberd+player+sZ5+rightGuard+eZ5+dZ5+oppMale
+  [2] NPC
+  [3] l_halberd+r_halberd+player+sZ1+rightGuard+eZ1+dZ1+oppMale
+  [4] l_halberd+r_halberd+player+sZ2+leftGuard+eZ2+dZ2+oppMale
+  [5] l_halberd+r_halberd+sZ1+rightGuard+eZ1+dZ1+oppMale
+  [6] l_halberd+r_halberd+sZ5+rightGuard+eZ1+dZ1+oppMale
+  [7] l_halberd+r_halberd+sZ1+rightGuard+eZ2+dZ2+oppMale
+  [8] l_halberd+r_halberd+sZ2+leftGuard+eZ2+dZ0+oppMale
+  [9] l_halberd+r_halberd+sZ2+leftGuard+eZ2+dZ2+oppMale
+  [10] l_halberd+r_halberd+sZ5+rightGuard+eZ2+dZ0+oppMale
+  [11] l_halberd+r_halberd+sZ2+leftGuard+eZ1+dZ1+oppMale
+  [12] l_halberd+r_halberd+sZ1+rightGuard+eZ2+dZ0+oppMale
+  [13] l_halberd+r_halberd+sZ5+rightGuard+eZ2+dZ2+oppMale
+  [14] l_halberd+r_halberd+sZ5+rightGuard+eZ5+dZ5+oppMale
+  [15] l_halberd+r_halberd+sZ1+rightGuard+eZ5+dZ5+oppMale
+  [16] l_halberd+r_halberd+sZ2+leftGuard+eZ5+dZ5+oppMale
+  [17] l_longsword+r_longsword+player+sZ1+rightGuard+eZ1+dZ1+oppMale
+  [18] l_longsword+r_longsword+player+sZ0+leftGuard+eZ0+dZ0+oppMale
+  [19] l_longsword+r_longsword+player+sZ5+rightGuard+eZ5+dZ5+oppMale
+  [20] l_longsword+r_longsword+player+sZ2+leftGuard+eZ2+dZ2+oppMale
+  [21] l_longsword+r_longsword+sZ1+rightGuard+eZ1+dZ1+oppMale
+  [22] l_longsword+r_longsword+sZ5+rightGuard+eZ1+dZ1+oppMale
+  [23] l_longsword+r_longsword+sZ0+leftGuard+eZ0+dZ0+oppMale
+  [24] l_longsword+r_longsword+sZ0+leftGuard+eZ5+dZ5+oppMale
+  [25] l_longsword+r_longsword+sZ5+rightGuard+eZ2+dZ2+oppMale
+  [26] l_longsword+r_longsword+sZ1+rightGuard+eZ2+dZ2+oppMale
+  [27] l_longsword+r_longsword+sZ2+leftGuard+eZ2+dZ2+oppMale
+  [28] l_longsword+r_longsword+sZ2+leftGuard+eZ0+dZ0+oppMale
+  [29] l_longsword+r_longsword+sZ1+rightGuard+eZ5+dZ5+oppMale
+  [30] l_longsword+r_longsword+sZ5+rightGuard+eZ0+dZ0+oppMale
+  [31] l_longsword+r_longsword+sZ2+leftGuard+eZ5+dZ5+oppMale
+  [32] l_longsword+r_longsword+sZ2+leftGuard+eZ1+dZ1+oppMale
+  [33] l_longsword+r_longsword+sZ0+leftGuard+eZ1+dZ1+oppMale
+  [34] l_longsword+r_longsword+sZ1+rightGuard+eZ0+dZ0+oppMale
+  [35] l_longsword+r_longsword+sZ5+rightGuard+eZ5+dZ5+oppMale
+  [36] l_longsword+r_longsword+sZ0+leftGuard+eZ2+dZ2+oppMale
+  [37] r_noweapon+or_noweapon+sZ5+rightGuard+eZ5+oppKick+dZ5+l_noShield+ol_noShield+oppMale
+  [38] r_noweapon+or_noweapon+sZ2+leftGuard+eZ5+oppKick+dZ5+l_noShield+ol_noShield+oppMale
+  [39] r_noweapon+or_noweapon+sZ1+rightGuard+eZ5+oppKick+dZ5+l_noShield+ol_noShield+oppMale
+  [40] l_shield+player+sZ1+rightGuard+eZ1+dZ1+r_swords+oppMale
+  [41] l_shield+player+sZ5+rightGuard+eZ5+dZ5+r_swords+oppMale
+  [42] r_noweapon+player+sZ1+rightGuard+eZ1+dZ1+l_noShield+oppMale
+  [43] r_noweapon+sZ2+leftGuard+eZ5+oppStab+dZ5+l_noShield+oppMale
+  [44] l_shield+player+sZ2+leftGuard+eZ2+dZ2+r_swords+oppMale
+  [45] player+sZ0+leftGuard+eZ0+dZ0+r_bluntWeapon+l_noShield+oppMale
+  [46] player+sZ2+leftGuard+eZ2+dZ2+r_shortSwords+l_noShield+oppMale
+  [47] r_noweapon+player+sZ2+leftGuard+eZ2+dZ2+l_noShield+oppMale
+  [48] player+sZ5+rightGuard+eZ5+dZ5+r_shortSwords+l_noShield+oppMale
+  [49] r_noweapon+sZ5+rightGuard+eZ5+oppStab+dZ5+l_noShield+oppMale
+  [50] l_shield+player+sZ0+leftGuard+eZ0+dZ0+r_bluntWeapon+oppMale
+  [51] player+sZ1+rightGuard+eZ1+dZ1+r_bluntWeapon+l_noShield+oppMale
+  [52] r_noweapon+sZ1+rightGuard+eZ5+oppStab+dZ5+l_noShield+oppMale
+  [53] player+sZ0+leftGuard+eZ0+dZ0+r_shortSwords+l_noShield+oppMale
+  [54] l_shield+player+sZ0+leftGuard+eZ0+dZ0+r_swords+oppMale
+  [55] r_noweapon+player+sZ5+rightGuard+eZ5+dZ5+l_noShield+oppMale
+  [56] l_shield+player+sZ2+leftGuard+eZ2+dZ2+r_bluntWeapon+oppMale
+  [57] player+sZ1+rightGuard+eZ1+dZ1+r_shortSwords+l_noShield+oppMale
+  [58] l_shield+player+sZ1+rightGuard+eZ1+dZ1+r_bluntWeapon+oppMale
+  [59] player+sZ2+leftGuard+eZ2+dZ2+r_bluntWeapon+l_noShield+oppMale
+  [60] l_shield+sZ0+leftGuard+eZ1+dZ5+r_bluntWeapon+oppMale
+  [61] sZ1+rightGuard+eZ1+dZ1+r_shortSwords+l_noShield+oppMale
+  [62] l_shield+sZ0+leftGuard+eZ2+dZ2+r_bluntWeapon+oppMale
+  [63] l_shield+sZ2+leftGuard+eZ1+dZ1+r_swords+oppMale
+  [64] sZ2+leftGuard+eZ0+dZ0+r_shortSwords+l_noShield+oppMale
+  [65] sZ2+leftGuard+eZ2+dZ2+r_bluntWeapon+l_noShield+oppMale
+  [66] l_shield+sZ5+rightGuard+eZ2+dZ2+r_swords+oppMale
+  [67] l_shield+sZ1+rightGuard+eZ2+dZ2+r_bluntWeapon+oppMale
+  [68] l_shield+sZ5+rightGuard+eZ5+dZ5+r_swords+oppMale
+  [69] r_noweapon+sZ5+rightGuard+eZ2+dZ0+l_noShield+oppMale
+  [70] l_shield+sZ0+leftGuard+eZ1+dZ1+r_swords+oppMale
+  [71] sZ5+rightGuard+eZ1+dZ1+r_shortSwords+l_noShield+oppMale
+  [72] l_shield+sZ1+rightGuard+eZ2+dZ2+r_swords+oppMale
+  [73] sZ0+leftGuard+eZ0+dZ0+r_bluntWeapon+l_noShield+oppMale
+  [74] l_shield+sZ0+leftGuard+eZ1+dZ1+r_bluntWeapon+oppMale
+  [75] sZ1+rightGuard+eZ5+dZ5+r_shortSwords+l_noShield+oppMale
+  [76] sZ2+leftGuard+eZ1+dZ5+r_bluntWeapon+l_noShield+oppMale
+  [77] l_shield+sZ2+leftGuard+eZ2+dZ2+r_swords+oppMale
+  [78] sZ2+leftGuard+eZ5+dZ5+r_shortSwords+l_noShield+oppMale
+  [79] l_shield+sZ0+leftGuard+eZ2+dZ2+r_swords+oppMale
+  [80] l_shield+sZ2+leftGuard+eZ0+dZ0+r_bluntWeapon+oppMale
+  [81] sZ2+leftGuard+eZ0+dZ0+r_bluntWeapon+l_noShield+oppMale
+  [82] sZ1+rightGuard+eZ2+dZ2+r_bluntWeapon+l_noShield+oppMale
+  [83] r_noweapon+sZ2+leftGuard+eZ1+dZ1+l_noShield+oppMale
+  [84] l_shield+sZ5+rightGuard+eZ0+dZ0+r_swords+oppMale
+  [85] r_noweapon+sZ2+leftGuard+eZ2+dZ0+l_noShield+oppMale
+  [86] l_shield+sZ2+leftGuard+eZ1+dZ5+r_bluntWeapon+oppMale
+  [87] sZ2+leftGuard+eZ1+dZ1+r_bluntWeapon+l_noShield+oppMale
+  [88] l_shield+sZ1+rightGuard+eZ1+dZ1+r_swords+oppMale
+  [89] l_shield+sZ2+leftGuard+eZ0+dZ0+r_swords+oppMale
+  [90] l_shield+sZ1+rightGuard+eZ1+dZ1+r_bluntWeapon+oppMale
+  [91] sZ0+leftGuard+eZ1+dZ5+r_bluntWeapon+l_noShield+oppMale
+  [92] r_noweapon+sZ5+rightGuard+eZ1+dZ1+l_noShield+oppMale
+  [93] r_noweapon+sZ5+rightGuard+eZ2+dZ2+l_noShield+oppMale
+  [94] sZ1+rightGuard+eZ0+dZ0+r_shortSwords+l_noShield+oppMale
+  [95] r_noweapon+sZ1+rightGuard+eZ2+dZ0+l_noShield+oppMale
+  [96] r_noweapon+sZ1+rightGuard+eZ2+dZ2+l_noShield+oppMale
+  [97] l_shield+sZ0+leftGuard+eZ0+dZ0+r_bluntWeapon+oppMale
+  [98] l_shield+sZ0+leftGuard+eZ0+dZ0+r_swords+oppMale
+  [99] sZ2+leftGuard+eZ1+dZ1+r_shortSwords+l_noShield+oppMale
+  [100] sZ0+leftGuard+eZ1+dZ1+r_bluntWeapon+l_noShield+oppMale
+  [101] l_shield+sZ5+rightGuard+eZ1+dZ1+r_swords+oppMale
+  [102] sZ0+leftGuard+eZ5+dZ5+r_shortSwords+l_noShield+oppMale
+  [103] sZ5+rightGuard+eZ0+dZ0+r_shortSwords+l_noShield+oppMale
+  [104] l_shield+sZ0+leftGuard+eZ5+dZ5+r_swords+oppMale
+  [105] r_noweapon+sZ1+rightGuard+eZ1+dZ1+l_noShield+oppMale
+  [106] sZ2+leftGuard+eZ2+dZ2+r_shortSwords+l_noShield+oppMale
+  [107] l_shield+sZ2+leftGuard+eZ2+dZ2+r_bluntWeapon+oppMale
+  [108] sZ1+rightGuard+eZ2+dZ2+r_shortSwords+l_noShield+oppMale
+  [109] sZ0+leftGuard+eZ2+dZ2+r_shortSwords+l_noShield+oppMale
+  [110] sZ5+rightGuard+eZ2+dZ2+r_shortSwords+l_noShield+oppMale
+  [111] sZ0+leftGuard+eZ1+dZ1+r_shortSwords+l_noShield+oppMale
+  [112] sZ1+rightGuard+eZ1+dZ5+r_bluntWeapon+l_noShield+oppMale
+  [113] sZ0+leftGuard+eZ2+dZ2+r_bluntWeapon+l_noShield+oppMale
+  [114] sZ5+rightGuard+eZ5+dZ5+r_shortSwords+l_noShield+oppMale
+  [115] l_shield+sZ1+rightGuard+eZ0+dZ0+r_bluntWeapon+oppMale
+  [116] sZ1+rightGuard+eZ1+dZ1+r_bluntWeapon+l_noShield+oppMale
+  [117] l_shield+sZ1+rightGuard+eZ5+dZ5+r_swords+oppMale
+  [118] sZ0+leftGuard+eZ0+dZ0+r_shortSwords+l_noShield+oppMale
+  [119] l_shield+sZ2+leftGuard+eZ5+dZ5+r_swords+oppMale
+  [120] r_noweapon+sZ2+leftGuard+eZ2+dZ2+l_noShield+oppMale
+  [121] l_shield+sZ2+leftGuard+eZ1+dZ1+r_bluntWeapon+oppMale
+  [122] l_shield+sZ1+rightGuard+eZ1+dZ5+r_bluntWeapon+oppMale
+  [123] l_shield+sZ1+rightGuard+eZ0+dZ0+r_swords+oppMale
+  [124] sZ1+rightGuard+eZ0+dZ0+r_bluntWeapon+l_noShield+oppMale
+  [125] CombatBlockBrokenGen
+  [126] l_longsword+r_longsword+sZ0+leftGuard+eZ0+dZ1+oppMale
+  [127] r_noweapon+or_noweapon+sZ5+rightGuard+eZ5+dZ5+l_noShield+ol_noShield+oppMale
+  [128] r_noweapon+or_noweapon+sZ1+rightGuard+eZ5+dZ5+l_noShield+ol_noShield+oppMale
+  [129] r_noweapon+or_noweapon+sZ2+leftGuard+eZ5+dZ5+l_noShield+ol_noShield+oppMale
+  [130] r_noweapon+sZ2+leftGuard+eZ5+dZ5+l_noShield+oppMale
+  [131] r_noweapon+sZ1+rightGuard+eZ5+dZ5+l_noShield+oppMale
+  [132] r_noweapon+sZ5+rightGuard+eZ5+dZ5+l_noShield+oppMale
+  [133] sZ0+leftGuard+eZ0+dZ2+r_shortSwords+l_noShield+oppMale

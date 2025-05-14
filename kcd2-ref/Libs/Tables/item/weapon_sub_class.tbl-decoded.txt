@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/weapon_sub_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1544500516
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 7
+  String Data Size ...... 84
+  Unique String Count ... 7
+  File Size ............. 224
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] undefined
+  [1] axe for stabbing
+  [2] mace stab blunt
+  [3] mace for stabbing
+  [4] pocketed
+  [5] training
+  [6] stub

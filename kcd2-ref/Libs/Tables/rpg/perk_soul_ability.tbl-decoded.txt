@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_soul_ability.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 892841608
+  Layout Hash ........... 442669545
+  Table Version ......... 1
+  Line Count ............ 71
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1448
+  Calculated Line Size .. 20 (rem. 0)

@@ -1,0 +1,41 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__animal.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 22
+  String Data Size ...... 512
+  Unique String Count ... 27
+  File Size ............. 3356
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] animal_red_deer_doe
+  [1] animal_wild
+  [2] taborOdboje_wolf_2
+  [3] animal_wild_enemy_kutnohorsko
+  [4] animal_cattle_bull
+  [5] animal_home
+  [6] animal_sheep_ewe
+  [7] animal_wildDog_kutnohorsko
+  [8] animal_roe_deer_hind
+  [9] taborOdboje_wolf_3
+  [10] animal_wild_dog
+  [11] trosecko_enemies_lovVlkuWolfs
+  [12] animal_sheep_ram
+  [13] taborOdboje_wolf_1
+  [14] animal_roe_deer_buck
+  [15] taborOdboje_wolf_4
+  [16] animal_cattle_cow
+  [17] animal_boar
+  [18] animal_hare
+  [19] animal_pig
+  [20] animal_wolf_trosecko
+  [21] animal_wild_enemy_trosecko
+  [22] animal_red_deer_stag
+  [23] animal_wildDog_trosecko
+  [24] animal_wolf_kutnohorsko
+  [25] animal_horse
+  [26] animal_dog

@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/positioning_vertex.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2233768991
+  Layout Hash ........... 724507465
+  Table Version ......... 1
+  Line Count ............ 10
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 388
+  Calculated Line Size .. 36 (rem. 0)

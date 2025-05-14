@@ -1,0 +1,44 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_guard_sync_movement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1259766577
+  Layout Hash ........... 1325350949
+  Table Version ......... 30
+  Line Count ............ 30
+  String Data Size ...... 1110
+  Unique String Count ... 30
+  File Size ............. 9538
+  Calculated Line Size .. 280 (rem. 0)
+String Table:
+  [0] CombatStealthClinchMaster
+  [1] stealthGrab+oppFemale+virtualDagger
+  [2] NPC_Female
+  [3] l_noweapon+r_noweapon+stealthGrab+oppFemale
+  [4] CombatStealthClinchSlave
+  [5] stealthGrab+virtualDagger
+  [6] ol_noweapon+or_noweapon+stealthGrab
+  [7] CombatClinchGuardMasterGen
+  [8] sZ1+stealthStand+oppMale+virtualDagger
+  [9] NPC
+  [10] sZ2+clinch1+eZ2+r_swords+l_noShieldOrTorch+oppMale
+  [11] sZ2+clinch2+eZ2+r_swords+l_noShield+oppMale
+  [12] sZ1+stealthStand+oppMale
+  [13] sZ1+stealthGrab+oppMale
+  [14] CombatClinchGuardSlaveGen
+  [15] l_halberd+r_halberd+sZ2+clinch2+eZ2+oppMale
+  [16] l_halberd+r_halberd+sZ2+clinch1+eZ2+oppMale
+  [17] l_shield+sZ2+clinch1+eZ2+r_stickWeapon+oppMale
+  [18] sZ2+clinch2+eZ2+r_stickWeapon+l_noShield+oppMale
+  [19] sZ2+clinch1+eZ2+r_stickWeapon+l_noShield+oppMale
+  [20] l_shield+sZ2+clinch2+eZ2+r_stickWeapon+oppMale
+  [21] l_torch+sZ2+clinch2+eZ2+r_stickWeapon+oppMale
+  [22] l_torch+sZ2+clinch1+eZ2+r_stickWeapon+oppMale
+  [23] CombatClinchStartGuardMasterGen
+  [24] l_halberd+r_halberd+clinch1+eZ1+oppMale
+  [25] r_noweapon+or_noweapon+clinch+l_noShield+ol_noShield+oppMale
+  [26] clinch1+eZ1+r_stickWeapon+l_noShield+oppMale
+  [27] l_shield+clinch1+eZ1+r_stickWeapon+oppMale
+  [28] l_torch+clinch1+eZ1+r_stickWeapon+oppMale
+  [29] CombatClinchStartGuardSlaveGen

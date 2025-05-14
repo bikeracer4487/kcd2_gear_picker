@@ -1,0 +1,68 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kvys.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 26
+  String Data Size ...... 1238
+  Unique String Count ... 54
+  File Size ............. 4594
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kvys_man_4
+  [1] kutnohorsko_settlements_vysoka_commonFolk_peasants_parcel03
+  [2] char_GENERIC_MAN_COMMONER_11
+  [3] kvys_vejmolaYoung
+  [4] kutnohorsko_settlements_vysoka_commonFolk_tradersAndCraftmans_shoemaker
+  [5] Merchants
+  [6] char_MLADEJ_VEJMOLA
+  [7] kvys_vorsila
+  [8] char_VORSILKA
+  [9] kvys_pivec
+  [10] kutnohorsko_settlements_vysoka_commonFolk_peasants_parcel06
+  [11] char_MLADEJ_PIVEC
+  [12] kvys_man_5
+  [13] kutnohorsko_settlements_vysoka_commonFolk_peasants_parcel04
+  [14] char_GENERIC_MAN_COMMONER_23
+  [15] kvys_horse_2
+  [16] kvys_woman_1
+  [17] kutnohorsko_settlements_vysoka_commonFolk_peasants_parcel05
+  [18] char_GENERIC_WOMAN_COMMONER_01
+  [19] kvys_horse_3
+  [20] kvys_man_3
+  [21] char_GENERIC_MAN_COMMONER_20
+  [22] kvys_woman_2
+  [23] char_GENERIC_WOMAN_COMMONER_10
+  [24] kvys_bohuse
+  [25] char_BOHUSE
+  [26] kvys_man_7
+  [27] kutnohorsko_settlements_vysoka_soldiers_guards
+  [28] Guards
+  [29] char_GENERIC_MAN_GUARD_02
+  [30] kvys_priest
+  [31] kutnohorsko_settlements_vysoka_nobility_priest
+  [32] char_FARAR_ANTONIN_VYSOKA
+  [33] kvys_man_1
+  [34] char_GENERIC_MAN_COMMONER_12
+  [35] kvys_woman_3
+  [36] char_GENERIC_WOMAN_COMMONER_12
+  [37] kvys_man_6
+  [38] char_GENERIC_MAN_GUARD_15
+  [39] kvys_dog_2
+  [40] kvys_vorsilaMother
+  [41] char_MATKA_VORSILKY
+  [42] kvys_horse_4
+  [43] kvys_dog_3
+  [44] kvys_man_2
+  [45] char_GENERIC_MAN_COMMONER_18
+  [46] kvys_vejmolaOld
+  [47] char_STAREJ_VEJMOLA
+  [48] kvys_pavel
+  [49] char_PAVEL
+  [50] kvys_dog_1
+  [51] kutnohorsko_settlements_vysoka_commonFolk_peasants_parcel02
+  [52] kvys_horse_1
+  [53] kvys_dog_4

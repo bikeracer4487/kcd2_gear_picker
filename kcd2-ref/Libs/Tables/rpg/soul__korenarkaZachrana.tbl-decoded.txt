@@ -1,0 +1,19 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__korenarkaZachrana.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 2
+  String Data Size ...... 135
+  Unique String Count ... 5
+  File Size ............. 419
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] korenarkaZachrana_pig
+  [1] animal_home
+  [2] korenarkaZachrana_oldrichDog
+  [3] trosecko_outskirts_korenarkaZachranaOldrichDog
+  [4] char_OLDRICHUV_PES_CHLUP

@@ -1,0 +1,72 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/RandomEvent/RandomEventTag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1027337555
+  Layout Hash ........... 2762725133
+  Table Version ......... 1
+  Line Count ............ 58
+  String Data Size ...... 1090
+  Unique String Count ... 58
+  File Size ............. 1582
+  Calculated Line Size .. 8 (rem. 0)
+String Table:
+  [0] All
+  [1] CartCollision
+  [2] NGPriorityEvents_disabled
+  [3] crimeScene
+  [4] crimeScene_bandits
+  [5] henryOnly
+  [6] hlasatel
+  [7] hlasatel_churchDispute
+  [8] hlasatel_evilCities
+  [9] hlasatel_foodForArmy
+  [10] hlasatel_janHus
+  [11] hlasatel_newTax
+  [12] hlasatel_pogrom
+  [13] hlasatel_pubDira
+  [14] hlasatel_sigmundsGoodness
+  [15] hlasatel_sinfulMen
+  [16] hlasatel_sinfulWomen
+  [17] hlasatel_skalice
+  [18] hlasatel_tournament
+  [19] hlasatel_traveling
+  [20] hlasatel_wallsRepair
+  [21] kapsar
+  [22] karavanyVeSvete
+  [23] karavanyVeSvete_cumans
+  [24] pocestny
+  [25] pocestny_death
+  [26] pocestny_devil
+  [27] pocestny_drunkard
+  [28] pocestny_duelist
+  [29] pocestny_henrysBride
+  [30] pocestny_indianaJones
+  [31] pocestny_lostLetter
+  [32] pocestny_lostMeaningOfLife
+  [33] pocestny_mistakenNPC
+  [34] pocestny_nebakovMercenary
+  [35] pocestny_newborn
+  [36] pocestny_oldrichSeminReward
+  [37] pocestny_prisoner
+  [38] pocestny_ratborSoldier
+  [39] pocestny_riddler
+  [40] pocestny_robbedMerchant
+  [41] pocestny_seminSurvivor
+  [42] pocestny_traskavePoselstviPoslicek
+  [43] pocestny_treasureHunter
+  [44] pocestny_unluckyGuy
+  [45] pocestny_waldemar
+  [46] pranyr
+  [47] prepadeniNaCeste
+  [48] prepadeniNaCeste_ambushNPC
+  [49] prepadeniNaCeste_attackOnSight
+  [50] prepadeniNaCeste_holdUp
+  [51] rvacka
+  [52] taboryUCesty
+  [53] taboryUCesty_archery
+  [54] taboryUCesty_dealer
+  [55] taboryUCesty_dice
+  [56] taboryUCesty_duel
+  [57] taboryUCesty_shop

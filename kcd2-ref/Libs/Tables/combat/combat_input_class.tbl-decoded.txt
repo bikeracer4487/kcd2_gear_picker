@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_input_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3533157271
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 9
+  String Data Size ...... 96
+  Unique String Count ... 9
+  File Size ............. 340
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] none
+  [1] attack_light
+  [2] attack_heavy
+  [3] attack_special
+  [4] move_left
+  [5] move_right
+  [6] move_back
+  [7] move_forward
+  [8] block

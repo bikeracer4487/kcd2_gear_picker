@@ -1,0 +1,15 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/prefab/prefab_phase_category__autotests.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 382183268
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 1
+  String Data Size ...... 28
+  Unique String Count ... 1
+  File Size ............. 72
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] _autotest_fireplace_burning

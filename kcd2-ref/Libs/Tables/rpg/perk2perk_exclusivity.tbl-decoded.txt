@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk2perk_exclusivity.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1454846817
+  Layout Hash ........... 73964485
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 284
+  Calculated Line Size .. 32 (rem. 0)

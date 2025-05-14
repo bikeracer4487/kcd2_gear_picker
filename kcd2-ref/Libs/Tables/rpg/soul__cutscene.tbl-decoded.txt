@@ -1,0 +1,107 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__cutscene.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 81
+  String Data Size ...... 2476
+  Unique String Count ... 93
+  File Size ............. 12872
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] cutscene_crime_guard_2
+  [1] cutsceneOnly
+  [2] cutscene_villager_male_03
+  [3] cutscene_villager_female_01
+  [4] char_GENERIC_WOMAN_COMMONER_06
+  [5] cutscene_villager_female_06
+  [6] char_GENERIC_WOMAN_COMMONER_09
+  [7] cutscene_villager_male_14
+  [8] cutscene_villager_female_02
+  [9] char_GENERIC_WOMAN_COMMONER_02
+  [10] cutscene_villager_male_13
+  [11] cutscene_townsman_female_06
+  [12] char_GENERIC_WOMAN_COMMONER_01
+  [13] cutscene_townsman_male_14
+  [14] cutscene_villager_male_02
+  [15] cutscene_villager_male_15
+  [16] cutscene_istvanFlipped
+  [17] cutscene_mordecai
+  [18] cutscene_crime_guard_zikmundovo_3
+  [19] cutscene_townsman_female_08
+  [20] char_GENERIC_WOMAN_COMMONER_07
+  [21] cutscene_townsman_female_04
+  [22] cutscene_villager_female_04
+  [23] char_GENERIC_WOMAN_COMMONER_10
+  [24] cutscene_villager_male_06
+  [25] cutscene_townsman_male_13
+  [26] cutscene_crime_executioner_kutnohorsko
+  [27] cutscene_blanka
+  [28] cutscene_villager_female_07
+  [29] char_GENERIC_WOMAN_COMMONER_03
+  [30] cutscene_villager_female_10
+  [31] cutscene_townsman_female_05
+  [32] char_GENERIC_WOMAN_COMMONER_08
+  [33] cutscene_villager_female_09
+  [34] cutscene_villager_male_09
+  [35] cutscene_villager_male_11
+  [36] cutscene_townsman_male_09
+  [37] cutscene_crime_guard_kutnohorsko_2
+  [38] cutscene_townsman_male_08
+  [39] cutscene_townsman_male_15
+  [40] cutscene_crime_guard_kutnohorsko_3
+  [41] cutscene_villager_female_05
+  [42] cutscene_townsman_male_05
+  [43] cutscene_townsman_male_03
+  [44] cutscene_townsman_male_10
+  [45] cutscene_universal_man6
+  [46] cutscene_crime_executioner_trosecko
+  [47] char_KAT_TROSKY
+  [48] cutscene_townsman_male_02
+  [49] cutscene_caponStubble
+  [50] cutscene_villager_male_10
+  [51] cutscene_townsman_male_12
+  [52] cutscene_townsman_male_06
+  [53] cutscene_crime_guard_kutnohorsko_1
+  [54] cutscene_villager_male_08
+  [55] cutscene_universal_woman1
+  [56] cutscene_townsman_female_02
+  [57] char_GENERIC_WOMAN_COMMONER_04
+  [58] cutscene_crime_guard_1
+  [59] cutscene_villager_male_04
+  [60] cutscene_archerCaptain
+  [61] cutscene_villager_female_08
+  [62] cutscene_crime_guard_zikmundovo_1
+  [63] cutscene_universal_man2
+  [64] cutscene_crime_guard_zikmundovo_2
+  [65] cutscene_villager_male_07
+  [66] cutscene_isac
+  [67] cutscene_townsman_female_09
+  [68] cutscene_villager_male_05
+  [69] cutscene_townsman_female_03
+  [70] cutscene_townsman_male_01
+  [71] cutscene_villager_male_01
+  [72] cutscene_universal_man5
+  [73] cutscene_townsman_female_07
+  [74] cutscene_villager_female_03
+  [75] cutscene_henry_whipped_mild
+  [76] cutscene_townsman_male_07
+  [77] cutscene_universal_man4
+  [78] cutscene_universal_man1
+  [79] cutscene_henry_injured_arm
+  [80] players_friends_fatherMartin
+  [81] cutscene_mose
+  [82] cutscene_henry_whipped_severe
+  [83] cutscene_villager_male_12
+  [84] cutscene_jacob
+  [85] cutscene_caponNaked
+  [86] cutscene_townsman_male_04
+  [87] cutscene_universal_man3
+  [88] cutscene_crime_guard_3
+  [89] cutscene_townsman_female_01
+  [90] cutscene_townsman_female_10
+  [91] cutscene_townsman_male_11
+  [92] cutscene_really_naked_henry

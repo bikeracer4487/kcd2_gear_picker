@@ -1,0 +1,62 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/document_requirement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1634087195
+  Layout Hash ........... 516410557
+  Table Version ......... 1
+  Line Count ............ 12
+  String Data Size ...... 1139
+  Unique String Count ... 12
+  File Size ............. 1455
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] if(playerSoul.soul:GetStatLevel('vitality')<15)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [1] if(playerSoul.soul:GetStatLevel('speech')<10)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [2] if(playerSoul.soul:GetStatLevel('vitality')<10)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [3] if(playerSoul.soul:GetStatLevel('strength')<10)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [4] if(playerSoul.soul:GetStatLevel('agility')<5)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [5] if(playerSoul.soul:GetStatLevel('vitality')<5)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [6] if(playerSoul.soul:GetStatLevel('speech')<15)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [7] if(playerSoul.soul:GetStatLevel('speech')<5)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [8] if(playerSoul.soul:GetStatLevel('agility')<15)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [9] if(playerSoul.soul:GetStatLevel('strength')<5)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [10] if(playerSoul.soul:GetStatLevel('agility')<10)
+then
+return "@ui_playerCantStudy_lowSkill";
+end
+  [11] if(playerSoul.soul:GetStatLevel('strength')<15)
+then
+return "@ui_playerCantStudy_lowSkill";
+end

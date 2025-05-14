@@ -1,0 +1,107 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_sync_transition.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3870835897
+  Layout Hash ........... 4091985953
+  Table Version ......... 30
+  Line Count ............ 93
+  String Data Size ...... 5001
+  Unique String Count ... 93
+  File Size ............. 31813
+  Calculated Line Size .. 288 (rem. 0)
+String Table:
+  [0] CombatStealthGrabMaster
+  [1] stealthGrab+endCarryCorpse+attack_heavy+leftAtkHand+oppFemale+virtualDagger
+  [2] NPC_Female
+  [3] stealthGrab+endCarryCorpse+attack_heavy+leftAtkHand+oppMale+virtualDagger
+  [4] NPC
+  [5] l_noweapon+r_noweapon+stealthGrab+endCarryCorpse+attack_heavy+oppMale
+  [6] l_noweapon+r_noweapon+stealthGrab+endCarryCorpse+attack_heavy+oppFemale
+  [7] CombatStealthGrabSlave
+  [8] stealthGrab+EndCombatMode+attack_heavy+leftAtkHand+oppMale+oppFemale+virtualDagger
+  [9] NPC,NPC_Female
+  [10] ol_noweapon+or_noweapon+stealthGrab+EndCombatMode+attack_heavy+oppMale+oppFemale
+  [11] stealthGrab+endCarryCorpse+attack_heavy+leftAtkHand+virtualDagger
+  [12] ol_noweapon+or_noweapon+stealthGrab+endCarryCorpse+attack_heavy
+  [13] CombatStealthPutDownMaster
+  [14] stealthGrab+EndCombatMode+attack_special+leftAtkHand+oppFemale+virtualDagger
+  [15] stealthGrab+EndCombatMode+attack_special+leftAtkHand+oppMale+virtualDagger
+  [16] l_noweapon+r_noweapon+stealthGrab+EndCombatMode+attack_special+oppMale
+  [17] l_noweapon+r_noweapon+stealthGrab+EndCombatMode+attack_special+oppFemale
+  [18] CombatStealthPutDownSlave
+  [19] stealthGrab+endKnockedOut+attack_special+leftAtkHand+oppMale+oppFemale+virtualDagger
+  [20] ol_noweapon+or_noweapon+stealthGrab+endKnockedOut+attack_special+oppMale+oppFemale
+  [21] stealthGrab+endKnockedOut+attack_special+leftAtkHand+virtualDagger
+  [22] ol_noweapon+or_noweapon+stealthGrab+endKnockedOut+attack_special
+  [23] CombatClinchTransitionMasterGen
+  [24] l_longsword+r_longsword+sZ0+clinch2+eZ1+step0+oppMale
+  [25] l_longsword+r_longsword+sZ0+clinch1+eZ2+step0+oppMale
+  [26] l_longsword+r_longsword+sZ2+clinch2+eZ2+step0+oppMale
+  [27] l_longsword+r_longsword+sZ2+clinch2+eZ2+step1+oppMale
+  [28] l_longsword+r_longsword+sZ1+clinch1+eZ2+step0+oppMale
+  [29] r_noweapon+or_noweapon+sZ1+clinch+eZ2+l_noShield+ol_noShield+step0+oppMale
+  [30] r_noweapon+or_noweapon+sZ0+clinch1+eZ2+l_noShield+ol_noShield+step0+oppMale
+  [31] r_noweapon+or_noweapon+sZ0+clinch2+eZ2+l_noShield+ol_noShield+step0+oppMale
+  [32] r_noweapon+or_noweapon+sZ2+clinch+eZ2+l_noShield+ol_noShield+step1+oppMale
+  [33] r_noweapon+or_noweapon+sZ2+clinch+eZ2+l_noShield+ol_noShield+step0+oppMale
+  [34] sZ0+clinch2+eZ1+r_bluntWeapon+l_noShield+step0+oppMale
+  [35] l_shield+sZ0+clinch1+eZ1+r_bluntWeapon+step0+oppMale
+  [36] sZ2+clinch2+eZ2+r_shortSwords+l_noShield+step1+oppMale
+  [37] l_shield+sZ0+clinch2+eZ1+r_bluntWeapon+step0+oppMale
+  [38] l_torch+sZ1+clinch1+eZ2+r_swords+step0+oppMale
+  [39] sZ1+clinch1+eZ2+r_shortSwords+l_noShield+step0+oppMale
+  [40] l_shield+sZ1+clinch1+eZ2+r_bluntWeapon+step0+oppMale
+  [41] sZ0+clinch1+eZ2+r_bluntWeapon+l_noShield+step0+oppMale
+  [42] l_shield+sZ0+clinch2+eZ1+r_swords+step0+oppMale
+  [43] sZ0+clinch1+eZ2+r_shortSwords+l_noShield+step0+oppMale
+  [44] sZ2+clinch2+eZ2+r_shortSwords+l_noShield+step0+oppMale
+  [45] sZ0+clinch2+eZ1+r_shortSwords+l_noShield+step0+oppMale
+  [46] l_torch+sZ0+clinch1+eZ1+r_swords+step0+oppMale
+  [47] l_torch+sZ1+clinch1+eZ2+r_bluntWeapon+step0+oppMale
+  [48] sZ1+clinch1+eZ2+r_bluntWeapon+l_noShield+step0+oppMale
+  [49] l_torch+sZ0+clinch2+eZ1+r_swords+step0+oppMale
+  [50] l_shield+sZ0+clinch1+eZ1+r_swords+step0+oppMale
+  [51] sZ2+clinch1+eZ2+endClinch2+r_swords+l_noShield+oppMale
+  [52] l_shield+sZ1+clinch1+eZ2+r_swords+step0+oppMale
+  [53] l_torch+sZ0+clinch1+eZ1+r_bluntWeapon+step0+oppMale
+  [54] l_torch+sZ0+clinch2+eZ1+r_bluntWeapon+step0+oppMale
+  [55] CombatClinchTransitionSlaveGen
+  [56] l_halberd+r_halberd+sZ2+clinch2+eZ1+step0+oppMale
+  [57] l_halberd+r_halberd+sZ1+clinch1+eZ1+step0+oppMale
+  [58] l_halberd+r_halberd+sZ2+clinch2+eZ2+step1+oppMale
+  [59] l_halberd+r_halberd+sZ2+clinch1+eZ2+endClinch2+oppMale
+  [60] l_longsword+r_longsword+sZ1+clinch1+eZ1+step0+oppMale
+  [61] l_longsword+r_longsword+sZ2+clinch2+eZ1+step0+oppMale
+  [62] l_longsword+r_longsword+sZ0+clinch2+eZ2+step0+oppMale
+  [63] l_torch+sZ0+clinch1+eZ2+r_swords+step0+oppMale
+  [64] sZ2+clinch2+eZ2+r_bluntWeapon+l_noShield+step1+oppMale
+  [65] l_shield+sZ2+clinch2+eZ1+r_swords+step0+oppMale
+  [66] l_shield+sZ1+clinch1+eZ1+r_swords+step0+oppMale
+  [67] sZ2+clinch2+eZ1+r_bluntWeapon+l_noShield+step0+oppMale
+  [68] l_shield+sZ2+clinch1+eZ2+endClinch2+r_stickWeapon+oppMale
+  [69] sZ2+clinch1+eZ2+endClinch2+r_stickWeapon+l_noShield+oppMale
+  [70] l_shield+sZ0+clinch1+eZ2+r_swords+step0+oppMale
+  [71] l_shield+sZ1+clinch1+eZ1+r_bluntWeapon+step0+oppMale
+  [72] l_torch+sZ2+clinch2+eZ2+r_bluntWeapon+step1+oppMale
+  [73] sZ0+clinch2+eZ2+r_shortSwords+l_noShield+step0+oppMale
+  [74] sZ1+clinch1+eZ1+r_bluntWeapon+l_noShield+step0+oppMale
+  [75] l_torch+sZ2+clinch1+eZ2+endClinch2+r_stickWeapon+oppMale
+  [76] l_torch+sZ2+clinch2+eZ1+r_bluntWeapon+step0+oppMale
+  [77] l_torch+sZ0+clinch1+eZ2+r_bluntWeapon+step0+oppMale
+  [78] l_shield+sZ2+clinch2+eZ1+r_bluntWeapon+step0+oppMale
+  [79] l_torch+sZ1+clinch1+eZ1+r_bluntWeapon+step0+oppMale
+  [80] sZ2+clinch2+eZ1+r_shortSwords+l_noShield+step0+oppMale
+  [81] l_torch+sZ2+clinch2+eZ2+r_swords+step1+oppMale
+  [82] l_torch+sZ1+clinch1+eZ1+r_swords+step0+oppMale
+  [83] l_shield+sZ0+clinch1+eZ2+r_bluntWeapon+step0+oppMale
+  [84] sZ1+clinch1+eZ1+r_shortSwords+l_noShield+step0+oppMale
+  [85] l_shield+sZ2+clinch2+eZ2+r_swords+step1+oppMale
+  [86] l_shield+sZ2+clinch2+eZ2+r_bluntWeapon+step1+oppMale
+  [87] l_torch+sZ2+clinch2+eZ1+r_swords+step0+oppMale
+  [88] CombatStealthTransitionMasterGen
+  [89] eZ1+endStealthStand+attack_heavy+oppMale+virtualDagger
+  [90] eZ1+endStealthStand+attack_heavy+oppMale
+  [91] CombatStealthTransitionSlaveGen
+  [92] eZ1+endStealthStand+attack_heavy+oppMale+oppFemale

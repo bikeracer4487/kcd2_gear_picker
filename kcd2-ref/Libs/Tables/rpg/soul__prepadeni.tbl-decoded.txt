@@ -1,0 +1,130 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__prepadeni.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 67
+  String Data Size ...... 3260
+  Unique String Count ... 116
+  File Size ............. 11864
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] prepadeni_pivec
+  [1] trosecko_allies_oldBuddies_prepadeniRatajeCrew_pivec
+  [2] char_ZBROJNOS_PIVEC
+  [3] prepadeni_bailiffsGroupSoldier_11
+  [4] trosecko_settlements_trosky_soldiers_prepadeniBailiffsGroup
+  [5] char_GENERIC_MAN_SOLDIER_18
+  [6] prepadeni_bailiffsGroupHorse_8
+  [7] prepadeni_bailiffsGroupSoldier_4
+  [8] char_GENERIC_MAN_SOLDIER_30
+  [9] prepadeni_bandit_12
+  [10] trosecko_enemies_bandits_prepadeniAmbushers_group1
+  [11] Bandits
+  [12] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [13] prepadeni_bandit_11
+  [14] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [15] prepadeni_bailiffsGroupHorse_12
+  [16] prepadeni_banditArcherOnHill
+  [17] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [18] prepadeni_woman_2
+  [19] trosecko_settlements_zelejov_commonFolk_peasants_prepadeniGirls
+  [20] char_GENERIC_WOMAN_COMMONER_08
+  [21] prepadeni_bandit_6
+  [22] trosecko_enemies_bandits_prepadeniAmbushers_group2
+  [23] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [24] prepadeni_bandit_1
+  [25] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [26] prepadeni_jindrichWet
+  [27] cutsceneOnly
+  [28] char_GENERIC_MAN_COMMONER_17
+  [29] prepadeni_bandit_13
+  [30] prepadeni_bandit_5
+  [31] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [32] prepadeni_deer_1
+  [33] animal_wild_neutral
+  [34] prepadeni_bandit_3
+  [35] prepadeni_bailiffsGroupHorse_1
+  [36] prepadeni_horsePtacek
+  [37] players_friends_ptacek
+  [38] char_KUN_PTACKUV_PRVNI
+  [39] prepadeni_voves
+  [40] trosecko_allies_oldBuddies_prepadeniRatajeCrew_voves
+  [41] char_ZBROJNOS_VOVES
+  [42] prepadeni_horseMikulas
+  [43] trosecko_allies_oldBuddies_prepadeniRatajeCrew_mikulas
+  [44] prepadeni_banditWithTorch_2
+  [45] prepadeni_horseVoves
+  [46] prepadeni_horseKonrad
+  [47] trosecko_allies_oldBuddies_prepadeniRatajeCrew_konrad
+  [48] prepadeni_horsePivec
+  [49] prepadeni_horseTomas
+  [50] trosecko_settlements_trosky_nobility_governorTomas
+  [51] prepadeni_konrad
+  [52] char_ZBROJNOS_KONRAD
+  [53] prepadeni_bailiffsGroupHorse_9
+  [54] prepadeni_mikulas
+  [55] char_ZBROJNOS_MIKULAS
+  [56] prepadeni_bailiffsGroupSoldier_8
+  [57] char_GENERIC_MAN_SOLDIER_08
+  [58] prepadeni_banditArcherLeader
+  [59] prepadeni_bailiffsGroupSoldier_3
+  [60] char_GENERIC_MAN_SOLDIER_20
+  [61] prepadeni_bailiffsGroupSoldier_12
+  [62] char_GENERIC_MAN_SOLDIER_10
+  [63] prepadeni_bandit_14
+  [64] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [65] prepadeni_guard
+  [66] char_GENERIC_WOMAN_COMMONER_01
+  [67] prepadeni_bandit_7
+  [68] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [69] prepadeni_deer_2
+  [70] prepadeni_jindrichInjured
+  [71] char_GENERIC_MAN_COMMONER_24
+  [72] prepadeni_banditWithTorch_1
+  [73] prepadeni_banditArcher_3
+  [74] prepadeni_banditForDuel
+  [75] trosecko_enemies_bandits_prepadeniAmbushers
+  [76] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [77] prepadeni_bailiffsGroupHorse_10
+  [78] prepadeni_bailiffsGroupSoldier_6
+  [79] char_GENERIC_MAN_SOLDIER_26
+  [80] prepadeni_bailiffsGroupSoldier_9
+  [81] char_GENERIC_MAN_SOLDIER_29
+  [82] prepadeni_bandit_9
+  [83] prepadeni_ptacek_naked
+  [84] 25
+  [85] prepadeni_bailiffsGroupHorse_4
+  [86] prepadeni_bailiffsGroupHorse_11
+  [87] prepadeni_bandit_2
+  [88] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [89] prepadeni_banditArcher_1
+  [90] prepadeni_bailiffsGroupHorse_3
+  [91] prepadeni_banditArcher_4
+  [92] prepadeni_bailiffsGroupSoldier_2
+  [93] char_GENERIC_MAN_SOLDIER_28
+  [94] prepadeni_woman_3
+  [95] char_GENERIC_WOMAN_COMMONER_04
+  [96] prepadeni_bailiffsGroupSoldier_1
+  [97] char_GENERIC_MAN_SOLDIER_19
+  [98] prepadeni_bandit_4
+  [99] prepadeni_bailiffsGroupHorse_7
+  [100] prepadeni_bailiffsGroupHorse_5
+  [101] prepadeni_caponWet
+  [102] char_GENERIC_MAN_COMMONER_12
+  [103] prepadeni_bailiffsGroupHorse_6
+  [104] prepadeni_bailiffsGroupSoldier_10
+  [105] char_GENERIC_MAN_SOLDIER_11
+  [106] prepadeni_bandit_10
+  [107] prepadeni_bailiffsGroupHorse_2
+  [108] prepadeni_bailiffsGroupSoldier_7
+  [109] char_GENERIC_MAN_SOLDIER_32
+  [110] prepadeni_bailiffsGroupSoldier_5
+  [111] char_GENERIC_MAN_SOLDIER_33
+  [112] prepadeni_bandit_8
+  [113] prepadeni_woman_1
+  [114] char_GENERIC_WOMAN_COMMONER_12
+  [115] prepadeni_banditArcher_2

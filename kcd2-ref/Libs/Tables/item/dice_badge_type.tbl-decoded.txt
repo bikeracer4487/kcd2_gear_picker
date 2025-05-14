@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/dice_badge_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4139962836
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 18
+  Unique String Count ... 3
+  File Size ............. 94
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] plumb
+  [1] silver
+  [2] gold

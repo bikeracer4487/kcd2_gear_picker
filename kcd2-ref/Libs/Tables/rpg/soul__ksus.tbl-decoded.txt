@@ -1,0 +1,34 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ksus.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 10
+  String Data Size ...... 384
+  Unique String Count ... 20
+  File Size ............. 1692
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ksus_man_3
+  [1] kutnohorsko_outskirts_secretMint
+  [2] char_GENERIC_MAN_MINER_04
+  [3] ksus_man_5
+  [4] char_GENERIC_MAN_COMMONER_13
+  [5] ksus_man_1
+  [6] char_GENERIC_MAN_MINER_02
+  [7] ksus_ranek
+  [8] kutnohorsko_outskirts_miners_listovniTajemstvi
+  [9] char_RANEK
+  [10] ksus_myslibor
+  [11] char_MYSLIBOR
+  [12] ksus_miner_1
+  [13] ksus_miner_2
+  [14] ksus_man_6
+  [15] char_GENERIC_MAN_COMMONER_12
+  [16] ksus_man_4
+  [17] char_GENERIC_MAN_MINER_01
+  [18] ksus_man_2
+  [19] char_GENERIC_MAN_MINER_05

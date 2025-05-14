@@ -1,0 +1,114 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__prepadeniNaCeste.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 65
+  String Data Size ...... 2886
+  Unique String Count ... 100
+  File Size ............. 11234
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] prepadeniNaCeste_peasant_4
+  [1] eventNPCs_enemies_neutral
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [4] prepadeniNaCeste_peasant_7
+  [5] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [6] prepadeniNaCeste_victim_man_2
+  [7] eventNPCs_civilians_friends
+  [8] char_GENERIC_MAN_COMMONER_25
+  [9] prepadeniNaCeste_cuman_6
+  [10] eventNPCs_enemies_hostile
+  [11] Cumans
+  [12] char_GENERIC_MAN_CUMAN_02
+  [13] prepadeniNaCeste_inquisitor_man_1
+  [14] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [15] prepadeniNaCeste_peasant_9
+  [16] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [17] prepadeniNaCeste_wolf_1
+  [18] prepadeniNaCeste_peasant_10
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [20] prepadeniNaCeste_banditLeader_9
+  [21] prepadeniNaCeste_banditLeader_10
+  [22] prepadeniNaCeste_victim_man_4
+  [23] char_GENERIC_MAN_COMMONER_05
+  [24] prepadeniNaCeste_victim_woman_2
+  [25] char_GENERIC_WOMAN_COMMONER_11
+  [26] prepadeniNaCeste_wolf_2
+  [27] prepadeniNaCeste_inquisitor
+  [28] char_PREPADENI_NA_CESTE_INKVIZITOR
+  [29] prepadeniNaCeste_jarda
+  [30] char_VELKEJ_JARDA
+  [31] prepadeniNaCeste_banditLeader_8
+  [32] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [33] prepadeniNaCeste_bandit_3
+  [34] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [35] prepadeniNaCeste_inquisitor_man_3
+  [36] prepadeniNaCeste_banditLeader_5
+  [37] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [38] prepadeniNaCeste_cuman_4
+  [39] char_GENERIC_MAN_CUMAN_04
+  [40] prepadeniNaCeste_peasant_6
+  [41] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [42] prepadeniNaCeste_victim_man_1
+  [43] char_GENERIC_MAN_COMMONER_26
+  [44] prepadeniNaCeste_bandit_2
+  [45] prepadeniNaCeste_inquisitor_man_2
+  [46] prepadeniNaCeste_peasant_3
+  [47] prepadeniNaCeste_victim_woman_3
+  [48] char_GENERIC_WOMAN_COMMONER_12
+  [49] prepadeniNaCeste_peasant_1
+  [50] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [51] prepadeniNaCeste_bandit_5
+  [52] prepadeniNaCeste_cuman_2
+  [53] prepadeniNaCeste_victim_woman_5
+  [54] char_GENERIC_WOMAN_COMMONER_07
+  [55] prepadeniNaCeste_bandit_8
+  [56] prepadeniNaCeste_banditLeader_3
+  [57] prepadeniNaCeste_cuman_1
+  [58] char_GENERIC_MAN_CUMAN_01
+  [59] prepadeniNaCeste_banditLeader_1
+  [60] prepadeniNaCeste_victim_woman_1
+  [61] char_GENERIC_WOMAN_COMMONER_10
+  [62] prepadeniNaCeste_bandit_rottenApple1
+  [63] prepadeniNaCeste_peasant_8
+  [64] prepadeniNaCeste_banditLeader_6
+  [65] prepadeniNaCeste_peasant_tournament1
+  [66] prepadeniNaCeste_peasant_tournament2
+  [67] prepadeniNaCeste_bandit_4
+  [68] prepadeniNaCeste_wolf_3
+  [69] prepadeniNaCeste_banditLeader_4
+  [70] prepadeniNaCeste_bandit_rydlo
+  [71] prepadeniNaCeste_bandit_6
+  [72] prepadeniNaCeste_peasant_5
+  [73] prepadeniNaCeste_bandit_7
+  [74] prepadeniNaCeste_banditLeader_7
+  [75] prepadeniNaCeste_bandit_rottenApple2
+  [76] prepadeniNaCeste_peasant_2
+  [77] prepadeniNaCeste_cuman_5
+  [78] prepadeniNaCeste_victim_wolves_man
+  [79] char_GENERIC_MAN_COMMONER_18
+  [80] prepadeniNaCeste_victim_man_5
+  [81] char_GENERIC_MAN_COMMONER_08
+  [82] prepadeniNaCeste_victim_wolves_woman
+  [83] char_GENERIC_WOMAN_COMMONER_06
+  [84] prepadeniNaCeste_wolf_5
+  [85] prepadeniNaCeste_wolf_4
+  [86] prepadeniNaCeste_magicShop_victim
+  [87] char_PODIVNY_OBCHODNIK
+  [88] prepadeniNaCeste_banditLeader_2
+  [89] prepadeniNaCeste_victim_man_3
+  [90] char_GENERIC_MAN_COMMONER_24
+  [91] prepadeniNaCeste_bandit_9
+  [92] prepadeniNaCeste_victim_woman_4
+  [93] char_GENERIC_WOMAN_COMMONER_02
+  [94] prepadeniNaCeste_bandit_10
+  [95] prepadeniNaCeste_jardas_friend
+  [96] char_JARDUV_KAMARAD
+  [97] prepadeniNaCeste_bandit_1
+  [98] prepadeniNaCeste_cuman_3
+  [99] char_GENERIC_MAN_CUMAN_03

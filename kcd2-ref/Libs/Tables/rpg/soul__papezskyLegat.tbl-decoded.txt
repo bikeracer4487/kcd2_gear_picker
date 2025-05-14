@@ -1,0 +1,86 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__papezskyLegat.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 41
+  String Data Size ...... 2096
+  Unique String Count ... 72
+  File Size ............. 7372
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] papezskyLegat_vagabond3
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vlasska_beggars
+  [2] char_GENERIC_MAN_COMMONER_11
+  [3] papezskyLegat_legate
+  [4] kutnohorsko_settlements_lorec_papezskyLegatCrew
+  [5] char_PAPEZSKY_LEGAT
+  [6] papezskyLegat_vagabond9
+  [7] char_GENERIC_MAN_COMMONER_26
+  [8] papezskyLegat_vagabond10
+  [9] char_GENERIC_MAN_COMMONER_18
+  [10] papezskyLegat_deadGuy
+  [11] char_GENERIC_MAN_COMMONER_07
+  [12] papezskyLegat_chase_man_3
+  [13] kutnohorsko_settlements_lorec_commonFolk_vineyard_staff
+  [14] char_GENERIC_MAN_COMMONER_14
+  [15] papezskyLegat_graveLooter2
+  [16] char_GENERIC_MAN_COMMONER_06
+  [17] papezskyLegat_papalAdjutant_4
+  [18] char_GENERIC_MAN_COMMONER_20
+  [19] papezskyLegat_chase_man_2
+  [20] papezskyLegat_ruthardka_horse6
+  [21] papezskyLegat_vagabond12
+  [22] char_GENERIC_MAN_COMMONER_08
+  [23] papezskyLegat_vagabond6
+  [24] char_GENERIC_MAN_COMMONER_16
+  [25] papezskyLegat_vagabond8
+  [26] char_GENERIC_MAN_COMMONER_05
+  [27] papezskyLegat_horse_1
+  [28] papezskyLegat_ruthardka_horse4
+  [29] papezskyLegat_papalAdjutant_2
+  [30] char_GENERIC_MAN_COMMONER_10
+  [31] papezskyLegat_horse_komar
+  [32] kutnohorsko_allies_newBuddies_komar
+  [33] char_KUN_KOMARUV
+  [34] papezskyLegat_gorilla1
+  [35] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_hradecka_parcel02_bodyguards
+  [36] char_KRISTIANUV_MUZ_FANOUS
+  [37] papezskyLegat_chase_man_1
+  [38] papezskyLegat_ruthardka_horse1
+  [39] papezskyLegat_chase_man_4
+  [40] papezskyLegat_vagabond2
+  [41] papezskyLegat_gorilla2
+  [42] char_KRISTIANUV_MUZ_MILOS
+  [43] papezskyLegat_vagabond4
+  [44] char_GENERIC_MAN_COMMONER_09
+  [45] papezskyLegat_papalAdjutant_3
+  [46] char_GENERIC_MAN_COMMONER_13
+  [47] papezskyLegat_ruthardka_horse5
+  [48] papezskyLegat_horseRuthardka1
+  [49] kutnohorsko_settlements_kutnaHora_nobility_rozaRuthard
+  [50] papezskyLegat_horse_2
+  [51] papezskyLegat_chase_horse_1
+  [52] papezskyLegat_ruthardka_horse3
+  [53] papezskyLegat_graveLooter1
+  [54] char_GENERIC_MAN_COMMONER_01
+  [55] papezskyLegat_vagabond1
+  [56] papezskyLegat_vagabond11
+  [57] char_GENERIC_MAN_COMMONER_04
+  [58] papezskyLegat_horse_3
+  [59] papezskyLegat_vagabond5
+  [60] char_GENERIC_MAN_COMMONER_19
+  [61] papezskyLegat_ruthardka_horse2
+  [62] papezskyLegat_papalAdjutant_5
+  [63] char_GENERIC_MAN_COMMONER_15
+  [64] papezskyLegat_wildDog
+  [65] animal_wild_enemy
+  [66] papezskyLegat_papalAdjutant_1
+  [67] char_GENERIC_MAN_COMMONER_12
+  [68] papezskyLegat_cin_rozaNaked
+  [69] cutsceneOnly
+  [70] char_GENERIC_WOMAN_COMMONER_07
+  [71] papezskyLegat_vagabond7

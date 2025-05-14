@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__malir.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 154
+  Unique String Count ... 9
+  File Size ............. 822
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] malir_diceman
+  [1] trosecko_outskirts_campPainter
+  [2] char_KUBA_STISTKO
+  [3] malir_vlk
+  [4] animal_wild_neutral
+  [5] malir_wolf_2
+  [6] malir_bowman
+  [7] char_JURA_VOSTRY_VOKO
+  [8] malir_wolf_3

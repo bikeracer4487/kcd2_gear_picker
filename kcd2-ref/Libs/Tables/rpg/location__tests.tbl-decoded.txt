@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/location__tests.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2466939752
+  Layout Hash ........... 2429396061
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 244
+  Unique String Count ... 9
+  File Size ............. 912
+  Calculated Line Size .. 80 (rem. 0)
+String Table:
+  [0] location_test_shadiness_near
+  [1] Common
+  [2] location_test_shadiness_far
+  [3] location_test_shadiness_medium
+  [4] location_test_shadiness_merchant
+  [5] location_location_GoodOnes
+  [6] location_location_comrades
+  [7] location_location_hatedOnes
+  [8] location_test_crime_justiceLeague

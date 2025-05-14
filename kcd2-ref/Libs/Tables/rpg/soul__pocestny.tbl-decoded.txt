@@ -1,0 +1,88 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__pocestny.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 33
+  String Data Size ...... 1999
+  Unique String Count ... 74
+  File Size ............. 6251
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] pocestny_treasureHunter_3
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_COMMONER_07
+  [3] pocestny_prisoner
+  [4] eventNPCs_civilians_pocestny_prisoner
+  [5] char_ODOLEN_Z_VOTIC_VEZEN
+  [6] pocestny_travelingMerchant_man_3
+  [7] Merchants
+  [8] char_GENERIC_MAN_MERCHANT_CZECH_04
+  [9] pocestny_travelingMerchant_woman_3
+  [10] char_GENERIC_WOMAN_COMMONER_04
+  [11] pocestny_lostLetter
+  [12] char_POSEL_BEZ_DOPISU
+  [13] pocestny_waldemar
+  [14] eventNPCs_civilians_pocestny_waldemar
+  [15] char_ULTIMATE_TIPSTER_WALDEMAR
+  [16] pocestny_unluckyGuy
+  [17] char_GENERIC_MAN_COMMONER_03
+  [18] pocestny_travelingMerchant_woman_1
+  [19] char_GENERIC_WOMAN_MERCHANT_CZECH_03
+  [20] pocestny_ratborSoldier
+  [21] char_GENERIC_MAN_SOLDIER_10
+  [22] pocestny_prisonerNoble
+  [23] char_ODOLEN_Z_VOTIC
+  [24] pocestny_henrysBride
+  [25] char_MLADA_HOLKA
+  [26] pocestny_travelingMerchant_woman_4
+  [27] pocestny_death
+  [28] eventNPCs_death
+  [29] char_GENERIC_WOMAN_COMMONER_09
+  [30] pocestny_indianaJones
+  [31] eventNPCs_civilians_pocestny_indianaJones
+  [32] char_BOLEK
+  [33] pocestny_treasureHunter_2
+  [34] char_GENERIC_MAN_COMMONER_15
+  [35] pocestny_travelingMerchant_woman_5
+  [36] char_GENERIC_WOMAN_MERCHANT_CZECH_04
+  [37] pocestny_seminSurvivor
+  [38] char_GENERIC_MAN_COMMONER_13
+  [39] pocestny_duelist
+  [40] eventNPCs_civilians_pocestny_duelist
+  [41] char_PETR_HOUSER
+  [42] pocestny_prisonerGuard
+  [43] char_GENERIC_MAN_SOLDIER_25
+  [44] pocestny_travelingMerchant_woman_2
+  [45] char_GENERIC_WOMAN_MERCHANT_CZECH_02
+  [46] pocestny_travelingMerchant_man_1
+  [47] char_GENERIC_MAN_MERCHANT_CZECH_05
+  [48] pocestny_newborn
+  [49] char_GENERIC_MAN_COMMONER_01
+  [50] pocestny_robbedMerchant
+  [51] char_OKRADENY_OBCHODNIK
+  [52] pocestny_devil
+  [53] char_GENERIC_MAN_COMMONER_17
+  [54] pocestny_mistakenNPC
+  [55] eventNPCs_civilians_pocestny_mistakenNPC
+  [56] char_ZMETENY_JACHYM
+  [57] pocestny_travelingMerchant_man_4
+  [58] char_GENERIC_MAN_MERCHANT_CZECH_03
+  [59] pocestny_travelingMerchant_man_2
+  [60] char_GENERIC_MAN_MERCHANT_CZECH_06
+  [61] pocestny_drunkard
+  [62] char_NASOSKA
+  [63] pocestny_riddler
+  [64] eventNPCs_civilians_pocestny_riddler
+  [65] char_HADANKAR_VOVES
+  [66] pocestny_treasureHunter_4
+  [67] char_GENERIC_MAN_COMMONER_26
+  [68] pocestny_treasureHunter_1
+  [69] char_GENERIC_MAN_COMMONER_10
+  [70] pocestny_travelingMerchant_man_5
+  [71] char_GENERIC_MAN_MERCHANT_CZECH_02
+  [72] pocestny_lostMeaningOfLife
+  [73] char_GENERIC_MAN_COMMONER_12

@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_death_action_type_mapping.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3907650912
+  Layout Hash ........... 431051889
+  Table Version ......... 1
+  Line Count ............ 6
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 76
+  Calculated Line Size .. 8 (rem. 0)

@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tarasMura.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 296
+  Unique String Count ... 12
+  File Size ............. 1220
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tarasMura_cow_03
+  [1] deadBodies
+  [2] tarasMura_extrafighter_3
+  [3] kutnohorsko_settlements_staraKutna_commonFolk_peasants
+  [4] char_GENERIC_MAN_COMMONER_02
+  [5] tarasMura_cow_01
+  [6] tarasMura_cow_04
+  [7] tarasMura_extrafighter_1
+  [8] char_GENERIC_MAN_COMMONER_16
+  [9] tarasMura_extrafighter_2
+  [10] char_GENERIC_MAN_COMMONER_06
+  [11] tarasMura_cow_02

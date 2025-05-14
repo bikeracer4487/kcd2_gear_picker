@@ -1,0 +1,44 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/pickable_area_material.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2679270246
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 30
+  String Data Size ...... 1815
+  Unique String Count ... 30
+  File Size ............. 2323
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] objects/natural/vegetation/field/plants/ajuga.cgf
+  [1] objects/natural/vegetation/field/plants/artemisia_b.cgf
+  [2] objects/natural/vegetation/field/plants/atropa_belladonna.cgf
+  [3] objects/natural/vegetation/field/plants/calendula_officinalis.cgf
+  [4] objects/natural/vegetation/field/plants/chaerophyllum.cgf
+  [5] objects/natural/vegetation/field/plants/cirsium.cgf
+  [6] objects/natural/vegetation/field/plants/euphrasia_rostkoviana.cgf
+  [7] objects/natural/vegetation/field/plants/hypericum_perforatum.cgf
+  [8] objects/natural/vegetation/field/plants/matricaria_chamomilla.cgf
+  [9] objects/natural/vegetation/field/plants/mentha.cgf
+  [10] objects/natural/vegetation/field/plants/papaver_rhoeas_a.cgf
+  [11] objects/natural/vegetation/field/plants/papaver_rhoeas_b.cgf
+  [12] objects/natural/vegetation/field/plants/paris_quadrifolia.cgf
+  [13] objects/natural/vegetation/field/plants/salvia_officinalis.cgf
+  [14] objects/natural/vegetation/field/plants/symphytum_officinale.cgf
+  [15] objects/natural/vegetation/field/plants/tanacetum_parthenium.cgf
+  [16] objects/natural/vegetation/field/plants/taraxacum_officinale.cgf
+  [17] objects/natural/vegetation/field/plants/urtica_dioica.cgf
+  [18] objects/natural/vegetation/field/plants/urtica_dioica_tall.cgf
+  [19] objects/natural/vegetation/mushrooms/mushroom_amanita_a.cgf
+  [20] objects/natural/vegetation/mushrooms/mushroom_amanita_b.cgf
+  [21] objects/natural/vegetation/mushrooms/mushroom_amanita_c.cgf
+  [22] objects/natural/vegetation/mushrooms/mushroom_amanita_d.cgf
+  [23] objects/natural/vegetation/mushrooms/mushroom_amanita_e.cgf
+  [24] objects/natural/vegetation/mushrooms/mushroom_boletus_a.cgf
+  [25] objects/natural/vegetation/mushrooms/mushroom_boletus_b.cgf
+  [26] objects/natural/vegetation/mushrooms/mushroom_boletus_c.cgf
+  [27] objects/natural/vegetation/mushrooms/mushroom_lepiota_a.cgf
+  [28] objects/natural/vegetation/mushrooms/mushroom_lepiota_b.cgf
+  [29] objects/natural/vegetation/mushrooms/mushroom_lepiota_c.cgf

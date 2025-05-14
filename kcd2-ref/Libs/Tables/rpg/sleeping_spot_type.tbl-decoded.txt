@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/sleeping_spot_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1666973825
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 59
+  Unique String Count ... 8
+  File Size ............. 279
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] exceptional
+  [1] high
+  [2] low
+  [3] medium
+  [4] ground
+  [5] none
+  [6] lowPlus
+  [7] mediumPlus

@@ -1,0 +1,144 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ksta.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 61
+  String Data Size ...... 3294
+  Unique String Count ... 130
+  File Size ............. 11130
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ksta_additive_woman_12
+  [1] kutnohorsko_settlements_staraKutna_commonFolk_peasants_additiveNPCs
+  [2] char_GENERIC_WOMAN_COMMONER_02
+  [3] ksta_vladimir
+  [4] kutnohorsko_settlements_staraKutna_commonFolk_peasants_parcel01
+  [5] char_STARESINA_VLADIMIR
+  [6] ksta_additive_woman_13
+  [7] char_GENERIC_WOMAN_COMMONER_07
+  [8] ksta_additive_man_10
+  [9] char_GENERIC_MAN_COMMONER_17
+  [10] ksta_man_2
+  [11] kutnohorsko_settlements_staraKutna_commonFolk_peasants_parcel03
+  [12] Guards
+  [13] char_GENERIC_MAN_GUARD_03
+  [14] ksta_man_8
+  [15] kutnohorsko_settlements_staraKutna_commonFolk_tavern_guests
+  [16] char_GENERIC_MAN_GERMAN_01
+  [17] ksta_additive_man_16
+  [18] kutnohorsko_settlements_staraKutna_nobility_additiveNPCs
+  [19] char_GENERIC_MAN_NOBLEMAN_11
+  [20] ksta_fakeSoldier_1
+  [21] kutnohorsko_enemies_bandits_falesnaPosadkaFakeSoldiers
+  [22] Bandits
+  [23] char_VELITEL_FALESNE_POSADKY_U61A
+  [24] ksta_woman_8
+  [25] kutnohorsko_settlements_staraKutna_commonFolk_tavern_staff
+  [26] char_GENERIC_WOMAN_COMMONER_12
+  [27] ksta_horse_4
+  [28] ksta_additive_man_11
+  [29] char_GENERIC_MAN_COMMONER_05
+  [30] ksta_woman_3
+  [31] char_GENERIC_WOMAN_GERMAN_01
+  [32] ksta_additive_man_4
+  [33] char_GENERIC_MAN_COMMONER_08
+  [34] ksta_horse_3
+  [35] kutnohorsko_settlements_staraKutna_commonFolk_tavern_handlers
+  [36] char_KUN_ZSUZSANNA
+  [37] ksta_taras
+  [38] kutnohorsko_enemies_tarasMura
+  [39] char_TARAS_MURA
+  [40] ksta_additive_man_3
+  [41] char_GENERIC_MAN_COMMONER_09
+  [42] ksta_additive_woman_2
+  [43] char_GENERIC_WOMAN_TOWNSWOMAN_01
+  [44] ksta_additive_man_20
+  [45] char_GENERIC_MAN_COMMONER_03
+  [46] ksta_woman_5
+  [47] char_SENKYRKA_Z_HOSPODY_VE_STARE_KUTNE_1
+  [48] ksta_additive_man_1
+  [49] char_GENERIC_MAN_TOWNSMAN_04
+  [50] ksta_additive_man_14
+  [51] char_GENERIC_MAN_COMMONER_01
+  [52] ksta_woman_1
+  [53] char_GENERIC_WOMAN_COMMONER_08
+  [54] ksta_horse_1
+  [55] ksta_fakeSoldier_2
+  [56] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [57] ksta_horse_2
+  [58] char_KUN_BASARAB
+  [59] ksta_additive_man_5
+  [60] char_GENERIC_MAN_COMMONER_20
+  [61] ksta_additive_woman_9
+  [62] char_GENERIC_WOMAN_COMMONER_06
+  [63] ksta_dog_1
+  [64] ksta_additive_man_18
+  [65] char_GENERIC_MAN_COMMONER_18
+  [66] ksta_man_1
+  [67] char_GENERIC_MAN_GUARD_18
+  [68] ksta_additive_man_12
+  [69] char_GENERIC_MAN_COMMONER_23
+  [70] ksta_man_3
+  [71] char_GENERIC_MAN_SOLDIER_16
+  [72] ksta_man_6
+  [73] char_KOSTKAR_VILEM
+  [74] ksta_additive_woman_7
+  [75] ksta_marian
+  [76] kutnohorsko_settlements_staraKutna_commonFolk_peasants_parcel02
+  [77] char_MARIAN_KNEZ
+  [78] ksta_additive_woman_10
+  [79] char_GENERIC_WOMAN_TOWNSWOMAN_05
+  [80] ksta_viktor
+  [81] kutnohorsko_outskirts_farms_staraLhotaViktorsHouse
+  [82] char_BLAZNIVY_VIKTOR_M44A
+  [83] ksta_additive_woman_5
+  [84] char_GENERIC_WOMAN_COMMONER_10
+  [85] ksta_man_4
+  [86] char_GENERIC_MAN_SOLDIER_37
+  [87] ksta_additive_man_2
+  [88] char_GENERIC_MAN_TOWNSMAN_02
+  [89] ksta_additive_man_15
+  [90] char_GENERIC_MAN_COMMONER_14
+  [91] ksta_additive_woman_4
+  [92] ksta_additive_woman_8
+  [93] char_GENERIC_WOMAN_TOWNSWOMAN_07
+  [94] ksta_additive_woman_11
+  [95] char_GENERIC_WOMAN_COMMONER_03
+  [96] ksta_additive_woman_14
+  [97] ksta_additive_woman_1
+  [98] char_GENERIC_WOMAN_TOWNSWOMAN_06
+  [99] ksta_additive_man_19
+  [100] char_GENERIC_MAN_COMMONER_07
+  [101] ksta_man_7
+  [102] char_GENERIC_MAN_GERMAN_05
+  [103] ksta_additive_man_13
+  [104] char_GENERIC_MAN_TOWNSMAN_09
+  [105] ksta_woman_6
+  [106] char_SENKYRKA_Z_HOSPODY_VE_STARE_KUTNE_2
+  [107] ksta_man_5
+  [108] char_GENERIC_MAN_GERMAN_03
+  [109] ksta_man_11
+  [110] char_GENERIC_MAN_GUARD_08
+  [111] ksta_woman_7
+  [112] char_GENERIC_WOMAN_COMMONER_11
+  [113] ksta_additive_woman_3
+  [114] char_GENERIC_WOMAN_COMMONER_01
+  [115] ksta_man_10
+  [116] char_GENERIC_MAN_COMMONER_26
+  [117] ksta_additive_woman_6
+  [118] char_GENERIC_WOMAN_COMMONER_04
+  [119] ksta_man_9
+  [120] char_GENERIC_MAN_GERMAN_04
+  [121] ksta_innkeeper
+  [122] Merchants
+  [123] char_HOSPODSKY_ZAJEZDNI_HOSTINEC_KH
+  [124] ksta_fakeSoldier_3
+  [125] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [126] ksta_woman_2
+  [127] char_GENERIC_WOMAN_COMMONER_09
+  [128] ksta_additive_man_17
+  [129] char_GENERIC_MAN_TOWNSMAN_08

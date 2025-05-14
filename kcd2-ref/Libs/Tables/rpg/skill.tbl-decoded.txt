@@ -1,0 +1,131 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/skill.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 503370343
+  Layout Hash ........... 3599747401
+  Table Version ......... 1
+  Line Count ............ 30
+  String Data Size ...... 2408
+  Unique String Count ... 117
+  File Size ............. 5316
+  Calculated Line Size .. 96 (rem. 0)
+String Table:
+  [0] stealth
+  [1] ui_skill_stealth_desc0
+  [2] ui_skill_stealth
+  [3] ui_skill_stealth_levelup
+  [4] horse_riding
+  [5] ui_skill_horse_riding_desc0
+  [6] ui_skill_horse_whispering
+  [7] ui_skill_horsewhisper_levelup
+  [8] fencing
+  [9] ui_skill_fencing_desc0
+  [10] ui_skill_fencing
+  [11] ui_skill_fencing_levelup
+  [12] bard
+  [13] ui_skill_bard_desc0
+  [14] ui_skill_bard
+  [15] ui_skill_bard_levelup
+  [16] thievery
+  [17] ui_skill_thievery_desc0
+  [18] ui_skill_thievery
+  [19] ui_skill_thievery_levelup
+  [20] alchemy
+  [21] ui_skill_alchemy_desc0
+  [22] ui_skill_alchemy
+  [23] ui_skill_alchemy_levelup
+  [24] cooking
+  [25] ui_skill_cooking_desc0
+  [26] ui_skill_cooking
+  [27] ui_skill_cooking_levelup
+  [28] craftsmanship
+  [29] ui_skill_craftsmanship_desc0
+  [30] ui_skill_craftsmanship
+  [31] ui_skill_craftsmanship_levelup
+  [32] fishing
+  [33] ui_skill_fishing_desc0
+  [34] ui_skill_fishing
+  [35] ui_skill_fishing_levelup
+  [36] mining
+  [37] ui_skill_mining_desc0
+  [38] ui_skill_mining
+  [39] ui_skill_mining_levelup
+  [40] first_aid
+  [41] ui_skill_first_aid_desc0
+  [42] ui_skill_first_aid
+  [43] ui_skill_first_aid_levelup
+  [44] drinking
+  [45] ui_skill_drinking_desc0
+  [46] ui_skill_drinking
+  [47] ui_skill_drinking_levelup
+  [48] survival
+  [49] ui_skill_survival_desc0
+  [50] ui_skill_survival
+  [51] ui_skill_survival_levelup
+  [52] defense
+  [53] ui_skill_defense_desc0
+  [54] ui_skill_defense
+  [55] ui_skill_defense_levelup
+  [56] weapon_sword
+  [57] ui_skill_weapon_sword_desc0
+  [58] ui_skill_weapon_sword
+  [59] ui_skill_wpnsword_levelup
+  [60] heavy_weapons
+  [61] ui_skill_heavy_weapons_desc0
+  [62] ui_skill_heavy_weapons
+  [63] ui_skill_heavyweapons_levelup
+  [64] marksmanship
+  [65] ui_skill_marksmanship_decs0
+  [66] ui_skill_marksmanship
+  [67] ui_skill_marksmanship_levelup
+  [68] weapon_shield
+  [69] ui_skill_weapon_shield_desc0
+  [70] ui_skill_weapon_shield
+  [71] ui_skill_wpnshield_levelup
+  [72] weapon_dagger
+  [73] ui_skill_weapon_dagger_desc0
+  [74] ui_skill_weapon_dagger
+  [75] ui_skill_wpndagger_levelup
+  [76] weapon_large
+  [77] ui_skill_weapon_large_desc0
+  [78] ui_skill_weapon_large
+  [79] ui_skill_wpnlarge_levelup
+  [80] weapon_unarmed
+  [81] ui_skill_weapon_unarmed_desc0
+  [82] ui_skill_weapon_unarmed
+  [83] ui_skill_wpnunarmed_levelup
+  [84] scholarship
+  [85] ui_skill_scholarship_desc0
+  [86] ui_skill_scholarship
+  [87] ui_skill_scholarship_levelup
+  [88] tailoring
+  [89] ui_skill_tailoring_desc0
+  [90] ui_skill_tailoring
+  [91] ui_skill_tailoring_levelup
+  [92] armourer
+  [93] ui_skill_armourer_desc0
+  [94] ui_skill_armourer
+  [95] ui_skill_armourer_levelup
+  [96] weaponsmithing
+  [97] ui_skill_weaponsmithing_desc0
+  [98] ui_skill_weaponsmithing
+  [99] ui_skill_weaponsmithing_levelup
+  [100] shoemaking
+  [101] ui_skill_shoemaking_desc0
+  [102] ui_skill_shoemaking
+  [103] ui_skill_shoemaking_levelup
+  [104] gunsmithing
+  [105] ui_skill_gunsmith_desc0
+  [106] ui_skill_gunsmith
+  [107] ui_skill_gunsmith_levelup
+  [108] bowyery
+  [109] ui_skill_bowyery_desc0
+  [110] ui_skill_bowyery
+  [111] ui_skill_bowyery_levelup
+  [112] gambling
+  [113] houndmaster
+  [114] ui_skill_houndmaster_desc0
+  [115] ui_skill_houndmaster
+  [116] ui_skill_houndmaster_levelup

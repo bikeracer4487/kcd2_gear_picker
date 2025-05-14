@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/rpg_sound.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 104145559
+  Layout Hash ........... 3320621001
+  Table Version ......... 1
+  Line Count ............ 28
+  String Data Size ...... 303
+  Unique String Count ... 28
+  File Size ............. 1451
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] combat
+  [1] lockpick
+  [2] movement
+  [3] sharpener
+  [4] whistle
+  [5] combatScript
+  [6] door
+  [7] decoy_distract
+  [8] smell
+  [9] bio_hunger
+  [10] bio_exhaustion
+  [11] bio_drunkeness
+  [12] bow_fired
+  [13] gun_fired
+  [14] arrow_hit
+  [15] bullet_hit
+  [16] speech
+  [17] dramatic_bark
+  [18] alarm
+  [19] startled_critter
+  [20] hunting_alarm
+  [21] dog_bark
+  [22] dog_attack_command
+  [23] dog_distract
+  [24] thrash
+  [25] lure_distract
+  [26] photo_mode
+  [27] perfume

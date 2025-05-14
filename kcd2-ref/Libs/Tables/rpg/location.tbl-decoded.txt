@@ -1,0 +1,115 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/location.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2466939752
+  Layout Hash ........... 2429396061
+  Table Version ......... 1
+  Line Count ............ 62
+  String Data Size ...... 1687
+  Unique String Count ... 101
+  File Size ............. 6675
+  Calculated Line Size .. 80 (rem. 0)
+String Table:
+  [0] location_cikanskyTabor
+  [1] Unique
+  [2] nomad_camp
+  [3] main_menu_trosecko5
+  [4] location_zajezdniHostinecZelejov
+  [5] Hidden
+  [6] location_pritoky
+  [7] pritoky
+  [8] location_vezicko
+  [9] location_vezickoHerbalist
+  [10] location_sedleckyKlaster
+  [11] Common
+  [12] clergy
+  [13] main_menu_kutnohorsko2
+  [14] location_zikmunduvTabor
+  [15] zikmund_camp
+  [16] location_hradTrosky
+  [17] trosky
+  [18] main_menu_trosecko2
+  [19] location_horany
+  [20] horany
+  [21] main_menu_trosecko3
+  [22] location_pecky
+  [23] location_dobesovice
+  [24] location_suchdol
+  [25] suchdol
+  [26] location_bylany
+  [27] bylany
+  [28] main_menu_kutnohorsko4
+  [29] location_vysoka
+  [30] vysoka
+  [31] location_malesov
+  [32] malesov
+  [33] location_rabstejnka
+  [34] mill
+  [35] location_pivovarLorec
+  [36] location_udoliZdar
+  [37] location_ratiborice
+  [38] location_troskovice
+  [39] troskovice
+  [40] location_nebakovskyMlyn
+  [41] main_menu_trosecko6
+  [42] location_slatejov
+  [43] village
+  [44] location_sukov
+  [45] location_zajezdniHostinecStaraKutna
+  [46] location_staraKutna
+  [47] stara_kutna
+  [48] location_kuklicko
+  [49] location_vidlak
+  [50] location_apolena
+  [51] apolena
+  [52] main_menu_trosecko4
+  [53] location_miskovice
+  [54] miskovice
+  [55] location_cimburk
+  [56] location_novy_testicek
+  [57] location_grunta
+  [58] grunta
+  [59] main_menu_kutnohorsko3
+  [60] location_naBylance
+  [61] location_zdar_west
+  [62] location_ratbor
+  [63] ratbor
+  [64] location_certovka
+  [65] certovka
+  [66] location_bohounovice
+  [67] bohounovice
+  [68] location_kutnaHora
+  [69] kutna_hora
+  [70] location_tachov
+  [71] tachov
+  [72] location_staraLhota
+  [73] location_danemark
+  [74] location_svet_kl
+  [75] location_mezholezy
+  [76] location_klasterniHrbitov
+  [77] location_klasterniVinice
+  [78] location_semin
+  [79] semin
+  [80] location_bukovina
+  [81] location_dolany
+  [82] location_zdar_east
+  [83] location_krcak
+  [84] location_svet_tr
+  [85] main_menu_trosecko
+  [86] location_svet_kh
+  [87] main_menu_kutnohorsko
+  [88] location_zajezdniHostinecPritoky
+  [89] location_podseminskyMlyn
+  [90] location_kopecVysoka
+  [91] location_kostnice
+  [92] location_zelejov
+  [93] zelejov
+  [94] location_zikmunduvTaborAOpatovice
+  [95] location_opatovice
+  [96] opatovice
+  [97] location_tvrzNebakov
+  [98] nebakov
+  [99] location_vrchlicko
+  [100] location_vezak

@@ -1,0 +1,63 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_behaviour_tree.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1680731372
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 42
+  String Data Size ...... 1191
+  Unique String Count ... 49
+  File Size ............. 2563
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] test_lukas_newSubbrain.xml
+  [1] onUpdate
+  [2] _qa/test_codetest_brain.xml
+  [3] main
+  [4] test_sa_stairs.xml
+  [5] default.xml
+  [6] default
+  [7] npc/animal/activity.xml
+  [8] _lukas/test_daycycle.xml
+  [9] _vitek/test_vitek_cuman.xml
+  [10] _mz/test_hearing.xml
+  [11] quests/zaby/zaby.xml
+  [12] test_sheep_onUpdate
+  [13] animal/companion_playerDog.xml
+  [14] temp/test_so_hidingCabinet.xml
+  [15] _testing\test_dogCompanion.xml
+  [16] _vitek/vitekmain2.xml
+  [17] _testing/test_dog.xml
+  [18] test/zz/test_sa_zbynek.xml
+  [19] _vitek/vitekMain.xml
+  [20] test_npc_vitek
+  [21] _ml/test_labut_01_main.xml
+  [22] test/skirmish/skirmish_combat_events.xml
+  [23] _smejki/test_smejkiSubbrain.xml
+  [24] _ondrastuchl/test_npc_ondra.xml
+  [25] _lukas/wild_dog.xml
+  [26] _j/test_chestpickup.xml
+  [27] _lukas/test_lukas.xml
+  [28] test/mz/test_npc_martin.xml
+  [29] _lukas/wildDogPack.xml
+  [30] _smejki/test_smejkiMainBrain.xml
+  [31] .xml
+  [32] test/common/sandbox.xml
+  [33] _lukas/test_sheep_behavior.xml
+  [34] _vitek/test_vitek_main_sub.xml
+  [35] _lukas/test_wolf.xml
+  [36] _lukas/test_wildDogLeader_sb.xml
+  [37] quests\hledaniPsa.xml
+  [38] ignazBait
+  [39] _vitek/test_vitek_female.xml
+  [40] final/horse.xml
+  [41] defaultHorse
+  [42] test/lod/horse_test_lod_anims.xml
+  [43] _athert/test_graphSearchSpawnDespawn.xml
+  [44] npc
+  [45] test/david.kroneisl/horse_test.xml
+  [46] haste/test_pathfollower_dummy.xml
+  [47] closedCastle\scheduler_closedCastle.xml
+  [48] test/david.kroneisl/horse_test_npc.xml

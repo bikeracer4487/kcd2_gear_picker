@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kkuk.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 17
+  String Data Size ...... 524
+  Unique String Count ... 28
+  File Size ............. 2728
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kkuk_man_4
+  [1] kutnohorsko_enemies_bandits_campPOIKuklicko
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [4] kkuk_deadWolf_1
+  [5] deadBodies
+  [6] kkuk_man_7
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [8] kkuk_man_5
+  [9] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [10] kkuk_man_6
+  [11] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [12] kkuk_deadWolf_2
+  [13] kkuk_horse_3
+  [14] kkuk_horse_1
+  [15] kkuk_horse_4
+  [16] kkuk_horse_2
+  [17] kkuk_man_2
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [19] kkuk_man_9
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [21] kkuk_man_1
+  [22] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [23] kkuk_man_8
+  [24] kkuk_man_10
+  [25] kutnohorsko_allies
+  [26] kkuk_deadWolf_3
+  [27] kkuk_man_3

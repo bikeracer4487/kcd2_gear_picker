@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__levelSwitch.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 4
+  String Data Size ...... 222
+  Unique String Count ... 9
+  File Size ............. 762
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] levelSwitch_man_1
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_COMMONER_16
+  [3] levelSwitch_woman_1
+  [4] char_GENERIC_WOMAN_TOWNSWOMAN_07
+  [5] levelSwitch_man_3
+  [6] char_GENERIC_MAN_NOBLEMAN_05
+  [7] levelSwitch_man_2
+  [8] char_GENERIC_MAN_NOBLEMAN_12

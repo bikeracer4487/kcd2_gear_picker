@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zakopanyZitrek.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 259
+  Unique String Count ... 12
+  File Size ............. 927
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zakopanyZitrek_bandit_4
+  [1] kutnohorsko_enemies_bandits_zakopanyZitrek
+  [2] Bandits
+  [3] char_HANKUV_LAPKA_4
+  [4] zakopanyZitrek_bandit_1
+  [5] char_HANKUV_LAPKA_1
+  [6] zakopanyZitrek_bandit_2
+  [7] char_HANKUV_LAPKA_2
+  [8] zakopanyZitrek_hanka
+  [9] char_HANKA
+  [10] zakopanyZitrek_bandit_3
+  [11] char_HANKUV_LAPKA_3

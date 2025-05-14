@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sabotazLazni.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 342
+  Unique String Count ... 9
+  File Size ............. 754
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] sabotazLazni_nobleman
+  [1] kutnohorsko_settlements_kutnaHora_nobility_sabotazLazniNobleman
+  [2] char_JAN_Z_LESTINY
+  [3] sabotazLazni_noblemansValet
+  [4] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_hradecka_sabotazLazniValet
+  [5] char_SLECHTICUV_SLUHA
+  [6] sabotazLazni_duelReferee
+  [7] kutnohorsko_settlements_kutnaHora_nobility_sabotazLazniDuelReferee
+  [8] char_ROZHODCI

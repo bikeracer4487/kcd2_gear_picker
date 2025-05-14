@@ -1,0 +1,110 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__khor.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 50
+  String Data Size ...... 2068
+  Unique String Count ... 96
+  File Size ............. 8496
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] khor_woman_6
+  [1] kutnohorsko_settlements_horany_commonFolk_peasants_mines
+  [2] char_GENERIC_WOMAN_COMMONER_10
+  [3] khor_dog_1
+  [4] kutnohorsko_settlements_horany_commonFolk_peasants
+  [5] khor_man_21
+  [6] char_PREDAK_FRANTA
+  [7] khor_man_29
+  [8] kutnohorsko_settlements_horany_commonFolk_peasants_parcel01
+  [9] char_GENERIC_MAN_COMMONER_08
+  [10] khor_horse_3
+  [11] kutnohorsko_settlements_horany_commonFolk_peasants_parcel02
+  [12] khor_man_33
+  [13] kutnohorsko_settlements_horany_soldiers_guards
+  [14] Guards
+  [15] char_GENERIC_MAN_GUARD_08
+  [16] khor_man_7
+  [17] char_GENERIC_MAN_MINER_03
+  [18] khor_man_10
+  [19] char_GENERIC_MAN_MINER_04
+  [20] khor_horse_5
+  [21] khor_thomlin
+  [22] char_THOMLIN_BRUTHANS_HORANY
+  [23] khor_man_11
+  [24] char_GENERIC_MAN_MINER_05
+  [25] khor_oreseller
+  [26] kutnohorsko_settlements_grunta_commonFolk_peasants_ironworksCentral
+  [27] char_RUDOKUPEC_HERMAN
+  [28] khor_maslo
+  [29] char_PREDAK_MASLO
+  [30] khor_man_18
+  [31] char_GENERIC_MAN_GUARD_15
+  [32] khor_man_6
+  [33] khor_man_12
+  [34] char_STANDA_MOUCHA
+  [35] khor_man_14
+  [36] char_GENERIC_MAN_MINER_02
+  [37] khor_man_20
+  [38] char_GENERIC_MAN_GUARD_18
+  [39] khor_horse_6
+  [40] khor_man_13
+  [41] khor_woman_4
+  [42] char_GENERIC_WOMAN_COMMONER_12
+  [43] khor_man_2
+  [44] char_GENERIC_MAN_COMMONER_18
+  [45] khor_man_8
+  [46] khor_horse_1
+  [47] khor_woman_2
+  [48] char_GENERIC_WOMAN_COMMONER_03
+  [49] khor_man_22
+  [50] char_PREDAK_PAVEL
+  [51] khor_man_32
+  [52] char_GENERIC_MAN_GUARD_14
+  [53] khor_man_9
+  [54] char_GENERIC_MAN_MINER_01
+  [55] khor_man_24
+  [56] char_PACHOLEK_STANIK_HORANY
+  [57] khor_horse_7
+  [58] kutnohorsko_settlements_horany_nobility_kristianZPisku
+  [59] khor_man_1
+  [60] char_SEDLAK_TUMA_HORANY
+  [61] khor_woman_5
+  [62] char_GENERIC_WOMAN_COMMONER_06
+  [63] khor_woman_1
+  [64] kutnohorsko_settlements_horany_commonFolk_tradersAndCraftmans_food
+  [65] char_GENERIC_WOMAN_COMMONER_02
+  [66] khor_man_25
+  [67] char_GENERIC_MAN_COMMONER_17
+  [68] khor_man_27
+  [69] char_GENERIC_MAN_COMMONER_07
+  [70] khor_man_17
+  [71] khor_horse_2
+  [72] khor_woman_3
+  [73] char_GENERIC_WOMAN_COMMONER_09
+  [74] khor_man_31
+  [75] char_GENERIC_MAN_GUARD_16
+  [76] khor_man_15
+  [77] khor_man_16
+  [78] khor_cuca
+  [79] char_VEPR_CUCA
+  [80] khor_man_23
+  [81] char_PREDAK_SAMKO
+  [82] khor_man_30
+  [83] char_GENERIC_MAN_COMMONER_06
+  [84] khor_man_26
+  [85] Merchants
+  [86] char_GENERIC_MAN_MARKET_COALMAN_CZECH_02
+  [87] khor_horse_4
+  [88] khor_kristianZPisku
+  [89] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [90] char_KRISTIAN_Z_PISKU
+  [91] khor_dog_2
+  [92] khor_man_19
+  [93] char_GENERIC_MAN_GUARD_03
+  [94] khor_man_28
+  [95] char_GENERIC_MAN_COMMONER_19

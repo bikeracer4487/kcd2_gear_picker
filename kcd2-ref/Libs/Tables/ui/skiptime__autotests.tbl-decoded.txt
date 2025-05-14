@@ -1,0 +1,15 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/skiptime__autotests.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4287536536
+  Layout Hash ........... 1042526249
+  Table Version ......... 1
+  Line Count ............ 1
+  String Data Size ...... 32
+  Unique String Count ... 1
+  File Size ............. 108
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] test_ForcedSkipTimeAsActorState

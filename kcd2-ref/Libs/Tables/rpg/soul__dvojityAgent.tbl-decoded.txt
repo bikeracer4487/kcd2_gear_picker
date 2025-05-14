@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__dvojityAgent.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 18
+  String Data Size ...... 1043
+  Unique String Count ... 33
+  File Size ............. 3375
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] dvojityAgent_jansHenchman_1
+  [1] kutnohorsko_allies_newBuddies_dvojityAgentJansHenchman
+  [2] char_GENERIC_MAN_SOLDIER_08
+  [3] dvojityAgent_laszlosHenchman_5
+  [4] kutnohorsko_allies_newBuddies_dvojityAgentLaszlosHenchman
+  [5] Cumans
+  [6] char_GENERIC_MAN_CUMAN_01
+  [7] dvojityAgent_laszlosHenchman_3
+  [8] char_GENERIC_MAN_CUMAN_03
+  [9] dvojityAgent_hynek
+  [10] kutnohorsko_allies_newBuddies_dvojityAgentHynek
+  [11] char_GENERIC_MAN_COMMONER_17
+  [12] dvojityAgent_laszlosAmbusher_5
+  [13] kutnohorsko_enemies_dvojityAgentLaszlosAmbushers
+  [14] dvojityAgent_jansHenchman_2
+  [15] char_GENERIC_MAN_SOLDIER_25
+  [16] dvojityAgent_laszlosAmbusher_1
+  [17] dvojityAgent_handoverHorse_2
+  [18] dvojityAgent_laszlosHenchman_4
+  [19] char_GENERIC_MAN_CUMAN_04
+  [20] dvojityAgent_laszlosAmbusher_2
+  [21] char_GENERIC_MAN_CUMAN_02
+  [22] dvojityAgent_laszlosHenchman_1
+  [23] dvojityAgent_petr
+  [24] kutnohorsko_allies_newBuddies_dvojityAgentPetr
+  [25] dvojityAgent_laszlosAmbusher_4
+  [26] dvojityAgent_laszlosAmbusher_3
+  [27] dvojityAgent_jan
+  [28] kutnohorsko_allies_newBuddies_dvojityAgentJanZeSuchotlesk
+  [29] char_JAN_ZE_SUCHOTLESK
+  [30] dvojityAgent_laszlosHenchman_2
+  [31] dvojityAgent_handoverHorse_1
+  [32] dvojityAgent_laszlosHenchman_6

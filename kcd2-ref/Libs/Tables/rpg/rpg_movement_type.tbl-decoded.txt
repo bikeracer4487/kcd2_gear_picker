@@ -1,0 +1,20 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/rpg_movement_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2059925593
+  Layout Hash ........... 438462121
+  Table Version ......... 1
+  Line Count ............ 6
+  String Data Size ...... 46
+  Unique String Count ... 6
+  File Size ............. 362
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] stand
+  [1] walk
+  [2] run
+  [3] sprint
+  [4] horse_sprint
+  [5] horse_dash

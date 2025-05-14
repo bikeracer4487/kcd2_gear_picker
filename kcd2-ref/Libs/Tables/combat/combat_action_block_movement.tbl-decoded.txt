@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_block_movement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 942397779
+  Layout Hash ........... 2738846124
+  Table Version ......... 30
+  Line Count ............ 0
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 28
+  Calculated Line Size .. 0 (rem. 0)

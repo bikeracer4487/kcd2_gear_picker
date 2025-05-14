@@ -1,0 +1,135 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_pose_modifier.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 171290008
+  Layout Hash ........... 3446121200
+  Table Version ......... 30
+  Line Count ............ 112
+  String Data Size ...... 7121
+  Unique String Count ... 121
+  File Size ............. 26861
+  Calculated Line Size .. 176 (rem. 0)
+String Table:
+  [0] FreeAttackStart
+  [1] horse+l_torch+r_longsword+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+l_noShield+oppMale+oppFemale
+  [2] NPC,NPC_Female
+  [3] horse+l_torch+r_longsword+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+l_noShield+oppMale+oppFemale
+  [4] horse+r_longsword+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+l_noShield+oppMale+oppFemale
+  [5] horse+r_longsword+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+l_noShield+oppMale+oppFemale
+  [6] horse+r_halberd+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+oppMale+oppFemale
+  [7] horse+r_halberd+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+oppMale+oppFemale
+  [8] horse+r_halberd+freeGuard+endFreeGuard+aZ2+stab+attack_heavy+oppMale+oppFemale
+  [9] horse+r_halberd+freeGuard+endFreeGuard+aZ1+stab+attack_heavy+oppMale+oppFemale
+  [10] horse+l_torch+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale+oppFemale
+  [11] horse+l_torch+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale+oppFemale
+  [12] horse+l_torch+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_shortSwords+l_noShield+oppMale+oppFemale
+  [13] horse+l_torch+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_shortSwords+l_noShield+oppMale+oppFemale
+  [14] horse+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale+oppFemale
+  [15] horse+l_shield+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_swords+oppMale+oppFemale
+  [16] horse+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_shortSwords+l_noShield+oppMale+oppFemale
+  [17] horse+l_shield+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_swords+oppMale+oppFemale
+  [18] horse+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale+oppFemale
+  [19] horse+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_shortSwords+l_noShield+oppMale+oppFemale
+  [20] horse+l_shield+freeGuard+endFreeGuard+aZ1+slash+attack_heavy+r_bluntWeapon+oppMale+oppFemale
+  [21] horse+l_shield+freeGuard+endFreeGuard+aZ2+slash+attack_heavy+r_bluntWeapon+oppMale+oppFemale
+  [22] l_halberd+r_halberd+freeGuard+slash+attack_heavy+oppMale+oppFemale
+  [23] l_longsword+r_longsword+freeGuard+slash+attack_heavy+oppMale+oppFemale
+  [24] l_shield+freeGuard+slash+attack_heavy+r_bluntWeapon+oppMale+oppFemale
+  [25] l_torch+freeGuard+slash+attack_heavy+r_bluntWeapon+oppMale+oppFemale
+  [26] l_torch+freeGuard+slash+attack_heavy+r_shortSwords+oppMale+oppFemale
+  [27] l_noweapon+r_noweapon+freeGuard+punch+attack_heavy+oppMale+oppFemale
+  [28] l_torch+r_noweapon+freeGuard+punch+attack_heavy+oppMale+oppFemale
+  [29] l_shield+freeGuard+slash+attack_heavy+r_swords+oppMale+oppFemale
+  [30] freeGuard+slash+attack_heavy+r_shortSwords+oppMale+oppFemale
+  [31] freeGuard+slash+attack_heavy+r_bluntWeapon+oppMale+oppFemale
+  [32] CombatAttackStartGen
+  [33] l_halberd+r_halberd+leftGuard+aZ1+slash+attack_heavy+oppMale
+  [34] NPC
+  [35] l_halberd+r_halberd+rightGuard+aZ2+slash+attack_heavy+oppMale
+  [36] l_halberd+r_halberd+rightGuard+aZ5+stab+attack_heavy+oppMale
+  [37] l_longsword+r_longsword+rightGuard+aZ5+stab+attack_heavy+oppMale
+  [38] l_longsword+r_longsword+rightGuard+aZ2+slash+attack_heavy+oppMale
+  [39] l_longsword+r_longsword+leftGuard+aZ0+slash+attack_heavy+oppMale
+  [40] l_longsword+r_longsword+leftGuard+aZ1+slash+attack_heavy+oppMale
+  [41] l_shield+rightGuard+aZ2+slash+attack_heavy+r_swords+oppMale
+  [42] l_shield+leftGuard+aZ0+slash+attack_heavy+r_swords+oppMale
+  [43] r_noweapon+rightGuard+aZ2+hook+attack_heavy+l_noShield+oppMale
+  [44] l_shield+rightGuard+aZ5+stab+attack_heavy+r_swords+oppMale
+  [45] l_shield+leftGuard+aZ0+slash+attack_heavy+r_bluntWeapon+oppMale
+  [46] rightGuard+aZ2+slash+attack_heavy+r_shortSwords+l_noShield+oppMale
+  [47] l_shield+leftGuard+aZ1+slash+attack_heavy+r_swords+oppMale
+  [48] r_noweapon+rightGuard+aZ5+kick+attack_heavy+l_noShield+oppMale
+  [49] l_shield+leftGuard+aZ1+slash+attack_heavy+r_bluntWeapon+oppMale
+  [50] leftGuard+aZ0+slash+attack_heavy+r_shortSwords+l_noShield+oppMale
+  [51] leftGuard+aZ1+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale
+  [52] rightGuard+aZ5+stab+attack_heavy+r_shortSwords+l_noShield+oppMale
+  [53] leftGuard+aZ0+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale
+  [54] l_shield+rightGuard+aZ2+slash+attack_heavy+r_bluntWeapon+oppMale
+  [55] r_noweapon+leftGuard+aZ1+hook+attack_heavy+l_noShield+oppMale
+  [56] leftGuard+aZ1+slash+attack_heavy+r_shortSwords+l_noShield+oppMale
+  [57] rightGuard+aZ2+slash+attack_heavy+r_bluntWeapon+l_noShield+oppMale
+  [58] CombatPreBlockGen
+  [59] l_halberd+r_halberd+player+rightGuard+dZ5+oppMale
+  [60] l_halberd+r_halberd+player+rightGuard+dZ1+oppMale
+  [61] l_halberd+r_halberd+player+leftGuard+dZ2+oppMale
+  [62] l_longsword+r_longsword+player+leftGuard+dZ0+oppMale
+  [63] l_longsword+r_longsword+player+rightGuard+dZ1+oppMale
+  [64] l_longsword+r_longsword+player+leftGuard+dZ2+oppMale
+  [65] l_longsword+r_longsword+player+rightGuard+dZ5+oppMale
+  [66] l_shield+player+rightGuard+dZ5+r_swords+oppMale
+  [67] player+leftGuard+dZ2+r_bluntWeapon+l_noShield+oppMale
+  [68] l_shield+player+leftGuard+dZ2+r_swords+oppMale
+  [69] r_noweapon+player+rightGuard+dZ5+l_noShield+oppMale
+  [70] player+leftGuard+dZ0+r_bluntWeapon+l_noShield+oppMale
+  [71] l_shield+player+leftGuard+dZ0+r_swords+oppMale
+  [72] r_noweapon+player+leftGuard+dZ2+l_noShield+oppMale
+  [73] player+rightGuard+dZ1+r_shortSwords+l_noShield+oppMale
+  [74] l_shield+player+leftGuard+dZ2+r_bluntWeapon+oppMale
+  [75] l_shield+player+leftGuard+dZ0+r_bluntWeapon+oppMale
+  [76] l_shield+player+rightGuard+dZ1+r_bluntWeapon+oppMale
+  [77] player+rightGuard+dZ1+r_bluntWeapon+l_noShield+oppMale
+  [78] player+rightGuard+dZ5+r_shortSwords+l_noShield+oppMale
+  [79] player+leftGuard+dZ0+r_shortSwords+l_noShield+oppMale
+  [80] player+leftGuard+dZ2+r_shortSwords+l_noShield+oppMale
+  [81] l_shield+player+rightGuard+dZ1+r_swords+oppMale
+  [82] r_noweapon+player+rightGuard+dZ1+l_noShield+oppMale
+  [83] FreeBlock
+  [84] horse+l_torch+r_longsword+freeGuard+endFreeGuard+aZ1+l_noShield+oppMale+oppFemale
+  [85] horse+l_torch+r_longsword+freeGuard+endFreeGuard+aZ2+l_noShield+oppMale+oppFemale
+  [86] horse+r_longsword+freeGuard+endFreeGuard+aZ2+l_noShield+oppMale+oppFemale
+  [87] horse+r_longsword+freeGuard+endFreeGuard+aZ1+l_noShield+oppMale+oppFemale
+  [88] horse+l_shield+freeGuard+endFreeGuard+aZ2+r_swords+oppMale+oppFemale
+  [89] horse+freeGuard+endFreeGuard+aZ2+r_shortSwords+l_noShield+oppMale+oppFemale
+  [90] horse+l_shield+freeGuard+endFreeGuard+aZ1+r_swords+oppMale+oppFemale
+  [91] horse+freeGuard+endFreeGuard+aZ1+r_shortSwords+l_noShield+oppMale+oppFemale
+  [92] l_halberd+r_halberd+freeGuard+endFreeGuard+oppMale+oppFemale
+  [93] l_longsword+r_longsword+freeGuard+endFreeGuard+oppMale+oppFemale
+  [94] l_torch+r_noweapon+freeGuard+endFreeGuard+kick+oppMale+oppFemale
+  [95] l_shield+freeGuard+endFreeGuard+r_bluntWeapon+oppMale+oppFemale
+  [96] l_shield+freeGuard+endFreeGuard+r_swords+oppMale+oppFemale
+  [97] l_noweapon+r_noweapon+freeGuard+endFreeGuard+oppMale+oppFemale
+  [98] l_torch+r_noweapon+freeGuard+endFreeGuard+oppMale+oppFemale
+  [99] freeGuard+endFreeGuard+r_bluntWeapon+oppMale+oppFemale
+  [100] freeGuard+endFreeGuard+r_shortSwords+oppMale+oppFemale
+  [101] CombatClenchedHand
+  [102] l_noweapon+r_noweapon+aZ1
+  [103] l_noweapon+r_noweapon+aZ2
+  [104] CombatGuardPose
+  [105] l_halberd+r_halberd+sZ1+oppDog
+  [106] Dog
+  [107] l_halberd+r_halberd+sZ2+oppDog
+  [108] l_longsword+r_longsword+sZ1+oppDog
+  [109] l_longsword+r_longsword+sZ2+oppDog
+  [110] l_torch+sZ2+r_shortSwords+l_noShield+oppDog
+  [111] l_torch+sZ1+r_shortSwords+l_noShield+oppDog
+  [112] l_noweapon+r_noweapon+sZ5+oppDog
+  [113] l_noweapon+r_noweapon+sZ1+oppDog
+  [114] l_noweapon+r_noweapon+sZ2+oppDog
+  [115] l_torch+sZ1+r_shortSwords+oppDog
+  [116] sZ1+r_bluntWeapon+l_noShield+oppDog
+  [117] l_torch+sZ2+r_shortSwords+oppDog
+  [118] sZ1+r_shortSwords+oppDog
+  [119] sZ1+r_bluntWeapon+oppDog
+  [120] sZ2+r_shortSwords+oppDog

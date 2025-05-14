@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/video_language2audio_track.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 796761322
+  Layout Hash ........... 516608517
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 292
+  Calculated Line Size .. 12 (rem. 0)

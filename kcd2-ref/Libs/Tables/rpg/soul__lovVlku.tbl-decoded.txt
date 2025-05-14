@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__lovVlku.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 20
+  String Data Size ...... 797
+  Unique String Count ... 33
+  File Size ............. 3385
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] lovVlku_cuman_1
+  [1] trosecko_outskirts_romaniCamp_commonFolk_cumans
+  [2] char_GENERIC_MAN_COMMONER_17
+  [3] lovVlku_cuman_2
+  [4] char_GENERIC_MAN_COMMONER_08
+  [5] lovVlku_cuman_3
+  [6] char_GENERIC_MAN_COMMONER_01
+  [7] lovVlku_forthPack_dog_4
+  [8] trosecko_enemies_lovVlkuWolfs
+  [9] lovvlku_safarik_lostSheep
+  [10] trosecko_outskirts_herdsmen_apolena
+  [11] char_OVCE_ARNOST
+  [12] lovVlku_rogue_2
+  [13] trosecko_outskirts_rogues
+  [14] Bandits
+  [15] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [16] lovVlku_firstPack_dog_1
+  [17] lovVlku_forthPack_dog_3
+  [18] lovVlku_rogue_1
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [20] lovVlku_secondPack_dog_2
+  [21] lovvlku_nechuta_lostSheep
+  [22] animal_home
+  [23] lovVlku_rogue_3
+  [24] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [25] lovVlku_secondPack_dog_3
+  [26] lovVlku_firstPack_dog_2
+  [27] lovVlku_2_sheep69
+  [28] lovVlku_forthPack_dog_2
+  [29] lovVlku_firstPack_dog_3
+  [30] lovVlku_forthPack_dog_1
+  [31] lovVlku_secondPack_dog_4
+  [32] lovVlku_secondPack_dog_1

@@ -1,0 +1,40 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_hit_movement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2891571245
+  Layout Hash ........... 4091985953
+  Table Version ......... 30
+  Line Count ............ 24
+  String Data Size ...... 1370
+  Unique String Count ... 26
+  File Size ............. 8310
+  Calculated Line Size .. 288 (rem. 0)
+String Table:
+  [0] CombatHitLowMovementGen
+  [1] l_halberd+r_halberd+sZ2+leftGuard+hitTypeLow+oppMale
+  [2] NPC
+  [3] l_halberd+r_halberd+sZ5+rightGuard+hitTypeLow+oppMale
+  [4] l_halberd+r_halberd+sZ1+rightGuard+hitTypeLow+oppMale
+  [5] l_longsword+r_longsword+sZ1+rightGuard+hitTypeLow+oppMale
+  [6] l_longsword+r_longsword+sZ0+leftGuard+hitTypeLow+oppMale
+  [7] l_longsword+r_longsword+sZ2+leftGuard+hitTypeLow+oppMale
+  [8] l_longsword+r_longsword+sZ5+rightGuard+hitTypeLow+oppMale
+  [9] sZ2+leftGuard+hitTypeLow+r_bluntWeapon+l_noShield+oppMale
+  [10] l_shield+sZ5+rightGuard+hitTypeLow+r_swords+oppMale
+  [11] sZ0+leftGuard+hitTypeLow+r_bluntWeapon+l_noShield+oppMale
+  [12] r_noweapon+sZ5+rightGuard+hitTypeLow+l_noShield+oppMale
+  [13] sZ2+leftGuard+hitTypeLow+r_shortSwords+l_noShield+oppMale
+  [14] r_noweapon+sZ1+rightGuard+hitTypeLow+l_noShield+oppMale
+  [15] l_shield+sZ1+rightGuard+hitTypeLow+r_swords+oppMale
+  [16] sZ0+leftGuard+hitTypeLow+r_shortSwords+l_noShield+oppMale
+  [17] r_noweapon+sZ2+leftGuard+hitTypeLow+l_noShield+oppMale
+  [18] l_shield+sZ0+leftGuard+hitTypeLow+r_bluntWeapon+oppMale
+  [19] sZ1+rightGuard+hitTypeLow+r_bluntWeapon+l_noShield+oppMale
+  [20] l_shield+sZ2+leftGuard+hitTypeLow+r_bluntWeapon+oppMale
+  [21] l_shield+sZ0+leftGuard+hitTypeLow+r_swords+oppMale
+  [22] sZ1+rightGuard+hitTypeLow+r_shortSwords+l_noShield+oppMale
+  [23] sZ5+rightGuard+hitTypeLow+r_shortSwords+l_noShield+oppMale
+  [24] l_shield+sZ1+rightGuard+hitTypeLow+r_bluntWeapon+oppMale
+  [25] l_shield+sZ2+leftGuard+hitTypeLow+r_swords+oppMale

@@ -1,0 +1,46 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/brain_variable.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3800388435
+  Layout Hash ........... 2990174369
+  Table Version ......... 1
+  Line Count ............ 17
+  String Data Size ...... 487
+  Unique String Count ... 32
+  File Size ............. 1467
+  Calculated Line Size .. 56 (rem. 0)
+String Table:
+  [0] persistentStorage
+  [1] kettle:persistentStorage
+  [2] b_context
+  [3] bool
+  [4] b_context_initialised
+  [5] b_context_persistence
+  [6] context:persistenceRecord
+  [7] b_dialogParameters
+  [8] dialog:parameters
+  [9] b_dialogStatus
+  [10] dialog:status
+  [11] b_playerLastTalkGameTime
+  [12] int64
+  [13] b_caste
+  [14] enum:caste
+  [15] b_cleanup
+  [16] cleanup
+  [17] b_clothes
+  [18] clothes:init
+  [19] b_clothesData
+  [20] clothes:stashData
+  [21] b_clothesOverride
+  [22] clothes:override
+  [23] b_clothesTimer
+  [24] clothes:createTimer
+  [25] b_clothesUndressSchedule
+  [26] b_lastUsedBed
+  [27] wuid
+  [28] testSaveLoadVar
+  [29] int
+  [30] targetHitData
+  [31] shootingTargetHitData

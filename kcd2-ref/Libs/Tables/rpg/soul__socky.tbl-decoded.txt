@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__socky.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 236
+  Unique String Count ... 10
+  File Size ............. 904
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] socky_messengerHorse
+  [1] cutsceneOnly
+  [2] socky_cin_dirtyPtacek
+  [3] char_GENERIC_MAN_COMMONER_24
+  [4] socky_coachman
+  [5] trosecko_settlements_troskovice_commonFolk_tavern
+  [6] char_MLYNARSKY_VOZKA
+  [7] socky_messenger
+  [8] char_GENERIC_MAN_NOBLEMAN_10
+  [9] socky_cutscene_deer

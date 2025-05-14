@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 525694820
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 85
+  Unique String Count ... 8
+  File Size ............. 241
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] BehaviorTree
+  [1] SmartArea
+  [2] SmartObject
+  [3] Situation
+  [4] Switching
+  [5] Dialog
+  [6] DogCompanion
+  [7] Scheduler

@@ -1,0 +1,114 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/achievement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 155717249
+  Layout Hash ........... 4219760709
+  Table Version ......... 1
+  Line Count ............ 51
+  String Data Size ...... 856
+  Unique String Count ... 100
+  File Size ............. 3740
+  Calculated Line Size .. 56 (rem. 0)
+String Table:
+  [0] Bodyguard
+  [1] 1
+  [2] SilenceIsGolden
+  [3] 2
+  [4] Revenge
+  [5] 3
+  [6] ChangeOfScenery
+  [7] 4
+  [8] Duel
+  [9] 5
+  [10] TechnicalAdvance
+  [11] 6
+  [12] Overkill
+  [13] 7
+  [14] ThisIsMyWeapon
+  [15] 8
+  [16] SweetDreams
+  [17] 9
+  [18] HicBoom
+  [19] 10
+  [20] Reforged
+  [21] 11
+  [22] TrustyAlly
+  [23] 12
+  [24] OriginalGunslinger
+  [25] 13
+  [26] Collector
+  [27] 14
+  [28] KickAss
+  [29] 15
+  [30] DieAnotherDay
+  [31] 16
+  [32] TheKuttenbergTales
+  [33] 17
+  [34] TrueCardinal
+  [35] 18
+  [36] ThePenitent
+  [37] 19
+  [38] GroschenMustFlow
+  [39] 20
+  [40] CloseOne
+  [41] 21
+  [42] TheStoryEnds
+  [43] 22
+  [44] HenryTheHandyman
+  [45] 23
+  [46] OnlyGivethAway
+  [47] 24
+  [48] GentleTouch
+  [49] 25
+  [50] ThatWasMyFavouritePair
+  [51] 26
+  [52] OldRaven
+  [53] 27
+  [54] EverydayIsFriday
+  [55] 28
+  [56] FirstToThrowStone
+  [57] 29
+  [58] HardboughtMercy
+  [59] 30
+  [60] OldFriends
+  [61] 31
+  [62] HeadsOfHydra
+  [63] 32
+  [64] EndOfFrogMouseWar
+  [65] 33
+  [66] MasterOfMasters
+  [67] 34
+  [68] YouCanRunButYouCantShield
+  [69] 35
+  [70] MatchmakerHenry
+  [71] 36
+  [72] FaceToFace
+  [73] 37
+  [74] UnderBrownFlag
+  [75] 38
+  [76] NeverMissAThing
+  [77] 39
+  [78] ToPutAPressureOn
+  [79] 40
+  [80] ThisWillEndBadly
+  [81] 41
+  [82] AHansInTheHand
+  [83] 42
+  [84] DirtySeven
+  [85] 43
+  [86] ThereIsNoShortcutToHeaven
+  [87] 44
+  [88] HenryOfAllTrades
+  [89] 45
+  [90] FavouriteTool
+  [91] 46
+  [92] KnightlyOath
+  [93] 47
+  [94] RememberRemember
+  [95] 48
+  [96] Platinum
+  [97] 0
+  [98] Hardcore
+  [99] AgainstAllOdds

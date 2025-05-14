@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/misc_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 781711090
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 44
+  Unique String Count ... 4
+  File Size ............. 136
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] trash metal
+  [1] clean carryable item
+  [2] loot
+  [3] spice

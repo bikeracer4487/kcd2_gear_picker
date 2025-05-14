@@ -1,0 +1,62 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tapo.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 22
+  String Data Size ...... 1119
+  Unique String Count ... 48
+  File Size ............. 3963
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tapo_konrad
+  [1] trosecko_outskirts_hermits_konrad
+  [2] char_RYTIR_KONRAD
+  [3] tapo_man_1
+  [4] trosecko_enemies_cumans_campApolena
+  [5] Cumans
+  [6] char_GENERIC_MAN_CUMAN_01
+  [7] tapo_kasparBandit_6
+  [8] trosecko_enemies_bandits_taboryLapkuKaspar_bandits
+  [9] Bandits
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [11] tapo_man_4
+  [12] char_GENERIC_MAN_CUMAN_02
+  [13] tapo_man_2
+  [14] char_GENERIC_MAN_CUMAN_03
+  [15] tapo_safarik
+  [16] trosecko_outskirts_herdsmen_apolena
+  [17] char_PASAK_SAFARIK
+  [18] tapo_man_3
+  [19] char_GENERIC_MAN_CUMAN_04
+  [20] tkop_vrahBandit_4
+  [21] trosecko_enemies_bandits_vrahCamp_bandits
+  [22] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [23] tapo_kasparBandit_2
+  [24] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [25] tkop_vrahBandit_1
+  [26] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [27] tapo_kasparBandit_7
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [29] tkop_vrahBandit_6
+  [30] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [31] tapo_ambroz
+  [32] trosecko_outskirts_hermits_ambroz
+  [33] char_POUSTEVNIK_AMBROZ
+  [34] tapo_kasparBandit_3
+  [35] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [36] tkop_vrahBandit_5
+  [37] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [38] tapo_dog_1
+  [39] tkop_vrah
+  [40] trosecko_enemies_bandits_vrahCamp_leader
+  [41] char_VRAH_BARNABAS
+  [42] tapo_kasparBandit_4
+  [43] tkop_vrahBandit_3
+  [44] tapo_kasparBandit_5
+  [45] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [46] tkop_vrahBandit_2
+  [47] tapo_kasparBandit_1

@@ -1,0 +1,36 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__spizovaciOddil.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 14
+  String Data Size ...... 585
+  Unique String Count ... 22
+  File Size ............. 2405
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] spizovaciOddil_cartHorse_2
+  [1] kutnohorsko_enemies_cumans_spizovaciOddil
+  [2] spizovaciOddil_cumanHorse_1
+  [3] spizovaciOddil_cumanHorse_3
+  [4] spizovaciOddil_deadVanguard_1
+  [5] spizovaciOddil_cumanHorse_2
+  [6] spizovaciOddil_cuman_1
+  [7] Cumans
+  [8] char_GENERIC_MAN_CUMAN_01
+  [9] spizovaciOddil_cow_2
+  [10] animal_home
+  [11] spizovaciOddil_cuman_3
+  [12] char_GENERIC_MAN_CUMAN_03
+  [13] spizovaciOddil_cow_1
+  [14] spizovaciOddil_commanderHorse
+  [15] spizovaciOddil_cuman_2
+  [16] char_GENERIC_MAN_CUMAN_02
+  [17] spizovaciOddil_partyCommander
+  [18] kutnohorsko_settlements_zikmundovo_soldiers_spizovaciOddil
+  [19] char_HEJTMAN_PUTA
+  [20] spizovaciOddil_deadVanguard_2
+  [21] spizovaciOddil_cartHorse_1

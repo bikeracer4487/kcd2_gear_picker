@@ -1,0 +1,87 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__klor.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 39
+  String Data Size ...... 1593
+  Unique String Count ... 73
+  File Size ............. 6613
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] klor_man_15
+  [1] kutnohorsko_settlements_lorec_commonFolk_vineyard_staff
+  [2] char_GENERIC_MAN_COMMONER_10
+  [3] klor_woman_2
+  [4] kutnohorsko_settlements_lorec_commonFolk
+  [5] char_KOCICI_PANI_SUKOVC
+  [6] klor_man_22
+  [7] char_GENERIC_MAN_COMMONER_04
+  [8] klor_man_20
+  [9] char_GENERIC_MAN_COMMONER_12
+  [10] klor_man_12
+  [11] char_GENERIC_MAN_COMMONER_23
+  [12] klor_man_17
+  [13] kutnohorsko_settlements_lorec_commonFolk_vineyard_guards
+  [14] Guards
+  [15] char_GENERIC_MAN_GUARD_15
+  [16] klor_man_16
+  [17] char_GENERIC_MAN_COMMONER_17
+  [18] klor_man_11
+  [19] char_GENERIC_MAN_COMMONER_02
+  [20] klor_treasureHunter_5
+  [21] kutnohorsko_enemies_bandits_mapaKPokladuTreasureHunersCamp
+  [22] Bandits
+  [23] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [24] klor_jeronym
+  [25] kutnohorsko_settlements_lorec_commonFolk_vineyard_management
+  [26] char_SPRAVCE_VINICE_JERONYM
+  [27] klor_man_4
+  [28] char_GENERIC_MAN_GUARD_12
+  [29] klor_man_6
+  [30] char_GENERIC_MAN_COMMONER_01
+  [31] klor_man_3
+  [32] char_GENERIC_MAN_GUARD_03
+  [33] klor_man_2
+  [34] char_GENERIC_MAN_GUARD_18
+  [35] klor_man_7
+  [36] char_GENERIC_MAN_COMMONER_14
+  [37] klor_naborar
+  [38] char_NABORAR_NA_VINICI
+  [39] klor_man_5
+  [40] char_GENERIC_MAN_COMMONER_06
+  [41] klor_woman_1
+  [42] char_GENERIC_WOMAN_COMMONER_11
+  [43] klor_horse_2
+  [44] kutnohorsko_outskirts_gravediggers_lorec
+  [45] klor_man_19
+  [46] klor_man_23
+  [47] char_GENERIC_MAN_COMMONER_20
+  [48] klor_horse_1
+  [49] klor_treasureHunter_3
+  [50] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [51] klor_man_21
+  [52] klor_man_18
+  [53] char_GENERIC_MAN_COMMONER_18
+  [54] klor_horse_3
+  [55] klor_man_10
+  [56] char_GENERIC_MAN_COMMONER_21
+  [57] klor_treasureHunter_4
+  [58] klor_dog_2
+  [59] klor_man_1
+  [60] char_GENERIC_MAN_COMMONER_09
+  [61] klor_man_14
+  [62] klor_man_13
+  [63] char_GENERIC_MAN_COMMONER_13
+  [64] klor_man_9
+  [65] klor_treasureHunter_2
+  [66] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [67] klor_dog_3
+  [68] klor_man_8
+  [69] klor_dog_4
+  [70] klor_treasureHunter_1
+  [71] char_VUDCE_LAPKU_U49_MAPA_K_POKLADU
+  [72] klor_dog_1

@@ -1,0 +1,89 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__bohutovaVlozka.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 43
+  String Data Size ...... 2219
+  Unique String Count ... 75
+  File Size ............. 7751
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] bohutovaVlozka_eriksCompany_man_6
+  [1] trosecko_enemies_bohutovaVlozkaEriksCompany
+  [2] char_GENERIC_MAN_SOLDIER_05
+  [3] bohutovaVlozka_eriksCompany_man_8
+  [4] char_GENERIC_MAN_SOLDIER_02
+  [5] bohutovaVlozka_eriksCompany_man_11
+  [6] char_GENERIC_MAN_SOLDIER_08
+  [7] bohutovaVlozka_bandit_3
+  [8] trosecko_enemies_bandits_bohutovaVlozka
+  [9] Bandits
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [11] bohutovaVlozka_eriksCompany_man_2
+  [12] char_GENERIC_MAN_SOLDIER_38
+  [13] bohutovaVlozka_eriksCompany_man_3
+  [14] char_GENERIC_MAN_SOLDIER_12
+  [15] bohutovaVlozka_eriksCompany_man_19
+  [16] char_GENERIC_MAN_SOLDIER_03
+  [17] bohutovaVlozka_eriksCompany_man_14
+  [18] char_GENERIC_MAN_SOLDIER_21
+  [19] bohutovaVlozka_eriksCompany_man_12
+  [20] char_GENERIC_MAN_SOLDIER_15
+  [21] bohutovaVlozka_deadman_7
+  [22] deadBodies
+  [23] bohutovaVlozka_deadman_5
+  [24] bohutovaVlozka_eriksCompany_man_4
+  [25] bohutovaVlozka_eriksCompany_man_17
+  [26] char_GENERIC_MAN_SOLDIER_19
+  [27] bohutovaVlozka_bandit_4
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [29] bohutovaVlozka_eriksCompany_man_20
+  [30] char_GENERIC_MAN_SOLDIER_10
+  [31] bohutovaVlozka_bandit_6
+  [32] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [33] bohutovaVlozka_eriksCompany_man_18
+  [34] char_GENERIC_MAN_SOLDIER_33
+  [35] bohutovaVlozka_rowdy_1
+  [36] trosecko_settlements_zelejov_commonFolk_tavern_guests
+  [37] char_GENERIC_MAN_COMMONER_02
+  [38] bohutovaVlozka_bandit_5
+  [39] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [40] bohutovaVlozka_bandit_8
+  [41] trosecko_enemies_bandits_bohutovaVlozkaLooters
+  [42] bohutovaVlozka_deadman_4
+  [43] bohutovaVlozka_eriksCompany_man_5
+  [44] char_GENERIC_MAN_SOLDIER_28
+  [45] bohutovaVlozka_bandit_2
+  [46] bohutovaVlozka_deadman_1
+  [47] bohutovaVlozka_deadman_2
+  [48] bohutovaVlozka_eriksCompany_man_7
+  [49] bohutovaVlozka_deadman_6
+  [50] bohutovaVlozka_bandit_7
+  [51] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [52] bohutovaVlozka_horseAtMill_2
+  [53] players_enemies_erik
+  [54] bohutovaVlozka_rowdy_4
+  [55] char_GENERIC_MAN_COMMONER_14
+  [56] bohutovaVlozka_deadman_3
+  [57] bohutovaVlozka_horseAtMill_3
+  [58] bohutovaVlozka_horseAtMill
+  [59] bohutovaVlozka_eriksCompany_man_9
+  [60] char_GENERIC_MAN_SOLDIER_27
+  [61] bohutovaVlozka_eriksCompany_man_15
+  [62] bohutovaVlozka_bandit_1
+  [63] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [64] bohutovaVlozka_deadman_8
+  [65] bohutovaVlozka_eriksCompany_man_10
+  [66] char_GENERIC_MAN_SOLDIER_20
+  [67] bohutovaVlozka_eriksCompany_man_13
+  [68] bohutovaVlozka_rowdy_3
+  [69] char_GENERIC_MAN_COMMONER_16
+  [70] bohutovaVlozka_eriksCompany_man_16
+  [71] char_GENERIC_MAN_SOLDIER_29
+  [72] bohutovaVlozka_eriksCompany_man_1
+  [73] bohutovaVlozka_rowdy_2
+  [74] char_GENERIC_MAN_COMMONER_03

@@ -1,0 +1,40 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__hledaniPsa.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 18
+  String Data Size ...... 618
+  Unique String Count ... 26
+  File Size ............. 2950
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] hledaniPsa_secondPack_wolf4
+  [1] trosecko_enemies_lovVlkuWolfs
+  [2] hledaniPsa_secondPack_wolf8
+  [3] hledaniPsa_wildDog
+  [4] hledaniPsa_ignaz
+  [5] animal_home
+  [6] char_OVCE_IGNAC
+  [7] hledaniPsa_deadBody
+  [8] deadBodies_enemies
+  [9] hledaniPsa_firstPack_wolf1
+  [10] hledaniPsa_corpseRobber
+  [11] trosecko_outskirts_bums_corpserobber
+  [12] Bandits
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [14] hledaniPsa_secondPack_wolf9
+  [15] hledaniPsa_firstPack_wolf2
+  [16] hledaniPsa_secondPack_wolf7
+  [17] hledaniPsa_secondPack_wolf6
+  [18] hledaniPsa_deadBody3
+  [19] deadBodies
+  [20] hledaniPsa_secondPack_wolf2
+  [21] hledaniPsa_secondPack_wolf5
+  [22] hledaniPsa_secondPack_wolf3
+  [23] hledaniPsa_deadBody2
+  [24] hledaniPsa_secondPack_wolf1
+  [25] hledaniPsa_dogFirstPack

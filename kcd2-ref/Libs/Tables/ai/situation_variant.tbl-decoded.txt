@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/situation_variant.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3030432625
+  Layout Hash ........... 3229551581
+  Table Version ......... 1
+  Line Count ............ 16
+  String Data Size ...... 324
+  Unique String Count ... 16
+  File Size ............. 1120
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] variant_beggar1
+  [1] eventPranyr_var1
+  [2] situation_flutist_var1
+  [3] storyteller_var_1
+  [4] friendlyFight_var_1
+  [5] situation_gossip_var1
+  [6] gateToll_var1
+  [7] situation_sermiri_var1
+  [8] eventHlasatel_var1
+  [9] opilyManzel_var_1
+  [10] eventRvacka_var_1
+  [11] majitelkaLazni_var1
+  [12] shootingSpectator_var_1
+  [13] lostItemNPC_var1
+  [14] situation_gossip_bandit_var_1
+  [15] havirskyTurnaj_variant_1

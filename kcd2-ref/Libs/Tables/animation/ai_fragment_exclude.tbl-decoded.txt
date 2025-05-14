@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/ai_fragment_exclude.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3997951189
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 7
+  String Data Size ...... 51
+  Unique String Count ... 7
+  File Size ............. 191
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Combat
+  [1] ADLG
+  [2] AimPose
+  [3] Aiming
+  [4] LookPose
+  [5] Looking
+  [6] Scope_

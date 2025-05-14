@@ -1,0 +1,81 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__dummyWanderer.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 37
+  String Data Size ...... 1835
+  Unique String Count ... 67
+  File Size ............. 6599
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] dummyWanderer_villager_man_1
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_MAN_COMMONER_04
+  [3] dummyWanderer_horse_7
+  [4] dummyWanderer_horse_9
+  [5] dummyWanderer_villager_man_3
+  [6] char_GENERIC_MAN_COMMONER_06
+  [7] dummyWanderer_nobleman_man_1
+  [8] char_GENERIC_MAN_TOWNSMAN_01
+  [9] dummyWanderer_villager_man_2
+  [10] char_GENERIC_MAN_COMMONER_05
+  [11] dummyWanderer_horse_2
+  [12] dummyWanderer_horse_10
+  [13] dummyWanderer_beggar_woman_3
+  [14] char_GENERIC_WOMAN_COMMONER_03
+  [15] dummyWanderer_nobleman_woman_1
+  [16] char_GENERIC_WOMAN_TOWNSWOMAN_01
+  [17] dummyWanderer_fisherman_2
+  [18] char_GENERIC_MAN_COMMONER_08
+  [19] dummyWanderer_beggar_man_3
+  [20] char_GENERIC_MAN_COMMONER_03
+  [21] dummyWanderer_beggar_man_1
+  [22] char_GENERIC_MAN_COMMONER_01
+  [23] dummyWanderer_horse_1
+  [24] dummyWanderer_mercenary_1
+  [25] char_GENERIC_MAN_SOLDIER_01
+  [26] dummyWanderer_cuman_1
+  [27] eventNPCs_civilians_publicEnemies
+  [28] Cumans
+  [29] char_GENERIC_MAN_CUMAN_01
+  [30] dummyWanderer_nobleman_woman_2
+  [31] char_GENERIC_WOMAN_TOWNSWOMAN_02
+  [32] dummyWanderer_beggar_man_2
+  [33] char_GENERIC_MAN_COMMONER_02
+  [34] dummyWanderer_mercenary_2
+  [35] char_GENERIC_MAN_SOLDIER_02
+  [36] dummyWanderer_villager_woman_3
+  [37] char_GENERIC_WOMAN_COMMONER_07
+  [38] dummyWanderer_cuman_2
+  [39] char_GENERIC_MAN_CUMAN_02
+  [40] dummyWanderer_horse_6
+  [41] dummyWanderer_nobleman_man_3
+  [42] char_GENERIC_MAN_TOWNSMAN_03
+  [43] dummyWanderer_nobleman_woman_3
+  [44] char_GENERIC_WOMAN_NOBLEWOMAN_02
+  [45] dummyWanderer_villager_woman_1
+  [46] char_GENERIC_WOMAN_COMMONER_04
+  [47] dummyWanderer_horse_8
+  [48] dummyWanderer_mercenary_3
+  [49] char_GENERIC_MAN_SOLDIER_03
+  [50] dummyWanderer_horse_5
+  [51] dummyWanderer_horse_3
+  [52] dummyWanderer_horse_4
+  [53] dummyWanderer_fisherman_1
+  [54] char_GENERIC_MAN_COMMONER_07
+  [55] dummyWanderer_fisherman_3
+  [56] char_GENERIC_MAN_COMMONER_09
+  [57] dummyWanderer_cuman_3
+  [58] char_GENERIC_MAN_CUMAN_03
+  [59] dummyWanderer_beggar_woman_2
+  [60] char_GENERIC_WOMAN_COMMONER_02
+  [61] dummyWanderer_villager_woman_2
+  [62] char_GENERIC_WOMAN_COMMONER_06
+  [63] dummyWanderer_nobleman_man_2
+  [64] char_GENERIC_MAN_NOBLEMAN_06
+  [65] dummyWanderer_beggar_woman_1
+  [66] char_GENERIC_WOMAN_COMMONER_01

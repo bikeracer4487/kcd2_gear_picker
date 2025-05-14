@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ukradenyKun.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 113
+  Unique String Count ... 4
+  File Size ............. 269
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ukradenyKun_stableCorpse
+  [1] kutnohorsko_enemies_bandits_ukradenyKunBandits
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_14

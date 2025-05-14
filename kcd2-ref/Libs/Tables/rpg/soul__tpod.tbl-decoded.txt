@@ -1,0 +1,99 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tpod.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 43
+  String Data Size ...... 1833
+  Unique String Count ... 85
+  File Size ............. 7365
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tpod_man_10
+  [1] trosecko_outskirts_woodcutters_campPodseminsko2
+  [2] char_GENERIC_MAN_COMMONER_04
+  [3] tpod_man_14
+  [4] trosecko_millers_podseminsko_millerHelpers
+  [5] char_GENERIC_MAN_COMMONER_23
+  [6] tpod_man_6
+  [7] char_GENERIC_MAN_COMMONER_06
+  [8] tpod_dog_2
+  [9] tpod_kumanskaDruzina_man_3
+  [10] trosecko_enemies_cumans_campPOIKumanskaDruzina
+  [11] Cumans
+  [12] char_GENERIC_MAN_CUMAN_02
+  [13] tpod_horse_4
+  [14] trosecko_millers_nebakov_millerHelpers
+  [15] tpod_man_15
+  [16] char_GENERIC_MAN_COMMONER_13
+  [17] tpod_dog_1
+  [18] tpod_man_2
+  [19] trosecko_outskirts_woodcutters_campPodseminsko
+  [20] char_GENERIC_MAN_COMMONER_20
+  [21] tpod_man_9
+  [22] char_GENERIC_MAN_COMMONER_21
+  [23] tpod_jan
+  [24] char_PACHOLEK_JENIK
+  [25] tpod_woman_1
+  [26] trosecko_millers_podseminsko_millerAndFamily
+  [27] char_MLYNAROVA_ZENA_Z_PODSEMINA
+  [28] tpod_man_4
+  [29] char_GENERIC_MAN_COMMONER_24
+  [30] tpod_vira
+  [31] char_PACHOLEK_VIRA
+  [32] tpod_woman_2
+  [33] char_GENERIC_WOMAN_COMMONER_03
+  [34] tpod_man_3
+  [35] char_GENERIC_MAN_COMMONER_09
+  [36] tpod_bonka
+  [37] char_BONKA_Z_PODSEMINA
+  [38] tpod_malik
+  [39] char_PACHOLEK_MALIK
+  [40] tpod_zink
+  [41] char_ZINK_Z_PODSEMINA
+  [42] tpod_krejzl
+  [43] UltralightMerchants
+  [44] char_MLYNAR_KREJZL
+  [45] tpod_man_1
+  [46] char_DREVORUBECKY_PREDAK
+  [47] tpod_man_5
+  [48] char_GENERIC_MAN_COMMONER_19
+  [49] tpod_dog_3
+  [50] tpod_man_12
+  [51] char_GENERIC_MAN_COMMONER_01
+  [52] tpod_kumanskaDruzina_man_1
+  [53] tpod_man_11
+  [54] char_GENERIC_MAN_COMMONER_03
+  [55] tpod_bandit_2
+  [56] trosecko_enemies_poachers_campPodseminsko
+  [57] tpod_cabbageStealerPOI_1
+  [58] trosecko_outskirts_cabbageStealerPOI
+  [59] char_ZLODEJ_ZELI
+  [60] tpod_bandit_4
+  [61] tpod_horse_2
+  [62] tpod_horse_3
+  [63] tpod_kumanskaDruzina_man_2
+  [64] trosecko_enemies_cumans
+  [65] char_GENERIC_MAN_CUMAN_04
+  [66] tpod_man_7
+  [67] char_GENERIC_MAN_COMMONER_02
+  [68] tpod_dog_4
+  [69] tpod_bandit_3
+  [70] tpod_woman_3
+  [71] char_GENERIC_WOMAN_COMMONER_10
+  [72] tpod_kumanskaDruzina_man_4
+  [73] char_GENERIC_MAN_CUMAN_03
+  [74] tpod_bandit_1
+  [75] tpod_horse_1
+  [76] tpod_man_8
+  [77] char_GENERIC_MAN_COMMONER_17
+  [78] tpod_man_13
+  [79] char_GENERIC_MAN_COMMONER_18
+  [80] tpod_lapkaUCestyZTachova_man_1
+  [81] trosecko_enemies_bandits_poiLapkaUCestyZTachova
+  [82] Bandits
+  [83] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [84] tpod_horse_5

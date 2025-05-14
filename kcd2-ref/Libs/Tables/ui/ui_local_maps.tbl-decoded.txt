@@ -1,0 +1,36 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/ui_local_maps.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3010774556
+  Layout Hash ........... 342445521
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 189
+  Unique String Count ... 22
+  File Size ............. 2153
+  Calculated Line Size .. 88 (rem. 0)
+String Table:
+  [0] kutna_hora
+  [1] bylany
+  [2] opatovice
+  [3] nomad_camp
+  [4] certovka
+  [5] bohounovice
+  [6] nebakov
+  [7] suchdol
+  [8] vysoka
+  [9] ratbor
+  [10] troskovice
+  [11] horany
+  [12] zelejov
+  [13] apolena
+  [14] grunta
+  [15] trosky
+  [16] miskovice
+  [17] semin
+  [18] stara_kutna
+  [19] malesov
+  [20] tachov
+  [21] pritoky

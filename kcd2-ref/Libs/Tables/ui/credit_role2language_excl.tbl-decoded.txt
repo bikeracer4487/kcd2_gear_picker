@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/credit_role2language_excl.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 994881819
+  Layout Hash ........... 431051889
+  Table Version ......... 1
+  Line Count ............ 1168
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 9372
+  Calculated Line Size .. 8 (rem. 0)

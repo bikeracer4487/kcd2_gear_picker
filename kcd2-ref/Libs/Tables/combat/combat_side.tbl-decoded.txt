@@ -1,0 +1,28 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_side.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 186470880
+  Layout Hash ........... 3575710265
+  Table Version ......... 1
+  Line Count ............ 9
+  String Data Size ...... 136
+  Unique String Count ... 14
+  File Size ............. 524
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] left
+  [1] stopLeft
+  [2] right
+  [3] stopRight
+  [4] back
+  [5] stopBack
+  [6] front
+  [7] stealthFront
+  [8] behind
+  [9] stealthBehind
+  [10] attackFront
+  [11] attackBehind
+  [12] pulldownLeft
+  [13] pulldownRight

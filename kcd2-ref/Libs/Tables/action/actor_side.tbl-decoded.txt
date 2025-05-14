@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_side.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2515929547
+  Layout Hash ........... 3575710265
+  Table Version ......... 1
+  Line Count ............ 2
+  String Data Size ...... 38
+  Unique String Count ... 4
+  File Size ............. 146
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] leftSide
+  [1] sideLeft
+  [2] rightSide
+  [3] sideRight

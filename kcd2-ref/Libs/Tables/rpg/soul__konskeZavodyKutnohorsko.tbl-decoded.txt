@@ -1,0 +1,40 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__konskeZavodyKutnohorsko.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 24
+  String Data Size ...... 715
+  Unique String Count ... 26
+  File Size ............. 3815
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] crossCountry_kmal_horse_1
+  [1] kutnohorsko_settlements_malesov_commonFolk
+  [2] crossCountry_kgru_horse_8
+  [3] kutnohorsko_settlements_grunta_commonFolk
+  [4] crossCountry_kmal_horse_9
+  [5] crossCountry_kgru_horse_10
+  [6] crossCountry_kmal_horse_3
+  [7] crossCountry_kmal_horse_12
+  [8] crossCountry_kmal_horse_6
+  [9] crossCountry_kmal_horse_5
+  [10] crossCountry_kgru_horse_4
+  [11] crossCountry_kgru_horse_12
+  [12] crossCountry_kgru_horse_1
+  [13] crossCountry_kgru_horse_6
+  [14] crossCountry_kmal_horse_7
+  [15] crossCountry_kmal_horse_11
+  [16] crossCountry_kgru_horse_11
+  [17] crossCountry_kmal_horse_10
+  [18] crossCountry_kgru_horse_7
+  [19] crossCountry_kmal_horse_8
+  [20] crossCountry_kgru_horse_3
+  [21] crossCountry_kmal_horse_2
+  [22] crossCountry_kmal_horse_4
+  [23] crossCountry_kgru_horse_5
+  [24] crossCountry_kgru_horse_2
+  [25] crossCountry_kgru_horse_9

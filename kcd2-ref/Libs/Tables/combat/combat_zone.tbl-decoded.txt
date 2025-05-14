@@ -1,0 +1,63 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_zone.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1532666259
+  Layout Hash ........... 2409356005
+  Table Version ......... 1
+  Line Count ............ 7
+  String Data Size ...... 305
+  Unique String Count ... 49
+  File Size ............. 1229
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] undefined
+  [1] head
+  [2] aZ0
+  [3] dZ0
+  [4] oppDZ0
+  [5] sZ0
+  [6] oppSZ0
+  [7] eZ0
+  [8] fZ0
+  [9] BONEID_HEAD
+  [10] upper_left
+  [11] aZ1
+  [12] dZ1
+  [13] oppDZ1
+  [14] sZ1
+  [15] oppSZ1
+  [16] eZ1
+  [17] fZ1
+  [18] BONEID_UPPERARM_L
+  [19] upper_right
+  [20] aZ2
+  [21] dZ2
+  [22] oppDZ2
+  [23] sZ2
+  [24] oppSZ2
+  [25] eZ2
+  [26] fZ2
+  [27] BONEID_UPPERARM_R
+  [28] lower_left
+  [29] aZ3
+  [30] dZ3
+  [31] sZ3
+  [32] eZ3
+  [33] fZ3
+  [34] BONEID_PELVIS
+  [35] lower_right
+  [36] aZ4
+  [37] dZ4
+  [38] sZ4
+  [39] eZ4
+  [40] fZ4
+  [41] lower
+  [42] aZ5
+  [43] dZ5
+  [44] oppDZ5
+  [45] sZ5
+  [46] oppSZ5
+  [47] eZ5
+  [48] fZ5

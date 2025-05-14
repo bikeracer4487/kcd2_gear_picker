@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ztracenaCest.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 94
+  Unique String Count ... 3
+  File Size ............. 250
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ztracenaCest_jezek
+  [1] kutnohorsko_settlements_pritoky_commonFolk_inn_guests
+  [2] char_JEZEK_Z_RUDOLCE

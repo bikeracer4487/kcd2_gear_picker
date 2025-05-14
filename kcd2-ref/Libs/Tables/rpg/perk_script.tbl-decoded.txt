@@ -1,0 +1,123 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_script.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2737837043
+  Layout Hash ........... 516410557
+  Table Version ......... 1
+  Line Count ............ 109
+  String Data Size ...... 2584
+  Unique String Count ... 109
+  File Size ............. 5228
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] BS recipe r_axebattle04
+  [1] BS recipe r_horseshoeMilitary
+  [2] BS recipe r_kovarskeZakazky_magdalenaAxe
+  [3] BS recipe r_kovarTrainingSword
+  [4] BS recipe basic_longsword
+  [5] BS recipe r_shortswordbasilard
+  [6] BS recipe r_shortswordceremony
+  [7] FirstAid
+  [8] BS recipe longswordHenry_reforged
+  [9] BS recipe r_horseshoe
+  [10] BS recipe r_huntingSwordBasic
+  [11] BS recipe r_shortswordheavy
+  [12] BS recipe r_sabrecommon
+  [13] BS recipe r_huntingswordsashka
+  [14] CanCarryMeleeWeaponsInKH
+  [15] BS recipe r_axebattle03
+  [16] HiddenPockets
+  [17] BS recipe r_shortswordcommon
+  [18] IncapableDrunk
+  [19] hardcore_shy
+  [20] Dreaded warrior ii
+  [21] BS recipe r_longswordbroad
+  [22] BS recipe r_kovaniAsiDoVezi_protectiveAxe
+  [23] BS recipe r_huntingswordsword
+  [24] BS recipe r_kovaniKopie_penitent
+  [25] BS recipe r_axebattle02
+  [26] Combo Lower Left Halberd
+  [27] Combo Lower Right Halberd
+  [28] Combo Zvedak loktem Unarmed
+  [29] Combo Prehoz Unarmed
+  [30] Combo Knock Knock
+  [31] Combo Knee cut
+  [32] Combo Hammer Unarmed
+  [33] Combo Kurtzhau
+  [34] Combo Blunt
+  [35] Combo Stomachache Halberd
+  [36] Combo Backhand Unarmed
+  [37] Combo Push away
+  [38] Combo Mittle high
+  [39] Combo Flying man
+  [40] Combo Get back up Halberd
+  [41] Combo Left Hook Unarmed
+  [42] Combo Pommel strike
+  [43] Combo False edge
+  [44] Combo Leverage
+  [45] Combo Strih Unarmed
+  [46] Combo Scissors
+  [47] Combo Fiore Halfswrd
+  [48] Combo Leg destroyer
+  [49] Combo Narazeni Unarmed
+  [50] Combo Rossen
+  [51] Combo Direct Unarmed
+  [52] Combo Mittlehau
+  [53] Combo Oben ahnemen
+  [54] Combo LowerLeft
+  [55] Combo LowerRight
+  [56] GoodOldPebbles
+  [57] BS recipe r_poustevnik_swordForSemin
+  [58] BS recipe r_axefancy
+  [59] BS recipe r_kovaniSymbolSermirny_guildSwordRemake
+  [60] BS recipe basic_axe
+  [61] BS recipe r_shortswordcleaver
+  [62] BS recipe basic_horseshoe
+  [63] Hardcore_KnownCriminal
+  [64] BattleCry
+  [65] DogPerson
+  [66] BS recipe r_longswordduel
+  [67] BasicLaw II
+  [68] BS recipe r_longswordcommon
+  [69] BS recipe r_kovaniRelikvie_swordOfKnightValentin
+  [70] Weaponmaster I
+  [71] BasicTheologyII
+  [72] BS recipe r_axebattle01
+  [73] Harvester
+  [74] Weaponmaster II
+  [75] BS recipe r_shortswordbroad
+  [76] BS recipe r_kovaniPoklad_adornedAxe
+  [77] Escape artist II
+  [78] BS recipe r_kovaniKovarskaSoutez_huntingKnifeForContest
+  [79] Frejir
+  [80] BS recipe r_huntingswordmussle
+  [81] BS recipe r_axework01
+  [82] SilverTongue
+  [83] BS recipe r_axework02
+  [84] CharmingLad
+  [85] BS recipe r_polearmBruncvik
+  [86] BattleCryII
+  [87] BS recipe r_horseshoeRacing
+  [88] BS recipe r_huntingswordfalchion
+  [89] BS recipe r_kovaniNaKovarne_smithsDefense
+  [90] BS recipe basic_sword
+  [91] Dreaded warrior
+  [92] BS recipe longswordRadzig_reforged
+  [93] BasicTheology
+  [94] BS recipe r_kovaniVajdovaKletba_rikonaris
+  [95] BS recipe r_longswordsturdy
+  [96] search - companion
+  [97] RedHerring
+  [98] BS recipe r_horseshoeNoble
+  [99] GoodNatured
+  [100] BS recipe r_kovaniKatuvSleh_executionersSword
+  [101] BS recipe r_pomatenec_longsword
+  [102] BS recipe r_longswordold
+  [103] Escape artist I
+  [104] BS recipe r_axecuman
+  [105] Black arts apprentice
+  [106] BS recipe r_horseshoeNomad
+  [107] BS recipe r_sabrenoble
+  [108] BS recipe r_kovaniZavodniPodkovy_caulkinHorseshoe

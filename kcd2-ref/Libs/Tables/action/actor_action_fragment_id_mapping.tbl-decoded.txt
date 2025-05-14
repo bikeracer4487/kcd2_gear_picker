@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_action_fragment_id_mapping.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1553239335
+  Layout Hash ........... 1425633353
+  Table Version ......... 1
+  Line Count ............ 33
+  String Data Size ...... 372
+  Unique String Count ... 33
+  File Size ............. 1192
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] BlendRagdoll
+  [1] CombatTransition
+  [2] CombatBlendRagdoll
+  [3] JumpDown
+  [4] JumpDownLand
+  [5] JumpOver
+  [6] MotionJump
+  [7] MotionJumpStart
+  [8] MotionLand
+  [9] Beggar
+  [10] BeggarVAR
+  [11] Fall
+  [12] Land
+  [13] BeggarToCombat
+  [14] Mark
+  [15] TailWaving
+  [16] CodeSitting
+  [17] CodeLying
+  [18] GrowlUpperbody
+  [19] Dig
+  [20] Drink
+  [21] BarkingUpperbody
+  [22] Fail
+  [23] Eating
+  [24] Petting
+  [25] ShakeOff
+  [26] CodeIdleVar
+  [27] HitDeath
+  [28] HitDeathTorso
+  [29] PlayerDogSniffingHand
+  [30] TreeSniffing
+  [31] CounterSniffing
+  [32] WaterTubDrinking

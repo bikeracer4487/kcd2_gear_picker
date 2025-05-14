@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/body_layer.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 389363659
+  Layout Hash ........... 2351292633
+  Table Version ......... 1
+  Line Count ............ 10
+  String Data Size ...... 129
+  Unique String Count ... 10
+  File Size ............. 397
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] body
+  [1] cloth_inner
+  [2] chainmail_inner
+  [3] plate_inner
+  [4] decoration_inner
+  [5] cloth_outer
+  [6] chainmail_outer
+  [7] plate_outer
+  [8] underwear
+  [9] decoration_outer

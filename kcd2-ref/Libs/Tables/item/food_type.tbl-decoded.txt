@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/food_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3558398460
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 9
+  String Data Size ...... 62
+  Unique String Count ... 9
+  File Size ............. 234
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] fruit
+  [1] potion
+  [2] meat
+  [3] drink
+  [4] bowel
+  [5] vegetable
+  [6] mushroom
+  [7] pastry
+  [8] dairy

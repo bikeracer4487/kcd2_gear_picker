@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/skald/voice_group.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1027337555
+  Layout Hash ........... 2762725133
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 115
+  Unique String Count ... 11
+  File Size ............. 231
+  Calculated Line Size .. 8 (rem. 0)
+String Table:
+  [0] Animal or Dead
+  [1] Bandits
+  [2] Cumans
+  [3] Czechs
+  [4] Germans
+  [5] Guards
+  [6] Jews
+  [7] Merchants
+  [8] No Christian Blasphemy
+  [9] Roma
+  [10] UltralightMerchants

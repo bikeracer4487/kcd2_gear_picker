@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__svatyAntonin.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 4
+  String Data Size ...... 204
+  Unique String Count ... 7
+  File Size ............. 744
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] svatyAntonin_wolf_2
+  [1] animal_wild_enemy
+  [2] svatyAntonin_wolf_1
+  [3] svatyAntonin_wolf_3
+  [4] svatyAntonin_hensl
+  [5] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_generalMerchant
+  [6] char_GENERIC_MAN_COMMONER_09

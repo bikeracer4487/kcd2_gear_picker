@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/location2perk.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3948984342
+  Layout Hash ........... 73964485
+  Table Version ......... 1
+  Line Count ............ 31
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1020
+  Calculated Line Size .. 32 (rem. 0)

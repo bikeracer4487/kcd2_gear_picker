@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/food_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1991198094
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 28
+  String Data Size ...... 339
+  Unique String Count ... 28
+  File Size ............. 815
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] apple
+  [1] bacon
+  [2] wine
+  [3] nighthawkPotion
+  [4] poison
+  [5] raw
+  [6] beer
+  [7] liquor
+  [8] preserver
+  [9] aesopPotion
+  [10] water
+  [11] aquaVitalisPotion
+  [12] pear
+  [13] vegetable
+  [14] dryable
+  [15] embrocationPotion
+  [16] painkillerPotion
+  [17] chamomileDecoctionPotion
+  [18] insomniaPotion
+  [19] hairODogPotion
+  [20] bardPotion
+  [21] artemisiaPotion
+  [22] antidotePotion
+  [23] marigoldPotion
+  [24] staminaPotion
+  [25] padfootPotion
+  [26] bowmanBrewPotion
+  [27] painterMedicinePotion

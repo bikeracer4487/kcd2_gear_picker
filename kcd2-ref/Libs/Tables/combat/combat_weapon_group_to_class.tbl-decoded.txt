@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_weapon_group_to_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2254134852
+  Layout Hash ........... 516608517
+  Table Version ......... 1
+  Line Count ............ 37
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 472
+  Calculated Line Size .. 12 (rem. 0)

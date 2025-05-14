@@ -1,0 +1,27 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__konskeZavodyTrosecko.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 12
+  String Data Size ...... 423
+  Unique String Count ... 13
+  File Size ............. 1987
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] crossCountryTrosecko_horse_3
+  [1] trosecko_settlements_semin_commonFolk_stables_konskeZavodyTroseckoHorse
+  [2] crossCountryTrosecko_horse_12
+  [3] crossCountryTrosecko_horse_4
+  [4] crossCountryTrosecko_horse_2
+  [5] crossCountryTrosecko_horse_6
+  [6] crossCountryTrosecko_horse_7
+  [7] crossCountryTrosecko_horse_9
+  [8] crossCountryTrosecko_horse_1
+  [9] crossCountryTrosecko_horse_11
+  [10] crossCountryTrosecko_horse_8
+  [11] crossCountryTrosecko_horse_10
+  [12] crossCountryTrosecko_horse_5

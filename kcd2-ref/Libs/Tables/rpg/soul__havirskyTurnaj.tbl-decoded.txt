@@ -1,0 +1,44 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__havirskyTurnaj.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 24
+  String Data Size ...... 853
+  Unique String Count ... 30
+  File Size ............. 3953
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] havirskyTurnaj_spectator_12
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tavernSesivanejch
+  [2] char_GENERIC_MAN_MINER_01
+  [3] havirskyTurnaj_spectator_16
+  [4] char_GENERIC_MAN_MINER_04
+  [5] havirskyTurnaj_spectator_11
+  [6] char_GENERIC_MAN_MINER_03
+  [7] havirskyTurnaj_spectator_1
+  [8] char_GENERIC_MAN_MINER_05
+  [9] havirskyTurnaj_spectator_18
+  [10] havirskyTurnaj_spectator_21
+  [11] havirskyTurnaj_spectator_14
+  [12] havirskyTurnaj_spectator_5
+  [13] char_GENERIC_MAN_MINER_02
+  [14] havirskyTurnaj_spectator_4
+  [15] havirskyTurnaj_animchar_24
+  [16] havirskyTurnaj_animchar_22
+  [17] havirskyTurnaj_spectator_3
+  [18] havirskyTurnaj_spectator_7
+  [19] havirskyTurnaj_spectator_17
+  [20] havirskyTurnaj_spectator_8
+  [21] havirskyTurnaj_spectator_6
+  [22] havirskyTurnaj_spectator_2
+  [23] havirskyTurnaj_spectator_13
+  [24] havirskyTurnaj_animchar_23
+  [25] havirskyTurnaj_spectator_20
+  [26] havirskyTurnaj_spectator_9
+  [27] havirskyTurnaj_spectator_19
+  [28] havirskyTurnaj_spectator_15
+  [29] havirskyTurnaj_spectator_10

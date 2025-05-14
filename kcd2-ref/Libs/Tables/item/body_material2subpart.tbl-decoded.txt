@@ -1,0 +1,71 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/body_material2subpart.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 515574985
+  Layout Hash ........... 1425633353
+  Table Version ......... 1
+  Line Count ............ 74
+  String Data Size ...... 1001
+  Unique String Count ... 57
+  File Size ............. 2805
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] head_up
+  [1] horse_head_left
+  [2] body
+  [3] head_back
+  [4] horse_head_right
+  [5] sheep_head
+  [6] head_front
+  [7] horse_neck_left
+  [8] head_right
+  [9] horse_neck_right
+  [10] head_left
+  [11] horse_torso_left_fore
+  [12] body_front_up
+  [13] horse_torso_right_fore
+  [14] body_back_up
+  [15] horse_torso_left_hind
+  [16] body_front_down
+  [17] horse_torso_right_hind
+  [18] body_back_down
+  [19] horse_leg_left_fore
+  [20] body_right
+  [21] horse_leg_right_fore
+  [22] body_left
+  [23] horse_leg_left_hind
+  [24] arm_right_shoulder_front
+  [25] horse_leg_right_hind
+  [26] arm_right_shoulder_back
+  [27] horse_torso_left_side
+  [28] arm_right_upper_front
+  [29] horse_torso_right_side
+  [30] arm_right_upper_back
+  [31] arm_right_forearm_front
+  [32] arm_right_forearm_back
+  [33] arm_right_hand
+  [34] arm_left_shoulder_front
+  [35] arm_left_shoulder_back
+  [36] arm_left_upper_front
+  [37] arm_left_upper_back
+  [38] arm_left_forearm_front
+  [39] arm_left_forearm_back
+  [40] arm_left_hand
+  [41] leg_right_upper_front
+  [42] leg_right_upper_back
+  [43] leg_right_lower_front
+  [44] leg_right_lower_back
+  [45] feet_right_boots
+  [46] feet_right_plates
+  [47] leg_left_upper_front
+  [48] leg_left_upper_back
+  [49] leg_left_lower_front
+  [50] leg_left_lower_back
+  [51] feet_left_boots
+  [52] feet_left_plates
+  [53] head_neck
+  [54] head
+  [55] legs_front
+  [56] legs_back

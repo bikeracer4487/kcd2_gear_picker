@@ -1,0 +1,32 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/combat_shout_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 286316485
+  Layout Hash ........... 4076584649
+  Table Version ......... 1
+  Line Count ............ 10
+  String Data Size ...... 533
+  Unique String Count ... 18
+  File Size ............. 881
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] actorScreamAttack
+  [1] COMBAT_ACTOR_SCREAM_ATTACK
+  [2] actorScreamClinch
+  [3] COMBAT_ACTOR_SCREAM_CLINCH
+  [4] actorScreamNoSpaceAttack
+  [5] actorScreamNoStaminaAttack
+  [6] victimScreamMissedAttack
+  [7] COMBAT_VICTIM_SCREAM_MISSED_ATTACK
+  [8] victimScreamReceivedHit
+  [9] COMBAT_VICTIM_SCREAM_RECEIVED_HIT
+  [10] victimScreamStealthClinchIdle
+  [11] COMBAT_VICTIM_SCREAM_STEALTH_CLINCH_IDLE
+  [12] victimScreamStealthHit
+  [13] COMBAT_VICTIM_SCREAM_STEALTH_HIT
+  [14] victimScreamStealthPerfectBlock
+  [15] COMBAT_VICTIM_SCREAM_STEALTH_PERFECT_BLOCK
+  [16] victimScreamStealthSuccessHit
+  [17] COMBAT_VICTIM_SCREAM_STEALTH_SUCCESS_HIT

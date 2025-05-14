@@ -1,0 +1,127 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__stealthMiseZaJindru.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 91
+  String Data Size ...... 4063
+  Unique String Count ... 113
+  File Size ............. 15739
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] stealthMiseZaJindru_aulitzsSoldier_63
+  [1] kutnohorsko_enemies_stealthMiseZaJindruAulitzsSoldiers
+  [2] char_GENERIC_MAN_SOLDIER_01
+  [3] stealthMiseZaJindru_aulitzsSoldier_60
+  [4] char_GENERIC_MAN_SOLDIER_02
+  [5] stealthMiseZaJindru_aulitzsSoldier_50
+  [6] char_GENERIC_MAN_SOLDIER_03
+  [7] stealthMiseZaJindru_horse_3
+  [8] stealthMiseZaJindru_aulitzsSoldier_57
+  [9] char_GENERIC_MAN_SOLDIER_16
+  [10] stealthMiseZaJindru_aulitzsSoldier_22
+  [11] char_GENERIC_MAN_SOLDIER_05
+  [12] stealthMiseZaJindru_aulitzsSoldier_39
+  [13] char_GENERIC_MAN_SOLDIER_06
+  [14] stealthMiseZaJindru_aulitzsSoldier_19
+  [15] char_GENERIC_MAN_SOLDIER_07
+  [16] stealthMiseZaJindru_aulitzsSoldier_8
+  [17] char_GENERIC_MAN_SOLDIER_08
+  [18] stealthMiseZaJindru_aulitzsSoldier_7
+  [19] char_GENERIC_MAN_SOLDIER_19
+  [20] stealthMiseZaJindru_aulitzsSoldier_80
+  [21] char_GENERIC_MAN_SOLDIER_10
+  [22] stealthMiseZaJindru_aulitzsSoldier_76
+  [23] char_GENERIC_MAN_SOLDIER_11
+  [24] stealthMiseZaJindru_horse_2
+  [25] stealthMiseZaJindru_aulitzsSoldier_38
+  [26] char_GENERIC_MAN_SOLDIER_12
+  [27] stealthMiseZaJindru_aulitzsSoldier_55
+  [28] char_GENERIC_MAN_SOLDIER_13
+  [29] stealthMiseZaJindru_aulitzsSoldier_1
+  [30] char_GENERIC_MAN_SOLDIER_27
+  [31] stealthMiseZaJindru_aulitzsSoldier_66
+  [32] char_GENERIC_MAN_SOLDIER_15
+  [33] stealthMiseZaJindru_aulitzsSoldier_37
+  [34] stealthMiseZaJindru_aulitzsSoldier_33
+  [35] stealthMiseZaJindru_aulitzsSoldier_27
+  [36] stealthMiseZaJindru_aulitzsSoldier_56
+  [37] stealthMiseZaJindru_aulitzsSoldier_25
+  [38] stealthMiseZaJindru_aulitzsSoldier_14
+  [39] stealthMiseZaJindru_aulitzsSoldier_13
+  [40] stealthMiseZaJindru_aulitzsSoldier_59
+  [41] stealthMiseZaJindru_aulitzsSoldier_4
+  [42] char_GENERIC_MAN_SOLDIER_38
+  [43] stealthMiseZaJindru_aulitzsSoldier_68
+  [44] stealthMiseZaJindru_aulitzsSoldier_42
+  [45] stealthMiseZaJindru_aulitzsSoldier_73
+  [46] stealthMiseZaJindru_markvartAulitzMurdered
+  [47] kutnohorsko_settlements_zikmundovo_nobility_markvartAulitz
+  [48] char_MARKVART
+  [49] stealthMiseZaJindru_aulitzsSoldier_32
+  [50] stealthMiseZaJindru_aulitzsSoldier_31
+  [51] char_GENERIC_MAN_SOLDIER_14
+  [52] stealthMiseZaJindru_aulitzsSoldier_16
+  [53] stealthMiseZaJindru_aulitzsSoldier_70
+  [54] stealthMiseZaJindru_aulitzsSoldier_9
+  [55] stealthMiseZaJindru_aulitzsSoldier_84
+  [56] stealthMiseZaJindru_aulitzsSoldier_43
+  [57] stealthMiseZaJindru_aulitzsSoldier_5
+  [58] stealthMiseZaJindru_aulitzsSoldier_17
+  [59] stealthMiseZaJindru_aulitzsSoldier_51
+  [60] stealthMiseZaJindru_aulitzsSoldier_11
+  [61] stealthMiseZaJindru_aulitzsSoldier_21
+  [62] char_GENERIC_MAN_SOLDIER_31
+  [63] stealthMiseZaJindru_aulitzsSoldier_35
+  [64] stealthMiseZaJindru_aulitzsSoldier_24
+  [65] stealthMiseZaJindru_aulitzsSoldier_49
+  [66] stealthMiseZaJindru_aulitzsSoldier_47
+  [67] stealthMiseZaJindru_aulitzsSoldier_29
+  [68] stealthMiseZaJindru_aulitzsSoldier_23
+  [69] stealthMiseZaJindru_aulitzsSoldier_12
+  [70] stealthMiseZaJindru_aulitzsSoldier_61
+  [71] stealthMiseZaJindru_aulitzsSoldier_78
+  [72] stealthMiseZaJindru_aulitzsSoldier_6
+  [73] stealthMiseZaJindru_aulitzsSoldier_72
+  [74] stealthMiseZaJindru_aulitzsSoldier_48
+  [75] stealthMiseZaJindru_aulitzsSoldier_30
+  [76] stealthMiseZaJindru_horse_1
+  [77] stealthMiseZaJindru_aulitzsSoldier_40
+  [78] stealthMiseZaJindru_aulitzsSoldier_20
+  [79] char_GENERIC_MAN_SOLDIER_17
+  [80] stealthMiseZaJindru_aulitzsSoldier_26
+  [81] stealthMiseZaJindru_aulitzsSoldier_65
+  [82] stealthMiseZaJindru_aulitzsSoldier_45
+  [83] stealthMiseZaJindru_aulitzsSoldier_83
+  [84] stealthMiseZaJindru_aulitzsSoldier_82
+  [85] stealthMiseZaJindru_aulitzsSoldier_58
+  [86] stealthMiseZaJindru_aulitzsSoldier_44
+  [87] stealthMiseZaJindru_aulitzsSoldier_3
+  [88] stealthMiseZaJindru_aulitzsSoldier_79
+  [89] stealthMiseZaJindru_aulitzsSoldier_74
+  [90] stealthMiseZaJindru_aulitzsSoldier_75
+  [91] stealthMiseZaJindru_aulitzsSoldier_18
+  [92] stealthMiseZaJindru_aulitzsSoldier_85
+  [93] stealthMiseZaJindru_aulitzsSoldier_62
+  [94] stealthMiseZaJindru_aulitzsSoldier_10
+  [95] stealthMiseZaJindru_aulitzsSoldier_34
+  [96] stealthMiseZaJindru_aulitzsSoldier_77
+  [97] stealthMiseZaJindru_aulitzsSoldier_67
+  [98] stealthMiseZaJindru_aulitzsSoldier_36
+  [99] stealthMiseZaJindru_aulitzsSoldier_2
+  [100] stealthMiseZaJindru_aulitz
+  [101] stealthMiseZaJindru_aulitzsSoldier_81
+  [102] stealthMiseZaJindru_aulitzsSoldier_28
+  [103] stealthMiseZaJindru_aulitzsSoldier_52
+  [104] stealthMiseZaJindru_aulitzsSoldier_71
+  [105] stealthMiseZaJindru_horse_4
+  [106] stealthMiseZaJindru_aulitzsSoldier_15
+  [107] stealthMiseZaJindru_aulitzsSoldier_69
+  [108] stealthMiseZaJindru_aulitzsSoldier_64
+  [109] stealthMiseZaJindru_aulitzsSoldier_46
+  [110] stealthMiseZaJindru_aulitzsSoldier_41
+  [111] stealthMiseZaJindru_aulitzsSoldier_54
+  [112] stealthMiseZaJindru_aulitzsSoldier_53

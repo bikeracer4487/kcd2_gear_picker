@@ -1,0 +1,38 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3715009800
+  Layout Hash ........... 856282621
+  Table Version ......... 2
+  Line Count ............ 24
+  String Data Size ...... 254
+  Unique String Count ... 24
+  File Size ............. 1050
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] none
+  [1] player
+  [2] horse
+  [3] war horse
+  [4] hare
+  [5] cuman
+  [6] pig
+  [7] sheep_ewe
+  [8] dog
+  [9] neuhof_colliers_bandits
+  [10] red_deer_stag
+  [11] red_deer_doe
+  [12] cattle_cow
+  [13] roe_deer_buck
+  [14] pig_domestic
+  [15] enemy_camps_bandits
+  [16] enemy_camps_cumans
+  [17] herbalist
+  [18] innkeeper
+  [19] wolf
+  [20] wilddog
+  [21] cattle_bull
+  [22] roe_deer_hind
+  [23] sheep_ram

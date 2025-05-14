@@ -1,0 +1,41 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_rpg_param_override.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1814742893
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 28
+  String Data Size ...... 745
+  Unique String Count ... 27
+  File Size ............. 1669
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] CombatAutoAttackDelayIncreasePerAttacker
+  [1] CombatMovePlayerSecondaryAttackerHuntMultiplier
+  [2] CombatMovePlayerSecondaryAttackerSpeedMultiplier
+  [3] HorseRidingXPPerDistance
+  [4] RepairPriceModif
+  [5] StealthTimeWarpSpeed
+  [6] TimeWarpMSFadeSpeedForOpp
+  [7] TimeWarpPBFadeSpeedForOpp
+  [8] TimeWarpPBFadeSpeedForPlayer
+  [9] TimewarpStealthPBSpeedForOpp
+  [10] TimewarpSyncPBSpeedForOpp
+  [11] AlchemyXPOverride
+  [12] SurvivalXPOverride
+  [13] CraftsmanshipXPOverride
+  [14] ThieveryXPOverride
+  [15] HorseRidingXPOverride
+  [16] HoundmasterXPOverride
+  [17] CrimeDoorSoundMod
+  [18] FriskProbabilityMod
+  [19] PerkLastGaspShortTermDuration
+  [20] ResetPublicFriendsRelationshipMin
+  [21] InformationExpirationBase
+  [22] CombatLevelMinToCombatRPGBonus
+  [23] CombatLevelToRelativeAttackIncrease
+  [24] CombatLevelToRelativeHealthLossDecrease
+  [25] FoodDecayModif
+  [26] RevenantBuffMaxHealthRegeneration

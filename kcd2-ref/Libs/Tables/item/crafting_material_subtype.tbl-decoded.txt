@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/crafting_material_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3209603208
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 7
+  String Data Size ...... 65
+  Unique String Count ... 7
+  File Size ............. 205
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] tusk
+  [1] horn
+  [2] q_disguise_anyfeather
+  [3] lard
+  [4] dryable
+  [5] bezoar
+  [6] craftingSkin

@@ -1,0 +1,15 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/anim_fragment_do_not_interrupt.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3047588895
+  Layout Hash ........... 2284881257
+  Table Version ......... 14
+  Line Count ............ 1
+  String Data Size ...... 10
+  Unique String Count ... 1
+  File Size ............. 86
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] EatingVar

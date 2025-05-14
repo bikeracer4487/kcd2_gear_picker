@@ -1,0 +1,19 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/document_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3631466356
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 33
+  Unique String Count ... 5
+  File Size ............. 141
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] book
+  [1] recipe
+  [2] skillBook
+  [3] map
+  [4] letter

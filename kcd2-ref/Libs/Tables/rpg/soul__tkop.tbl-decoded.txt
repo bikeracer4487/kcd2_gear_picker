@@ -1,0 +1,33 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tkop.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 7
+  String Data Size ...... 367
+  Unique String Count ... 19
+  File Size ............. 1291
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tkop_dog_1
+  [1] trosecko_outskirts_herbalist_kopanina
+  [2] tkop_ptacek
+  [3] players_friends_ptacek
+  [4] 25
+  [5] tkop_shepherd_1
+  [6] test_npcs
+  [7] char_GENERIC_MAN_COMMONER_05
+  [8] tkop_shepherd_2
+  [9] char_GENERIC_MAN_COMMONER_25
+  [10] tkop_barnabas
+  [11] Merchants
+  [12] char_KORENAR_BARNABAS
+  [13] tkop_man_2
+  [14] trosecko_enemies_bandits_campKopanina
+  [15] Bandits
+  [16] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [17] tkop_man_1
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_01

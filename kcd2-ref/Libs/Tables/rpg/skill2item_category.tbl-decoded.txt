@@ -1,0 +1,98 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/skill2item_category.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3956492331
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 93
+  String Data Size ...... 1604
+  Unique String Count ... 84
+  File Size ............. 3120
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] crafting_material.special.horn
+  [1] crafting_material.special.lard
+  [2] food.meat.*
+  [3] armor.Bells.*
+  [4] armor.Caftan.*
+  [5] armor.Cap.*
+  [6] armor.Caparison.*
+  [7] armor.Coat.*
+  [8] armor.CoifCap.*
+  [9] armor.CoifLarge.*
+  [10] armor.CoifSmall.*
+  [11] armor.CollarPadded.*
+  [12] armor.F_Bonnet.*
+  [13] armor.F_CapAndWimple.*
+  [14] armor.F_Cotehardie.*
+  [15] armor.F_Hat.*
+  [16] armor.F_Hood.*
+  [17] armor.F_HoodOpen.*
+  [18] armor.F_Houppelande.*
+  [19] armor.F_SimpleDress.*
+  [20] armor.F_Smock.*
+  [21] armor.F_Surcot.*
+  [22] armor.F_Veil.*
+  [23] armor.F_VeilAndWimple.*
+  [24] armor.F_WorkDress.*
+  [25] armor.GambesonLong.*
+  [26] armor.GambesonShort.*
+  [27] armor.Habit.*
+  [28] armor.HorsePadded.*
+  [29] armor.HoseJoined.*
+  [30] armor.HoseLoose.*
+  [31] armor.HoseSeparate.*
+  [32] armor.LeatherCap.*
+  [33] armor.LegsPadded.*
+  [34] armor.Pourpoint.*
+  [35] armor.TunicLong.*
+  [36] armor.TunicShort.*
+  [37] armor.Waffenrock.*
+  [38] hood.*.*
+  [39] armor.ArmBrigandine.*
+  [40] armor.ArmPlate.*
+  [41] armor.BascinetOpen.*
+  [42] armor.BascinetVisor.*
+  [43] armor.Brigandine.*
+  [44] armor.CoifMail.*
+  [45] armor.CollarMail.*
+  [46] armor.Cuirass.*
+  [47] armor.Gauntlets.*
+  [48] armor.HorsePlate.*
+  [49] armor.Horseplate.*
+  [50] armor.KettleHat.*
+  [51] armor.LegsBrigandine.*
+  [52] armor.LegsChain.*
+  [53] armor.LegsPlate.*
+  [54] armor.MailLong.*
+  [55] armor.MailShort.*
+  [56] armor.SkullCap.*
+  [57] armor.Spurs.*
+  [58] helmet.*.*
+  [59] melee_weapon.shield.*
+  [60] armor.HorseShoe.*
+  [61] melee_weapon.axe.*
+  [62] melee_weapon.dagger.*
+  [63] melee_weapon.halberd.*
+  [64] melee_weapon.hunting_sword.*
+  [65] melee_weapon.longsword.*
+  [66] melee_weapon.mace.*
+  [67] melee_weapon.sabre.*
+  [68] melee_weapon.sword.*
+  [69] armor.Belt.*
+  [70] armor.BootsAnkle.*
+  [71] armor.BootsKnee.*
+  [72] armor.Bridle.*
+  [73] armor.F_Shoes.*
+  [74] armor.Gloves.*
+  [75] armor.LeatherApron.*
+  [76] armor.Pouch.*
+  [77] armor.Saddle.*
+  [78] armor.Shoes.*
+  [79] missile_weapon.rifle.*
+  [80] missile_weapon.bow.*
+  [81] missile_weapon.crossbow_heavy.*
+  [82] missile_weapon.crossbow_light.*
+  [83] missile_weapon.crossbow_medium.*

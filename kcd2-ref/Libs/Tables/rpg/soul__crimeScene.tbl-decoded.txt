@@ -1,0 +1,56 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__crimeScene.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 31
+  String Data Size ...... 1151
+  Unique String Count ... 42
+  File Size ............. 5147
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] crimeScene_soldier_corpse_2
+  [1] eventNPCs_civilians_friends
+  [2] crimeScene_civilian_corpse_3
+  [3] crimeScene_civilian_corpse_2
+  [4] crimeScene_soldier_corpse_6
+  [5] crimeScene_civilian_corpse_9
+  [6] crimeScene_civilian_corpse_4
+  [7] crimeScene_wolf_2
+  [8] eventNPCs_enemies_hostile
+  [9] crimeScene_civilian_corpse_8
+  [10] crimeScene_soldier_corpse_5
+  [11] crimeScene_bandits_watcher_4
+  [12] Bandits
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [14] crimeScene_civilian_corpse_5
+  [15] crimeScene_soldier_corpse_1
+  [16] crimeScene_wolf_4
+  [17] crimeScene_civilian_corpse_7
+  [18] crimeScene_bandits_watcher_1
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [20] crimeScene_horse_corpse_1
+  [21] crimeScene_bandits_watcher_3
+  [22] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [23] crimeScene_wolf_1
+  [24] crimeScene_wolf_3
+  [25] crimeScene_bandits_looter_2
+  [26] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [27] crimeScene_bandits_looter_1
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [29] crimeScene_civilian_corpse_6
+  [30] crimeScene_bandits_looter_4
+  [31] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [32] crimeScene_horse_corpse_2
+  [33] crimeScene_civilian_corpse_1
+  [34] crimeScene_horse_corpse_3
+  [35] crimeScene_bandits_looter_3
+  [36] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [37] crimeScene_soldier_corpse_3
+  [38] crimeScene_bandits_watcher_2
+  [39] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [40] crimeScene_wolf_5
+  [41] crimeScene_soldier_corpse_4

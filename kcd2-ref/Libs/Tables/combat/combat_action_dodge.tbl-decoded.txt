@@ -1,0 +1,112 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_dodge.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2291335242
+  Layout Hash ........... 1579387732
+  Table Version ......... 30
+  Line Count ............ 96
+  String Data Size ...... 6447
+  Unique String Count ... 98
+  File Size ............. 24139
+  Calculated Line Size .. 184 (rem. 0)
+String Table:
+  [0] CombatDodgeGen
+  [1] l_halberd+r_halberd+sZ2+leftGuard+eZ2+move_right+oppDog+oppMale
+  [2] Dog,NPC
+  [3] l_halberd+r_halberd+sZ1+rightGuard+eZ1+move_left+oppDog+oppMale
+  [4] l_halberd+r_halberd+sZ1+rightGuard+eZ1+move_right+oppDog+oppMale
+  [5] l_halberd+r_halberd+sZ1+rightGuard+eZ1+move_forward+oppDog+oppMale
+  [6] l_halberd+r_halberd+sZ2+leftGuard+eZ2+move_forward+oppDog+oppMale
+  [7] l_halberd+r_halberd+sZ2+leftGuard+eZ2+move_left+oppDog+oppMale
+  [8] l_halberd+r_halberd+sZ5+rightGuard+eZ5+move_back+oppDog+oppMale
+  [9] l_halberd+r_halberd+sZ5+rightGuard+eZ5+move_right+oppDog+oppMale
+  [10] l_halberd+r_halberd+sZ5+rightGuard+eZ5+move_left+oppDog+oppMale
+  [11] l_halberd+r_halberd+sZ1+rightGuard+eZ1+move_back+oppDog+oppMale
+  [12] l_halberd+r_halberd+sZ2+leftGuard+eZ2+move_back+oppDog+oppMale
+  [13] l_halberd+r_halberd+sZ5+rightGuard+eZ5+move_forward+oppDog+oppMale
+  [14] l_longsword+r_longsword+sZ0+leftGuard+eZ0+move_back+oppDog+oppMale
+  [15] l_longsword+r_longsword+sZ2+leftGuard+eZ2+move_left+oppDog+oppMale
+  [16] l_longsword+r_longsword+sZ2+leftGuard+eZ2+move_right+oppDog+oppMale
+  [17] l_longsword+r_longsword+sZ1+rightGuard+eZ1+move_forward+oppDog+oppMale
+  [18] l_longsword+r_longsword+sZ5+rightGuard+eZ5+move_right+oppDog+oppMale
+  [19] l_longsword+r_longsword+sZ1+rightGuard+eZ1+move_back+oppDog+oppMale
+  [20] l_longsword+r_longsword+sZ2+leftGuard+eZ2+move_back+oppDog+oppMale
+  [21] l_longsword+r_longsword+sZ2+leftGuard+eZ2+move_forward+oppDog+oppMale
+  [22] l_longsword+r_longsword+sZ5+rightGuard+eZ5+move_left+oppDog+oppMale
+  [23] l_longsword+r_longsword+sZ0+leftGuard+eZ0+move_right+oppDog+oppMale
+  [24] l_longsword+r_longsword+sZ5+rightGuard+eZ5+move_back+oppDog+oppMale
+  [25] l_longsword+r_longsword+sZ1+rightGuard+eZ1+move_left+oppDog+oppMale
+  [26] l_longsword+r_longsword+sZ0+leftGuard+eZ0+move_forward+oppDog+oppMale
+  [27] l_longsword+r_longsword+sZ1+rightGuard+eZ1+move_right+oppDog+oppMale
+  [28] l_longsword+r_longsword+sZ0+leftGuard+eZ0+move_left+oppDog+oppMale
+  [29] l_longsword+r_longsword+sZ5+rightGuard+eZ5+move_forward+oppDog+oppMale
+  [30] r_noweapon+sZ5+rightGuard+eZ5+move_right+l_noShield+oppDog+oppMale
+  [31] l_shield+sZ2+leftGuard+eZ2+move_left+r_bluntWeapon+oppDog+oppMale
+  [32] l_shield+sZ5+rightGuard+eZ5+move_right+r_swords+oppDog+oppMale
+  [33] sZ1+rightGuard+eZ1+move_left+r_shortSwords+l_noShield+oppDog+oppMale
+  [34] sZ0+leftGuard+eZ0+move_right+r_shortSwords+l_noShield+oppDog+oppMale
+  [35] l_shield+sZ2+leftGuard+eZ2+move_forward+r_swords+oppDog+oppMale
+  [36] r_noweapon+sZ5+rightGuard+eZ5+move_forward+l_noShield+oppDog+oppMale
+  [37] l_shield+sZ0+leftGuard+eZ0+move_forward+r_swords+oppDog+oppMale
+  [38] sZ2+leftGuard+eZ2+move_right+r_shortSwords+l_noShield+oppDog+oppMale
+  [39] l_shield+sZ1+rightGuard+eZ1+move_right+r_bluntWeapon+oppDog+oppMale
+  [40] r_noweapon+sZ1+rightGuard+eZ1+move_forward+l_noShield+oppDog+oppMale
+  [41] sZ1+rightGuard+eZ1+move_right+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [42] r_noweapon+sZ1+rightGuard+eZ1+move_back+l_noShield+oppDog+oppMale
+  [43] l_shield+sZ1+rightGuard+eZ1+move_forward+r_swords+oppDog+oppMale
+  [44] l_shield+sZ2+leftGuard+eZ2+move_back+r_swords+oppDog+oppMale
+  [45] sZ0+leftGuard+eZ0+move_forward+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [46] l_shield+sZ1+rightGuard+eZ1+move_left+r_swords+oppDog+oppMale
+  [47] l_shield+sZ2+leftGuard+eZ2+move_forward+r_bluntWeapon+oppDog+oppMale
+  [48] l_shield+sZ1+rightGuard+eZ1+move_right+r_swords+oppDog+oppMale
+  [49] l_shield+sZ1+rightGuard+eZ1+move_left+r_bluntWeapon+oppDog+oppMale
+  [50] l_shield+sZ2+leftGuard+eZ2+move_right+r_swords+oppDog+oppMale
+  [51] sZ0+leftGuard+eZ0+move_left+r_shortSwords+l_noShield+oppDog+oppMale
+  [52] sZ2+leftGuard+eZ2+move_forward+r_shortSwords+l_noShield+oppDog+oppMale
+  [53] l_shield+sZ5+rightGuard+eZ5+move_forward+r_swords+oppDog+oppMale
+  [54] l_shield+sZ1+rightGuard+eZ1+move_back+r_bluntWeapon+oppDog+oppMale
+  [55] sZ0+leftGuard+eZ0+move_back+r_shortSwords+l_noShield+oppDog+oppMale
+  [56] sZ1+rightGuard+eZ1+move_back+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [57] sZ0+leftGuard+eZ0+move_back+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [58] sZ5+rightGuard+eZ5+move_back+r_shortSwords+l_noShield+oppDog+oppMale
+  [59] l_shield+sZ0+leftGuard+eZ0+move_forward+r_bluntWeapon+oppDog+oppMale
+  [60] r_noweapon+sZ2+leftGuard+eZ2+move_forward+l_noShield+oppDog+oppMale
+  [61] l_shield+sZ1+rightGuard+eZ1+move_back+r_swords+oppDog+oppMale
+  [62] l_shield+sZ0+leftGuard+eZ0+move_left+r_swords+oppDog+oppMale
+  [63] l_shield+sZ2+leftGuard+eZ2+move_right+r_bluntWeapon+oppDog+oppMale
+  [64] sZ5+rightGuard+eZ5+move_right+r_shortSwords+l_noShield+oppDog+oppMale
+  [65] l_shield+sZ1+rightGuard+eZ1+move_forward+r_bluntWeapon+oppDog+oppMale
+  [66] sZ5+rightGuard+eZ5+move_left+r_shortSwords+l_noShield+oppDog+oppMale
+  [67] l_shield+sZ0+leftGuard+eZ0+move_back+r_bluntWeapon+oppDog+oppMale
+  [68] sZ0+leftGuard+eZ0+move_forward+r_shortSwords+l_noShield+oppDog+oppMale
+  [69] sZ0+leftGuard+eZ0+move_right+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [70] r_noweapon+sZ1+rightGuard+eZ1+move_right+l_noShield+oppDog+oppMale
+  [71] sZ1+rightGuard+eZ1+move_left+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [72] l_shield+sZ5+rightGuard+eZ5+move_back+r_swords+oppDog+oppMale
+  [73] l_shield+sZ2+leftGuard+eZ2+move_back+r_bluntWeapon+oppDog+oppMale
+  [74] r_noweapon+sZ2+leftGuard+eZ2+move_left+l_noShield+oppDog+oppMale
+  [75] r_noweapon+sZ5+rightGuard+eZ5+move_left+l_noShield+oppDog+oppMale
+  [76] l_shield+sZ0+leftGuard+eZ0+move_left+r_bluntWeapon+oppDog+oppMale
+  [77] sZ1+rightGuard+eZ1+move_forward+r_shortSwords+l_noShield+oppDog+oppMale
+  [78] sZ0+leftGuard+eZ0+move_left+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [79] l_shield+sZ2+leftGuard+eZ2+move_left+r_swords+oppDog+oppMale
+  [80] l_shield+sZ5+rightGuard+eZ5+move_left+r_swords+oppDog+oppMale
+  [81] r_noweapon+sZ5+rightGuard+eZ5+move_back+l_noShield+oppDog+oppMale
+  [82] l_shield+sZ0+leftGuard+eZ0+move_right+r_bluntWeapon+oppDog+oppMale
+  [83] r_noweapon+sZ1+rightGuard+eZ1+move_left+l_noShield+oppDog+oppMale
+  [84] r_noweapon+sZ2+leftGuard+eZ2+move_right+l_noShield+oppDog+oppMale
+  [85] sZ2+leftGuard+eZ2+move_left+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [86] sZ1+rightGuard+eZ1+move_back+r_shortSwords+l_noShield+oppDog+oppMale
+  [87] sZ1+rightGuard+eZ1+move_right+r_shortSwords+l_noShield+oppDog+oppMale
+  [88] sZ2+leftGuard+eZ2+move_right+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [89] l_shield+sZ0+leftGuard+eZ0+move_right+r_swords+oppDog+oppMale
+  [90] sZ5+rightGuard+eZ5+move_forward+r_shortSwords+l_noShield+oppDog+oppMale
+  [91] sZ2+leftGuard+eZ2+move_back+r_shortSwords+l_noShield+oppDog+oppMale
+  [92] sZ2+leftGuard+eZ2+move_back+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [93] sZ1+rightGuard+eZ1+move_forward+r_bluntWeapon+l_noShield+oppDog+oppMale
+  [94] l_shield+sZ0+leftGuard+eZ0+move_back+r_swords+oppDog+oppMale
+  [95] sZ2+leftGuard+eZ2+move_left+r_shortSwords+l_noShield+oppDog+oppMale
+  [96] r_noweapon+sZ2+leftGuard+eZ2+move_back+l_noShield+oppDog+oppMale
+  [97] sZ2+leftGuard+eZ2+move_forward+r_bluntWeapon+l_noShield+oppDog+oppMale

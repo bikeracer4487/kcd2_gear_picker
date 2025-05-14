@@ -1,0 +1,79 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ttac.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 30
+  String Data Size ...... 1440
+  Unique String Count ... 65
+  File Size ............. 5308
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ttac_woman_6
+  [1] trosecko_settlements_tachov_commonFolk_parcel01
+  [2] char_GENERIC_WOMAN_COMMONER_04
+  [3] ttac_dog_2
+  [4] trosecko_settlements_tachov_commonFolk_parcel04
+  [5] ttac_woman_5
+  [6] char_KOSTKARKA_JENOVEFA
+  [7] ttac_procek
+  [8] trosecko_settlements_tachov_tavern
+  [9] Merchants
+  [10] char_SEDLAK_PROCEK_TACHOV
+  [11] ttac_alsik
+  [12] char_PASACEK_ALSIK_TACHOV
+  [13] ttac_smolik
+  [14] trosecko_outskirts_herdsmen_tachov
+  [15] char_PASAK_SMOLIK
+  [16] ttac_man_5
+  [17] char_GENERIC_MAN_COMMONER_12
+  [18] ttac_man_2
+  [19] trosecko_settlements_tachov_commonFolk_parcel02
+  [20] char_GENERIC_MAN_COMMONER_03
+  [21] ttac_blacksmith
+  [22] trosecko_settlements_tachov_tradersAndCraftmen_blacksmith
+  [23] char_KOVAR_LORENC_Z_TACHOVA
+  [24] ttac_manka
+  [25] char_MANKA_TACHOV
+  [26] ttac_woman_2
+  [27] trosecko_settlements_tachov_commonFolk_parcel03
+  [28] char_GENERIC_WOMAN_COMMONER_07
+  [29] ttac_woman_3
+  [30] char_GENERIC_WOMAN_COMMONER_10
+  [31] ttac_woman_4
+  [32] char_GENERIC_WOMAN_COMMONER_11
+  [33] ttac_man_3
+  [34] char_GENERIC_MAN_COMMONER_02
+  [35] ttac_man_1
+  [36] char_ZDENEK_HUBA_PACHOLEK_HOSPODA_TACHOV
+  [37] ttac_vojka
+  [38] char_VOJKA_TACHOV
+  [39] ttac_woman_1
+  [40] char_KOVAROVA_ZENA_Z_TACHOVA
+  [41] ttac_man_4
+  [42] trosecko_settlements_tachov_tradersAndCraftmen_food
+  [43] char_GENERIC_MAN_MERCHANT_CZECH_06
+  [44] ttac_henik
+  [45] char_HENIK_TACHOV
+  [46] ttac_horse_1
+  [47] ttac_man_6
+  [48] char_OPILEC_MARES
+  [49] ttac_man_9
+  [50] trosecko_settlements_tachov_soldiers_militia
+  [51] Guards
+  [52] char_GENERIC_MAN_GUARD_18
+  [53] ttac_dog_3
+  [54] ttac_man_7
+  [55] char_GENERIC_MAN_COMMONER_10
+  [56] ttac_dog_4
+  [57] ttac_dog_1
+  [58] ttac_woman_7
+  [59] char_GENERIC_WOMAN_COMMONER_03
+  [60] ttac_man_11
+  [61] char_GENERIC_MAN_COMMONER_19
+  [62] ttac_man_10
+  [63] char_GENERIC_MAN_GUARD_12
+  [64] ttac_man_8

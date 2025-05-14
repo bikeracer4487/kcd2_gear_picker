@@ -1,0 +1,52 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kubaParalu.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 19
+  String Data Size ...... 1003
+  Unique String Count ... 38
+  File Size ............. 3463
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kubaParalu_extras_5
+  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [2] char_GENERIC_WOMAN_COMMONER_11
+  [3] kubaParalu_extras_1
+  [4] char_GENERIC_MAN_COMMONER_15
+  [5] kubaParalu_extrasCorner_1
+  [6] kutnohorsko_allies_newBuddies_kubaParaluExtras
+  [7] char_GENERIC_MAN_COMMONER_20
+  [8] kubaParalu_extrasRight_1
+  [9] char_GENERIC_MAN_COMMONER_24
+  [10] kubaParalu_extrasCenterMale
+  [11] char_GENERIC_MAN_COMMONER_01
+  [12] kubaParalu_deadAlenka
+  [13] deadBodies
+  [14] kubaParalu_extrasLeft_F
+  [15] char_GENERIC_WOMAN_COMMONER_07
+  [16] kubaParalu_extrasRight_2
+  [17] char_GENERIC_MAN_COMMONER_23
+  [18] kubaParalu_witness
+  [19] char_SVEDEK_KUBA_PARALU
+  [20] kubaParalu_extrasCorner_2
+  [21] char_GENERIC_MAN_COMMONER_25
+  [22] kubaParalu_extrasLeft_M
+  [23] char_GENERIC_MAN_COMMONER_18
+  [24] kubaParalu_extrasCenterFemale
+  [25] char_GENERIC_WOMAN_COMMONER_04
+  [26] kubaParalu_extrasTower_1
+  [27] char_GENERIC_MAN_COMMONER_06
+  [28] kubaParalu_extras_3
+  [29] char_GENERIC_MAN_COMMONER_02
+  [30] kubaParalu_extras_4
+  [31] char_GENERIC_WOMAN_COMMONER_02
+  [32] kubaParalu_extras_2
+  [33] char_GENERIC_MAN_COMMONER_03
+  [34] kubaParalu_murderer
+  [35] char_VRAH
+  [36] kubaParalu_extrasTower_3
+  [37] kubaParalu_extrasTower_2

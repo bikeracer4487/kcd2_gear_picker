@@ -1,0 +1,98 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/armor_archetype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2177762764
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 84
+  String Data Size ...... 1769
+  Unique String Count ... 84
+  File Size ............. 3141
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] BodyPlateCuirassDoubleLong
+  [1] BodyPlateCuirassFrontShort
+  [2] BodyPlateCuirassFrontLong
+  [3] BodyPlateCuirassDoubleShort
+  [4] BodyPlateCuirassFullShort
+  [5] BodyPlateCuirassFullLong
+  [6] BodyPlateCuirassFullLong_longSleeves
+  [7] BodyPlateCuirassFullLong_shortSleeves
+  [8] BodyChainVestShort
+  [9] BodyChainShirt_shortSleeves
+  [10] BodyChainShirt_longSleeves
+  [11] BodyChainVestLong
+  [12] BodyChainShirtLong_shortSleeves
+  [13] BodyChainShirtLong_longSleeves
+  [14] BodyChainOverall_noSleeves
+  [15] BodyChainOverall_longSleeves
+  [16] BodyClothShirt_noSleeves
+  [17] BodyClothShirt_shortSleeves
+  [18] BodyClothShirt_longSleeves
+  [19] BodyClothShirtLong_noSleeves
+  [20] BodyClothShirtLong_shortSleeves
+  [21] BodyClothShirtLong_longSleeves
+  [22] ArmsPlateShoulderGuards
+  [23] ArmsPlateBackGuardsShort
+  [24] ArmsPlateFullGuardsShort
+  [25] ArmsPlateFullGuardsLong
+  [26] ArmsPlateCombinedLong
+  [27] ArmsPlateBackGuardsLong
+  [28] ArmsPlateForearmBack
+  [29] ArmsPlateForearmFull
+  [30] HeadClothCap
+  [31] HeadClothFullMask
+  [32] HeadChainCap
+  [33] HeadPlateHatSmall
+  [34] HeadPlateHatBig
+  [35] HeadPlateHelmOpen
+  [36] HeadPlateHelmOpen_collar
+  [37] HeadPlateHelmFull
+  [38] HeadPlateHelmFull_collar
+  [39] HandsGloves
+  [40] HandsGlovesPlate_toBeDeleted
+  [41] LegsClothTrousersLong
+  [42] LegsClothTrousersShort
+  [43] LegsPlateProtsUpperFront
+  [44] LegsPlateProtsUpperFull
+  [45] LegsPlateProtsLowerFront
+  [46] LegsPlateProtsLowerFull
+  [47] LegsPlateProtsLongFront
+  [48] LegsPlateProtsLongFull
+  [49] LegsPlateProtsLongFront_withFeet
+  [50] LegsPlateProtsLongFull_withFeet
+  [51] Coat_noSleeves
+  [52] HorseTrappingsFull
+  [53] HorseSaddle
+  [54] HorseArmorHeadNeck
+  [55] HorseBridle
+  [56] Tmp_HoodOn
+  [57] Tmp_HoodDown
+  [58] Ring
+  [59] Spur
+  [60] Necklace
+  [61] Coat
+  [62] ArmsPlateFullBack_withShoulders
+  [63] ArmsPlateFullComplete_withShoulders
+  [64] BodyDecorShirtLong_shortSleeves
+  [65] HorseShoe
+  [66] HeadChainCap_collarOnly
+  [67] HeadChainCap_withCollar
+  [68] HeadClothCap_withCollar
+  [69] BodyDecorLong_noSleeves
+  [70] BodyDecorUltraLong_noSleeves
+  [71] Robe_cape
+  [72] Collar
+  [73] HoodOn
+  [74] HoodDown
+  [75] Boots
+  [76] BootsAnkle
+  [77] BootsKnee
+  [78] _UberlodPlaceholder
+  [79] Coat_Bergov
+  [80] Belt
+  [81] Pouch
+  [82] CattlePaint
+  [83] LegsClothTrousersLong_withFeet

@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__hromovyKamen.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 232
+  Unique String Count ... 8
+  File Size ............. 644
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] hromovyKamen_bandit_1
+  [1] kutnohorsko_enemies_bandits_hromovyKamenSoldiersCamp
+  [2] Bandits
+  [3] char_VOJAK_ONDREJ_BERANI_HLAVA_BANDA
+  [4] hromovyKamen_bandit_2
+  [5] char_VOJAK_ONDREJ_BERANI_HLAVA_BANDA_2
+  [6] hromovyKamen_banditLeader
+  [7] char_ONDREJ_BERANI_HLAVA

@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/weapon_attachment_slot.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 190512950
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 165
+  Unique String Count ... 11
+  File Size ............. 457
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] nothing
+  [1] weapon_holster_left
+  [2] weapon_holster_right
+  [3] weapon_quiver
+  [4] weapon_bow
+  [5] weapon_crossbow
+  [6] weapon_shield
+  [7] weapon_quiver_ammo
+  [8] scabbard_left
+  [9] weapon_dagger
+  [10] weapon_cannon

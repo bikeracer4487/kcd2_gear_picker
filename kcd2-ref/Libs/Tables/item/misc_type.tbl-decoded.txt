@@ -1,0 +1,20 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/misc_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2598604564
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 6
+  String Data Size ...... 50
+  Unique String Count ... 6
+  File Size ............. 174
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] skin
+  [1] ear
+  [2] carryable_item
+  [3] usable
+  [4] common
+  [5] broken_ammo

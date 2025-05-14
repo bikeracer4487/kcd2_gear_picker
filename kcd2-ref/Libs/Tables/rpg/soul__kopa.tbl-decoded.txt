@@ -1,0 +1,88 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kopa.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 53
+  String Data Size ...... 1350
+  Unique String Count ... 74
+  File Size ............. 8162
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kopa_dog_1
+  [1] kutnohorsko_outskirts_gamekeepers_opatovicko
+  [2] kopa_bohunek
+  [3] Merchants
+  [4] char_HAJNY_BOHUNEK_DOLANSKO
+  [5] kopa_man_16
+  [6] kutnohorsko_enemies_bandits_campOpatovicko
+  [7] Bandits
+  [8] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [9] kopa_man_24
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [11] kopa_man_40
+  [12] kopa_man_18
+  [13] kopa_poacher_4
+  [14] kutnohorsko_enemies_poachers_campOpatovicko
+  [15] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [16] kopa_man_10
+  [17] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [18] kopa_man_28
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [20] kopa_man_13
+  [21] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [22] kopa_zikmundSoldier_1
+  [23] kutnohorsko_enemies_lovSPtackemZikmundSoldiers
+  [24] kopa_man_21
+  [25] kopa_poacher_1
+  [26] kopa_zikmundSoldier_2
+  [27] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [28] kopa_man_3
+  [29] kopa_man_2
+  [30] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [31] kopa_man_38
+  [32] Guards
+  [33] char_GENERIC_MAN_GAMEKEEPER_03
+  [34] kopa_man_17
+  [35] kopa_horse_1
+  [36] kopa_man_26
+  [37] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [38] kopa_zikmundSoldier_3
+  [39] kopa_man_8
+  [40] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [41] kopa_man_4
+  [42] kopa_poacher_3
+  [43] kopa_man_37
+  [44] kopa_man_31
+  [45] kopa_zikmundSoldier_5
+  [46] kopa_man_29
+  [47] kopa_man_33
+  [48] kopa_man_11
+  [49] kopa_man_19
+  [50] kopa_man_9
+  [51] kopa_man_6
+  [52] kopa_poacher_2
+  [53] kopa_zikmundSoldier_4
+  [54] kopa_man_7
+  [55] kopa_man_5
+  [56] kopa_man_12
+  [57] kopa_man_27
+  [58] kopa_man_23
+  [59] kopa_man_15
+  [60] kopa_man_35
+  [61] kopa_man_36
+  [62] kopa_man_39
+  [63] kutnohorsko_settlements_opatovicko
+  [64] char_GENERIC_MAN_COMMONER_13
+  [65] kopa_poacher_5
+  [66] kopa_man_34
+  [67] kopa_man_32
+  [68] kopa_man_14
+  [69] kopa_man_30
+  [70] kopa_man_20
+  [71] kopa_man_1
+  [72] kopa_man_22
+  [73] kopa_man_25

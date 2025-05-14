@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/ai_variable_form.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 330793252
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 46
+  Unique String Count ... 4
+  File Size ............. 138
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] single
+  [1] indexed
+  [2] associative
+  [3] custom_associative

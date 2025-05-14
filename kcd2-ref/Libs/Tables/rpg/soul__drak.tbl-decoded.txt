@@ -1,0 +1,39 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__drak.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 12
+  String Data Size ...... 652
+  Unique String Count ... 25
+  File Size ............. 2216
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] drak_alchemist
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tradersAndCraftmans_drakApothecary_bodyguards
+  [2] char_ALCHYMISTA_LEOPOLD
+  [3] drak_alchemistBodyguard1
+  [4] char_BOUCHAC
+  [5] drak_zikmund_soldier3
+  [6] kutnohorsko_settlements_kutnaHora_soldiers_drak
+  [7] char_GENERIC_MAN_SOLDIER_27
+  [8] drak_zikmund_soldier2
+  [9] char_GENERIC_MAN_SOLDIER_14
+  [10] drak_zikmund_soldier1
+  [11] char_GENERIC_MAN_SOLDIER_32
+  [12] drak_gerhart
+  [13] kutnohorsko_settlements_zikmundovo_soldiers_prague
+  [14] char_GERHART
+  [15] drak_alchemistBodyguard3
+  [16] char_BOUCHAC_3
+  [17] drak_zikmund_soldierLeader
+  [18] char_VELITEL_DRACIHO_ODDILU
+  [19] drak_alchemistBodyguard2
+  [20] char_BOUCHAC_2
+  [21] drak_gerhart_horse
+  [22] placeholder_ptacek_horse
+  [23] test_npcs
+  [24] drak_AlchemistHorse

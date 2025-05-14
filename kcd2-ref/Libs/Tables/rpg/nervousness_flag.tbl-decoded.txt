@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/nervousness_flag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4260945323
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 20
+  String Data Size ...... 534
+  Unique String Count ... 33
+  File Size ............. 882
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] alerted
+  [1] [0.9;inf)
+  [2] animals_dog_heardSoundGoAnnoyance
+  [3] [0.8;inf)
+  [4] animals_dog_lookAround_searchThreshold
+  [5] [0.4;inf)
+  [6] animals_dog_runSpeed
+  [7] [0.3;inf)
+  [8] animals_dog_sprintSpeed
+  [9] [0.6;inf)
+  [10] animals_domestic_annoyanceThreshold
+  [11] animals_domestic_escapeThreshold
+  [12] animals_domestic_repositionThreshold
+  [13] animals_wild_annoyanceThreshold
+  [14] animals_wild_escapeThreshold
+  [15] any
+  [16] (-inf;inf)
+  [17] crime_investigateSound
+  [18] [0.06;inf)
+  [19] crime_investigateSound_courageous
+  [20] [0.03;inf)
+  [21] high
+  [22] [0.6;0.9)
+  [23] highToInf
+  [24] low
+  [25] [0;0.3)
+  [26] lowToInf
+  [27] (0;inf)
+  [28] mid
+  [29] [0.3;0.6)
+  [30] midToInf
+  [31] noNervousness
+  [32] [0;0]

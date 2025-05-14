@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_guard_stance.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2090580258
+  Layout Hash ........... 444951957
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 64
+  Unique String Count ... 7
+  File Size ............. 188
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] none
+  [1] left
+  [2] leftGuard
+  [3] oppLeftGuard
+  [4] right
+  [5] rightGuard
+  [6] oppRightGuard

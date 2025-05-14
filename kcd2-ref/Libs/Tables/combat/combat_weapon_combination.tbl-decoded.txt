@@ -1,0 +1,32 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_weapon_combination.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1948008779
+  Layout Hash ........... 3831205101
+  Table Version ......... 1
+  Line Count ............ 18
+  String Data Size ...... 201
+  Unique String Count ... 18
+  File Size ............. 949
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] ?-?
+  [1] blunt
+  [2] bluntWithoutTorch
+  [3] blunt+shield
+  [4] blunt+torch
+  [5] halberd
+  [6] longsword
+  [7] shortsword
+  [8] stick
+  [9] stick+shield
+  [10] stick+torch
+  [11] sword
+  [12] sword+shield
+  [13] sword+torch
+  [14] swords
+  [15] swordsWithoutTorch
+  [16] shortswordWithoutTorch
+  [17] unarmed

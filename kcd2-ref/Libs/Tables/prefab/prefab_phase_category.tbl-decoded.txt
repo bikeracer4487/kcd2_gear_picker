@@ -1,0 +1,30 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/prefab/prefab_phase_category.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 382183268
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 16
+  String Data Size ...... 320
+  Unique String Count ... 16
+  File Size ............. 604
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] fireplace_burning
+  [1] bowls_pile
+  [2] fireplace_chimneySmoke
+  [3] torch
+  [4] fireplace_steam
+  [5] fireplace_cauldron_home
+  [6] fireplace_cauldron_camp
+  [7] bowls_pile_normal_goulash
+  [8] bowls_pile_normal_lentil
+  [9] bowls_pile_normal_soup
+  [10] bowls_pile_tin_goulash
+  [11] bowls_pile_tin_lentil
+  [12] bowls_pile_tin_soup
+  [13] torch_special
+  [14] fireplace_windowSmoke
+  [15] fireplace_burning_camp

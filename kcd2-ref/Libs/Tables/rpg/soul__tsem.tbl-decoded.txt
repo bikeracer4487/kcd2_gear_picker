@@ -1,0 +1,152 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tsem.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 66
+  String Data Size ...... 3036
+  Unique String Count ... 138
+  File Size ............. 11512
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tsem_horse_7
+  [1] trosecko_settlements_semin_commonFolk_peasants_parcel01
+  [2] tsem_sukHorse
+  [3] trosecko_settlements_semin_nobility_commanders
+  [4] char_ZALUD
+  [5] tsem_horse_4
+  [6] trosecko_settlements_semin_commonFolk_peasants_parcel04
+  [7] tsem_man_8
+  [8] trosecko_settlements_semin_soldiers_guards
+  [9] Guards
+  [10] char_SEMINSKY_ZBROJNOS_4
+  [11] tsem_man_21
+  [12] char_GENERIC_MAN_COMMONER_03
+  [13] tsem_woman_7
+  [14] trosecko_settlements_semin_commonFolk_peasants_parcel02
+  [15] char_GENERIC_WOMAN_COMMONER_07
+  [16] tsem_man_10
+  [17] trosecko_settlements_semin_commonFolk_peasants_studFarm
+  [18] char_GENERIC_MAN_COMMONER_07
+  [19] tsem_women_9
+  [20] trosecko_settlements_semin_commonFolk_peasants_parcel03
+  [21] char_GENERIC_WOMAN_COMMONER_08
+  [22] tsem_man_16
+  [23] trosecko_settlements_semin_commonFolk_tradersAndCraftmans_saddler
+  [24] Merchants
+  [25] char_GENERIC_MAN_MERCHANT_CZECH_03
+  [26] tsem_seminsr
+  [27] trosecko_settlements_semin_nobility_lordsOfSemin
+  [28] char_JAN_SEMIN
+  [29] tsem_woman_11
+  [30] trosecko_settlements_semin_commonFolk_tradersAndCraftmans_food
+  [31] char_GENERIC_WOMAN_COMMONER_09
+  [32] tsem_man_11
+  [33] char_GENERIC_MAN_COMMONER_23
+  [34] tsem_man_1
+  [35] char_GENERIC_MAN_COMMONER_14
+  [36] tsem_woman_1
+  [37] char_KUCHARKA_SEMIN
+  [38] tsem_woman_10
+  [39] char_GENERIC_WOMAN_COMMONER_01
+  [40] tsem_man_15
+  [41] trosecko_settlements_semin_commonFolk_tradersAndCraftmans_horsetrader
+  [42] char_PODKONI_SEMIN
+  [43] tsem_bohussMother
+  [44] trosecko_settlements_semin_commonFolk_peasants_parcel05
+  [45] char_BOHUSOVA_MATKA
+  [46] tsem_woman_8
+  [47] char_GENERIC_WOMAN_COMMONER_03
+  [48] tsem_man_18
+  [49] char_GENERIC_MAN_COMMONER_11
+  [50] tsem_man_17
+  [51] char_SEDLAK_SLAVEK_SEMIN
+  [52] tsem_man_22
+  [53] trosecko_settlements_semin_commonFolk_peasants_parcel06
+  [54] char_GENERIC_MAN_COMMONER_09
+  [55] tsem_man_20
+  [56] char_GENERIC_MAN_COMMONER_21
+  [57] tsem_woman_12
+  [58] char_GENERIC_WOMAN_MERCHANT_CZECH_02
+  [59] tsem_woman_3
+  [60] char_GENERIC_WOMAN_COMMONER_12
+  [61] tsem_seminjr
+  [62] char_SEMIN_JUNIOR
+  [63] tsem_man_14
+  [64] char_VELITEL_STRAZE_SEMIN
+  [65] tsem_woman_2
+  [66] char_MYSKA
+  [67] tsem_bohus
+  [68] trosecko_outskirts_apolenaHideout
+  [69] char_BOHUS
+  [70] tsem_man_6
+  [71] char_SEMINSKY_ZBROJNOS_2
+  [72] tsem_man_5
+  [73] char_SEMINSKY_ZBROJNOS_1
+  [74] tsem_woman_13
+  [75] char_GENERIC_WOMAN_COMMONER_04
+  [76] tsem_nechuta
+  [77] trosecko_outskirts_herdsmen_semin
+  [78] char_NECHUTA
+  [79] tsem_man_7
+  [80] char_SEMINSKY_ZBROJNOS_3
+  [81] tsem_man_9
+  [82] char_SEMINSKY_ZBROJNOS_5
+  [83] tsem_woman_4
+  [84] char_VLADENA_ZE_SEMINA
+  [85] tsem_man_19
+  [86] char_GENERIC_MAN_GUARD_14
+  [87] tsem_suk
+  [88] char_HEJTMAN_SUK
+  [89] tsem_woman_5
+  [90] char_GENERIC_WOMAN_COMMONER_11
+  [91] tsem_man_4
+  [92] trosecko_settlements_semin_soldiers_militia
+  [93] char_PONOCNY_ZE_SEMINA
+  [94] tsem_man_12
+  [95] char_GENERIC_MAN_COMMONER_19
+  [96] tsem_man_2
+  [97] char_TOVARYS_JANEK
+  [98] tsem_woman_14
+  [99] char_GENERIC_WOMAN_COMMONER_06
+  [100] tsem_sedivka
+  [101] char_KUN_SEDIVKA
+  [102] tsem_man_3
+  [103] char_GENERIC_MAN_COMMONER_15
+  [104] tsem_woman_6
+  [105] char_GENERIC_WOMAN_COMMONER_10
+  [106] tsem_dog_1
+  [107] tsem_seminsrHorse
+  [108] char_JARMILKA
+  [109] tsem_horseForSale_3
+  [110] char_KUN_PRODEJNI_SEMIN_3
+  [111] tsem_hanusHorse
+  [112] players_friends_hanus
+  [113] tsem_horseForSale_1
+  [114] char_KUN_PRODEJNI_SEMIN_1
+  [115] tsem_man_24
+  [116] char_GENERIC_MAN_COMMONER_08
+  [117] tsem_dog_5
+  [118] tsem_dog_4
+  [119] animal_wild_enemy_trosecko
+  [120] tsem_racekHorse
+  [121] players_friends_racek
+  [122] tsem_horse_2
+  [123] Dog1
+  [124] tsem_dog_3
+  [125] tsem_dog_2
+  [126] tsem_horse_1
+  [127] tsem_horse_6
+  [128] tsem_racek
+  [129] char_RACEK_KOBYLA
+  [130] tsem_horse_3
+  [131] tsem_hanus
+  [132] char_HANUS_Z_LIPE
+  [133] tsem_horseForSale_2
+  [134] char_KUN_PRODEJNI_SEMIN_2
+  [135] tsem_man_23
+  [136] char_GENERIC_MAN_GUARD_03
+  [137] tsem_horse_5

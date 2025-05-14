@@ -1,0 +1,109 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2412228184
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 95
+  String Data Size ...... 1582
+  Unique String Count ... 95
+  File Size ............. 3130
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] invalid
+  [1] hitMovement
+  [2] blockMoveBack
+  [3] blockStepBack
+  [4] attack
+  [5] leap
+  [6] movement
+  [7] block
+  [8] hitTorso
+  [9] hitBlockBroken
+  [10] hitBlockWeapon
+  [11] guardIdleUpperBody
+  [12] guardPreBlock
+  [13] guardAttackStart
+  [14] perfectBlock
+  [15] failedAttackOnPB
+  [16] syncAttack
+  [17] syncHit
+  [18] comboAttack
+  [19] comboHit
+  [20] guardSyncMovementMaster
+  [21] guardSyncMovementSlave
+  [22] syncPerfectBlock
+  [23] syncPerfectBlockHit
+  [24] dodge
+  [25] freeAttack
+  [26] failedAttackOnBlock
+  [27] stealthAttackSuccess
+  [28] stealthHitSuccess
+  [29] attackRiposte
+  [30] syncTransitionMaster
+  [31] syncTransitionSlave
+  [32] guardStartSyncMovementMaster
+  [33] guardStartSyncMovementSlave
+  [34] freeRiderAttackStatic
+  [35] freeRiderAttack
+  [36] riderGuardIdle
+  [37] riderGuardMovement
+  [38] riderGuardJumpStart
+  [39] riderGuardJump
+  [40] riderGuardJumpEnd
+  [41] riderGuardMove2Idle
+  [42] riderGuardIdle2Move
+  [43] riderGuardRear
+  [44] riderGuardFastStop
+  [45] horsePullDownAttackSuccess
+  [46] horsePullDownHitSuccess
+  [47] mercyAttack
+  [48] huntAttackMaster
+  [49] huntAttackSlave
+  [50] masterStrike
+  [51] masterStrikeHit
+  [52] guardVariationLoop
+  [53] guardVariation
+  [54] attackSpecial
+  [55] syncRiposte
+  [56] syncRiposteHit
+  [57] masterStrikeDeath
+  [58] masterStrikeHitDeath
+  [59] comboAttackDeath
+  [60] comboHitDeath
+  [61] guardFreeBlock
+  [62] horsePullDownAttackFail
+  [63] horsePullDownHitFail
+  [64] syncAttackDeath
+  [65] syncHitDeath
+  [66] clenchedHand
+  [67] stealthTransitionMaster
+  [68] stealthTransitionSlave
+  [69] syncRiposteDeath
+  [70] syncRiposteHitDeath
+  [71] guardPose
+  [72] riderGuardForcedRear
+  [73] huntAttackDeathMaster
+  [74] huntAttackDeathSlave
+  [75] groupFreeAttack
+  [76] groupRiderAttack
+  [77] groupPerfectBlock
+  [78] groupStaticAttack
+  [79] groupMeleeAttack
+  [80] groupRiderMovement
+  [81] groupAttack
+  [82] groupBlock
+  [83] groupHit
+  [84] groupSyncPerfectBlock
+  [85] groupGuardVar
+  [86] groupMasterStrike
+  [87] groupMasterStrikeHit
+  [88] groupComboAttack
+  [89] groupComboHit
+  [90] groupSyncAttack
+  [91] groupSyncHit
+  [92] groupMeleeAttackDuringComboSlot
+  [93] groupHuntAttackMaster
+  [94] groupHuntAttackSlave

@@ -1,0 +1,35 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/buff_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4221948068
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 21
+  String Data Size ...... 242
+  Unique String Count ... 21
+  File Size ............. 606
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Testing Stat Buff
+  [1] System Buff
+  [2] Weapon Skill Buff
+  [3] Testing Combat Buff
+  [4] Perk Buff
+  [5] Injury
+  [6] Heal
+  [7] Poison
+  [8] Perception
+  [9] Overeat
+  [10] Alcohol
+  [11] Item Buff
+  [12] Potion
+  [13] Food Poison
+  [14] Script System
+  [15] Unconsciousness
+  [16] Hangover
+  [17] Satisfaction
+  [18] Perfume
+  [19] Punishment
+  [20] ForcedDrunkenness

@@ -1,0 +1,16 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ztracenyTovarys.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 105
+  Unique String Count ... 2
+  File Size ............. 261
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ztracenyTovarys_pusko
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tradersAndCraftmans_chmelna01Gunsmith

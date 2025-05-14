@@ -1,0 +1,76 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zachranaPtacka.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 31
+  String Data Size ...... 1784
+  Unique String Count ... 62
+  File Size ............. 5780
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zachranaPtacka_horse_3
+  [1] kutnohorsko_settlements_malesov_civilians_zachranaPtacka
+  [2] zachranaPtacka_soldier_1
+  [3] kutnohorsko_settlements_malesov_soldiers_zachranaPtacka
+  [4] Guards
+  [5] char_KONRAD_KAPITAN_MALESOVSKYCH_STRAZI
+  [6] zachranaPtacka_vavakHenchman_4
+  [7] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_hradecka_parcel02_bodyguards
+  [8] char_VAVAKOVA_GORILA_4
+  [9] zachranaPtacka_man_1
+  [10] char_PACHOLEK_VITEK_MALESOVSKY_HRAD
+  [11] zachranaPtacka_vavakHenchman_9
+  [12] char_VAVAKOVA_GORILA_5
+  [13] zachranaPtacka_vavakHenchman_5
+  [14] kmal_horseBrabantNoname
+  [15] kmal_horseCaponKutnohorsko
+  [16] players_friends_ptacek
+  [17] char_KUN_PTACKUV_TRETI
+  [18] zachranaPtacka_woman_3
+  [19] char_GENERIC_WOMAN_COMMONER_08
+  [20] zachranaPtacka_soldier_4
+  [21] char_LIPOLD_MALESOVSKY_VOJAK
+  [22] zachranaPtacka_vavakHenchman_2
+  [23] char_VAVAKOVA_GORILA_2
+  [24] zachranaPtacka_man_2
+  [25] char_GENERIC_MAN_COMMONER_13
+  [26] zachranaPtacka_woman_1
+  [27] char_PANI_OFKA
+  [28] zachranaPtacka_vavakHenchman_7
+  [29] char_VAVAKOVA_GORILA_3
+  [30] zachranaPtacka_soldier_10
+  [31] char_DEPOLT_MALESOVSKY_VOJAK
+  [32] zachranaPtacka_soldier_3
+  [33] char_FRANZ_MALESOVSKY_VOJAK
+  [34] zachranaPtacka_vavakHenchman_3
+  [35] zachranaPtacka_ruthardGuard
+  [36] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vlasska_parcel11_bodyguards
+  [37] char_RUTHARDOVSKA_STRAZ
+  [38] zachranaPtacka_woman_2
+  [39] char_DRAHOMIRA_KUCHYRKA_MALESOV
+  [40] zachranaPtacka_soldier_7
+  [41] char_NEPLACH_MALESOVSKY_VOJAK
+  [42] zachranaPtacka_soldier_6
+  [43] char_VALKOUN_MALESOVSKY_VOJAK
+  [44] zachranaPtacka_soldier_11
+  [45] char_STOJAN_MALESOVSKY_VOJAK
+  [46] zachranaPtacka_soldier_5
+  [47] char_HEIMANN_MALESOVSKY_VOJAK
+  [48] zachranaPtacka_soldier_8
+  [49] char_DETRICH_MALESOVSKY_VOJAK
+  [50] zachranaPtacka_soldier_9
+  [51] char_LACHOUT_MALESOVSKY_VOJAK
+  [52] zachranaPtacka_dog
+  [53] animal_home
+  [54] zachranaPtacka_slaughteredDog
+  [55] deadBodies
+  [56] zachranaPtacka_soldier_2
+  [57] char_KARL_MALESOVSKY_VOJAK
+  [58] zachranaPtacka_vavakHenchman_1
+  [59] char_VAVAKOVA_GORILA
+  [60] zachranaPtacka_vavakHenchman_8
+  [61] zachranaPtacka_vavakHenchman_6

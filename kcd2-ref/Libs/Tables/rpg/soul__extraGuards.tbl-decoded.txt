@@ -1,0 +1,74 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__extraGuards.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 44
+  String Data Size ...... 2069
+  Unique String Count ... 60
+  File Size ............. 7729
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] extraGuards_trosky_soldiers_guards_7
+  [1] trosecko_settlements_trosky_soldiers_guards
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_13
+  [4] extraGuards_trosky_soldiers_guards_6
+  [5] char_GENERIC_MAN_GUARD_02
+  [6] extraGuards_kutnaHora_soldiers_guards_7
+  [7] kutnohorsko_settlements_kutnaHora_soldiers_guards
+  [8] extraGuards_troskovice_soldiers_guards_3
+  [9] trosecko_settlements_troskovice_soldiers_guards
+  [10] extraGuards_trosky_soldiers_guards_2
+  [11] char_GENERIC_MAN_GUARD_16
+  [12] extraGuards_troskovice_soldiers_guards_1
+  [13] extraGuards_dummy_5
+  [14] extraGuards_kutnaHora_soldiers_guards_8
+  [15] char_GENERIC_MAN_GUARD_18
+  [16] extraGuards_kutnaHora_soldiers_guards_6
+  [17] char_GENERIC_MAN_GUARD_05
+  [18] extraGuards_malesov_soldiers_guards_4
+  [19] kutnohorsko_settlements_malesov_soldiers_closedCastle
+  [20] extraGuards_troskovice_soldiers_guards_4
+  [21] extraGuards_kutnaHora_soldiers_guards_9
+  [22] char_GENERIC_MAN_GUARD_15
+  [23] extraGuards_dummy_6
+  [24] char_GENERIC_MAN_GUARD_08
+  [25] extraGuards_pritoky_soldiers_guards_5
+  [26] kutnohorsko_settlements_pritoky_soldiers_guards
+  [27] extraGuards_malesov_soldiers_guards_5
+  [28] char_GENERIC_MAN_GUARD_14
+  [29] extraGuards_dummy_1
+  [30] extraGuards_kutnaHora_soldiers_guards_10
+  [31] char_GENERIC_MAN_GUARD_12
+  [32] extraGuards_dummy_3
+  [33] extraGuards_trosky_soldiers_guards_5
+  [34] extraGuards_trosky_soldiers_guards_1
+  [35] extraGuards_pritoky_soldiers_guards_3
+  [36] extraGuards_pritoky_soldiers_guards_1
+  [37] char_GENERIC_MAN_GUARD_03
+  [38] extraGuards_kutnaHora_soldiers_guards_5
+  [39] extraGuards_kutnaHora_soldiers_guards_2
+  [40] extraGuards_kutnaHora_soldiers_guards_4
+  [41] extraGuards_dummy_7
+  [42] extraGuards_malesov_soldiers_guards_3
+  [43] extraGuards_troskovice_soldiers_guards_6
+  [44] extraGuards_troskovice_soldiers_guards_2
+  [45] extraGuards_trosky_soldiers_guards_3
+  [46] extraGuards_dummy_8
+  [47] extraGuards_dummy_4
+  [48] extraGuards_trosky_soldiers_guards_10
+  [49] extraGuards_kutnaHora_soldiers_guards_1
+  [50] extraGuards_trosky_soldiers_guards_4
+  [51] extraGuards_trosky_soldiers_guards_9
+  [52] extraGuards_trosky_soldiers_guards_8
+  [53] extraGuards_malesov_soldiers_guards_2
+  [54] extraGuards_pritoky_soldiers_guards_4
+  [55] extraGuards_malesov_soldiers_guards_1
+  [56] extraGuards_kutnaHora_soldiers_guards_3
+  [57] extraGuards_pritoky_soldiers_guards_2
+  [58] extraGuards_dummy_2
+  [59] extraGuards_troskovice_soldiers_guards_5

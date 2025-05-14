@@ -1,0 +1,43 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/item_category.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4252053668
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 29
+  String Data Size ...... 288
+  Unique String Count ... 29
+  File Size ............. 780
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] misc
+  [1] melee_weapon
+  [2] missile_weapon
+  [3] ammo
+  [4] armor
+  [5] food
+  [6] money
+  [7] dice_badge
+  [8] document
+  [9] crafting_material
+  [10] herb
+  [11] alchemy_base
+  [12] npc_tool
+  [13] ointment_item
+  [14] poison
+  [15] die
+  [16] helmet
+  [17] key
+  [18] keyring
+  [19] quick_slot_container
+  [20] item
+  [21] pickable_item
+  [22] divisible_item
+  [23] weapon_equip
+  [24] player_item
+  [25] equippable_item
+  [26] weapon
+  [27] consumable_item
+  [28] hood

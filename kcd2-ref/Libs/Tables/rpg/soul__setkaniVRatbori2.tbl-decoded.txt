@@ -1,0 +1,96 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__setkaniVRatbori2.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 52
+  String Data Size ...... 2739
+  Unique String Count ... 82
+  File Size ............. 9423
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] setkaniVRatbori2_ochoz_soldier2
+  [1] kutnohorsko_enemies_setkaniVRatbori2Attackers
+  [2] char_GENERIC_MAN_SOLDIER_15
+  [3] setkaniVRatbori2_court_friend_soldier_2
+  [4] kutnohorsko_settlements_ratboricko_soldiers_militia
+  [5] char_GENERIC_MAN_COMMONER_15
+  [6] setkaniVRatbori2_ochoz_soldier3
+  [7] char_GENERIC_MAN_SOLDIER_32
+  [8] setkaniVRatbori2_ochoz_soldier7
+  [9] char_GENERIC_MAN_SOLDIER_30
+  [10] setkaniVRatbori2_upstairs_enemy_soldier_9
+  [11] char_GENERIC_MAN_SOLDIER_05
+  [12] setkaniVRatbori2_court_enemy_soldier_10
+  [13] char_GENERIC_MAN_SOLDIER_27
+  [14] setkaniVRatbori2_ochoz_soldier8
+  [15] char_GENERIC_MAN_SOLDIER_38
+  [16] setkaniVRatbori2_ochoz_soldier9
+  [17] setkaniVRatbori2_court_enemy_soldier_1
+  [18] char_GENERIC_MAN_SOLDIER_17
+  [19] setkaniVRatbori2_court_enemy_soldier_13
+  [20] char_GENERIC_MAN_SOLDIER_06
+  [21] setkaniVRatbori2_ochoz_soldier4
+  [22] char_GENERIC_MAN_SOLDIER_28
+  [23] setkaniVRatbori2_court_enemy_soldier_9
+  [24] char_GENERIC_MAN_SOLDIER_12
+  [25] setkaniVRatbori2_posily_7
+  [26] char_GENERIC_MAN_SOLDIER_23
+  [27] setkaniVRatbori2_upstairs_enemy_soldier_10
+  [28] setkaniVRatbori2_upstairs_enemy_soldier_3
+  [29] char_GENERIC_MAN_SOLDIER_08
+  [30] setkaniVRatbori2_ochoz_soldier
+  [31] char_GENERIC_MAN_SOLDIER_01
+  [32] setkaniVRatbori2_court_enemy_soldier_16
+  [33] char_GENERIC_MAN_SOLDIER_20
+  [34] setkaniVRatbori2_court_friend_soldier_1
+  [35] char_GENERIC_MAN_COMMONER_09
+  [36] setkaniVRatbori2_court_friend_soldier_3
+  [37] char_GENERIC_MAN_COMMONER_26
+  [38] setkaniVRatbori2_ochoz_leader
+  [39] setkaniVRatbori2_upstairs_enemy_soldier_8
+  [40] char_GENERIC_MAN_SOLDIER_31
+  [41] setkaniVRatbori2_upstairs_enemy_soldier_4
+  [42] char_GENERIC_MAN_SOLDIER_10
+  [43] setkaniVRatbori2_court_enemy_soldier_4
+  [44] setkaniVRatbori2_posily_8
+  [45] setkaniVRatbori2_posily_3
+  [46] char_GENERIC_MAN_SOLDIER_22
+  [47] setkaniVRatbori2_posily_5
+  [48] char_GENERIC_MAN_SOLDIER_21
+  [49] setkaniVRatbori2_court_enemy_soldier_3
+  [50] char_GENERIC_MAN_SOLDIER_13
+  [51] setkaniVRatbori2_court_enemy_soldier_15
+  [52] setkaniVRatbori2_ochoz_soldier5
+  [53] char_GENERIC_MAN_SOLDIER_25
+  [54] setkaniVRatbori2_posily_10
+  [55] char_GENERIC_MAN_SOLDIER_26
+  [56] setkaniVRatbori2_upstairs_enemy_soldier_7
+  [57] char_GENERIC_MAN_SOLDIER_03
+  [58] setkaniVRatbori2_henryArrivalHorse
+  [59] animalCompanions
+  [60] setkaniVRatbori2_upstairs_enemy_soldier_1
+  [61] setkaniVRatbori2_court_enemy_soldier_7
+  [62] setkaniVRatbori2_upstairs_enemy_soldier_5
+  [63] setkaniVRatbori2_court_enemy_soldier_17
+  [64] setkaniVRatbori2_court_enemy_soldier_8
+  [65] setkaniVRatbori2_posily_2
+  [66] setkaniVRatbori2_court_enemy_soldier_14
+  [67] setkaniVRatbori2_posily_4
+  [68] setkaniVRatbori2_posily_9
+  [69] char_GENERIC_MAN_SOLDIER_19
+  [70] setkaniVRatbori2_upstairs_enemy_soldier_2
+  [71] char_GENERIC_MAN_SOLDIER_18
+  [72] setkaniVRatbori2_court_enemy_soldier_2
+  [73] setkaniVRatbori2_posily_6
+  [74] setkaniVRatbori2_posily_1
+  [75] setkaniVRatbori2_court_enemy_soldier_11
+  [76] setkaniVRatbori2_court_enemy_soldier_6
+  [77] setkaniVRatbori2_upstairs_enemy_soldier_6
+  [78] setkaniVRatbori2_court_enemy_soldier_12
+  [79] setkaniVRatbori2_court_enemy_soldier_5
+  [80] setkaniVRatbori2_ochoz_soldier6
+  [81] setkaniVRatbori2_court_enemy_soldier_18

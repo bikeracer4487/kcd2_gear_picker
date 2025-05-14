@@ -1,0 +1,73 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/buff__perk_hardcore.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1927574818
+  Layout Hash ........... 3419792665
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 1553
+  Unique String Count ... 59
+  File Size ............. 4573
+  Calculated Line Size .. 136 (rem. 0)
+String Table:
+  [0] perk_hardcore_mode
+  [1] 0
+  [2] Cpp:Constant
+  [3] psp*0.5,ibi*0.75,bma-0.15,sma+0.15
+  [4] crime_punishment_pillory_strong_hardcore
+  [5] buff_pillory_desc_strong
+  [6] pillory
+  [7] Cpp:BasicTimed
+  [8] charisma-8,con+0.8,plr+3
+  [9] buff_pillory
+  [10] perk_hardcore_heavy_footed
+  [11] bbn+0.25,shd*2,noi>0.25
+  [12] perk_hardcore_numbskull
+  [13] xpm*0.6
+  [14] crime_punishment_beating_medium_hardcore
+  [15] buff_beating_desc
+  [16] beating
+  [17] strength*0.6,agility*0.6,vitality*0.6,courage*0.6,srg*0.6,hlt*0.6,bea+2
+  [18] buff_beating
+  [19] perk_hardcore_somnambulant
+  [20] atp+0.5, exh*1.5
+  [21] perk_hardcore_alco_teleport_ai
+  [22] Cpp:Instant
+  [23] perk_hardcore_known_criminal
+  [24] perk_hardcore_hangry_henry_starvation
+  [25] Cpp:HungerFading
+  [26] charisma*0.1,bad*0.1,speech*0.1
+  [27] perk_hardcore_punchable_face_player
+  [28] hlh*1.1
+  [29] crime_punishment_beating_strong_hardcore
+  [30] buff_beating_desc_strong
+  [31] strength*0.5,agility*0.5,vitality*0.5,courage*0.5,srg*0.5,hlt*0.5,bea+3
+  [32] perk_hardcore_picky_eater_hunter_loot
+  [33] hlm*0.25
+  [34] perk_hardcore_picky_eater
+  [35] perk_hardcore_horse_capacity_debuff
+  [36] cap*0.75
+  [37] perk_hardcore_bad_back_movement_debuff
+  [38] buff_perk_hardcore_bad_back_desc
+  [39] hardcore_bad_back
+  [40] Run-1,Walk-0.5,LimitSprint
+  [41] buff_perk_hardcore_bad_back_name
+  [42] crime_punishment_beating_weak_hardcore
+  [43] buff_beating_desc_weak
+  [44] strength*0.7,agility*0.7,vitality*0.7,courage*0.7,srg*0.7,hlt*0.7,bea+1
+  [45] perk_hardcore_bad_back
+  [46] cap*0.5, hcd+0.2
+  [47] perk_hardcore_sweaty
+  [48] smi*2,cds*2,dip+1
+  [49] crime_punishment_pillory_medium_hardcore
+  [50] buff_pillory_desc
+  [51] charisma-6,con+0.6,plr+2
+  [52] crime_punishment_pillory_weak_hardcore
+  [53] buff_pillory_desc_weak
+  [54] charisma-4,con+0.4,plr+1
+  [55] perk_hardcore_hangry_henry_hunger_debuff
+  [56] dig*1.25,fnv*0.5
+  [57] perk_hardcore_shy
+  [58] xsp*0.75

@@ -1,0 +1,23 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__praceNaVinici.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 4
+  String Data Size ...... 265
+  Unique String Count ... 9
+  File Size ............. 805
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] praceNaVinici_pytel_3
+  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [2] char_GENERIC_MAN_COMMONER_05
+  [3] praceNaVinici_pytel_2
+  [4] char_GENERIC_MAN_COMMONER_15
+  [5] praceNaVinici_sackPlaceHolder
+  [6] char_GENERIC_MAN_COMMONER_13
+  [7] praceNaVinici_pytel_1
+  [8] char_GENERIC_MAN_COMMONER_11

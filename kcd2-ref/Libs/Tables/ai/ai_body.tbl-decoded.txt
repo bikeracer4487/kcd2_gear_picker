@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/ai_body.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2129564525
+  Layout Hash ........... 516410557
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 43
+  Unique String Count ... 4
+  File Size ............. 167
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] default
+  [1] TestBody
+  [2] Player
+  [3] DefaultSmartObject

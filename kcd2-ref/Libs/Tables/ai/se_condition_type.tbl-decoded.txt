@@ -1,0 +1,28 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/se_condition_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4086954712
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 14
+  String Data Size ...... 185
+  Unique String Count ... 14
+  File Size ............. 437
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Expression
+  [1] Lua
+  [2] DistanceToEntity
+  [3] DistanceToPositioningArea
+  [4] SoulGender
+  [5] SoulRace
+  [6] SoulClass
+  [7] SocialClass
+  [8] DistanceToPlayer
+  [9] TreeExpression
+  [10] RoleForMetarole
+  [11] EntityContext
+  [12] ElementEmpty
+  [13] AIBuffTag

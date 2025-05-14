@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kucharskaKniha.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 4
+  String Data Size ...... 284
+  Unique String Count ... 10
+  File Size ............. 824
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kucharskaKniha_brigand2
+  [1] trosecko_enemies_bandits_kucharskKnihaCampZdar2
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [4] kucharskaKniha_brigand4
+  [5] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [6] kucharskaKniha_brigand3
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [8] kucharskaKniha_brigand1
+  [9] char_GENERIC_MAN_ENEMY_BANDIT_03

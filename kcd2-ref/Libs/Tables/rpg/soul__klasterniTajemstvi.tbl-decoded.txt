@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__klasterniTajemstvi.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 331
+  Unique String Count ... 11
+  File Size ............. 999
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] klasterniTajemstvi_pytel_3
+  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [2] char_GENERIC_MAN_COMMONER_19
+  [3] klasterniTajemstvi_pytel_1
+  [4] char_GENERIC_MAN_COMMONER_08
+  [5] klasterniTajemstvi_kaspar
+  [6] char_GENERIC_MAN_COMMONER_03
+  [7] klasterniTajemstvi_pytel_2
+  [8] char_GENERIC_MAN_COMMONER_26
+  [9] klasterniTajemstvi_olbram
+  [10] char_GENERIC_MAN_NOBLEMAN_05

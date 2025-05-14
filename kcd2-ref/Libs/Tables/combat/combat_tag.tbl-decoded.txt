@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_tag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3077899190
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 7
+  String Data Size ...... 133
+  Unique String Count ... 7
+  File Size ............. 273
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] NONE
+  [1] ZONE_LEFTSIDE
+  [2] ZONE_RIGHTSIDE
+  [3] ZONE_CENTER
+  [4] ATTACK_TYPE_SWITCH_ZONE
+  [5] ATTACK_TYPE_DONT_PROJECT_BONES
+  [6] ATTACK_TYPE_DONT_PROJECT_WEAPON

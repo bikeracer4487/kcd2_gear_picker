@@ -1,0 +1,75 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/mailbox_group.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3362290634
+  Layout Hash ........... 1408861421
+  Table Version ......... 1
+  Line Count ............ 32
+  String Data Size ...... 2096
+  Unique String Count ... 61
+  File Size ............. 3148
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] world/kzik_openworld.xml
+  [1] kzik_customGateGuardSwitch
+  [2] animal/animal_handleStartle.xml
+  [3] switch_animal_handleStartle
+  [4] crime/shareplayerslastseenposition.xml
+  [5] crime_sharePlayersLastSeenPosition
+  [6] quests/kubaParalu/kubaParalu.xml
+  [7] kubaParalu_customHitReaction
+  [8] crime/manageplayerurging.xml
+  [9] crime_managePlayerUrging
+  [10] tutorials/tutorial_stealthtakedown_customhandlechoke.xml
+  [11] tutorial_stealthTakedown_customHandleChoke
+  [12] anmal/basic/switch/animal_continuouslyDoPerceptionSearchForTarget.xml
+  [13] switch_animal_continuouslyDoPerceptionSearchForTarget
+  [14] crime/processOpenWorldCooldowns.xml
+  [15] crime_processOpenWorldCooldowns_npc
+  [16] npc/basic/switch/handleHearingSubscriptions.xml
+  [17] switch_handleHearingSubscriptions
+  [18] animal/basic/switch/animal_horseBrain.xml
+  [19] switch_animal_horseBrain
+  [20] crime/selfhelp_resolvecrimedialogue.xml
+  [21] crime_selfhelp_resolveCrimeDialogue
+  [22] crime/handleDespawnVolumeRequests.xml
+  [23] crime_handleDespawnVolumeRequests
+  [24] crime/processstimulusmessages.xml
+  [25] crime_processStimulusMessages
+  [26] world/so_dicetable_new.xml
+  [27] dice_processDiceDialogResult
+  [28] crime/processinterruptmessages.xml
+  [29] crime_processInterruptMessages
+  [30] situation/greeting/greeting_synchronization.xml
+  [31] situation_greeting_synchronization
+  [32] kzik_customRatSwitch
+  [33] crime/customswitch_secondarrest.xml
+  [34] crime_customSwitch_secondArrest
+  [35] crime_processOpenWorldCooldowns_global
+  [36] npc/basic/switch/handleCheckMates.xml
+  [37] switch_handleCheckMates
+  [38] animal/basic/switch/animal_processinterruptmessages.xml
+  [39] switch_animal_processInterruptMessages
+  [40] situation/gossip/situation_handleswitchgossip.xml
+  [41] situation_handleSwitchGossip
+  [42] crime/watch/watchcombat.xml
+  [43] crime_watch_watchCombat
+  [44] crime/customReactionsBarking.xml
+  [45] crime_customReactionsBarking
+  [46] dice_opponentReaction
+  [47] animal/basic/switch/animal_fleedecision.xml
+  [48] switch_animal_fleeDecision
+  [49] crime/checkMoraleForCombat.xml
+  [50] combat_checkMoraleForCombat
+  [51] quests/sedmstatecnych2/sedmstatecnych2_event.xml
+  [52] sedmStatecnych2_perceptionInfo
+  [53] npc/basic/handlechoke.xml
+  [54] switch_handleChoke
+  [55] animal/basic/switch/lovvlku_dogpack.xml
+  [56] switch_lovvlku_dogpack
+  [57] crime/resolvecrimedialogue.xml
+  [58] crime_resolveCrimeDialogue
+  [59] crime/processnpcemergency.xml
+  [60] crime_processNpcEmergency

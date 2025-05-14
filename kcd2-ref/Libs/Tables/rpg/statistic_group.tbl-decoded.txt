@@ -1,0 +1,29 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/statistic_group.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 996602455
+  Layout Hash ........... 2895892273
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 182
+  Unique String Count ... 15
+  File Size ............. 466
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] Hidden
+  [1] General
+  [2] stat_group_general
+  [3] Combat
+  [4] stat_group_combat
+  [5] Crime
+  [6] stat_group_crime
+  [7] Dialog
+  [8] stat_group_dialog
+  [9] Craft
+  [10] stat_group_craft
+  [11] Quest
+  [12] stat_group_quest
+  [13] Gambling
+  [14] stat_group_gambling

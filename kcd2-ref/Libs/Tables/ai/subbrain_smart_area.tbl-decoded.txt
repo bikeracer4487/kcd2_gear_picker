@@ -1,0 +1,49 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/subbrain_smart_area.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3546957878
+  Layout Hash ........... 1453560426
+  Table Version ......... 1
+  Line Count ............ 29
+  String Data Size ...... 915
+  Unique String Count ... 35
+  File Size ............. 3031
+  Calculated Line Size .. 72 (rem. 0)
+String Table:
+  [0] default.xml
+  [1] _testing/combatWeapons.xml
+  [2] onUpdate
+  [3] onExit
+  [4] _athert/test_sa_athert.xml
+  [5] onUpdatePMan
+  [6] _vitek/test_sa_vitek.xml
+  [7] onRequest
+  [8] onRelease
+  [9] onEnter
+  [10] test_sa_lukas_sub.xml
+  [11] _ondrastuchl/test_sa_ondra.xml
+  [12] onReq
+  [13] onRel
+  [14] _smejki/test_waitstring_bug.xml
+  [15] autotest/test_sa_PlayerStateHandler.xml
+  [16] _smejki/test_js_subbrainBehaviorSA.xml
+  [17] crime/district.xml
+  [18] _lukas/test_sa.xml
+  [19] world/sa_catch.xml
+  [20] _testing/test_sa_codeJirka.xml
+  [21] quests\utokNaMalesov\utokNaMalesov_coughing.xml
+  [22] _qa\test_playground_ls.xml
+  [23] _test/zz/test_sa_zbynek.xml
+  [24] quests/lukostreleckaSoutez/shootingRange.xml
+  [25] special/horseBuying_parking.xml
+  [26] battle/battleBloodDecals.xml
+  [27] situation/opilyManzel/situation_opilyManzel.xml
+  [28] situation/friendlyFight/friendlyFight.xml
+  [29] quests/eliciting.xml
+  [30] world/sa_deterrentArea.xml
+  [31] quests\utokNaMalesov\utokNaMalesov_burning.xml
+  [32] quests/sermiri/sermirna.xml
+  [33] quests/lukostreleckaSoutez/shootingRange_situation.xml
+  [34] world\sa_particleArea.xml

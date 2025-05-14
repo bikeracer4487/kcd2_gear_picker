@@ -1,0 +1,96 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/body_subpart.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1545562604
+  Layout Hash ........... 856282621
+  Table Version ......... 1
+  Line Count ............ 82
+  String Data Size ...... 1358
+  Unique String Count ... 82
+  File Size ............. 4010
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] body_front_up
+  [1] body_back_up
+  [2] body_side
+  [3] head_necklace
+  [4] head_up
+  [5] head_back
+  [6] head_sides
+  [7] head_face
+  [8] head_neck
+  [9] hand_right
+  [10] hand_ring
+  [11] arm_left_shoulder_front
+  [12] arm_left_shoulder_back
+  [13] arm_left_upper_front
+  [14] arm_left_upper_back
+  [15] arm_left_forearm_front
+  [16] arm_left_forearm_back
+  [17] arm_right_shoulder_front
+  [18] arm_right_shoulder_back
+  [19] arm_right_upper_front
+  [20] arm_right_upper_back
+  [21] arm_right_forearm_front
+  [22] arm_right_forearm_back
+  [23] hand_left
+  [24] leg_left_upper_front
+  [25] leg_left_upper_back
+  [26] leg_left_lower_front
+  [27] leg_left_lower_back
+  [28] foot_left_boots
+  [29] foot_left_plates
+  [30] leg_right_upper_front
+  [31] leg_right_upper_back
+  [32] leg_right_lower_front
+  [33] leg_right_lower_back
+  [34] foot_right_boots
+  [35] foot_right_plates
+  [36] foot_spur
+  [37] body_front_down
+  [38] body_back_down
+  [39] horse_head_left
+  [40] horse_head_right
+  [41] horse_neck_left
+  [42] horse_neck_right
+  [43] horse_torso_left_fore
+  [44] horse_torso_right_fore
+  [45] horse_torso_left_hind
+  [46] horse_torso_right_hind
+  [47] horse_leg_left_fore
+  [48] horse_leg_right_fore
+  [49] horse_leg_left_hind
+  [50] horse_leg_right_hind
+  [51] horse_torso_left_side
+  [52] horse_torso_right_side
+  [53] body_scabbard
+  [54] horse_tail
+  [55] body_belt
+  [56] body_pouch
+  [57] dog_torso
+  [58] cattle_torso
+  [59] sheep_torso
+  [60] pig_torso
+  [61] red_deer_stag_torso
+  [62] red_deer_doe_torso
+  [63] roe_deer_torso
+  [64] head_beard
+  [65] dog_fur
+  [66] hare_torso
+  [67] dog_eyes
+  [68] sheep_head
+  [69] dog_head
+  [70] cattle_head
+  [71] pig_head
+  [72] red_deer_head
+  [73] roe_deer_head
+  [74] red_deer_front_legs
+  [75] roe_deer_front_legs
+  [76] red_deer_back_legs
+  [77] roe_deer_back_legs
+  [78] cattle_front_legs
+  [79] cattle_back_legs
+  [80] dog_front_legs
+  [81] dog_back_legs

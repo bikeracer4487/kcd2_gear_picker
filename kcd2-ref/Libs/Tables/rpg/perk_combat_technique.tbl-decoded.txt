@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_combat_technique.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 152528282
+  Layout Hash ........... 73964485
+  Table Version ......... 1
+  Line Count ............ 52
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1692
+  Calculated Line Size .. 32 (rem. 0)

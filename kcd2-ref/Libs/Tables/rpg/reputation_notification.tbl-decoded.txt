@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/reputation_notification.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1495568447
+  Layout Hash ........... 444951957
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 271
+  Unique String Count ... 11
+  File Size ............. 459
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] Reputation gained
+  [1] 2s #GT
+  [2] ui_hud_reputation_notification_reputation_gained
+  [3] Reputation lost
+  [4] ui_hud_reputation_notification_reputation_lost
+  [5] Crime reported
+  [6] 20s #GT
+  [7] ui_hud_reputation_notification_crime_reported
+  [8] Reputation gained no cooldown
+  [9] 0s #GT
+  [10] Reputation lost no cooldown

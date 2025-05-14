@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_failed_attack.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 680644709
+  Layout Hash ........... 1859613552
+  Table Version ......... 30
+  Line Count ............ 8
+  String Data Size ...... 205
+  Unique String Count ... 8
+  File Size ............. 1449
+  Calculated Line Size .. 152 (rem. 0)
+String Table:
+  [0] CombatAttackFailedPB
+  [1] l_halberd+r_halberd+aZ5+oppMale
+  [2] NPC
+  [3] l_longsword+r_longsword+aZ5+oppMale
+  [4] l_shield+aZ5+r_swords+oppMale
+  [5] aZ5+r_shortSwords+oppMale
+  [6] CombatAttackFailed
+  [7] aZ5+r_shortSwords+l_noShield+oppMale

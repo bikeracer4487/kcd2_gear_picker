@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/credit_layout.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3025071780
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 12
+  String Data Size ...... 157
+  Unique String Count ... 12
+  File Size ............. 377
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] single person
+  [1] team one column
+  [2] team two columns
+  [3] subtitle
+  [4] block of text
+  [5] block of names
+  [6] role: actors
+  [7] special column
+  [8] empty row
+  [9] image
+  [10] role subtitle
+  [11] mega subtitle

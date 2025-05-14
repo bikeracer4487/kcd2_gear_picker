@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/ai_variable_sync.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3343756154
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 29
+  Unique String Count ... 4
+  File Size ............. 121
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] no_sync
+  [1] to_lua
+  [2] from_lua
+  [3] auto

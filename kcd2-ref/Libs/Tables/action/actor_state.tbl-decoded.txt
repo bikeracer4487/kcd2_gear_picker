@@ -1,0 +1,56 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_state.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2940797447
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 21
+  String Data Size ...... 383
+  Unique String Count ... 42
+  File Size ............. 915
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] Idle
+  [1] idle
+  [2] CombatIdle
+  [3] guard
+  [4] CombatAttack
+  [5] attack
+  [6] CombatBlock
+  [7] block
+  [8] Jump
+  [9] jump
+  [10] Ledge
+  [11] ledge
+  [12] LadderState
+  [13] ladder
+  [14] GenericMinigame
+  [15] minigame
+  [16] ItemInteraction
+  [17] itemInteraction
+  [18] Shooting
+  [19] shooting
+  [20] Unconscious
+  [21] unconscious
+  [22] CarryCorpse
+  [23] carryCorpse
+  [24] StoneThrowingMinigame
+  [25] stoneThrowing
+  [26] Hit
+  [27] hit
+  [28] Fall
+  [29] fall
+  [30] Land
+  [31] land
+  [32] StandingUp
+  [33] standingUp
+  [34] Dying
+  [35] dying
+  [36] Dead
+  [37] dead
+  [38] Trackview
+  [39] trackview
+  [40] HoldingDecoy
+  [41] holdingDecoy

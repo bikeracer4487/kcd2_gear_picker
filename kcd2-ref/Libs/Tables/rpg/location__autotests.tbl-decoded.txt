@@ -1,0 +1,16 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/location__autotests.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2466939752
+  Layout Hash ........... 2429396061
+  Table Version ......... 1
+  Line Count ............ 1
+  String Data Size ...... 24
+  Unique String Count ... 2
+  File Size ............. 132
+  Calculated Line Size .. 80 (rem. 0)
+String Table:
+  [0] location_TestPOI
+  [1] Common

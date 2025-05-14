@@ -1,0 +1,107 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/barber_option.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4244327241
+  Layout Hash ........... 3826303213
+  Table Version ......... 1
+  Line Count ............ 31
+  String Data Size ...... 1107
+  Unique String Count ... 93
+  File Size ............. 2375
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] beard_0
+  [1] ui_beard_00
+  [2] m_beard_00
+  [3] beard_1
+  [4] ui_beard_01
+  [5] UC_beard_barber_01
+  [6] beard_11
+  [7] ui_beard_11
+  [8] m_beard_13
+  [9] beard_12
+  [10] ui_beard_12
+  [11] m_beard_16
+  [12] beard_13
+  [13] ui_beard_13
+  [14] m_beard_17
+  [15] beard_14
+  [16] ui_beard_14
+  [17] m_beard_18
+  [18] beard_2
+  [19] ui_beard_02
+  [20] UC_beard_barber_02
+  [21] beard_3
+  [22] ui_beard_03
+  [23] UC_beard_barber_03
+  [24] beard_4
+  [25] ui_beard_04
+  [26] UC_beard_barber_04
+  [27] beard_5
+  [28] ui_beard_05
+  [29] UC_beard_barber_05
+  [30] beard_6
+  [31] ui_beard_06
+  [32] UC_beard_barber_06
+  [33] beard_7
+  [34] ui_beard_07
+  [35] UC_beard_barber_07
+  [36] beard_8
+  [37] ui_beard_08
+  [38] UC_beard_barber_08
+  [39] beard_9
+  [40] ui_beard_09
+  [41] m_beard_04
+  [42] hair_1
+  [43] ui_hair_01
+  [44] m_hair_barber_01
+  [45] hair_10
+  [46] ui_hair_10
+  [47] m_hair_barber_10
+  [48] hair_11
+  [49] ui_hair_11
+  [50] m_hair_barber_11
+  [51] hair_12
+  [52] ui_hair_12
+  [53] m_hair_barber_12
+  [54] hair_13
+  [55] ui_hair_13
+  [56] m_hair_barber_13
+  [57] hair_14
+  [58] ui_hair_14
+  [59] m_hair_barber_14
+  [60] hair_15
+  [61] ui_hair_15
+  [62] m_hair_barber_15
+  [63] hair_16
+  [64] ui_hair_16
+  [65] m_hair_barber_16
+  [66] hair_2
+  [67] ui_hair_02
+  [68] m_hair_barber_02
+  [69] hair_3
+  [70] ui_hair_03
+  [71] m_hair_barber_03
+  [72] hair_4
+  [73] ui_hair_04
+  [74] m_hair_barber_04
+  [75] hair_5
+  [76] ui_hair_05
+  [77] m_hair_barber_05
+  [78] hair_6
+  [79] ui_hair_06
+  [80] m_hair_barber_06
+  [81] hair_7
+  [82] ui_hair_07
+  [83] m_hair_barber_07
+  [84] hair_8
+  [85] ui_hair_08
+  [86] m_hair_barber_08
+  [87] hair_9
+  [88] ui_hair_09
+  [89] m_hair_barber_09
+  [90] hair_henry
+  [91] ui_hair_henry
+  [92] m_hair_henry

@@ -1,0 +1,34 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tbuk.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 10
+  String Data Size ...... 449
+  Unique String Count ... 20
+  File Size ............. 1757
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tbuk_neoznaceneHroby_man_2
+  [1] deadBodies
+  [2] tbuk_neoznaceneHroby_man_1
+  [3] trosecko_outskirts_herdsmen_bukovina
+  [4] tbuk_neoznaceneHroby_woman_1
+  [5] tbuk_man_1
+  [6] trosecko_enemies_bandits_campBukovina
+  [7] Bandits
+  [8] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [9] tbuk_man_4
+  [10] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [11] tbuk_zibrid
+  [12] char_HLEDANI_PSA_PASTEVEC_OG
+  [13] tbuk_man_3
+  [14] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [15] tbuk_man_2
+  [16] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [17] tbuk_man_5
+  [18] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [19] tbuk_dog_1

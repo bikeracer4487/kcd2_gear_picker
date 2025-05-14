@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/money_change.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 245555047
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 145
+  Unique String Count ... 11
+  File Size ............. 349
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] 01 Few beers
+  [1] 02 Shoes
+  [2] 03 Pig
+  [3] 04 Silver chalice
+  [4] 05 Shitty sword
+  [5] 06 Shitty cuirass
+  [6] 07 Sword
+  [7] 08 Country house
+  [8] 09 Cuirass
+  [9] 10 War horse
+  [10] 11 Full plate

@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/faction_label.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1027337555
+  Layout Hash ........... 2762725133
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 63
+  Unique String Count ... 8
+  File Size ............. 155
+  Calculated Line Size .. 8 (rem. 0)
+String Table:
+  [0] camp
+  [1] city
+  [2] german
+  [3] jewish
+  [4] publicEnemy
+  [5] romani
+  [6] settlement
+  [7] solitude

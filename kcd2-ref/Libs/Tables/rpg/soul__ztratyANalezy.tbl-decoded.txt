@@ -1,0 +1,31 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ztratyANalezy.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 8
+  String Data Size ...... 478
+  Unique String Count ... 17
+  File Size ............. 1530
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ztratyANalezy_knife_woman
+  [1] eventNPCs_civilians_friends
+  [2] char_GENERIC_WOMAN_COMMONER_01
+  [3] ztratyANalezy_booze_man
+  [4] char_GENERIC_MAN_COMMONER_12
+  [5] ztratyANalezy_purse_man
+  [6] char_GENERIC_MAN_COMMONER_02
+  [7] ztratyANalezy_strawHat_man
+  [8] char_GENERIC_MAN_COMMONER_13
+  [9] ztratyANalezy_clothes_drunkard
+  [10] char_GENERIC_MAN_COMMONER_16
+  [11] ztratyANalezy_message_man
+  [12] char_GENERIC_MAN_COMMONER_24
+  [13] ztratyANalezy_wreath_woman
+  [14] char_GENERIC_WOMAN_COMMONER_04
+  [15] ztratyANalezy_helmet_soldier
+  [16] char_GENERIC_MAN_COMMONER_15

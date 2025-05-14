@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tkrc.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 6
+  String Data Size ...... 274
+  Unique String Count ... 11
+  File Size ............. 1070
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tkrc_man_2
+  [1] trosecko_enemies_bandits_smallCampKrcak
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [4] tkrc_nezahrabaneMrtvolyWolf_1
+  [5] animal_wild_enemy
+  [6] tkrc_man_1
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [8] tkrc_nezahrabaneMrtvolyWolf_4
+  [9] tkrc_nezahrabaneMrtvolyWolf_2
+  [10] tkrc_nezahrabaneMrtvolyWolf_3

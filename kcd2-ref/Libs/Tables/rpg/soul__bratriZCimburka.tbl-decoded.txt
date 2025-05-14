@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__bratriZCimburka.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 20
+  String Data Size ...... 875
+  Unique String Count ... 33
+  File Size ............. 3463
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] bratriZCimburka_deadHorse_1
+  [1] deadBodies
+  [2] bratriZCimburka_deadBody_5
+  [3] bratriZCimburka_deadBody_4
+  [4] bratriZCimburka_deadBody_2
+  [5] bratriZCimburka_cuman_7
+  [6] kutnohorsko_enemies_cumans_bratriZCimburkaCampCimburk
+  [7] Cumans
+  [8] char_GENERIC_MAN_CUMAN_04
+  [9] bratriZCimburka_deadBody_3
+  [10] char_SEDLECKY_KNEZ
+  [11] bratriZCimburka_cuman_1
+  [12] bratriZCimburka_cuman_5
+  [13] bratriZCimburka_deadBody_1
+  [14] bratriZCimburka_cuman_2
+  [15] char_GENERIC_MAN_CUMAN_02
+  [16] bratriZCimburka_deadBody_6
+  [17] bratriZCimburka_pillager_2
+  [18] kutnohorsko_enemies_bandits_bratriZCimburkaMercenaries
+  [19] Bandits
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [21] bratriZCimburka_pillager_3
+  [22] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [23] bratriZCimburka_cuman_6
+  [24] char_GENERIC_MAN_CUMAN_01
+  [25] bratriZCimburka_cuman_8
+  [26] char_GENERIC_MAN_CUMAN_03
+  [27] bratriZCimburka_pillager_1
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [29] bratriZCimburka_pillager_4
+  [30] bratriZCimburka_cuman_4
+  [31] bratriZCimburka_cuman_3
+  [32] bratriZCimburka_deadHorse_2

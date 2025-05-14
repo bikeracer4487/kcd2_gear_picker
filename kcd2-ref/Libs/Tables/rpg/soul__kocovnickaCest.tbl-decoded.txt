@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kocovnickaCest.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 6
+  String Data Size ...... 277
+  Unique String Count ... 12
+  File Size ............. 1073
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kocovnickaCest_marika_cutsceneDouble
+  [1] trosecko_outskirts_apolenaHideout
+  [2] char_MARIKA
+  [3] kocovnickaCest_gejza
+  [4] deadBodies
+  [5] char_GEJZA
+  [6] kocovnickaCest_wolf_3
+  [7] trosecko_enemies_kocovnickaCestWolves
+  [8] kocovnickaCest_wolf_2
+  [9] kocovnickaCest_bohus_cutsceneDouble
+  [10] char_BOHUS
+  [11] kocovnickaCest_wolf_1

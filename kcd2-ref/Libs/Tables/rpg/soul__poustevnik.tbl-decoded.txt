@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__poustevnik.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 244
+  Unique String Count ... 12
+  File Size ............. 912
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] poustevnik_sebald
+  [1] trosecko_outskirts_poustevnikFriars
+  [2] char_RYTIR_SEBALD
+  [3] poustevnik_vranik
+  [4] trosecko_outskirts_hermits_konrad
+  [5] char_KUN_VRANIK
+  [6] poustevnik_clesgin
+  [7] char_RYTIR_CLESGIN
+  [8] poustevnik_niclas
+  [9] char_RYTIR_NICLAS
+  [10] poustevnik_arn
+  [11] char_RYTIR_ARN

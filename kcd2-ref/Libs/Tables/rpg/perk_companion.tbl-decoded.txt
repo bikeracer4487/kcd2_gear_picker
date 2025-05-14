@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_companion.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 903000152
+  Layout Hash ........... 552191493
+  Table Version ......... 1
+  Line Count ............ 23
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 856
+  Calculated Line Size .. 36 (rem. 0)

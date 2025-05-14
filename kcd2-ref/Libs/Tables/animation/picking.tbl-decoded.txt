@@ -1,0 +1,103 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/picking.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 801953885
+  Layout Hash ........... 3417094649
+  Table Version ......... 3
+  Line Count ............ 82
+  String Data Size ...... 1844
+  Unique String Count ... 89
+  File Size ............. 8432
+  Calculated Line Size .. 80 (rem. 0)
+String Table:
+  [0] Picking
+  [1] stealth+player+r_pick_halberd
+  [2] r_pick_halberd
+  [3] stealth+pickHandRight
+  [4] stealth+pickHandLeft
+  [5] l_bow+prime+pickHandRight
+  [6] pickHandRight+r_pick_book+fromGround
+  [7] r_pick_book
+  [8] pickHandRight+r_pick_long+fromGround
+  [9] r_pick_long
+  [10] pickHandRight+r_pick_basket+fromGround
+  [11] r_pick_basket
+  [12] pickHandRight+r_pick_axe_tool+fromGround
+  [13] r_pick_axe_tool
+  [14] pickHandRight+r_pick_shovel+fromGround
+  [15] r_pick_shovel
+  [16] l_torch+pickHandRight
+  [17] player+r_pick_halberd
+  [18] player+r_pick_sack
+  [19] r_pick_sack
+  [20] l_pick_hoe+fromGround
+  [21] l_pick_hoe
+  [22] r_pick_crate
+  [23] l_pick_plate
+  [24] pickHandRight
+  [25] pickHandLeft
+  [26] l_pick_pavise
+  [27] l_pick_branch
+  [28] r_pick_fishingRod
+  [29] r_pick_bucket
+  [30] pickHandRight+r_pick_tray+fromGround
+  [31] r_pick_tray
+  [32] pickHandLeft+l_pick_shoppingBasket+fromGround
+  [33] l_pick_shoppingBasket
+  [34] pickHandLeft+l_pick_basketWeaving+fromGround
+  [35] l_pick_basketWeaving
+  [36] pickHandLeft+l_pick_eggBasket+fromGround
+  [37] l_pick_eggBasket
+  [38] pickHandLeft+l_pick_plate+fromGround
+  [39] pickHandLeft+l_pick_pouch+fromGround
+  [40] l_pick_pouch
+  [41] pickHandRight+r_pick_broom+fromGround
+  [42] r_pick_broom
+  [43] pickHandLeft+l_pick_milkpan+fromGround
+  [44] l_pick_milkpan
+  [45] pickHandLeft+l_pick_hen2+fromGround
+  [46] l_pick_hen2
+  [47] pickHandRight+r_pick_stein+fromGround
+  [48] r_pick_stein
+  [49] l_lamp+r_pick_bucket
+  [50] l_pick_stoneBasket
+  [51] l_pick_bowl
+  [52] Placing
+  [53] r_sack+drunk+pickHandRight
+  [54] r_sack
+  [55] r_sack+player+pickHandRight
+  [56] l_torch+r_bucket+pickHandRight
+  [57] l_torch
+  [58] r_sack+pickHandRight
+  [59] r_basket+pickHandRight
+  [60] r_basket
+  [61] r_halberd+pickHandRight
+  [62] r_halberd
+  [63] r_bucket+pickHandRight
+  [64] r_bucket
+  [65] l_torch+r_shovel+pickHandRight
+  [66] r_shovel+pickHandRight
+  [67] r_shovel
+  [68] l_plate+pickHandLeft
+  [69] l_plate
+  [70] r_crate+pickHandRight
+  [71] r_crate
+  [72] l_branch
+  [73] r_stein+pickHandLeft+pickSideLeft
+  [74] r_stein
+  [75] r_tray+pickHandRight
+  [76] r_tray
+  [77] l_basketWeaving+pickHandLeft
+  [78] l_basketWeaving
+  [79] l_shoppingBasket+pickHandLeft
+  [80] l_shoppingBasket
+  [81] r_broom+pickHandRight
+  [82] r_broom
+  [83] l_stoneBasket+pickHandLeft
+  [84] l_stoneBasket
+  [85] l_hen2+pickHandLeft
+  [86] l_hen2
+  [87] l_eggBasket+pickHandLeft
+  [88] l_eggBasket

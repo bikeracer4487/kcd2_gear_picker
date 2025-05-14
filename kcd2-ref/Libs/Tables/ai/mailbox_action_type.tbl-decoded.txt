@@ -1,0 +1,16 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/mailbox_action_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 459629516
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 2
+  String Data Size ...... 17
+  Unique String Count ... 2
+  File Size ............. 77
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] continue
+  [1] consume

@@ -1,0 +1,25 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/dice_badge_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1068746116
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 108
+  Unique String Count ... 11
+  File Size ............. 312
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Headstart
+  [1] Formations
+  [2] Null
+  [3] ExtraValue
+  [4] Antibust
+  [5] DoubleTake
+  [6] Multiplier
+  [7] ExtraDice
+  [8] RerollDice
+  [9] SetDice
+  [10] RerollPips

@@ -1,0 +1,118 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/social_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2014226363
+  Layout Hash ........... 3710590625
+  Table Version ......... 1
+  Line Count ............ 96
+  String Data Size ...... 1094
+  Unique String Count ... 104
+  File Size ............. 4962
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] none
+  [1] villager
+  [2] Suntanned
+  [3] Ordinary
+  [4] priest
+  [5] Pale
+  [6] Cleric
+  [7] townsman
+  [8] Posh
+  [9] beggar
+  [10] Rough
+  [11] merchant
+  [12] craftsman
+  [13] animal-wild
+  [14] animal-tamed
+  [15] monk
+  [16] circator
+  [17] player
+  [18] nobleman
+  [19] bailiff
+  [20] herbalist
+  [21] innkeeper
+  [22] bartender
+  [23] refugee
+  [24] miller
+  [25] blacksmith
+  [26] baker
+  [27] butcher
+  [28] scribe
+  [29] tanner
+  [30] soldier
+  [31] bandit
+  [32] cuman
+  [33] Cuman
+  [34] tailor
+  [35] armorer
+  [36] weaponsmith
+  [37] shoemaker
+  [38] ruffian
+  [39] collier
+  [40] lumberjack
+  [41] apothecary
+  [42] bathhouseMaid
+  [43] miner
+  [44] officer
+  [45] shootmaster
+  [46] poacher
+  [47] wanderer
+  [48] mercenary
+  [49] bathhouseAbbess
+  [50] fortuneTeller
+  [51] watchman
+  [52] security
+  [53] fake_soldier
+  [54] mason
+  [55] blacksmithApprentice
+  [56] quarryman
+  [57] fightClubFighter
+  [58] renegade
+  [59] horsetrader
+  [60] dogCompanion
+  [61] housekeeper
+  [62] wench
+  [63] farmer
+  [64] varlet
+  [65] herdsman
+  [66] healer
+  [67] musician
+  [68] gypsy
+  [69] Roma
+  [70] huntsman
+  [71] prisoner
+  [72] fisherman
+  [73] cook
+  [74] saddler
+  [75] gravedigger
+  [76] wolf
+  [77] woodworker
+  [78] gunsmith
+  [79] horse_work_naked
+  [80] horse_travel_naked
+  [81] horse_war_naked
+  [82] horse_draft_naked
+  [83] guard
+  [84] horse_work_common
+  [85] minter
+  [86] banditLeader
+  [87] cumanLeader
+  [88] ruffianLeader
+  [89] guardLeader
+  [90] soldier_crimeAuthority
+  [91] smelter
+  [92] huntsman_crimeAuthority
+  [93] horse_work_battle
+  [94] horse_travel_common
+  [95] horse_travel_noble
+  [96] horse_travel_east
+  [97] horse_war_common
+  [98] horse_war_battle
+  [99] horse_war_noble
+  [100] horse_draft_common
+  [101] dog_home
+  [102] dog_aggressive
+  [103] catchpole

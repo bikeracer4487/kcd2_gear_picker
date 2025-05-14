@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__svatba.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 68
+  Unique String Count ... 3
+  File Size ............. 224
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] svatba_bohutasConcubine
+  [1] cutsceneOnly
+  [2] char_GENERIC_WOMAN_COMMONER_08

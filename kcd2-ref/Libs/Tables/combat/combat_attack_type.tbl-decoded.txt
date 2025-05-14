@@ -1,0 +1,35 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_attack_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3512491132
+  Layout Hash ........... 349243809
+  Table Version ......... 1
+  Line Count ............ 11
+  String Data Size ...... 153
+  Unique String Count ... 21
+  File Size ............. 709
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] none
+  [1] stab
+  [2] oppStab
+  [3] slash
+  [4] oppSlash
+  [5] smash
+  [6] oppSmash
+  [7] throw
+  [8] oppThrow
+  [9] kick
+  [10] oppKick
+  [11] punch
+  [12] oppPunch
+  [13] hook
+  [14] oppHook
+  [15] direct
+  [16] oppDirect
+  [17] bite
+  [18] oppBite
+  [19] backoff
+  [20] oppBackoff

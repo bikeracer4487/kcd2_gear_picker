@@ -1,0 +1,74 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk__hardcore.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2181424497
+  Layout Hash ........... 3183551129
+  Table Version ......... 1
+  Line Count ............ 29
+  String Data Size ...... 1858
+  Unique String Count ... 60
+  File Size ............. 5366
+  Calculated Line Size .. 120 (rem. 0)
+String Table:
+  [0] Hardcore Mode - Constants
+  [1] hardcore_shy
+  [2] Hardcore Mode
+  [3] Hardcore Mode - Buff
+  [4] hardcore_known_criminal_crime_punishment_beating_medium
+  [5] hardcore_known_criminal_crime_punishment_pillory_weak
+  [6] hardcore_shy_script
+  [7] hardcore_hangry_henry
+  [8] perk_hardcore_hangry_henry_name
+  [9] perk_hardcore_hangry_henry_desc
+  [10] perk_hardcore_hangry_henry_lore_desc
+  [11] hardcore_numbskull
+  [12] perk_hardcore_numbskull_name
+  [13] perk_hardcore_numbskull_desc
+  [14] perk_hardcore_numbskull_lore_desc
+  [15] hardcore_numbscull
+  [16] hardcore_known_criminal_crime_punishment_pillory_medium
+  [17] hardcore_shy_meta
+  [18] perk_hardcore_shy_name
+  [19] perk_hardcore_shy_desc
+  [20] perk_hardcore_shy_lore_desc
+  [21] hardcore_known_criminal_script
+  [22] hardcore_known_criminal_crime_punishment_pillory_strong
+  [23] hardcore_known_criminal
+  [24] perk_hardcore_known_criminal_name
+  [25] perk_hardcore_known_criminal_desc
+  [26] perk_hardcore_known_criminal_lore_desc
+  [27] hardcore_picky_eater_hunter_loot
+  [28] hardcore_bad_back
+  [29] perk_hardcore_bad_back_name
+  [30] perk_hardcore_bad_back_desc
+  [31] perk_hardcore_bad_back_lore_desc
+  [32] Hardcore Mode - Horse
+  [33] hardcore_hangry_henry_hunger_debuff
+  [34] hardcore_known_criminal_crime_punishment_beating_strong
+  [35] hardcore_somnambulant
+  [36] perk_hardcore_somnambulant_name
+  [37] perk_hardcore_somnambulant_desc
+  [38] perk_hardcore_somnambulant_lore_desc
+  [39] hardcore_picky_eater
+  [40] perk_hardcore_picky_eater_name
+  [41] perk_hardcore_picky_eater_desc
+  [42] perk_hardcore_picky_eater_lore_desc
+  [43] Hardcore Mode - Horse capacity debuff
+  [44] hardcore_heavy_footed
+  [45] perk_hardcore_heavy_footed_name
+  [46] perk_hardcore_heavy_footed_desc
+  [47] perk_hardcore_heavy_footed_lore_desc
+  [48] hardcore_sweaty
+  [49] perk_hardcore_sweaty_name
+  [50] perk_hardcore_sweaty_desc
+  [51] perk_hardcore_sweaty_lore_desc
+  [52] hardcore_punchable_face
+  [53] perk_hardcore_punchable_face_name
+  [54] perk_hardcore_punchable_face_desc
+  [55] perk_hardcore_punchable_face_lore_desc
+  [56] hardcore_picky_eater_food_decay
+  [57] hardcore_known_criminal_meta
+  [58] hardcore_hangry_henry_starvation
+  [59] hardcore_known_criminal_crime_punishment_beating_weak

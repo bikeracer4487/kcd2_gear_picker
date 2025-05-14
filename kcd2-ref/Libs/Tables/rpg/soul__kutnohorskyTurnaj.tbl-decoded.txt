@@ -1,0 +1,150 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kutnohorskyTurnaj.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 75
+  String Data Size ...... 4079
+  Unique String Count ... 136
+  File Size ............. 13707
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kutnohorskyTurnaj_nobleFan04
+  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [2] char_GENERIC_MAN_NOBLEMAN_12
+  [3] kutnohorskyTurnaj_fanInBoothMale_8
+  [4] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_kutnohorskyTurnaj
+  [5] char_GENERIC_MAN_TOWNSMAN_07
+  [6] kutnohorskyTurnaj_fanWoman4
+  [7] char_GENERIC_WOMAN_TOWNSWOMAN_03
+  [8] kutnohorskyTurnaj_fighter2zdenek
+  [9] char_ZDENEK_OD_BRANY
+  [10] kutnohorskyTurnaj_fanInBoothMale_10
+  [11] char_GENERIC_MAN_TOWNSMAN_02
+  [12] kutnohorskyTurnaj_fanMan6
+  [13] char_GENERIC_MAN_TOWNSMAN_10
+  [14] kutnohorskyTurnaj_fighter4johan
+  [15] char_JOHAN_STRIBROPEST
+  [16] kutnohorskyTurnaj_fanOnWallFemale_3
+  [17] char_GENERIC_WOMAN_COMMONER_08
+  [18] kutnohorskyTurnaj_fanInBoothMale_9
+  [19] char_GENERIC_MAN_TOWNSMAN_04
+  [20] kutnohorskyTurnaj_nobleFan02
+  [21] char_GENERIC_MAN_NOBLEMAN_07
+  [22] kutnohorskyTurnaj_fighter1vendelin
+  [23] char_ZELENY_VENDELIN
+  [24] kutnohorskyTurnaj_fanMan5
+  [25] char_GENERIC_MAN_TOWNSMAN_09
+  [26] kutnohorskyTurnaj_fighterTest01
+  [27] char_GENERIC_MAN_COMMONER_04
+  [28] kutnohorskyTurnaj_fighter4iglauer
+  [29] char_GERHART_IGLAUER
+  [30] kutnohorskyTurnaj_fanOnWallFemale_4
+  [31] char_GENERIC_WOMAN_COMMONER_03
+  [32] kutnohorskyTurnaj_fanInBoothMale_2
+  [33] char_GENERIC_MAN_TOWNSMAN_05
+  [34] kutnohorskyTurnaj_fanOnWallFemale_2
+  [35] char_GENERIC_WOMAN_COMMONER_06
+  [36] kutnohorskyTurnaj_nobleFan01
+  [37] char_GENERIC_MAN_NOBLEMAN_02
+  [38] kutnohorskyTurnaj_fanOnWallMale_7
+  [39] kutnohorsko_settlements_kutnaHora_soldiers_guards
+  [40] Guards
+  [41] char_GENERIC_MAN_GUARD_16
+  [42] kutnohorskyTurnaj_fighter1vilem
+  [43] char_VILEM_DOSKAR
+  [44] kutnohorskyTurnaj_nobleFan05
+  [45] char_GENERIC_MAN_NOBLEMAN_03
+  [46] kutnohorskyTurnaj_fighter1otik
+  [47] char_OTIK_RYCHNA
+  [48] kutnohorskyTurnaj_fanOnWallMale_8
+  [49] char_GENERIC_MAN_TOWNSMAN_08
+  [50] kutnohorskyTurnaj_lazebnice
+  [51] char_KUTNOHORSKY_TURNAJ_LAZEBNICE_KRISTYNA
+  [52] kutnohorskyTurnaj_fighterTest02
+  [53] char_GENERIC_MAN_COMMONER_14
+  [54] kutnohorskyTurnaj_gearmaster
+  [55] char_KUTNOHORSKY_TURNAJ_GEARMASTER_LEFL
+  [56] kutnohorskyTurnaj_fanOnWallMale_3
+  [57] char_GENERIC_MAN_TOWNSMAN_03
+  [58] kutnohorskyTurnaj_fighter3chval
+  [59] char_CHVAL_POLAK
+  [60] kutnohorskyTurnaj_fanInBoothMale_5
+  [61] char_GENERIC_MAN_TOWNSMAN_06
+  [62] kutnohorskyTurnaj_fighter1bela
+  [63] Cumans
+  [64] char_CERNEJ_BELA
+  [65] kutnohorskyTurnaj_fanOnWallFemale_5
+  [66] char_GENERIC_WOMAN_COMMONER_02
+  [67] kutnohorskyTurnaj_fanInBoothMale_4
+  [68] kutnohorskyTurnaj_fighterTest04
+  [69] char_GENERIC_MAN_COMMONER_10
+  [70] kutnohorskyTurnaj_fanMan4
+  [71] char_GENERIC_MAN_TOWNSMAN_01
+  [72] kutnohorskyTurnaj_fighter3krigl
+  [73] char_FRANCIN_KRIGL
+  [74] kutnohorskyTurnaj_fanInBoothMale_1
+  [75] kutnohorskyTurnaj_fighter3kristof
+  [76] char_KRISTOF_VLEVEC
+  [77] kutnohorskyTurnaj_fighter3lorenc
+  [78] char_LORENC_CHROMAJZL
+  [79] kutnohorskyTurnaj_lazebnice2
+  [80] kutnohorskyTurnaj_fanWoman1
+  [81] char_GENERIC_WOMAN_TOWNSWOMAN_07
+  [82] kutnohorskyTurnaj_fanInBoothFemale_2
+  [83] char_GENERIC_WOMAN_COMMONER_09
+  [84] kutnohorskyTurnaj_fanOnWallMale_6
+  [85] kutnohorskyTurnaj_fighter3ondrej
+  [86] char_ONDREJ_JAKUN
+  [87] kutnohorskyTurnaj_fighter3arnost
+  [88] char_ARNOST_MOOSIG
+  [89] kutnohorskyTurnaj_fighter4jakes
+  [90] char_JAKES_OD_HRADKU
+  [91] kutnohorskyTurnaj_fanOnWallMale_5
+  [92] char_GENERIC_MAN_GUARD_15
+  [93] kutnohorskyTurnaj_fighterTest03
+  [94] char_GENERIC_MAN_COMMONER_20
+  [95] kutnohorskyTurnaj_fanOnWallMale_2
+  [96] char_GENERIC_MAN_GUARD_05
+  [97] kutnohorskyTurnaj_fighter1pocem
+  [98] char_OTIK_POCEM
+  [99] kutnohorskyTurnaj_fanOnWallMale_4
+  [100] char_GENERIC_MAN_GUARD_18
+  [101] kutnohorskyTurnaj_fanWoman7
+  [102] kutnohorskyTurnaj_fanMan3
+  [103] kutnohorskyTurnaj_fanWoman5
+  [104] char_GENERIC_WOMAN_COMMONER_11
+  [105] kutnohorskyTurnaj_fighterTest05
+  [106] kutnohorskyTurnaj_fanInBoothMale_3
+  [107] kutnohorskyTurnaj_fighter3drzhuba
+  [108] char_PETR_DRZHUBA
+  [109] kutnohorskyTurnaj_fanInBoothFemale_3
+  [110] kutnohorskyTurnaj_fanInBoothMale_11
+  [111] kutnohorskyTurnaj_fanInBoothMale_12
+  [112] kutnohorskyTurnaj_fanMan1
+  [113] kutnohorskyTurnaj_fanWoman6
+  [114] char_GENERIC_WOMAN_TOWNSWOMAN_01
+  [115] kutnohorskyTurnaj_sazkar
+  [116] kutnohorskyTurnaj_fanMan7
+  [117] kutnohorskyTurnaj_nobleFan03
+  [118] char_GENERIC_MAN_NOBLEMAN_04
+  [119] kutnohorskyTurnaj_fanInBoothMale_6
+  [120] kutnohorskyTurnaj_fanOnWallFemale_1
+  [121] char_GENERIC_WOMAN_COMMONER_07
+  [122] kutnohorskyTurnaj_fighter2mincir
+  [123] char_MATEJ_MINCIR
+  [124] kutnohorskyTurnaj_fanInBoothMale_7
+  [125] kutnohorskyTurnaj_fighter4pesek
+  [126] char_PESEK_PUTZLAUF
+  [127] kutnohorskyTurnaj_fanWoman2
+  [128] char_GENERIC_WOMAN_TOWNSWOMAN_02
+  [129] kutnohorskyTurnaj_fanOnWallMale_1
+  [130] kutnohorskyTurnaj_fanInBoothFemale_1
+  [131] kutnohorskyTurnaj_fighter4peregrin
+  [132] char_PEREGRIN_MESSER
+  [133] kutnohorskyTurnaj_fanMan2
+  [134] kutnohorskyTurnaj_fanWoman3
+  [135] char_GENERIC_WOMAN_TOWNSWOMAN_04

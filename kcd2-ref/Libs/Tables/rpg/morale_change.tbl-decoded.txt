@@ -1,0 +1,46 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/morale_change.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1713231518
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 32
+  String Data Size ...... 656
+  Unique String Count ... 32
+  File Size ............. 1452
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] none
+  [1] mirth
+  [2] sorrow
+  [3] joy
+  [4] misery
+  [5] horse_fast_slowdown
+  [6] horse_wall_sprint
+  [7] horse_no_stamina_sprint
+  [8] combat_outnumbered_small_positive
+  [9] combat_outnumbered_medium_positive
+  [10] combat_outnumbered_large_positive
+  [11] combat_outnumbered_small_negative
+  [12] combat_outnumbered_medium_negative
+  [13] combat_outnumbered_large_negative
+  [14] minus_1
+  [15] minus_one_half
+  [16] combat_ally_dies
+  [17] combat_ally_flees
+  [18] combat_hit_attacker
+  [19] combat_hit_victim
+  [20] combat_perfect_block_attacker
+  [21] combat_perfect_block_victim
+  [22] combat_dodge_attacker
+  [23] combat_dodge_victim
+  [24] combat_close_threat_ranged_weapon
+  [25] combat_hit_victim_dog
+  [26] combat_flee_begun
+  [27] combat_added_to_skirmish
+  [28] perk_spiteful_creature
+  [29] near_gunshot
+  [30] collision
+  [31] horse_forced_read

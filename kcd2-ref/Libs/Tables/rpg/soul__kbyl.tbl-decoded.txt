@@ -1,0 +1,125 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kbyl.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 49
+  String Data Size ...... 2916
+  Unique String Count ... 111
+  File Size ............. 9216
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kbyl_woman_17
+  [1] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_baker
+  [2] char_GENERIC_WOMAN_COMMONER_02
+  [3] kbyl_man_2
+  [4] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel01
+  [5] char_GENERIC_MAN_COMMONER_16
+  [6] kbyl_player_2
+  [7] kutnohorsko_settlements_bylany_commonFolk_tavern_sedmStatecnych2Gamblers
+  [8] char_KOSTKAR_2
+  [9] kbyl_woman_6
+  [10] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel03
+  [11] char_GENERIC_WOMAN_COMMONER_12
+  [12] kbyl_woman_8
+  [13] kutnohorsko_settlements_bylany_commonFolk_tavern_staff
+  [14] char_SENKYRKA_Z_BYLANSKE_HOSPODY_2
+  [15] kbyl_slava
+  [16] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel06
+  [17] char_FARAR_SLAVA
+  [18] kbyl_woman_9
+  [19] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_generalMerchant
+  [20] Merchants
+  [21] char_GENERIC_WOMAN_MERCHANT_CZECH_02
+  [22] kbyl_player_1
+  [23] char_KOSTKAR
+  [24] kbyl_woman_3
+  [25] char_GENERIC_WOMAN_COMMONER_03
+  [26] kbyl_man_17
+  [27] Guards
+  [28] char_GENERIC_MAN_GAMEKEEPER_01
+  [29] kbyl_innkeeper
+  [30] char_GENERIC_MAN_COMMONER_19
+  [31] kbyl_additive_woman_1
+  [32] char_GENERIC_WOMAN_COMMONER_01
+  [33] kbyl_cernik
+  [34] kutnohorsko_settlements_bylanya_commonFolk_tavern_zakopanyZitrekCernik
+  [35] char_CERNIK
+  [36] kbyl_jan
+  [37] kutnohorsko_allies_newBuddies_janZCimburka
+  [38] char_JAN_BALSAN_TOVACOVSKY_Z_CIMBURKA
+  [39] kbyl_man_14
+  [40] kutnohorsko_settlements_bylany_soldiers_guards
+  [41] char_GENERIC_MAN_GUARD_08
+  [42] kbyl_mikus
+  [43] kutnohorsko_outskirts_farms_zakopanyZitrekMikussHut_mikus
+  [44] char_KREJCI_MIKUS
+  [45] kbyl_woman_4
+  [46] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel02
+  [47] char_GENERIC_WOMAN_COMMONER_10
+  [48] kbyl_man_13
+  [49] char_GENERIC_MAN_COMMONER_25
+  [50] kbyl_woman_7
+  [51] char_SENKYRKA_Z_BYLANSKE_HOSPODY_1
+  [52] kbyl_woman_10
+  [53] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel07
+  [54] char_GENERIC_WOMAN_MERCHANT_CZECH_01
+  [55] kbyl_woman_12
+  [56] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel08
+  [57] kbyl_man_5
+  [58] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_butcher
+  [59] char_GENERIC_MAN_MERCHANT_CZECH_02
+  [60] kbyl_man_16
+  [61] char_GENERIC_MAN_GUARD_13
+  [62] kbyl_man_10
+  [63] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel05
+  [64] char_GENERIC_MAN_COMMONER_23
+  [65] kbyl_player_3
+  [66] char_KOSTKAR_3
+  [67] kbyl_woman_1
+  [68] char_GENERIC_WOMAN_COMMONER_07
+  [69] kbyl_woman_16
+  [70] kbyl_dog_1
+  [71] kbyl_drat
+  [72] char_CELEDIN_DRAT
+  [73] kbyl_additive_man_1
+  [74] char_PEKAR_LEPEK_BYLANY
+  [75] kbyl_man_8
+  [76] char_GENERIC_MAN_COMMONER_04
+  [77] kbyl_man_11
+  [78] char_GENERIC_MAN_COMMONER_14
+  [79] kbyl_woman_15
+  [80] char_GENERIC_WOMAN_COMMONER_11
+  [81] kbyl_baker
+  [82] kbyl_man_15
+  [83] char_GENERIC_MAN_GUARD_03
+  [84] kbyl_woman_11
+  [85] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_greengrocer
+  [86] char_GENERIC_WOMAN_COMMONER_04
+  [87] kbyl_man_18
+  [88] char_GENERIC_MAN_COMMONER_17
+  [89] kbyl_janHorse
+  [90] kbyl_man_6
+  [91] char_GENERIC_MAN_COMMONER_10
+  [92] kbyl_woman_14
+  [93] char_GENERIC_WOMAN_COMMONER_09
+  [94] kbyl_vendula
+  [95] kutnohorsko_outskirts_farms_zakopanyZitrekMikussHut_mikussFamily
+  [96] char_VENDULA
+  [97] kbyl_woman_13
+  [98] char_GENERIC_WOMAN_COMMONER_06
+  [99] kbyl_svatava
+  [100] char_SVATAVA
+  [101] kbyl_woman_2
+  [102] kbyl_man_12
+  [103] char_GENERIC_MAN_COMMONER_15
+  [104] kbyl_woman_5
+  [105] kbyl_man_4
+  [106] char_GENERIC_MAN_COMMONER_18
+  [107] kbyl_man_9
+  [108] char_GENERIC_MAN_COMMONER_13
+  [109] kbyl_slavaBrother
+  [110] char_GENERIC_MAN_COMMONER_05

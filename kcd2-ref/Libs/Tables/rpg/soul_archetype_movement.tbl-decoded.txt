@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul_archetype_movement.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4176742290
+  Layout Hash ........... 829262029
+  Table Version ......... 1
+  Line Count ............ 105
+  String Data Size ...... 21
+  Unique String Count ... 4
+  File Size ............. 4249
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] walk
+  [1] run
+  [2] sprint
+  [3] dash

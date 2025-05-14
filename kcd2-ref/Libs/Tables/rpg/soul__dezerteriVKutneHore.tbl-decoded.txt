@@ -1,0 +1,19 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__dezerteriVKutneHore.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 2
+  String Data Size ...... 166
+  Unique String Count ... 5
+  File Size ............. 450
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] dezerteriVKutneHore_defectorSick
+  [1] kutnohorsko_enemies_bandits_dezerteriVKH
+  [2] char_GENERIC_MAN_SOLDIER_13
+  [3] dezerteriVKutneHore_defectorHealthy
+  [4] char_GENERIC_MAN_SOLDIER_02

@@ -1,0 +1,110 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul_ability.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 448406500
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 96
+  String Data Size ...... 1228
+  Unique String Count ... 96
+  File Size ............. 2792
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Dodge
+  [1] PerfectBlock
+  [2] Riposte
+  [3] Finticka
+  [4] StealthKnockOut
+  [5] StealthKill
+  [6] HorsePullDown
+  [7] Bumper
+  [8] LetEmCome
+  [9] MasterStrikeUnarmed
+  [10] Comrade
+  [11] ChainStrikeUnarmed
+  [12] EasyWayOut
+  [13] Undercut
+  [14] Undercut2
+  [15] Reading_ArtAdmirer
+  [16] Reading_AvidReader
+  [17] DisarmStrike
+  [18] SteakTartare
+  [19] TrialAndError
+  [20] BatteringRam
+  [21] Bacchus
+  [22] LuckyFind
+  [23] SkillcheckDifficulty
+  [24] WineBibber
+  [25] BeerBibber
+  [26] LiquorBibber
+  [27] LooseTongue
+  [28] BundleAlchemist
+  [29] HumanDustbin
+  [30] SaltAndSmoke
+  [31] LiquorAntidote
+  [32] EutuBrutus
+  [33] Reading_Wanderer
+  [34] Harvester
+  [35] OneWayOrTheOther
+  [36] HorrendousWounds
+  [37] TormentingStrike
+  [38] Salty
+  [39] ChainStrikePolearm
+  [40] Taunt
+  [41] HuntAttack
+  [42] MercyKill
+  [43] FirstAid
+  [44] Empathic
+  [45] Serration
+  [46] HeavyTip
+  [47] ChainStrikeSword
+  [48] SevenLeague
+  [49] Letailleur
+  [50] Padding
+  [51] Blacksmithsson
+  [52] HuntingPermit
+  [53] Attack
+  [54] Alarm
+  [55] Distract
+  [56] Hunt
+  [57] Search
+  [58] TwoHanded
+  [59] SecretOfSecrets
+  [60] ThiefSight
+  [61] BlacksmithingMaster
+  [62] SmartBootstraping
+  [63] RazorSharp
+  [64] Bark
+  [65] Inconspicuous
+  [66] Totentanz
+  [67] CleanlinessIsNextToGodliness
+  [68] ArmOfBeowulf
+  [69] MasterStrike
+  [70] ChainStrikeHeavyWeapon
+  [71] AimToMaim
+  [72] CripplingHit
+  [73] Salva
+  [74] Bonebreaker
+  [75] OpeningStrike
+  [76] OpeningStrike2
+  [77] CuttingEdge
+  [78] CleanCut
+  [79] GreenKnight
+  [80] Painkiller
+  [81] CauseAlwaysHeavyBleeding
+  [82] Archer
+  [83] HardenedSteel
+  [84] SevenLeague2
+  [85] CauseMoralHitOnCollision
+  [86] ForbiddenWeapon
+  [87] CripplingHit2
+  [88] ExperimentalPowder
+  [89] DownToSize
+  [90] NoHangoverWhenSleeping
+  [91] Masterchef
+  [92] StrangeMan
+  [93] MischiefArtist
+  [94] Looter
+  [95] OneShotAtGlory

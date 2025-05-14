@@ -1,0 +1,57 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__autotests.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 30
+  String Data Size ...... 838
+  Unique String Count ... 43
+  File Size ............. 4706
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] cart_test_TestHorse2
+  [1] test_npcs
+  [2] cart_test_npcLeftFront
+  [3] NPCNonSearchElements
+  [4] char_GENERIC_MAN_COMMONER_14
+  [5] test_skirmish_1
+  [6] combat_test_weapons
+  [7] test_combat_blue
+  [8] Klidas1
+  [9] test_combat_red
+  [10] char_GENERIC_MAN_COMMONER_03
+  [11] test_skirmish_2
+  [12] test_combat_player_enemy
+  [13] test_soulToWashWithSoap
+  [14] test_inventorylToWashWithSoap
+  [15] cart_test_TestHorse1
+  [16] Nervak2
+  [17] test_skirmish_3
+  [18] test_combat_blue_neutral
+  [19] test_cuman_enemy
+  [20] Klidas2
+  [21] char_GENERIC_MAN_COMMONER_18
+  [22] Nervak1
+  [23] char_GENERIC_MAN_COMMONER_10
+  [24] cart_test_npcLeftBack
+  [25] test_cuman_badweapons
+  [26] combat_test_badweapons
+  [27] test_soldier_ai
+  [28] test_cuman_ai
+  [29] test_horse
+  [30] test_keys
+  [31] cart_test_npcDriver
+  [32] test_cuman
+  [33] cart_test_npcRightFront
+  [34] test_soldier
+  [35] test_dog
+  [36] test_revive_1
+  [37] test_revive_2
+  [38] test_npcoutfitting_guard_1
+  [39] trosecko_justice_league_super
+  [40] test_npcoutfitting_guard_2
+  [41] test_npcoutfitting_farmer_1
+  [42] test_npcoutfitting_guard_defaultOnly

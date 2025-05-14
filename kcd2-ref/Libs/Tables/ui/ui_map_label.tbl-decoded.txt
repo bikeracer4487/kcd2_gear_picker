@@ -1,0 +1,37 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/ui_map_label.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 81461354
+  Layout Hash ........... 1839876641
+  Table Version ......... 1
+  Line Count ............ 23
+  String Data Size ...... 422
+  Unique String Count ... 23
+  File Size ............. 1554
+  Calculated Line Size .. 48 (rem. 0)
+String Table:
+  [0] location_opatovice
+  [1] location_apolena
+  [2] location_suchdol
+  [3] location_horany
+  [4] location_semin
+  [5] location_staraKutna
+  [6] location_kutnaHora
+  [7] location_tachov
+  [8] location_ratbor
+  [9] location_vysoka
+  [10] location_kocovnickyTabor
+  [11] location_malesov
+  [12] location_grunta
+  [13] location_bylany
+  [14] location_certovka
+  [15] location_pritoky
+  [16] location_miskovice
+  [17] location_troskovice
+  [18] location_zelejov
+  [19] location_zikmunduvTabor
+  [20] location_tvrzNebakov
+  [21] location_hradTrosky
+  [22] location_bohounovice

@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/xp_change.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2804647981
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 10
+  String Data Size ...... 94
+  Unique String Count ... 10
+  File Size ............. 282
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] testNula
+  [1] testMinus
+  [2] testNevim
+  [3] 1-micro
+  [4] 2-minor
+  [5] 3-small
+  [6] 4-normal
+  [7] 5-notable
+  [8] 6-extraordinary
+  [9] 7-max

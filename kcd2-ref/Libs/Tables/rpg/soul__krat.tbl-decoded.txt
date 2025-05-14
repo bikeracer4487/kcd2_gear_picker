@@ -1,0 +1,94 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__krat.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 39
+  String Data Size ...... 1922
+  Unique String Count ... 80
+  File Size ............. 6942
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] krat_man_2
+  [1] kutnohorsko_settlements_ratboricko_soldiers_guards
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_02
+  [4] krat_closedCastle_ratbor_3
+  [5] char_GENERIC_MAN_SOLDIER_33
+  [6] krat_woman_13
+  [7] kutnohorsko_settlements_ratboricko_commonFolk_peasants_parcel06
+  [8] char_GENERIC_WOMAN_COMMONER_06
+  [9] krat_dog_2
+  [10] krat_horse_2
+  [11] krat_woman_8
+  [12] kutnohorsko_settlements_ratboricko_commonFolk_peasants_parcel04
+  [13] char_GENERIC_WOMAN_COMMONER_11
+  [14] krat_man_9
+  [15] char_GENERIC_MAN_COMMONER_21
+  [16] krat_dog_3
+  [17] kutnohorsko_settlements_ratboricko_nobility_lordsOfRatibor
+  [18] krat_man_6
+  [19] kutnohorsko_settlements_ratboricko_commonFolk_tradersAndCraftmans
+  [20] Merchants
+  [21] char_GENERIC_MAN_MERCHANT_CZECH_03
+  [22] krat_man_5
+  [23] kutnohorsko_settlements_ratboricko_commonFolk_peasants_parcel01
+  [24] char_GENERIC_MAN_COMMONER_19
+  [25] krat_closedCastle_ratbor_1
+  [26] char_GENERIC_MAN_SOLDIER_23
+  [27] krat_fararHroznata
+  [28] kutnohorsko_settlements_ratboricko_nobility_priest
+  [29] char_FARAR_HROZNATA
+  [30] krat_dog_1
+  [31] krat_man_1
+  [32] char_GENERIC_MAN_GUARD_03
+  [33] krat_horse_3
+  [34] kutnohorsko_settlements_ratboricko_commonFolk_peasants_parcel03
+  [35] krat_man_10
+  [36] char_GENERIC_MAN_MERCHANT_CZECH_04
+  [37] krat_man_3
+  [38] char_GENERIC_MAN_COMMONER_17
+  [39] krat_jenik
+  [40] char_JENIK_DOLANY
+  [41] krat_man_12
+  [42] krat_pena
+  [43] char_PENA_DOLANY
+  [44] krat_woman_11
+  [45] char_GENERIC_WOMAN_COMMONER_01
+  [46] krat_horse_4
+  [47] krat_closedCastle_ratbor_2
+  [48] char_GENERIC_MAN_SOLDIER_21
+  [49] krat_man_4
+  [50] char_GENERIC_MAN_COMMONER_12
+  [51] krat_woman_1
+  [52] char_GENERIC_WOMAN_COMMONER_04
+  [53] krat_horse_1
+  [54] krat_man_11
+  [55] krat_woman_14
+  [56] char_GENERIC_WOMAN_COMMONER_02
+  [57] krat_baronBrabant
+  [58] kutnohorsko_allies_newBuddies_baronDrabant
+  [59] char_VAQUELIN_BRABANT
+  [60] krat_stislav
+  [61] char_STISLAV_DOLANY
+  [62] krat_woman_6
+  [63] char_GENERIC_WOMAN_COMMONER_12
+  [64] krat_horseBrabantNamed
+  [65] char_HENRI_BRABANT_HORSE
+  [66] krat_closedCastle_ratbor_4
+  [67] char_GENERIC_MAN_SOLDIER_24
+  [68] krat_woman_5
+  [69] char_GENERIC_WOMAN_COMMONER_08
+  [70] krat_deadVillager_1
+  [71] deadBodies
+  [72] krat_martinOderin
+  [73] char_MARTIN_ODERIN
+  [74] krat_krystofOderin
+  [75] char_KRYSTOF_ODERIN
+  [76] krat_woman_12
+  [77] char_GENERIC_WOMAN_COMMONER_03
+  [78] krat_woman_7
+  [79] char_GENERIC_WOMAN_COMMONER_09

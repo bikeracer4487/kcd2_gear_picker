@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/document_reward_perk.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3910766059
+  Layout Hash ........... 1079996233
+  Table Version ......... 1
+  Line Count ............ 0
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 28
+  Calculated Line Size .. 0 (rem. 0)

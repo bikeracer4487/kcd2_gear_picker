@@ -1,0 +1,18 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/ammo_class.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2842504930
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 24
+  Unique String Count ... 4
+  File Size ............. 116
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Arrow
+  [1] Bolt
+  [2] Ball
+  [3] Shotgun

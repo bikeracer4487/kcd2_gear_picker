@@ -1,0 +1,36 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/situation_role_behavior.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2018759099
+  Layout Hash ........... 1153737245
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 606
+  Unique String Count ... 22
+  File Size ............. 1514
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] situation_gossipReceiver_bandit
+  [1] situation_friendlyFight_audience
+  [2] situation_gateToll_passerBy
+  [3] situation_opilyManzel_zena
+  [4] situation_gossipReceiver
+  [5] beggar_behavior
+  [6] situation_opilyManzel_muz
+  [7] npc_watchingContest
+  [8] havirskyTurnaj_listener
+  [9] situation_flutistListener
+  [10] situation_majitelkaLazni_owner
+  [11] situation_storyteller_listener
+  [12] situation_questSermiri_listener
+  [13] situation_gateToll_gateGuard
+  [14] situation_gossipInitiator
+  [15] situation_majitelkaLazni_other
+  [16] situation_gossipInitiator_bandit
+  [17] situation_lostItem
+  [18] beggarGiver_behavior
+  [19] situation_eventHlasatel_listener
+  [20] situation_eventRvacka_spectator
+  [21] situation_eventPranyr_listener

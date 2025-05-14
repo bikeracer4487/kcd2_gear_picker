@@ -1,0 +1,128 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_fragment_id_mapping.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2091847449
+  Layout Hash ........... 1435012270
+  Table Version ......... 1
+  Line Count ............ 114
+  String Data Size ...... 2337
+  Unique String Count ... 114
+  File Size ............. 5101
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] CombatHitMovement
+  [1] CombatBlockMoveBack
+  [2] CombatBlockStepBack
+  [3] CombatAttack
+  [4] CombatLeap
+  [5] CombatMovement
+  [6] CombatBlockUpperBody
+  [7] CombatHit
+  [8] CombatBlockBroken
+  [9] CombatBlockImpact
+  [10] CombatBlockStab
+  [11] CombatIdle
+  [12] CombatBlockPerfect
+  [13] CombatAttackFailedPB
+  [14] CombatAttackCombo
+  [15] CombatHitCombo
+  [16] CombatAttackStart
+  [17] CombatPreBlock
+  [18] CombatClinchGuardMaster
+  [19] CombatClinchGuardSlave
+  [20] CombatAttackSync
+  [21] CombatHitSync
+  [22] CombatBlockSlash
+  [23] CombatMasterStrike
+  [24] CombatMasterStrikeHit
+  [25] CombatDodgeGen
+  [26] FreeAttack
+  [27] CombatAttackFailed
+  [28] CombatStealthAttackSuccess
+  [29] CombatStealthHitSuccess
+  [30] CombatStealthClinchMaster
+  [31] CombatStealthClinchSlave
+  [32] CombatStealthGrabMaster
+  [33] CombatStealthGrabSlave
+  [34] CombatStealthPutDownMaster
+  [35] CombatStealthPutDownSlave
+  [36] CombatDeath
+  [37] CombatBlockNW
+  [38] HorseCombatIdle
+  [39] HorseCombatAttack
+  [40] HorseCombatMovement
+  [41] HorseCombatJumpStart
+  [42] HorseCombatJump
+  [43] HorseCombatLand
+  [44] HorseCombatMove2Idle
+  [45] HorseCombatIdle2Move
+  [46] HorseCombatRear
+  [47] HorseCombatFastStop
+  [48] HorseCombatAttackSync
+  [49] HorseCombatHitSync
+  [50] CombatHitTorso
+  [51] CombatAttackMercy
+  [52] CombatStopMaster
+  [53] CombatStopSlave
+  [54] CombatBlockPunch
+  [55] CombatSyncGuardMaster
+  [56] CombatSyncGuardSlave
+  [57] CombatAttackHead
+  [58] CombatBlockPerfectSync
+  [59] CombatBlockPerfectHitSync
+  [60] CombatAttackUpperbody
+  [61] CombatIdleVarLoop
+  [62] CombatIdleVar
+  [63] FreeAttackStart
+  [64] CombatAttackGen
+  [65] CombatAttackStartGen
+  [66] CombatBlockGen
+  [67] CombatBlockPerfectGen
+  [68] CombatAttackSpecialGen
+  [69] CombatPreBlockGen
+  [70] CombatAttackRiposteGen
+  [71] CombatClinchGuardMasterGen
+  [72] CombatClinchGuardSlaveGen
+  [73] CombatAttackSyncGen
+  [74] CombatHitSyncGen
+  [75] CombatRiposteSyncGen
+  [76] CombatRiposteHitSyncGen
+  [77] CombatBlockPerfectSyncGen
+  [78] CombatBlockPerfectHitSyncGen
+  [79] CombatClinchStartGuardMasterGen
+  [80] CombatClinchStartGuardSlaveGen
+  [81] CombatClinchTransitionMasterGen
+  [82] CombatClinchTransitionSlaveGen
+  [83] CombatIdleVarLoopGen
+  [84] CombatIdleVarGen
+  [85] CombatIdleVarFBGen
+  [86] CombatMasterStrikeGen
+  [87] CombatMasterStrikeHitGen
+  [88] CombatMasterStrikeDeathGen
+  [89] CombatMasterStrikeHitDeathGen
+  [90] CombatHitGen
+  [91] CombatDeathGen
+  [92] CombatBlockBrokenGen
+  [93] CombatAttackComboGen
+  [94] CombatHitComboGen
+  [95] CombatAttackComboDeathGen
+  [96] CombatHitComboDeathGen
+  [97] FreeBlock
+  [98] CombatHitLowMovementGen
+  [99] HorseCombatAttackSyncFail
+  [100] HorseCombatHitSyncFail
+  [101] CombatAttackSyncDeathGen
+  [102] CombatHitSyncDeathGen
+  [103] CombatClenchedHand
+  [104] CombatStealthTransitionMasterGen
+  [105] CombatStealthTransitionSlaveGen
+  [106] CombatRiposteSyncDeathGen
+  [107] CombatRiposteHitSyncDeathGen
+  [108] CombatGuardPose
+  [109] CombatAttackSyncDeath
+  [110] CombatHitSyncDeath
+  [111] HorseCombatForcedRear
+  [112] CombatStopDeathMaster
+  [113] CombatStopDeathSlave

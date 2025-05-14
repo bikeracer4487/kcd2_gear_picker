@@ -1,0 +1,64 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_guard_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1975822652
+  Layout Hash ........... 1400036993
+  Table Version ......... 1
+  Line Count ............ 28
+  String Data Size ...... 792
+  Unique String Count ... 50
+  File Size ............. 1940
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] none
+  [1] main
+  [2] preBlock
+  [3] attackReady
+  [4] clinch
+  [5] endClinch
+  [6] stealthStand
+  [7] endStealthStand
+  [8] stealthSitting
+  [9] endStealthSitting
+  [10] stealthSittingGround
+  [11] endStealthSittingGround
+  [12] stealthLyingBenchLeft
+  [13] endStealthLyingBenchLeft
+  [14] stealthLyingBenchRight
+  [15] endStealthLyingBenchRight
+  [16] stealthLyingGroundLeft
+  [17] endStealthLyingGroundLeft
+  [18] stealthLyingGroundRight
+  [19] endStealthLyingGroundRight
+  [20] stealthGrab
+  [21] endStealthGrab
+  [22] carryCorpse
+  [23] endCarryCorpse
+  [24] knockedOut
+  [25] endKnockedOut
+  [26] endCombatMode
+  [27] freeBlock
+  [28] endFreeBlock
+  [29] death
+  [30] endDeath
+  [31] endCombatModeCanContinue
+  [32] freeBlockShieldUp
+  [33] shieldUp
+  [34] endShieldUp
+  [35] stealthLyingBedLeft
+  [36] endStealthLyingBedLeft
+  [37] stealthLyingBedRight
+  [38] endStealthLyingBedRight
+  [39] stealthKneelingChest
+  [40] endStealthKneelingChest
+  [41] freeGuard
+  [42] endFreeGuard
+  [43] clinch1
+  [44] endClinch1
+  [45] clinch2
+  [46] endClinch2
+  [47] anyGuard
+  [48] stealthSittingTable
+  [49] endStealthSittingTable

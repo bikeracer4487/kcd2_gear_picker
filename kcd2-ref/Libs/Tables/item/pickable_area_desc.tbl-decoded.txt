@@ -1,0 +1,38 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/pickable_area_desc.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3054421417
+  Layout Hash ........... 1067111193
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 199
+  Unique String Count ... 24
+  File Size ............. 1635
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] Bodlak
+  [1] Kopriva
+  [2] Zbehovec
+  [3] Mesicek
+  [4] <default>
+  [5] Vrannioko
+  [6] Kostival
+  [7] Vlcimak
+  [8] Pelynek
+  [9] Rulik
+  [10] Svetlik
+  [11] Trezalka
+  [12] Hermanek
+  [13] Mata
+  [14] Salvej
+  [15] Pampeliska
+  [16] Muchomurka
+  [17] Hrib
+  [18] Bedla
+  [19] Kozlik
+  [20] Plevel
+  [21] Sazenice
+  [22] System.Object
+  [23] Rimbaba

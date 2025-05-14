@@ -1,0 +1,135 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/angriness_enum.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 548327285
+  Layout Hash ........... 444951957
+  Table Version ......... 1
+  Line Count ............ 119
+  String Data Size ...... 3599
+  Unique String Count ... 121
+  File Size ............. 7435
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] auto_witness_death
+  [1] Violence
+  [2] auto_witness_theft_small_unattributed
+  [3] Material
+  [4] auto_witness_theft_medium_unattributed
+  [5] auto_witness_theft_large_unattributed
+  [6] auto_hit_stealth_unattributed
+  [7] event_roadsideCorpse_unsolvedMurder
+  [8] auto_shooterNotFound
+  [9] auto_interruptCheck_periodic
+  [10] auto_lockpickedDoor
+  [11] auto_suspiciousDoor
+  [12] auto_combat_started
+  [13] auto_reconcile
+  [14] auto_resetToMinimum
+  [15] auto_hit_pebble
+  [16] auto_interruptWatchTrespass_periodic
+  [17] auto_interruptLookAround_periodic
+  [18] auto_heard_movement_bio
+  [19] auto_heard_lockpick
+  [20] auto_heard_distraction
+  [21] auto_heard_smell
+  [22] auto_heard_combat
+  [23] auto_heard_alarm
+  [24] auto_heard_whistle
+  [25] auto_heard_dogWhistle
+  [26] auto_heard_gunFired_close
+  [27] auto_heard_gunFired
+  [28] auto_heard_bowFired
+  [29] auto_heard_arrowHit
+  [30] auto_heard_bulletHit
+  [31] auto_heard_thrash
+  [32] auto_heard_dog_distract
+  [33] auto_hit_collision
+  [34] auto_witness_corpse
+  [35] auto_suspiciousDoor_bandit
+  [36] auto_witness_death_bandit
+  [37] auto_witness_theft_small_unattributed_bandit
+  [38] auto_witness_theft_medium_unattributed_bandit
+  [39] auto_witness_theft_large_unattributed_bandit
+  [40] auto_hit_stealth_unattributed_bandit
+  [41] auto_shooterNotFound_bandit
+  [42] auto_interruptCheck_periodic_bandit
+  [43] auto_lockpickedDoor_bandit
+  [44] auto_combat_started_bandit
+  [45] auto_hit_pebble_bandit
+  [46] auto_interruptWatchTrespass_periodic_bandit
+  [47] auto_interruptLookAround_periodic_bandit
+  [48] auto_heard_movement_bio_bandit
+  [49] auto_heard_lockpick_bandit
+  [50] auto_heard_distraction_bandit
+  [51] auto_heard_smell_bandit
+  [52] auto_heard_combat_bandit
+  [53] auto_heard_alarm_bandit
+  [54] auto_heard_whistle_bandit
+  [55] auto_heard_dogWhistle_bandit
+  [56] auto_heard_gunFired_close_bandit
+  [57] auto_heard_gunFired_bandit
+  [58] auto_heard_bowFired_bandit
+  [59] auto_heard_arrowHit_bandit
+  [60] auto_heard_bulletHit_bandit
+  [61] auto_heard_thrash_bandit
+  [62] auto_heard_dog_distract_bandit
+  [63] auto_hit_collision_bandit
+  [64] auto_witness_corpse_bandit
+  [65] auto_missingNpcNotFound
+  [66] auto_animal_wild_heard_hunting_alarm
+  [67] auto_animal_wild_heard_movement
+  [68] auto_animal_wild_heard_smell
+  [69] auto_animal_wild_heard_whistle
+  [70] auto_animal_wild_heard_bio_hunger
+  [71] auto_animal_wild_heard_bow_fired
+  [72] auto_animal_wild_heard_arrow_hit
+  [73] auto_animal_wild_heard_gun_fired
+  [74] auto_animal_wild_heard_bullet_hit
+  [75] auto_animal_wild_heard_combat
+  [76] auto_animal_wild_heard_distraction
+  [77] auto_animal_wild_heard_thrash
+  [78] auto_animal_wild_saw_human
+  [79] auto_animal_wild_hit_decoy
+  [80] auto_animal_wild_hit_ranged
+  [81] auto_animal_wild_hit_collision
+  [82] auto_animal_wild_information_animal_alarm
+  [83] auto_animal_domestic_heard_hunting_alarm
+  [84] auto_animal_domestic_heard_movement
+  [85] auto_animal_domestic_heard_smell
+  [86] auto_animal_domestic_heard_whistle
+  [87] auto_animal_domestic_heard_bio_hunger
+  [88] auto_animal_domestic_heard_bow_fired
+  [89] auto_animal_domestic_heard_arrow_hit
+  [90] auto_animal_domestic_heard_gun_fired
+  [91] auto_animal_domestic_heard_bullet_hit
+  [92] auto_animal_domestic_heard_combat
+  [93] auto_animal_domestic_heard_distraction
+  [94] auto_animal_domestic_heard_thrash
+  [95] auto_animal_domestic_saw_human
+  [96] auto_animal_domestic_hit_decoy
+  [97] auto_animal_domestic_hit_ranged
+  [98] auto_animal_domestic_hit_collision
+  [99] auto_animal_dog_heard_hunting_alarm
+  [100] auto_animal_dog_heard_movement
+  [101] auto_animal_dog_heard_smell
+  [102] auto_animal_dog_heard_whistle
+  [103] auto_animal_dog_heard_bio_hunger
+  [104] auto_animal_dog_heard_bow_fired
+  [105] auto_animal_dog_heard_arrow_hit
+  [106] auto_animal_dog_heard_gun_fired
+  [107] auto_animal_dog_heard_bullet_hit
+  [108] auto_animal_dog_heard_combat
+  [109] auto_animal_dog_heard_distraction
+  [110] auto_animal_dog_heard_thrash
+  [111] auto_animal_dog_saw_human
+  [112] auto_animal_dog_hit_decoy
+  [113] auto_animal_dog_hit_ranged
+  [114] auto_animal_dog_hit_collision
+  [115] auto_animal_dog_information_animal_alarm
+  [116] auto_animal_dog_watchTrespass_periodic
+  [117] bohutovaVlozka_makePeopleAngryAfterRecentBattle
+  [118] bohutovaVlozka_makePeopleCalmAfterForgettingRecentBattle
+  [119] mucirna_makePeopleAngryAfterBurningFort
+  [120] auto_missingNpcNotFound_bandit

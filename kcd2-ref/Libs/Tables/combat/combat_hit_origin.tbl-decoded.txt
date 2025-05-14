@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_hit_origin.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 743037124
+  Layout Hash ........... 2895892273
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 83
+  Unique String Count ... 10
+  File Size ............. 271
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] undefined
+  [1] NULL
+  [2] forward
+  [3] ho_forward
+  [4] backward
+  [5] ho_backward
+  [6] left
+  [7] ho_left
+  [8] right
+  [9] ho_right

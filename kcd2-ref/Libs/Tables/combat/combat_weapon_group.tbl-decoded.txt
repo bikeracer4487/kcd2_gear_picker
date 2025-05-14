@@ -1,0 +1,28 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_weapon_group.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4252531574
+  Layout Hash ........... 444951957
+  Table Version ......... 1
+  Line Count ............ 8
+  String Data Size ...... 152
+  Unique String Count ... 14
+  File Size ............. 436
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] ShortWeapons
+  [1] shortWeapon
+  [2] AnyExceptShield
+  [3] noShield
+  [4] AnyExceptShieldOrTorch
+  [5] noShieldOrTorch
+  [6] stick
+  [7] stickWeapon
+  [8] blunt
+  [9] bluntWeapon
+  [10] swords
+  [11] shortSwords
+  [12] Any
+  [13] any

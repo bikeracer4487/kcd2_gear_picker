@@ -1,0 +1,54 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/relationship_flag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4260945323
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 22
+  String Data Size ...... 453
+  Unique String Count ... 40
+  File Size ............. 833
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] any
+  [1] (-inf;inf)
+  [2] atLeast_1_horrible
+  [3] (0;1]
+  [4] atLeast_2_low
+  [5] (0.2;1]
+  [6] atLeast_3_normal
+  [7] (0.4;1]
+  [8] atLeast_4_high
+  [9] (0.6;1]
+  [10] atLeast_5_great
+  [11] (0.8;1]
+  [12] atMost_1_horrible
+  [13] (0;0.2]
+  [14] atMost_2_low
+  [15] (0;0.4]
+  [16] atMost_3_normal
+  [17] (0;0.6]
+  [18] atMost_4_high
+  [19] (0;0.8]
+  [20] atMost_5_great
+  [21] defenceMode
+  [22] [0.5;1]
+  [23] defenceMode_nearmiss
+  [24] [0.01;1]
+  [25] denial
+  [26] [0;0.11]
+  [27] enemy
+  [28] [-1;0)
+  [29] exactly_1_horrible
+  [30] exactly_2_low
+  [31] (0.2;0.4]
+  [32] exactly_3_normal
+  [33] (0.4;0.6]
+  [34] exactly_4_high
+  [35] (0.6;0.8]
+  [36] exactly_5_great
+  [37] friend
+  [38] neutral
+  [39] [0;0]

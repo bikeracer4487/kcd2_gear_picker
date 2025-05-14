@@ -1,0 +1,16 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/game_mode.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2991388895
+  Layout Hash ........... 3412206941
+  Table Version ......... 1
+  Line Count ............ 2
+  String Data Size ...... 16
+  Unique String Count ... 2
+  File Size ............. 108
+  Calculated Line Size .. 32 (rem. 0)
+String Table:
+  [0] normal
+  [1] hardcore

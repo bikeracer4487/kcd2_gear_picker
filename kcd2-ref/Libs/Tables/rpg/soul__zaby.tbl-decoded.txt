@@ -1,0 +1,27 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zaby.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 12
+  String Data Size ...... 159
+  Unique String Count ... 13
+  File Size ............. 1723
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zaby_sheep2
+  [1] animal_home
+  [2] zaby_sheep7
+  [3] zaby_sheep10
+  [4] zaby_sheep4
+  [5] zaby_sheep1
+  [6] zaby_sheep9
+  [7] zaby_sheep11
+  [8] zaby_sheep3
+  [9] zaby_sheep8
+  [10] zaby_sheep5
+  [11] zaby_sheep6
+  [12] zaby_sheep12

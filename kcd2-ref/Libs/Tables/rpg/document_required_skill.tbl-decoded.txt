@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/document_required_skill.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2630160643
+  Layout Hash ........... 2013450773
+  Table Version ......... 1
+  Line Count ............ 64
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1820
+  Calculated Line Size .. 28 (rem. 0)

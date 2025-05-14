@@ -1,0 +1,104 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__krab.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 46
+  String Data Size ...... 2068
+  Unique String Count ... 90
+  File Size ............. 7984
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] krab_man_2
+  [1] kutnohorsko_millers_rabstejnka_millerHelpers
+  [2] char_GENERIC_MAN_COMMONER_02
+  [3] krab_man_7
+  [4] kutnohorsko_outskirts_woodcutters_campRabstejnsko
+  [5] char_GENERIC_MAN_COMMONER_16
+  [6] krab_huntsmanDog_npc_2
+  [7] kutnohorsko_settlements_rabstejnsko_huntsman
+  [8] krab_man_21
+  [9] kutnohorsko_enemies_bandits_rabstejnskoAlchemistCamp
+  [10] Bandits
+  [11] char_ZLY_ALCHYMISTA_RABSTEJNKA
+  [12] krab_man_29
+  [13] Guards
+  [14] char_GENERIC_MAN_GAMEKEEPER_04
+  [15] krab_woman_4
+  [16] kutnohorsko_settlements_rabstejnsko
+  [17] char_GENERIC_WOMAN_COMMONER_09
+  [18] krab_man_16
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [20] krab_man_5
+  [21] kutnohorsko_settlements_rabstejnsko_mill
+  [22] char_GENERIC_MAN_COMMONER_03
+  [23] krab_deserter_3
+  [24] kutnohorsko_enemies_bandits_zikmunduvTaborDefectors
+  [25] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [26] krab_man_25
+  [27] kutnohorsko_enemies_bandits_rabstejnskoInactiveZakopanyZitrek
+  [28] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [29] krab_man_11
+  [30] char_GENERIC_MAN_COMMONER_08
+  [31] krab_man_14
+  [32] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [33] krab_woodcutter
+  [34] char_DREVORUBEC_VASEK
+  [35] krab_deserter_5
+  [36] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [37] krab_man_15
+  [38] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [39] krab_man_20
+  [40] krab_deserter_4
+  [41] krab_man_9
+  [42] krab_deserter_2
+  [43] krab_woman_6
+  [44] test_npcs
+  [45] char_GENERIC_WOMAN_COMMONER_06
+  [46] krab_man_23
+  [47] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [48] krab_man_30
+  [49] Merchants
+  [50] char_GENERIC_MAN_MERCHANT_CZECH_07
+  [51] krab_man_1
+  [52] krab_man_22
+  [53] krab_machal
+  [54] char_MLYNAR_MACHAL_RABSTEJNKA
+  [55] krab_man_4
+  [56] char_GENERIC_MAN_COMMONER_07
+  [57] krab_woman_5
+  [58] char_GENERIC_WOMAN_COMMONER_01
+  [59] krab_woman_3
+  [60] char_GENERIC_WOMAN_COMMONER_02
+  [61] krab_man_17
+  [62] krab_man_6
+  [63] krab_man_8
+  [64] char_GENERIC_MAN_COMMONER_13
+  [65] krab_man_24
+  [66] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [67] krab_woman_2
+  [68] krab_horse_2
+  [69] krab_man_12
+  [70] char_GENERIC_MAN_COMMONER_05
+  [71] krab_man_28
+  [72] krab_woman_1
+  [73] kutnohorsko_settlements_rabstejnsko_civiliansReplaceMe
+  [74] krab_man_13
+  [75] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [76] krab_man_19
+  [77] krab_deserter_1
+  [78] krab_horse_1
+  [79] krab_man_26
+  [80] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [81] krab_skopek
+  [82] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [83] char_MLYNAR_SKOPEK
+  [84] krab_man_3
+  [85] char_GENERIC_MAN_COMMONER_25
+  [86] krab_man_27
+  [87] krab_woman_7
+  [88] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_additiveNPCs
+  [89] char_GENERIC_WOMAN_TOWNSWOMAN_05

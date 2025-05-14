@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__zranenyLovci.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 243
+  Unique String Count ... 10
+  File Size ............. 911
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] zranenyLovci_wolf_3
+  [1] animal_wild_enemy_trosecko
+  [2] zranenyLovci_wolf_2
+  [3] zranenyLovci_wolf_1
+  [4] zranenyLovci_bandit_1
+  [5] trosecko_enemies_bandits_campBukovina
+  [6] Bandits
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [8] zranenyLovci_bandit_2
+  [9] char_GENERIC_MAN_ENEMY_BANDIT_11

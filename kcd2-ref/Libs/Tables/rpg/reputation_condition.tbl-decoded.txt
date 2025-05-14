@@ -1,0 +1,15 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/reputation_condition.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 685876972
+  Layout Hash ........... 4149617061
+  Table Version ......... 1
+  Line Count ............ 1
+  String Data Size ...... 5
+  Unique String Count ... 1
+  File Size ............. 57
+  Calculated Line Size .. 24 (rem. 0)
+String Table:
+  [0] test

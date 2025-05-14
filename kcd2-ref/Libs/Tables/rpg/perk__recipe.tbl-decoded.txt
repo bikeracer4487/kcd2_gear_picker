@@ -1,0 +1,92 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk__recipe.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2181424497
+  Layout Hash ........... 3183551129
+  Table Version ......... 1
+  Line Count ............ 78
+  String Data Size ...... 2303
+  Unique String Count ... 78
+  File Size ............. 11691
+  Calculated Line Size .. 120 (rem. 0)
+String Table:
+  [0] Alch recipe - sneak
+  [1] BS recipe - r_axebattle04
+  [2] Alch recipe - hair o' dog
+  [3] Alch recipe - dementia
+  [4] Alch recipe - chamomileDecoction
+  [5] BS recipe - r_horseshoeMilitary
+  [6] BS recipe - r_kovarskeZakazky_magdalenaAxe
+  [7] BS recipe - r_kovarTrainingSword
+  [8] Alch recipe - vitality
+  [9] BS recipe - basic_longsword
+  [10] BS recipe - r_shortswordbasilard
+  [11] BS recipe - r_shortswordceremony
+  [12] Alch recipe - archer
+  [13] BS recipe - longswordHenry_reforged
+  [14] BS recipe - r_horseshoeFarmer
+  [15] BS recipe - r_huntingSwordBasic
+  [16] BS recipe - r_shortswordheavy
+  [17] BS recipe - r_sabrecommon
+  [18] BS recipe - r_huntingswordsashka
+  [19] Alch recipe - saviourSchnapps
+  [20] Alch recipe - marigoldDecoction 
+  [21] BS recipe - r_axebattle03
+  [22] Alch recipe - horseman
+  [23] BS recipe - r_shortswordcommon
+  [24] Alch recipe - paralysis
+  [25] BS recipe - r_longswordbroad
+  [26] BS recipe - r_kovaniAsiDoVezi_protectiveAxe
+  [27] BS recipe - r_huntingswordsword
+  [28] BS recipe - r_kovaniKopie_penitent
+  [29] BS recipe - r_axebattle02
+  [30] Alch recipe - lion
+  [31] BS recipe - r_poustevnik_swordForSemin
+  [32] BS recipe - r_axefancy
+  [33] BS recipe - r_kovaniSymbolSermirny_guildSwordRemake
+  [34] Alch recipe - shot scatter
+  [35] BS recipe - basic_axe
+  [36] BS recipe - r_shortswordcleaver
+  [37] Alch recipe - painterMedicine
+  [38] BS recipe - basic_horseshoe
+  [39] BS recipe - r_longswordduel
+  [40] BS recipe - r_longswordcommon
+  [41] BS recipe - r_kovaniRelikvie_swordOfKnightValentin
+  [42] Alch recipe - mintha
+  [43] Alch recipe - hooch
+  [44] Alch recipe - energy
+  [45] Alch recipe - painkiller
+  [46] Alch recipe - owl
+  [47] BS recipe - r_axebattle01
+  [48] BS recipe - r_shortswordbroad
+  [49] BS recipe - r_kovaniPoklad_adornedAxe
+  [50] BS recipe - r_kovaniKovarskaSoutez_huntingKnifeForContest
+  [51] Alch recipe - antidote
+  [52] Alch recipe - stamina
+  [53] Alch recipe - shot ball
+  [54] Alch recipe - sleep
+  [55] BS recipe - r_huntingswordmussle
+  [56] BS recipe - r_axework01
+  [57] BS recipe - r_axework02
+  [58] Alch recipe - absintium
+  [59] Alch recipe - respec
+  [60] Alch recipe - fevertonic
+  [61] BS recipe - r_polearmBruncvik
+  [62] BS recipe - r_huntingswordfalchion
+  [63] BS recipe - r_kovaniNaKovarne_smithsDefense
+  [64] BS recipe - basic_sword
+  [65] BS recipe - longswordRadzig_reforged
+  [66] BS recipe - r_kovaniVajdovaKletba_rikonaris
+  [67] BS recipe - r_longswordsturdy
+  [68] Alch recipe - hunter
+  [69] Alch recipe - bard
+  [70] BS recipe - r_kovaniKatuvSleh_executionersSword
+  [71] Alch recipe - bane
+  [72] BS recipe - r_pomatenec_longsword
+  [73] BS recipe - r_longswordold
+  [74] BS recipe - r_axecuman
+  [75] Alch recipe - soap
+  [76] BS recipe - r_sabrenoble
+  [77] BS recipe - r_kovaniZavodniPodkovy_caulkinHorseshoe

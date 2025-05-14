@@ -1,0 +1,60 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kboh.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 21
+  String Data Size ...... 1065
+  Unique String Count ... 46
+  File Size ............. 3781
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kboh_man_9
+  [1] kutnohorsko_enemies_bandits_hromovyKamenSoldiersCamp
+  [2] Bandits
+  [3] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [4] kboh_man_10
+  [5] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [6] kboh_dog_1
+  [7] kutnohorsko_settlements_bohounovice_commonFolk_peasants_parcel04
+  [8] kboh_vrbaWife
+  [9] kutnohorsko_settlements_bohounovice_commonFolk_peasants_parcel02
+  [10] char_GENERIC_WOMAN_COMMONER_08
+  [11] kboh_vrba
+  [12] char_VRBA
+  [13] kboh_smilWife
+  [14] kutnohorsko_settlements_bohounovice_commonFolk_peasants_parcel01
+  [15] char_GENERIC_WOMAN_COMMONER_06
+  [16] kboh_kuratkoWife
+  [17] kutnohorsko_settlements_bohounovice_commonFolk_peasants_parcel03
+  [18] char_GENERIC_WOMAN_COMMONER_01
+  [19] kboh_kuratkoDaughter
+  [20] kboh_villageHead_bynek
+  [21] char_BYNEK
+  [22] kboh_smilJr
+  [23] char_GENERIC_MAN_COMMONER_25
+  [24] kboh_kuratkoJr
+  [25] char_GENERIC_MAN_COMMONER_11
+  [26] kboh_sovka
+  [27] char_SOVKA
+  [28] kboh_vitek_lazar
+  [29] char_VITEK
+  [30] kboh_kuratko
+  [31] char_KURATKO
+  [32] kboh_bynekWife
+  [33] char_GENERIC_WOMAN_COMMONER_09
+  [34] kboh_smil
+  [35] char_SMIL
+  [36] kboh_man_6
+  [37] char_GENERIC_MAN_COMMONER_18
+  [38] kboh_man_8
+  [39] kboh_man_7
+  [40] kboh_man_11
+  [41] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [42] kboh_man_12
+  [43] kutnohorsko_settlements_bohounovice_soldiers_guards
+  [44] Guards
+  [45] char_GENERIC_MAN_GUARD_18

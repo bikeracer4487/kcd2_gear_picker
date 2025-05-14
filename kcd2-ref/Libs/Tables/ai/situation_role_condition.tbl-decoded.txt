@@ -1,0 +1,136 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/situation_role_condition.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2702654708
+  Layout Hash ........... 3088067189
+  Table Version ......... 1
+  Line Count ............ 57
+  String Data Size ...... 3760
+  Unique String Count ... 109
+  File Size ............. 6068
+  Calculated Line Size .. 40 (rem. 0)
+String Table:
+  [0] context_eventPranyr_prisoner
+  [1] situation_eventPranyr_prisoner
+  [2] context_activity_friendlyFight
+  [3] activity_friendlyFight
+  [4] context_storyteller_talker
+  [5] situation_storyteller_talker
+  [6] context_situation_friendlyFight_audience
+  [7] situation_friendlyFight_audience
+  [8] flutist_player
+  [9] context_flutist_player & ! buff_isInjured & ! buff_lowHealth
+  [10] context_gateToll_passerBy
+  [11] situation_gateToll_passerBy
+  [12] context_activity_pillory
+  [13] activity_pillory
+  [14] eventPranyr_listener
+  [15] ! eventPranyr_prisoner & !Guard & ! context_crime_sleeping & right_hand_empty & left_hand_empty & ! buff_lowHealth & ! buff_isInjured
+  [16] buff_isInjured
+  [17] injury
+  [18] havirskyTurnaj_listener
+  [19] !havirskyTurnaj_announcer & ! buff_isInjured & ! buff_lowHealth
+  [20] buff_isDrunk
+  [21] alcohol_drunk
+  [22] suppressMajitelkaLazniParticipation
+  [23] situation_suppressMajitelkaLazniParticipation
+  [24] shootingRange_participant
+  [25] dog
+  [26] 18
+  [27] lostItemNPC
+  [28] context_lostItemNPC & 
+! context_profession_onDuty & right_hand_empty & left_hand_empty & ! buff_isInjured & ! buff_lowHealth
+  [29] opilyManzel_zena
+  [30] isFemale
+  [31] eventRvacka_talker
+  [32] situation_eventRvacka_talker
+  [33] opilyManzel_muz
+  [34] isMale & buff_isDrunk & ! buff_isInjured & ! buff_lowHealth
+  [35] beggar
+  [36] situation_beggar
+  [37] beggarGiver
+  [38] context_situation_beggarGiver & right_hand_empty & left_hand_empty & ! buff_isInjured & ! buff_lowHealth
+  [39] GuardOnDuty
+  [40] crime_isAuthorityOnDuty
+  [41] context_gossip
+  [42] situation_gossip
+  [43] sermiri_menhart
+  [44] sermiri_menhartFirstConfrontation
+  [45] context_situation_runningGossip
+  [46] situation_runningGossip
+  [47] context_situation_beggarGiver
+  [48] situation_beggarGiver
+  [49] Guard
+  [50] crime_isAuthority
+  [51] storyteller_listener
+  [52] context_storyteller_listener &  
+!storyteller_talker  
+& 
+!GuardOnDuty & 
+!context_profession_onDuty & ! buff_isInjured 
+& right_hand_empty & left_hand_empty & ! buff_lowHealth
+  [53] majitelkaLazni_owner
+  [54] context_majitelkaLazni_owner & ! buff_isInjured & !suppressMajitelkaLazniParticipation & ! buff_lowHealth
+  [55] suppressGossipParticipation
+  [56] situation_suppressGossipParticipation
+  [57] eventPranyr_prisoner
+  [58] context_eventPranyr_prisoner & context_activity_pillory
+  [59] context_majitelkaLazni_owner
+  [60] situation_majitelkaLazni_owner
+  [61] storyteller_talker
+  [62] eventHlasatel_listener
+  [63] ! eventHlasatel_hlasatel & ! context_crime_sleeping & !GuardOnDuty & right_hand_empty & left_hand_empty & ! buff_lowHealth & ! buff_isInjured
+  [64] majitelkaLazni_other
+  [65] context_majitelkaLazni_other & ! buff_isInjured & !suppressMajitelkaLazniParticipation & ! buff_lowHealth
+  [66] context_crime_sleeping
+  [67] crime_sleeping
+  [68] context_storyteller_listener
+  [69] situation_storyteller_listener
+  [70] buff_lowHealth
+  [71] low_health
+  [72] shootingRange_spectator
+  [73] ! shootingRange_participant & ! Guard & ! buff_isInjured & ! buff_lowHealth
+  [74] isMale
+  [75] 1
+  [76] gateToll_passerBy
+  [77] context_gateToll_passerBy & 
+! Guard & ! buff_isInjured & ! buff_lowHealth
+  [78] eventHlasatel_hlasatel
+  [79] situation_eventHlasatel_hlasatel
+  [80] context_situation_isDrunk
+  [81] situation_isDrunk
+  [82] gossip
+  [83] context_gossip & 
+! suppressGossipParticipation & 
+! buff_isInjured & 
+! context_crime_sleeping & ! context_situation_runningGossip & ! context_crime_isAuthorityOnStationaryDuty & ! buff_lowHealth
+  [84] context_flutist_listener
+  [85] situation_flutist_listener
+  [86] context_lostItemNPC
+  [87] situation_lostItemNPC
+  [88] havirskyTurnaj_announcer
+  [89] 2
+  [90] context_flutist_player
+  [91] situation_flutist_player
+  [92] right_hand_empty
+  [93] RightHand
+  [94] gateToll_gateGuard
+  [95] crime_isAuthorityOnStationaryDuty
+  [96] context_crime_isAuthorityOnStationaryDuty
+  [97] left_hand_empty
+  [98] LeftHand
+  [99] context_majitelkaLazni_other
+  [100] situation_majitelkaLazni_other
+  [101] context_profession_onDuty
+  [102] profession_onDuty
+  [103] flutist_listener
+  [104] context_flutist_listener & 
+ 
+! context_flutist_player & 
+! context_profession_onDuty & ! buff_isInjured & ! buff_lowHealth
+  [105] eventRvacka_spectator
+  [106] ! Guard & ! eventRvacka_talker & ! buff_isInjured & ! buff_lowHealth
+  [107] friendlyFight_audience
+  [108] context_situation_friendlyFight_audience & ! context_activity_friendlyFight & ! buff_isInjured & ! buff_lowHealth

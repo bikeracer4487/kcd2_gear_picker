@@ -1,0 +1,128 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tzel.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 54
+  String Data Size ...... 2574
+  Unique String Count ... 114
+  File Size ............. 9514
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tzel_man_7
+  [1] trosecko_settlements_zelejov_soldiers_militia
+  [2] Guards
+  [3] char_GENERIC_MAN_GUARD_12
+  [4] tzel_man_14
+  [5] trosecko_enemies_bandits_campZelejov
+  [6] Bandits
+  [7] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [8] tzel_man_1
+  [9] trosecko_settlements_zelejov_commonFolk_peasants_parcel02
+  [10] char_GENERIC_MAN_COMMONER_02
+  [11] tzel_woman_11
+  [12] trosecko_settlements_zelejov_commonFolk_tavern_staff
+  [13] char_SENKYRKA_Z_ZELEJOVSKE_HOSPODY_2
+  [14] tzel_olbram
+  [15] trosecko_settlements_zelejov_commonFolk_peasants_parcel01
+  [16] char_SEDLAK_OLBRAM_ZELEJOV
+  [17] tzel_man_6
+  [18] trosecko_settlements_zelejov_commonFolk_peasants_parcel03
+  [19] char_GENERIC_MAN_COMMONER_25
+  [20] tzel_frantisek
+  [21] char_ROLNIK_FRANTISEK_ZELEJOV
+  [22] tzel_david
+  [23] trosecko_settlements_zelejov_commonFolk_tavern_musicians
+  [24] char_DAVID
+  [25] tzel_woman_8
+  [26] trosecko_settlements_zelejov_commonFolk_baths_staff
+  [27] char_GENERIC_WOMAN_COMMONER_07
+  [28] tzel_maid
+  [29] char_GENERIC_WOMAN_COMMONER_02
+  [30] tzel_vavrinec
+  [31] Merchants
+  [32] char_HOSPODSKY_VAVRINEC_TICHOTA
+  [33] tzel_man_5
+  [34] char_GENERIC_MAN_COMMONER_09
+  [35] tzel_lida
+  [36] char_LIDA_Z_ZELEJOVA
+  [37] tzel_woman_2
+  [38] trosecko_settlements_zelejov_commonFolk_tradersAndCraftmans_food
+  [39] char_GENERIC_WOMAN_COMMONER_03
+  [40] tzel_woman_9
+  [41] char_HOSPODSKA_MARIE_TICHOTOVA
+  [42] tzel_woman_7
+  [43] char_GENERIC_WOMAN_COMMONER_01
+  [44] tzel_rowdy_3
+  [45] trosecko_settlements_zelejov_commonFolk_tavern_guests
+  [46] char_KOSTKAR_KOSTA
+  [47] tzel_farmhand_1
+  [48] char_GENERIC_MAN_COMMONER_16
+  [49] tzel_woman_5
+  [50] trosecko_settlements_zelejov_commonFolk_baths_management
+  [51] char_LAZEBNICE_DOROTA
+  [52] tzel_groom
+  [53] char_GENERIC_MAN_COMMONER_01
+  [54] tzel_johan
+  [55] char_SUMAR_JOHAN
+  [56] tzel_woman_3
+  [57] char_GENERIC_WOMAN_COMMONER_10
+  [58] tzel_michal
+  [59] char_MICHAL
+  [60] tzel_woman_6
+  [61] char_LAZEBNICE_ANNA
+  [62] tzel_man_4
+  [63] char_GENERIC_MAN_GUARD_16
+  [64] tzel_man_2
+  [65] tzel_woman_10
+  [66] char_SENKYRKA_Z_ZELEJOVSKE_HOSPODY_1
+  [67] tzel_eliska
+  [68] char_ELISKA_Z_ZELEJOVA
+  [69] tzel_woman_1
+  [70] char_GENERIC_WOMAN_COMMONER_11
+  [71] tzel_man_3
+  [72] char_GENERIC_MAN_COMMONER_06
+  [73] tzel_horse_1
+  [74] tzel_rowdy_2
+  [75] tzel_bretislav
+  [76] char_PACHOLEK_BRETISLAV
+  [77] tzel_adam
+  [78] char_ADAM_Z_ZELEJOVA
+  [79] tzel_rowdy_1
+  [80] char_GENERIC_MAN_COMMONER_12
+  [81] tzel_woman_4
+  [82] char_GENERIC_WOMAN_COMMONER_09
+  [83] tzel_zvest
+  [84] char_SEDLAK_ZVEST
+  [85] tzel_fiala
+  [86] char_BRADYR_FIALA
+  [87] tzel_farmhand_2
+  [88] char_GENERIC_MAN_COMMONER_13
+  [89] tzel_horse_5
+  [90] tzel_farmhand_3
+  [91] char_GENERIC_MAN_COMMONER_20
+  [92] tzel_man_12
+  [93] trosecko_settlements_zelejov_commonFolk_tavern_catchpole
+  [94] char_GENERIC_MAN_GUARD_03
+  [95] tzel_dog_1
+  [96] tzel_horse_2
+  [97] tzel_man_11
+  [98] trosecko_settlements_zelejov_commonFolk_peasants
+  [99] char_KARL_VON_UNTERBRUCK
+  [100] tzel_man_10
+  [101] char_GENERIC_MAN_COMMONER_18
+  [102] tzel_horse_3
+  [103] tzel_man_8
+  [104] char_GENERIC_MAN_COMMONER_10
+  [105] tzel_man_9
+  [106] char_GENERIC_MAN_COMMONER_07
+  [107] tzel_horse_6
+  [108] tzel_man_13
+  [109] char_GENERIC_MAN_GUARD_02
+  [110] tzel_woman_12
+  [111] char_GENERIC_WOMAN_COMMONER_06
+  [112] tzel_horse_4
+  [113] tzel_dog_2

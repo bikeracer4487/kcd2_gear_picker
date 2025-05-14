@@ -1,0 +1,52 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_action_type.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2516581068
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 38
+  String Data Size ...... 315
+  Unique String Count ... 38
+  File Size ............. 951
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] generic
+  [1] ragdoll
+  [2] standup
+  [3] transitionToCombat
+  [4] combat
+  [5] idle
+  [6] jump
+  [7] job
+  [8] fall
+  [9] land
+  [10] dead
+  [11] rider
+  [12] mark
+  [13] wiggle
+  [14] sitting
+  [15] lying
+  [16] growl
+  [17] dig
+  [18] drink
+  [19] bark
+  [20] sniffing
+  [21] fail
+  [22] eating
+  [23] petting
+  [24] shakeout
+  [25] idleVar
+  [26] hitreaction
+  [27] trackview
+  [28] crouch
+  [29] shooting
+  [30] horseInCart
+  [31] itemSniffing
+  [32] pointSniffing
+  [33] counterSniffing
+  [34] tubDrinking
+  [35] standupGroup
+  [36] fallGroup
+  [37] dogGroup

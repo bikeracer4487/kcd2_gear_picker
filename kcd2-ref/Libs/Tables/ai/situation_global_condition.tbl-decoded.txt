@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/situation_global_condition.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 687335024
+  Layout Hash ........... 1218449781
+  Table Version ......... 1
+  Line Count ............ 42
+  String Data Size ...... 242
+  Unique String Count ... 12
+  File Size ............. 2622
+  Calculated Line Size .. 56 (rem. 0)
+String Table:
+  [0] 0.000000-10.000000:all
+  [1] GOSSIP:all
+  [2] 0.000000-35.000000:all
+  [3] Sun:all
+  [4] 0.000000-20.000000:all
+  [5] 30.000000:all
+  [6] 0.000000-5.000000:all
+  [7] SITUACE_MAJITELKALAZNI:all
+  [8] 0.000000-7.000000:all
+  [9] SITUACE_GATETOLL:all
+  [10] 1.300000-10.000000:all
+  [11] SITUACE_OPILY_MANZEL:all

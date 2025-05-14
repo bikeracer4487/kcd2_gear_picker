@@ -1,0 +1,26 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/poi_type__system.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1138219840
+  Layout Hash ........... 1097314361
+  Table Version ......... 1
+  Line Count ............ 6
+  String Data Size ...... 160
+  Unique String Count ... 12
+  File Size ............. 572
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] pub
+  [1] ui_maplegend_pub
+  [2] Normal
+  [3] nest
+  [4] ui_maplegend_nest
+  [5] DoNotShow
+  [6] fasttravel_vezak
+  [7] ui_maplegend_fasttravel
+  [8] fasttravel_vidlak
+  [9] unknown
+  [10] ui_maplegend_unknown
+  [11] fasttravel

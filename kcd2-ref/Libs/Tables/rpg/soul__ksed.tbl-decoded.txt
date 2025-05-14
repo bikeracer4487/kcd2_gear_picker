@@ -1,0 +1,44 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ksed.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 11
+  String Data Size ...... 778
+  Unique String Count ... 30
+  File Size ............. 2214
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ksed_placeholder_monk
+  [1] trosecko_settlements_slatejov
+  [2] char_GENERIC_MAN_COMMONER_21
+  [3] ksed_gravedigger
+  [4] kutnohorsko_outskirts_gravediggers_lorec
+  [5] char_HROBNIK_LENEK_SEDLEC
+  [6] ksed_man_3
+  [7] kutnohorsko_settlements_staraKutna_commonFolk_tavern_handlers
+  [8] Merchants
+  [9] char_STOJA_Z_MONDRY
+  [10] ksed_opat
+  [11] kutnohorsko_settlements_sedlec_commonFolk_monastery_monks
+  [12] char_OPAT_JAN
+  [13] ksed_morticius
+  [14] char_BRATR_MORTICIUS
+  [15] ksed_pokornyRytir
+  [16] kutnohorsko_outskirts_campRelics
+  [17] char_POKORNY_RYTIR_U45
+  [18] ksed_placeholder_man
+  [19] trosecko_settlements_troskovice_commonFolk
+  [20] char_GENERIC_MAN_COMMONER_02
+  [21] ksed_man_2
+  [22] kutnohorsko_settlements_sedlec_commonFolk_monastery_beggars
+  [23] char_GENERIC_MAN_NOBLEMAN_05
+  [24] ksed_placeholder_woman
+  [25] char_GENERIC_WOMAN_COMMONER_09
+  [26] ksed_man_1
+  [27] char_GENERIC_MAN_COMMONER_09
+  [28] ksed_man_4
+  [29] char_MICUL_Z_MONDRY

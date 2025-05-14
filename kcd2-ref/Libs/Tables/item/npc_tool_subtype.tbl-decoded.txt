@@ -1,0 +1,17 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/npc_tool_subtype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 486187922
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 3
+  String Data Size ...... 24
+  Unique String Count ... 3
+  File Size ............. 100
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] hammer
+  [1] spawned
+  [2] pocketed

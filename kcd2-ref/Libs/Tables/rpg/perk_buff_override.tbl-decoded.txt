@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/perk_buff_override.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1316897450
+  Layout Hash ........... 1301219269
+  Table Version ......... 1
+  Line Count ............ 12
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 604
+  Calculated Line Size .. 48 (rem. 0)

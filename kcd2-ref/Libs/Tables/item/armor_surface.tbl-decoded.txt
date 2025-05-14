@@ -1,0 +1,19 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/armor_surface.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1027337555
+  Layout Hash ........... 2762725133
+  Table Version ......... 1
+  Line Count ............ 5
+  String Data Size ...... 57
+  Unique String Count ... 5
+  File Size ............. 125
+  Calculated Line Size .. 8 (rem. 0)
+String Table:
+  [0] mat_fabric
+  [1] mat_leather
+  [2] mat_chainmail
+  [3] mat_plate
+  [4] mat_bells

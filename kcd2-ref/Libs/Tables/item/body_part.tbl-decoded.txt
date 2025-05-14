@@ -1,0 +1,52 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/body_part.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 630972060
+  Layout Hash ........... 2939031105
+  Table Version ......... 1
+  Line Count ............ 32
+  String Data Size ...... 534
+  Unique String Count ... 38
+  File Size ............. 2610
+  Calculated Line Size .. 64 (rem. 0)
+String Table:
+  [0] head
+  [1] ui_bodypart_head
+  [2] torso
+  [3] ui_bodypart_torso
+  [4] arm_left
+  [5] ui_bodypart_arm_left
+  [6] arm_right
+  [7] ui_bodypart_arm_right
+  [8] leg_left
+  [9] ui_bodypart_leg_left
+  [10] leg_right
+  [11] ui_bodypart_leg_right
+  [12] horse_head
+  [13] horse_torso
+  [14] horse_legs
+  [15] dog_torso
+  [16] cattle_torso
+  [17] sheep_torso
+  [18] pig_torso
+  [19] red_deer_stag_torso
+  [20] red_deer_doe_torso
+  [21] roe_deer_torso
+  [22] hare_torso
+  [23] dog_eyes
+  [24] sheep_head
+  [25] dog_head
+  [26] cattle_head
+  [27] pig_head
+  [28] red_deer_head
+  [29] roe_deer_head
+  [30] red_deer_front_legs
+  [31] roe_deer_front_legs
+  [32] red_deer_back_legs
+  [33] roe_deer_back_legs
+  [34] cattle_front_legs
+  [35] cattle_back_legs
+  [36] dog_front_legs
+  [37] dog_back_legs

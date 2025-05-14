@@ -1,0 +1,35 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul_archetype.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2217650972
+  Layout Hash ........... 3343408393
+  Table Version ......... 1
+  Line Count ............ 21
+  String Data Size ...... 169
+  Unique String Count ... 21
+  File Size ............. 1877
+  Calculated Line Size .. 80 (rem. 0)
+String Table:
+  [0] NPC
+  [1] NPC_Female
+  [2] NPC_Child
+  [3] Horse
+  [4] SheepEwe
+  [5] Hare
+  [6] Pig
+  [7] Hen
+  [8] Dog
+  [9] RedDeerStag
+  [10] RedDeerDoe
+  [11] RoeDeerBuck
+  [12] CattleCow
+  [13] Hero
+  [14] Boar
+  [15] Hero_female
+  [16] Wolf
+  [17] WildDog
+  [18] CattleBull
+  [19] RoeDeerHind
+  [20] SheepRam

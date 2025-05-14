@@ -1,0 +1,58 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sedmStatecnych.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 24
+  String Data Size ...... 1331
+  Unique String Count ... 44
+  File Size ............. 4431
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] sedmStatecnych_bandit_4
+  [1] kutnohorsko_settlements_certovka_commonFolk_sedmStatecnychMercenaries
+  [2] char_GENERIC_MAN_COMMONER_12
+  [3] sedmStatecnych_deadHorse
+  [4] kutnohorsko_enemies_sedmStatecnychCertEscort
+  [5] sedmStatecnych_assaultEnemy_2
+  [6] char_GENERIC_MAN_SOLDIER_30
+  [7] sedmStatecnych_assaultAlly_5
+  [8] kutnohorsko_allies_newBuddies_sedmStatecnychMercenaries
+  [9] char_GENERIC_MAN_COMMONER_08
+  [10] sedmStatecnych_assaultAlly_3
+  [11] char_GENERIC_MAN_COMMONER_20
+  [12] sedmStatecnych_assaultAlly_1
+  [13] char_GENERIC_MAN_COMMONER_01
+  [14] sedmStatecnych_assaultAlly_6
+  [15] char_GENERIC_MAN_COMMONER_13
+  [16] sedmStatecnych_assaultEnemy_7
+  [17] char_GENERIC_MAN_SOLDIER_26
+  [18] sedmStatecnych_assaultAlly_7
+  [19] char_GENERIC_MAN_COMMONER_03
+  [20] sedmStatecnych_assaultAlly_2
+  [21] char_GENERIC_MAN_COMMONER_24
+  [22] sedmStatecnych_bandit_3
+  [23] sedmStatecnych_assaultAlly_4
+  [24] char_GENERIC_MAN_COMMONER_10
+  [25] sedmStatecnych_assaultEnemy_8
+  [26] char_GENERIC_MAN_SOLDIER_25
+  [27] sedmStatecnych_bandit_2
+  [28] char_GENERIC_MAN_COMMONER_21
+  [29] sedmStatecnych_leadersHorse
+  [30] sedmStatecnych_assaultEnemy_3
+  [31] char_GENERIC_MAN_SOLDIER_31
+  [32] sedmStatecnych_assaultEnemy_5
+  [33] sedmStatecnych_assaultEnemy_4
+  [34] char_GENERIC_MAN_SOLDIER_15
+  [35] sedmStatecnych_assaultEnemy_6
+  [36] char_GENERIC_MAN_SOLDIER_06
+  [37] sedmStatecnych_assaultEnemy_9
+  [38] sedmStatecnych_assaultEnemy_10
+  [39] sedmStatecnych_bandit_1
+  [40] char_GENERIC_MAN_COMMONER_02
+  [41] sedmStatecnych_assaultEnemy_1
+  [42] char_GENERIC_MAN_SOLDIER_01
+  [43] sedmStatecnych_horse

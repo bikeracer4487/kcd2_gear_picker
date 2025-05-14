@@ -1,0 +1,47 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__knab.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 15
+  String Data Size ...... 669
+  Unique String Count ... 33
+  File Size ............. 2617
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] knab_man_10
+  [1] deadBodies
+  [2] char_GENERIC_MAN_TOWNSMAN_01
+  [3] knab_man_9
+  [4] kutnohorsko_enemies_bandits_campPOINaBylance
+  [5] Bandits
+  [6] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [7] knab_man_4
+  [8] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [9] knab_man_11
+  [10] knab_man_5
+  [11] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [12] knab_man_6
+  [13] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [14] knab_man_1
+  [15] char_MRTVY_CTIRAD_Z_LORCE
+  [16] knab_horse_1
+  [17] animal_wild_neutral
+  [18] char_KUN_POI_2
+  [19] knab_man_7
+  [20] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [21] knab_wolfDead_1
+  [22] animal_wild_enemy
+  [23] knab_man_3
+  [24] kutnohorsko_outskirts_woodcutters_campNaBylance
+  [25] char_GENERIC_MAN_COMMONER_11
+  [26] knab_man_2
+  [27] char_MRTVY_ALBRECH_OSTROSTRLEC
+  [28] knab_man_8
+  [29] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [30] knab_dog_1
+  [31] animal_home
+  [32] knab_wolfDead_2

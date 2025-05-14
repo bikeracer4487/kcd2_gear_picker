@@ -1,0 +1,20 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_action_standup.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1222138966
+  Layout Hash ........... 964898912
+  Table Version ......... 2
+  Line Count ............ 28
+  String Data Size ...... 145
+  Unique String Count ... 6
+  File Size ............. 5997
+  Calculated Line Size .. 208 (rem. 0)
+String Table:
+  [0] BlendRagdoll
+  [1] player+blendOut+standup+fromKnockout
+  [2] blendOut+standup+fromKnockout
+  [3] blendIn+standup+ragdoll
+  [4] player+blendOut+standup
+  [5] blendOut+standup

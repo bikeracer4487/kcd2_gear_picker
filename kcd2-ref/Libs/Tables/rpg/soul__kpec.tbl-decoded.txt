@@ -1,0 +1,21 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kpec.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 2
+  String Data Size ...... 201
+  Unique String Count ... 7
+  File Size ............. 485
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kpec_innkeeper
+  [1] kutnohorsko_settlements_pecky_commonFolk_tavern_staff
+  [2] Merchants
+  [3] char_GENERIC_MAN_MERCHANT_CZECH_01
+  [4] kpec_odolen
+  [5] kutnohorsko_settlements_pecky_nobility_priest
+  [6] char_GENERIC_MAN_NOBLEMAN_01

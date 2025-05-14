@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/armor_archetype2body_subpart.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1834280549
+  Layout Hash ........... 2945972389
+  Table Version ......... 1
+  Line Count ............ 672
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 10780
+  Calculated Line Size .. 16 (rem. 0)

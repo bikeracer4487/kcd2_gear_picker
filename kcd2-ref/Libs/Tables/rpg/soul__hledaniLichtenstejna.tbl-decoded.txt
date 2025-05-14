@@ -1,0 +1,27 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__hledaniLichtenstejna.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 374
+  Unique String Count ... 13
+  File Size ............. 1042
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] hledaniLichtenstejna_kozina
+  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [2] char_ZEBRAK_KOZINA
+  [3] hledaniLichtenstejna_udo
+  [4] char_UDO_VON
+  [5] hledaniLichtenstejna_samuelsHenchman_1
+  [6] kutnohorsko_settlements_kutnaHora_soldiers_militia_strazeLichtenstejna
+  [7] char_MOJSE
+  [8] hledaniLichtenstejna_andel
+  [9] deadBodies_enemies
+  [10] char_OBESENY_ANDEL
+  [11] hledaniLichtenstejna_samuelsHenchman_2
+  [12] char_JAKOB

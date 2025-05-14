@@ -1,0 +1,13 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_attack_config.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 126249216
+  Layout Hash ........... 682385797
+  Table Version ......... 1
+  Line Count ............ 36
+  String Data Size ...... 0
+  Unique String Count ... 0
+  File Size ............. 1036
+  Calculated Line Size .. 28 (rem. 0)

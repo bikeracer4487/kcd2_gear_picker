@@ -1,0 +1,46 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tsla.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 16
+  String Data Size ...... 708
+  Unique String Count ... 32
+  File Size ............. 2784
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] tsla_nomadHorse_1
+  [1] trosecko_outskirts_fastTravelNomadsCamp
+  [2] tsla_nomad
+  [3] char_KUTNOHORSKY_PREVOZNIK
+  [4] tsla_horse_1
+  [5] trosecko_settlements_slatejov_commonFolk_krenovyFarm
+  [6] tsla_woman_4
+  [7] char_GENERIC_WOMAN_COMMONER_11
+  [8] tsla_nomadHelper_2
+  [9] char_GENERIC_MAN_COMMONER_24
+  [10] tsla_nomadHorse_2
+  [11] tsla_woman_3
+  [12] char_GENERIC_WOMAN_COMMONER_03
+  [13] tsla_vajsar
+  [14] trosecko_settlements_slatejov_tradersAndCraftmen_food
+  [15] Merchants
+  [16] char_ZELINAR_VAJSAR_ZE_SLATEJOVA
+  [17] tsla_man_2
+  [18] char_SEDLAK_BOUREK_SLATEJOV
+  [19] tsla_man_1
+  [20] char_GENERIC_MAN_COMMONER_26
+  [21] tsla_woman_2
+  [22] char_DOUBRAVKA
+  [23] tsla_woman_1
+  [24] char_MAMA_DOUBRAVKY
+  [25] tsla_man_3
+  [26] char_GENERIC_MAN_COMMONER_25
+  [27] tsla_man_4
+  [28] char_GENERIC_MAN_COMMONER_01
+  [29] tsla_nomadHelper_1
+  [30] char_GENERIC_MAN_COMMONER_03
+  [31] tsla_nomadWife

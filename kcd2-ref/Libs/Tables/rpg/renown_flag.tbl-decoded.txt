@@ -1,0 +1,22 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/renown_flag.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 4260945323
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 4
+  String Data Size ...... 85
+  Unique String Count ... 8
+  File Size ............. 177
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] havent_heard
+  [1] [0;0.1]
+  [2] heard
+  [3] [0.1;inf)
+  [4] very_well_known
+  [5] [0.97;inf)
+  [6] well_known
+  [7] [0.9;inf)

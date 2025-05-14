@@ -1,0 +1,53 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kralovskeStribro.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 19
+  String Data Size ...... 1271
+  Unique String Count ... 39
+  File Size ............. 3731
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] kralovskeStribro_secretMint_guard_2
+  [1] kutnohorsko_outskirts_secretMint
+  [2] char_GENERIC_MAN_COMMONER_25
+  [3] kralovskeStribro_secretMint_miner_1
+  [4] kutnohorsko_settlements_grunta_commonFolk_peasants_ironworksCentral
+  [5] char_PRVNI_PREGER
+  [6] kralovskeStribro_secretMint_guard_1
+  [7] char_GENERIC_MAN_COMMONER_04
+  [8] kralovskeStribro_oldrichsSoldier_1
+  [9] kutnohorsko_enemies_kralovskeStribro_oldrichsSoldier
+  [10] char_GENERIC_MAN_SOLDIER_17
+  [11] kralovskeStribro_silverDealer_2
+  [12] char_GENERIC_MAN_COMMONER_05
+  [13] kralovskeStribro_oldrichsSoldier_5
+  [14] char_GENERIC_MAN_SOLDIER_22
+  [15] kralovskeStribro_silverDealer_5
+  [16] char_GENERIC_MAN_COMMONER_11
+  [17] kralovskeStribro_secretMint_miner_2
+  [18] char_DRUHY_PREGER
+  [19] kralovskeStribro_oldrichsSoldier_7
+  [20] char_GENERIC_MAN_SOLDIER_24
+  [21] kralovskeStribro_secretMint_guard_3
+  [22] char_GENERIC_MAN_COMMONER_09
+  [23] kralovskeStribro_oldrichsSoldier_6
+  [24] char_GENERIC_MAN_SOLDIER_23
+  [25] kralovskeStribro_oldrichsSoldier_4
+  [26] char_GENERIC_MAN_SOLDIER_21
+  [27] kralovskeStribro_silverDealer_1
+  [28] char_GENERIC_MAN_COMMONER_07
+  [29] kralovskeStribro_oldrichsSoldier_2
+  [30] char_GENERIC_MAN_SOLDIER_18
+  [31] kralovskeStribro_vokrakAmbusher_1
+  [32] kralovskeStribro_silverDealer_4
+  [33] char_GENERIC_MAN_COMMONER_15
+  [34] kralovskeStribro_oldrichsSoldier_3
+  [35] char_GENERIC_MAN_SOLDIER_20
+  [36] kralovskeStribro_silverDealer_3
+  [37] char_GENERIC_MAN_COMMONER_26
+  [38] kralovskeStribro_vokrakAmbusher_2

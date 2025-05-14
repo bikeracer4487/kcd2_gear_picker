@@ -1,0 +1,24 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/race.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 3227766042
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 10
+  String Data Size ...... 58
+  Unique String Count ... 10
+  File Size ............. 246
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] Human
+  [1] Horse
+  [2] Sheep
+  [3] Hare
+  [4] Pig
+  [5] Hen
+  [6] Dog
+  [7] Cattle
+  [8] RedDeer
+  [9] RoeDeer

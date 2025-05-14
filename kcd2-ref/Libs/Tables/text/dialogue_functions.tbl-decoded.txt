@@ -1,0 +1,42 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/text/dialogue_functions.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2945411211
+  Layout Hash ........... 1361462829
+  Table Version ......... 1
+  Line Count ............ 14
+  String Data Size ...... 1052
+  Unique String Count ... 28
+  File Size ............. 1304
+  Calculated Line Size .. 16 (rem. 0)
+String Table:
+  [0] angriness_canSing
+  [1] 1 OR 1 < 0.35
+  [2] cikanskaCest_goodReputationWithGypsies
+  [3] get_health()['Dude'] > 50
+  [4] cikanskaCest_playerHasGlejt
+  [5] CountOfActorItems('382f2c19-517f-42c9-8570-268ba0bbbef0')['Dude'] > 0
+  [6] expectsDude
+  [7] HasSoulTag('expectsDude')[1]
+  [8] haggle_impatienceCritical
+  [9] gvar('shop_progress_value') > 0.55
+  [10] horsetraders_horseTradesAvailable
+  [11] IsInsideAreaWithLabel('stables') & HasBehaviorTag('work')[1]
+  [12] IsDayTime
+  [13] HourOfDay() >= 5.50 AND HourOfDay() < 19.50
+  [14] isGuardingCamp
+  [15] HasSoulTag('camp_guarding')
+  [16] neighbourGreetings_angriness_1_none
+  [17] 1 OR 1 < 0.2
+  [18] neighbourGreetings_angriness_2_low
+  [19] 1 OR (1 > 0.15 & 1 < 0.4)
+  [20] neighbourGreetings_angriness_3_medium
+  [21] 1 OR (1 > 0.35 & 1 < 0.6)
+  [22] neighbourGreetings_angriness_4_high
+  [23] 1 OR 1 > 0.5
+  [24] notWealthyCustomer
+  [25] !CallScriptFunctionInTable('DialogUtils','IsWealthyCustomer')
+  [26] socky_seriousCrime
+  [27] var('assault_armed')==1 OR var('assault_unarmed')==1 OR var('assault_missile')==1 OR var('assault_stealth')==1 OR var('assault_animal')==1 OR var('murder_animal')==1 OR var('murder')==1 OR var('aggression')==1 OR var('corpse_violation')==1

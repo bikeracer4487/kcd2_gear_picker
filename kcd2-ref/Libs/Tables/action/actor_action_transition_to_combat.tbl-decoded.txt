@@ -1,0 +1,19 @@
+======================================================================
+== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/action/actor_action_transition_to_combat.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 1628171433
+  Layout Hash ........... 432219252
+  Table Version ......... 2
+  Line Count ............ 8
+  String Data Size ...... 81
+  Unique String Count ... 5
+  File Size ............. 877
+  Calculated Line Size .. 96 (rem. 0)
+String Table:
+  [0] BeggarToCombat
+  [1] beggarKneel+l_pick_dagger
+  [2] beggar+l_pick_dagger
+  [3] beggar
+  [4] beggarKneel
