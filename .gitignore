@@ -36,3 +36,4 @@ $RECYCLE.BIN/
 *.swp
 *.swo
 *~
+build_windows/
