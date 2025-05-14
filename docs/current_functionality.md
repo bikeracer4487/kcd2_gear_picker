@@ -18,12 +18,7 @@ The Gear Picker mod provides the following key functionalities:
 
 ## Reference Code
 
-The code in the following directories is kept for reference purposes only and is not used in our implementation:
-- `src/helmet_only/`: Contains code for the helmet-only variant of the original mod
-- `src/random/`: Contains code for the random unequipping variant of the original mod
-- `src/ranged/`: Contains code for the ranged weapons variant of the original mod
-
-Additionally, the original HelmetOffDialog-related files have been archived to `archived_mod/` for reference while we continue development of the GearPicker functionality.
+The original HelmetOffDialog-related files have been archived to `archived_mod/` for reference. The legacy variant directories have been removed to clean up the codebase and reduce confusion.
 
 ## Core Classes
 

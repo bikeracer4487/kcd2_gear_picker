@@ -1,5 +1,25 @@
 ## Changelog
 
+### 1.1.2 14-May-25 - Code Cleanup
+- refactor: Removed all legacy HelmetOffDialog references from code
+- refactor: Removed unused variant directories (helmet_only, random, ranged)
+- fix: Updated compatibility module to reduce error messages
+- docs: Updated documentation to reflect code cleanup
+  
+### 1.1.1 14-May-25 - GearPicker Stability Update
+- fix: Added missing TimedTrigger.lua script
+- fix: Fixed compatibility issue with HelmetOffDialog mod causing Entity.GetPos errors
+- fix: Added error handling to prevent crashes during NPC interactions
+- fix: Updated class registry and initialization to resolve startup issues
+
+### 1.1.0 13-May-25 - Initial Release of GearPicker
+- feat: Completely rebuilt mod focusing on gear optimization
+- feat: F6 key scans inventory and logs detailed item stats
+- feat: F7-F9 keys optimize for armor, stealth, and charisma respectively
+- feat: Added support for all 16 equipment slots with proper layering rules
+
+### Legacy HelmetOffDialog Mod
+
 ### 1.4.3 31-march-25
 - fix: Do not skip gear take off having not enabled the ranged optional mod and the NPC offers archery competition.
 

@@ -2,6 +2,7 @@
 local GearPicker = {
     MOD_NAME = "__DYNAMICALLY_INJECTED__",
     ENVIRONMENT = "__DYNAMICALLY_INJECTED__",
+    VERSION = "1.1.2",
 
     ClassRegistry = {},
     __factories = {},
@@ -204,6 +205,7 @@ local GearPicker = {
             string.format("Scripts/%s/Utils/Error.lua", modName),
             string.format("Scripts/%s/Utils/Inspect.lua", modName),
             string.format("Scripts/%s/Utils/dd.lua", modName),
+            string.format("Scripts/%s/Utils/Compatibility.lua", modName),
             string.format("Scripts/%s/TimedTrigger.lua", modName),
             string.format("Scripts/%s/Config.lua", modName),
             string.format("Scripts/%s/Equipment.lua", modName),
@@ -245,13 +247,39 @@ local GearPicker = {
         GearPicker.Log.info("All classes loaded.")
         this:commands():init()
         
+        -- Run compatibility fixes if available
+        if self.OnCompatibilityInit then
+            System.LogAlways("$2[GearPicker] Running compatibility fixes...")
+            self.OnCompatibilityInit()
+        end
+        
         -- Final confirmation message
-        System.LogAlways("$2[GearPicker] Mod v1.1.0 initialized. Press F6 to scan inventory, F7-F9 for quick gear optimization.")
+        System.LogAlways(string.format("$2[GearPicker] Mod v%s initialized. Press F6 to scan inventory, F7-F9 for quick gear optimization.", self.VERSION))
+    end,
+    
+    -- Add compatibility utility factory method
+    compatibility = function(self)
+        --- @type GearPicker
+        local this = self
+        
+        if this.__factories.compatibility then
+            return this.__factories.compatibility
+        end
+        
+        --- @type Compatibility
+        local Compatibility = this.ClassRegistry.Compatibility
+        if not Compatibility then
+            System.LogAlways("$4[GearPicker ERROR] Compatibility class not found in registry")
+            return nil
+        end
+        
+        this.__factories.compatibility = Compatibility:new()
+        return this.__factories.compatibility
     end,
 }
 
+-- Set up GearPicker global
 _G.GearPicker = _G.GearPicker or GearPicker
-_G.HelmetOffDialog = _G.GearPicker -- Compatibility with old mod references
 
 -- Provide easier check for other mods or scripts to detect if GearPicker is loaded
 _G.IsGearPickerLoaded = function()

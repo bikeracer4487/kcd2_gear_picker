@@ -4,30 +4,33 @@
 
 **Project Stage**: Refactoring and Core Implementation
 
-**Last Updated**: May 13, 2025
+**Last Updated**: May 14, 2025
 
 ## Completed Tasks
 
 1. ✅ Updated repository and code references from 'kcd2_helmet_off_dialog' to 'kcd2_gear_picker'
 2. ✅ Created new README.md with updated mod description and features
-3. ✅ Created documentation framework in the docs folder:
+3. ✅ Released version 1.1.1 with stability fixes and compatibility improvements
+4. ✅ Created documentation framework in the docs folder:
    - Current functionality documentation
    - Implementation plan
    - Development progress tracker (this document)
-4. ✅ Updated project to use a single mod structure instead of multiple optional mods
-5. ✅ Set up project with proper folder structure and organization
-6. ✅ Analyzed KCD2 game data files to understand the equipment and armor systems
-7. ✅ Analyzed existing code structure to understand current gear handling mechanisms
-8. ✅ Created detailed implementation plan for Phase 1 (Inventory Logging)
-9. ✅ Implemented inventory scanning and logging functionality
-10. ✅ Extended core classes for comprehensive stat collection
-11. ✅ Created GearScan class for inventory analysis
-12. ✅ Renamed and restructured mod for gear optimization functionality
-13. ✅ Created new GearPicker namespace (replacing HelmetOffDialog)
-14. ✅ Archived original dialog-related functionality for reference
-15. ✅ Implemented GearOptimizer placeholder for optimization algorithms
-16. ✅ Created GearSwitcher class for handling gear switching functionality
-17. ✅ Updated commands to support gear optimization and preset management
+5. ✅ Updated project to use a single mod structure instead of multiple optional mods
+6. ✅ Set up project with proper folder structure and organization
+7. ✅ Analyzed KCD2 game data files to understand the equipment and armor systems
+8. ✅ Analyzed existing code structure to understand current gear handling mechanisms
+9. ✅ Created detailed implementation plan for Phase 1 (Inventory Logging)
+10. ✅ Implemented inventory scanning and logging functionality
+11. ✅ Extended core classes for comprehensive stat collection
+12. ✅ Created GearScan class for inventory analysis
+13. ✅ Renamed and restructured mod for gear optimization functionality
+14. ✅ Created new GearPicker namespace (replacing HelmetOffDialog)
+15. ✅ Archived original dialog-related functionality for reference
+16. ✅ Implemented GearOptimizer placeholder for optimization algorithms
+17. ✅ Created GearSwitcher class for handling gear switching functionality
+18. ✅ Updated commands to support gear optimization and preset management
+19. ✅ Fixed compatibility issues with old HelmetOffDialog code
+20. ✅ Implemented enhanced error handling and compatibility modules
 
 ## In Progress
 
@@ -86,6 +89,11 @@
 7. 📝 Create comprehensive testing scenarios for all core features
 
 ## Challenges and Solutions
+
+### Challenge: Compatibility with Legacy Code
+As the mod evolved from HelmetOffDialog to GearPicker, we encountered issues with legacy code references and functions.
+
+**Solution**: Created a comprehensive compatibility module that handles legacy references and properly patches global functions to prevent errors while maintaining compatibility with existing mods or save files.
 
 ### Challenge: Implementing Proper Layering Logic
 To ensure that armor is equipped in the correct order, we need to carefully manage the layering dependencies.
