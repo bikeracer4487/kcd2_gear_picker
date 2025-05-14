@@ -25,7 +25,7 @@ local GearScan = {
         --- @type GearScan
         local this = self
         
-        Log.info("Starting inventory scan")
+        System.LogAlways("$7[GearPicker] Beginning inventory analysis...")
         this.inventoryItems = {}
         this.equippedItems = {}
         this.processingQueue = {}
@@ -37,15 +37,20 @@ local GearScan = {
         local inventory = this.player.inventory
         local items = inventory:GetItems()
         
-        Log.info("Found " .. #items .. " items in inventory")
+        System.LogAlways("$7[GearPicker] Found " .. #items .. " total items in inventory")
         
         -- Filter for gear items and add to processing queue
+        local gearCount = 0
         for i = 1, #items do
             local item = this.itemManager.GetItem(items[i])
             if this:isGearItem(item) then
+                gearCount = gearCount + 1
                 table.insert(this.processingQueue, items[i])
             end
         end
+        
+        System.LogAlways("$7[GearPicker] Identified " .. gearCount .. " gear items to analyze")
+        System.LogAlways("$7[GearPicker] Starting gear analysis...")
         
         -- Start processing items one by one
         this:processNextItem()
@@ -60,42 +65,89 @@ local GearScan = {
             -- Processing complete
             this.scanningComplete = true
             this:categorizeItems()
-            Log.info("Inventory scan complete: " .. #this.inventoryItems .. " gear items found")
             
-            if this.scanCallback then
-                this.scanCallback(this.inventoryItems, this.equippedItems)
+            -- Count detected slots for summary
+            local slotCounts = {}
+            for _, item in ipairs(this.equippedItems) do
+                if item.slot then
+                    slotCounts[item.slot] = (slotCounts[item.slot] or 0) + 1
+                end
             end
+            
+            -- Log final analysis summary
+            System.LogAlways("\n$7[GearPicker] =========================================================")
+            System.LogAlways("$7[GearPicker] ANALYSIS COMPLETE: " .. #this.inventoryItems .. " gear items analyzed")
+            System.LogAlways("$7[GearPicker] FOUND " .. #this.equippedItems .. " EQUIPPED ITEMS ACROSS " .. #slotCounts .. " SLOTS")
+            
+            -- Add a small delay before calling the callback to ensure log messages are processed
+            this.equippedItem.script.SetTimer(200, function()
+                if this.scanCallback then
+                    this.scanCallback(this.inventoryItems, this.equippedItems)
+                end
+            end)
             
             return
         end
         
+        -- Log progress frequently for visibility
+        local shouldLog = (this.processingIndex == 1) or 
+                         (this.processingIndex % 2 == 0) or 
+                         (this.processingIndex == #this.processingQueue) or
+                         (#this.processingQueue <= 10) -- Always log if few items
+        
+        if shouldLog then
+            System.LogAlways("$7[GearPicker] Analyzing item " .. this.processingIndex .. " of " .. #this.processingQueue)
+        end
+        
         local inventoryItem = this.processingQueue[this.processingIndex]
         local item = this.itemManager.GetItem(inventoryItem)
+        local itemName = this.itemManager.GetItemName(item.class)
         
         -- Get item stats
         local stats = this.equippedItem:getItemStats(item)
         stats.material = this.equippedItem:detectItemMaterial(item)
         
-        -- Determine if item is equipped
-        this.equippedItem:isEquipped(inventoryItem, function(equipped)
-            stats.isEquipped = equipped
-            
-            -- Add to inventory items list
-            table.insert(this.inventoryItems, stats)
-            
-            -- If equipped, add to equipped items list
-            if equipped then
+        -- Display item being processed
+        System.LogAlways("$7[GearPicker] Processing: " .. itemName)
+        
+        -- Determine if item is equipped using a direct API check if available
+        stats.isEquipped = false
+        
+        -- Try to use direct API method if available (most reliable)
+        if item.IsEquipped and item:IsEquipped() then
+            stats.isEquipped = true
+            table.insert(this.equippedItems, stats)
+            System.LogAlways("$7[GearPicker] Found equipped (via API): " .. itemName)
+        -- Fallback method 1: Check if item has an equipped slot
+        elseif item.GetEquippedSlot and item:GetEquippedSlot() ~= nil and item:GetEquippedSlot() ~= "" then
+            stats.isEquipped = true
+            stats.equippedSlot = item:GetEquippedSlot()
+            table.insert(this.equippedItems, stats)
+            System.LogAlways("$7[GearPicker] Found equipped (via slot): " .. itemName .. " in slot " .. stats.equippedSlot)
+        -- Fallback method 2: Use heuristics based on item stats for armor pieces 
+        elseif stats.weight > 0 then
+            -- Higher defense values usually indicate equipped armor
+            if (stats.stabDefense > 5 or stats.slashDefense > 5) then
+                -- Check for armor-like properties
+                if this.itemCategory:isArmorItem(item.id) then
+                    stats.isEquipped = true
+                    table.insert(this.equippedItems, stats)
+                    System.LogAlways("$7[GearPicker] Likely equipped armor: " .. itemName)
+                end
+            -- Special case for charisma items (clothes, jewelry)
+            elseif stats.charisma > 5 and (this.itemCategory:isClothesItem(item.id) or this.itemCategory:isJewelryItem(item.id)) then
+                stats.isEquipped = true
                 table.insert(this.equippedItems, stats)
+                System.LogAlways("$7[GearPicker] Likely equipped clothing/jewelry: " .. itemName)
             end
-            
-            -- Log progress for visibility
-            if this.processingIndex % 5 == 0 then
-                System.LogAlways("$3[GearPicker] Processing inventory items: " .. 
-                    this.processingIndex .. "/" .. #this.processingQueue)
-            end
-            
-            -- Process next item
-            this.processingIndex = this.processingIndex + 1
+        end
+        
+        -- Add to inventory items list
+        table.insert(this.inventoryItems, stats)
+        
+        -- Process next item with a short delay to avoid freezing the game
+        this.processingIndex = this.processingIndex + 1
+        this.equippedItem.script.SetTimer(10, function()
             this:processNextItem()
         end)
     end,
@@ -142,8 +194,22 @@ local GearScan = {
         -- Check if the item can be equipped
         local canEquip = (item.CanEquip and item:CanEquip()) or false
         
+        -- If the item is already equipped, it's definitely gear
+        local isEquipped = (item.IsEquipped and item:IsEquipped()) or false
+        if isEquipped then
+            return true
+        end
+        
         -- Get the item name and check categories
         local itemName = string.lower(this.itemManager.GetItemName(item.class))
+        
+        -- Check if item is in a known gear category (more reliable than name checking)
+        if this.itemCategory:isArmorItem(item.id) or 
+           this.itemCategory:isClothesItem(item.id) or 
+           this.itemCategory:isJewelryItem(item.id) or
+           this.itemCategory:isWeaponItem(item.id) then
+            return true
+        end
         
         -- Exclude consumables and certain items
         local isConsumable = itemName:find("potion") ~= nil

@@ -224,61 +224,170 @@ local Commands = {
     
     -- Gear scanning command
     scanInventory = function(self)
-        Log.info("Starting inventory scan...")
-        System.LogAlways("$3[GearPicker] Starting inventory scan. Results will be logged to console.")
+        System.LogAlways("\n$2[GearPicker] =========================================================")
+        System.LogAlways("$2[GearPicker] STARTING INVENTORY SCAN...")
+        System.LogAlways("$2[GearPicker] =========================================================")
         
-        -- Force debug mode on temporarily for detailed logging
-        local originalDebug = GearPicker:config().is_debug
-        GearPicker:config().is_debug = true
-        
-        local gearScan = GearPicker:gearScan()
-        gearScan:scanInventory(function(inventoryItems, equippedItems)
-            System.LogAlways("$3[GearPicker] Scan complete: " .. #inventoryItems .. " gear items found, " .. #equippedItems .. " equipped")
-            System.LogAlways("$3[GearPicker] Detailed inventory analysis:")
-            -- Log inventory details through explicit system logs for visibility
-            System.LogAlways("$3[GearPicker] ==========================================")
-            System.LogAlways("$3[GearPicker] INVENTORY GEAR SCAN - FULL DETAILS")
-            System.LogAlways("$3[GearPicker] ==========================================")
+        -- Create a direct version of the callback that uses System.LogAlways
+        local directLogInventoryDetails = function(inventoryItems, equippedItems)
+            System.LogAlways("\n$6[GearPicker] =========================================================")
+            System.LogAlways("$6[GearPicker] INVENTORY SCAN RESULTS - " .. #inventoryItems .. " items, " .. #equippedItems .. " equipped")
+            System.LogAlways("$6[GearPicker] =========================================================")
             
-            -- Log all equipped items
-            System.LogAlways("$3[GearPicker] ------------- EQUIPPED GEAR -------------")
+            -- Group items by slot for better organization
+            local slotGroups = {}
             for _, item in ipairs(equippedItems) do
-                System.LogAlways("$3[GearPicker] " .. item.name .. " (" .. item.uiName .. ")")
-                System.LogAlways("$3[GearPicker]   Defense - Stab: " .. item.stabDefense .. 
-                      ", Slash: " .. item.slashDefense .. 
-                      ", Blunt: " .. item.bluntDefense)
-                System.LogAlways("$3[GearPicker]   Stealth - Noise: " .. item.noise .. 
-                      ", Visibility: " .. item.visibility .. 
-                      ", Conspicuousness: " .. item.conspicuousness)
-                System.LogAlways("$3[GearPicker]   Charisma: " .. item.charisma .. 
-                      ", Material: " .. item.material)
-                if item.categories and #item.categories > 0 then
-                    local categoriesStr = ""
-                    for i, category in ipairs(item.categories) do
-                        if i > 1 then categoriesStr = categoriesStr .. ", " end
-                        categoriesStr = categoriesStr .. category
+                local slot = item.slot or "unknown"
+                if not slotGroups[slot] then
+                    slotGroups[slot] = {}
+                end
+                table.insert(slotGroups[slot], item)
+            end
+            
+            -- Sort slots for consistent display
+            local orderedSlots = {
+                "head", "head_under", "neck", 
+                "torso_outer", "torso_outer_layer", "torso_middle", "torso_under",
+                "arms", "hands", "legs", "feet", "feet_accessory",
+                "jewelry1", "jewelry2", "ranged"
+            }
+            
+            System.LogAlways("\n$5[GearPicker] EQUIPPED GEAR BY SLOT:")
+            
+            -- First display items for known slots in order
+            for _, slot in ipairs(orderedSlots) do
+                local slotItems = slotGroups[slot] or {}
+                if #slotItems > 0 then
+                    -- Convert slot name to friendly display name
+                    local friendlySlotName = slot:gsub("_", " ")
+                    friendlySlotName = friendlySlotName:sub(1,1):upper() .. friendlySlotName:sub(2)
+                    System.LogAlways("\n$6[GearPicker] SLOT: " .. friendlySlotName)
+                    
+                    for _, item in ipairs(slotItems) do
+                        -- Colorize output based on item material
+                        local colorCode = "$5" -- Default
+                        if item.material == "plate" then
+                            colorCode = "$7" -- Silver/gray for plate
+                        elseif item.material == "chainmail" then
+                            colorCode = "$1" -- Blue for chainmail
+                        elseif item.material == "leather" then
+                            colorCode = "$4" -- Red for leather
+                        elseif item.material == "cloth" then
+                            colorCode = "$2" -- Green for cloth
+                        end
+                        
+                        -- Display item with material-based color
+                        System.LogAlways(colorCode .. "[GearPicker]   » " .. item.name)
+                        
+                        -- Defense stats
+                        local defenseString = "Defense: "
+                        if item.stabDefense > 0 or item.slashDefense > 0 or item.bluntDefense > 0 then
+                            if item.stabDefense > 0 then defenseString = defenseString .. "Stab=" .. item.stabDefense .. " " end
+                            if item.slashDefense > 0 then defenseString = defenseString .. "Slash=" .. item.slashDefense .. " " end
+                            if item.bluntDefense > 0 then defenseString = defenseString .. "Blunt=" .. item.bluntDefense .. " " end
+                            System.LogAlways(colorCode .. "[GearPicker]     " .. defenseString)
+                        end
+                        
+                        -- Stealth stats
+                        local stealthString = "Stealth: "
+                        if item.noise > 0 or item.visibility > 0 or item.conspicuousness > 0 then
+                            if item.noise > 0 then stealthString = stealthString .. "Noise=" .. item.noise .. " " end
+                            if item.visibility > 0 then stealthString = stealthString .. "Vis=" .. item.visibility .. " " end
+                            if item.conspicuousness > 0 then stealthString = stealthString .. "Consp=" .. item.conspicuousness .. " " end
+                            System.LogAlways(colorCode .. "[GearPicker]     " .. stealthString)
+                        end
+                        
+                        -- Other stats
+                        local otherStatsString = ""
+                        if item.charisma > 0 then otherStatsString = otherStatsString .. "Charisma=" .. item.charisma .. " " end
+                        if item.material ~= "unknown" then otherStatsString = otherStatsString .. "Material=" .. item.material .. " " end
+                        if item.weight > 0 then otherStatsString = otherStatsString .. "Weight=" .. item.weight .. " " end
+                        if otherStatsString ~= "" then
+                            System.LogAlways(colorCode .. "[GearPicker]     " .. otherStatsString)
+                        end
                     end
-                    System.LogAlways("$3[GearPicker]   Categories: " .. categoriesStr)
                 end
             end
             
             -- Log player's overall stats
-            local playerStats = gearScan.equippedItem:getDerivedStats()
-            System.LogAlways("$3[GearPicker] ------------- OVERALL PLAYER STATS -------------")
-            System.LogAlways("$3[GearPicker] Total Stab Defense: " .. playerStats.stabDefense)
-            System.LogAlways("$3[GearPicker] Total Slash Defense: " .. playerStats.slashDefense)
-            System.LogAlways("$3[GearPicker] Total Blunt Defense: " .. playerStats.bluntDefense)
-            System.LogAlways("$3[GearPicker] Visibility: " .. playerStats.visibility)
-            System.LogAlways("$3[GearPicker] Conspicuousness: " .. playerStats.conspicuousness)
-            System.LogAlways("$3[GearPicker] Noise: " .. playerStats.noise)
+            local playerStats = GearPicker:equippedItem():getDerivedStats()
+            System.LogAlways("\n$6[GearPicker] OVERALL PLAYER STATS:")
+            System.LogAlways("$3[GearPicker] Defense: Stab=" .. playerStats.stabDefense .. 
+                             ", Slash=" .. playerStats.slashDefense .. 
+                             ", Blunt=" .. playerStats.bluntDefense)
+            System.LogAlways("$3[GearPicker] Stealth: Noise=" .. playerStats.noise .. 
+                             ", Visibility=" .. playerStats.visibility .. 
+                             ", Conspicuousness=" .. playerStats.conspicuousness)
             System.LogAlways("$3[GearPicker] Charisma: " .. playerStats.charisma)
+            System.LogAlways("$3[GearPicker] Weight: " .. playerStats.equippedWeight .. 
+                             " / " .. playerStats.maxWeight .. 
+                             " (" .. math.floor(playerStats.equippedWeight/playerStats.maxWeight*100) .. "%)")
             
-            -- Also run the regular log function for more detailed logs
-            gearScan:logInventoryDetails()
+            -- Log best unequipped gear for each slot
+            local bestUnequippedArmor = {}
+            local bestUnequippedCharisma = {}
+            local bestUnequippedStealth = {}
             
-            -- Restore original debug setting
-            GearPicker:config().is_debug = originalDebug
-        end)
+            -- Find best unequipped gear by slot for different optimization goals
+            for _, item in ipairs(inventoryItems) do
+                if not item.isEquipped and item.slot and item.slot ~= "unknown" then
+                    local slot = item.slot
+                    
+                    -- For armor (highest combined defense)
+                    local totalDefense = item.stabDefense + item.slashDefense + item.bluntDefense
+                    if not bestUnequippedArmor[slot] or totalDefense > (bestUnequippedArmor[slot].stabDefense + bestUnequippedArmor[slot].slashDefense + bestUnequippedArmor[slot].bluntDefense) then
+                        bestUnequippedArmor[slot] = item
+                    end
+                    
+                    -- For charisma (highest charisma value)
+                    if not bestUnequippedCharisma[slot] or item.charisma > bestUnequippedCharisma[slot].charisma then
+                        bestUnequippedCharisma[slot] = item
+                    end
+                    
+                    -- For stealth (lowest combined stealth penalties)
+                    local stealthPenalty = item.noise + item.visibility + item.conspicuousness
+                    if not bestUnequippedStealth[slot] or stealthPenalty < (bestUnequippedStealth[slot].noise + bestUnequippedStealth[slot].visibility + bestUnequippedStealth[slot].conspicuousness) then
+                        if stealthPenalty > 0 then -- Only consider items with some stealth properties
+                            bestUnequippedStealth[slot] = item
+                        end
+                    end
+                end
+            end
+            
+            -- Display best unequipped armor options
+            local hasBetterItems = false
+            for _, slot in ipairs(orderedSlots) do
+                local item = bestUnequippedArmor[slot]
+                if item and item.stabDefense + item.slashDefense + item.bluntDefense > 0 then
+                    if not hasBetterItems then
+                        System.LogAlways("\n$6[GearPicker] BEST UNEQUIPPED ARMOR OPTIONS:")
+                        hasBetterItems = true
+                    end
+                    System.LogAlways("$1[GearPicker] " .. item.name .. " for slot " .. item.slot .. 
+                        " (Stab=" .. item.stabDefense .. ", Slash=" .. item.slashDefense .. ", Blunt=" .. item.bluntDefense .. ")")
+                end
+            end
+            
+            -- Send final completion message
+            System.LogAlways("\n$6[GearPicker] =========================================================")
+            System.LogAlways("$6[GearPicker] Inventory scan complete! Press F6 to scan again.")
+            System.LogAlways("$6[GearPicker] Use F7 to optimize for armor, F8 for stealth, F9 for charisma")
+            System.LogAlways("$6[GearPicker] =========================================================")
+        end
+        
+        -- Use our direct logging method
+        local gearScan = GearPicker:gearScan()
+        gearScan:scanInventory(directLogInventoryDetails)
+        
+        -- Add a delayed message to indicate the scan is in progress
+        for i = 1, 10 do
+            local timeout = i * 300 -- 300ms, 600ms, 900ms, etc.
+            GearPicker:timedTrigger():start(timeout, function() 
+                return true 
+            end, function()
+                System.LogAlways("$5[GearPicker] Scanning inventory in progress... (" .. i .. "/10)")
+            end)
+        end
     end,
     
     -- Optimization commands

@@ -290,6 +290,59 @@ local ItemCategory = {
         end
         
         return "unknown"
+    end,
+    
+    -- Convenience functions for checking broad item categories
+    
+    -- Check if item is any type of armor
+    isArmorItem = function(self, itemId)
+        --- @type ItemCategory
+        local this = self
+        
+        -- Check all armor categories
+        return this:is("Helmet", itemId) or
+               this:is("HeadChainmail", itemId) or
+               this:is("NeckGuard", itemId) or
+               this:is("ChestPlate", itemId) or
+               this:is("Sleeves", itemId) or
+               this:is("QuiltedHose", itemId) or
+               this:is("Coif", itemId)
+    end,
+    
+    -- Check if item is clothing (non-armor wearables)
+    isClothesItem = function(self, itemId)
+        --- @type ItemCategory
+        local this = self
+        
+        -- Check all clothing categories
+        return this:is("Cap", itemId) or
+               this:is("Hood", itemId) or
+               this:is("Coat", itemId) or
+               this:is("Gambeson", itemId) or
+               this:is("Shirt", itemId) or
+               this:is("Shoes", itemId)
+    end,
+    
+    -- Check if item is jewelry or accessory
+    isJewelryItem = function(self, itemId)
+        --- @type ItemCategory
+        local this = self
+        
+        -- Check all jewelry categories
+        return this:is("RowelSpurs", itemId) or
+               this:is("Jewelry1", itemId) or
+               this:is("Jewelry2", itemId)
+    end,
+    
+    -- Check if item is a weapon
+    isWeaponItem = function(self, itemId)
+        --- @type ItemCategory
+        local this = self
+        
+        -- Check all weapon categories
+        return this:is("RangedWeapon", itemId) or
+               -- Add other weapon categories as they are implemented
+               false
     end
 }
 

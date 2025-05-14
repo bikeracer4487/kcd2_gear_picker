@@ -2,7 +2,7 @@
 local GearPicker = {
     MOD_NAME = "__DYNAMICALLY_INJECTED__",
     ENVIRONMENT = "__DYNAMICALLY_INJECTED__",
-    VERSION = "1.1.2",
+    VERSION = "1.1.3",
 
     ClassRegistry = {},
     __factories = {},

@@ -2,7 +2,7 @@ function GearPicker:OnLoadingComplete()
     -- Very visible startup banner for troubleshooting
     System.LogAlways("********************************************")
     System.LogAlways("$2[GearPicker] Game loading complete - activating mod")
-    System.LogAlways("$2[GearPicker] Version 1.1.0")
+    System.LogAlways("$2[GearPicker] Version " .. _G.GearPicker.VERSION)
     System.LogAlways("********************************************")
     
     -- Check if core module was properly loaded
