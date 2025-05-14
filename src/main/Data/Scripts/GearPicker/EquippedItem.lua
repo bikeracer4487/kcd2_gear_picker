@@ -18,6 +18,7 @@ local EquippedItem = {
         if tostring(oldStats.equippedWeight) == "0" then
             Log.info("Falsy, due to: ", oldStats,
                     " Player is either in intro game, or wearing no gear")
+            System.LogAlways("$3[GearPicker] Player has no equipped gear weight - skipping check")
             return callback(false)
         end
 
@@ -27,6 +28,7 @@ local EquippedItem = {
         local itemName = this.itemManager.GetItemName(item.class)
 
         Log.info("Taking off item:", itemName)
+        System.LogAlways("$3[GearPicker] Checking if item is equipped: " .. itemName)
         this.player.actor:UnequipInventoryItem(item.id)
 
         this.script.SetTimer(30, function()
@@ -41,6 +43,10 @@ local EquippedItem = {
 
             if isEquipped then
                 Log.info("Found equipped, now unequipped item: " .. itemName)
+                System.LogAlways("$3[GearPicker] Item was equipped: " .. itemName)
+                System.LogAlways("$3[GearPicker] Weight before: " .. oldStats.equippedWeight .. ", after: " .. newStats.equippedWeight)
+            else
+                System.LogAlways("$3[GearPicker] Item was not equipped: " .. itemName)
             end
 
             return callback(isEquipped)

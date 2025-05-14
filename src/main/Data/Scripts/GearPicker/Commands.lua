@@ -227,10 +227,57 @@ local Commands = {
         Log.info("Starting inventory scan...")
         System.LogAlways("$3[GearPicker] Starting inventory scan. Results will be logged to console.")
         
+        -- Force debug mode on temporarily for detailed logging
+        local originalDebug = GearPicker:config().is_debug
+        GearPicker:config().is_debug = true
+        
         local gearScan = GearPicker:gearScan()
         gearScan:scanInventory(function(inventoryItems, equippedItems)
             System.LogAlways("$3[GearPicker] Scan complete: " .. #inventoryItems .. " gear items found, " .. #equippedItems .. " equipped")
+            System.LogAlways("$3[GearPicker] Detailed inventory analysis:")
+            -- Log inventory details through explicit system logs for visibility
+            System.LogAlways("$3[GearPicker] ==========================================")
+            System.LogAlways("$3[GearPicker] INVENTORY GEAR SCAN - FULL DETAILS")
+            System.LogAlways("$3[GearPicker] ==========================================")
+            
+            -- Log all equipped items
+            System.LogAlways("$3[GearPicker] ------------- EQUIPPED GEAR -------------")
+            for _, item in ipairs(equippedItems) do
+                System.LogAlways("$3[GearPicker] " .. item.name .. " (" .. item.uiName .. ")")
+                System.LogAlways("$3[GearPicker]   Defense - Stab: " .. item.stabDefense .. 
+                      ", Slash: " .. item.slashDefense .. 
+                      ", Blunt: " .. item.bluntDefense)
+                System.LogAlways("$3[GearPicker]   Stealth - Noise: " .. item.noise .. 
+                      ", Visibility: " .. item.visibility .. 
+                      ", Conspicuousness: " .. item.conspicuousness)
+                System.LogAlways("$3[GearPicker]   Charisma: " .. item.charisma .. 
+                      ", Material: " .. item.material)
+                if item.categories and #item.categories > 0 then
+                    local categoriesStr = ""
+                    for i, category in ipairs(item.categories) do
+                        if i > 1 then categoriesStr = categoriesStr .. ", " end
+                        categoriesStr = categoriesStr .. category
+                    end
+                    System.LogAlways("$3[GearPicker]   Categories: " .. categoriesStr)
+                end
+            end
+            
+            -- Log player's overall stats
+            local playerStats = gearScan.equippedItem:getDerivedStats()
+            System.LogAlways("$3[GearPicker] ------------- OVERALL PLAYER STATS -------------")
+            System.LogAlways("$3[GearPicker] Total Stab Defense: " .. playerStats.stabDefense)
+            System.LogAlways("$3[GearPicker] Total Slash Defense: " .. playerStats.slashDefense)
+            System.LogAlways("$3[GearPicker] Total Blunt Defense: " .. playerStats.bluntDefense)
+            System.LogAlways("$3[GearPicker] Visibility: " .. playerStats.visibility)
+            System.LogAlways("$3[GearPicker] Conspicuousness: " .. playerStats.conspicuousness)
+            System.LogAlways("$3[GearPicker] Noise: " .. playerStats.noise)
+            System.LogAlways("$3[GearPicker] Charisma: " .. playerStats.charisma)
+            
+            -- Also run the regular log function for more detailed logs
             gearScan:logInventoryDetails()
+            
+            -- Restore original debug setting
+            GearPicker:config().is_debug = originalDebug
         end)
     end,
     

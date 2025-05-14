@@ -88,6 +88,12 @@ local GearScan = {
                 table.insert(this.equippedItems, stats)
             end
             
+            -- Log progress for visibility
+            if this.processingIndex % 5 == 0 then
+                System.LogAlways("$3[GearPicker] Processing inventory items: " .. 
+                    this.processingIndex .. "/" .. #this.processingQueue)
+            end
+            
             -- Process next item
             this.processingIndex = this.processingIndex + 1
             this:processNextItem()

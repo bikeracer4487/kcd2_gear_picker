@@ -6,7 +6,7 @@ local Config = {
         local instance = {
             environment = environment,
             is_mod_off = false,
-            is_debug = false,
+            is_debug = true, -- Enable debug mode by default during development
             
             -- Optimization priority weights (0-100)
             priority_armor = 100,     -- Weight for armor/protection optimization
