@@ -1,6 +1,5 @@
 # Build and distribution files
 *.zip
-*.xml
 *.html
 *.tap
 dev/
