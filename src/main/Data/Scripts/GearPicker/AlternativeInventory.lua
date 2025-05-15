@@ -129,6 +129,69 @@ local AlternativeInventory = {
         
         AltLog("Checking player equipment stats")
         
+        -- Special method to try getting equipped items from the inventory
+        if this.player.inventory.GetEquippedItems then
+            AltLog("Found GetEquippedItems method, trying to access equipped items directly")
+            
+            local success, equippedItems = pcall(function()
+                return this.player.inventory:GetEquippedItems()
+            end)
+            
+            if success and equippedItems and type(equippedItems) == "table" then
+                AltLog("Successfully got " .. #equippedItems .. " equipped items via GetEquippedItems()")
+                
+                for i, item in ipairs(equippedItems) do
+                    local itemInfo = this:extractItemInfo(item, "GetEquippedItems() direct access")
+                    if itemInfo then
+                        itemInfo.isEquipped = true
+                        table.insert(results, itemInfo)
+                    end
+                end
+            else
+                AltLog("GetEquippedItems() failed or returned nil/non-table")
+            end
+        end
+        
+        -- Special case for KCD2: Try to access the active equipment
+        if this.player.activeEquipment then
+            AltLog("Found player.activeEquipment, trying to access")
+            
+            if type(this.player.activeEquipment) == "table" then
+                AltLog("activeEquipment is a table, examining contents")
+                
+                for slotName, item in pairs(this.player.activeEquipment) do
+                    if item then
+                        AltLog("Found item in activeEquipment slot: " .. tostring(slotName))
+                        
+                        local itemInfo = this:extractItemInfo(item, "activeEquipment." .. tostring(slotName))
+                        if itemInfo then
+                            itemInfo.isEquipped = true
+                            itemInfo.slot = tostring(slotName)
+                            table.insert(results, itemInfo)
+                        end
+                    end
+                end
+            elseif type(this.player.activeEquipment) == "userdata" and this.player.activeEquipment.GetEquippedItems then
+                AltLog("activeEquipment is an object with GetEquippedItems method")
+                
+                local success, eqItems = pcall(function()
+                    return this.player.activeEquipment:GetEquippedItems()
+                end)
+                
+                if success and eqItems and type(eqItems) == "table" then
+                    AltLog("Successfully got " .. #eqItems .. " items from activeEquipment:GetEquippedItems()")
+                    
+                    for i, item in ipairs(eqItems) do
+                        local itemInfo = this:extractItemInfo(item, "activeEquipment:GetEquippedItems()")
+                        if itemInfo then
+                            itemInfo.isEquipped = true
+                            table.insert(results, itemInfo)
+                        end
+                    end
+                end
+            end
+        end
+        
         -- First approach: Try to derive equipped items from player stats
         local equippedWeight = 0
         if this.player.soul and this.player.soul.GetDerivedStat then
@@ -378,20 +441,103 @@ local AlternativeInventory = {
             if success and count and count > 0 then
                 AltLog("Inventory has " .. count .. " items according to GetCount")
                 
-                -- If we have GetCount, try GetItem(index)
+                -- If we have GetCount, try GetItem(index) with aggressive approach
                 if this.player.inventory.GetItem then
-                    for i = 0, count-1 do
+                    -- Sample only 10 items to avoid performance issues (1 from each percentile of inventory)
+                    for i = 1, 10 do
+                        local index = math.floor((i-1) * count / 10)
+                        local getItemSuccess, item = pcall(function()
+                            return this.player.inventory:GetItem(index)
+                        end)
+                        
+                        if getItemSuccess then
+                            if item then
+                                AltLog("Successfully got inventory item at index " .. index)
+                                
+                                local itemInfo = this:extractItemInfo(item, "GetItem(" .. index .. ")")
+                                if itemInfo then
+                                    table.insert(inventoryItems, itemInfo)
+                                end
+                                
+                                -- Try to inspect item more deeply to see its structure
+                                AltLog("Item details from GetItem(" .. index .. "):")
+                                
+                                -- Check common properties
+                                for _, prop in ipairs({"id", "class", "name", "weight", "slot", "equipped"}) do
+                                    if item[prop] ~= nil then
+                                        AltLog("  - " .. prop .. ": " .. tostring(item[prop]))
+                                    end
+                                end
+                                
+                                -- Look for methods
+                                for _, method in ipairs({"GetName", "GetWeight", "GetClass", "IsEquipped", "GetEquippedSlot"}) do
+                                    if type(item[method]) == "function" then
+                                        local methodSuccess, result = pcall(function() return item[method](item) end)
+                                        if methodSuccess then
+                                            AltLog("  - " .. method .. "(): " .. tostring(result))
+                                        end
+                                    end
+                                end
+                            else
+                                AltLog("Item at index " .. index .. " is nil")
+                            end
+                        else
+                            AltLog("Failed to get item at index " .. index .. ": " .. tostring(item))
+                        end
+                    end
+                    
+                    AltLog("Sampled 10 inventory items to analyze API structure")
+                    
+                    -- Look for any equipped items specifically
+                    AltLog("Searching specifically for equipped items in inventory...")
+                    local foundEquipped = 0
+                    
+                    -- Try just the first 50 items to avoid performance issues
+                    local searchLimit = math.min(50, count)
+                    for i = 0, searchLimit-1 do
                         local success, item = pcall(function()
                             return this.player.inventory:GetItem(i)
                         end)
                         
                         if success and item then
-                            local itemInfo = this:extractItemInfo(item, "GetItem(" .. i .. ")")
-                            if itemInfo then
-                                table.insert(inventoryItems, itemInfo)
+                            -- Check if it's equipped using various methods
+                            local isEquipped = false
+                            
+                            -- Method 1: IsEquipped function
+                            if type(item.IsEquipped) == "function" then
+                                local eqSuccess, eqResult = pcall(function() return item:IsEquipped() end)
+                                if eqSuccess and eqResult then
+                                    isEquipped = true
+                                end
+                            end
+                            
+                            -- Method 2: equipped property
+                            if item.equipped ~= nil and item.equipped == true then
+                                isEquipped = true
+                            end
+                            
+                            -- Method 3: GetEquippedSlot function returns non-nil
+                            if type(item.GetEquippedSlot) == "function" then
+                                local slotSuccess, slot = pcall(function() return item:GetEquippedSlot() end)
+                                if slotSuccess and slot and slot ~= "" then
+                                    isEquipped = true
+                                end
+                            end
+                            
+                            if isEquipped then
+                                foundEquipped = foundEquipped + 1
+                                local itemInfo = this:extractItemInfo(item, "GetItem(" .. i .. ") [EQUIPPED]")
+                                if itemInfo then
+                                    itemInfo.isEquipped = true
+                                    table.insert(inventoryItems, itemInfo)
+                                    table.insert(equippedItems, itemInfo)
+                                    AltLog("Found equipped item at index " .. i)
+                                end
                             end
                         end
                     end
+                    
+                    AltLog("Found " .. foundEquipped .. " equipped items in first " .. searchLimit .. " inventory slots")
                 end
             end
         end
