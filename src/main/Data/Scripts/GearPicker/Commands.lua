@@ -380,12 +380,33 @@ local Commands = {
         gearScan:scanInventory(directLogInventoryDetails)
         
         -- Add a delayed message to indicate the scan is in progress
-        for i = 1, 10 do
+        for i = 1, 20 do
             local timeout = i * 300 -- 300ms, 600ms, 900ms, etc.
             GearPicker:timedTrigger():start(timeout, function() 
                 return true 
             end, function()
-                System.LogAlways("$5[GearPicker] Scanning inventory in progress... (" .. i .. "/10)")
+                System.LogAlways("$5[GearPicker] Scanning inventory in progress... (" .. i .. "/20)")
+                
+                -- After 3 seconds, add an additional message
+                if i == 10 then
+                    -- Check if scanning is still active by checking processing queue in GearScan
+                    local gearScan = GearPicker:gearScan()
+                    if gearScan.processingQueue and #gearScan.processingQueue > 0 then
+                        System.LogAlways("$3[GearPicker] Scanning " .. #gearScan.processingQueue .. " gear items...")
+                        System.LogAlways("$3[GearPicker] Currently at item " .. gearScan.processingIndex .. " of " .. #gearScan.processingQueue)
+                    else
+                        System.LogAlways("$4[GearPicker] No items in processing queue. Scan may have failed.")
+                    end
+                end
+                
+                -- After 6 seconds, add a troubleshooting message if scan isn't complete
+                if i == 20 then
+                    local gearScan = GearPicker:gearScan()
+                    if not gearScan.scanningComplete then
+                        System.LogAlways("$4[GearPicker] Scan taking longer than expected. This could indicate an issue.")
+                        System.LogAlways("$4[GearPicker] If no results appear, try running scan again.")
+                    end
+                end
             end)
         end
     end,

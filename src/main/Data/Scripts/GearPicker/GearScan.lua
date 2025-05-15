@@ -35,18 +35,39 @@ local GearScan = {
         
         -- Collect all inventory items
         local inventory = this.player.inventory
-        local items = inventory:GetItems()
+        local items = inventory:GetItems() or {}
+        
+        -- Safety check for nil or empty items table
+        if not items or type(items) ~= "table" then
+            items = {}
+            System.LogAlways("$4[GearPicker] WARNING: GetItems() returned nil or invalid data")
+        end
         
         System.LogAlways("$7[GearPicker] Found " .. #items .. " total items in inventory")
         
         -- Filter for gear items and add to processing queue
         local gearCount = 0
         for i = 1, #items do
-            local item = this.itemManager.GetItem(items[i])
+            local itemId = items[i]
+            if not itemId then
+                System.LogAlways("$4[GearPicker] WARNING: Found nil item ID at index " .. i)
+                goto continue
+            end
+            
+            local item = this.itemManager.GetItem(itemId)
+            if not item then
+                System.LogAlways("$4[GearPicker] WARNING: ItemManager.GetItem returned nil for ID at index " .. i)
+                goto continue
+            end
+            
             if this:isGearItem(item) then
                 gearCount = gearCount + 1
-                table.insert(this.processingQueue, items[i])
+                table.insert(this.processingQueue, itemId)
+                System.LogAlways("$7[GearPicker] Added item to processing queue: " .. 
+                    (this.itemManager.GetItemName(item.class) or "unknown"))
             end
+            
+            ::continue::
         end
         
         System.LogAlways("$7[GearPicker] Identified " .. gearCount .. " gear items to analyze")
@@ -100,12 +121,73 @@ local GearScan = {
         end
         
         local inventoryItem = this.processingQueue[this.processingIndex]
-        local item = this.itemManager.GetItem(inventoryItem)
-        local itemName = this.itemManager.GetItemName(item.class)
+        if not inventoryItem then
+            System.LogAlways("$4[GearPicker] WARNING: Nil inventory item at processing index " .. this.processingIndex)
+            this.processingIndex = this.processingIndex + 1
+            this.equippedItem.script.SetTimer(10, function()
+                this:processNextItem()
+            end)
+            return
+        end
         
-        -- Get item stats
-        local stats = this.equippedItem:getItemStats(item)
-        stats.material = this.equippedItem:detectItemMaterial(item)
+        local item = this.itemManager.GetItem(inventoryItem)
+        if not item then
+            System.LogAlways("$4[GearPicker] WARNING: ItemManager.GetItem returned nil for processing index " .. this.processingIndex)
+            this.processingIndex = this.processingIndex + 1
+            this.equippedItem.script.SetTimer(10, function()
+                this:processNextItem()
+            end)
+            return
+        end
+        
+        if not item.class then
+            System.LogAlways("$4[GearPicker] WARNING: Item has nil class at processing index " .. this.processingIndex)
+            this.processingIndex = this.processingIndex + 1
+            this.equippedItem.script.SetTimer(10, function()
+                this:processNextItem()
+            end)
+            return
+        end
+        
+        local itemName = this.itemManager.GetItemName(item.class) or "unknown_item"
+        
+        -- Get item stats with error handling
+        local stats, getStatsSuccess = pcall(function() 
+            return this.equippedItem:getItemStats(item) 
+        end)
+        
+        if not getStatsSuccess then
+            System.LogAlways("$4[GearPicker] ERROR: Failed to get item stats for " .. itemName)
+            stats = {
+                id = item.id or 0,
+                class = item.class or "unknown",
+                name = itemName,
+                uiName = itemName,
+                stabDefense = 0,
+                slashDefense = 0,
+                bluntDefense = 0,
+                noise = 0,
+                visibility = 0,
+                conspicuousness = 0,
+                charisma = 0,
+                weight = 0,
+                condition = 0,
+                maxCondition = 0,
+                isEquipped = false
+            }
+        end
+        
+        -- Get material with error handling
+        local detectSuccess, material = pcall(function() 
+            return this.equippedItem:detectItemMaterial(item) 
+        end)
+        
+        if detectSuccess then
+            stats.material = material
+        else
+            stats.material = "unknown"
+            System.LogAlways("$4[GearPicker] ERROR: Failed to detect material for " .. itemName)
+        end
         
         -- Display item being processed
         System.LogAlways("$7[GearPicker] Processing: " .. itemName)

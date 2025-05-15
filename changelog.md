@@ -1,5 +1,13 @@
 ## Changelog
 
+### 1.1.3 14-May-25 - Enhanced Inventory Scanning
+- fix: Fixed critical bug in gear scanning where inventory items weren't being properly processed
+- fix: Added comprehensive error handling for GetItems() function
+- fix: Improved item validation to prevent crashes when accessing invalid items
+- fix: Enhanced progress reporting during inventory scanning
+- refactor: Improved pcall usage for material detection and item stats gathering
+- fix: Added safeguards for nil classes and missing item properties
+
 ### 1.1.2 14-May-25 - Code Cleanup
 - refactor: Removed all legacy HelmetOffDialog references from code
 - refactor: Removed unused variant directories (helmet_only, random, ranged)
