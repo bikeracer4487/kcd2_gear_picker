@@ -224,7 +224,7 @@ local Commands = {
     
     -- Gear scanning command
     scanInventory = function(self)
-        System.LogAlways("\n$2[GearPicker] =========================================================")
+        System.LogAlways("$2[GearPicker] =========================================================")
         System.LogAlways("$2[GearPicker] STARTING INVENTORY SCAN...")
         System.LogAlways("$2[GearPicker] =========================================================")
         
@@ -375,9 +375,40 @@ local Commands = {
             System.LogAlways("$6[GearPicker] =========================================================")
         end
         
-        -- Use our direct logging method
+        -- Ensure GearPicker and gearScan are properly initialized
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Initializing inventory scan...")
+        
+        if not GearPicker then
+            System.LogAlways("$4[GearPicker] ERROR: GearPicker global object is nil!")
+            return
+        end
+        
+        -- Check gearScan factory method
+        if not GearPicker.gearScan then
+            System.LogAlways("$4[GearPicker] ERROR: GearPicker.gearScan factory method not found!")
+            return
+        end
+        
+        -- Get gearScan instance
         local gearScan = GearPicker:gearScan()
+        
+        if not gearScan then
+            System.LogAlways("$4[GearPicker] ERROR: Failed to create GearScan instance!")
+            return
+        end
+        
+        -- Check if scanInventory method exists
+        if not gearScan.scanInventory then
+            System.LogAlways("$4[GearPicker] ERROR: gearScan.scanInventory method not found!")
+            return
+        end
+        
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Starting inventory scan with custom callback...")
+        
+        -- Use our direct logging method
         gearScan:scanInventory(directLogInventoryDetails)
+        
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: scanInventory method called successfully")
         
         -- Add a delayed message to indicate the scan is in progress
         for i = 1, 20 do
