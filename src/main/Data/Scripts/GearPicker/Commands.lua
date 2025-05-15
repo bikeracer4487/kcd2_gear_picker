@@ -228,6 +228,14 @@ local Commands = {
         System.LogAlways("$2[GearPicker] STARTING INVENTORY SCAN...")
         System.LogAlways("$2[GearPicker] =========================================================")
         
+        -- Try to run diagnostics first
+        if _G.GearPickerRunDiagnostics then
+            System.LogAlways("$2[GearPicker] Running pre-scan diagnostics...")
+            _G.GearPickerRunDiagnostics()
+        else
+            System.LogAlways("$4[GearPicker] WARNING: Diagnostics function not available")
+        end
+        
         -- Create a direct version of the callback that uses System.LogAlways
         local directLogInventoryDetails = function(inventoryItems, equippedItems)
             System.LogAlways("\n$6[GearPicker] =========================================================")

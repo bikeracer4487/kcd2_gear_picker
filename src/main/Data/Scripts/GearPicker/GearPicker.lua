@@ -216,6 +216,7 @@ local GearPicker = {
             string.format("Scripts/%s/GearScan.lua", modName),
             string.format("Scripts/%s/GearOptimizer.lua", modName),
             string.format("Scripts/%s/GearSwitcher.lua", modName),
+            string.format("Scripts/%s/Diagnostics.lua", modName),
         }
         
         -- Log script loading details
