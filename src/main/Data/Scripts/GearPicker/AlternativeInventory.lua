@@ -604,6 +604,46 @@ local AlternativeInventory = {
         AltLog("Found " .. #equippedItems .. " equipped items")
         AltLog("Found " .. #inventoryItems .. " total inventory items")
         
+        -- If we only found placeholder items but no actual gear details,
+        -- use ApiLimitations to create simulated gear
+        if #equippedItems == 1 and equippedItems[1].name == "Some equipped gear detected" then
+            AltLog("Only found placeholder equipped item, creating simulated inventory")
+            
+            -- Get player's equipped weight
+            local equippedWeight = 0
+            if this.player.soul and this.player.soul.GetDerivedStat then
+                local success, weight = pcall(function()
+                    return this.player.soul:GetDerivedStat("eqw")
+                end)
+                
+                if success and weight and weight > 0 then
+                    equippedWeight = weight
+                end
+            end
+            
+            -- Create simulated items
+            if _G.GearPicker.ClassRegistry.ApiLimitations then
+                local apiLimitations = _G.GearPicker.ClassRegistry.ApiLimitations:new()
+                local simInventory, simEquipped = apiLimitations:createSimulatedInventory(equippedWeight)
+                
+                AltLog("Created " .. #simEquipped .. " simulated equipped items")
+                AltLog("Created " .. #simInventory .. " total simulated inventory items")
+                
+                -- Use simulated items instead of placeholders
+                inventoryItems = simInventory
+                equippedItems = simEquipped
+                
+                -- Show warning about API limitations
+                local warningMsg = apiLimitations:getWarningMessage()
+                for _, line in ipairs(string.gmatch(warningMsg, "[^\r\n]+")) do
+                    AltLog("WARNING: " .. line)
+                    System.LogAlways("$4[GearPicker] " .. line)
+                end
+            else
+                AltLog("ApiLimitations not found in registry, cannot create simulated inventory")
+            end
+        end
+        
         -- Call callback if provided
         if callback and type(callback) == "function" then
             AltLog("Calling provided callback with scan results")

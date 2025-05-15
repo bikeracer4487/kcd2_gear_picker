@@ -1,5 +1,13 @@
 ## Changelog
 
+### 1.1.4 16-May-25 - API Compatibility Upgrade
+- feat: Added workaround for KCD2 inventory API limitations
+- feat: Created simulated inventory system when actual items can't be accessed
+- feat: Improved diagnostics to better understand game API structure
+- feat: Added helpful warning messages about API limitations
+- fix: Enhanced robustness with multiple fallback inventory scanning methods
+- fix: Added comprehensive error handling in all API calls
+
 ### 1.1.3 14-May-25 - Enhanced Inventory Scanning
 - fix: Fixed critical bug in gear scanning where inventory items weren't being properly processed
 - fix: Added comprehensive error handling for GetItems() function

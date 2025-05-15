@@ -2,7 +2,7 @@
 local GearPicker = {
     MOD_NAME = "__DYNAMICALLY_INJECTED__",
     ENVIRONMENT = "__DYNAMICALLY_INJECTED__",
-    VERSION = "1.1.3",
+    VERSION = "1.1.4",
 
     ClassRegistry = {},
     __factories = {},
@@ -212,6 +212,7 @@ local GearPicker = {
             string.format("Scripts/%s/EquippedItem.lua", modName),
             string.format("Scripts/%s/UnequipGear.lua", modName),
             string.format("Scripts/%s/ItemCategory.lua", modName),
+            string.format("Scripts/%s/ApiLimitations.lua", modName),
             string.format("Scripts/%s/AlternativeInventory.lua", modName),
             string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/GearScan.lua", modName),
@@ -297,6 +298,26 @@ local GearPicker = {
         
         this.__factories.alternativeInventory = AlternativeInventory:new(_G.player, _G.ItemManager)
         return this.__factories.alternativeInventory
+    end,
+    
+    --- API Limitations handler
+    apiLimitations = function(self)
+        --- @type GearPicker
+        local this = self
+        
+        if this.__factories.apiLimitations then
+            return this.__factories.apiLimitations
+        end
+        
+        --- @type ApiLimitations
+        local ApiLimitations = this.ClassRegistry.ApiLimitations
+        if not ApiLimitations then
+            System.LogAlways("$4[GearPicker ERROR] ApiLimitations class not found in registry")
+            return nil
+        end
+        
+        this.__factories.apiLimitations = ApiLimitations:new()
+        return this.__factories.apiLimitations
     end,
 }
 
