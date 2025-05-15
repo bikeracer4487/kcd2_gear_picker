@@ -212,6 +212,7 @@ local GearPicker = {
             string.format("Scripts/%s/EquippedItem.lua", modName),
             string.format("Scripts/%s/UnequipGear.lua", modName),
             string.format("Scripts/%s/ItemCategory.lua", modName),
+            string.format("Scripts/%s/AlternativeInventory.lua", modName),
             string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/GearScan.lua", modName),
             string.format("Scripts/%s/GearOptimizer.lua", modName),
@@ -276,6 +277,26 @@ local GearPicker = {
         
         this.__factories.compatibility = Compatibility:new()
         return this.__factories.compatibility
+    end,
+    
+    --- Alternative inventory scanner to work around API limitations
+    alternativeInventory = function(self)
+        --- @type GearPicker
+        local this = self
+        
+        if this.__factories.alternativeInventory then
+            return this.__factories.alternativeInventory
+        end
+        
+        --- @type AlternativeInventory
+        local AlternativeInventory = this.ClassRegistry.AlternativeInventory
+        if not AlternativeInventory then
+            System.LogAlways("$4[GearPicker ERROR] AlternativeInventory class not found in registry")
+            return nil
+        end
+        
+        this.__factories.alternativeInventory = AlternativeInventory:new(_G.player, _G.ItemManager)
+        return this.__factories.alternativeInventory
     end,
 }
 

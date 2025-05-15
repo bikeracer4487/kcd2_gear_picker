@@ -397,6 +397,32 @@ local Commands = {
             return
         end
         
+        -- Try to get alternativeInventory scanner first
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Checking for alternative inventory scanner...")
+        
+        -- Check if alternativeInventory is available
+        if GearPicker.alternativeInventory and type(GearPicker.alternativeInventory) == "function" then
+            System.LogAlways("$7[GearPicker] DIAGNOSTIC: Alternative inventory scanner found, trying that first...")
+            
+            local altInventory = GearPicker:alternativeInventory()
+            if altInventory and altInventory.scanInventory then
+                System.LogAlways("$7[GearPicker] NOTICE: Using alternative inventory scanning method (GetItems API issue workaround)")
+                
+                -- Use alternative scanner with our callback
+                altInventory:scanInventory(directLogInventoryDetails)
+                
+                System.LogAlways("$7[GearPicker] DIAGNOSTIC: Alternative scan initiated successfully")
+                return -- Exit after starting alternative scan
+            else
+                System.LogAlways("$4[GearPicker] WARNING: Alternative inventory scanner creation failed, falling back to standard scanner")
+            end
+        else
+            System.LogAlways("$4[GearPicker] WARNING: Alternative inventory scanner not available, falling back to standard scanner")
+        end
+        
+        -- Fall back to standard scanner
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Falling back to standard inventory scanner...")
+        
         -- Get gearScan instance
         local gearScan = GearPicker:gearScan()
         
