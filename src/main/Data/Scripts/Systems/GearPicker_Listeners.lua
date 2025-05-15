@@ -5,6 +5,19 @@ function GearPicker:OnLoadingComplete()
     System.LogAlways("$2[GearPicker] Version " .. _G.GearPicker.VERSION)
     System.LogAlways("********************************************")
     
+    -- Load the AlternativeInventory early to ensure it's available
+    Script.LoadScript("Scripts/GearPicker/AlternativeInventory.lua")
+    
+    -- Register additional command for direct AlternativeInventory usage
+    if System.AddCCommand then
+        System.AddCCommand(
+            "gear_picker__dump_inventory",
+            "_G.GearPickerAltInventoryScan()",
+            "Directly scan inventory using alternative method - use if F6 isn't working"
+        )
+        System.LogAlways("$2[GearPicker] Registered emergency inventory scan command: gear_picker__dump_inventory")
+    end
+    
     -- Check if core module was properly loaded
     if not _G.GearPickerLoaded then
         System.LogAlways("$4[GearPicker ERROR] Core module was not properly loaded!")

@@ -256,4 +256,8 @@ if System and System.AddCCommand then
     AltLog("Registered alternative scan command: gear_picker__alt_scan")
 end
 
+-- Register the class in GearPicker's class registry
+_G.GearPicker.ClassRegistry.AlternativeInventory = AlternativeInventory
+AltLog("Registered AlternativeInventory in GearPicker.ClassRegistry")
+
 return AlternativeInventory
