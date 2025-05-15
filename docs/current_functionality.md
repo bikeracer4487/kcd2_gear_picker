@@ -24,7 +24,7 @@ The original HelmetOffDialog-related files have been archived to `archived_mod/`
 
 ### GearPicker
 
-The main class that initializes the mod and provides access to all other components through factory methods. It loads required scripts and connects the various components.
+The main class that initializes the mod and provides access to all other components through factory methods. It loads required scripts and connects the various components. Also includes factory methods for API limitation handling in KCD2.
 
 ### Equipment
 
@@ -89,6 +89,30 @@ New class for managing gear loadouts:
 - Manages preset saving and loading
 - Ensures proper equipping order for layered gear
 
+### AlternativeInventory
+
+Advanced inventory scanning system that provides fallback options when the standard API fails:
+- Uses multiple methods to access inventory
+- Detects equipped items through various approaches
+- Falls back to equipped weight detection when necessary
+- Integrates with simulated inventory when direct access fails
+
+### ApiLimitations
+
+Handles API constraints in KCD2 gracefully:
+- Creates simulated inventory based on detected equipment weight
+- Provides reasonable estimates for gear stats
+- Generates appropriate user warnings
+- Ensures the mod can function even with limited API access
+
+### Diagnostics
+
+Advanced diagnostic system to troubleshoot API issues:
+- Tests availability of various game APIs
+- Checks player objects and inventory access
+- Logs detailed information about API constraints
+- Provides console commands for advanced diagnostics
+
 ### Config
 
 Manages mod settings including:
@@ -111,6 +135,31 @@ The mod uses an innovative approach to identify equipped items since the game do
 2. The detection happens in `EquippedItem.isEquipped()` using weight comparison:
    ```lua
    local isEquipped = tostring(oldStats.equippedWeight) ~= tostring(newStats.equippedWeight)
+   ```
+
+### API Limitation Handling
+
+Due to limitations in KCD2's API where the GetItems() function doesn't work as expected, the mod implements multiple fallback mechanisms:
+
+1. **AlternativeInventory Scanner**: Attempts multiple methods to access inventory data:
+   - Tries various inventory access methods (GetEquippedItems, enumerators, etc.)
+   - Checks player.equipment and slot-specific item getters
+   - Detects equipped weight via player.soul:GetDerivedStat("eqw")
+   - Provides placeholder items when direct access fails
+
+2. **Simulated Inventory System**: When direct item access fails:
+   - Creates simulated items based on detected equipped weight
+   - Distributes items across common armor slots
+   - Assigns reasonable stats based on the type of gear
+   - Clearly marks items as simulated for user awareness
+
+3. **User Warnings**: Provides clear notifications:
+   ```
+   [IMPORTANT] Limited Inventory Access
+   -------------------------------------------------------------------------------
+   Due to KCD2 API limitations, GearPicker cannot access specific item details.
+   The mod can detect that you have equipment weighing X units but cannot
+   identify individual items.
    ```
 
 ### Optimization Approach

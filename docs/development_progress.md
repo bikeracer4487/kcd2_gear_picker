@@ -4,7 +4,7 @@
 
 **Project Stage**: Refactoring and Core Implementation
 
-**Last Updated**: May 14, 2025
+**Last Updated**: May 16, 2025
 
 ## Completed Tasks
 
@@ -31,6 +31,10 @@
 18. ✅ Updated commands to support gear optimization and preset management
 19. ✅ Fixed compatibility issues with old HelmetOffDialog code
 20. ✅ Implemented enhanced error handling and compatibility modules
+21. ✅ Created alternative inventory scanning system to handle API limitations
+22. ✅ Added ApiLimitations module for graceful handling of API constraints
+23. ✅ Implemented simulated inventory generation when items can't be accessed directly
+24. ✅ Added comprehensive diagnostics system for troubleshooting API issues
 
 ## In Progress
 
@@ -52,31 +56,41 @@
 2. **GearScan.lua**: Implements comprehensive inventory scanning and analysis
 3. **GearOptimizer.lua**: Handles optimization calculations for different scenarios
 4. **GearSwitcher.lua**: Manages switching between different gear loadouts and presets
+5. **AlternativeInventory.lua**: Provides fallback inventory scanning methods for API compatibility issues
+6. **ApiLimitations.lua**: Handles API constraints gracefully with simulated inventory data
+7. **Diagnostics.lua**: Advanced diagnostic tools for identifying API issues
 
 ## Recent Findings & Changes
 
-1. **Enhanced Stats Collection**: We've successfully implemented comprehensive stat collection for all gear items:
+1. **API Limitations Handling**: Discovered and implemented workarounds for KCD2 inventory API limitations:
+   - Created AlternativeInventory scanner with multiple fallback methods
+   - Implemented ApiLimitations module to gracefully handle missing API access
+   - Added simulated inventory generation based on equipped weight detection
+   - Provided clear user notifications about API constraints
+
+2. **Enhanced Stats Collection**: We've successfully implemented comprehensive stat collection for all gear items:
    - Defensive stats (Stab/Slash/Blunt)
    - Stealth stats (Visibility/Conspicuousness/Noise)
    - Social stats (Charisma)
    - Physical properties (Weight/Condition/Cleanliness)
    
-2. **Material Detection**: Implemented reliable material type detection for different gear:
+3. **Material Detection**: Implemented reliable material type detection for different gear:
    - Plate armor detection based on naming patterns
    - Chainmail detection for mail items
    - Leather and cloth material identification
    - Comprehensive categorization for all 16 armor slots
 
-3. **Hotkey Configuration**: Updated hotkeys to support gear functionality:
+4. **Hotkey Configuration**: Updated hotkeys to support gear functionality:
    - F6: Scan and log inventory items (previously F5)
    - F7: Optimize for maximum armor protection
    - F8: Optimize for maximum stealth
    - F9: Optimize for maximum charisma
 
-4. **Command Structure**: Implemented comprehensive command system:
+5. **Command Structure**: Implemented comprehensive command system:
    - Equipment optimization commands
    - Preset management (save/load/list/delete)
    - Configuration options for optimization priorities
+   - Diagnostic commands for troubleshooting
 
 ## Next Steps
 
@@ -89,6 +103,15 @@
 7. 📝 Create comprehensive testing scenarios for all core features
 
 ## Challenges and Solutions
+
+### Challenge: KCD2 API Limitations
+We discovered significant API limitations in KCD2 where the GetItems() function doesn't work as expected, preventing direct access to inventory items.
+
+**Solution**: Created a comprehensive fallback system with multiple approaches:
+1. AlternativeInventory module that tries multiple methods to access inventory items
+2. ApiLimitations class that creates simulated inventory based on detected equipment weight
+3. Enhanced diagnostics to give users clear information about API constraints
+4. User-friendly warning messages explaining the limitations and what to expect
 
 ### Challenge: Compatibility with Legacy Code
 As the mod evolved from HelmetOffDialog to GearPicker, we encountered issues with legacy code references and functions.
