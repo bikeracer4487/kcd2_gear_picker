@@ -918,6 +918,18 @@
 			<Loop Fragment="Sunbathing" />
 			<Out Fragment="SunbathingOut" />
 		</UnstanceData>
+		
+		<UnstanceData Name="painter_skull">
+			<In Fragment="PainterSkullListenIn" />
+			<Loop Fragment="PainterSkullListen" />
+			<Out Fragment="PainterSkullListenOut" />
+		</UnstanceData>
+		
+		<UnstanceData Name="painter_cleanBrush">
+			<In Fragment="PainterCleanBrushIn" />
+			<Loop Fragment="PainterCleanBrush" />
+			<Out Fragment="PainterCleanBrushOut" />
+		</UnstanceData>
 
 		<UnstanceData Name="ingameDialog_standing_02" IsAligned="false" UseLocationObject="false">
 			<In Fragment="NPC_MonologueIn" />
@@ -1329,6 +1341,42 @@
 			<Out />
 		</UnstanceData>
 
+		<UnstanceData Name="lyingInjured_bedHigh_typhus01" stance="lying" IsAligned="false" UseLocationObject="false">
+			<In />
+			<Loop Fragment="HealingBedTyphus01Left" />
+			<Out />
+		</UnstanceData>
+
+		<UnstanceData Name="lyingInjured_bedHigh_typhus02" stance="lying" IsAligned="false" UseLocationObject="false">
+			<In />
+			<Loop Fragment="HealingBedTyphus02Left" />
+			<Out />
+		</UnstanceData>
+
+		<UnstanceData Name="healing_typhus01_slave" stance="lying" IsAligned="false" UseLocationObject="false">
+			<In Fragment="HealingBedTyphus01LeftIn" />
+			<Loop Fragment="HealingBedTyphus01LeftSlave" />
+			<Out Fragment="HealingBedTyphus01LeftOut" />
+		</UnstanceData>
+
+		<UnstanceData Name="healing_typhus02_slave" stance="lying" IsAligned="false" UseLocationObject="false">
+			<In Fragment="HealingBedTyphus02LeftIn" />
+			<Loop Fragment="HealingBedTyphus02LeftSlave" />
+			<Out Fragment="HealingBedTyphus02LeftOut" />
+		</UnstanceData>
+
+		<UnstanceData Name="healing_typhus01_master">
+			<In Fragment="HealingBedTyphus01LeftMasterIn" />
+			<Loop Fragment="HealingBedTyphus01LeftMaster" />
+			<Out Fragment="HealingBedTyphus01LeftMasterOut" />
+		</UnstanceData>
+
+		<UnstanceData Name="healing_typhus02_master">
+			<In Fragment="HealingBedTyphus02LeftMasterIn" />
+			<Loop Fragment="HealingBedTyphus02LeftMaster" />
+			<Out Fragment="HealingBedTyphus02LeftMasterOut" />
+		</UnstanceData>		
+
 		<UnstanceData Name="woundedLying_1">
 			<In />
 			<Loop Fragment="WoundedLying_1" />
@@ -1406,6 +1454,8 @@
 			<Loop Fragment="Quest_Treating" />
 			<Out Fragment="Quest_TreatingOut" />
 		</UnstanceData>
+
+
 		
 		<UnstanceData Name="Quest_GuardHalberd_2"> 
 			<In />
@@ -2919,10 +2969,22 @@
 			<Out Fragment="WaitingStandNervousOut2" />
 		</UnstanceData>
 
+		<UnstanceData Name="waiting_nervous_armsAkimbo_noObject" IsAligned="false" UseLocationObject="false">
+			<In Fragment="WaitingStandNervousIn" />
+			<Loop Fragment="WaitingStandNervous" />
+			<Out Fragment="WaitingStandNervousOut" />
+		</UnstanceData>
+
 		<UnstanceData Name="waiting_nervous_lookingAround" IsAligned="false">
 			<In Fragment="Waiting_Nervous_LookingAround_In" />
 			<Loop Fragment="Waiting_Nervous_LookingAround_Loop" />
 			<Out Fragment="Waiting_Nervous_LookingAround_Out" />
+		</UnstanceData>
+
+		<UnstanceData Name="waiting_idleNoVariations">
+			<In />
+			<Loop Fragment="ChastityBeltIdle" />
+			<Out />
 		</UnstanceData>
 
 		<UnstanceData Name="waiting_alarmed" IsAligned="false">
@@ -3749,6 +3811,12 @@
 		<UnstanceData Name="sittingInjured" IsAligned="true" UseLocationObject="true">
 			<In />
 			<Loop Fragment="WoundedAulitzSleep" tags="sitting" />
+			<Out />
+		</UnstanceData>
+		
+		<UnstanceData Name="nervousDoorKnocking">
+			<In Fragment="DoorNervousKnockingIn" />
+			<Loop Fragment="DoorNervousKnocking" />
 			<Out />
 		</UnstanceData>
 

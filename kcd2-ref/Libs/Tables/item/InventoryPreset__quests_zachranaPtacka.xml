@@ -117,97 +117,104 @@
 			<InventoryPresetRef Name="pockets_bandit_light" />
 		</InventoryPreset>
 	
-	<InventoryPreset Name="inventory_zachranaPtacka_playerHorse">
-			<ClothingPresetRef Name="zachranaPtacka_playerHorse" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_playerHorse">
+				<ClothingPresetRef Name="zachranaPtacka_playerHorse" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_2" Health="0.2" HealthVariation="0.099" >
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier2_03" />
-			<WeaponPresetRef Name="crossbowman_3_01" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_2" Health="0.2" HealthVariation="0.099" >
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier2_03" />
+				<WeaponPresetRef Name="crossbowman_3_01" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_3" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier3_04" />
-			<WeaponPresetRef Name="zachranaPtacka_soldier3_hammer_shield" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-			<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_3" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier3_04" />
+				<WeaponPresetRef Name="zachranaPtacka_soldier3_hammer_shield" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+				<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_4" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier4_03" />
-			<WeaponPresetRef Name="crossbowman_3_02" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_4" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier4_03" />
+				<WeaponPresetRef Name="crossbowman_3_02" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_5" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier5_04" />
-			<WeaponPresetRef Name="crossbowman_3_01" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_5" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier5_04" />
+				<WeaponPresetRef Name="crossbowman_3_01" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_6" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier6_03" />
-			<WeaponPresetRef Name="zachranaPtacka_soldier6_axe_shield" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	  <PresetItem Name="zachranaPtacka_die_mud" Amount="1" />
-	  <PresetItem Name="NullDiceBadgeSilver" Amount="1" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_6" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier6_03" />
+				<WeaponPresetRef Name="zachranaPtacka_soldier6_axe_shield" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		<PresetItem Name="zachranaPtacka_die_mud" Amount="1" />
+		<PresetItem Name="NullDiceBadgeSilver" Amount="1" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_7" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier7_04" />
-			<WeaponPresetRef Name="zachranaPtacka_soldier7_mace_shield" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	  <PresetItem Name="zachranaPtacka_die_sad_sergeant" Amount="1" />
-	  <PresetItem Name="MultiplierDiceBadgeSilver" Amount="1" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_7" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier7_04" />
+				<WeaponPresetRef Name="zachranaPtacka_soldier7_mace_shield" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		<PresetItem Name="zachranaPtacka_die_sad_sergeant" Amount="1" />
+		<PresetItem Name="MultiplierDiceBadgeSilver" Amount="1" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_8" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier8_02" />
-			<WeaponPresetRef Name="zachranaPtacka_soldier8_axe" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	  <PresetItem Name="zachranaPtacka_keyMalessovFortress" Amount="1" />
-	  <PresetItem Name="zachranaPtacka_die_klobas" Amount="1" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_8" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier8_02" />
+				<WeaponPresetRef Name="zachranaPtacka_soldier8_axe" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		<PresetItem Name="zachranaPtacka_keyMalessovFortress" Amount="1" />
+		<PresetItem Name="zachranaPtacka_die_klobas" Amount="1" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_9" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier9_03" />
-			<WeaponPresetRef Name="zachranaPtacka_soldier9_sword" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	  <PresetItem Name="zachranaPtacka_die_trojak" Amount="1" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_9" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier9_03" />
+				<WeaponPresetRef Name="zachranaPtacka_soldier9_sword" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		<PresetItem Name="zachranaPtacka_die_trojak" Amount="1" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_soldier_10" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier10_04" />
-			<WeaponPresetRef Name="crossbowman_3_02" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-	</InventoryPreset>
-			<InventoryPreset Name="inventory_zachranaPtacka_soldier_11" Health="0.2" HealthVariation="0.099">
-			<ClothingPresetRef Name="zachranaPtacka_malesovSoldier11_03" />
-			<WeaponPresetRef Name="crossbowman_2_01" />
-			<InventoryPresetRef Name="pockets_soldiers_all" />
-			<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_soldier_10" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier10_04" />
+				<WeaponPresetRef Name="crossbowman_3_02" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+		</InventoryPreset>
+				<InventoryPreset Name="inventory_zachranaPtacka_soldier_11" Health="0.2" HealthVariation="0.099">
+				<ClothingPresetRef Name="zachranaPtacka_malesovSoldier11_03" />
+				<WeaponPresetRef Name="crossbowman_2_01" />
+				<InventoryPresetRef Name="pockets_soldiers_all" />
+				<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_vitek">
-			<ClothingPresetRef Name="villager_04" />
-			<WeaponPresetRef Name="huntingsword_2_01" />
-			<InventoryPresetRef Name="pockets_villager" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_vitek">
+				<ClothingPresetRef Name="villager_04" />
+				<WeaponPresetRef Name="huntingsword_2_01" />
+				<InventoryPresetRef Name="pockets_villager" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_hastal">
-			<ClothingPresetRef Name="kmal_hastal" />
-			<WeaponPresetRef Name="kmal_hastal" />
-			<InventoryPresetRef Name="pockets_burgher" />
-			<InventoryPresetRef Name="inventory_money_horseSeller" />
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_hastal">
+				<ClothingPresetRef Name="kmal_hastal" />
+				<WeaponPresetRef Name="kmal_hastal" />
+				<InventoryPresetRef Name="pockets_burgher" />
+				<InventoryPresetRef Name="inventory_money_horseSeller" />
+		</InventoryPreset>
 
-	<InventoryPreset Name="inventory_zachranaPtacka_schnapsStash">
-			<PresetItem Name="herb_dried_marigold" Amount="3"/>
-			<PresetItem Name="herb_dried_salvia" Amount="3"/>
-			<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
-			<PresetItem Name="loot_cloth" Amount="1"/>
-			<PresetItem Name="money" Amount="30"/>
-	</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_schnapsStash">
+				<PresetItem Name="herb_dried_marigold" Amount="3"/>
+				<PresetItem Name="herb_dried_salvia" Amount="3"/>
+				<PresetItem Name="potion_saviourSchnapps" Amount="1" Health="1"/>
+				<PresetItem Name="loot_cloth" Amount="1"/>
+				<PresetItem Name="money" Amount="30"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_zachranaPtacka_chestInPrisonRoom">
+				<PresetItem Name="Hood12_m08_A" Amount="1" Quality="3" Condition="0.81"/>
+				<PresetItem Name="TunicShort08_m05_C" Amount="1" Quality="3" Condition="0.73"/>
+				<PresetItem Name="HoseJoined02_m02_B" Amount="1" Quality="3" Condition="0.74"/>
+				<PresetItem Name="Cap22_m08_A" Amount="1" Quality="3" Condition="0.85"/>
+				<PresetItem Name="money" Amount="330"/>
+		</InventoryPreset>
 	</InventoryPresets>
 </database>

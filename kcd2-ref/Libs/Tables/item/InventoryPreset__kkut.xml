@@ -1,6 +1,11 @@
 <?xml version='1.0' encoding='us-ascii'?>
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="InventoryPreset.xsd">
 	<InventoryPresets version="2">
+		<InventoryPreset Name="inventory_kkut_magdalena">
+			<ClothingPresetRef Name="kkut_magdalena"/>
+			<InventoryPresetRef Name="pockets_villager"/>
+			<PresetItem Name="loot_rosary_expensive" Amount="1"/>
+		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_andreas">
 			<ClothingPresetRef Name="kkut_andreas"/>
 			<WeaponPresetRef Name="kkut_andreas"/>
@@ -13,6 +18,13 @@
 		<InventoryPreset Name="inventory_kkut_prokopEldris">
 			<ClothingPresetRef Name="kkut_prokopEldris"/>
 			<InventoryPresetRef Name="pockets_noble"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_man_342">
+			<ClothingPresetRef Name="kkut_man_342"/>
+			<WeaponPresetRef Name="kkut_man_342"/>
+			<InventoryPresetRef Name="pockets_scribe"/>
+			<PresetItem Name="loot_rosary_expensive" Amount="1"/>
+			<PresetItem Name="money" Amount="150"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_lacek">
 			<ClothingPresetRef Name="kkut_lacek"/>
@@ -61,6 +73,7 @@
 			<ClothingPresetRef Name="kkut_man_134"/>
 			<InventoryPresetRef Name="pockets_scribe"/>
 			<PresetItem Name="ius_regale_montanorum_I_kcd2" Amount="1"/>
+			<PresetItem Name="svatyAntonin_saintGameSign" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_franz">
 			<ClothingPresetRef Name="kkut_franz"/>
@@ -276,12 +289,12 @@
 			<InventoryPresetRef Name="pockets_burgher"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_131">
-			<ClothingPresetRef Name="soldier_ruthard_2_02"/>
-			<WeaponPresetRef Name="warhammer_shield_4_01_ruthard"/>
+			<ClothingPresetRef Name="soldier_ruthard_3_01"/>
+			<WeaponPresetRef Name="longsword_5_01"/>
 			<InventoryPresetRef Name="pockets_soldiers_all"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_132" Health="0.24" HealthVariation="0.05">
-			<ClothingPresetRef Name="soldier_ruthard_4_01"/>
+			<ClothingPresetRef Name="soldier_ruthard_3_02"/>
 			<WeaponPresetRef Name="sword_shield_3_01_ruthard"/>
 			<InventoryPresetRef Name="pockets_soldiers_all"/>
 		</InventoryPreset>
@@ -450,6 +463,7 @@
 			<PresetItem Name="bsmt_ironGood" Amount="2"/>
 			<PresetItem Name="bsmt_copper" Amount="1"/>
 			<PresetItem Name="player_lockpick" Amount="3"/>		
+			<PresetItem Name="Coat04_mKuttenberg01_C" Amount="1" Quality="3" Condition="0.42"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_loot_miskovice_05">
 			<PresetItem Name="axeBattle03" Amount="1"/>	
@@ -559,11 +573,22 @@
 			<PresetItem Name="potion_hair_o_dog" Amount="5"/>
 			<PresetItem Name="hooch" Amount="5"/>
 			<PresetItem Name="bacon" Amount="3"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
   		<InventoryPreset Name="inventory_kkut_chestInLonelyGuardTower" Health="1.0">
 			<PresetItem Name="skillbook_heavyWeapons_lvl4_kcd2" Amount="1"/>
 			<PresetItem Name="maceHeavy" Amount="1" Quality="3" Condition="0.89"/>
+			<PresetItem Name="Coat04_mKuttenberg_C" Amount="1" Quality="3" Condition="0.89"/>
 			<PresetItem Name="BascinetOpen01_m01_C2" Amount="1" Quality="2" Condition="0.55"/>
+		</InventoryPreset>
+  		<InventoryPreset Name="inventory_kkut_chestInZidovskaGuardTower" Health="1.0">
+			<PresetItem Name="Coat04_mKuttenberg03_C" Amount="1" Quality="3" Condition="0.28"/>
+			<PresetItem Name="Coat11_mKuttenberg01_C" Amount="1" Quality="3" Condition="0.22"/>
+			<PresetItem Name="Hood11_mKuttenberg_C" Amount="1" Quality="3" Condition="0.12"/>
+			<PresetItem Name="CoifLarge02_m05_C3" Amount="1" Quality="3" Condition="0.52"/>
+			<PresetItem Name="money" Amount="60"/>
+			<PresetItem Name="hooch" Amount="1"/>
+			<PresetItem Name="common_needle" Amount="1"/>
 		</InventoryPreset>
   		<InventoryPreset Name="inventory_kkut_checkPointChest" Health="1.0">
 			<PresetItem Name="skillbook_thievery_III_kcd2" Amount="1"/>
@@ -626,13 +651,18 @@
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_5">
-			<ClothingPresetRef Name="burgher_24"/>
+			<ClothingPresetRef Name="kkut_man_5"/>
 			<InventoryPresetRef Name="pockets_burgher"/>
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_29">
 			<ClothingPresetRef Name="burgher_26"/>
 			<InventoryPresetRef Name="pockets_burgher"/>
+			<PresetItem Name="RerollPipsbadgeGold" Amount="1"/>
+			<PresetItem Name="ExtraDicebadgeSilver" Amount="1"/>
+			<PresetItem Name="ExtraDiceBadgePlumb" Amount="1"/>
+			<PresetItem Name="dieFavourable" Amount="1"/>
+			<PresetItem Name="dieOdd" Amount="2"/>
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_19">
@@ -646,7 +676,7 @@
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_man_224">
-			<ClothingPresetRef Name="burgher_03"/>
+			<ClothingPresetRef Name="kkut_man_224"/>
 			<InventoryPresetRef Name="pockets_burgher"/>
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" />
 		</InventoryPreset>
@@ -673,6 +703,7 @@
 			<PresetItem Name="bandage_classic" Amount="3" Health="0.73"/>
 			<PresetItem Name="bsmt_hardware" Amount="2"/>
 			<PresetItem Name="special_cobweb" Amount="1"/>
+			<PresetItem Name="loot_rosary_old" Amount="1"/>
 			<PresetItem Name="BootsAnkle01_m07_C" Amount="1" Quality="1" Condition="0.33"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kkut_grollCellarChest">
@@ -688,6 +719,40 @@
 		<InventoryPreset Name="inventory_kkut_AdamsBarber">
 			<ClothingPresetRef Name="barber_02"/>
 			<InventoryPresetRef Name="pockets_burgher"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_krasek">
+			<ClothingPresetRef Name="kkut_krasek"/>
+			<WeaponPresetRef Name="sword_4_02"/>
+			<PresetItem Name="ring_gem" Amount="1"/>
+			<PresetItem Name="wineGood" Amount="1" Health="1"/>
+			<PresetItem Name="money" Amount="500"/>
+			<PresetItem Name="strasidlo_krasekKey" Amount="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_man_258">
+			<ClothingPresetRef Name="kkut_man_258"/>
+			<PresetItem Name="money" Amount="20"/>
+			<PresetItem Name="apple" Amount="1" Health="0.12"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_man_107">
+			<ClothingPresetRef Name="kkut_man_107"/>
+			<InventoryPresetRef Name="pockets_burgher"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_lichtenbergStash">
+			<PresetItem Name="money" Amount="3000"/>
+			<PresetItem Name="Brigandine03_m04_A4" Amount="1" Quality="2" Condition="0.84"/>
+			<PresetItem Name="Cap25_m06_C" Amount="1" Quality="3" Condition="0.89"/>
+			<PresetItem Name="shortSwordBasilard" Amount="1" Quality="3" Condition="0.99"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kkut_waffenrockChest" Quality="3" Condition="0.8" ConditionVariation="0.1">
+			<PresetItem Name="Waffenrock02_mKuttenberg02_D" Amount="1" />
+			<PresetItem Name="Waffenrock03_mKuttenberg_A" Amount="1" />
+			<PresetItem Name="Waffenrock03_mKuttenberg01_A" Amount="1" />
+			<PresetItem Name="Waffenrock03_mKuttenberg03_A" Amount="1" />
+			<PresetItem Name="Waffenrock08_mKuttenberg_B" Amount="1" />
+			<PresetItem Name="Waffenrock09_mKuttenberg_B" Amount="1" />
+			<PresetItem Name="Waffenrock09_mKuttenberg01_B" Amount="1" />
+			<PresetItem Name="Waffenrock09_mKuttenberg02_B" Amount="1" />
+			<PresetItem Name="Waffenrock09_mKuttenberg03_B" Amount="1" />
 		</InventoryPreset>
  	</InventoryPresets>
 </database>

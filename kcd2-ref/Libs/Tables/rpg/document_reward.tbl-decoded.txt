@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/document_reward.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\document_reward.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -16,7 +16,7 @@ String Table:
   [1] RPG.AddStatXP(event, soul, "speech", 500, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
   [2] RPG.AddStatXP(event, soul, "vitality", 350, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
   [3] RPG.AddStatXP(event, soul, "strength", 450, oldProgress, newProgress);RPG.NotifyLevelXpGain("strength");
-  [4] RPG.AddStatXP(event, soul, "agility", 250, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
+  [4] RPG.AddStatXP(event, soul, "agility", 270, oldProgress, newProgress);RPG.NotifyLevelXpGain("agility");
   [5] RPG.AddStatXP(event, soul, "vitality", 200, oldProgress, newProgress);RPG.NotifyLevelXpGain("vitality");
   [6] RPG.AddStatXP(event, soul, "speech", 700, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");
   [7] RPG.AddStatXP(event, soul, "speech", 300, oldProgress, newProgress);RPG.NotifyLevelXpGain("speech");

@@ -83,6 +83,7 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="interrupt_report" PreventsMonsterLod="true">
 					<TreeLocation FileName="npc/basic/switch/interrupt_report.xml" TreeName="interrupt_report" />
 					<Inboxes>
+						<InboxTemplate InboxId="c76e3262-c01f-4cbe-baf7-6176176fd88b" Priority="0" />
 						<InboxTemplate InboxId="c1221861-49ff-4dbc-bc94-de1bd2601a1a" Priority="0" />
 					</Inboxes>
 				</SmartBehaviorTemplate>

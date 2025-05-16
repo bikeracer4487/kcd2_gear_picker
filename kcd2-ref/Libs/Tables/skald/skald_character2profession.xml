@@ -6,10 +6,12 @@
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_ADAM_VELVARA" />
 		<skald_character2profession profession_name="pacholek" skald_character_name="char_ADAM_Z_ZELEJOVA" />
 		<skald_character2profession profession_name="pisar" skald_character_name="char_ADAM_ZE_ZARICI" />
+		<skald_character2profession profession_name="slechticna" skald_character_name="char_ADELA_Z_MNISKU" />
 		<skald_character2profession profession_name="slechticna" skald_character_name="char_ADLETA_ZE_STRAZE" />
 		<skald_character2profession profession_name="alchymista" skald_character_name="char_ALBIK_Z_UNICOVA" />
 		<skald_character2profession profession_name="mestan" skald_character_name="char_ALCHYMISTA_LEOPOLD" />
 		<skald_character2profession profession_name="devecka" skald_character_name="char_ALENCINA_BFF" />
+		<skald_character2profession profession_name="knez" skald_character_name="char_ALMUZNIK" />
 		<skald_character2profession profession_name="pekar" skald_character_name="char_ANCE" />
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_ANDREAS_KAMPA" />
 		<skald_character2profession profession_name="rychtar" skald_character_name="char_ANDREAS_RYCHTAR_KUTNOHORSKY" />
@@ -56,6 +58,7 @@
 		<skald_character2profession profession_name="bodyguard" skald_character_name="char_BURESOVA_OSOBNI_STRAZ" />
 		<skald_character2profession profession_name="vesnican" skald_character_name="char_BYNEK" />
 		<skald_character2profession profession_name="platner" skald_character_name="char_CECHMISTR_BUSEK" />
+		<skald_character2profession profession_name="obchodnik" skald_character_name="char_CECHMISTR_EICHNER" />
 		<skald_character2profession profession_name="platner" skald_character_name="char_CECHMISTR_GOTTFRIED" />
 		<skald_character2profession profession_name="platner" skald_character_name="char_CECHMISTR_ZBOREK" />
 		<skald_character2profession profession_name="pacholek" skald_character_name="char_CELEDIN_DRAT" />
@@ -70,6 +73,7 @@
 		<skald_character2profession profession_name="kuman" skald_character_name="char_CHAKAN_KUMAN_ZIKMUNDOVO_M44A" />
 		<skald_character2profession profession_name="kuman" skald_character_name="char_CHERTHAN_VELITEL_KUMANU_ZIKMUNDOVO" />
 		<skald_character2profession profession_name="hornik" skald_character_name="char_CHVAL_POLAK" />
+		<skald_character2profession profession_name="apatykar" skald_character_name="char_CHYMIATER" />
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_CIKAN_KAROL" />
 		<skald_character2profession profession_name="pocestny" skald_character_name="char_CIKAN_KAROL" />
 		<skald_character2profession profession_name="slechtic" skald_character_name="char_CSABA_MOLNAR" />
@@ -227,6 +231,7 @@
 		<skald_character2profession profession_name="knez" skald_character_name="char_KNEZ_BOHUMIL" />
 		<skald_character2profession profession_name="slechtic" skald_character_name="char_KOMORI_TROSKY" />
 		<skald_character2profession profession_name="vesnicanka" skald_character_name="char_KONA_GRUNTA" />
+		<skald_character2profession profession_name="bandyta" skald_character_name="char_KONIAS" />
 		<skald_character2profession profession_name="vojak" skald_character_name="char_KONRAD_KRAHUJEC" />
 		<skald_character2profession profession_name="slechtic" skald_character_name="char_KONRAD_Z_VECHTY" />
 		<skald_character2profession profession_name="felcar" skald_character_name="char_KORENAR_BARNABAS" />
@@ -440,6 +445,7 @@
 		<skald_character2profession profession_name="pacholek" skald_character_name="char_PORADATEL_ZAVODU_MALESOV" />
 		<skald_character2profession profession_name="pocestny" skald_character_name="char_POSEL_BEZ_DOPISU" />
 		<skald_character2profession profession_name="guerilla" skald_character_name="char_POSEL_TOVARYSSTVA" />
+		<skald_character2profession profession_name="pacholek" skald_character_name="char_POSLICEK" />
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_POULICNI_OBCHODNIK_1" />
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_POULICNI_OBCHODNIK_2" />
 		<skald_character2profession profession_name="alchymista" skald_character_name="char_POUSTEVNIK_AMBROZ" />
@@ -457,6 +463,7 @@
 		<skald_character2profession profession_name="mestan" skald_character_name="char_PROSPEKTOR_MARTIN" />
 		<skald_character2profession profession_name="pocestny" skald_character_name="char_PROSPEKTOR_MARTIN" />
 		<skald_character2profession profession_name="slechtic" skald_character_name="char_PURKRABI_ZICH" />
+		<skald_character2profession profession_name="ucenec" skald_character_name="char_PUSKO" />
 		<skald_character2profession profession_name="lapka" skald_character_name="char_PYTLAK_MACH_Z_MARSOVIC" />
 		<skald_character2profession profession_name="pytlak" skald_character_name="char_PYTLAK_SLATEJOV" />
 		<skald_character2profession profession_name="pytlak" skald_character_name="char_PYTLAK_Z_VEZAKU" />
@@ -467,10 +474,12 @@
 		<skald_character2profession profession_name="pocestny" skald_character_name="char_RAUBITTER_ULRICH" />
 		<skald_character2profession profession_name="lapka" skald_character_name="char_RAUBRITTER_CERVENAK" />
 		<skald_character2profession profession_name="reznik" skald_character_name="char_REZNIK_BASKA" />
+		<skald_character2profession profession_name="reznik" skald_character_name="char_REZNIK_MATEJ_BUCEK" />
 		<skald_character2profession profession_name="mestanka" skald_character_name="char_REZY_LINHARTOVA" />
 		<skald_character2profession profession_name="sedlak" skald_character_name="char_ROLNIK_FRANTISEK_ZELEJOV" />
 		<skald_character2profession profession_name="slechticna" skald_character_name="char_ROZA_RUTHARD" />
 		<skald_character2profession profession_name="mestan" skald_character_name="char_ROZHODCI" />
+		<skald_character2profession profession_name="bodyguard" skald_character_name="char_ROZHODCI_KAFKA" />
 		<skald_character2profession profession_name="mestan" skald_character_name="char_ROZHODCI_SOUBOJE" />
 		<skald_character2profession profession_name="obchodnik" skald_character_name="char_RUDOKUPEC_HERMAN" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_RUTHARDOVSKA_STRAZ" />
@@ -533,6 +542,7 @@
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZE_VLASSKA_1" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZE_VLASSKA_2" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZNY_HYNEK" />
+		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZNY_JEDLICKA" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZNY_KROUPA" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZNY_MATEJ_ZIKMUNDOVO" />
 		<skald_character2profession profession_name="straz" skald_character_name="char_STRAZNY_PATRIK_ZIKMUNDOVO" />
@@ -553,6 +563,7 @@
 		<skald_character2profession profession_name="lovec" skald_character_name="char_TIBOR" />
 		<skald_character2profession profession_name="vojak" skald_character_name="char_TOMAS_OD_KOLINA" />
 		<skald_character2profession profession_name="hornik" skald_character_name="char_TONDA_PIVEC" />
+		<skald_character2profession profession_name="kovar" skald_character_name="char_TOVARYS_BRUNA" />
 		<skald_character2profession profession_name="truhlar" skald_character_name="char_TOVARYS_CHRUDOS" />
 		<skald_character2profession profession_name="pacholek" skald_character_name="char_TOVARYS_JANEK" />
 		<skald_character2profession profession_name="truhlar" skald_character_name="char_TOVARYS_STAHLAVA_KUTNA_HORA" />
@@ -590,6 +601,7 @@
 		<skald_character2profession profession_name="alchymista" skald_character_name="char_VENCL_TORWART" />
 		<skald_character2profession profession_name="apatykar" skald_character_name="char_VENCL_TORWART" />
 		<skald_character2profession profession_name="vesnicanka" skald_character_name="char_VENDULA" />
+		<skald_character2profession profession_name="apatykar" skald_character_name="char_VENEFICUS" />
 		<skald_character2profession profession_name="guerilla" skald_character_name="char_VEPR" />
 		<skald_character2profession profession_name="lazebnice" skald_character_name="char_VESELA_ELISKA" />
 		<skald_character2profession profession_name="vesnicanka" skald_character_name="char_VIKTORKA" />
@@ -614,6 +626,8 @@
 		<skald_character2profession profession_name="bandyta" skald_character_name="char_VUDCE_DEZERTERU_MALIRUV_LEK" />
 		<skald_character2profession profession_name="vesnican" skald_character_name="char_VUJTEK" />
 		<skald_character2profession profession_name="mestan" skald_character_name="char_VYBERCI_CLA" />
+		<skald_character2profession profession_name="bodyguard" skald_character_name="char_VYDERAC_DRUHY" />
+		<skald_character2profession profession_name="bodyguard" skald_character_name="char_VYDERAC_PRVNI" />
 		<skald_character2profession profession_name="bodyguard" skald_character_name="char_VYHAZOVAC" />
 		<skald_character2profession profession_name="bodyguard" skald_character_name="char_VYHAZOVAC_2" />
 		<skald_character2profession profession_name="slechtic" skald_character_name="char_WALT_VON_KURZBACH" />

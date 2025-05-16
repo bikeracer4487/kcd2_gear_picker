@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="InventoryPreset.xsd">
+	<InventoryPresets version="2">
+
+		<InventoryPreset Name="inventory_ssed_knightLeader_1">
+			<ClothingPresetRef Name="DLC3_teutonic_Leader_noHelmet"/>
+			<WeaponPresetRef Name="DLC3_teutonic_leaderAlberich"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_1">
+			<ClothingPresetRef Name="DLC3_teutonic_diendeBruder_01"/>
+			<WeaponPresetRef Name="DLC3_teutonic_sword_shield_tau"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_2">
+			<ClothingPresetRef Name="DLC3_teutonic_diendeBruder_02"/>
+			<WeaponPresetRef Name="DLC3_teutonic_longsword"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_3">
+			<ClothingPresetRef Name="DLC3_teutonic_diendeBruder_03"/>
+			<WeaponPresetRef Name="DLC3_teutonic_sword_shield_tau"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_4">
+			<ClothingPresetRef Name="DLC3_teutonic_diendeBruder_01"/>
+			<WeaponPresetRef Name="DLC3_teutonic_axe_shield_tau"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_5">
+			<ClothingPresetRef Name="DLC3_teutonic_diendeBruder_03"/>
+			<WeaponPresetRef Name="DLC3_teutonic_longsword"/>
+			<InventoryPresetRef Name="pockets_DLC3_dinedeBruder"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_6">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_01"/>
+			<WeaponPresetRef Name="DLC3_teutonic_axe_shield"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_7">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_02"/>
+			<WeaponPresetRef Name="DLC3_teutonic_mace_shield"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_8">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_03"/>
+			<WeaponPresetRef Name="DLC3_teutonic_sword_shield"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_9">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_04"/>
+			<WeaponPresetRef Name="DLC3_teutonic_mace"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_10">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_05"/>
+			<WeaponPresetRef Name="DLC3_teutonic_huntingSword02"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_11">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_01"/>
+			<WeaponPresetRef Name="DLC3_teutonic_sword_pavise"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_12">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_02"/>
+			<WeaponPresetRef Name="DLC3_teutonic_axe_pavise"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_13">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_03"/>
+			<WeaponPresetRef Name="DLC3_teutonic_sword_pavise"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_14">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_04"/>
+			<WeaponPresetRef Name="DLC3_teutonic_axe_pavise"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_ssed_knight_15">
+			<ClothingPresetRef Name="DLC3_teutonic_man_at_arms_05"/>
+			<WeaponPresetRef Name="DLC3_teutonic_huntingSword01"/>
+			<InventoryPresetRef Name="pockets_DLC3_menAtArms"/>
+		</InventoryPreset>
+
+        
+	</InventoryPresets>
+</database>

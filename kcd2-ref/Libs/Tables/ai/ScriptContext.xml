@@ -146,6 +146,7 @@
 		<ScriptContextDatabaseNode Name="crime_debug_alwaysFriskPlayer" Class="Game" />
 		<ScriptContextDatabaseNode Name="crime_debug_alwaysRobUnconsciousPlayer" Class="Game" />
 		<ScriptContextDatabaseNode Name="crime_debug_logHearingSubscription" Class="Game" />
+		<ScriptContextDatabaseNode Name="crime_debug_disableStalthActionsWithSecondaryPerception" Class="Game" />
 		<ScriptContextDatabaseNode Name="crime_preventKillingUnconsciousHostilePlayer" Class="Entity" /> <!--prevents GameOver upon knocking out player (if we are enemies)-->
 		<ScriptContextDatabaseNode Name="crime_questMercy" Class="Entity" /> <!-- KCD2-42739 - NPC will not run from interrupt_mercy -->
 		<!-- [@doc-Combat] Vypne na NPC dialog s openworldovým vzdáváním, kdy NPC prosí o život a typicky nabízí peníze. Používá se když máme vlastní questový dialog. -->
@@ -372,6 +373,9 @@
 		<ScriptContextDatabaseNode Name="crime_dontCommentPlayersHorse" Class="Entity" />
 		<ScriptContextDatabaseNode Name="crime_dontCommentPlayersDog" Class="Entity" />
 
+		<!-- [@doc-Crime] Suppresses the item's value condition for pickUpDroppedItem, reddit people wanted beggars to pickUp everything  -->
+		<ScriptContextDatabaseNode Name="crime_alwaysPickUpDroppedItems" Class="Entity" />
+
 		<!-- [@doc-Crime] Kontext zaručí, že NPC nebude reagovať na vyplašené zvieratá -->
 		<ScriptContextDatabaseNode Name="crime_ignoreStartledAnimals" Class="Entity"/>
 		<!-- [@doc-Crime] Relačný kontext, ktorým môžeme zaručiť, že NPC zareaguje na konkrétné vyplašené zviera, bez ohľadu na mates kontrolu-->
@@ -431,6 +435,7 @@
 
 		<!-- [@doc-Crime] NPC will check player even when it otherwise wouldnt -->
 		<ScriptContextDatabaseNode Name="crime_alwaysCheckPlayer" Class="Entity" />
+		<ScriptContextDatabaseNode Name="crime_alwaysCheckPlayer_icon" Class="Entity" />
 
 		<!-- [@doc-Crime] NPC will not roam around after losing its target in interrupt_check -->
 		<ScriptContextDatabaseNode Name="crime_shortCheck" Class="Entity" />
@@ -455,7 +460,7 @@
 		<ScriptContextDatabaseNode Name="combat_inPracticeFight" Class="Entity"/>
 		<ScriptContextDatabaseNode Name="combat_talkEnabledDuringPracticeFight" Class="Entity"/>
 		<ScriptContextDatabaseNode Name="combat_guardModeForceEnable" Class="Entity"/>
-
+		<ScriptContextDatabaseNode Name="combat_skirmishWithoutPlayer" Class="Entity"/>
 		<!-- Stealth takedown tutorial -->
 		<!-- [@doc-Combat] KCD2-103669  -->
 		<ScriptContextDatabaseNode Name="combat_suppressStealthSounds" SideEffect="combatSuppressStealthSounds" Class="Entity" />
@@ -475,6 +480,7 @@
 		<ScriptContextDatabaseNode Name="crime_global_disableArrowFlyByReaction" Class="Game" />
 
 		<ScriptContextDatabaseNode Name="crime_global_disableCriminalPlayerReaction" Class="Game" />
+		<ScriptContextDatabaseNode Name="crime_disableCriminalPlayerReaction" Class="Entity" />
 		<!-- [@doc-Crime] Hráč nebude říkat že má hlad a že je unavený -->
 		<ScriptContextDatabaseNode Name="crime_global_disablePlayerBioBarks" Class="Game" />
 		<!-- [@doc-Crime] Hráč nebude říkat že má hlad a že je unavený -->
@@ -635,7 +641,7 @@
 
 
 		<!-- Combat contexts -->
-		<ScriptContextDatabaseNode Name="combat_fleeOnDrawnWeaponInUnarmedCombat" Class="Entity" />		
+		<ScriptContextDatabaseNode Name="combat_fleeOnDrawnWeaponInUnarmedCombat" Class="Entity" SideEffect="combatFleeOnEnemyDrawnWeaponIfUnarmed" />		
 		<ScriptContextDatabaseNode Name="combat_alwaysChooseMercy" Class="Entity" />
 		<ScriptContextDatabaseNode Name="combat_alwaysJoinSkirmish" Class="Entity" SideEffect="combatAlwaysJoinSkirmish" />
 		<ScriptContextDatabaseNode Name="combat_alwaysWithdrawSkirmish" Class="Entity" SideEffect="combatAlwaysWithdrawSkirmish" /> <!-- KCD2-129668 -->
@@ -835,6 +841,7 @@
 		<ScriptContextDatabaseNode Name="mucirna_undercuttingManBrutality" Class="Entity" />
 		<ScriptContextDatabaseNode Name="mucirna_undercuttingWomanBrutality" Class="Entity" />
 		<ScriptContextDatabaseNode Name="mysi_bullSleepsDeeply" Class="Entity" />
+		<ScriptContextDatabaseNode Name="navstevaLekare_angryPatientAndBodyguardCanTalk" Class="Entity" />
 		<ScriptContextDatabaseNode Name="prepadeniVlasskehoDvora_hradby" Class="Entity" />
 		<ScriptContextDatabaseNode Name="sermiri_menhartFirstConfrontation" Class="Entity" />
 		<ScriptContextDatabaseNode Name="setkaniVRatbori1_dontDrink" Class="Entity" />
@@ -863,11 +870,13 @@
 		<ScriptContextDatabaseNode Name="zachranaPtacka_prisonerEscaping" Class="Entity" />
 		<ScriptContextDatabaseNode Name="zachranaPtacka_ruthardGuardGuards" Class="Entity" />
 		<ScriptContextDatabaseNode Name="zachranaPtacka_malesovSoldierIsSitting" Class="Entity" />
+		<ScriptContextDatabaseNode Name="zakopanyZitrek_mikusBeingHealedByVendula" Class="Entity" />
 		<ScriptContextDatabaseNode Name="zbranePanaSemina_gateGuarding" Class="Entity" />
+		<ScriptContextDatabaseNode Name="konskeZavody_crimeListener" Class="Entity" />
 		<ScriptContextDatabaseNode Name="crossCountry_rider" Class="Entity" />
 		<ScriptContextDatabaseNode Name="crossCountry_showrunner_waitingAtFinishLine" Class="Entity" />
-		<ScriptContextDatabaseNode Name="jizdniLukostrelba_spectator" Class="Entity" />
-		<ScriptContextDatabaseNode Name="jizdniLukostrelba_contestIsActive" Class="Entity" />
+		<ScriptContextDatabaseNode Name="horseArchery_spectator" Class="Entity" />
+		<ScriptContextDatabaseNode Name="horseArchery_contestIsActive" Class="Entity" />
 		<ScriptContextDatabaseNode Name="crossCountry_finishing" Class="Entity" />
 		<ScriptContextDatabaseNode Name="zachrana_burrying" Class="Game" />
 		<ScriptContextDatabaseNode Name="zranenyLovci_disableCallForHelp" Class="Entity" />
@@ -888,6 +897,7 @@
 
 		<!-- Special behaviors -->
 		<ScriptContextDatabaseNode Name="deadBody_allowActorAnimsForDeadNPC" Class="Entity" SideEffect="allowActorAnimsForDeadNPC" />
+		<ScriptContextDatabaseNode Name="nervousDoorKnocking" Class="Entity" />
 		<ScriptContextDatabaseNode Name="urgeDialog_moveStarted" Class="Entity" />
 		<ScriptContextDatabaseNode Name="wagonPush_gettingReadyToPush" Class="Entity" />
 		<ScriptContextDatabaseNode Name="wagonPush_readyToPush" Class="Entity" />
@@ -978,9 +988,10 @@
 		<ScriptContextDatabaseNode Name="dice_disablePostGameReaction" Class="Entity" />
 		<ScriptContextDatabaseNode Name="dice_playingNpcVsNpc" Class="Entity" />
 
-		<!--Blacksmithing -->
+		<!--Other minigames -->
 		<ScriptContextDatabaseNode Name="minigame_disabledBlacksmithing" Class="Entity" />
 		<ScriptContextDatabaseNode Name="minigame_disabledAlchemy" Class="Entity" />
+		<ScriptContextDatabaseNode Name="minigame_disabledForgeBuilder" Class="Entity" />
 
 		<!-- Horse buying -->
 		<ScriptContextDatabaseNode Name="horseParking_marked_horse" Class="Entity" />

@@ -6,6 +6,7 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="chakan_stalkingNight" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/zikmunduvTabor/zikmunduvTabor.xml" TreeName="chakan_stalkingNight" />
 					<Inboxes>
+						<InboxTemplate InboxId="4c173392-88c1-9dcb-965b-e900e3ab1ca7" Priority="0" />
 						<InboxTemplate InboxId="4d9864b6-1e2e-1a55-42de-d08b0f3379b3" Priority="0" />
 					</Inboxes>
 				</SmartBehaviorTemplate>

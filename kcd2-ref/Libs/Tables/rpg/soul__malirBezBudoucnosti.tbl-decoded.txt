@@ -1,0 +1,17 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__malirBezBudoucnosti.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 105
+  Unique String Count ... 3
+  File Size ............. 261
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] malirBezBudoucnosti_poslicek
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tavernDira_staff
+  [2] char_POSLICEK

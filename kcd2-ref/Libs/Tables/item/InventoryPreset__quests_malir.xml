@@ -6,9 +6,6 @@
 			<ClothingPresetRef Name="malir_diceman"/>
 			<WeaponPresetRef Name="huntingsword_4_01"/>
 			<InventoryPresetRef Name="pockets_villager"/>
-			<PresetItem Name="die_Gamblerova_good" Amount="1" />
-			<PresetItem Name="die_Kolacova" Amount="1" />
-			<PresetItem Name="dieDevil" Amount="1" />
 			<PresetItem Name="SetDiceDiceBadgePlumb" Amount="2" />
 			<PresetItem Name="RerollPipsBadgeSilver" Amount="2" />
 			<PresetItem Name="money" Amount="2000"/>

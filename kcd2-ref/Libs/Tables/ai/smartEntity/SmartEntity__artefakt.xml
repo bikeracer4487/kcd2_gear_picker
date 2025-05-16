@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<database name="barbora" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../database.xsd">
+	<SmartEntitys version="1">
+		<SmartEntityTemplate DatabaseId="7d2ca3bd-43eb-4f36-9b0e-47712cd18460" Name="artefakt" UpdatePriority="false">
+			<BehaviorTemplates>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="schedulerWait">
+					<TreeLocation FileName="world/sa_land.xml" TreeName="schedulerWait" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="artefakt_scaredOfPlayer">
+					<TreeLocation FileName="quests/artefakt/artefakt_scaredOfPlayer.xml" TreeName="artefakt_scaredOfPlayer" />
+				</SmartBehaviorTemplate>
+			</BehaviorTemplates>
+		</SmartEntityTemplate>
+	</SmartEntitys>
+</database>

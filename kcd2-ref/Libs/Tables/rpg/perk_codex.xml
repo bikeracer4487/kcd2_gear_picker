@@ -53,7 +53,7 @@
 		<perk_codex codex_ui_image="craft_barber" codex_ui_layout_id="3" codex_ui_page_id="5" codex_ui_text="ui_codex_cont_barber" content_filter="1" default_learned="false" perk_id="2946fd76-7278-47e0-8078-92de62e0b94f" />
 		<perk_codex codex_ui_image="crown" codex_ui_layout_id="3" codex_ui_page_id="0" codex_ui_text="ui_codex_cont_svatovaclavska" default_learned="false" perk_id="296aeca5-029e-4bd3-9e25-59d2bff762da" />
 		<perk_codex codex_ui_image="labours" codex_ui_layout_id="3" codex_ui_page_id="3" codex_ui_text="ui_codex_cont_porodnictvi" default_learned="false" perk_id="2a4a3b49-7b74-4e00-8e03-58ecfcbd481a" />
-		<perk_codex codex_ui_image="character_zikmund" codex_ui_layout_id="2" codex_ui_page_id="4" codex_ui_text="ui_codex_char_sigismund" default_learned="false" perk_id="2ccea5e0-5a8d-4c48-b219-79554b377d9e" />
+		<perk_codex codex_ui_image="character_zikmund" codex_ui_layout_id="2" codex_ui_page_id="4" codex_ui_text="ui_codex_char_sigismund" default_learned="true" perk_id="2ccea5e0-5a8d-4c48-b219-79554b377d9e" />
 		<perk_codex codex_ui_image="miskowitz" codex_ui_layout_id="1" codex_ui_page_id="1" codex_ui_text="ui_codex_cont_miskovice" default_learned="false" perk_id="2cf779bd-b04e-4bf8-83f6-ea4ecf93f3f5" />
 		<perk_codex codex_ui_image="craft_zebrak" codex_ui_layout_id="3" codex_ui_page_id="3" codex_ui_text="ui_codex_cont_zebraci" default_learned="false" perk_id="2cfb52ff-05f8-4277-bcb8-c10e821b2a78" />
 		<perk_codex codex_ui_image="danemarkmill" codex_ui_layout_id="1" codex_ui_page_id="0" codex_ui_text="ui_codex_cont_vodni_pila" default_learned="false" perk_id="2d3236c2-08c8-41f1-999a-10d73a5e2b96" />

@@ -1,0 +1,27 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__duels.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 10
+  String Data Size ...... 396
+  Unique String Count ... 13
+  File Size ............. 1704
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] duels_manFromAmbush2
+  [1] kutnohorsko_settlements_mezholezy_civiliansReplaceMe
+  [2] duels_manFromAmbush1
+  [3] duels_enemyFromAmbush1
+  [4] kutnohorsko_settlements_mezholezy_enemiesReplaceMe
+  [5] duels_enemyFromAmbush3
+  [6] duels_enemyFromAmbush5
+  [7] duels_enemyFromAmbush4
+  [8] duels_blackKnight
+  [9] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_pach_industryArea
+  [10] duels_womanFromAmbush
+  [11] duels_enemyFromAmbush2
+  [12] duels_enemyFromAmbush6

@@ -11,6 +11,10 @@
 		<SkaldAtlRtpc Name="fistfight_npc_count"/>
 		<SkaldAtlRtpc Name="fog_intensity"/>
 		<SkaldAtlRtpc Name="global_cloudiness"/>
+		<SkaldAtlRtpc Name="horse_bridle"/>
+		<SkaldAtlRtpc Name="horse_saddle"/>
+		<SkaldAtlRtpc Name="horse_speed"/>
+		<SkaldAtlRtpc Name="horse_stamina"/>
 		<SkaldAtlRtpc Name="is_master_strike"/>
 		<SkaldAtlRtpc Name="lightning_intensity"/>
 		<SkaldAtlRtpc Name="npc_count"/>
@@ -40,7 +44,6 @@
 		<SkaldAtlRtpc Name="timescale"/>
 		<SkaldAtlRtpc Name="turn"/>
 		<SkaldAtlRtpc Name="wagon_speed"/>
-		<SkaldAtlRtpc Name="wind_intensity"/>
 		<SkaldAtlRtpc Name="wind_reed"/>
 		<SkaldAtlRtpc Name="wind_sub"/>
 		<SkaldAtlRtpc Name="wind_tall_grass"/>

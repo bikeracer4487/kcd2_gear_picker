@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/positioning_vertex.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ai\positioning_vertex.tbl
 ======================================================================
 Header:
   File Format Version ... 3

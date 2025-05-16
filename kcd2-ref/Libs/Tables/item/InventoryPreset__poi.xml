@@ -109,6 +109,7 @@
 			<PresetItem Name="poi_mezholezy_HerbalistStashKey" Amount="1"/>
 			<PresetItem Name="egg" Amount="5" Health="0.0"/>
 			<PresetItem Name="chicken" Amount="1" Health="0.0"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_mezholezy_corpse">
 			<PresetItem Name="money" Amount="30"/>
@@ -180,6 +181,7 @@
 
 		<InventoryPreset Name="inventory_poi_opustenyLom_hiddenStash">
 			<PresetItem Name="money" Amount="4920"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_opustenyLom_sack">
 			<PresetItem Name="loot_sackOfNails" Amount="1"/>
@@ -191,6 +193,7 @@
 			<PresetItem Name="special_sulfur" Amount="26"/>
 			<PresetItem Name="special_saltpeter" Amount="11"/>
 			<PresetItem Name="bsmt_copper" Amount="17"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_zavrenyDul_sackOuside">
 			<PresetItem Name="special_sulfur" Amount="8"/>
@@ -217,6 +220,7 @@
 		<InventoryPreset Name="inventory_poi_ukrytaVybava_sack">
 			<PresetItem Name="repairKit_armourSmall" Amount="5"/>
 			<PresetItem Name="repairKit_weaponSmall" Amount="2"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_hroby_oldGrave">
@@ -235,6 +239,7 @@
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_divozenka_stashInJug">
 			<PresetItem Name="money" Amount="310"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_vceliUly_stashInHive">
 			<PresetItem Name="money" Amount="780"/>
@@ -304,6 +309,7 @@
 		<InventoryPreset Name="inventory_poi_opustenaChalupa_jug">
 		<PresetItem Name="poi_opustenaChalupa_key" Amount="1"/>
 		<PresetItem Name="die_Gamblerova_good" Amount="1"/>
+		<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset> 
 
 		<InventoryPreset Name="inventory_poi_skladPaseraku_sack">
@@ -505,6 +511,7 @@
 
 		<InventoryPreset Name="inventory_poi_zapomenutyKriz1">
 		<PresetItem Name="ring_gem"/>
+		<PresetItem Name="special_cobweb"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_zapomenutyKriz2">
@@ -515,6 +522,7 @@
 		<InventoryPreset Name="inventory_poi_krizeNaSkalach">
 		<PresetItem Name="potion_saviourSchnapps_medium" Health="1"/>
 		<PresetItem Name="bandage_classic" Amount="3"/>
+		<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_lovciPokladu_sack">
 			<InventoryPresetRef Name="inventory_smallAmountOfBasicSupplies"/>
@@ -532,6 +540,7 @@
 		<InventoryPreset Name="inventory_poi_lovciPokladu_burrialMound">
 			<PresetItem Name="loot_rosary_old" Amount="1"/>
 			<PresetItem Name="dieBalanced" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_neoznaceneHroby_corpseInGrave">
 			<PresetItem Name="daggerCommon" Amount="1"/>
@@ -679,8 +688,9 @@
 		<InventoryPreset Name="inventory_poi_pramenUVysoke_sack">
 			<PresetItem Name="herb_dried_salvia" Amount="3"/>
 			<PresetItem Name="herb_mint" Amount="4"/>
-			<PresetItem Name="money" Amount="200"/>
+			<PresetItem Name="money" Amount="800"/>
 			<PresetItem Name="sleepingPoison" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_vypaleneStaveni_dead_2">
@@ -768,6 +778,7 @@
 			<PresetItem Name="herb_poppy" Amount="6" Health="0.84"/>
 			<PresetItem Name="herb_dandelion" Amount="8" Health="0.82"/>
 			<PresetItem Name="herb_salvia" Amount="4" Health="0.89"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_zabityPasacek_chest">
@@ -810,6 +821,7 @@
 			<PresetItem Name="necklace_tin_cross" Amount="1"/>
 			<PresetItem Name="player_lockpick" Amount="3"/>
 			<PresetItem Name="ring_gem" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_opustenaStodola_barel">
@@ -841,6 +853,7 @@
 
 		<InventoryPreset Name="inventory_poi_zarostlaZemnice_pot">
 			<PresetItem Name="poi_zarostlaZemince_chestKey" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_zelejovskeMocaly_purse">
@@ -880,6 +893,7 @@
 			<PresetItem Name="spirits" Amount="1"/>
 			<PresetItem Name="dieNormal" Amount="1"/>
 			<PresetItem Name="beefDried" Amount="6"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_opilecAVandrak_sack">
@@ -892,6 +906,7 @@
 		<InventoryPreset Name="inventory_poi_opilecAVandrak_bag">
 			<PresetItem Name="money" Amount="140"/>
 			<PresetItem Name="loot_pin_decorative" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_zemnicePytlakaVarlete_chest">
@@ -952,6 +967,7 @@
 		<InventoryPreset Name="inventory_poi_kociciPani_onionPile">
 			<InventoryPresetRef Name="inventory_pileOfOnion"/>
 			<PresetItem Name="mlynaruvUcen_lockpickingTutorialDeadRat" Amount="2"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_poi_malyTaborLapkuVeSkalach_chest">
@@ -1002,6 +1018,7 @@
 			<PresetItem Name="boarMeatDried" Amount="3"/>
 			<PresetItem Name="rabbitMeatDried" Amount="12"/>
 			<PresetItem Name="potion_marigold" Amount="2" Health="1"/>
+			<PresetItem Name="special_cobweb" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_dvaLapkoveNaKopanine_chest">
 			<PresetItem Name="bsmt_guardSimple" Amount="1"/>
@@ -1116,6 +1133,7 @@
 		    <PresetItem Name="loot_sackOfNails" Amount="1"/>
 		    <PresetItem Name="repairKit_armourSmall" Amount="3"/>
 			<PresetItem Name="bsmt_hardware" Amount="5"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_zizkovaHlidka_sack">
 		    <PresetItem Name="potion_bowmanBrew_medium" Amount="1" Health="1"/>
@@ -1208,6 +1226,7 @@
 		<InventoryPreset Name="inventory_poi_cistenaStudanka_pot2">
 			<PresetItem Name="money" Amount="760"/>
 			<PresetItem Name="ring_poi_cistenaStudanka" Amount="1"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_lapkovePrepadavajiciKaraveny_chest">
 			<PresetItem Name="money" Amount="3910"/>
@@ -1228,6 +1247,7 @@
 			<PresetItem Name="loot_salt" Amount="7"/>
 			<PresetItem Name="horseshoeRacing" Amount="1"/>
 			<PresetItem Name="apple" Amount="3"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 			<PresetItem Name="potion_aesop_medium" Amount="2" Health="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_predsunutaHlidkaLapku_sack">
@@ -1462,6 +1482,7 @@
 			<PresetItem Name="herb_dried_poppy" Amount="15"/>
 			<PresetItem Name="herb_dried_belladona" Amount="4"/>
 			<PresetItem Name="herb_dried_wormwood" Amount="2"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_poi_prepadenaKarava_chest">
 			<PresetItem Name="money" Amount="30"/>

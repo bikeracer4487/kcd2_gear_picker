@@ -5,7 +5,7 @@
 		<document_reward item_id="164d4041-47b5-4e2b-bc7d-e5bacbc1bba6" script="RPG.AddStatXP(event, soul, &quot;speech&quot;, 500, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;speech&quot;);" />
 		<document_reward item_id="545d28cf-e1a5-4f3e-9509-32eacc8fb0a0" script="RPG.AddStatXP(event, soul, &quot;vitality&quot;, 350, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;vitality&quot;);" />
 		<document_reward item_id="54e55d9e-6841-4298-98de-efbb9b638eae" script="RPG.AddStatXP(event, soul, &quot;strength&quot;, 450, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;strength&quot;);" />
-		<document_reward item_id="626184dc-8280-49b1-9721-791c3824f4ed" script="RPG.AddStatXP(event, soul, &quot;agility&quot;, 250, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;agility&quot;);" />
+		<document_reward item_id="626184dc-8280-49b1-9721-791c3824f4ed" script="RPG.AddStatXP(event, soul, &quot;agility&quot;, 270, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;agility&quot;);" />
 		<document_reward item_id="648c4232-67d9-4c18-81e2-f38084e864d9" script="RPG.AddStatXP(event, soul, &quot;vitality&quot;, 200, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;vitality&quot;);" />
 		<document_reward item_id="8af14bc9-54d2-4442-a3d9-6f8b688c2973" script="RPG.AddStatXP(event, soul, &quot;speech&quot;, 700, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;speech&quot;);" />
 		<document_reward item_id="94086ac7-8252-4530-9e2b-b04119335be5" script="RPG.AddStatXP(event, soul, &quot;speech&quot;, 300, oldProgress, newProgress);RPG.NotifyLevelXpGain(&quot;speech&quot;);" />

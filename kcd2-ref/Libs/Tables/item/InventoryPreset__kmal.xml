@@ -11,9 +11,10 @@
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_kmal_millStoneStash">
 				<PresetItem Name="spirits" Amount="5"/>
-				<PresetItem Name="money" Amount="320"/>
+				<PresetItem Name="money" Amount="1320"/>
 				<PresetItem Name="salamiDried" Amount="3" Health="0.42"/>
 				<PresetItem Name="potion_hair_o_dog_medium" Amount="1"/>
+				<PresetItem Name="special_cobweb" Amount="1"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_kmal_man_13">
 				<ClothingPresetRef Name="kmal_man_13"/>

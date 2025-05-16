@@ -5,5 +5,6 @@
 		<misc_subtype misc_subtype_id="1" misc_subtype_name="clean carryable item" />
 		<misc_subtype misc_subtype_id="2" misc_subtype_name="loot" />
 		<misc_subtype misc_subtype_id="3" misc_subtype_name="spice" />
+		<misc_subtype misc_subtype_id="4" misc_subtype_name="officeSupplies" />
 	</misc_subtypes>
 </database>

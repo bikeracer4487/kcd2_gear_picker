@@ -3,7 +3,7 @@
 	<SmartEntitys version="1">
 		<SmartEntityTemplate BrainId="3842bcce-fd9f-4ea5-93fb-c628027eb4e1" DatabaseId="b8ebb6ca-f478-4f81-bee4-bd97e7731c39" Name="so_crossCountry" UpdatePriority="false">
 			<BehaviorTemplates>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_02_waitingAtFinishLine">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_02_waitingAtFinishLine" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_02_waitingAtFinishLine" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_3_ride" PreventsMonsterLod="true">
@@ -27,22 +27,22 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_01_start">
 					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_01_start" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_03_ancipatingEnd">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_03_ancipatingEnd" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_03_ancipatingEnd" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_5_returnHome" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_5_returnHome" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_waitForPlayer">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_waitForPlayer" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_horseArchery.xml" TreeName="showrunner_waitForPlayer" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_takeMoneyFromStash">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_takeMoneyFromStash" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_horseArchery.xml" TreeName="showrunner_takeMoneyFromStash" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="urgeDialog">
 					<TreeLocation FileName="speech/urgedialog.xml" TreeName="urgeDialog" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="horseWait">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="horseWait" PreventsMonsterLod="true">
 					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="horseWait" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_reactToPlayerNotMoving">

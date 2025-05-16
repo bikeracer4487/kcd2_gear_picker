@@ -1,0 +1,22 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__baladaZHadru.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 228
+  Unique String Count ... 8
+  File Size ............. 640
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] baladaZHadru_fighter_2
+  [1] kutnohorsko_settlements_sedlec_commonFolk_looters
+  [2] char_VYDERAC_DRUHY
+  [3] baladaZHadru_fighter_1
+  [4] char_VYDERAC_PRVNI
+  [5] baladaZHadru_almuznik
+  [6] kutnohorsko_settlements_sedlec_commonFolk_monastery_monks
+  [7] char_ALMUZNIK

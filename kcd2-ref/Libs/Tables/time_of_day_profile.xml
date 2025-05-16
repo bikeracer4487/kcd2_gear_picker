@@ -34,5 +34,6 @@
 		<time_of_day_profile Name="summer_overcast"/>
 		<time_of_day_profile Name="summer_overcast_B"/>
 		<time_of_day_profile Name="summer_overcast_B_no_rain"/>
+		<time_of_day_profile Name="summer_overcast_C"/>
 	</time_of_day_profiles>
 </database>

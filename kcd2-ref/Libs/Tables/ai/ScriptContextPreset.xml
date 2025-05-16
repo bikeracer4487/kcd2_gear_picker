@@ -50,6 +50,20 @@
 				<ScriptContextDatabaseNode Name="crime_ignoreCorpses"/>
 			</Contexts>
 		</ScriptContextPresetDatabaseNode>
+		<ScriptContextPresetDatabaseNode Name="crime_companion_semiAggressive" Class="Entity">
+			<Contexts>
+				<ScriptContextDatabaseNode Name="crime_doNotReactToEnemiesOnSight"/>
+				<ScriptContextDatabaseNode Name="crime_ignorePlayerPerception"/>
+				<ScriptContextDatabaseNode Name="switch_disabledInformationReaction"/>
+				<ScriptContextDatabaseNode Name="crime_disableHitFromPlayerReaction"/>
+				<ScriptContextDatabaseNode Name="crime_ignoreNPCHitVolumes"/>
+				<ScriptContextDatabaseNode Name="crime_ignoreAnimalHitVolumes"/>
+				<ScriptContextDatabaseNode Name="crime_ignoreCombatSounds"/>
+				<ScriptContextDatabaseNode Name="crime_ignorePlayersSounds"/>
+				<ScriptContextDatabaseNode Name="crime_ignoreUnconsciousBodies"/>			
+				<ScriptContextDatabaseNode Name="crime_ignoreCorpses"/>
+			</Contexts>
+		</ScriptContextPresetDatabaseNode>
 		<ScriptContextPresetDatabaseNode Name="crime_bestFriendsForever" Class="Entity">
 			<Contexts>
 				<ScriptContextDatabaseNode Name="crime_bff_dontReactToPlayersCrimesJustBark" />
@@ -189,6 +203,13 @@
 		<ScriptContextPresetDatabaseNode Name="crime_alwaysCheckPlayerAndBoostSoundPriority" Class="Entity">
 			<Contexts>
 				<ScriptContextDatabaseNode Name="crime_alwaysCheckPlayer"/>
+				<ScriptContextDatabaseNode Name="crime_boostSoundLookAroundPriority"/>
+			</Contexts>
+		</ScriptContextPresetDatabaseNode>
+		<ScriptContextPresetDatabaseNode Name="crime_alwaysCheckPlayerWithIconAndBoostSoundPriority" Class="Entity">
+			<Contexts>
+				<ScriptContextDatabaseNode Name="crime_alwaysCheckPlayer"/>
+				<ScriptContextDatabaseNode Name="crime_alwaysCheckPlayer_icon"/>
 				<ScriptContextDatabaseNode Name="crime_boostSoundLookAroundPriority"/>
 			</Contexts>
 		</ScriptContextPresetDatabaseNode>	

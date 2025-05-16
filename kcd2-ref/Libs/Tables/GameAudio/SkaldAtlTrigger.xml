@@ -14,6 +14,7 @@
 		<SkaldAtlTrigger Name="a_o_bell_kkut_vlasska"/>
 		<SkaldAtlTrigger Name="a_o_bell_krat"/>
 		<SkaldAtlTrigger Name="a_o_bell_ksed_monastery"/>
+		<SkaldAtlTrigger Name="a_o_bell_ksta_church"/>
 		<SkaldAtlTrigger Name="a_o_bell_ksuc"/>
 		<SkaldAtlTrigger Name="a_o_bell_kvys"/>
 		<SkaldAtlTrigger Name="a_o_bell_ttro_trosky"/>
@@ -137,6 +138,7 @@
 		<SkaldAtlTrigger Name="c_arm_mercy_int1"/>
 		<SkaldAtlTrigger Name="c_arm_mercy_int2"/>
 		<SkaldAtlTrigger Name="c_arm_whoosh"/>
+		<SkaldAtlTrigger Name="c_arrow_target"/>
 		<SkaldAtlTrigger Name="c_battle_ambience_1"/>
 		<SkaldAtlTrigger Name="c_blunt_armed_body_chainmail_npc"/>
 		<SkaldAtlTrigger Name="c_blunt_armed_body_chainmail_player"/>
@@ -445,6 +447,8 @@
 		<SkaldAtlTrigger Name="cinsnap_m4650k_explosive_trap"/>
 		<SkaldAtlTrigger Name="cinsnap_m4655k_brabant_treason"/>
 		<SkaldAtlTrigger Name="cinsnap_m4660k_prepadenidvora__komar_death"/>
+		<SkaldAtlTrigger Name="cinsnap_m4710k_erik__night_walls"/>
+		<SkaldAtlTrigger Name="cinsnap_m4720k_erik__kubenka_returns"/>
 		<SkaldAtlTrigger Name="cinsnap_m4750k_erik__suchdol_siege"/>
 		<SkaldAtlTrigger Name="cinsnap_m4830k_oblehanisuchdol__siege_continues"/>
 		<SkaldAtlTrigger Name="cinsnap_m4880k_court"/>
@@ -470,6 +474,7 @@
 		<SkaldAtlTrigger Name="cow_hit"/>
 		<SkaldAtlTrigger Name="cow_moo"/>
 		<SkaldAtlTrigger Name="cow_moo_distant"/>
+		<SkaldAtlTrigger Name="cow_moo_quiet"/>
 		<SkaldAtlTrigger Name="cow_walk"/>
 		<SkaldAtlTrigger Name="deer_calling"/>
 		<SkaldAtlTrigger Name="deer_hit"/>
@@ -710,6 +715,7 @@
 		<SkaldAtlTrigger Name="f_ge_dead_body_check"/>
 		<SkaldAtlTrigger Name="f_ge_door_clap_loud"/>
 		<SkaldAtlTrigger Name="f_ge_door_clap_soft"/>
+		<SkaldAtlTrigger Name="f_ge_door_clap_softer"/>
 		<SkaldAtlTrigger Name="f_ge_door_foley_let"/>
 		<SkaldAtlTrigger Name="f_ge_door_foley_tap"/>
 		<SkaldAtlTrigger Name="f_ge_door_gate_open"/>
@@ -726,8 +732,10 @@
 		<SkaldAtlTrigger Name="f_ge_door_slam"/>
 		<SkaldAtlTrigger Name="f_ge_door_squeak_open_close"/>
 		<SkaldAtlTrigger Name="f_ge_door_squeak_open_close_fast"/>
+		<SkaldAtlTrigger Name="f_ge_door_squeak_open_close_stealth"/>
 		<SkaldAtlTrigger Name="f_ge_door_unlock"/>
 		<SkaldAtlTrigger Name="f_ge_door_wall"/>
+		<SkaldAtlTrigger Name="f_ge_door_wall_stealth"/>
 		<SkaldAtlTrigger Name="f_ge_drink_spit"/>
 		<SkaldAtlTrigger Name="f_ge_drinking_sip"/>
 		<SkaldAtlTrigger Name="f_ge_drinking_swallow"/>
@@ -1079,6 +1087,7 @@
 		<SkaldAtlTrigger Name="f_pe_multiple_stones_ground"/>
 		<SkaldAtlTrigger Name="f_pe_shovel1_use"/>
 		<SkaldAtlTrigger Name="f_pe_shovel1_use_plr"/>
+		<SkaldAtlTrigger Name="f_pe_shovel1_use_var_plr"/>
 		<SkaldAtlTrigger Name="f_pe_shovel2_use"/>
 		<SkaldAtlTrigger Name="f_pe_shovel2_use_plr"/>
 		<SkaldAtlTrigger Name="f_pe_shovel_dung_foley"/>
@@ -1193,6 +1202,8 @@
 		<SkaldAtlTrigger Name="female_injured_ss_long"/>
 		<SkaldAtlTrigger Name="female_injured_ss_short"/>
 		<SkaldAtlTrigger Name="fmodex_reset"/>
+		<SkaldAtlTrigger Name="fts_n_hard"/>
+		<SkaldAtlTrigger Name="fts_n_hard_d"/>
 		<SkaldAtlTrigger Name="gate_closing"/>
 		<SkaldAtlTrigger Name="gate_opening"/>
 		<SkaldAtlTrigger Name="gate_shutdown"/>
@@ -1321,6 +1332,9 @@
 		<SkaldAtlTrigger Name="q_M37_party_inside"/>
 		<SkaldAtlTrigger Name="q_M37_party_outside"/>
 		<SkaldAtlTrigger Name="q_M37_rada"/>
+		<SkaldAtlTrigger Name="q_M37_sigismund_kill_sigismund_dying"/>
+		<SkaldAtlTrigger Name="q_M37_sigismund_kill_sigismund_shock"/>
+		<SkaldAtlTrigger Name="q_M37_sigismund_kill_soldier_attack"/>
 		<SkaldAtlTrigger Name="q_M37_soldiers_in_pain"/>
 		<SkaldAtlTrigger Name="q_M37_tower_burning"/>
 		<SkaldAtlTrigger Name="q_M42_burning_synagogue"/>
@@ -1418,6 +1432,9 @@
 		<SkaldAtlTrigger Name="q_U53_book_short"/>
 		<SkaldAtlTrigger Name="q_U53_scribbling"/>
 		<SkaldAtlTrigger Name="q_U54_spectators"/>
+		<SkaldAtlTrigger Name="q_a03_race_finish"/>
+		<SkaldAtlTrigger Name="q_a201_chastity_belt_manufacture"/>
+		<SkaldAtlTrigger Name="q_a201_chastity_belt_removal"/>
 		<SkaldAtlTrigger Name="q_a30_spectators"/>
 		<SkaldAtlTrigger Name="q_a30_spectators_boasting"/>
 		<SkaldAtlTrigger Name="q_a30_spectators_booing"/>
@@ -1435,6 +1452,7 @@
 		<SkaldAtlTrigger Name="q_m06_well_jump"/>
 		<SkaldAtlTrigger Name="q_m10_crows"/>
 		<SkaldAtlTrigger Name="q_m10_horse_dismount"/>
+		<SkaldAtlTrigger Name="q_m32_fight_certovka"/>
 		<SkaldAtlTrigger Name="q_m32_pistala_shot"/>
 		<SkaldAtlTrigger Name="q_m33_fire_ambience"/>
 		<SkaldAtlTrigger Name="q_m38_komar_ground"/>
@@ -1445,6 +1463,13 @@
 		<SkaldAtlTrigger Name="q_m48b_skirmish"/>
 		<SkaldAtlTrigger Name="q_m48b_soldiers_outside"/>
 		<SkaldAtlTrigger Name="q_pig_packing"/>
+		<SkaldAtlTrigger Name="q_s103_burkhard_song"/>
+		<SkaldAtlTrigger Name="q_s131_costume"/>
+		<SkaldAtlTrigger Name="q_s141_grave_cleaning"/>
+		<SkaldAtlTrigger Name="q_s303_suit_crafting"/>
+		<SkaldAtlTrigger Name="q_s304_argument"/>
+		<SkaldAtlTrigger Name="q_s304_search_corpses"/>
+		<SkaldAtlTrigger Name="q_s305_sarcophagus"/>
 		<SkaldAtlTrigger Name="q_s37_cleaning_bones"/>
 		<SkaldAtlTrigger Name="q_s37_cleaning_sweeping"/>
 		<SkaldAtlTrigger Name="q_s39_sword_put"/>
@@ -1457,6 +1482,8 @@
 		<SkaldAtlTrigger Name="q_sedm_statecnych_rope_cut"/>
 		<SkaldAtlTrigger Name="q_taras_mura_ambience"/>
 		<SkaldAtlTrigger Name="q_taras_mura_jumpscare"/>
+		<SkaldAtlTrigger Name="q_u203_clockwork"/>
+		<SkaldAtlTrigger Name="q_u40_cut"/>
 		<SkaldAtlTrigger Name="q_u42_tooth_removal"/>
 		<SkaldAtlTrigger Name="qam_change_focus"/>
 		<SkaldAtlTrigger Name="qam_close"/>
@@ -1493,8 +1520,10 @@
 		<SkaldAtlTrigger Name="special_haptic_sprint_left"/>
 		<SkaldAtlTrigger Name="special_haptic_sprint_right"/>
 		<SkaldAtlTrigger Name="special_hc_back_crack"/>
+		<SkaldAtlTrigger Name="special_horse_competition"/>
 		<SkaldAtlTrigger Name="special_house_construction_oneshot"/>
 		<SkaldAtlTrigger Name="special_indulgence"/>
+		<SkaldAtlTrigger Name="special_indulgence_fail"/>
 		<SkaldAtlTrigger Name="special_lockpick_put"/>
 		<SkaldAtlTrigger Name="special_lockpick_take"/>
 		<SkaldAtlTrigger Name="special_lockpicking_dry_run"/>
@@ -1518,6 +1547,7 @@
 		<SkaldAtlTrigger Name="special_pickpocket_success"/>
 		<SkaldAtlTrigger Name="special_pickpocket_timer_loop"/>
 		<SkaldAtlTrigger Name="special_player_bathtub"/>
+		<SkaldAtlTrigger Name="special_player_cooking"/>
 		<SkaldAtlTrigger Name="special_player_death"/>
 		<SkaldAtlTrigger Name="special_player_drunked"/>
 		<SkaldAtlTrigger Name="special_player_eat_from_kettle"/>

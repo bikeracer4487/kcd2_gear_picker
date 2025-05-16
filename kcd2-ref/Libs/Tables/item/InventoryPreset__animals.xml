@@ -43,7 +43,7 @@
 			<PresetItem Name="rabbitLiver" Amount="1" />
 			<PresetItem Name="skin_hare" Amount="1" />
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_animal_help_bezoar" Mode="AmountFraction" ModeValue="0.75" ModeValueVariation="0.5">
+		<InventoryPreset Name="inventory_animal_help_bezoar" Mode="AmountFraction" ModeValue="1" ModeValueVariation="0.5">
 			<PresetItem Name="special_bezoar" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_animal_hen" Mode="All" />

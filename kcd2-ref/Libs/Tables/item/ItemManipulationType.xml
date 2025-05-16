@@ -106,6 +106,10 @@
 				<ItemTransformation Rotation="0,-1.5708,0"/>
 				<PickUpAnimation Fragment="Quest_PickingDagger"/>
 			</ItemManipulationVariation>
+			<ItemManipulationVariation SlotTag="svatyne_dagger">
+				<ItemTransformation Rotation="-0.6593856,0.795870,2.8209768"/>
+				<PickUpAnimation Fragment="Quest_PickingDaggerFromCorpse"/>
+			</ItemManipulationVariation>
 		</ItemManipulationData>
 		<ItemManipulationData Id="31" Tag="butcherDoe" AllowRun="false" AllowSprint="false" />
 		<ItemManipulationData Id="32" Tag="ladder" AllowRun="true" AllowSprint="false" >

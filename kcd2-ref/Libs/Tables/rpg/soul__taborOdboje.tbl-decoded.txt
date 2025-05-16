@@ -1,23 +1,28 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__taborOdboje.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__taborOdboje.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 2656347562
   Layout Hash ........... 3826342426
   Table Version ......... 2
-  Line Count ............ 6
-  String Data Size ...... 203
-  Unique String Count ... 9
-  File Size ............. 999
+  Line Count ............ 10
+  String Data Size ...... 333
+  Unique String Count ... 14
+  File Size ............. 1641
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] taborOdboje_deadBody_4
   [1] deadBodies
   [2] taborOdboje_deadBody_5
-  [3] taborOdboje_deadBody_2
-  [4] taborOdboje_deadBody_1
-  [5] taborOdboje_vydra
-  [6] kutnohorsko_outskirts_taborOdbojeRebels
-  [7] char_ODBOJAR_VYDRA
-  [8] taborOdboje_deadBody_3
+  [3] taborOdboje_wolf_fixed_1
+  [4] animal_wild_enemy_kutnohorsko
+  [5] taborOdboje_deadBody_2
+  [6] taborOdboje_deadBody_1
+  [7] taborOdboje_wolf_fixed_4
+  [8] taborOdboje_wolf_fixed_3
+  [9] taborOdboje_vydra
+  [10] kutnohorsko_outskirts_taborOdbojeRebels
+  [11] char_ODBOJAR_VYDRA
+  [12] taborOdboje_deadBody_3
+  [13] taborOdboje_wolf_fixed_2

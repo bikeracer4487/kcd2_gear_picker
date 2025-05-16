@@ -29,6 +29,18 @@
 			<PresetItem Name="bsmt_pommelDecorated" Amount="2"/>
 			<PresetItem Name="bsmt_ironGood" Amount="3"/>
 		</InventoryPreset>
-
+		<InventoryPreset Name="inventory_kmez_deadNonCuman_1">
+			<PresetItem Name="money" Amount="1430" />
+			<PresetItem Name="bandage_classic" Amount="3" />
+			<PresetItem Name="loot_tinPlate" Amount="2" />
+			<PresetItem Name="loot_rosary" Amount="1" />
+			<ClothingPresetRef Name="kmez_deadNonCuman" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_kmez_deadVillager_1">
+			<PresetItem Name="apple" Amount="2" Condition="0.42" />
+			<PresetItem Name="money" Amount="26" />
+			<ClothingPresetRef Name="kmez_deadVillager" />
+		</InventoryPreset>
+		
 	</InventoryPresets>
 </database>

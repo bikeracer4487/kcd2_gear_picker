@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<database name="barbora" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../database.xsd">
+	<SmartEntitys version="1">
+		<SmartEntityTemplate DatabaseId="90f23236-ddb5-4047-8127-9380e4c39186" Name="nalezeniDelnici" UpdatePriority="false">
+			<BehaviorTemplates>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="npc_wait">
+					<TreeLocation FileName="quests/dvojityAgent/npc_wait.xml" TreeName="npc_wait" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="npcPolylog">
+					<TreeLocation FileName="speech/npcpolylog.xml" TreeName="npcPolylog" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="nalezeniDelnici_barkingAndRunning">
+					<TreeLocation FileName="quests/nalezeniDelnici/barkingAndRunning.xml" TreeName="barkingAndRunning" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="moveAndWait">
+					<TreeLocation FileName="move/moveUtils.xml" TreeName="moveAndWait" />
+				</SmartBehaviorTemplate>
+			</BehaviorTemplates>
+		</SmartEntityTemplate>
+	</SmartEntitys>
+</database>

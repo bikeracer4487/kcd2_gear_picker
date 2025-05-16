@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/buff__alchemy.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\buff__alchemy.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 1927574818
   Layout Hash ........... 3419792665
   Table Version ......... 1
-  Line Count ............ 89
-  String Data Size ...... 7965
-  Unique String Count ... 332
-  File Size ............. 20097
+  Line Count ............ 93
+  String Data Size ...... 8452
+  Unique String Count ... 349
+  File Size ............. 21128
   Calculated Line Size .. 136 (rem. 0)
 String Table:
   [0] weapon_dollmaker_3
@@ -22,7 +22,7 @@ String Table:
   [7] potion_bane_2
   [8] buff_bane_potion_2_desc
   [9] bane_poison
-  [10] alp+1,poi=1,LimitRun,health-110/t
+  [10] alp+1,poi=1,health-110/t
   [11] buff_bane_2
   [12] potion_bard_3
   [13] buff_bard_potion_3_desc
@@ -134,213 +134,230 @@ String Table:
   [119] buff_sleep_potion_4
   [120] potion_bane
   [121] buff_bane_potion_desc
-  [122] poi=1,LimitRun,health-110/t
+  [122] poi=1,health-110/t
   [123] buff_bane
   [124] potion_bowmans_brew_3
   [125] buff_bowmans_brew_3_desc
   [126] potion_bowmans_Brew
   [127] alp+1,marksmanship+5,ard*0.5
   [128] buff_bowmans_brew_3
-  [129] potion_artemisia_3
-  [130] buff_artemisia_3_desc
-  [131] alp+1,strength+4,wac*0.85,sls*0.85
-  [132] buff_artemisia_3
-  [133] potion_savegame
-  [134] potion_bane_4
-  [135] buff_bane_potion_4_desc
-  [136] buff_bane_4
-  [137] potion_sleeping_2
-  [138] buff_sleep_potion_2_desc
-  [139] alp+1,exhaust-100/s,vision*0.75,hearing*0.75,srg*0.9,mst*0.9
-  [140] buff_sleep_potion_2
-  [141] potion_antidote_2
-  [142] buff_antidote_2_desc
-  [143] potion_antidote
-  [144] Cpp:BasicTimed
-  [145] alp+1,hunger-20,vitality+1
-  [146] buff_antidote_2
-  [147] quest_kocovnickaCest_sleepingPotionMedium
-  [148] potion_bowmans_brew_4
-  [149] buff_bowmans_brew_4_desc
-  [150] alp+1,marksmanship+8,ard=0
-  [151] buff_bowmans_brew_4
-  [152] potion_bowmans_brew
-  [153] buff_bowmans_brew_desc
-  [154] alp+1,marksmanship+3
-  [155] buff_bowmans_brew
-  [156] weapon_bane_2
-  [157] buff_bane_poiton_2_desc
-  [158] potion_stamina_3
-  [159] buff_stamina_potion_3_desc
-  [160] alp+1,mst*1.3,srg*1.15
-  [161] buff_stamina_3
-  [162] potion_bane_3
-  [163] buff_bane_potion_3_desc
-  [164] potion_dollmaker_4
-  [165] potion_insomia_2
-  [166] alp+1,exhaust-20
-  [167] potion_nighthawk_4
-  [168] buff_nighthawk_potion_4_desc
-  [169] alp+1,vision*1.5,owl+1,exh=0.0
-  [170] buff_nighthawk_4
-  [171] potion_aqua_vitalis_4
-  [172] buff_vitality_potion_4_desc
-  [173] alp+1,hlh*0.4,slh*0.4,ibi*1.6,fdm-0.6
-  [174] buff_vitality_4
-  [175] buff_antidote_desc
-  [176] hunger-20,
-  [177] buff_antidote
-  [178] potion_bard_2
-  [179] buff_bard_potion_2_desc
-  [180] alp+1,speech+3,rdq>1
-  [181] buff_bard_2
-  [182] potion_marigold_decoction
-  [183] buff_marigold_decoction_desc
-  [184] potion_marigold
-  [185] alp+1,health+15/t,hod*0.75
-  [186] buff_marigold_decoction
-  [187] potion_antidote_3
-  [188] buff_antidote_3_desc
-  [189] alp+1,hunger-20,pim=1, vitality+2
-  [190] buff_antidote_3
-  [191] potion_aesop_3
-  [192] buff_horseman_potion_3_desc
-  [193] alp+1,horse_riding+5,houndmaster+5;ors=-1
-  [194] buff_horseman_3
-  [195] potion_savegame_3
-  [196] buff_savegame_3_desc
-  [197] alp+1,strength+2,vitality+2,agility+2,health+20
-  [198] buff_savegame_3
-  [199] buff_artemisia_desc
-  [200] alp+1,strength+2
-  [201] buff_artemisia
-  [202] potion_marigold_decoction_2
-  [203] buff_marigold_decoction_2_desc
-  [204] alp+1,health+25/t,hod*0.5
-  [205] buff_marigold_decoction_2
-  [206] potion_aesop_2
-  [207] buff_horseman_potion_2_desc
-  [208] alp+1,horse_riding+3,houndmaster+3;ors*0.5
-  [209] buff_horseman_2
-  [210] potion_padfoot_2
-  [211] buff_padfoot_potion_2_desc
-  [212] potion_padfoot
-  [213] alp+1,thievery+4,craftsmanship+4
-  [214] buff_padfoot_2
-  [215] potion_embrocation_4
-  [216] buff_embrocation_potion_4_desc
-  [217] alp+1,agility+6, StaminaSprint*0.7
-  [218] buff_embrocation_4
-  [219] weapon_dollmaker_2
-  [220] weapon_bane
-  [221] buff_bane_poiton_desc
-  [222] potion_marigold_decoction_4
-  [223] buff_marigold_decoction_4_desc
-  [224] alp+1,health+60/t,hod=0
-  [225] buff_marigold_decoction_4
-  [226] potion_sleeping_3
-  [227] buff_sleep_potion_3_desc
-  [228] alp+1,exhaust-100/s,vision*0.75,hearing*0.75,srg*0.7,mst*0.7
-  [229] buff_sleep_potion_3
-  [230] potion_chamomile_decoction_2
-  [231] buff_chamomile_decoction_2_desc
-  [232] alp+1,shr*3
-  [233] buff_chamomile_decoction_2
-  [234] potion_aqua_vitalis_3
-  [235] buff_vitality_potion_3_desc
-  [236] alp+1,hlh*0.7,slh*0.7,ibi*1.3,fdm-0.3
-  [237] buff_vitality_3
-  [238] potion_padfoot_4
-  [239] buff_padfoot_potion_4_desc
-  [240] alp+1,thievery+8,craftsmanship+8
-  [241] buff_padfoot_4
-  [242] buff_embrocation_potion_desc
-  [243] alp+1,agility+2
-  [244] buff_embrocation
-  [245] potion_hair_o_dog_4
-  [246] buff_hair_o_dog_potion_4_desc
-  [247] alp+1,hod=0,ald=0, apa+1
-  [248] buff_dog_o_hair_4
-  [249] potion_savegame_2
-  [250] buff_savegame_2_desc
-  [251] alp+1,strength+1,vitality+1,agility+1,health+10
-  [252] buff_savegame_2
-  [253] weapon_sleeping_3
-  [254] potion_embrocation_3
-  [255] buff_embrocation_potion_3_desc
-  [256] alp+1,agility+4, StaminaSprint*0.8
-  [257] buff_embrocation_3
-  [258] potion_painkiller_3
-  [259] buff_painkiller_3_desc
-  [260] alp+1,ies=1,rst%1.5
-  [261] buff_painkiller_3
-  [262] potion_dollmaker
-  [263] LimitRun,fencing-2,weapon_sword-2,heavy_weapons-2,marksmanship-2,weapon_shield-2,weapon_large-2,weapon_unarmed-2,
-  [264] weapon_sleeping_2
-  [265] potion_chamomile_decoction
-  [266] buff_chamomile_decoction_desc
-  [267] alp+1,shr*2
-  [268] buff_chamomile_decoction
-  [269] potion_marigold_decoction_3
-  [270] buff_marigold_decoction_3_desc
-  [271] alp+1,health+40/t,hod=0
-  [272] buff_marigold_decoction_3
-  [273] potion_chamomile_decoction_3
-  [274] buff_chamomile_decoction_3_desc
-  [275] alp+1,shr*4,ser*2
-  [276] buff_chamomile_decoction_3
-  [277] potion_insomia
-  [278] alp+1,exhaust-10
-  [279] potion_padfoot_3
-  [280] buff_padfoot_potion_3_desc
-  [281] alp+1,thievery+6,craftsmanship+6
-  [282] buff_padfoot_3
-  [283] potion_antidote_4
-  [284] buff_antidote_4_desc
-  [285] alp+1,hunger-30,pim=1, vitality+3
-  [286] buff_antidote_4
-  [287] potion_bard_4
-  [288] buff_bard_potion_4_desc
-  [289] Cpp:NonHealingPotionNonReward
-  [290] alp+1,speech+7,rdq>1,xpm*1.5
-  [291] buff_bard_4
-  [292] buff_padfoot_potion_desc
-  [293] alp+1,thievery+2,craftsmanship+2
-  [294] buff_padfoot
-  [295] potion_aqua_vitalis_2
-  [296] buff_vitality_potion_2_desc
-  [297] alp+1,hlh*0.85,slh*0.85,ibi*1.15,fdm-0.15
-  [298] buff_vitality_2
-  [299] potion_bowmans_brew_2
-  [300] buff_bowmans_brew_2_desc
-  [301] alp+1,marksmanship+3,ard*0.8
-  [302] buff_bowmans_brew_2
-  [303] weapon_bane_4
-  [304] buff_bane_poiton_4_desc
-  [305] potion_stamina_4
-  [306] buff_stamina_potion_4_desc
-  [307] alp+1,mst*1.6,srg*1.3
-  [308] buff_stamina_4
-  [309] potion_painkiller_2
-  [310] buff_painkiller_2_desc
-  [311] alp+1,ies=1,rst%1.3
-  [312] buff_painkiller_2
-  [313] weapon_sleeping
-  [314] buff_horseman_potion_desc
-  [315] alp+1,horse_riding+3,houndmaster+3;ors*0.8
-  [316] buff_horseman
-  [317] potion_sleeping_4
-  [318] potion_hair_o_dog_2
-  [319] buff_hair_o_dog_potion_2_desc
-  [320] alp+1,apa+0.08,hod=0,
-  [321] buff_dog_o_hair_2
-  [322] buff_nighthawk_potion_desc
-  [323] alp+1,vision*1.5,owl+1
-  [324] buff_nighthawk
-  [325] buff_hair_o_dog_potion_desc
-  [326] alp+1,apa+0.05,
-  [327] buff_dog_o_hair
-  [328] potion_nighthawk_3
-  [329] buff_nighthawk_potion_3_desc
-  [330] alp+1,vision*1.5,owl+1,exh*0.5
-  [331] buff_nighthawk_3
+  [129] potion_maliruvLek_potion
+  [130] buff_potion_maliruvLek_potion_desc
+  [131] maliruvLek_potion
+  [132] Cpp:BasicTimed
+  [133] health+50/t
+  [134] buff_potion_maliruvLek_potion_name
+  [135] potion_artemisia_3
+  [136] buff_artemisia_3_desc
+  [137] alp+1,strength+4,wac*0.85,sls*0.85
+  [138] buff_artemisia_3
+  [139] potion_savegame
+  [140] potion_bane_4
+  [141] buff_bane_potion_4_desc
+  [142] buff_bane_4
+  [143] potion_sleeping_2
+  [144] buff_sleep_potion_2_desc
+  [145] alp+1,exhaust-100/s,vision*0.75,hearing*0.75,srg*0.9,mst*0.9
+  [146] buff_sleep_potion_2
+  [147] potion_antidote_2
+  [148] buff_antidote_2_desc
+  [149] potion_antidote
+  [150] alp+1,hunger-20,vitality+1
+  [151] buff_antidote_2
+  [152] quest_kocovnickaCest_sleepingPotionMedium
+  [153] potion_bowmans_brew_4
+  [154] buff_bowmans_brew_4_desc
+  [155] alp+1,marksmanship+8,ard=0
+  [156] buff_bowmans_brew_4
+  [157] potion_bowmans_brew
+  [158] buff_bowmans_brew_desc
+  [159] alp+1,marksmanship+3
+  [160] buff_bowmans_brew
+  [161] potion_maliruvLek_potion_3
+  [162] buff_potion_maliruvLek_potion_3_desc
+  [163] health+75/t,vitality+2
+  [164] buff_potion_maliruvLek_potion_3_name
+  [165] weapon_bane_2
+  [166] buff_bane_poiton_2_desc
+  [167] potion_stamina_3
+  [168] buff_stamina_potion_3_desc
+  [169] alp+1,mst*1.3,srg*1.15
+  [170] buff_stamina_3
+  [171] potion_bane_3
+  [172] buff_bane_potion_3_desc
+  [173] potion_dollmaker_4
+  [174] potion_insomia_2
+  [175] alp+1,exhaust-20
+  [176] potion_nighthawk_4
+  [177] buff_nighthawk_potion_4_desc
+  [178] alp+1,vision*1.5,owl+1,exh=0.0
+  [179] buff_nighthawk_4
+  [180] potion_aqua_vitalis_4
+  [181] buff_vitality_potion_4_desc
+  [182] alp+1,hlh*0.4,slh*0.4,ibi*1.6,fdm-0.6
+  [183] buff_vitality_4
+  [184] buff_antidote_desc
+  [185] hunger-20,
+  [186] buff_antidote
+  [187] potion_bard_2
+  [188] buff_bard_potion_2_desc
+  [189] alp+1,speech+3,rdq>1
+  [190] buff_bard_2
+  [191] potion_marigold_decoction
+  [192] buff_marigold_decoction_desc
+  [193] potion_marigold
+  [194] alp+1,health+15/t,hod*0.75
+  [195] buff_marigold_decoction
+  [196] potion_antidote_3
+  [197] buff_antidote_3_desc
+  [198] alp+1,hunger-20,pim=1, vitality+2
+  [199] buff_antidote_3
+  [200] potion_aesop_3
+  [201] buff_horseman_potion_3_desc
+  [202] alp+1,horse_riding+5,houndmaster+5;ors=-1
+  [203] buff_horseman_3
+  [204] potion_savegame_3
+  [205] buff_savegame_3_desc
+  [206] alp+1,strength+2,vitality+2,agility+2,health+20
+  [207] buff_savegame_3
+  [208] buff_artemisia_desc
+  [209] alp+1,strength+2
+  [210] buff_artemisia
+  [211] potion_marigold_decoction_2
+  [212] buff_marigold_decoction_2_desc
+  [213] alp+1,health+25/t,hod*0.5
+  [214] buff_marigold_decoction_2
+  [215] potion_aesop_2
+  [216] buff_horseman_potion_2_desc
+  [217] alp+1,horse_riding+3,houndmaster+3;ors*0.5
+  [218] buff_horseman_2
+  [219] potion_padfoot_2
+  [220] buff_padfoot_potion_2_desc
+  [221] potion_padfoot
+  [222] alp+1,thievery+4,craftsmanship+4
+  [223] buff_padfoot_2
+  [224] potion_embrocation_4
+  [225] buff_embrocation_potion_4_desc
+  [226] alp+1,agility+6, StaminaSprint*0.7
+  [227] buff_embrocation_4
+  [228] weapon_dollmaker_2
+  [229] weapon_bane
+  [230] buff_bane_poiton_desc
+  [231] potion_marigold_decoction_4
+  [232] buff_marigold_decoction_4_desc
+  [233] alp+1,health+60/t,hod=0
+  [234] buff_marigold_decoction_4
+  [235] potion_sleeping_3
+  [236] buff_sleep_potion_3_desc
+  [237] alp+1,exhaust-100/s,vision*0.75,hearing*0.75,srg*0.7,mst*0.7
+  [238] buff_sleep_potion_3
+  [239] potion_chamomile_decoction_2
+  [240] buff_chamomile_decoction_2_desc
+  [241] alp+1,shr*3
+  [242] buff_chamomile_decoction_2
+  [243] potion_aqua_vitalis_3
+  [244] buff_vitality_potion_3_desc
+  [245] alp+1,hlh*0.7,slh*0.7,ibi*1.3,fdm-0.3
+  [246] buff_vitality_3
+  [247] potion_padfoot_4
+  [248] buff_padfoot_potion_4_desc
+  [249] alp+1,thievery+8,craftsmanship+8
+  [250] buff_padfoot_4
+  [251] potion_maliruvLek_potion_4
+  [252] buff_potion_maliruvLek_potion_4_desc
+  [253] health+75/t,vitality+3,slh*0.9
+  [254] buff_potion_maliruvLek_potion_4_name
+  [255] buff_embrocation_potion_desc
+  [256] alp+1,agility+2
+  [257] buff_embrocation
+  [258] potion_hair_o_dog_4
+  [259] buff_hair_o_dog_potion_4_desc
+  [260] alp+1,hod=0,ald=0, apa+1
+  [261] buff_dog_o_hair_4
+  [262] potion_savegame_2
+  [263] buff_savegame_2_desc
+  [264] alp+1,strength+1,vitality+1,agility+1,health+10
+  [265] buff_savegame_2
+  [266] weapon_sleeping_3
+  [267] potion_maliruvLek_potion_2
+  [268] buff_potion_maliruvLek_potion_2_desc
+  [269] health+50/t,vitality+1
+  [270] buff_potion_maliruvLek_potion_2_name
+  [271] potion_embrocation_3
+  [272] buff_embrocation_potion_3_desc
+  [273] alp+1,agility+4, StaminaSprint*0.8
+  [274] buff_embrocation_3
+  [275] potion_painkiller_3
+  [276] buff_painkiller_3_desc
+  [277] alp+1,ies=1,rst%1.5
+  [278] buff_painkiller_3
+  [279] potion_dollmaker
+  [280] LimitRun,fencing-2,weapon_sword-2,heavy_weapons-2,marksmanship-2,weapon_shield-2,weapon_large-2,weapon_unarmed-2,
+  [281] weapon_sleeping_2
+  [282] potion_chamomile_decoction
+  [283] buff_chamomile_decoction_desc
+  [284] alp+1,shr*2
+  [285] buff_chamomile_decoction
+  [286] potion_marigold_decoction_3
+  [287] buff_marigold_decoction_3_desc
+  [288] alp+1,health+40/t,hod=0
+  [289] buff_marigold_decoction_3
+  [290] potion_chamomile_decoction_3
+  [291] buff_chamomile_decoction_3_desc
+  [292] alp+1,shr*4,ser*2
+  [293] buff_chamomile_decoction_3
+  [294] potion_insomia
+  [295] alp+1,exhaust-10
+  [296] potion_padfoot_3
+  [297] buff_padfoot_potion_3_desc
+  [298] alp+1,thievery+6,craftsmanship+6
+  [299] buff_padfoot_3
+  [300] potion_antidote_4
+  [301] buff_antidote_4_desc
+  [302] alp+1,hunger-30,pim=1, vitality+3
+  [303] buff_antidote_4
+  [304] potion_bard_4
+  [305] buff_bard_potion_4_desc
+  [306] Cpp:NonHealingPotionNonReward
+  [307] alp+1,speech+7,rdq>1,xpm*1.5
+  [308] buff_bard_4
+  [309] buff_padfoot_potion_desc
+  [310] alp+1,thievery+2,craftsmanship+2
+  [311] buff_padfoot
+  [312] potion_aqua_vitalis_2
+  [313] buff_vitality_potion_2_desc
+  [314] alp+1,hlh*0.85,slh*0.85,ibi*1.15,fdm-0.15
+  [315] buff_vitality_2
+  [316] potion_bowmans_brew_2
+  [317] buff_bowmans_brew_2_desc
+  [318] alp+1,marksmanship+3,ard*0.8
+  [319] buff_bowmans_brew_2
+  [320] weapon_bane_4
+  [321] buff_bane_poiton_4_desc
+  [322] potion_stamina_4
+  [323] buff_stamina_potion_4_desc
+  [324] alp+1,mst*1.6,srg*1.3
+  [325] buff_stamina_4
+  [326] potion_painkiller_2
+  [327] buff_painkiller_2_desc
+  [328] alp+1,ies=1,rst%1.3
+  [329] buff_painkiller_2
+  [330] weapon_sleeping
+  [331] buff_horseman_potion_desc
+  [332] alp+1,horse_riding+3,houndmaster+3;ors*0.8
+  [333] buff_horseman
+  [334] potion_sleeping_4
+  [335] potion_hair_o_dog_2
+  [336] buff_hair_o_dog_potion_2_desc
+  [337] alp+1,apa+0.08,hod=0,
+  [338] buff_dog_o_hair_2
+  [339] buff_nighthawk_potion_desc
+  [340] alp+1,vision*1.5,owl+1
+  [341] buff_nighthawk
+  [342] buff_hair_o_dog_potion_desc
+  [343] alp+1,apa+0.05,
+  [344] buff_dog_o_hair
+  [345] potion_nighthawk_3
+  [346] buff_nighthawk_potion_3_desc
+  [347] alp+1,vision*1.5,owl+1,exh*0.5
+  [348] buff_nighthawk_3

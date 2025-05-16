@@ -22,7 +22,7 @@
 			<InventoryPresetRef Name="pockets_fighter"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_hladAZmar_friends_axe">
-			<WeaponPresetRef Name="axe_shield_3_01_pisek"/>
+			<WeaponPresetRef Name="hladAZmar_axeShieldRanged"/>
 			<InventoryPresetRef Name="suchdol_uniform_heavy"/>
 			<InventoryPresetRef Name="pockets_fighter"/>
 		</InventoryPreset>

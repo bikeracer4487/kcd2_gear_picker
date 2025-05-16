@@ -36,7 +36,7 @@
 				<MusicMatrixCell WorldStateToggle="MENU_TITLE" Playlist="#menu_title" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="SKIRMISH" Playlist="#skirmish" Status="Minor" Note="Resolve armed/unarmed"/>
 				<MusicMatrixCell WorldStateToggle="DIEGETIC_MUSIC" Playlist="#silence_asap" Status="TODO" Note="Possibly change to #silence"/>
-				<MusicMatrixCell WorldStateToggle="UNDERGROUND" Playlist="#underground" Status="Confirmed" Note="Where should the mystery underground be used?"/>
+				<MusicMatrixCell WorldStateToggle="UNDERGROUND" Playlist="#underground" Status="Confirmed" />
 
 				<MusicMatrixCell WorldStateToggle="SKIRMISH_FRIENDLY" Playlist="#skirmish_friendly" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="SKIRMISH_ARMED_FORCED" Playlist="#skirmish_armed_forced" Status="Confirmed"/>
@@ -77,23 +77,11 @@
 				<MusicMatrixCell WorldStateToggle="ACTIVITY_MNT_ARCHERY" Playlist="#racing" Status="Confirmed" />
 				<MusicMatrixCell WorldStateToggle="ACTIVITY_MNT_ARCHERY_INTENSE" Playlist="#racing" Status="Confirmed" />
 
-				<!--
-				EVENT_ACTIVITY_MNT_ARCHERY_VICTORY
-				EVENT_ACTIVITY_MNT_ARCHERY_NOT_VICTORY
-				EVENT_ACTIVITY_RACE_STARTED
-				EVENT_ACTIVITY_RACE_GATE
-				EVENT_ACTIVITY_RACE_LAST_GATE
-				EVENT_ACTIVITY_RACE_PING
-				EVENT_ACTIVITY_RACE_FINISH
-				EVENT_ACTIVITY_RACE_END_VICTORY
-				EVENT_ACTIVITY_RACE_END_NOT_VICTORY
-				-->
-
 				<MusicMatrixCell WorldStateToggle="MOOD_TENSION_ESCALATING_0" Playlist="#podriz_1" Status="Confirmed" />
 				<MusicMatrixCell WorldStateToggle="MOOD_TENSION_ESCALATING_1" Playlist="#podriz_2" Status="Confirmed" />
 				<MusicMatrixCell WorldStateToggle="MOOD_TENSION_ESCALATING_2" Playlist="#podriz_3" Status="Confirmed" />
 
-				<MusicMatrixCell WorldStateToggle="MOOD_EVIL_EXPLORATION" Playlist="#burnt_village" Status="Confirmed" Note="Used in Spizovaci Oddil only; Stav muze trvat az 15-20min"/>
+				<MusicMatrixCell WorldStateToggle="MOOD_EVIL_EXPLORATION" Playlist="#burnt_village" Status="Confirmed" />
 
 				<!-- ******** MAIN QUESTS ******** -->
 				
@@ -130,8 +118,8 @@
 				<MusicMatrixCell WorldStateToggle="STORY_M10_TRIALOG" Playlist="#podriz_1" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="STORY_M10_BEFORE_ERIC_DIALOG" Playlist="#m10_before_eric_dialog" Status="Confirmed"/>
 
-				<MusicMatrixCell WorldStateToggle="STORY_M11_MORAL_HANGOVER" Playlist="#moral_hangover" Status="Confirmed" Note="Vybrat neutralni kousky, ktere nezkazi spatnou naladu, tj. nedelat extra assety., jen vyhazet ty, ktere by se tam nehodily"/>
-				<MusicMatrixCell WorldStateToggle="STORY_M11_SIEGE" Playlist="#battle_2" Status="Confirmed" Note="Start immediately after the cutscene in which Markvart orders to attack Nebakov. Stop at the end of the quest."/>
+				<MusicMatrixCell WorldStateToggle="STORY_M11_MORAL_HANGOVER" Playlist="#moral_hangover" Status="Confirmed" />
+				<MusicMatrixCell WorldStateToggle="STORY_M11_SIEGE" Playlist="#battle_2" Status="Confirmed" />
 
 				<MusicMatrixCell WorldStateToggle="STORY_M12_ISTVAN_DIALOG" Playlist="#silence" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="STORY_M12_APOLENA_PASSAGE" Playlist="#trespass_low" Status="Confirmed"/>
@@ -242,6 +230,9 @@
 				<MusicMatrixCell WorldStateToggle="STORY_S25_GEJZA_BURIAL" Playlist="#s25_gejza_burial" Status="Confirmed"/>
 
 				<MusicMatrixCell WorldStateToggle="STORY_S26_LIQUOR_MISSION" Playlist="#brzm" Status="Confirmed" Note="Used B-A-UGROUND2, B-A-UOSSUARY"/>
+				<MusicMatrixCell WorldStateToggle="STORY_S26_PARTY_1" Playlist="#s26_party_1" Status="Confirmed" />
+				<MusicMatrixCell WorldStateToggle="STORY_S26_PARTY_2" Playlist="#s26_party_2" Status="Confirmed" />
+				<MusicMatrixCell WorldStateToggle="STORY_S26_DOG" Playlist="#s26_dog" Status="Confirmed" />
 
 				<MusicMatrixCell WorldStateToggle="STORY_S30_ENEMIES_NEAR_ENVIRO_SPOT" Playlist="#trespass_low" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="STORY_S30_MEXICAN_STANDOFF" Playlist="#podriz_1" Status="Confirmed"/>
@@ -274,19 +265,6 @@
 				<MusicMatrixCell WorldStateToggle="STORY_U05_GYPSY_MAGIC" Playlist="#unused" Status="Unused" />
 
 				<MusicMatrixCell WorldStateToggle="STORY_S15_TROSKOVICE_HANGMEN" Playlist="#unused" Status="Confirmed" Note="Was #s15_negative_outcome"/>
-
-				<!--
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				<MusicMatrixCell WorldStateToggle="" Playlist="#missing" Status=""/>
-				-->
 
 				<MusicMatrixCell WorldStateToggle="STORY_U53_WRITING"                      Playlist="#u53_writing"           Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="STORY_U53_READING_O_VOLAVCE"            Playlist="#u53_comic_relief"      Status="Confirmed"/>
@@ -494,6 +472,7 @@
 				<MusicMatrixCell WorldStateToggle="STORY_M42_POGROM_BIS" Playlist="#battle_instead_of_skirmish" Status="Confirmed"/>
 				<MusicMatrixCell WorldStateToggle="STORY_M33_ENVIRO_PUZZLE" Playlist="#shady" Status="Confirmed" Note="Tweak tip: Location"/>
 				<MusicMatrixCell WorldStateToggle="UNDERGROUND" Playlist="#underground" Status="Confirmed"/>
+				<MusicMatrixCell WorldStateToggle="STORY_S131_THENIGHTMARE_PAINTER" Playlist="#nightmare" Status="Confirmed"/>
 			</Cells>
 		</MusicMatrixRow>
 		<MusicMatrixRow Address="KH_Pach">
@@ -848,6 +827,30 @@
 				<MusicMatrixCell WorldStateToggle="STORY_PP_T_SMIRCI_KRIZ" Playlist="#gregorian" Status="Confirmed"/>
 			</Cells>
 		</MusicMatrixRow>
-
+		<MusicMatrixRow Address="pilgrimage_KH_Maliruv_hrob">
+			<Cells>
+				<MusicMatrixCell WorldStateToggle="DEFAULT" Playlist="#forest" Status="Confirmed"/>
+				<MusicMatrixCell WorldStateToggle="STORY_S141_GRAVE_PAINTER" Playlist="#catharsis" Status="Confirmed"/>
+			</Cells>
+		</MusicMatrixRow>
+		<MusicMatrixRow Address="pilgrimage_T_Pohanska_svatyne"><Cells><MusicMatrixCell WorldStateToggle="T_PAGAN_SITE" Playlist="#forest_dark" Status="Confirmed"/></Cells></MusicMatrixRow>
+		<MusicMatrixRow Address="pilgrimage_KH_Pomatenec">
+			<Cells>
+				<MusicMatrixCell WorldStateToggle="DEFAULT" Playlist="#field" Status="Confirmed"/>
+				<MusicMatrixCell WorldStateToggle="STORY_S140_POMATENEC_PAINTER" Playlist="#fog" Status="Confirmed"/>
+			</Cells>
+		</MusicMatrixRow>
+		<MusicMatrixRow Address="KH_Maliruv_house">
+			<Cells>
+				<MusicMatrixCell WorldStateToggle="DEFAULT" Playlist="#painter_house" Status="Confirmed"/>
+				<MusicMatrixCell WorldStateToggle="KH_MALIRUV_HOUSE" Playlist="#painter_house" Status="Confirmed"/>
+			</Cells>
+		</MusicMatrixRow>
+		<MusicMatrixRow Address="KH_Strasidlo">
+			<Cells>
+				<MusicMatrixCell WorldStateToggle="DEFAULT" Playlist="#kh_konsky_trh" Status="Confirmed"/>
+				<MusicMatrixCell WorldStateToggle="STORY_S131_THENIGHTMARE_PAINTER" Playlist="#nightmare" Status="Confirmed"/>
+			</Cells>
+		</MusicMatrixRow>
 	</MusicMatrixDatabase>
 </database>

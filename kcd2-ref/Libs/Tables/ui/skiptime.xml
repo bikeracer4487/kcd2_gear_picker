@@ -87,5 +87,8 @@
 		<skiptime code_only="false" skiptime_id="88" skiptime_name="uchazec_summoningGuildmasters" skiptime_type_id="9" ui_message="ui_dlg_uchazec_summoningGuildmasters" ui_visual="wait" />
 		<skiptime code_only="false" skiptime_id="89" skiptime_name="uchazec_ceremony" skiptime_type_id="9" ui_message="ui_dlg_uchazec_ceremony" ui_visual="wait" />
 		<skiptime code_only="false" skiptime_id="90" skiptime_name="papezskyLegat_waitToLeaveToLorec" skiptime_type_id="11" ui_message="ui_dlg_papezskyLegat_waitToLeaveToLorec" ui_visual="wait" />
+		<skiptime code_only="false" skiptime_id="91" skiptime_name="maliruvLek_waitForVykradaciHrobu" skiptime_type_id="11" ui_message="skirmish_cekas_na_vykrada_5G6D" ui_visual="wait" />
+		<skiptime code_only="false" skiptime_id="92" skiptime_name="dlc2_donationsTournament_makingWaffenrock" skiptime_type_id="11" ui_message="ui_dlg_dlc2_donationsTournament_makingWaffenrock" ui_visual="wait" />
+		<skiptime audio_trigger="special_skiptime_baths" code_only="false" skiptime_id="93" skiptime_name="dlc2_donations_VolfBathing" skiptime_type_id="11" ui_message="ui_dlg_dlc2_donations_VolfBathing" ui_visual="bath" />
 	</skiptimes>
 </database>

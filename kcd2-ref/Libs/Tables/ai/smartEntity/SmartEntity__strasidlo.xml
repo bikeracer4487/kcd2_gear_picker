@@ -9,6 +9,15 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="fightRepeated_template">
 					<TreeLocation FileName="world/sa_land.xml" TreeName="combat_fightRepeated_template" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="strasidlo_urgeDialog">
+					<TreeLocation FileName="speech/urgedialog.xml" TreeName="urgeDialog" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="leaveLevel" PreventsMonsterLod="true">
+					<TreeLocation FileName="world/sa_land.xml" TreeName="leaveLevel" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="strasidlo_playerMonologue">
+					<TreeLocation FileName="quests/strasidlo/strasidlo.xml" TreeName="strasidlo_playerMonologue" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

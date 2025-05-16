@@ -98,6 +98,7 @@
 			<InventoryPresetRef Name="pockets_burgher" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_tkop_ptacek" Health="1">
+			<ClothingPresetRef Name="generic_naked" />  <!-- Clothing preset is changed by overrides from Skald. Needs naked preset otherwise error in console would appear -->
 			<InventoryPresetRef Name="pockets_noble" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_tneb_bohuta" Health="1">

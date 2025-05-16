@@ -288,6 +288,7 @@
 			<Value Name="questPunishment" />  <!-- Quest will override punishment, don't force it from AI -->
 			<Value Name="skillCheck" />
 			<Value Name="fight" />
+			<Value Name="secondArrest" />
 		</Enum>
 
 		<Enum Name="crime_secondArrestFeedbackResult" ExportToConcept="true">
@@ -395,6 +396,7 @@
 			<Value Name="Miskovice" />
 			<Value Name="Suchdol" />
 			<Value Name="Zikmundtabor" />
+			<Value Name="Monastery" />
 		</Enum>
 
 		<Enum Name="crime_theftMethod" ExportToConcept="true">
@@ -872,6 +874,16 @@
 			<Value Name="BarkRepeatedly" />
 			<Value Name="BarkOnce" />
 			<Value Name="PlayAnimationOnce" />
+		</Enum>
+
+		<Enum name="vyvolavani_eliciterPlace" ExportToConcept="true">
+			<Value Name="None" />
+			<Value Name="KonskyTrh" />
+			<Value Name="KupeckaHore" />
+			<Value Name="KupeckaDole" />
+			<Value Name="Radnicni" />
+			<Value Name="RadnicniSquare" />
+			<Value Name="Platnerska" />
 		</Enum>
 
 
@@ -1542,11 +1554,24 @@
 			<Value Name="Done" />
 		</Enum>
 
-		<Enum name="jizdniLukostrelba_spectatorsReactionType">
+		<Enum name="horseArchery_spectatorsReactionType">
 			<Value Name="hattrick" />
 			<Value Name="normalHit" />
 			<Value Name="miss" />
-			> </Enum>
+		</Enum>
+
+		<Enum name="crossCountry_gate" ExportToConcept="true">
+			<Value Name="A" />
+			<Value Name="B" />
+			<Value Name="C" />
+			<Value Name="D" />
+			<Value Name="E" />
+			<Value Name="F" />
+			<Value Name="G" />
+			<Value Name="H" />
+			<Value Name="I" />
+			<Value Name="Finish" />
+		</Enum>		
 
 		<!-- SITUATIONS ENUMS -->
 		<!-- =========================================================================== -->
@@ -1628,6 +1653,7 @@
 			<Value Name="FirstTime" />
 			<Value Name="Won" />
 			<Value Name="Lost" />
+			<Value Name="Failed" />
 			<Value Name="WaitForResult" />
 		</Enum>
 
@@ -1635,6 +1661,16 @@
 			<Value Name="None" />
 			<Value Name="WaitForSignal" />
 			<Value Name="HasteActivated" />
+		</Enum>
+
+		<!-- shiled painting ENUMS -->
+		<!-- =========================================================================== -->	
+		<Enum name="shiledPainting_shieldType" ExportToConcept="true">
+			<Value Name="None" />
+			<Value Name="Kite" />
+			<Value Name="Pavise" />
+			<Value Name="Cuman" />
+			<Value Name="Heater" />
 		</Enum>
 
 		<!-- Zikmundovo openworld -->

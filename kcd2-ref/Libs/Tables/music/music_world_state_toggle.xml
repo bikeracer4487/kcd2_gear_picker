@@ -319,6 +319,9 @@
 		<!-- S26 -->
 		<WorldStateToggle Name="STORY_S26_QUEST_ACTIVE" Overriding="true" Priority="40" VisibleInSkald="true" />
 		<WorldStateToggle Name="STORY_S26_LIQUOR_MISSION" Overriding="true" Priority="41" VisibleInSkald="true" />
+		<WorldStateToggle Name="STORY_S26_PARTY_1" Overriding="true" Priority="42" VisibleInSkald="true" />
+		<WorldStateToggle Name="STORY_S26_PARTY_2" Overriding="true" Priority="43" VisibleInSkald="true" />
+		<WorldStateToggle Name="STORY_S26_DOG" Overriding="true" Priority="44" VisibleInSkald="true" />
 
 		<!-- S30 -->
 		<WorldStateToggle Name="STORY_S30_MEXICAN_STANDOFF" Overriding="true" Priority="170" VisibleInSkald="true" />
@@ -377,6 +380,12 @@
 		<!-- S59 Viktorka -->
 		<WorldStateToggle Name="STORY_S59_VICTORIA_CROSS" Overriding="true" Priority="5" VisibleInSkald="true" />
 		<WorldStateToggle Name="STORY_S59_VICTORIA_SINGING" Overriding="true" Priority="170" VisibleInSkald="true" />
+		
+		<!-- S141 Hrob -->
+		<WorldStateToggle Name="STORY_S141_GRAVE_PAINTER" Overriding="true" Priority="40" VisibleInSkald="true" />
+		
+		<!-- S140 Pomatenec -->
+		<WorldStateToggle Name="STORY_S140_POMATENEC_PAINTER" Overriding="true" Priority="64" VisibleInSkald="true" />
 
 		<!-- MICRO QUESTS AND ACTIVITIES -->
 		
@@ -460,6 +469,8 @@
 		<!-- Site-specific states -->
 		<WorldStateToggle Name="KH_TOURNAMENT_SITE_EXISTS" Overriding="true" Priority="5" VisibleInSkald="true" />
 		<WorldStateToggle Name="KH_TOURNAMENT_IN_PROGRESS" Overriding="true" Priority="5" VisibleInSkald="true" />
+		<WorldStateToggle Name="T_PAGAN_SITE" Overriding="true" Priority="40" VisibleInSkald="true" />
+		<WorldStateToggle Name="KH_MALIRUV_HOUSE" Overriding="true" Priority="64" VisibleInSkald="true" />
 
 		<!-- Specific-dialogues states -->
 
@@ -476,6 +487,7 @@
 		<WorldStateToggle Name="DIALOG_M42_POGROM_TRIALOG_BY_MOTHER" Overriding="true" Priority="300" VisibleInSkald="true" />
 		<WorldStateToggle Name="DIALOG_U02_HERMIT_AND_WIDOW_PRAYING_AT_A_GRAVE" Overriding="true" Priority="300" VisibleInSkald="true" />
 		<WorldStateToggle Name="DIALOG_S19_TROUBADOURS_INTRODUCTION" Overriding="true" Priority="300" VisibleInSkald="true" />
+		<WorldStateToggle Name="STORY_S131_THENIGHTMARE_PAINTER" Overriding="true" Priority="300" VisibleInSkald="true" />
 
 	</WorldStateToggles>
 </database>

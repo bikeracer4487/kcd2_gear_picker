@@ -45,6 +45,9 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="villageGuard_startReportingPlayer">
 					<TreeLocation FileName="quests/kocovnickaCest/villageGuard_startReportingPlayer.xml" TreeName="kocovnickaCest_villageGuard_startReportingPlayer" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="woodcutter_watchingForCarriedGejza_switchTree">
+					<TreeLocation FileName="quests/kocovnickaCest/woodcutter_watchingForCarriedGejza_switchTree.xml" TreeName="kocovnickaCest_woodcutter_watchingForCarriedGejza_switchTree" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

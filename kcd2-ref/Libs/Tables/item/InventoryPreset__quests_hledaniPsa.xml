@@ -5,7 +5,7 @@
 			<ClothingPresetRef Name="generic_naked" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_hledaniPsa_corpseRobber">
-			<WeaponPresetRef Name="sword_2_01" />
+			<WeaponPresetRef Name="huntingsword_2_01" />
 			<InventoryPresetRef Name="clothes_bandits_tro" />
 			<InventoryPresetRef Name="pockets_bandit_all" />
 		</InventoryPreset>

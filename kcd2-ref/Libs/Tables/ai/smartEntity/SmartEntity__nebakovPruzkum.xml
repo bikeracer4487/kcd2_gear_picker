@@ -88,31 +88,31 @@
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="npcPolylogForce" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_0_cleanup" PreventsMonsterLod="true">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_0_cleanup" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="contender_0_cleanup" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_1_init">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_1_init" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="contender_1_init" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_2_waitOnStart" PreventsMonsterLod="true">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_2_waitOnStart" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="contender_2_waitOnStart" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_3_ride" PreventsMonsterLod="true">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_3_ride" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="contender_3_ride" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="contender_4_parkHorse" PreventsMonsterLod="true">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="contender_4_parkHorse" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="contender_4_parkHorse" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="player_forceMount_onPlayerHorse_X">
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="player_forceMount_onPlayerHorse_X" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_01_start">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_01_start" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="showRunner_01_start" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_02_waitingAtFinishLine">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_02_waitingAtFinishLine" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="showRunner_02_waitingAtFinishLine" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showRunner_03_ancipatingEnd">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="showRunner_03_ancipatingEnd" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="showRunner_03_ancipatingEnd" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="moveOnHorse_barkOnPlayerSeen" PreventsMonsterLod="true">
 					<TreeLocation FileName="move/moveOnHorse_barkOnPlayerSeen.xml" TreeName="moveOnHorse_barkOnPlayerSeen" />
@@ -157,7 +157,7 @@
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="ptacek_goToFinish" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="player_forceMount_onPlayerHorse">
-					<TreeLocation FileName="special/so_crossCountry.xml" TreeName="player_forceMount_onPlayerHorse" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="player_forceMount_onPlayerHorse" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="move_withoutPath" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="move_withoutPath" />
@@ -190,7 +190,7 @@
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="npc_barkOnWuid" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="showrunner_reactToPlayerNotMoving">
-					<TreeLocation FileName="special/so_horseArchery.xml" TreeName="showrunner_reactToPlayerNotMoving" />
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="showrunner_reactToPlayerNotMoving" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="interrupt_barkWhenNotInDialog">
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="interrupt_barkWhenNotInDialog" />
@@ -200,6 +200,9 @@
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="slouchedSitting">
 					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="slouchedSitting" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="checkJailDoor">
+					<TreeLocation FileName="quests/nebakovPruzkum/nebakovPruzkum.xml" TreeName="checkJailDoor" />
 				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>

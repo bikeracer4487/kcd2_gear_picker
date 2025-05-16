@@ -4,7 +4,11 @@
 		<SmartEntityTemplate DatabaseId="f63dd13f-4adb-48bb-ac68-937d5a41bdd5" Name="vrah_SO" UpdatePriority="false">
 			<BehaviorTemplates>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="leaveLevel" PreventsMonsterLod="true">
-					<TreeLocation FileName="world/sa_land.xml" TreeName="leaveLevel" />
+					<TreeLocation FileName="quests\vrah\vrah.xml" TreeName="leaveLevel" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="move">
+					<TreeLocation FileName="move\move.xml" TreeName="move_move" />
+					<NavigationInfo EndHelper="" StartHelper="" TypeId="0" />
 				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>

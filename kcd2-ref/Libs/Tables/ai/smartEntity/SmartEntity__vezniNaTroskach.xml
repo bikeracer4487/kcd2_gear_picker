@@ -139,6 +139,9 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="pista_drawSword">
 					<TreeLocation FileName="quests/vezniNaTroskach/vezniNaTroskach.xml" TreeName="pista_drawSword" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="soldier_discarted">
+					<TreeLocation FileName="quests/vezniNaTroskach/vezniNaTroskach.xml" TreeName="soldier_discarted" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 			<UnstanceResources>
 				<UnstanceResource Resource="zizkaInjuredResource" Unstance="Quest_SynchroSittingWounded" />

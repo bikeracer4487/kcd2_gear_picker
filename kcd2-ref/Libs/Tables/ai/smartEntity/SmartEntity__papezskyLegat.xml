@@ -156,6 +156,9 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="papezskyLegat_moveInCrouch">
 					<TreeLocation FileName="quests/papezskyLegat/papezskyLegat.xml" TreeName="papezskyLegat_moveInCrouch" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="chatOnPlayerFailable">
+					<TreeLocation FileName="quests/questbehaviors.xml" TreeName="chatOnPlayerFailable" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

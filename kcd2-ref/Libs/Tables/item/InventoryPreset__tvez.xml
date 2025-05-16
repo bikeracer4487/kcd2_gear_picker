@@ -42,7 +42,7 @@
 			<InventoryPresetRef Name="inventory_money_onePig"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_tvez_kocour" Health="0.06" HealthVariation="0.05">
-			<ClothingPresetRef Name="tvez_kocour"/>
+			<ClothingPresetRef Name="tvez_kocour_battle"/>
 			<WeaponPresetRef Name="longsword_5_01_torch"/>
 			<InventoryPresetRef Name="pockets_gambler"/>
 			<PresetItem Name="player_lockpick" Amount="2"/>
@@ -169,6 +169,11 @@
 		<InventoryPreset Name="inventory_tvez_mikolaj">
 			<ClothingPresetRef Name="tvez_mikolaj"/>
 			<InventoryPresetRef Name="pockets_horseTrader"/>
+			<PresetItem Name="hadkaKonaru_crossCountryChestKey" Amount="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_tvez_bibrek">
+			<ClothingPresetRef Name="tvez_bibrek"/>
+			<PresetItem Name="hadkaKonaru_mountedArcheryChestKey" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_tvez_man_2">
 			<ClothingPresetRef Name="tvez_man_2"/>

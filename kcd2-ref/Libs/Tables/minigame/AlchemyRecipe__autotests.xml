@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
 	<AlchemyRecipes version="1">
-		<AlchemyRecipe RecipeId="1001" BaseMaterial="Water" UIUsage="recipe_ammo_gunpowder_usage" UIName="recipe_ammo_gunpowder_name" BaseQualityRewardXP="20">
+		<AlchemyRecipe RecipeId="1001" BaseMaterial="Water" UIUsage="recipe_ammo_gunpowder_usage" UIName="recipe_ammo_gunpowder_name" BaseQualityRewardXP="20" DlcId="8">
 			<Ingredients>
 				<AlchemyIngredient IngredientItemId="0290b689-c01c-480f-b121-bed71ad1f5e0" Quantity="1" />
 				<AlchemyIngredient IngredientItemId="b9de1d84-a0c1-4b81-9f60-8d7fbb3cb9d4" Quantity="1" />
@@ -20,7 +20,7 @@
 				<AlchemyRecipeStep StepId="7" StepType="Easy" FeedbackPriority="6" UIText="alch_gunpowder_step_5" Condition="IsBaseDistilled(1)" />
 			</Steps>
 		</AlchemyRecipe>
-		<AlchemyRecipe RecipeId="1002" BaseMaterial="Spiritus" UIUsage="recipe_ammo_gunpowder_usage" UIName="recipe_ammo_gunpowder_name" BaseQualityRewardXP="20">
+		<AlchemyRecipe RecipeId="1002" BaseMaterial="Spiritus" UIUsage="recipe_ammo_gunpowder_usage" UIName="recipe_ammo_gunpowder_name" BaseQualityRewardXP="20" DlcId="8">
 			<Ingredients>
 				<AlchemyIngredient IngredientItemId="0513eeae-05a8-4ca7-8719-443cb0d906d5" Quantity="1" />
 				<AlchemyIngredient IngredientItemId="8cf956d4-39d6-4e9d-9010-95f8f2772ad9" Quantity="1" />

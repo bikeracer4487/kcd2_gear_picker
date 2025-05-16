@@ -2,7 +2,7 @@
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
 	<PackageStrings version="1">
 		<PackageString Name="cannot_drop_carried_into_obstacle" Type="Hud" Comment="defaultActionHelp.xml">
-			<Text StringName="cannot_drop_carried_into_obstacle" Text="There is not enough room" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="cannot_drop_carried_into_obstacle" Text="There is not enough room" CreatedOn="19.12.2024 12:23:40" Translator="abg.jrehanek" />
 		</PackageString>
 		<PackageString Name="cant_change_outfit_in_combat" Type="Apse" Comment="UIApseCharacter.cpp">
 			<Text StringName="cant_change_outfit_in_combat" Text="You cannot switch outfits in combat." LoadedOn="16.1.2024 14:39:37" />
@@ -398,7 +398,7 @@
 			<Text StringName="ui_back_prompt" Text="(Back)" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_barber_accept" Type="Hud" Comment="BarberExtensionController.cpp">
-			<Text StringName="ui_barber_accept" Text="Accept change" CreatedOn="22.11.2024 12:19:51" Translator="Michal Jarolímek" />
+			<Text StringName="ui_barber_accept" Text="Accept &amp; Pay" LoadedOn="14.2.2025 14:46:54" />
 		</PackageString>
 		<PackageString Name="ui_barber_beard" Type="Hud" Comment="BarberExtensionController.cpp">
 			<Text StringName="ui_barber_beard" Text="Beard" CreatedOn="22.11.2024 12:19:51" Translator="Michal Jarolímek" />
@@ -1346,7 +1346,7 @@
 			<Text StringName="ui_fasttravel_kut_miskovice_question" Text="Chceš vyrazit do &lt;h&gt;Miskovic&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_fasttravel_kut_nomadCamp_question" Type="Apse" Comment="Editor POI">
-			<Text StringName="ui_fasttravel_kut_nomadCamp_question" Text="Chceš vyrazit do &lt;h&gt;kupeckého tábora&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_fasttravel_kut_nomadCamp_question" Text="Chceš vyrazit k &lt;h&gt;Převozníkovi&lt;/h&gt;?" LoadedOn="14.2.2025 14:46:54" />
 		</PackageString>
 		<PackageString Name="ui_fasttravel_kut_opatovickyVrch_question" Type="Apse" Comment="Editor POI">
 			<Text StringName="ui_fasttravel_kut_opatovickyVrch_question" Text="Chceš vyrazit k &lt;h&gt;Opatovickému vrchu&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
@@ -1385,7 +1385,7 @@
 			<Text StringName="ui_fasttravel_tros_nebakovskyMlyn_question" Text="Chceš vyrazit k &lt;h&gt;Nebákovskému mlýnu&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_fasttravel_tros_nomadCamp_question" Type="Apse" Comment="Editor POI">
-			<Text StringName="ui_fasttravel_tros_nomadCamp_question" Text="Chceš vyrazit do &lt;h&gt;kupeckého tábora&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_fasttravel_tros_nomadCamp_question" Text="Chceš vyrazit k &lt;h&gt;Převozníkovi&lt;/h&gt;?" LoadedOn="14.2.2025 14:46:54" />
 		</PackageString>
 		<PackageString Name="ui_fasttravel_tros_podseminskyMlyn_question" Type="Apse" Comment="Editor POI">
 			<Text StringName="ui_fasttravel_tros_podseminskyMlyn_question" Text="Chceš vyrazit k &lt;h&gt;Podsemínskému mlýnu&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
@@ -1401,6 +1401,12 @@
 		</PackageString>
 		<PackageString Name="ui_fasttravel_tros_troskovice_question" Type="Apse" Comment="Editor POI">
 			<Text StringName="ui_fasttravel_tros_troskovice_question" Text="Chceš vyrazit do &lt;h&gt;Troskovic&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_fasttravel_tros_trosky_inner_gate_custom" Type="Apse" Comment="Editor POI">
+			<Text StringName="ui_fasttravel_tros_trosky_inner_gate_custom" Text="Hrad Trosky - Vnitřní brána" CreatedOn="24.4.2025 14:17:31" Translator="abg.jstejkora" />
+		</PackageString>
+		<PackageString Name="ui_fasttravel_tros_trosky_inner_gate_question" Type="Apse" Comment="Editor POI">
+			<Text StringName="ui_fasttravel_tros_trosky_inner_gate_question" Text="Chceš vyrazit k &lt;h&gt;Troskám – Vnitřní bráně&lt;/h&gt;?" CreatedOn="24.4.2025 14:17:31" Translator="abg.jstejkora" />
 		</PackageString>
 		<PackageString Name="ui_fasttravel_tros_trosky_question" Type="Apse" Comment="Editor POI">
 			<Text StringName="ui_fasttravel_tros_trosky_question" Text="Chceš vyrazit k &lt;h&gt;Troskám&lt;/h&gt;?" LoadedOn="16.1.2024 14:39:37" />
@@ -1458,6 +1464,15 @@
 		</PackageString>
 		<PackageString Name="ui_firsttime_telemetry_web" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_firsttime_telemetry_web" Text="$open_web; Visit URL" CreatedOn="9.5.2024 16:30:48" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_forge_builder_house_hint" Type="Hud" Comment="ForgeBuilderController.cpp">
+			<Text StringName="ui_forge_builder_house_hint" Text="Dům" CreatedOn="21.2.2025 10:32:21" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_forge_builder_room_hint" Type="Hud" Comment="ForgeBuilderController.cpp">
+			<Text StringName="ui_forge_builder_room_hint" Text="Pokoj" CreatedOn="21.2.2025 10:32:21" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_forge_builder_yard_hint" Type="Hud" Comment="ForgeBuilderController.cpp">
+			<Text StringName="ui_forge_builder_yard_hint" Text="Zahrada" CreatedOn="21.2.2025 10:32:21" Translator="Michal Jarolímek" />
 		</PackageString>
 		<PackageString Name="ui_FOV" Type="Menu" Comment="menu_buttons.xml">
 			<Text StringName="ui_FOV" Text="Horizontal FOV" LoadedOn="4.9.2024 19:11:56" />
@@ -1961,7 +1976,7 @@
 			<Text StringName="ui_helpoverlay_basicCombat_s1300" Text="&lt;label&gt;Směr, ze kterého teď nemůžeš útočit&lt;/label&gt;" CreatedOn="28.10.2024 16:22:54" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_basicCombat_s1400" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_basicCombat_s1400" Text="{$combat_zone_mouse_x;|$xi_movex;} &lt;strong&gt;vybíráš směr útoku&lt;/strong&gt;&lt;br/&gt;$bow_primary; &lt;strong&gt;útočíš&lt;/strong&gt;&lt;br/&gt;Držením $block~; &lt;strong&gt;blokuješ&lt;/strong&gt;&lt;br/&gt;$opponent_lock; &lt;strong&gt;navázání na jeden cíl&lt;/strong&gt;&lt;br/&gt;$sprint; &lt;strong&gt;zruší navázání na cíl&lt;/strong&gt;&lt;br/&gt;$jump; &lt;strong&gt;uskočíš ve směru pohybu&lt;/strong&gt;" LoadedOn="13.1.2025 15:04:38" />
+			<Text StringName="ui_helpoverlay_basicCombat_s1400" Text="{$combat_zone_mouse_x;|$xi_rotateyaw;} &lt;strong&gt;vybíráš směr útoku&lt;/strong&gt;&lt;br/&gt;$bow_primary; &lt;strong&gt;útočíš&lt;/strong&gt;&lt;br/&gt;Držením $block~; &lt;strong&gt;blokuješ&lt;/strong&gt;&lt;br/&gt;$opponent_lock; &lt;strong&gt;navázání na jeden cíl&lt;/strong&gt;&lt;br/&gt;$sprint; &lt;strong&gt;zruší navázání na cíl&lt;/strong&gt;&lt;br/&gt;$jump; &lt;strong&gt;uskočíš ve směru pohybu&lt;/strong&gt;" LoadedOn="31.3.2025 16:05:51" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_blacksmithing0_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_blacksmithing0_s0000" Text="Kovářství: Základy (1/4)" CreatedOn="21.5.2024 21:09:03" Translator="Warhorse" />
@@ -2084,7 +2099,7 @@
 			<Text StringName="ui_helpoverlay_combos0_s0300" Text="Držením bloku &lt;strong&gt;odrazíš útoky všech oponentů&lt;/strong&gt; před sebou. Úspěšné blokování ale stojí &lt;strong&gt;staminu&lt;/strong&gt; a bez staminy se tedy nemůžeš bránit." LoadedOn="13.1.2025 14:40:07" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_combos0_s0400" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_combos0_s0400" Text="Držením $block; &lt;strong&gt;blokuješ&lt;/strong&gt;" LoadedOn="16.9.2024 16:27:09" />
+			<Text StringName="ui_helpoverlay_combos0_s0400" Text="Držením $block~; &lt;strong&gt;blokuješ&lt;/strong&gt;" LoadedOn="4.11.2024 13:28:04" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_combos0_s0500" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_combos0_s0500" Text="&lt;strong&gt;Perfektní blok&lt;/strong&gt;" LoadedOn="16.9.2024 16:27:09" />
@@ -2152,6 +2167,9 @@
 		<PackageString Name="ui_helpoverlay_combos2_s0300" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_combos2_s0300" Text="&lt;accent&gt;RPG&lt;/accent&gt;&lt;br/&gt;Každá zbraň vyžaduje určitou &lt;strong&gt;minimální sílu a obratnost&lt;/strong&gt;. Pokud budeš používat zbraně na které nemáš dostatečné staty, bude jejich útok slabý.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;Pokud máš naopak &lt;strong&gt;více síly&lt;/strong&gt;, než zbraň vyžaduje, je její &lt;strong&gt;útok silnější&lt;/strong&gt;.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;Výše tvé agility ovlivňuje, kolik staminy tě bude stát každý útok." LoadedOn="1.10.2024 21:37:44" />
 		</PackageString>
+		<PackageString Name="ui_helpoverlay_combosTraining_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_combosTraining_s0100" Text="Comba jsou nejúčinnější útoky. Abys provedl combo, musíš zřetězit útoky těsně za sebou. Další útok musíš začít už tehdy, když tvá zbraň trefuje protivníka nebo jeho blokující zbraň." CreatedOn="27.3.2025 15:01:11" Translator="Warhorse" />
+		</PackageString>
 		<PackageString Name="ui_helpoverlay_crime_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_crime_s0000" Text="Potrestání za zločiny" CreatedOn="9.4.2024 16:52:51" Translator="Warhorse" />
 		</PackageString>
@@ -2189,7 +2207,7 @@
 			<Text StringName="ui_helpoverlay_crime_s1100" Text="&lt;accent&gt;Seznam trestů&lt;/accent&gt;" LoadedOn="16.4.2024 14:41:33" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_crime_s1200" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_crime_s1200" Text="Po vykonání každého z trestů budeš mít následky, které tě nějak poškozují. Ty vyprší časem, nebo se jich zbavíš vykonání Kajícné pouti." CreatedOn="9.4.2024 16:52:51" Translator="Warhorse" />
+			<Text StringName="ui_helpoverlay_crime_s1200" Text="&lt;strong&gt;Přijetí trestu&lt;/strong&gt; bude mít následky, které tě nějak poškodí. Ty vyprší časem, nebo vykonáním Kajícné Pouti." LoadedOn="4.11.2024 13:28:04" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_crime_s1300" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_crime_s1300" Text="&lt;label&gt;Pranýř&lt;/label&gt;" CreatedOn="9.4.2024 16:52:51" Translator="Warhorse" />
@@ -2318,7 +2336,7 @@
 			<Text StringName="ui_helpoverlay_crossbows_s0500" Text="$crossbow_execute; &lt;strong&gt;vystřelíš&lt;/strong&gt;" CreatedOn="4.4.2024 16:08:56" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice0_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_dice0_s0000" Text="Kostky: Základní pravidla (1/6)" LoadedOn="21.10.2024 11:54:33" />
+			<Text StringName="ui_helpoverlay_dice0_s0000" Text="Kostky: Základní pravidla (1/2)" LoadedOn="8.11.2024 15:45:47" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice0_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice0_s0100" Text="Pokud máš zájem o hazard, můžeš si ve většině hospod a táborů zahrát kostky." CreatedOn="25.4.2024 20:40:34" Translator="Warhorse" />
@@ -2390,7 +2408,7 @@
 			<Text StringName="ui_helpoverlay_dice1_s1700" Text="&lt;strong&gt;Ďáblova hlava funguje jako žolík, kdy doplní jednu hodnotu v libovolné kombinaci kostek&lt;/strong&gt;" CreatedOn="17.5.2024 19:10:25" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice2_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_dice2_s0000" Text="Kostky: Hra s odznakem (3/6)" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
+			<Text StringName="ui_helpoverlay_dice2_s0000" Text="Kostky: Hra s odznakem (1/4)" LoadedOn="8.11.2024 15:45:47" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice2_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice2_s0100" Text="Běžnou hru v kostky si můžeš okořenit hraním s kostkářským odznakem." CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
@@ -2399,7 +2417,7 @@
 			<Text StringName="ui_helpoverlay_dice2_s0200" Text="Pokud ty i tvůj soupeř máte odznak stejné úrovně (&lt;strong&gt;cínový&lt;/strong&gt;, &lt;strong&gt;stříbrný&lt;/strong&gt; nebo &lt;strong&gt;zlatý&lt;/strong&gt;), můžete si zahrát hru s odznakem a během ní využít jejich výhody.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;Každý odznak má jinou vlastnost, kterou lze během hry použít a získat tak výhodu oproti základním pravidlům hry.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;&lt;strong&gt;Schopnosti odznaku najdeš v jeho popisu v inventáři, nebo si je můžeš kdykoliv přečíst na následující stránce nápovědy.&lt;/strong&gt;" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice3_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_dice3_s0000" Text="Kostky: Seznam cínových odznaků (4/6)" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
+			<Text StringName="ui_helpoverlay_dice3_s0000" Text="Kostky: Cínové odznaky (2/4)" LoadedOn="8.11.2024 15:45:47" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice3_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice3_s0100" Text="&lt;accent&gt;Cínový odznak zdvojení&lt;/accent&gt;" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
@@ -2459,7 +2477,7 @@
 			<Text StringName="ui_helpoverlay_dice3_s1900" Text="&lt;label&gt;Pokračování na další straně&lt;/label&gt;" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice4_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_dice4_s0000" Text="Kostky: Seznam stříbrných odznaků (5/6)" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
+			<Text StringName="ui_helpoverlay_dice4_s0000" Text="Kostky: Stříbrné odznaky (3/4)" LoadedOn="8.11.2024 15:45:47" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice4_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice4_s0100" Text="&lt;accent&gt;Stříbrný odznak zdvojení&lt;/accent&gt;" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
@@ -2528,7 +2546,7 @@
 			<Text StringName="ui_helpoverlay_dice4_s2200" Text="Odznak právoplatného ptačího krále ti přidá k hodu kostku navíc. Použitelné dvakrát za hru." CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice5_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
-			<Text StringName="ui_helpoverlay_dice5_s0000" Text="Kostky: Seznam zlatých odznaků (6/6)" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
+			<Text StringName="ui_helpoverlay_dice5_s0000" Text="Kostky: Zlaté odznaky (4/4)" LoadedOn="8.11.2024 15:45:47" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dice5_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice5_s0100" Text="&lt;accent&gt;Zlatý odznak zdvojení&lt;/accent&gt;" CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
@@ -2602,6 +2620,27 @@
 		<PackageString Name="ui_helpoverlay_dice5_s2400" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dice5_s2400" Text="Památka na velký den Anežky a Oldřicha. Použitím můžeš hodit znovu až třemi kostkami. Použitelné jednou za hru." CreatedOn="21.10.2024 15:16:47" Translator="Warhorse" />
 		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0000" Text="Barvy Smrti" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0100" Text="Pomozte tajemnému umělci namalovat nejdůležitější obraz jeho života, odhalte jeho záhadnou minulost a projevte svou kreativitu při malování štítů v dobrodružství sahajícím od divokých lesů Trosecka po rušnou Kutnou Horu." LoadedOn="31.3.2025 14:58:17" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0300" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0300" Text="&lt;strong&gt;Novou příběhovou linii, odehrávající se na Trosecku i Kutnohorsku&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0400" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0400" Text="&lt;strong&gt;Možnost vytvořit si unikátní malby na kterýkoliv štít&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0500" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0500" Text="&lt;strong&gt;Nové unikátní zbraně a zbroje spojené s příběhem o tajemném malíři&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0600" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0600" Text="Začátek DLC najdeš pod ikonkou fialového štítu s rudou lebkou na Trosecku po dokoneční úkolu Komu zvoní hrana." LoadedOn="28.3.2025 8:41:41" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_banditCamps_s0700" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_banditCamps_s0700" Text="Koupit DLC" CreatedOn="1.4.2025 17:23:44" Translator="Warhorse" />
+		</PackageString>
 		<PackageString Name="ui_helpoverlay_dlc_barber_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dlc_barber_s0100" Text="Lázně Království českého nejsou známé pouze okouzlujícími lazebnicemi, ale i uznávanými bradýři, kteří dokáží každého pobudu proměnit v pohledného kavalíra. Za malou úplatu, samozřejmě." CreatedOn="11.2.2025 16:47:33" Translator="Warhorse" />
 		</PackageString>
@@ -2619,6 +2658,24 @@
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dlc_barber_s0600" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dlc_barber_s0600" Text="Služby bradýře můžeš využít v lázních u Želejovského hostince na Trosecku nebo v lázních U Adama v Kutné Hoře. Na mapě jsou označeni ikonou." CreatedOn="11.2.2025 16:47:33" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0000" Text="Jezdecké soutěže" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0100" Text="Prokažte svoje jezdecké a střelecké dovednosti a rozsuďte spor dvou kočovníků. Zúčastněte se jízdní lukostřelby, kde vítězí dobrá muška a rychlý postřeh, nebo odstartuje v přespolním dostihu a prověřte výdrž svého koně a znalost troseckého kraje." CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0300" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0300" Text="&lt;strong&gt;Možnost vyzkoušet si rychlou a krkolomnou jízdu v novém úkolu&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0400" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0400" Text="&lt;strong&gt;Přístup k novým aktivitám: jízdní lukostřelbě a přespolním závodům&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0500" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0500" Text="&lt;strong&gt;Příležitost získat dva unikátní perky a části koňské výstroje&lt;/strong&gt;" CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_dlc_horseRacing_s0600" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_dlc_horseRacing_s0600" Text="Aktivity lze začít v kočovnickém táboře u lukostřelce Bibreka a handlíře Mikolaje. Oba jsou označeni ikonkou." CreatedOn="26.3.2025 13:15:17" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_helpoverlay_dog0_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_dog0_s0000" Text="Tvůj pes: Základ (1/2)" CreatedOn="9.4.2024 18:14:49" Translator="Warhorse" />
@@ -3652,6 +3709,24 @@
 		<PackageString Name="ui_helpoverlay_sharpening_s0900" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_sharpening_s0900" Text="Až bude zbraň ideálně nabroušená, &lt;strong&gt;Jindra to pozná a řekne ti to&lt;/strong&gt;." CreatedOn="9.4.2024 12:08:07" Translator="Warhorse" />
 		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0000" Text="Malíř štítů" CreatedOn="18.2.2025 16:32:29" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0100" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0100" Text="Dones malíři jakýkoli štít a on ti ho zdarma přemaluje přesně podle tvých představ." CreatedOn="18.2.2025 16:32:29" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0200" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0200" Text="Malířské dílny najdeš na hradě &lt;strong&gt;Trosky&lt;/strong&gt; na Trosecku a v &lt;strong&gt;Kutné Hoře&lt;/strong&gt;. &lt;strong&gt;Na mapě jsou označeny ikonou.&lt;/strong&gt;" CreatedOn="18.2.2025 16:32:29" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0300" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0300" Text="Tvorba motivu na štít je rozdělena do pěti kroků a v každém z nich si volíš část malby. Kroky vidíš v rozcestníku v horní části obrazovky." CreatedOn="18.2.2025 16:32:29" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0400" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0400" Text="$dialog_move_prev; $dialog_move_next; &lt;strong&gt;procházíš jednotlivými kroky&lt;/strong&gt;&lt;br/&gt;$focus_prev; $focus_next; &lt;strong&gt;procházíš náhledy úprav&lt;/strong&gt;&lt;br/&gt;$confirm^; &lt;strong&gt;dokončíš štít&lt;/strong&gt;" LoadedOn="8.4.2025 16:28:36" />
+		</PackageString>
+		<PackageString Name="ui_helpoverlay_shieldPainting_s0800" Type="Menu" Comment="MenuHelpOverlays.fla">
+			<Text StringName="ui_helpoverlay_shieldPainting_s0800" Text="&lt;label&gt;Rozcestník kroků&lt;/label&gt;" LoadedOn="20.2.2025 14:25:29" />
+		</PackageString>
 		<PackageString Name="ui_helpoverlay_shop_s0000" Type="Menu" Comment="MenuHelpOverlays.fla">
 			<Text StringName="ui_helpoverlay_shop_s0000" Text="Obchod" CreatedOn="30.4.2024 20:13:00" Translator="Warhorse" />
 		</PackageString>
@@ -3985,6 +4060,9 @@
 		<PackageString Name="ui_hint_dice_use_set_dice" Type="Minigames" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_hint_dice_use_set_dice" Text="Nastav  kostku odznakem" LoadedOn="17.6.2024 9:41:56" />
 		</PackageString>
+		<PackageString Name="ui_hint_forge_builder_stop" Type="Hud" Comment="defaultActionHelp.xml">
+			<Text StringName="ui_hint_forge_builder_stop" Text="Exit" CreatedOn="21.2.2025 10:32:21" Translator="Michal Jarolímek" />
+		</PackageString>
 		<PackageString Name="ui_hint_helpscreen" Type="Menu" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_hint_helpscreen" Text="Help" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -4030,11 +4108,20 @@
 		<PackageString Name="ui_hint_qam_wepaon_holster" Type="Hud" Comment="UIHudQAM.cpp">
 			<Text StringName="ui_hint_qam_wepaon_holster" Text="Holster weapon" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_hint_reset_shield" Type="Hud" Comment="defaultActionHelp.xml">
+			<Text StringName="ui_hint_reset_shield" Text="Resetovat štít" CreatedOn="27.2.2025 13:49:13" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_hint_reset_shield_info" Type="Hud" Comment="defaultActionHelp.xml">
+			<Text StringName="ui_hint_reset_shield_info" Text="Odmaluješ štít na svou původní podobu." CreatedOn="27.2.2025 15:31:10" Translator="Michal Jarolímek" />
+		</PackageString>
 		<PackageString Name="ui_hint_surrender" Type="Hud" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_hint_surrender" Text="Surrender" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_hint_transcription_skip" Type="Minigames" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_hint_transcription_skip" Text="Skip" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_horse_Encumbered" Type="Hud" Comment="UIHudMessages.cpp">
+			<Text StringName="ui_horse_Encumbered" Text="The horse is encumbered." CreatedOn="28.2.2025 9:49:00" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_horse_indoor_disable" Type="Apse" Comment="UIApseInventory.cpp">
 			<Text StringName="ui_horse_indoor_disable" Text="Odsud se ke koni nedostaneš." CreatedOn="21.6.2024 13:54:01" Translator="Michal Jarolímek" />
@@ -4044,6 +4131,9 @@
 		</PackageString>
 		<PackageString Name="ui_horse_move_encumbered_disable" Type="Apse" Comment="UIApseInventory.cpp">
 			<Text StringName="ui_horse_move_encumbered_disable" Text="Tvůj kůň víc neunese." CreatedOn="21.6.2024 13:54:01" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_horse_NoSpaceForDismount" Type="Hud" Comment="UIHudMessages.cpp">
+			<Text StringName="ui_horse_NoSpaceForDismount" Text="No free space for dismount." CreatedOn="28.2.2025 9:49:00" Translator="Warhorse" />
 		</PackageString>
 		<PackageString Name="ui_horse_overloaded" Type="Menu">
 			<Text StringName="ui_horse_overloaded" Text="Tvůj kůň už víc neunese!" LoadedOn="16.1.2024 14:39:37" />
@@ -4312,6 +4402,9 @@
 		<PackageString Name="ui_hud_mount_and_steal" Type="Hud" Comment="Horse.lua">
 			<Text StringName="ui_hud_mount_and_steal" Text="Mount (steal)" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_hud_new_codex_entry" Type="Hud" Comment="hud/PoiNotification.as">
+			<Text StringName="ui_hud_new_codex_entry" Text="Nový záznam v Kodexu" CreatedOn="7.2.2025 16:52:40" Translator="Warhorse" />
+		</PackageString>
 		<PackageString Name="ui_hud_perk_no_rest_for_the_wicked" Type="Hud">
 			<Text StringName="ui_hud_perk_no_rest_for_the_wicked" Text="Ještě kousek!" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -4374,6 +4467,15 @@
 		</PackageString>
 		<PackageString Name="ui_hud_sharpening_step" Type="Minigames" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_hud_sharpening_step" Text="Step" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_hud_shield_new_color" Type="Hud" Comment="ShieldPaintingNotification.as">
+			<Text StringName="ui_hud_shield_new_color" Text="Získal jsi novou barvu na štít" CreatedOn="19.2.2025 8:49:52" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_hud_shield_new_pattern" Type="Hud" Comment="ShieldPaintingNotification.as">
+			<Text StringName="ui_hud_shield_new_pattern" Text="Získal jsi nový vzor na štít" CreatedOn="19.2.2025 8:49:52" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_hud_shield_new_symbol" Type="Hud" Comment="ShieldPaintingNotification.as">
+			<Text StringName="ui_hud_shield_new_symbol" Text="Získal jsi nový symbol na štít" CreatedOn="19.2.2025 8:49:52" Translator="Michal Jarolímek" />
 		</PackageString>
 		<PackageString Name="ui_hud_sit" Type="Hud" Comment="Bed.lua, Chair.lua">
 			<Text StringName="ui_hud_sit" Text="Sit" LoadedOn="16.1.2024 14:39:37" />
@@ -5041,6 +5143,9 @@
 		<PackageString Name="ui_item_selection_sharpening" Type="Other" Comment="ScriptBindActor.cpp">
 			<Text StringName="ui_item_selection_sharpening" Text="Vyber zbraň kterou chceš nabrousit:" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_item_selection_shield_painting" Type="Hud" Comment="DialogShieldPaintingExtension.cpp">
+			<Text StringName="ui_item_selection_shield_painting" Text="Štíty k namalování" CreatedOn="2.1.2025 13:17:02" Translator="Michal Jarolímek" />
+		</PackageString>
 		<PackageString Name="ui_item_sniffable_by_dog" Type="Apse" Comment="InvEnum.as">
 			<Text StringName="ui_item_sniffable_by_dog" Text="Tento předmět můžeš dát očichat psovi, aby našel stopu." LoadedOn="30.9.2024 10:21:04" />
 		</PackageString>
@@ -5564,10 +5669,10 @@
 			<Text StringName="ui_level" Text="Level" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_level_fasttravel_kutnohorsko" Type="Apse" Comment="Level Trosecko">
-			<Text StringName="ui_level_fasttravel_kutnohorsko" Text="kutnohorsko" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_level_fasttravel_kutnohorsko" Text="Převoz na Kutnohorsko" LoadedOn="14.2.2025 14:46:54" />
 		</PackageString>
 		<PackageString Name="ui_level_fasttravel_trosecko" Type="Apse" Comment="Level Kutnohorsko">
-			<Text StringName="ui_level_fasttravel_trosecko" Text="trosecko" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_level_fasttravel_trosecko" Text="Převoz na Trosecko" LoadedOn="14.2.2025 14:46:54" />
 		</PackageString>
 		<PackageString Name="ui_LightDetail" Type="Menu" Comment="menu_buttons.xml">
 			<Text StringName="ui_LightDetail" Text="Lighting" LoadedOn="16.1.2024 14:39:37" />
@@ -5825,7 +5930,7 @@
 			<Text StringName="ui_main_quests" Text="Main quests" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_mainQuestTrackLimit" Type="Apse" Comment="UIQuestLog.cpp">
-			<Text StringName="ui_mainQuestTrackLimit" Text="You can track only three main quests!" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_mainQuestTrackLimit" Text="You can track only one main quest!" LoadedOn="4.11.2024 13:28:04" />
 		</PackageString>
 		<PackageString Name="ui_Manual" Type="Menu" Comment="menu_options.xml">
 			<Text StringName="ui_Manual" Text="Manual" CreatedOn="25.9.2024 17:43:10" Translator="Michal Jarolímek" />
@@ -5908,6 +6013,9 @@
 		<PackageString Name="ui_maplegend_benchUnderTrosky" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_benchUnderTrosky" Text="Lavička pod Troskami" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_maplegend_bibrekAltair" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_bibrekAltair" Text="Bibrekův oltář" CreatedOn="8.1.2025 10:14:14" Translator="Petra Emmerová" />
+		</PackageString>
 		<PackageString Name="ui_maplegend_blackHorsePub" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_blackHorsePub" Text="U černého koně" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -5916,6 +6024,9 @@
 		</PackageString>
 		<PackageString Name="ui_maplegend_blacksmithRadovan" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_blacksmithRadovan" Text="Kovář Radovan" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_maplegend_bothAltair" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_bothAltair" Text="Společný oltář" CreatedOn="8.1.2025 10:14:14" Translator="Petra Emmerová" />
 		</PackageString>
 		<PackageString Name="ui_maplegend_bozenasHerbalSpot" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_bozenasHerbalSpot" Text="Boženin palouček" LoadedOn="16.1.2024 14:39:37" />
@@ -6010,6 +6121,9 @@
 		<PackageString Name="ui_maplegend_crayfishSpot" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_crayfishSpot" Text="Račí mělčina" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_maplegend_crazyOldManHut" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_crazyOldManHut" Text="Bláznova zemnice" LoadedOn="24.11.2024 15:51:03" />
+		</PackageString>
 		<PackageString Name="ui_maplegend_crossAndSkeleton" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_crossAndSkeleton" Text="Kříž a kostlivec" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -6095,7 +6209,7 @@
 			<Text StringName="ui_maplegend_forgotenBeeHives" Text="Zapomenuté včelí úly" CreatedOn="5.3.2024 16:16:27" Translator="Zdeněk Glatz" />
 		</PackageString>
 		<PackageString Name="ui_maplegend_fountain" Type="Apse" Comment="MapMarkTypes.h">
-			<Text StringName="ui_maplegend_fountain" Text="Kašna" LoadedOn="16.1.2024 14:39:37" />
+			<Text StringName="ui_maplegend_fountain" Text="Kašna na Vinné ulici" LoadedOn="6.1.2025 13:48:24" />
 		</PackageString>
 		<PackageString Name="ui_maplegend_freshClearing" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_freshClearing" Text="Čerstvá mýtina" LoadedOn="16.1.2024 14:39:37" />
@@ -6160,6 +6274,9 @@
 		<PackageString Name="ui_maplegend_innCertovka" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_innCertovka" Text="Čertovka" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_maplegend_killingFields" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_killingFields" Text="Nerozhodný duel" LoadedOn="18.12.2024 11:28:54" />
+		</PackageString>
 		<PackageString Name="ui_maplegend_kingfishersBathhouse" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_kingfishersBathhouse" Text="Lázne u ledňáčka" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -6210,6 +6327,9 @@
 		</PackageString>
 		<PackageString Name="ui_maplegend_mezholezy" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_mezholezy" Text="Vypálené Mezholezy" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_maplegend_mikolajAltair" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_mikolajAltair" Text="Mikolajův oltář" CreatedOn="8.1.2025 10:14:14" Translator="Petra Emmerová" />
 		</PackageString>
 		<PackageString Name="ui_maplegend_millerKrejzl" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_millerKrejzl" Text="Mlynář Krejzl" CreatedOn="10.6.2024 17:24:48" Translator="Zdeněk Glatz" />
@@ -6277,6 +6397,9 @@
 		<PackageString Name="ui_maplegend_paganBurialSite" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_paganBurialSite" Text="Pohanské pohřebiště" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_maplegend_paganShrine" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_paganShrine" Text="Pohanská svatyně" CreatedOn="6.11.2024 9:42:57" Translator="Zdeněk Glatz" />
+		</PackageString>
 		<PackageString Name="ui_maplegend_partyPlace" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_partyPlace" Text="Chlastací plácek" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -6324,6 +6447,9 @@
 		</PackageString>
 		<PackageString Name="ui_maplegend_ruin" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_ruin" Text="Zřícenina" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_maplegend_ruinedFarm" Type="Apse" Comment="MapMarkTypes.h">
+			<Text StringName="ui_maplegend_ruinedFarm" Text="Rozpadlé stavení" CreatedOn="15.11.2024 16:58:18" Translator="Zdeněk Glatz" />
 		</PackageString>
 		<PackageString Name="ui_maplegend_ruinedHouse" Type="Apse" Comment="MapMarkTypes.h">
 			<Text StringName="ui_maplegend_ruinedHouse" Text="Ruina chalupy" LoadedOn="16.1.2024 14:39:37" />
@@ -7072,6 +7198,9 @@
 		<PackageString Name="ui_rep_stolen_sold" Type="Hud">
 			<Text StringName="ui_rep_stolen_sold" Text="Stolen item sold!" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
+		<PackageString Name="ui_repainted" Type="Apse" Comment="InvEnum.as">
+			<Text StringName="ui_repainted" Text="Repainted" CreatedOn="21.1.2025 14:12:47" Translator="Warhorse" />
+		</PackageString>
 		<PackageString Name="ui_req_skill" Type="Apse" Comment="InvEnum.as">
 			<Text StringName="ui_req_skill" Text="Required skill" LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
@@ -7080,6 +7209,9 @@
 		</PackageString>
 		<PackageString Name="ui_reset" Type="Menu" Comment="menu_buttons.xml">
 			<Text StringName="ui_reset" Text="Reset" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_reset_not_repainted_shield" Type="Hud" Comment="defaultActionHelp.xml">
+			<Text StringName="ui_reset_not_repainted_shield" Text="Štít si ještě nepřemaloval." CreatedOn="27.2.2025 13:49:13" Translator="Michal Jarolímek" />
 		</PackageString>
 		<PackageString Name="ui_reset_tutorials" Type="Hud" Comment="defaultActionHelp.xml">
 			<Text StringName="ui_reset_tutorials" Text="Reset tutorial" LoadedOn="16.1.2024 14:39:37" />
@@ -7101,9 +7233,6 @@
 		</PackageString>
 		<PackageString Name="ui_RewardNotChosen" Type="Menu">
 			<Text StringName="ui_RewardNotChosen" Text="Reward was not chosen." LoadedOn="16.1.2024 14:39:37" />
-		</PackageString>
-		<PackageString Name="ui_rpg_CannotJumpWhileEncumbered" Type="Hud" Comment="UIHudMessages.cpp">
-			<Text StringName="ui_rpg_CannotJumpWhileEncumbered" Text="Jsi tak přetížený, že nemůžeš skákat." LoadedOn="16.1.2024 14:39:37" />
 		</PackageString>
 		<PackageString Name="ui_rpg_CannotSprintWhileEncumbered" Type="Hud" Comment="UIHudMessages.cpp">
 			<Text StringName="ui_rpg_CannotSprintWhileEncumbered" Text="Jsi tak přetížený, že nemůžeš sprintovat." LoadedOn="16.1.2024 14:39:37" />
@@ -7200,6 +7329,24 @@
 		</PackageString>
 		<PackageString Name="ui_ShadowsDetailTT" Type="Menu" Comment="menu_buttons.xml">
 			<Text StringName="ui_ShadowsDetailTT" Text="Adjusts the quality and distance of shadow rendering." LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_accept" Type="Hud" Comment="defaultActionHelp.xml">
+			<Text StringName="ui_shield_painting_accept" Text="Accept change" CreatedOn="2.1.2025 13:17:02" Translator="Michal Jarolímek" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_category" Type="Hud" Comment="ShieldPaintingExtensionController.cpp">
+			<Text StringName="ui_shield_painting_category" Text="Kategorie" LoadedOn="5.2.2025 14:17:14" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_color1" Type="Hud" Comment="ShieldPaintingExtensionController.cpp">
+			<Text StringName="ui_shield_painting_color1" Text="Barva I." LoadedOn="23.1.2025 12:08:25" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_color2" Type="Hud" Comment="ShieldPaintingExtensionController.cpp">
+			<Text StringName="ui_shield_painting_color2" Text="Barva II." LoadedOn="23.1.2025 12:08:25" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_pattern" Type="Hud" Comment="ShieldPaintingExtensionController.cpp">
+			<Text StringName="ui_shield_painting_pattern" Text="Vzor" LoadedOn="5.2.2025 14:17:14" />
+		</PackageString>
+		<PackageString Name="ui_shield_painting_symbol" Type="Hud" Comment="ShieldPaintingExtensionController.cpp">
+			<Text StringName="ui_shield_painting_symbol" Text="Symbol" LoadedOn="23.1.2025 12:08:25" />
 		</PackageString>
 		<PackageString Name="ui_shop_consume" Type="Apse" Comment="InvEnum.as">
 			<Text StringName="ui_shop_consume" Text="Spotřebuješ:" LoadedOn="16.1.2024 14:39:37" />
@@ -7563,6 +7710,12 @@
 		</PackageString>
 		<PackageString Name="ui_tip_category" Type="Apse" Comment="ApseInventoryList/main.as, defaultActionHelp.xml">
 			<Text StringName="ui_tip_category" Text="Headings" LoadedOn="16.1.2024 14:39:37" />
+		</PackageString>
+		<PackageString Name="ui_tip_cost_repair" Type="Apse" Comment="InvEnum.as">
+			<Text StringName="ui_tip_cost_repair" Text="Cena opravy" CreatedOn="30.1.2025 18:54:43" Translator="Warhorse" />
+		</PackageString>
+		<PackageString Name="ui_tip_cost_wash" Type="Apse" Comment="InvEnum.as">
+			<Text StringName="ui_tip_cost_wash" Text="Spotřeba mýdla" LoadedOn="31.1.2025 11:16:47" />
 		</PackageString>
 		<PackageString Name="ui_tip_count" Type="Apse" Comment="InvEnum.as">
 			<Text StringName="ui_tip_count" Text="Count" LoadedOn="16.1.2024 14:39:37" />

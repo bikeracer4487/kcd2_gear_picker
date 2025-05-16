@@ -200,7 +200,7 @@
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_commonBakerPastry" Mode="AmountFraction" ModeValue="0.7" ModeValueVariation="0.2" Health="1">
 			<PresetItem Name="water" Amount="3" Weight="0.75" />
-			<PresetItem Name="egg" Amount="6" Weight="0.5" />
+			<PresetItem Name="egg" Amount="6" Weight="5" />
 			<PresetItem Name="pretzel" Amount="20" Weight="1" />
 			<PresetItem Name="breadroll" Amount="20" Weight="1" />
 			<PresetItem Name="bread" Amount="20" Weight="2" />
@@ -503,6 +503,7 @@
 			<InventoryPresetRef Name="inventory_goodsGarlic" />
 			<InventoryPresetRef Name="inventory_goodsOnion" />
 			<InventoryPresetRef Name="inventory_smallAmountOfMushrooms"/>
+			<InventoryPresetRef Name="inventory_goodsEggs" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_goodsWatermelon" Mode="AmountCount" ModeValue="5.5" ModeValueVariation="1">
 			<PresetItem Name="watermelon" Amount="20" />
@@ -641,6 +642,7 @@
 		<InventoryPreset Name="inventory_commonInnkeeperPotion" Mode="OneChild" >
 			<PresetItem Name="potion_insomnia" Amount="1"/>
 			<PresetItem Name="potion_antidote" Amount="1"/>
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_commonInnkeeperTorch"  Mode="AmountCount" ModeValue="2.5" ModeValueVariation="1" Health="1">
 			<PresetItem Name="torch_weapon" Amount="5"/>
@@ -665,6 +667,10 @@
 			<InventoryPresetRef Name="inventory_goodsDriedRabbit" />
 			<InventoryPresetRef Name="inventory_goodsDriedBacon" />
 			<InventoryPresetRef Name="inventory_goodsCheeseQuarter" />
+			<InventoryPresetRef Name="inventory_goodsEggs" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_goodsEggs" Mode="AmountCount" ModeValue="4" ModeValueVariation="2" Health="1">
+			<PresetItem Name="egg" Amount="6" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_goodsDriedApple" Mode="AmountCount" ModeValue="16" ModeValueVariation="3" Health="1">
 			<PresetItem Name="appleDried" Amount="20" />
@@ -1435,7 +1441,6 @@
 			<PresetItem Name="HoseLoose01_m05_C" Amount="1" Weight="1" />
 			<PresetItem Name="HoseLoose01_m06_C" Amount="1" Weight="1" />
 			<PresetItem Name="HoseLoose01_m07_C" Amount="1" Weight="1" />
-			<PresetItem Name="HoseLooseMusa_m01" Amount="1" Weight="1" />
 			<PresetItem Name="HoseSeparate01_m01_D" Amount="1" Weight="1" />
 			<PresetItem Name="HoseSeparate01_m01_E" Amount="1" Weight="1" />
 			<PresetItem Name="HoseSeparate01_m02_D" Amount="1" Weight="1" />

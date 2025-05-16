@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__ttkc.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__ttkc.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -68,59 +68,59 @@ String Table:
   [53] ttkc_woman_11
   [54] char_GENERIC_WOMAN_COMMONER_02
   [55] ttkc_milena
-  [56] trosecko_settlements_troskovice_commonFolk_peasants_parcel03_jakesAndFamily
-  [57] char_MILENA_Z_TROSKOVIC
-  [58] ttkc_man_14
-  [59] ttkc_man_2
-  [60] ttkc_woman_8
-  [61] trosecko_settlements_troskovice_commonFolk_peasants_parcel08
-  [62] ttkc_woman_6
-  [63] char_POMOCNICE_U_TROSKOVICKEHO_OBCHODNIKA
-  [64] ttkc_man_24
-  [65] char_GENERIC_MAN_COMMONER_18
-  [66] ttkc_drozd
-  [67] trosecko_settlements_troskovice_nobility_mayor
-  [68] char_RYCHTAR_DROZD
-  [69] ttkc_slama
-  [70] char_PACHOLEK_SLAMA
-  [71] ttkc_woodworker
-  [72] char_TRUHLAR
-  [73] ttkc_man_1
-  [74] trosecko_settlements_troskovice_nobility_commander
-  [75] char_VELITEL_STRAZE_TROSKOVICE
-  [76] ttkc_woman_2
-  [77] char_DEVECKA_Z_TROSKOVICKE_HOSPODY
-  [78] ttkc_marusa
-  [79] char_MARUSKA_DCERA_JAKESE
-  [80] ttkc_olina
-  [81] char_OLINA_DCERA_JAKESE
-  [82] ttkc_prasta
-  [83] char_PASAK_PRASTA
-  [84] ttkc_man_16
-  [85] char_KOSTKAR_FILIP
-  [86] ttkc_inkeeper
-  [87] UltralightMerchants
-  [88] char_HOSPODSKA_ALZBETA
-  [89] ttkc_man_19
-  [90] char_VUJTEK
-  [91] ttkc_bartosek
-  [92] trosecko_settlements_troskovice_commonFolk_tradersAndCraftmans_tailor
-  [93] char_KREJCI_BARTOSEK_TROSKOVICE
-  [94] ttkc_man_3
-  [95] char_GENERIC_MAN_GUARD_18
-  [96] ttkc_man_21
-  [97] char_GENERIC_MAN_GUARD_15
-  [98] ttkc_marketa
-  [99] trosecko_settlements_troskovice_commonFolk_peasants_parcel07
-  [100] char_VDOVA_MARKETA
-  [101] ttkc_gravedigger
-  [102] trosecko_outskirts_gravediggers_troskovice
-  [103] char_HROBNIK_IGNAC_Z_TROSKOVIC
-  [104] ttkc_woman_4
-  [105] char_GENERIC_WOMAN_MARKET_POTTER_GERMAN_01
-  [106] ttkc_man_15
-  [107] char_GENERIC_MAN_COMMONER_06
-  [108] ttkc_jakes
+  [56] char_MILENA_Z_TROSKOVIC
+  [57] ttkc_man_14
+  [58] ttkc_man_2
+  [59] ttkc_woman_8
+  [60] trosecko_settlements_troskovice_commonFolk_peasants_parcel08
+  [61] ttkc_woman_6
+  [62] char_POMOCNICE_U_TROSKOVICKEHO_OBCHODNIKA
+  [63] ttkc_man_24
+  [64] char_GENERIC_MAN_COMMONER_18
+  [65] ttkc_drozd
+  [66] trosecko_settlements_troskovice_nobility_mayor
+  [67] char_RYCHTAR_DROZD
+  [68] ttkc_slama
+  [69] char_PACHOLEK_SLAMA
+  [70] ttkc_woodworker
+  [71] char_TRUHLAR
+  [72] ttkc_man_1
+  [73] trosecko_settlements_troskovice_nobility_commander
+  [74] char_VELITEL_STRAZE_TROSKOVICE
+  [75] ttkc_woman_2
+  [76] char_DEVECKA_Z_TROSKOVICKE_HOSPODY
+  [77] ttkc_marusa
+  [78] char_MARUSKA_DCERA_JAKESE
+  [79] ttkc_olina
+  [80] char_OLINA_DCERA_JAKESE
+  [81] ttkc_prasta
+  [82] char_PASAK_PRASTA
+  [83] ttkc_man_16
+  [84] char_KOSTKAR_FILIP
+  [85] ttkc_inkeeper
+  [86] UltralightMerchants
+  [87] char_HOSPODSKA_ALZBETA
+  [88] ttkc_man_19
+  [89] char_VUJTEK
+  [90] ttkc_bartosek
+  [91] trosecko_settlements_troskovice_commonFolk_tradersAndCraftmans_tailor
+  [92] char_KREJCI_BARTOSEK_TROSKOVICE
+  [93] ttkc_man_3
+  [94] char_GENERIC_MAN_GUARD_18
+  [95] ttkc_man_21
+  [96] char_GENERIC_MAN_GUARD_15
+  [97] ttkc_marketa
+  [98] trosecko_settlements_troskovice_commonFolk_peasants_parcel07
+  [99] char_VDOVA_MARKETA
+  [100] ttkc_gravedigger
+  [101] trosecko_outskirts_gravediggers_troskovice
+  [102] char_HROBNIK_IGNAC_Z_TROSKOVIC
+  [103] ttkc_woman_4
+  [104] char_GENERIC_WOMAN_MARKET_POTTER_GERMAN_01
+  [105] ttkc_man_15
+  [106] char_GENERIC_MAN_COMMONER_06
+  [107] ttkc_jakes
+  [108] trosecko_settlements_troskovice_commonFolk_peasants_parcel03_jakesAndFamily
   [109] char_STATKAR_JAKES
   [110] ttkc_man_10
   [111] char_GENERIC_MAN_COMMONER_20

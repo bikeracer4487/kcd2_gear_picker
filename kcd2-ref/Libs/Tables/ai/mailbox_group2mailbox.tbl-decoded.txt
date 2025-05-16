@@ -1,13 +1,13 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/mailbox_group2mailbox.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ai\mailbox_group2mailbox.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 3713511473
   Layout Hash ........... 1079996233
   Table Version ......... 1
-  Line Count ............ 36
+  Line Count ............ 37
   String Data Size ...... 0
   Unique String Count ... 0
-  File Size ............. 1324
+  File Size ............. 1360
   Calculated Line Size .. 36 (rem. 0)

@@ -9,9 +9,13 @@
 		<role _locked="false" _role_string_name="role_ADAM_ZELEJOV" metarole_name="NPC" role_name="ADAM_ZELEJOV" />
 		<role _locked="false" _role_string_name="role_ADAMOVY_LAZNE_LAZEBNICE" metarole_name="NPC" role_name="ADAMOVY_LAZNE_LAZEBNICE" />
 		<role _locked="false" _role_string_name="role_ADAMOVY_LAZNE_SPRAVCOVA" metarole_name="NPC" role_name="ADAMOVY_LAZNE_SPRAVCOVA" />
+		<role _locked="false" _role_string_name="role_ADELA_Z_MNISKU" metarole_name="NPC" role_name="ADELA_Z_MNISKU" />
 		<role _locked="false" _role_string_name="role_ADLETA" metarole_name="NPC" role_name="ADLETA" />
 		<role _locked="false" _role_string_name="role_ADLETIN_BODYGUARD" metarole_name="NPC" role_name="ADLETIN_BODYGUARD" />
+		<role _locked="false" _role_string_name="role_AKTIVITA_KOVANI_NAHODNY_ZAKAZNIK_MUZ" metarole_name="NPC" role_name="AKTIVITA_KOVANI_NAHODNY_ZAKAZNIK_MUZ" />
+		<role _locked="false" _role_string_name="role_AKTIVITA_KOVANI_NAHODNY_ZAKAZNIK_ZENA" metarole_name="NPC" role_name="AKTIVITA_KOVANI_NAHODNY_ZAKAZNIK_ZENA" />
 		<role _locked="false" _role_string_name="role_ALBIK_Z_UNICOVA" metarole_name="NPC" role_name="ALBIK_Z_UNICOVA" />
+		<role _locked="false" _role_string_name="role_ALBIK_ZATYKANI" metarole_name="STRAZ_ZATYKANI" role_name="ALBIK_ZATYKANI" />
 		<role _locked="false" _role_string_name="role_ALCHYMIE_BLIN_JE_NAMLETY" metarole_name="ALCHEMY_INGREDIENT_MILLED_NIGHTSHADE" role_name="ALCHYMIE_BLIN_JE_NAMLETY" />
 		<role _locked="false" _role_string_name="role_ALCHYMIE_BLIN_JE_NEDOVARENY" metarole_name="ALCHEMY_INGREDIENT_UNDERDONE_NIGHTSHADE" role_name="ALCHYMIE_BLIN_JE_NEDOVARENY" />
 		<role _locked="false" _role_string_name="role_ALCHYMIE_BLIN_JE_NENAMLETY" metarole_name="ALCHEMY_INGREDIENT_NOT_MILLED_NIGHTSHADE" role_name="ALCHYMIE_BLIN_JE_NENAMLETY" />
@@ -189,6 +193,10 @@
 		<role _locked="false" _role_string_name="role_AULITZUV_VOJAK_SI_VSIML_ZMIZENI_STRAZCE_BRANY_BUDDY" metarole_name="BUDDY_SI_VSIML_ZMIZENI_NPC_A_JDE_HO_HLEDAT" role_name="AULITZUV_VOJAK_SI_VSIML_ZMIZENI_STRAZCE_BRANY_BUDDY" />
 		<role _locked="false" _role_string_name="role_AUTOTEST_NPCSTATE_SAVELOAD" metarole_name="AUTOTEST_NPCSTATE_SAVELOAD" role_name="AUTOTEST_NPCSTATE_SAVELOAD" />
 		<role _locked="false" _role_string_name="role_BABA_TROSKY" metarole_name="NPC" role_name="BABA_TROSKY" />
+		<role _locked="false" _role_string_name="role_BALADAZHADRU_ALMUZNIK" metarole_name="NPC" role_name="BALADAZHADRU_ALMUZNIK" />
+		<role _locked="false" _role_string_name="role_BALADAZHADRU_VYKUPNIK_1" metarole_name="NPC" role_name="BALADAZHADRU_VYKUPNIK_1" />
+		<role _locked="false" _role_string_name="role_BALADAZHADRU_VYKUPNIK_2" metarole_name="NPC" role_name="BALADAZHADRU_VYKUPNIK_2" />
+		<role _locked="false" _role_string_name="role_BALADAZHDARU_VYKUPNICI" metarole_name="NPC" role_name="BALADAZHDARU_VYKUPNICI" />
 		<role _locked="false" _role_string_name="role_BALENA_STRAZ_SVATBA" metarole_name="NPC" role_name="BALENA_STRAZ_SVATBA" />
 		<role _locked="false" _role_string_name="role_BANDITA_3_KOPEC_VYSOKA" metarole_name="NPC" role_name="BANDITA_3_KOPEC_VYSOKA" />
 		<role _locked="false" _role_string_name="role_BANDITA_4_KOPEC_VYSOKA" metarole_name="NPC" role_name="BANDITA_4_KOPEC_VYSOKA" />
@@ -199,6 +207,7 @@
 		<role _locked="false" _role_string_name="role_BANDITA_UTOCI_NA_HRACE_V_TRESPASSU_KVULI_ZBRANI" metarole_name="CAMPER_VIDI_HRACE_SE_ZBRANI_V_RUCE_V_TRESPASSU_A_BUDE_UTOCIT" role_name="BANDITA_UTOCI_NA_HRACE_V_TRESPASSU_KVULI_ZBRANI" />
 		<role _locked="false" _role_string_name="role_BANDITA_VOLA_POPLACH" metarole_name="BANDITA_VOLA_POPLACH" role_name="BANDITA_VOLA_POPLACH" />
 		<role _locked="false" _role_string_name="role_BANDITA_VRAH" metarole_name="NPC" role_name="BANDITA_VRAH" />
+		<role _locked="false" _role_string_name="role_BANDITA_VRAH_VYHANI_HRACE" metarole_name="CAMP_TRESPASS_CHAT" role_name="BANDITA_VRAH_VYHANI_HRACE" />
 		<role _locked="false" _role_string_name="role_BARA" metarole_name="NPC" role_name="BARA" />
 		<role _locked="false" _role_string_name="role_BARBER" metarole_name="BARBER" role_name="BARBER" />
 		<role _locked="false" _role_string_name="role_BARBER_SLUZBA_ZAPLACENA" metarole_name="NPC" role_name="BARBER_SLUZBA_ZAPLACENA" />
@@ -355,6 +364,7 @@
 		<role _locked="false" _role_string_name="role_CHERTHAN" metarole_name="NPC" role_name="CHERTHAN" />
 		<role _locked="false" _role_string_name="role_CHLAPIK_S_DOPISEM" metarole_name="NPC" role_name="CHLAPIK_S_DOPISEM" />
 		<role _locked="false" _role_string_name="role_CHRAMOSTA" metarole_name="NPC" role_name="CHRAMOSTA" />
+		<role _locked="false" _role_string_name="role_CIRKEVNI_DAROVANI" metarole_name="NPC" role_name="CIRKEVNI_DAROVANI" />
 		<role _locked="false" _role_string_name="role_CIVILISTI_NEBAKOV" metarole_name="NPC" role_name="CIVILISTI_NEBAKOV" />
 		<role _locked="false" _role_string_name="role_CLEN_BANDY_METRO" metarole_name="NPC" role_name="CLEN_BANDY_METRO" />
 		<role _locked="false" _role_string_name="role_CLEN_JINDROVY_JEDNOTKY" metarole_name="NPC" role_name="CLEN_JINDROVY_JEDNOTKY" />
@@ -384,6 +394,8 @@
 		<role _locked="false" _role_string_name="role_CUMIL_VLASSKA_2" metarole_name="NPC" role_name="CUMIL_VLASSKA_2" />
 		<role _locked="false" _role_string_name="role_CUMIL_VLASSKA_OPIRAC" metarole_name="LEAN_BARK" role_name="CUMIL_VLASSKA_OPIRAC" />
 		<role _locked="false" _role_string_name="role_CVERK" metarole_name="NPC" role_name="CVERK" />
+		<role _locked="false" _role_string_name="role_DAROVANI_BOZI_MUKA" metarole_name="NPC" role_name="DAROVANI_BOZI_MUKA" />
+		<role _locked="false" _role_string_name="role_DAROVANI_ZVON" metarole_name="NPC" role_name="DAROVANI_ZVON" />
 		<role _locked="false" _role_string_name="role_DAV_KUBA_PARALU" metarole_name="NPC" role_name="DAV_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_DAVID" metarole_name="NPC" role_name="DAVID" />
 		<role _locked="false" _role_string_name="role_DAVID_SEDI_V_ZELEJOVSKE_HOSPODE" metarole_name="GOSSIP" role_name="DAVID_SEDI_V_ZELEJOVSKE_HOSPODE" />
@@ -398,6 +410,7 @@
 		<role _locked="false" _role_string_name="role_DEVECKA_U_ARENY_SVATBA" metarole_name="NPC" role_name="DEVECKA_U_ARENY_SVATBA" />
 		<role _locked="false" _role_string_name="role_DEVECKA_U_OCHODNIKA_TROSKOVICE_1" metarole_name="NPC" role_name="DEVECKA_U_OCHODNIKA_TROSKOVICE_1" />
 		<role _locked="false" _role_string_name="role_DEVECKA_U_OCHODNIKA_TROSKOVICE_2" metarole_name="NPC" role_name="DEVECKA_U_OCHODNIKA_TROSKOVICE_2" />
+		<role _locked="false" _role_string_name="role_DEZERTER_MALIRUV_LEK_VYHANI_HRACE" metarole_name="CAMP_TRESPASS_CHAT" role_name="DEZERTER_MALIRUV_LEK_VYHANI_HRACE" />
 		<role _locked="false" _role_string_name="role_DEZERTER_NA_STATKU_M44A" metarole_name="NPC" role_name="DEZERTER_NA_STATKU_M44A" />
 		<role _locked="false" _role_string_name="role_DIALOG_O_BLECHACH_AKCEPTACNI_MUZ" metarole_name="NPC" role_name="DIALOG_O_BLECHACH_AKCEPTACNI_MUZ" />
 		<role _locked="false" _role_string_name="role_DIALOG_O_BLECHACH_AKCEPTACNI_ZENA" metarole_name="NPC" role_name="DIALOG_O_BLECHACH_AKCEPTACNI_ZENA" />
@@ -437,19 +450,44 @@
 		<role _locked="false" _role_string_name="role_DLC2_STRELEC_VITEZNY_BARK" metarole_name="STRELNICE_STRELEC_VYHRAL" role_name="DLC2_STRELEC_VITEZNY_BARK" />
 		<role _locked="false" _role_string_name="role_DLC2_VYVOLAVANI_PRISPEVKU_MUZ" metarole_name="NPC" role_name="DLC2_VYVOLAVANI_PRISPEVKU_MUZ" />
 		<role _locked="false" _role_string_name="role_DLC2_VYVOLAVANI_PRISPEVKU_ZENA" metarole_name="NPC" role_name="DLC2_VYVOLAVANI_PRISPEVKU_ZENA" />
+		<role _locked="false" _role_string_name="role_DLC3_ALBIK_Z_UNICOVA_OSETRUJE_NEMOCNOU_HOSPODYNI" metarole_name="OSETROVANI_RANENEHO" role_name="DLC3_ALBIK_Z_UNICOVA_OSETRUJE_NEMOCNOU_HOSPODYNI" />
+		<role _locked="false" _role_string_name="role_DLC3_BYLINAR" metarole_name="NPC" role_name="DLC3_BYLINAR" />
 		<role _locked="false" _role_string_name="role_DLC3_DELNIK_HLIDAJICI_V_CHRAMU_1" metarole_name="NPC" role_name="DLC3_DELNIK_HLIDAJICI_V_CHRAMU_1" />
 		<role _locked="false" _role_string_name="role_DLC3_DELNIK_O_ZMIZELYCH_KAMARADECH" metarole_name="NPC" role_name="DLC3_DELNIK_O_ZMIZELYCH_KAMARADECH" />
 		<role _locked="false" _role_string_name="role_DLC3_DELNIK_U_VSTUPU_DO_CHRAMU" metarole_name="NPC" role_name="DLC3_DELNIK_U_VSTUPU_DO_CHRAMU" />
+		<role _locked="false" _role_string_name="role_DLC3_ELIAS" metarole_name="NPC" role_name="DLC3_ELIAS" />
+		<role _locked="false" _role_string_name="role_DLC3_KAMARAD_PREKLADATELE" metarole_name="NPC" role_name="DLC3_KAMARAD_PREKLADATELE" />
+		<role _locked="false" _role_string_name="role_DLC3_KAMARADKA_BLAZENY" metarole_name="NPC" role_name="DLC3_KAMARADKA_BLAZENY" />
+		<role _locked="false" _role_string_name="role_DLC3_MNICH_V_KUCHYNI" metarole_name="NPC" role_name="DLC3_MNICH_V_KUCHYNI" />
+		<role _locked="false" _role_string_name="role_DLC3_MNICH_V_TAJNE_MISTNOSTI" metarole_name="NPC" role_name="DLC3_MNICH_V_TAJNE_MISTNOSTI" />
+		<role _locked="false" _role_string_name="role_DLC3_NADRIZENY_BLAZENY" metarole_name="NPC" role_name="DLC3_NADRIZENY_BLAZENY" />
 		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_BODYGUARD" metarole_name="NPC" role_name="DLC3_NASTVANY_BODYGUARD" />
+		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_BODYGUARD_MLUVI_V_BOJI" metarole_name="SKIRMISH_COMBATIDLE_SOURCE" role_name="DLC3_NASTVANY_BODYGUARD_MLUVI_V_BOJI" />
 		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_PACIENT" metarole_name="NPC" role_name="DLC3_NASTVANY_PACIENT" />
-		<role _locked="false" _role_string_name="role_DLC3_NEMOCNA_DEVECKA" metarole_name="NPC" role_name="DLC3_NEMOCNA_DEVECKA" />
+		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_PACIENT_BARKUJE_U_DVERI" metarole_name="NERVOZNI_BUSENI_NA_DVERE" role_name="DLC3_NASTVANY_PACIENT_BARKUJE_U_DVERI" />
+		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_PACIENT_MLUVI_V_BOJI" metarole_name="SKIRMISH_COMBATIDLE_SOURCE" role_name="DLC3_NASTVANY_PACIENT_MLUVI_V_BOJI" />
+		<role _locked="false" _role_string_name="role_DLC3_NASTVANY_PACIENT_SE_VZDAVA_PO_SKIRMISHI" metarole_name="NPC_SE_VZDAVA_PO_COMBATU" role_name="DLC3_NASTVANY_PACIENT_SE_VZDAVA_PO_SKIRMISHI" />
+		<role _locked="false" _role_string_name="role_DLC3_NEMECKY_RYTIR_HRBITOV_1" metarole_name="NPC" role_name="DLC3_NEMECKY_RYTIR_HRBITOV_1" />
+		<role _locked="false" _role_string_name="role_DLC3_NEMECKY_RYTIR_HRBITOV_2" metarole_name="NPC" role_name="DLC3_NEMECKY_RYTIR_HRBITOV_2" />
+		<role _locked="false" _role_string_name="role_DLC3_NEMOCNA_HOSPODYNE" metarole_name="NPC" role_name="DLC3_NEMOCNA_HOSPODYNE" />
+		<role _locked="false" _role_string_name="role_DLC3_NEMOCNA_HOSPODYNE_RANENE_POVZDECHY" metarole_name="RANENY_POVZDECHY" role_name="DLC3_NEMOCNA_HOSPODYNE_RANENE_POVZDECHY" />
+		<role _locked="false" _role_string_name="role_DLC3_NOVIC_BENEDIKT" metarole_name="NPC" role_name="DLC3_NOVIC_BENEDIKT" />
+		<role _locked="false" _role_string_name="role_DLC3_NPC_REAGUJE_NA_BUSENI_MUZ" metarole_name="NPC" role_name="DLC3_NPC_REAGUJE_NA_BUSENI_MUZ" />
+		<role _locked="false" _role_string_name="role_DLC3_NPC_REAGUJE_NA_BUSENI_ZENA" metarole_name="NPC" role_name="DLC3_NPC_REAGUJE_NA_BUSENI_ZENA" />
 		<role _locked="false" _role_string_name="role_DLC3_OBECNY_REFUSAL_BEHEM_KARANTENY" metarole_name="NPC" role_name="DLC3_OBECNY_REFUSAL_BEHEM_KARANTENY" />
+		<role _locked="false" _role_string_name="role_DLC3_POBOCNIK" metarole_name="NPC" role_name="DLC3_POBOCNIK" />
 		<role _locked="false" _role_string_name="role_DLC3_PREPADAK" metarole_name="NPC" role_name="DLC3_PREPADAK" />
+		<role _locked="false" _role_string_name="role_DLC3_PRVNI_ZACHARIASUV_CLOVEK_V_PODZEMI" metarole_name="NPC" role_name="DLC3_PRVNI_ZACHARIASUV_CLOVEK_V_PODZEMI" />
 		<role _locked="false" _role_string_name="role_DLC3_RYTIR_CO_HLIDA_1" metarole_name="NPC" role_name="DLC3_RYTIR_CO_HLIDA_1" />
 		<role _locked="false" _role_string_name="role_DLC3_RYTIR_CO_HLIDA_2" metarole_name="NPC" role_name="DLC3_RYTIR_CO_HLIDA_2" />
+		<role _locked="false" _role_string_name="role_DLC3_STRAZ_U_MRTVOL" metarole_name="NPC" role_name="DLC3_STRAZ_U_MRTVOL" />
+		<role _locked="false" _role_string_name="role_DLC3_TELA_SKILLCHECK_TARGET" metarole_name="NPC" role_name="DLC3_TELA_SKILLCHECK_TARGET" />
 		<role _locked="false" _role_string_name="role_DLC3_U_ALBIKA_DOMA_MUZ" metarole_name="NPC" role_name="DLC3_U_ALBIKA_DOMA_MUZ" />
 		<role _locked="false" _role_string_name="role_DLC3_U_ALBIKA_DOMA_ZENA" metarole_name="NPC" role_name="DLC3_U_ALBIKA_DOMA_ZENA" />
+		<role _locked="false" _role_string_name="role_DLC3_VELITEL_RYTIRU_ALBERICH" metarole_name="NPC" role_name="DLC3_VELITEL_RYTIRU_ALBERICH" />
+		<role _locked="false" _role_string_name="role_DLC3_VUDCE_RELIKVIOVYCH_LAPKU" metarole_name="NPC" role_name="DLC3_VUDCE_RELIKVIOVYCH_LAPKU" />
 		<role _locked="false" _role_string_name="role_DLC3_ZACHARIAS" metarole_name="NPC" role_name="DLC3_ZACHARIAS" />
+		<role _locked="false" _role_string_name="role_DLC3_ZPOVEDNIK" metarole_name="NPC" role_name="DLC3_ZPOVEDNIK" />
 		<role _locked="false" _role_string_name="role_DOBROS_PERO" metarole_name="NPC" role_name="DOBROS_PERO" />
 		<role _locked="false" _role_string_name="role_DOG_COMPANION" metarole_name="NPC" role_name="DOG_COMPANION" />
 		<role _locked="false" _role_string_name="role_DOLANY_JENIK_OSVOBOZEN_MUZ_1" metarole_name="GOSSIP" role_name="DOLANY_JENIK_OSVOBOZEN_MUZ_1" />
@@ -467,6 +505,8 @@
 		<role _locked="false" _role_string_name="role_DRANCIR_CIMBURK" metarole_name="NPC" role_name="DRANCIR_CIMBURK" />
 		<role _locked="false" _role_string_name="role_DRANCIR_CIMBURK_1_REAGUJE_NA_BALSANA" metarole_name="NPC" role_name="DRANCIR_CIMBURK_1_REAGUJE_NA_BALSANA" />
 		<role _locked="false" _role_string_name="role_DRANCIR_CIMBURK_2_REAGUJE_NA_BALSANA" metarole_name="NPC" role_name="DRANCIR_CIMBURK_2_REAGUJE_NA_BALSANA" />
+		<role _locked="false" _role_string_name="role_DREVORUBCI_VLCI_HORY" metarole_name="NPC" role_name="DREVORUBCI_VLCI_HORY" />
+		<role _locked="false" _role_string_name="role_DREVORUBEC_GRUNTA" metarole_name="NPC" role_name="DREVORUBEC_GRUNTA" />
 		<role _locked="false" _role_string_name="role_DREVORUBEC_PODSEMIN_O_MRTVOLE" metarole_name="NPC" role_name="DREVORUBEC_PODSEMIN_O_MRTVOLE" />
 		<role _locked="false" _role_string_name="role_DREVORUBEC_PODSEMIN_VCETNE_PREDAKA" metarole_name="NPC" role_name="DREVORUBEC_PODSEMIN_VCETNE_PREDAKA" />
 		<role _locked="false" _role_string_name="role_DREVORUBEC_SEMIN" metarole_name="NPC" role_name="DREVORUBEC_SEMIN" />
@@ -491,8 +531,16 @@
 		<role _locked="false" _role_string_name="role_DRUZINA_REAGUJE_NA_ZASAH_PRI_BLOKU" metarole_name="NPC" role_name="DRUZINA_REAGUJE_NA_ZASAH_PRI_BLOKU" />
 		<role _locked="false" _role_string_name="role_DRUZINA_REAGUJE_NA_ZASAH_V_DUELU" metarole_name="NPC" role_name="DRUZINA_REAGUJE_NA_ZASAH_V_DUELU" />
 		<role _locked="false" _role_string_name="role_DUELOVE_FANDENI_NEBAKOVSI_VOJAKOVE" metarole_name="CHEERING_SPOT_BARK" role_name="DUELOVE_FANDENI_NEBAKOVSI_VOJAKOVE" />
+		<role _locked="false" _role_string_name="role_DUELY_CERNY_RYTIR" metarole_name="NPC" role_name="DUELY_CERNY_RYTIR" />
 		<role _locked="false" _role_string_name="role_DUELY_OPONENT_1" metarole_name="NPC" role_name="DUELY_OPONENT_1" />
 		<role _locked="false" _role_string_name="role_DUELY_OPONENT_GENERIC" metarole_name="NPC" role_name="DUELY_OPONENT_GENERIC" />
+		<role _locked="false" _role_string_name="role_DUELY_OPONENT_PRED_COMBATEM" metarole_name="NPC" role_name="DUELY_OPONENT_PRED_COMBATEM" />
+		<role _locked="false" _role_string_name="role_DUELY_TRENINK_SE_STRAZNIM_STRAZNI" metarole_name="NPC" role_name="DUELY_TRENINK_SE_STRAZNIM_STRAZNI" />
+		<role _locked="false" _role_string_name="role_DUELY_TRENINK_SE_STRAZNIM_ZENA" metarole_name="NPC" role_name="DUELY_TRENINK_SE_STRAZNIM_ZENA" />
+		<role _locked="false" _role_string_name="role_DUELY_TVRDA_RANA_ZADAVATEL" metarole_name="NPC" role_name="DUELY_TVRDA_RANA_ZADAVATEL" />
+		<role _locked="false" _role_string_name="role_DUELY_TVRDA_RANA_ZENA" metarole_name="NPC" role_name="DUELY_TVRDA_RANA_ZENA" />
+		<role _locked="false" _role_string_name="role_DUELY_VOJAK_OPONENT" metarole_name="NPC" role_name="DUELY_VOJAK_OPONENT" />
+		<role _locked="false" _role_string_name="role_DUELY_VOJAK_ZENA" metarole_name="NPC" role_name="DUELY_VOJAK_ZENA" />
 		<role _locked="false" _role_string_name="role_DUMMY_HRISNIK" metarole_name="NPC" role_name="DUMMY_HRISNIK" />
 		<role _locked="false" _role_string_name="role_DUMMY_KNEZ" metarole_name="NPC" role_name="DUMMY_KNEZ" />
 		<role _locked="false" _role_string_name="role_DUSKO_Z_TROSKOVIC" metarole_name="NPC" role_name="DUSKO_Z_TROSKOVIC" />
@@ -506,6 +554,7 @@
 		<role _locked="false" _role_string_name="role_DVOJICE_MUZU_PO_CESTE_2_KUBA_PARALU" metarole_name="NPC" role_name="DVOJICE_MUZU_PO_CESTE_2_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_DVOJICE_ZEN_PO_CESTE_1_KUBA_PARALU" metarole_name="NPC" role_name="DVOJICE_ZEN_PO_CESTE_1_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_DVOJICE_ZEN_PO_CESTE_2_KUBA_PARALU" metarole_name="NPC" role_name="DVOJICE_ZEN_PO_CESTE_2_KUBA_PARALU" />
+		<role _locked="false" _role_string_name="role_ELIAS" metarole_name="NPC" role_name="ELIAS" />
 		<role _locked="false" _role_string_name="role_ELISKA_ZELEJOV" metarole_name="NPC" role_name="ELISKA_ZELEJOV" />
 		<role _locked="false" _role_string_name="role_ELSE" metarole_name="NPC" role_name="ELSE" />
 		<role _locked="false" _role_string_name="role_ENDERLIN_MECIR" metarole_name="NPC" role_name="ENDERLIN_MECIR" />
@@ -684,6 +733,7 @@
 		<role _locked="false" _role_string_name="role_EVENT_TABORY_STRELNICE_KU_PTAKU_ZADAVATEL" metarole_name="NPC" role_name="EVENT_TABORY_STRELNICE_KU_PTAKU_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_EVENT_TABORY_STRELNICE_NA_TERC_ZADAVATEL" metarole_name="NPC" role_name="EVENT_TABORY_STRELNICE_NA_TERC_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_EVENT_TIPSTER_WALDEMAR" metarole_name="NPC" role_name="EVENT_TIPSTER_WALDEMAR" />
+		<role _locked="false" _role_string_name="role_FABRIZIO" metarole_name="NPC" role_name="FABRIZIO" />
 		<role _locked="false" _role_string_name="role_FAKE_VRAH_KUBA_PARALU" metarole_name="NPC" role_name="FAKE_VRAH_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_FAKE_VRAH_KUBA_PARALU1" metarole_name="NPC" role_name="FAKE_VRAH_KUBA_PARALU1" />
 		<role _locked="false" _role_string_name="role_FALLBACK_GOSSIP_OBECNY_ZENA_1" metarole_name="FALLBACK_GOSSIP" role_name="FALLBACK_GOSSIP_OBECNY_ZENA_1" />
@@ -853,7 +903,7 @@
 		<role _locked="false" _role_string_name="role_HEJTMAN_TOMAS_ZDRAVI_HRACE_PO_VEZNICH_NA_TROSKACH" metarole_name="NPC_ZDRAVI_HRACE" role_name="HEJTMAN_TOMAS_ZDRAVI_HRACE_PO_VEZNICH_NA_TROSKACH" />
 		<role _locked="false" _role_string_name="role_HEKANI_PRI_POHYBU" metarole_name="COMBAT_VICTIM_SCREAM_MISSED_ATTACK" role_name="HEKANI_PRI_POHYBU" />
 		<role _locked="false" _role_string_name="role_HEKANI_PRI_POHYBU_OPONENT" metarole_name="SKIRMISH_PLAYERDODGE_TARGET" role_name="HEKANI_PRI_POHYBU_OPONENT" />
-		<role _locked="false" _role_string_name="role_HEKANI_PRI_POHYBU_PLAYER" metarole_name="COMBAT_SHOUT_SOURCE" role_name="HEKANI_PRI_POHYBU_PLAYER" />
+		<role _locked="false" _role_string_name="role_HEKANI_PRI_POHYBU_PLAYER" metarole_name="SKIRMISH_PLAYERDODGE_SOURCE" role_name="HEKANI_PRI_POHYBU_PLAYER" />
 		<role _locked="false" _role_string_name="role_HEKANI_V_CLINCHI" metarole_name="COMBAT_ACTOR_SCREAM_CLINCH" role_name="HEKANI_V_CLINCHI" />
 		<role _locked="false" _role_string_name="role_HEKANI_V_CLINCHI_PLAYER" metarole_name="COMBAT_ACTOR_SCREAM_CLINCH" role_name="HEKANI_V_CLINCHI_PLAYER" />
 		<role _locked="false" _role_string_name="role_HELENA_Z_DVORCE" metarole_name="NPC" role_name="HELENA_Z_DVORCE" />
@@ -1087,6 +1137,7 @@
 		<role _locked="false" _role_string_name="role_JIMRAM_KOMENTUJE_VITEZSTVI" metarole_name="NPC_VYHRALO_SKIRMISH" role_name="JIMRAM_KOMENTUJE_VITEZSTVI" />
 		<role _locked="false" _role_string_name="role_JIMRAM_REZNIK_KUTNA_HORA" metarole_name="NPC" role_name="JIMRAM_REZNIK_KUTNA_HORA" />
 		<role _locked="false" _role_string_name="role_JIMRAM_REZNIK_SE_PROBRAL_Z_BEZVEDOMI" metarole_name="NPC_SE_PROBOUZI_(BEZVEDOMI__NEVI_O_HRACI)" role_name="JIMRAM_REZNIK_SE_PROBRAL_Z_BEZVEDOMI" />
+		<role _locked="false" _role_string_name="role_JIN" metarole_name="NPC" role_name="JIN" />
 		<role _locked="false" _role_string_name="role_JINDRICH_BAD_BACK" metarole_name="HARDCORE_MODE_PERK_BAD_BACK_HERB_DEBUFF" role_name="JINDRICH_BAD_BACK" />
 		<role _locked="false" _role_string_name="role_JINDRICH_NEMUZE_DO_HLUBOKE_VODY" metarole_name="HRAC_NEMUZE_DO_HLUBOKE_VODY" role_name="JINDRICH_NEMUZE_DO_HLUBOKE_VODY" />
 		<role _locked="false" _role_string_name="role_JINDRICH_NEMUZE_Z_MAPY" metarole_name="HRAC_NEMUZE_Z_MAPY" role_name="JINDRICH_NEMUZE_Z_MAPY" />
@@ -1118,6 +1169,7 @@
 		<role _locked="false" _role_string_name="role_JURA_VOSTRY_VOKO" metarole_name="NPC" role_name="JURA_VOSTRY_VOKO" />
 		<role _locked="false" _role_string_name="role_JURKO" metarole_name="NPC" role_name="JURKO" />
 		<role _locked="false" _role_string_name="role_KACKA_LASKACKA" metarole_name="NPC" role_name="KACKA_LASKACKA" />
+		<role _locked="false" _role_string_name="role_KAFKA" metarole_name="NPC" role_name="KAFKA" />
 		<role _locked="false" _role_string_name="role_KAMARAD_RYCHTAROVA_SYNA_1_SVATBA" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="KAMARAD_RYCHTAROVA_SYNA_1_SVATBA" />
 		<role _locked="false" _role_string_name="role_KAMARAD_RYCHTAROVA_SYNA_2_SVATBA" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="KAMARAD_RYCHTAROVA_SYNA_2_SVATBA" />
 		<role _locked="false" _role_string_name="role_KAPITAN_VOJAKU_NEBAKOV" metarole_name="NPC" role_name="KAPITAN_VOJAKU_NEBAKOV" />
@@ -1150,9 +1202,11 @@
 		<role _locked="false" _role_string_name="role_KLARA" metarole_name="NPC" role_name="KLARA" />
 		<role _locked="false" _role_string_name="role_KNEZ_BOHUMIL" metarole_name="NPC" role_name="KNEZ_BOHUMIL" />
 		<role _locked="false" _role_string_name="role_KNEZ_NIKODEM_SVATBA" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="KNEZ_NIKODEM_SVATBA" />
+		<role _locked="false" _role_string_name="role_KNEZ_SV_JAKUB" metarole_name="NPC" role_name="KNEZ_SV_JAKUB" />
 		<role _locked="false" _role_string_name="role_KNEZ_TOBIAS" metarole_name="NPC" role_name="KNEZ_TOBIAS" />
 		<role _locked="false" _role_string_name="role_KNEZ_TROSKY" metarole_name="NPC" role_name="KNEZ_TROSKY" />
 		<role _locked="false" _role_string_name="role_KNEZ_ZPOVIDA_MUZ" metarole_name="NPC" role_name="KNEZ_ZPOVIDA_MUZ" />
+		<role _locked="false" _role_string_name="role_KNIHOVNIK_KLASTER" metarole_name="NPC" role_name="KNIHOVNIK_KLASTER" />
 		<role _locked="false" _role_string_name="role_KOCOUR" metarole_name="NPC" role_name="KOCOUR" />
 		<role _locked="false" _role_string_name="role_KOCOUR_COMBO_AFTERSKIPTIME" metarole_name="NPC" role_name="KOCOUR_COMBO_AFTERSKIPTIME" />
 		<role _locked="false" _role_string_name="role_KOCOUR_KOMENTUJE_DRUHE_USPESNE_COMBO" metarole_name="COMBO_TUTOR_KOMENTUJE_DRUHE_USPESNE_COMBO" role_name="KOCOUR_KOMENTUJE_DRUHE_USPESNE_COMBO" />
@@ -1231,8 +1285,11 @@
 		<role _locked="false" _role_string_name="role_KOSTKAR_KROVI_1" metarole_name="KOSTKY_KIBITZER_KROVI" role_name="KOSTKAR_KROVI_1" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_KROVI_4" metarole_name="KOSTKY_KIBITZER_KROVI" role_name="KOSTKAR_KROVI_4" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_MUZ" metarole_name="KOSTKAR_UNISEX" role_name="KOSTKAR_MUZ" />
+		<role _locked="false" _role_string_name="role_KOSTKAR_OZRALA" metarole_name="NPC" role_name="KOSTKAR_OZRALA" />
+		<role _locked="false" _role_string_name="role_KOSTKAR_PARCHANT" metarole_name="NPC" role_name="KOSTKAR_PARCHANT" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_PROHRAL_SVUJ_BADGE_MUZ" metarole_name="KOSTKAR_PROHRAL_BADGE" role_name="KOSTKAR_PROHRAL_SVUJ_BADGE_MUZ" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_PROHRAL_SVUJ_BADGE_ZENA" metarole_name="KOSTKAR_PROHRAL_BADGE" role_name="KOSTKAR_PROHRAL_SVUJ_BADGE_ZENA" />
+		<role _locked="false" _role_string_name="role_KOSTKAR_S_ODZNAKEM" metarole_name="NPC" role_name="KOSTKAR_S_ODZNAKEM" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_V_KOCOVNICKEM_TABORE" metarole_name="NPC" role_name="KOSTKAR_V_KOCOVNICKEM_TABORE" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_VYHRAL_HRACUV_BADGE_MUZ" metarole_name="KOSTKAR_VYHRAL_BADGE" role_name="KOSTKAR_VYHRAL_HRACUV_BADGE_MUZ" />
 		<role _locked="false" _role_string_name="role_KOSTKAR_VYHRAL_HRACUV_BADGE_ZENA" metarole_name="KOSTKAR_VYHRAL_BADGE" role_name="KOSTKAR_VYHRAL_HRACUV_BADGE_ZENA" />
@@ -1271,6 +1328,8 @@
 		<role _locked="false" _role_string_name="role_KOSTKY_STRANOU_(ZENA)" metarole_name="KOSTKY_STRANOU" role_name="KOSTKY_STRANOU_ZENA" />
 		<role _locked="false" _role_string_name="role_KOSTKY_VYHRA_(MUZ)" metarole_name="KOSTKY_VYHRA" role_name="KOSTKY_VYHRA_MUZ" />
 		<role _locked="false" _role_string_name="role_KOSTKY_VYHRA_(ZENA)" metarole_name="KOSTKY_VYHRA" role_name="KOSTKY_VYHRA_ZENA" />
+		<role _locked="false" _role_string_name="role_KOSTKY_ZADAVATEL_ODZNAK" metarole_name="NPC" role_name="KOSTKY_ZADAVATEL_ODZNAK" />
+		<role _locked="false" _role_string_name="role_KOVAR_HORANY" metarole_name="NPC" role_name="KOVAR_HORANY" />
 		<role _locked="false" _role_string_name="role_KOVAR_M31" metarole_name="NPC" role_name="KOVAR_M31" />
 		<role _locked="false" _role_string_name="role_KOVAR_MISKOVICE_VIKTORKA" metarole_name="NPC" role_name="KOVAR_MISKOVICE_VIKTORKA" />
 		<role _locked="false" _role_string_name="role_KOVAR_NEBAKOV" metarole_name="NPC" role_name="KOVAR_NEBAKOV" />
@@ -1328,6 +1387,9 @@
 		<role _locked="false" _role_string_name="role_KRONDEL_PLATNER" metarole_name="NPC" role_name="KRONDEL_PLATNER" />
 		<role _locked="false" _role_string_name="role_KRONDEL_PLATNER_SETKANI_V_RATBORI" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="KRONDEL_PLATNER_SETKANI_V_RATBORI" />
 		<role _locked="false" _role_string_name="role_KROPENATEJ" metarole_name="NPC" role_name="KROPENATEJ" />
+		<role _locked="false" _role_string_name="role_KRVAVA_STOPA_ROZHODCI" metarole_name="NPC" role_name="KRVAVA_STOPA_ROZHODCI" />
+		<role _locked="false" _role_string_name="role_KRVAVA_STOPA_UTOCNIK" metarole_name="NPC" role_name="KRVAVA_STOPA_UTOCNIK" />
+		<role _locked="false" _role_string_name="role_KRVAVA_STOPA_ZADAVATEL" metarole_name="NPC" role_name="KRVAVA_STOPA_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_KRYSA" metarole_name="NPC" role_name="KRYSA" />
 		<role _locked="false" _role_string_name="role_KRYSTOF_ODERIN" metarole_name="NPC" role_name="KRYSTOF_ODERIN" />
 		<role _locked="false" _role_string_name="role_KRYSTOF_ODERIN_RATBOR_DUEL" metarole_name="NPC" role_name="KRYSTOF_ODERIN_RATBOR_DUEL" />
@@ -1440,6 +1502,8 @@
 		<role _locked="false" _role_string_name="role_KUTNOHORSKY_TURNAJ_GOSSIP_ZENA_2" metarole_name="GOSSIP" role_name="KUTNOHORSKY_TURNAJ_GOSSIP_ZENA_2" />
 		<role _locked="false" _role_string_name="role_KUTNOHORSKY_TURNAJ_LAZEBNICE" metarole_name="NPC" role_name="KUTNOHORSKY_TURNAJ_LAZEBNICE" />
 		<role _locked="false" _role_string_name="role_KUTNOHORSKY_TURNAJ_SPRAVCE_VYBAVENI" metarole_name="NPC" role_name="KUTNOHORSKY_TURNAJ_SPRAVCE_VYBAVENI" />
+		<role _locked="false" _role_string_name="role_KUTNOHORSTI_MESTANE" metarole_name="NPC" role_name="KUTNOHORSTI_MESTANE" />
+		<role _locked="false" _role_string_name="role_KUTNOHORSTI_RADNI" metarole_name="NPC" role_name="KUTNOHORSTI_RADNI" />
 		<role _locked="false" _role_string_name="role_LACEK" metarole_name="NPC" role_name="LACEK" />
 		<role _locked="false" _role_string_name="role_LAMPRECHT_VON_PRAG" metarole_name="NPC" role_name="LAMPRECHT_VON_PRAG" />
 		<role _locked="false" _role_string_name="role_LAPKA_BARKUJE_PRI_PRONASLEDOVANI" metarole_name="NPC" role_name="LAPKA_BARKUJE_PRI_PRONASLEDOVANI" />
@@ -1586,10 +1650,15 @@
 		<role _locked="false" _role_string_name="role_MALESOV_VOJAK_SEDI_A_NOSI_KLOBAS" metarole_name="NPC" role_name="MALESOV_VOJAK_SEDI_A_NOSI_KLOBAS" />
 		<role _locked="false" _role_string_name="role_MALESOV_VOJAK_SEDI_A_ZERE_KLOBAS" metarole_name="NPC" role_name="MALESOV_VOJAK_SEDI_A_ZERE_KLOBAS" />
 		<role _locked="false" _role_string_name="role_MALIR" metarole_name="NPC" role_name="MALIR" />
+		<role _locked="false" _role_string_name="role_MALIR_REAGUJE_NA_HRACUV_ZLOCIN_NASILNY" metarole_name="COMPANION_KOMENTUJE_CRIME_NASILNY" role_name="MALIR_REAGUJE_NA_HRACUV_ZLOCIN_NASILNY" />
+		<role _locked="false" _role_string_name="role_MALIR_REAGUJE_NA_HRACUV_ZLOCIN_NENASILNY" metarole_name="COMPANION_KOMENTUJE_CRIME_NENASILNY" role_name="MALIR_REAGUJE_NA_HRACUV_ZLOCIN_NENASILNY" />
+		<role _locked="false" _role_string_name="role_MALIR_REAGUJE_NA_MRTVOLU" metarole_name="BFF_REAGUJE_NA_MRTVOLU" role_name="MALIR_REAGUJE_NA_MRTVOLU" />
 		<role _locked="false" _role_string_name="role_MALIR_VLK" metarole_name="NPC" role_name="MALIR_VLK" />
+		<role _locked="false" _role_string_name="role_MALIR_ZDRAVI_HRACE_V_OPENWORLDU" metarole_name="NPC_ZDRAVI_HRACE" role_name="MALIR_ZDRAVI_HRACE_V_OPENWORLDU" />
 		<role _locked="false" _role_string_name="role_MALY_HOLEC" metarole_name="NPC" role_name="MALY_HOLEC" />
 		<role _locked="false" _role_string_name="role_MANDELINA_KUBA_PARALU" metarole_name="NPC" role_name="MANDELINA_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_MANKA" metarole_name="NPC" role_name="MANKA" />
+		<role _locked="false" _role_string_name="role_MANZELKA_KOSTARE_OZRALY" metarole_name="NPC" role_name="MANZELKA_KOSTARE_OZRALY" />
 		<role _locked="false" _role_string_name="role_MAREK" metarole_name="NPC" role_name="MAREK" />
 		<role _locked="false" _role_string_name="role_MARIAN_KNEZ" metarole_name="NPC" role_name="MARIAN_KNEZ" />
 		<role _locked="false" _role_string_name="role_MARIKA" metarole_name="NPC" role_name="MARIKA" />
@@ -1620,6 +1689,7 @@
 		<role _locked="false" _role_string_name="role_MENHART_Z_FRANKFURTU_POZDRAV" metarole_name="NPC" role_name="MENHART_Z_FRANKFURTU_POZDRAV" />
 		<role _locked="false" _role_string_name="role_MENHART_Z_FRANKFURTU_SKILLTEACHER" metarole_name="SKILLTEACHER" role_name="MENHART_Z_FRANKFURTU_SKILLTEACHER" />
 		<role _locked="false" _role_string_name="role_MENIM_SI_ZBRAN_KUMAN" metarole_name="SKIRMISH_WEAPONCHANGED_SOURCE" role_name="MENIM_SI_ZBRAN_KUMAN" />
+		<role _locked="false" _role_string_name="role_MESTAN_DEDIC" metarole_name="NPC" role_name="MESTAN_DEDIC" />
 		<role _locked="false" _role_string_name="role_MEZHOLEZSKY_LAPKA_NEVELITELSKY" metarole_name="NPC" role_name="MEZHOLEZSKY_LAPKA_NEVELITELSKY" />
 		<role _locked="false" _role_string_name="role_MICHAL" metarole_name="NPC" role_name="MICHAL" />
 		<role _locked="false" _role_string_name="role_MICHAL_SEDI_V_ZELEJOVSKE_HOSPODE" metarole_name="GOSSIP" role_name="MICHAL_SEDI_V_ZELEJOVSKE_HOSPODE" />
@@ -1681,6 +1751,8 @@
 		<role _locked="false" _role_string_name="role_MORDECHAJ" metarole_name="NPC" role_name="MORDECHAJ" />
 		<role _locked="false" _role_string_name="role_MORDECHAJ_OBCHODNIK_KOCOVNICKY_TABOR" metarole_name="NPC" role_name="MORDECHAJ_OBCHODNIK_KOCOVNICKY_TABOR" />
 		<role _locked="false" _role_string_name="role_MOSE" metarole_name="NPC" role_name="MOSE" />
+		<role _locked="false" _role_string_name="role_MRTVINEMLUVI_MILA" metarole_name="NPC" role_name="MRTVINEMLUVI_MILA" />
+		<role _locked="false" _role_string_name="role_MRTVINEMLUVI_VOJAK" metarole_name="NPC" role_name="MRTVINEMLUVI_VOJAK" />
 		<role _locked="false" _role_string_name="role_MUCIRNA_VOJAK_PRED_TROSKAMI_1" metarole_name="NPC" role_name="MUCIRNA_VOJAK_PRED_TROSKAMI_1" />
 		<role _locked="false" _role_string_name="role_MUCIRNA_VOJAK_PRED_TROSKAMI_2" metarole_name="NPC" role_name="MUCIRNA_VOJAK_PRED_TROSKAMI_2" />
 		<role _locked="false" _role_string_name="role_MUCIRNA_VOJAK_PRED_TROSKAMI_3" metarole_name="NPC" role_name="MUCIRNA_VOJAK_PRED_TROSKAMI_3" />
@@ -1761,6 +1833,10 @@
 		<role _locked="false" _role_string_name="role_NEBAKOV_VYHANECI_CHAT_VOJAK_V_PREDHRADI" metarole_name="NPC" role_name="NEBAKOV_VYHANECI_CHAT_VOJAK_V_PREDHRADI" />
 		<role _locked="false" _role_string_name="role_NEKDO_SI_ME_ZATARGETIL_KUMAN" metarole_name="SKIRMISH_TARGETCHANGED_TARGET" role_name="NEKDO_SI_ME_ZATARGETIL_KUMAN" />
 		<role _locked="false" _role_string_name="role_NEKOHO_TARGETIM_KUMAN" metarole_name="SKIRMISH_TARGETCHANGED_SOURCE" role_name="NEKOHO_TARGETIM_KUMAN" />
+		<role _locked="false" _role_string_name="role_NEMILE_PREKVAPENI_BANDITA" metarole_name="NPC" role_name="NEMILE_PREKVAPENI_BANDITA" />
+		<role _locked="false" _role_string_name="role_NEMILE_PREKVAPENI_BANDITE" metarole_name="NPC" role_name="NEMILE_PREKVAPENI_BANDITE" />
+		<role _locked="false" _role_string_name="role_NEMILE_PREKVAPENI_BARKY_LAPKU" metarole_name="NPC" role_name="NEMILE_PREKVAPENI_BARKY_LAPKU" />
+		<role _locked="false" _role_string_name="role_NEMILE_PREKVAPENI_ZADAVATEL" metarole_name="NPC" role_name="NEMILE_PREKVAPENI_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_NENASEL_ZTRACENOU_VEC_MUZ" metarole_name="NENASEL_ZTRACENOU_VEC" role_name="NENASEL_ZTRACENOU_VEC_MUZ" />
 		<role _locked="false" _role_string_name="role_NENASLA_ZTRACENOU_VEC_ZENA" metarole_name="NENASEL_ZTRACENOU_VEC" role_name="NENASLA_ZTRACENOU_VEC_ZENA" />
 		<role _locked="false" _role_string_name="role_NEPRIJEMNY_OBCHODNIK" metarole_name="NPC" role_name="NEPRIJEMNY_OBCHODNIK" />
@@ -1770,6 +1846,12 @@
 		<role _locked="false" _role_string_name="role_NEVDECENE_NPC_AMBUSH" metarole_name="NPC" role_name="NEVDECENE_NPC_AMBUSH" />
 		<role _locked="false" _role_string_name="role_NEVI_KDE_JE_TOMAS_MUZ" metarole_name="NPC" role_name="NEVI_KDE_JE_TOMAS_MUZ" />
 		<role _locked="false" _role_string_name="role_NEVI_KDE_JE_TOMAS_ZENA" metarole_name="NPC" role_name="NEVI_KDE_JE_TOMAS_ZENA" />
+		<role _locked="false" _role_string_name="role_NEZNAMY_MESTAN_KUTNA_HORA" metarole_name="NPC" role_name="NEZNAMY_MESTAN_KUTNA_HORA" />
+		<role _locked="false" _role_string_name="role_NIKDO_NECHCE_STRILET_LAPKA" metarole_name="NPC" role_name="NIKDO_NECHCE_STRILET_LAPKA" />
+		<role _locked="false" _role_string_name="role_NIKDO_NECHCE_STRILET_SEF_BANDITU" metarole_name="NPC" role_name="NIKDO_NECHCE_STRILET_SEF_BANDITU" />
+		<role _locked="false" _role_string_name="role_NIKDO_NECHCE_STRILET_STOURAL" metarole_name="NPC" role_name="NIKDO_NECHCE_STRILET_STOURAL" />
+		<role _locked="false" _role_string_name="role_NIKDO_NECHCE_STRILET_VYTECNIK" metarole_name="NPC" role_name="NIKDO_NECHCE_STRILET_VYTECNIK" />
+		<role _locked="false" _role_string_name="role_NIKDO_NECHCE_STRILET_ZADAVATEL" metarole_name="NPC" role_name="NIKDO_NECHCE_STRILET_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_NOCNI_UTOCNIK_VARUJE" metarole_name="NPC" role_name="NOCNI_UTOCNIK_VARUJE" />
 		<role _locked="false" _role_string_name="role_NPC_AKCEPTUJE_HRACOVO_VZDAVANI" metarole_name="NPC_AKCEPTUJE_HRACOVO_VZDAVANI" role_name="NPC_AKCEPTUJE_HRACOVO_VZDAVANI" />
 		<role _locked="false" _role_string_name="role_NPC_BARKUJE_PO_PREPADU" metarole_name="NPC" role_name="NPC_BARKUJE_PO_PREPADU" />
@@ -2679,6 +2761,7 @@
 		<role _locked="false" _role_string_name="role_ONDREJ_POLNER" metarole_name="NPC" role_name="ONDREJ_POLNER" />
 		<role _locked="false" _role_string_name="role_ONDREJ_POLNER_SETKANI_V_RATBORI" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="ONDREJ_POLNER_SETKANI_V_RATBORI" />
 		<role _locked="false" _role_string_name="role_OPAT_JAN_SEDLEC" metarole_name="NPC" role_name="OPAT_JAN_SEDLEC" />
+		<role _locked="false" _role_string_name="role_OPAT_ZATYKANI" metarole_name="STRAZ_ZATYKANI" role_name="OPAT_ZATYKANI" />
 		<role _locked="false" _role_string_name="role_OPILEC_MARES_SOCKY" metarole_name="NPC" role_name="OPILEC_MARES_SOCKY" />
 		<role _locked="false" _role_string_name="role_OPILEC_MARES_SOCKY_GOSSIP" metarole_name="NPC" role_name="OPILEC_MARES_SOCKY_GOSSIP" />
 		<role _locked="false" _role_string_name="role_OPILEC_ZAVIS_KUTNA_HORA" metarole_name="NPC" role_name="OPILEC_ZAVIS_KUTNA_HORA" />
@@ -2790,6 +2873,8 @@
 		<role _locked="false" _role_string_name="role_PANNA_TROSKY" metarole_name="NPC" role_name="PANNA_TROSKY" />
 		<role _locked="false" _role_string_name="role_PANOVE_RATBOR" metarole_name="NPC" role_name="PANOVE_RATBOR" />
 		<role _locked="false" _role_string_name="role_PAPEZSKY_LEGAT" metarole_name="NPC" role_name="PAPEZSKY_LEGAT" />
+		<role _locked="false" _role_string_name="role_PAS_CUDNOSTI_MANZELKA_ZADAVATELE" metarole_name="NPC" role_name="PAS_CUDNOSTI_MANZELKA_ZADAVATELE" />
+		<role _locked="false" _role_string_name="role_PAS_CUDNOSTI_ZADAVATEL" metarole_name="NPC" role_name="PAS_CUDNOSTI_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_PASACEK_DRIMAL_ZDAR" metarole_name="NPC" role_name="PASACEK_DRIMAL_ZDAR" />
 		<role _locked="false" _role_string_name="role_PASACEK_NECHUTA_SEMIN" metarole_name="NPC" role_name="PASACEK_NECHUTA_SEMIN" />
 		<role _locked="false" _role_string_name="role_PASAK_PRASTA_Z_TROSKOVIC" metarole_name="NPC" role_name="PASAK_PRASTA_Z_TROSKOVIC" />
@@ -2906,6 +2991,9 @@
 		<role _locked="false" _role_string_name="role_POI_KOCICI_PANI_KOCKARKA" metarole_name="NPC" role_name="POI_KOCICI_PANI_KOCKARKA" />
 		<role _locked="false" _role_string_name="role_POKORNY_RYTIR" metarole_name="NPC" role_name="POKORNY_RYTIR" />
 		<role _locked="false" _role_string_name="role_POMATENEC" metarole_name="NPC" role_name="POMATENEC" />
+		<role _locked="false" _role_string_name="role_POMOCNIK_PRIJIMA_ZADANI" metarole_name="NPC" role_name="POMOCNIK_PRIJIMA_ZADANI" />
+		<role _locked="false" _role_string_name="role_POMOCNIK_REAGUJE_NA_ZAKAZKU" metarole_name="NPC" role_name="POMOCNIK_REAGUJE_NA_ZAKAZKU" />
+		<role _locked="false" _role_string_name="role_POMOCNIK_UPOZORNUJE_CHATEM" metarole_name="NPC" role_name="POMOCNIK_UPOZORNUJE_CHATEM" />
 		<role _locked="false" _role_string_name="role_PONOCNY_MALESOV_CUTSCENA" metarole_name="NPC" role_name="PONOCNY_MALESOV_CUTSCENA" />
 		<role _locked="false" _role_string_name="role_PONOCNY_SEMIN" metarole_name="NPC" role_name="PONOCNY_SEMIN" />
 		<role _locked="false" _role_string_name="role_PONOCNY_TROSKOVICE" metarole_name="NPC" role_name="PONOCNY_TROSKOVICE" />
@@ -2914,6 +3002,9 @@
 		<role _locked="false" _role_string_name="role_POPIJENI_V_HOSPODE_MUZ_2" metarole_name="NPC" role_name="POPIJENI_V_HOSPODE_MUZ_2" />
 		<role _locked="false" _role_string_name="role_POSEL_KUBA_PARALU" metarole_name="NPC" role_name="POSEL_KUBA_PARALU" />
 		<role _locked="false" _role_string_name="role_POSEL_ZIKMUNDOVI" metarole_name="NPC" role_name="POSEL_ZIKMUNDOVI" />
+		<role _locked="false" _role_string_name="role_POSLEDNIBEREVSE_KUPEC" metarole_name="NPC" role_name="POSLEDNIBEREVSE_KUPEC" />
+		<role _locked="false" _role_string_name="role_POSLEDNIBEREVSE_POSILA1" metarole_name="NPC" role_name="POSLEDNIBEREVSE_POSILA1" />
+		<role _locked="false" _role_string_name="role_POSLEDNIBEREVSE_POSILA2" metarole_name="NPC" role_name="POSLEDNIBEREVSE_POSILA2" />
 		<role _locked="false" _role_string_name="role_POSLICEK_CHAT" metarole_name="NPC" role_name="POSLICEK_CHAT" />
 		<role _locked="false" _role_string_name="role_POSLICEK_TOVARYSSTVA" metarole_name="NPC" role_name="POSLICEK_TOVARYSSTVA" />
 		<role _locked="false" _role_string_name="role_POSLUCHAC_TROSKY_1" metarole_name="NPC" role_name="POSLUCHAC_TROSKY_1" />
@@ -3035,11 +3126,13 @@
 		<role _locked="false" _role_string_name="role_PRITEL_STRCEN_HRACEM__KOLIZE____ZENA" metarole_name="PRATELSKE_NPC_DOSTALO_ZASAH_(KOLIZE)" role_name="PRITEL_STRCEN_HRACEM_KOLIZE_ZENA" />
 		<role _locked="false" _role_string_name="role_PRO_MISTRA_ZAVET_MENHART_Z_FRANKFURTU_TIPSTER_CHATUJE_NA_HRACE" metarole_name="NPC_ZDRAVI_HRACE" role_name="PRO_MISTRA_ZAVET_MENHART_Z_FRANKFURTU_TIPSTER_CHATUJE_NA_HRACE" />
 		<role _locked="false" _role_string_name="role_PRO_MISTRA_ZAVET_MIKULAS_PRAZSKY_SERMIR_TIPSTER_CHATUJE_NA_HRACE" metarole_name="NPC_ZDRAVI_HRACE" role_name="PRO_MISTRA_ZAVET_MIKULAS_PRAZSKY_SERMIR_TIPSTER_CHATUJE_NA_HRACE" />
+		<role _locked="false" _role_string_name="role_PROBLEMOVEJ_PARCHANT" metarole_name="NPC" role_name="PROBLEMOVEJ_PARCHANT" />
 		<role _locked="false" _role_string_name="role_PROCEK" metarole_name="NPC" role_name="PROCEK" />
 		<role _locked="false" _role_string_name="role_PRODAVAC_SLATEJOV" metarole_name="NPC" role_name="PRODAVAC_SLATEJOV" />
 		<role _locked="false" _role_string_name="role_PRODAVAC_VLASAK_1" metarole_name="NPC" role_name="PRODAVAC_VLASAK_1" />
 		<role _locked="false" _role_string_name="role_PRODAVAC_VLASAK_2" metarole_name="NPC" role_name="PRODAVAC_VLASAK_2" />
 		<role _locked="false" _role_string_name="role_PRODAVAC_VLASAK_ASISTENT" metarole_name="PRODAVAC_ASISTENT" role_name="PRODAVAC_VLASAK_ASISTENT" />
+		<role _locked="false" _role_string_name="role_PRODEJCE_RECEPTU_PRODEJCE" metarole_name="NPC" role_name="PRODEJCE_RECEPTU_PRODEJCE" />
 		<role _locked="false" _role_string_name="role_PRODEJCE_ZE_ZIKMUNDOVA_TABORA_VIKTORKA" metarole_name="NPC" role_name="PRODEJCE_ZE_ZIKMUNDOVA_TABORA_VIKTORKA" />
 		<role _locked="false" _role_string_name="role_PROKOP_KNEZ" metarole_name="NPC" role_name="PROKOP_KNEZ" />
 		<role _locked="false" _role_string_name="role_PROTISTRANA" metarole_name="COMBAT_SHOUT_TARGET" role_name="PROTISTRANA" />
@@ -3239,6 +3332,9 @@
 		<role _locked="false" _role_string_name="role_RYCHTAR_PLUMEL_KUTNA_HORA" metarole_name="NPC" role_name="RYCHTAR_PLUMEL_KUTNA_HORA" />
 		<role _locked="false" _role_string_name="role_RYCHTAR_PLUMEL_SETKANI_V_RATBORI" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="RYCHTAR_PLUMEL_SETKANI_V_RATBORI" />
 		<role _locked="false" _role_string_name="role_RYCHTAR_PRITOKY" metarole_name="NPC" role_name="RYCHTAR_PRITOKY" />
+		<role _locked="false" _role_string_name="role_RYCHTAR_PRITOKY_DOSTAL_ZASAH" metarole_name="SKIRMISH_HITTARGET_TARGET" role_name="RYCHTAR_PRITOKY_DOSTAL_ZASAH" />
+		<role _locked="false" _role_string_name="role_RYCHTAR_PRITOKY_SKIRMISH_IDLE" metarole_name="COMBAT_IDLE" role_name="RYCHTAR_PRITOKY_SKIRMISH_IDLE" />
+		<role _locked="false" _role_string_name="role_RYCHTAR_PRITOKY_ZASAHNUL_V_DUELU" metarole_name="SKIRMISH_HITTARGET_SOURCE" role_name="RYCHTAR_PRITOKY_ZASAHNUL_V_DUELU" />
 		<role _locked="false" _role_string_name="role_RYCHTAR_S_LIDMI" metarole_name="RYCHTAR_S_NPC" role_name="RYCHTAR_S_LIDMI" />
 		<role _locked="false" _role_string_name="role_RYCHTAR_U_STOLU" metarole_name="RYCHTAR_S_PISAREM_U_STOLU" role_name="RYCHTAR_U_STOLU" />
 		<role _locked="false" _role_string_name="role_RYCHTAROVA_DCERA_SVATBA" metarole_name="NPC" role_name="RYCHTAROVA_DCERA_SVATBA" />
@@ -3337,6 +3433,7 @@
 		<role _locked="false" _role_string_name="role_SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU_MUZ" metarole_name="SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU" role_name="SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU_MUZ" />
 		<role _locked="false" _role_string_name="role_SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU_ZENA" metarole_name="SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU" role_name="SHOWRUNNER_VOLA_NA_HRACE_PO_ZAVODU_ZENA" />
 		<role _locked="false" _role_string_name="role_SHOWRUNNER_ZAVOD_BRZO_SKONCI_BIBREK" metarole_name="SHOWRUNNER_ZAVOD_BRZO_SKONCI" role_name="SHOWRUNNER_ZAVOD_BRZO_SKONCI_BIBREK" />
+		<role _locked="false" _role_string_name="role_SIKANATOR" metarole_name="NPC" role_name="SIKANATOR" />
 		<role _locked="false" _role_string_name="role_SITUACE_LAZEBNICE" metarole_name="SITUACE_MAJITELKALAZNI" role_name="SITUACE_LAZEBNICE" />
 		<role _locked="false" _role_string_name="role_SITUACE_MAJITELKA_LAZNI" metarole_name="SITUACE_MAJITELKALAZNI" role_name="SITUACE_MAJITELKA_LAZNI" />
 		<role _locked="false" _role_string_name="role_SITUACE_MUZ_NA_BRANE" metarole_name="SITUACE_GATETOLL" role_name="SITUACE_MUZ_NA_BRANE" />
@@ -3494,6 +3591,7 @@
 		<role _locked="false" _role_string_name="role_STRAZ_HLIDA_MRTVOLU__MRTVOLA_" metarole_name="STRAZ_HLIDA_MRTVOLU_(MRTVOLA)" role_name="STRAZ_HLIDA_MRTVOLU_MRTVOLA" />
 		<role _locked="false" _role_string_name="role_STRAZ_JDE_DO_AKCE_PO_REPORTU" metarole_name="NPC" role_name="STRAZ_JDE_DO_AKCE_PO_REPORTU" />
 		<role _locked="false" _role_string_name="role_STRAZ_JE_SVEDKEM_VYTRZNOSTI_UNIVERZAL" metarole_name="STRAZ_JE_SVEDKEM_VYTRZNOSTI_UNIVERZAL" role_name="STRAZ_JE_SVEDKEM_VYTRZNOSTI_UNIVERZAL" />
+		<role _locked="false" _role_string_name="role_STRAZ_KLASTER" metarole_name="STRAZ_ZATYKANI" role_name="STRAZ_KLASTER" />
 		<role _locked="false" _role_string_name="role_STRAZ_KONCI_PATRANI_A_NEVI_KDO_BYL_PACHATEL_STRAZ" metarole_name="NPC_VZDAVA_PATRANI_NA_MISTE_CINU_(NEVI_O_HRACI)" role_name="STRAZ_KONCI_PATRANI_A_NEVI_KDO_BYL_PACHATEL_STRAZ" />
 		<role _locked="false" _role_string_name="role_STRAZ_KUTNA_HORA" metarole_name="NPC" role_name="STRAZ_KUTNA_HORA" />
 		<role _locked="false" _role_string_name="role_STRAZ_LOOKAROUND_PO_NAPADENI_ZVIRETE" metarole_name="NPC_PATRA_NA_MISTE_CINU_(NASILI_NA_ZVIRETI__ASSAULT__STRAZ)" role_name="STRAZ_LOOKAROUND_PO_NAPADENI_ZVIRETE" />
@@ -3643,6 +3741,7 @@
 		<role _locked="false" _role_string_name="role_STRAZE_Z_VEZE_VYSLECH_ZIKMUNDOVO" metarole_name="NPC" role_name="STRAZE_Z_VEZE_VYSLECH_ZIKMUNDOVO" />
 		<role _locked="false" _role_string_name="role_STRAZNY_CHATUJE_NA_HRACE_OHLEDNE_VYPNUTEHO_TRESPASSU" metarole_name="NPC_ZDRAVI_HRACE" role_name="STRAZNY_CHATUJE_NA_HRACE_OHLEDNE_VYPNUTEHO_TRESPASSU" />
 		<role _locked="false" _role_string_name="role_STRAZNY_JAREK" metarole_name="NPC" role_name="STRAZNY_JAREK" />
+		<role _locked="false" _role_string_name="role_STRAZNY_JEDLICKA" metarole_name="NPC" role_name="STRAZNY_JEDLICKA" />
 		<role _locked="false" _role_string_name="role_STRAZNY_KROUPA" metarole_name="NPC" role_name="STRAZNY_KROUPA" />
 		<role _locked="false" _role_string_name="role_STRAZNY_REAGUJE_NA_REPORT_MIMO_SLUZBU" metarole_name="STRAZNY_REAGUJE_NA_REPORT_MIMO_SLUZBU" role_name="STRAZNY_REAGUJE_NA_REPORT_MIMO_SLUZBU" />
 		<role _locked="false" _role_string_name="role_STRAZNY_RESICI_PRESTUPEK" metarole_name="STRAZNY_RESICI_PRESTUPEK" role_name="STRAZNY_RESICI_PRESTUPEK" />
@@ -3864,6 +3963,7 @@
 		<role _locked="false" _role_string_name="role_SVEPOMOC_ZATYKANI_OPAKOVANA_VYZVA_ZENA" metarole_name="SVEPOMOC_OPAKOVANA_VYZVA" role_name="SVEPOMOC_ZATYKANI_OPAKOVANA_VYZVA_ZENA" />
 		<role _locked="false" _role_string_name="role_SVEPOMOC_ZATYKANI_PRVNI_VYZVA_MUZ" metarole_name="SVEPOMOC_PRVNI_VYZVA" role_name="SVEPOMOC_ZATYKANI_PRVNI_VYZVA_MUZ" />
 		<role _locked="false" _role_string_name="role_SVEPOMOC_ZATYKANI_PRVNI_VYZVA_ZENA" metarole_name="SVEPOMOC_PRVNI_VYZVA" role_name="SVEPOMOC_ZATYKANI_PRVNI_VYZVA_ZENA" />
+		<role _locked="false" _role_string_name="role_SVETSKE_DAROVANI" metarole_name="NPC" role_name="SVETSKE_DAROVANI" />
 		<role _locked="false" _role_string_name="role_SYN_LOVCIHO_VITEK" metarole_name="NPC" role_name="SYN_LOVCIHO_VITEK" />
 		<role _locked="false" _role_string_name="role_SYN_LOVCIHO_VITEK_TEST_METAROLE" metarole_name="GOSSIP" role_name="SYN_LOVCIHO_VITEK_TEST_METAROLE" />
 		<role _locked="false" _role_string_name="role_SYN_SEDLARE_SEMIN_O_KOCOVNICICH" metarole_name="NPC" role_name="SYN_SEDLARE_SEMIN_O_KOCOVNICICH" />
@@ -3935,6 +4035,7 @@
 		<role _locked="false" _role_string_name="role_TOVARYS_1" metarole_name="NPC" role_name="TOVARYS_1" />
 		<role _locked="false" _role_string_name="role_TOVARYS_2" metarole_name="NPC" role_name="TOVARYS_2" />
 		<role _locked="false" _role_string_name="role_TOVARYS_3" metarole_name="NPC" role_name="TOVARYS_3" />
+		<role _locked="false" _role_string_name="role_TOVARYS_BRUNA" metarole_name="NPC" role_name="TOVARYS_BRUNA" />
 		<role _locked="false" _role_string_name="role_TOVARYS_CHRUDOS" metarole_name="NPC" role_name="TOVARYS_CHRUDOS" />
 		<role _locked="false" _role_string_name="role_TOVARYS_PO_COMBATU_BEZ_UA_CENKEM" metarole_name="NPC" role_name="TOVARYS_PO_COMBATU_BEZ_UA_CENKEM" />
 		<role _locked="false" _role_string_name="role_TOVARYS_PUSKO" metarole_name="NPC" role_name="TOVARYS_PUSKO" />
@@ -3974,6 +4075,8 @@
 		<role _locked="false" _role_string_name="role_TRUHLARUV_OTEC" metarole_name="NPC" role_name="TRUHLARUV_OTEC" />
 		<role _locked="false" _role_string_name="role_TURNAJNICI_KH_TURNAJ_VE_SVETE_PROHRA" metarole_name="NPC_ZDRAVI_HRACE" role_name="TURNAJNICI_KH_TURNAJ_VE_SVETE_PROHRA" />
 		<role _locked="false" _role_string_name="role_TURNAJNICI_KH_TURNAJ_VE_SVETE_VYHRA" metarole_name="NPC_ZDRAVI_HRACE" role_name="TURNAJNICI_KH_TURNAJ_VE_SVETE_VYHRA" />
+		<role _locked="false" _role_string_name="role_UCEDNIK_JINDRUV_UCEDNIK" metarole_name="NPC" role_name="UCEDNIK_JINDRUV_UCEDNIK" />
+		<role _locked="false" _role_string_name="role_UCEDNIK_ROZLOUCENI_UCEDNIK" metarole_name="ROZLOUCENI" role_name="UCEDNIK_ROZLOUCENI_UCEDNIK" />
 		<role _locked="false" _role_string_name="role_UCTIVY_POZDRAV_MUZ" metarole_name="SITUACE_POZDRAVY" role_name="UCTIVY_POZDRAV_MUZ" />
 		<role _locked="false" _role_string_name="role_UCTIVY_POZDRAV_ZENA" metarole_name="SITUACE_POZDRAVY" role_name="UCTIVY_POZDRAV_ZENA" />
 		<role _locked="false" _role_string_name="role_UDANI_BARDA_KUBA_PARALU" metarole_name="NPC" role_name="UDANI_BARDA_KUBA_PARALU" />
@@ -4194,6 +4297,7 @@
 		<role _locked="false" _role_string_name="role_VOJKA" metarole_name="NPC" role_name="VOJKA" />
 		<role _locked="false" _role_string_name="role_VOKRAK" metarole_name="NPC" role_name="VOKRAK" />
 		<role _locked="false" _role_string_name="role_VOKRAK_SKILLTEACHER" metarole_name="SKILLTEACHER" role_name="VOKRAK_SKILLTEACHER" />
+		<role _locked="false" _role_string_name="role_VOLF" metarole_name="NPC" role_name="VOLF" />
 		<role _locked="false" _role_string_name="role_VORECH" metarole_name="NPC" role_name="VORECH" />
 		<role _locked="false" _role_string_name="role_VORSILA_VYSOKA" metarole_name="NPC" role_name="VORSILA_VYSOKA" />
 		<role _locked="false" _role_string_name="role_VORSILINA_MATKA_VYSOKA" metarole_name="NPC" role_name="VORSILINA_MATKA_VYSOKA" />
@@ -4227,6 +4331,9 @@
 		<role _locked="false" _role_string_name="role_VYJEDNAVANI_(ZENA)" metarole_name="VYJEDNAVANI" role_name="VYJEDNAVANI_ZENA" />
 		<role _locked="false" _role_string_name="role_VYKRADAC_1" metarole_name="NPC" role_name="VYKRADAC_1" />
 		<role _locked="false" _role_string_name="role_VYKRADAC_2" metarole_name="NPC" role_name="VYKRADAC_2" />
+		<role _locked="false" _role_string_name="role_VYKRADAC_HROBU_1_MALIRUV_LEK" metarole_name="NPC" role_name="VYKRADAC_HROBU_1_MALIRUV_LEK" />
+		<role _locked="false" _role_string_name="role_VYKRADAC_HROBU_2_MALIRUV_LEK" metarole_name="NPC" role_name="VYKRADAC_HROBU_2_MALIRUV_LEK" />
+		<role _locked="false" _role_string_name="role_VYKRADAC_HROBU_3_MALIRUV_LEK" metarole_name="NPC" role_name="VYKRADAC_HROBU_3_MALIRUV_LEK" />
 		<role _locked="false" _role_string_name="role_VYKRADACI" metarole_name="NPC" role_name="VYKRADACI" />
 		<role _locked="false" _role_string_name="role_VYMENA_STRAZI_MA_HLIDCE_MUZ1" metarole_name="NPC" role_name="VYMENA_STRAZI_MA_HLIDCE_MUZ1" />
 		<role _locked="false" _role_string_name="role_VYMENA_STRAZI_NA_HLIDCE_MUZ2" metarole_name="NPC" role_name="VYMENA_STRAZI_NA_HLIDCE_MUZ2" />
@@ -4249,7 +4356,10 @@
 		<role _locked="false" _role_string_name="role_VYVOLAVANI_NA_TRHU_UNIVERZAL_ZENA" metarole_name="NPC_VYVOLAVANI_NA_TRHU" role_name="VYVOLAVANI_NA_TRHU_UNIVERZAL_ZENA" />
 		<role _locked="false" _role_string_name="role_VYVOLAVANI_NA_TRHU_ZELINAR_MUZ" metarole_name="NPC_VYVOLAVANI_NA_TRHU" role_name="VYVOLAVANI_NA_TRHU_ZELINAR_MUZ" />
 		<role _locked="false" _role_string_name="role_VYVOLAVANI_NA_TRHU_ZELINARKA_ZENA" metarole_name="NPC_VYVOLAVANI_NA_TRHU" role_name="VYVOLAVANI_NA_TRHU_ZELINARKA_ZENA" />
+		<role _locked="false" _role_string_name="role_VYVOLAVANI_NELEGALNI_VYVOLAVAC" metarole_name="NPC" role_name="VYVOLAVANI_NELEGALNI_VYVOLAVAC" />
+		<role _locked="false" _role_string_name="role_VYVOLAVANI_NELEGALNI_VYVOLAVAC_ZENA" metarole_name="NPC" role_name="VYVOLAVANI_NELEGALNI_VYVOLAVAC_ZENA" />
 		<role _locked="false" _role_string_name="role_VYVOLAVANI_REAKCE" metarole_name="NPC" role_name="VYVOLAVANI_REAKCE" />
+		<role _locked="false" _role_string_name="role_VYVOLAVANI_ZADAVATEL" metarole_name="NPC" role_name="VYVOLAVANI_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_ZABITI_MLYNARE" metarole_name="NPC" role_name="ZABITI_MLYNARE" />
 		<role _locked="false" _role_string_name="role_ZABITI_MLYNARE_KYCHNUTI" metarole_name="NPC" role_name="ZABITI_MLYNARE_KYCHNUTI" />
 		<role _locked="false" _role_string_name="role_ZACHRANA_PTACKA_BRABANT_PROBRAL_SE_PO_ZBITI_NEVI_KDO_HO_ZBIL" metarole_name="NPC_SE_PROBOUZI_(BEZVEDOMI__NEVI_O_HRACI)" role_name="ZACHRANA_PTACKA_BRABANT_PROBRAL_SE_PO_ZBITI_NEVI_KDO_HO_ZBIL" />
@@ -4304,6 +4414,9 @@
 		<role _locked="false" _role_string_name="role_ZBRANE_PANA_SEMINA___PACHOLEK_2" metarole_name="NPC" role_name="ZBRANE_PANA_SEMINA_PACHOLEK_2" />
 		<role _locked="false" _role_string_name="role_ZBRANE_PANA_SEMINA_RYCHTAR_V_TROSKOVICICH_MLUVI_O_VOZE" metarole_name="NPC_IN_ENCLOSED_QUEST" role_name="ZBRANE_PANA_SEMINA_RYCHTAR_V_TROSKOVICICH_MLUVI_O_VOZE" />
 		<role _locked="false" _role_string_name="role_ZBROJIR_TROSKY" metarole_name="NPC" role_name="ZBROJIR_TROSKY" />
+		<role _locked="false" _role_string_name="role_ZBROJNICE_SPRAVCE_ZBROJNICE" metarole_name="NPC" role_name="ZBROJNICE_SPRAVCE_ZBROJNICE" />
+		<role _locked="false" _role_string_name="role_ZBROJNICE_STRAZNY" metarole_name="NPC" role_name="ZBROJNICE_STRAZNY" />
+		<role _locked="false" _role_string_name="role_ZBROJNICE_ZADAVATEL" metarole_name="NPC" role_name="ZBROJNICE_ZADAVATEL" />
 		<role _locked="false" _role_string_name="role_ZBROJNOS" metarole_name="NPC" role_name="ZBROJNOS" />
 		<role _locked="false" _role_string_name="role_ZBROJNOS_2" metarole_name="NPC" role_name="ZBROJNOS_2" />
 		<role _locked="false" _role_string_name="role_ZBROJNOS_KONRAD" metarole_name="NPC" role_name="ZBROJNOS_KONRAD" />
@@ -4322,6 +4435,7 @@
 		<role _locked="false" _role_string_name="role_ZEBRAK_DEKUJE_ZA_ALMUZNU_MUZ" metarole_name="ZEBRAK_DEKUJE_ZA_ALMUZNU" role_name="ZEBRAK_DEKUJE_ZA_ALMUZNU_MUZ" />
 		<role _locked="false" _role_string_name="role_ZEBRAK_DEKUJE_ZA_ALMUZNU_ZENA" metarole_name="ZEBRAK_DEKUJE_ZA_ALMUZNU" role_name="ZEBRAK_DEKUJE_ZA_ALMUZNU_ZENA" />
 		<role _locked="false" _role_string_name="role_ZEBRAK_SVATBA" metarole_name="NPC" role_name="ZEBRAK_SVATBA" />
+		<role _locked="false" _role_string_name="role_ZEBRAK_TRANSMISE" metarole_name="NPC" role_name="ZEBRAK_TRANSMISE" />
 		<role _locked="false" _role_string_name="role_ZEBRAK_ZEBRA_O_ALMUZNU_MUZ" metarole_name="ZEBRAK_ZEBRA_O_ALMUZNU" role_name="ZEBRAK_ZEBRA_O_ALMUZNU_MUZ" />
 		<role _locked="false" _role_string_name="role_ZELEJAK_NADAVA_HRACI" metarole_name="NPC_ZDRAVI_HRACE" role_name="ZELEJAK_NADAVA_HRACI" />
 		<role _locked="false" _role_string_name="role_ZELEJAK_REAKCE_NA_CRIME_V_S21" metarole_name="NPC_ESKALUJE_TRESPASS_V_CRIME" role_name="ZELEJAK_REAKCE_NA_CRIME_V_S21" />
@@ -4370,6 +4484,7 @@
 		<role _locked="false" _role_string_name="role_ZIKMUNDUV_POSEL_MALESOV" metarole_name="NPC" role_name="ZIKMUNDUV_POSEL_MALESOV" />
 		<role _locked="false" _role_string_name="role_ZINK" metarole_name="NPC" role_name="ZINK" />
 		<role _locked="false" _role_string_name="role_ZINK_GOSSIP" metarole_name="GOSSIP" role_name="ZINK_GOSSIP" />
+		<role _locked="false" _role_string_name="role_ZISKAVANI_ZASILEK_POSLICEK" metarole_name="NPC" role_name="ZISKAVANI_ZASILEK_POSLICEK" />
 		<role _locked="false" _role_string_name="role_ZIZKA_DOSTAL_ZASAH_RATBOR" metarole_name="SKIRMISH_HITTARGET_TARGET" role_name="ZIZKA_DOSTAL_ZASAH_RATBOR" />
 		<role _locked="false" _role_string_name="role_ZIZKA_GOSSIP" metarole_name="GOSSIP" role_name="ZIZKA_GOSSIP" />
 		<role _locked="false" _role_string_name="role_ZIZKA_REAGUJE_NA_HRACUV_ZLOCIN_NASILNY" metarole_name="COMPANION_KOMENTUJE_CRIME_NASILNY" role_name="ZIZKA_REAGUJE_NA_HRACUV_ZLOCIN_NASILNY" />
@@ -4406,6 +4521,8 @@
 		<role _locked="false" _role_string_name="role_ZTRACENA_CEST_FANOUSEK_TURNAJE_KUMAN_MUZ" metarole_name="NPC" role_name="ZTRACENA_CEST_FANOUSEK_TURNAJE_KUMAN_MUZ" />
 		<role _locked="false" _role_string_name="role_ZTRACENA_CEST_FANOUSEK_TURNAJE_MUZ" metarole_name="NPC" role_name="ZTRACENA_CEST_FANOUSEK_TURNAJE_MUZ" />
 		<role _locked="false" _role_string_name="role_ZTRACENA_CEST_FANOUSEK_TURNAJE_ZENA" metarole_name="NPC" role_name="ZTRACENA_CEST_FANOUSEK_TURNAJE_ZENA" />
+		<role _locked="false" _role_string_name="role_ZUBAR_MANZELKA_PACIENTA" metarole_name="NPC" role_name="ZUBAR_MANZELKA_PACIENTA" />
+		<role _locked="false" _role_string_name="role_ZUBAR_PACIENT" metarole_name="NPC" role_name="ZUBAR_PACIENT" />
 		<role _locked="false" _role_string_name="role_ZVEST" metarole_name="NPC" role_name="ZVEST" />
 	</roles>
 </database>

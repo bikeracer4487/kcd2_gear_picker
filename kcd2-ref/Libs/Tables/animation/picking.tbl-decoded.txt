@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/animation/picking.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\animation\picking.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 801953885
   Layout Hash ........... 3417094649
   Table Version ......... 3
-  Line Count ............ 82
-  String Data Size ...... 1844
-  Unique String Count ... 89
-  File Size ............. 8432
+  Line Count ............ 94
+  String Data Size ...... 2255
+  Unique String Count ... 102
+  File Size ............. 9803
   Calculated Line Size .. 80 (rem. 0)
 String Table:
   [0] Picking
@@ -18,86 +18,99 @@ String Table:
   [3] stealth+pickHandRight
   [4] stealth+pickHandLeft
   [5] l_bow+prime+pickHandRight
-  [6] pickHandRight+r_pick_book+fromGround
+  [6] l_lamp+pickHandRight+r_pick_book+fromGround
   [7] r_pick_book
-  [8] pickHandRight+r_pick_long+fromGround
-  [9] r_pick_long
-  [10] pickHandRight+r_pick_basket+fromGround
-  [11] r_pick_basket
-  [12] pickHandRight+r_pick_axe_tool+fromGround
-  [13] r_pick_axe_tool
-  [14] pickHandRight+r_pick_shovel+fromGround
-  [15] r_pick_shovel
-  [16] l_torch+pickHandRight
-  [17] player+r_pick_halberd
-  [18] player+r_pick_sack
-  [19] r_pick_sack
-  [20] l_pick_hoe+fromGround
-  [21] l_pick_hoe
-  [22] r_pick_crate
-  [23] l_pick_plate
-  [24] pickHandRight
-  [25] pickHandLeft
-  [26] l_pick_pavise
-  [27] l_pick_branch
-  [28] r_pick_fishingRod
-  [29] r_pick_bucket
-  [30] pickHandRight+r_pick_tray+fromGround
-  [31] r_pick_tray
-  [32] pickHandLeft+l_pick_shoppingBasket+fromGround
-  [33] l_pick_shoppingBasket
-  [34] pickHandLeft+l_pick_basketWeaving+fromGround
-  [35] l_pick_basketWeaving
-  [36] pickHandLeft+l_pick_eggBasket+fromGround
-  [37] l_pick_eggBasket
-  [38] pickHandLeft+l_pick_plate+fromGround
-  [39] pickHandLeft+l_pick_pouch+fromGround
-  [40] l_pick_pouch
-  [41] pickHandRight+r_pick_broom+fromGround
-  [42] r_pick_broom
-  [43] pickHandLeft+l_pick_milkpan+fromGround
-  [44] l_pick_milkpan
-  [45] pickHandLeft+l_pick_hen2+fromGround
-  [46] l_pick_hen2
-  [47] pickHandRight+r_pick_stein+fromGround
-  [48] r_pick_stein
-  [49] l_lamp+r_pick_bucket
-  [50] l_pick_stoneBasket
-  [51] l_pick_bowl
-  [52] Placing
-  [53] r_sack+drunk+pickHandRight
-  [54] r_sack
-  [55] r_sack+player+pickHandRight
-  [56] l_torch+r_bucket+pickHandRight
-  [57] l_torch
-  [58] r_sack+pickHandRight
-  [59] r_basket+pickHandRight
-  [60] r_basket
-  [61] r_halberd+pickHandRight
-  [62] r_halberd
-  [63] r_bucket+pickHandRight
-  [64] r_bucket
-  [65] l_torch+r_shovel+pickHandRight
-  [66] r_shovel+pickHandRight
-  [67] r_shovel
-  [68] l_plate+pickHandLeft
-  [69] l_plate
-  [70] r_crate+pickHandRight
-  [71] r_crate
-  [72] l_branch
-  [73] r_stein+pickHandLeft+pickSideLeft
-  [74] r_stein
-  [75] r_tray+pickHandRight
-  [76] r_tray
-  [77] l_basketWeaving+pickHandLeft
-  [78] l_basketWeaving
-  [79] l_shoppingBasket+pickHandLeft
-  [80] l_shoppingBasket
-  [81] r_broom+pickHandRight
-  [82] r_broom
-  [83] l_stoneBasket+pickHandLeft
-  [84] l_stoneBasket
-  [85] l_hen2+pickHandLeft
-  [86] l_hen2
-  [87] l_eggBasket+pickHandLeft
-  [88] l_eggBasket
+  [8] l_lamp+pickHandRight+r_pick_shovel+fromGround
+  [9] r_pick_shovel
+  [10] l_lamp+pickHandRight+r_pick_axe_tool+fromGround
+  [11] r_pick_axe_tool
+  [12] l_lamp+pickHandRight+r_pick_long+fromGround
+  [13] r_pick_long
+  [14] pickHandRight+r_pick_book+fromGround
+  [15] pickHandRight+r_pick_long+fromGround
+  [16] pickHandLeft+l_pick_firewood+fromGround
+  [17] l_pick_firewood
+  [18] pickHandLeft+l_pick_lamp+fromGround
+  [19] l_pick_lamp
+  [20] pickHandRight+r_pick_basket+fromGround
+  [21] r_pick_basket
+  [22] pickHandRight+r_pick_axe_tool+fromGround
+  [23] pickHandRight+r_pick_shovel+fromGround
+  [24] l_torch+pickHandRight
+  [25] player+r_pick_halberd
+  [26] player+r_pick_sack
+  [27] r_pick_sack
+  [28] l_pick_hoe+fromGround
+  [29] l_pick_hoe
+  [30] r_pick_crate
+  [31] l_pick_plate
+  [32] pickHandRight
+  [33] pickHandLeft
+  [34] l_pick_pavise
+  [35] l_pick_branch
+  [36] r_pick_fishingRod
+  [37] r_pick_bucket
+  [38] pickHandRight+r_pick_tray+fromGround
+  [39] r_pick_tray
+  [40] pickHandLeft+l_pick_shoppingBasket+fromGround
+  [41] l_pick_shoppingBasket
+  [42] pickHandLeft+l_pick_basketWeaving+fromGround
+  [43] l_pick_basketWeaving
+  [44] pickHandLeft+l_pick_eggBasket+fromGround
+  [45] l_pick_eggBasket
+  [46] pickHandLeft+l_pick_plate+fromGround
+  [47] pickHandLeft+l_pick_pouch+fromGround
+  [48] l_pick_pouch
+  [49] pickHandRight+r_pick_broom+fromGround
+  [50] r_pick_broom
+  [51] pickHandLeft+l_pick_milkpan+fromGround
+  [52] l_pick_milkpan
+  [53] pickHandLeft+l_pick_hen2+fromGround
+  [54] l_pick_hen2
+  [55] pickHandRight+r_pick_stein+fromGround
+  [56] r_pick_stein
+  [57] l_lamp+r_pick_bucket
+  [58] l_pick_stoneBasket
+  [59] l_pick_bowl
+  [60] Placing
+  [61] r_sack+drunk+pickHandRight
+  [62] r_sack
+  [63] r_sack+player+pickHandRight
+  [64] l_torch+r_bucket+pickHandRight
+  [65] l_torch
+  [66] r_sack+pickHandRight
+  [67] r_basket+pickHandRight
+  [68] r_basket
+  [69] r_halberd+pickHandRight
+  [70] r_halberd
+  [71] r_bucket+pickHandRight
+  [72] r_bucket
+  [73] l_lamp+r_axe_tool+pickHandRight
+  [74] l_lamp
+  [75] l_torch+r_shovel+pickHandRight
+  [76] l_lamp+r_book+pickHandRight
+  [77] l_lamp+r_long+pickHandRight
+  [78] l_lamp+r_shovel+pickHandRight
+  [79] r_shovel+pickHandRight
+  [80] r_shovel
+  [81] l_plate+pickHandLeft
+  [82] l_plate
+  [83] r_crate+pickHandRight
+  [84] r_crate
+  [85] l_branch
+  [86] r_stein+pickHandLeft+pickSideLeft
+  [87] r_stein
+  [88] r_tray+pickHandRight
+  [89] r_tray
+  [90] l_basketWeaving+pickHandLeft
+  [91] l_basketWeaving
+  [92] l_shoppingBasket+pickHandLeft
+  [93] l_shoppingBasket
+  [94] r_broom+pickHandRight
+  [95] r_broom
+  [96] l_stoneBasket+pickHandLeft
+  [97] l_stoneBasket
+  [98] l_hen2+pickHandLeft
+  [99] l_hen2
+  [100] l_eggBasket+pickHandLeft
+  [101] l_eggBasket

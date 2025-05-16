@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/crafting_material_type.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\item\crafting_material_type.tbl
 ======================================================================
 Header:
   File Format Version ... 3

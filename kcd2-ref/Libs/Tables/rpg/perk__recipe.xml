@@ -44,6 +44,7 @@
 		<perk autolearnable="false" perk_id="766b081c-8cd9-465a-b722-ae8ab356fa00" perk_name="BS recipe - r_longswordcommon" visibility="0" />
 		<perk autolearnable="false" perk_id="77c75659-e348-41e7-9ffa-12a2727e41fa" perk_name="BS recipe - r_kovaniRelikvie_swordOfKnightValentin" visibility="0" />
 		<perk autolearnable="false" perk_id="781dc8f4-3e57-4f08-b0f3-5d55a0868375" perk_name="Alch recipe - mintha" visibility="0" />
+		<perk autolearnable="false" perk_id="78fc983b-0fc6-4cae-b68b-d01695ccffa8" perk_name="BS recipe - r_uchazec_guildSword" visibility="0" />
 		<perk autolearnable="false" perk_id="7f51650a-75fe-43ed-a555-c5511b9e086e" perk_name="Alch recipe - hooch" visibility="0" />
 		<perk autolearnable="false" perk_id="809ec8dd-39a1-413a-8512-44c2d4140c74" perk_name="Alch recipe - energy" visibility="0" />
 		<perk autolearnable="false" perk_id="844f6a78-37b7-4dbb-905d-0ca53e0c1290" perk_name="Alch recipe - painkiller" visibility="0" />
@@ -63,6 +64,7 @@
 		<perk autolearnable="false" perk_id="b58e15f5-f081-41a2-b1a0-7897202d621c" perk_name="Alch recipe - respec" visibility="0" />
 		<perk autolearnable="false" perk_id="b8a82dc8-0eea-4da6-b6ad-c3e57467e187" perk_name="Alch recipe - fevertonic" visibility="0" />
 		<perk autolearnable="false" perk_id="bc052134-4e12-4d25-8940-c6711b8505d1" perk_name="BS recipe - r_polearmBruncvik" visibility="0" />
+		<perk autolearnable="false" perk_id="c2b04d9a-bd9b-4eba-a3cc-6fd7a1c021e1" perk_name="BS recipe - r_horseshoeSpecial_phantomHorse" visibility="0" />
 		<perk autolearnable="false" perk_id="c944bf20-6c76-4a5f-803f-7f87c2d69dba" perk_name="BS recipe - r_huntingswordfalchion" visibility="0" />
 		<perk autolearnable="false" perk_id="cb053d06-d5b1-4b5a-8697-f1b161a6052e" perk_name="BS recipe - r_kovaniNaKovarne_smithsDefense" visibility="0" />
 		<perk autolearnable="false" perk_id="cd9ff25b-2faa-4f78-aeb3-f108d1d7354b" perk_name="BS recipe - basic_sword" visibility="0" />

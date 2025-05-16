@@ -1,0 +1,18 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__bazilisciVejce.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 102
+  Unique String Count ... 4
+  File Size ............. 514
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] bazilisciVejce_wildDog_3
+  [1] animal_wild_enemy_trosecko
+  [2] bazilisciVejce_wildDog_1
+  [3] bazilisciVejce_wildDog_2

@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_guard_movement.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\combat\combat_action_guard_movement.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 569042029
   Layout Hash ........... 1982745168
   Table Version ......... 30
-  Line Count ............ 251
-  String Data Size ...... 7445
-  Unique String Count ... 162
-  File Size ............. 77753
+  Line Count ............ 257
+  String Data Size ...... 7583
+  Unique String Count ... 168
+  File Size ............. 79571
   Calculated Line Size .. 280 (rem. 0)
 String Table:
   [0] CombatIdle
@@ -70,107 +70,113 @@ String Table:
   [55] l_shield+shieldUp
   [56] l_shield+freeBlock
   [57] HorseCombatIdle
-  [58] horse+l_torch+r_longsword+sZ1+freeGuard+l_noShield
-  [59] horse+l_torch+r_longsword+sZ2+freeGuard+l_noShield
-  [60] horse+r_longsword+sZ1+freeGuard+l_noShield
-  [61] horse+r_longsword+sZ2+freeGuard+l_noShield
-  [62] horse+r_halberd+sZ2+freeGuard
-  [63] horse+r_halberd+sZ1+freeGuard
-  [64] horse+l_torch+sZ2+freeGuard+r_shortSwords+l_noShield
-  [65] horse+l_torch+sZ1+freeGuard+r_bluntWeapon+l_noShield
-  [66] horse+l_torch+sZ1+freeGuard+r_shortSwords+l_noShield
-  [67] horse+l_torch+sZ2+freeGuard+r_bluntWeapon+l_noShield
-  [68] horse+sZ2+freeGuard+r_shortSwords+l_noShield
-  [69] horse+l_shield+sZ2+freeGuard+r_bluntWeapon
-  [70] horse+l_shield+sZ1+freeGuard+r_swords
-  [71] horse+sZ2+freeGuard+r_bluntWeapon+l_noShield
-  [72] horse+l_shield+sZ2+freeGuard+r_swords
-  [73] horse+sZ1+freeGuard+r_shortSwords+l_noShield
-  [74] horse+l_shield+sZ1+freeGuard+r_bluntWeapon
-  [75] horse+sZ1+freeGuard+r_bluntWeapon+l_noShield
-  [76] horse
-  [77] HorseCombatMovement
-  [78] horse+walk+backward+l_torch+r_longsword+sZ2+freeGuard
-  [79] horse+walk+backward+l_torch+r_longsword+sZ1+freeGuard
-  [80] horse+walk+backward+l_longsword+r_longsword+sZ2+freeGuard
-  [81] horse+walk+backward+l_longsword+r_longsword+sZ1+freeGuard
-  [82] horse+run+l_torch+r_longsword+sZ1+freeGuard
-  [83] horse+dash+l_longsword+r_longsword+sZ1+freeGuard
-  [84] horse+run+l_longsword+r_longsword+sZ2+freeGuard
-  [85] horse+dash+l_torch+r_longsword+sZ1+freeGuard
-  [86] horse+walk+l_longsword+r_longsword+sZ1+freeGuard
-  [87] horse+walk+l_torch+r_longsword+sZ2+freeGuard
-  [88] horse+walk+backward+r_halberd+sZ2+freeGuard
-  [89] horse+run+l_longsword+r_longsword+sZ1+freeGuard
-  [90] horse+sprint+l_longsword+r_longsword+sZ1+freeGuard
-  [91] horse+sprint+l_torch+r_longsword+sZ2+freeGuard
-  [92] horse+run+l_torch+r_longsword+sZ2+freeGuard
-  [93] horse+walk+l_longsword+r_longsword+sZ2+freeGuard
-  [94] horse+dash+l_longsword+r_longsword+sZ2+freeGuard
-  [95] horse+dash+l_torch+r_longsword+sZ2+freeGuard
-  [96] horse+sprint+l_longsword+r_longsword+sZ2+freeGuard
-  [97] horse+walk+l_torch+r_longsword+sZ1+freeGuard
-  [98] horse+sprint+l_torch+r_longsword+sZ1+freeGuard
-  [99] horse+walk+r_halberd+sZ1+freeGuard
-  [100] horse+run+r_halberd+sZ1+freeGuard
-  [101] horse+dash+r_halberd+sZ2+freeGuard
-  [102] horse+dash+r_halberd+sZ1+freeGuard
-  [103] horse+run+r_halberd+sZ2+freeGuard
-  [104] horse+sprint+r_halberd+sZ2+freeGuard
-  [105] horse+walk+r_halberd+sZ2+freeGuard
-  [106] horse+sprint+r_halberd+sZ1+freeGuard
-  [107] horse+walk+backward+l_torch+sZ2+freeGuard+r_shortWeapon
-  [108] horse+walk+backward+l_torch+sZ1+freeGuard+r_shortWeapon
-  [109] horse+sprint+l_torch+sZ1+freeGuard+r_shortWeapon
-  [110] horse+run+l_torch+sZ2+freeGuard+r_shortWeapon
-  [111] horse+dash+l_torch+sZ2+freeGuard+r_shortWeapon
-  [112] horse+sprint+l_torch+sZ2+freeGuard+r_shortWeapon
-  [113] horse+walk+backward+sZ2+freeGuard+r_shortWeapon
-  [114] horse+walk+l_torch+sZ1+freeGuard+r_shortWeapon
-  [115] horse+dash+l_torch+sZ1+freeGuard+r_shortWeapon
-  [116] horse+walk+l_torch+sZ2+freeGuard+r_shortWeapon
-  [117] horse+walk+backward+sZ1+freeGuard+r_shortWeapon
-  [118] horse+run+l_torch+sZ1+freeGuard+r_shortWeapon
-  [119] horse+dash+sZ1+freeGuard+r_shortWeapon
-  [120] horse+walk+sZ1+freeGuard+r_shortWeapon
-  [121] horse+walk+sZ2+freeGuard+r_shortWeapon
-  [122] horse+dash+sZ2+freeGuard+r_shortWeapon
-  [123] horse+run+sZ1+freeGuard+r_shortWeapon
-  [124] horse+sprint+sZ2+freeGuard+r_shortWeapon
-  [125] horse+sprint+sZ1+freeGuard+r_shortWeapon
-  [126] horse+run+sZ2+freeGuard+r_shortWeapon
-  [127] HorseCombatJump
-  [128] horse+walk+l_shield+r_longsword+sZ1+freeGuard
-  [129] horse+sprint+l_shield+r_longsword+sZ2+freeGuard
-  [130] horse+walk+l_shield+r_longsword+sZ2+freeGuard
-  [131] horse+run+l_shield+r_longsword+sZ1+freeGuard
-  [132] horse+sprint+l_shield+r_longsword+sZ1+freeGuard
-  [133] horse+dash+l_shield+r_longsword+sZ1+freeGuard
-  [134] horse+run+l_shield+r_longsword+sZ2+freeGuard
-  [135] horse+dash+l_shield+r_longsword+sZ2+freeGuard
-  [136] horse+l_shield+r_longsword+sZ1+freeGuard
-  [137] horse+l_shield+r_longsword+sZ2+freeGuard
-  [138] horse+l_torch+r_longsword+sZ2+freeGuard
-  [139] horse+l_torch+r_longsword+sZ1+freeGuard
-  [140] horse+l_torch+sZ1+freeGuard+r_shortWeapon
-  [141] horse+l_torch+sZ2+freeGuard+r_shortWeapon
-  [142] horse+sZ2+freeGuard+r_shortWeapon
-  [143] horse+sZ1+freeGuard+r_shortWeapon
-  [144] HorseCombatLand
-  [145] HorseCombatRear
-  [146] l_torch+r_longsword+sZ2+freeGuard
-  [147] l_torch+r_longsword+sZ1+freeGuard
-  [148] l_shield+r_longsword+sZ1+freeGuard
-  [149] l_shield+r_longsword+sZ2+freeGuard
-  [150] r_halberd+sZ1+freeGuard
-  [151] r_halberd+sZ2+freeGuard
-  [152] l_torch+sZ2+freeGuard+r_shortWeapon
-  [153] l_torch+sZ1+freeGuard+r_shortWeapon
-  [154] sZ2+freeGuard+r_shortWeapon
-  [155] sZ1+freeGuard+r_shortWeapon
-  [156] HorseCombatForcedRear
-  [157] horse+r_longsword+sZ2+freeGuard
-  [158] horse+r_longsword+sZ1+freeGuard
-  [159] HorseCombatFastStop
-  [160] horse+l_shield+sZ2+freeGuard+r_shortWeapon
-  [161] horse+l_shield+sZ1+freeGuard+r_shortWeapon
+  [58] horse+r_rifle+charge+prime+cocked
+  [59] horse+l_crossbow+charge+prime
+  [60] horse+l_bow+charge+prime
+  [61] horse+l_bow+prime
+  [62] horse+l_crossbow
+  [63] horse+r_rifle
+  [64] horse+l_torch+r_longsword+sZ1+freeGuard+l_noShield
+  [65] horse+l_torch+r_longsword+sZ2+freeGuard+l_noShield
+  [66] horse+r_longsword+sZ1+freeGuard+l_noShield
+  [67] horse+r_longsword+sZ2+freeGuard+l_noShield
+  [68] horse+r_halberd+sZ2+freeGuard
+  [69] horse+r_halberd+sZ1+freeGuard
+  [70] horse+l_torch+sZ2+freeGuard+r_shortSwords+l_noShield
+  [71] horse+l_torch+sZ1+freeGuard+r_bluntWeapon+l_noShield
+  [72] horse+l_torch+sZ1+freeGuard+r_shortSwords+l_noShield
+  [73] horse+l_torch+sZ2+freeGuard+r_bluntWeapon+l_noShield
+  [74] horse+sZ2+freeGuard+r_shortSwords+l_noShield
+  [75] horse+l_shield+sZ2+freeGuard+r_bluntWeapon
+  [76] horse+l_shield+sZ1+freeGuard+r_swords
+  [77] horse+sZ2+freeGuard+r_bluntWeapon+l_noShield
+  [78] horse+l_shield+sZ2+freeGuard+r_swords
+  [79] horse+sZ1+freeGuard+r_shortSwords+l_noShield
+  [80] horse+l_shield+sZ1+freeGuard+r_bluntWeapon
+  [81] horse+sZ1+freeGuard+r_bluntWeapon+l_noShield
+  [82] horse
+  [83] HorseCombatMovement
+  [84] horse+walk+backward+l_torch+r_longsword+sZ2+freeGuard
+  [85] horse+walk+backward+l_torch+r_longsword+sZ1+freeGuard
+  [86] horse+walk+backward+l_longsword+r_longsword+sZ2+freeGuard
+  [87] horse+walk+backward+l_longsword+r_longsword+sZ1+freeGuard
+  [88] horse+run+l_torch+r_longsword+sZ1+freeGuard
+  [89] horse+dash+l_longsword+r_longsword+sZ1+freeGuard
+  [90] horse+run+l_longsword+r_longsword+sZ2+freeGuard
+  [91] horse+dash+l_torch+r_longsword+sZ1+freeGuard
+  [92] horse+walk+l_longsword+r_longsword+sZ1+freeGuard
+  [93] horse+walk+l_torch+r_longsword+sZ2+freeGuard
+  [94] horse+walk+backward+r_halberd+sZ2+freeGuard
+  [95] horse+run+l_longsword+r_longsword+sZ1+freeGuard
+  [96] horse+sprint+l_longsword+r_longsword+sZ1+freeGuard
+  [97] horse+sprint+l_torch+r_longsword+sZ2+freeGuard
+  [98] horse+run+l_torch+r_longsword+sZ2+freeGuard
+  [99] horse+walk+l_longsword+r_longsword+sZ2+freeGuard
+  [100] horse+dash+l_longsword+r_longsword+sZ2+freeGuard
+  [101] horse+dash+l_torch+r_longsword+sZ2+freeGuard
+  [102] horse+sprint+l_longsword+r_longsword+sZ2+freeGuard
+  [103] horse+walk+l_torch+r_longsword+sZ1+freeGuard
+  [104] horse+sprint+l_torch+r_longsword+sZ1+freeGuard
+  [105] horse+walk+r_halberd+sZ1+freeGuard
+  [106] horse+run+r_halberd+sZ1+freeGuard
+  [107] horse+dash+r_halberd+sZ2+freeGuard
+  [108] horse+dash+r_halberd+sZ1+freeGuard
+  [109] horse+run+r_halberd+sZ2+freeGuard
+  [110] horse+sprint+r_halberd+sZ2+freeGuard
+  [111] horse+walk+r_halberd+sZ2+freeGuard
+  [112] horse+sprint+r_halberd+sZ1+freeGuard
+  [113] horse+walk+backward+l_torch+sZ2+freeGuard+r_shortWeapon
+  [114] horse+walk+backward+l_torch+sZ1+freeGuard+r_shortWeapon
+  [115] horse+sprint+l_torch+sZ1+freeGuard+r_shortWeapon
+  [116] horse+run+l_torch+sZ2+freeGuard+r_shortWeapon
+  [117] horse+dash+l_torch+sZ2+freeGuard+r_shortWeapon
+  [118] horse+sprint+l_torch+sZ2+freeGuard+r_shortWeapon
+  [119] horse+walk+backward+sZ2+freeGuard+r_shortWeapon
+  [120] horse+walk+l_torch+sZ1+freeGuard+r_shortWeapon
+  [121] horse+dash+l_torch+sZ1+freeGuard+r_shortWeapon
+  [122] horse+walk+l_torch+sZ2+freeGuard+r_shortWeapon
+  [123] horse+walk+backward+sZ1+freeGuard+r_shortWeapon
+  [124] horse+run+l_torch+sZ1+freeGuard+r_shortWeapon
+  [125] horse+dash+sZ1+freeGuard+r_shortWeapon
+  [126] horse+walk+sZ1+freeGuard+r_shortWeapon
+  [127] horse+walk+sZ2+freeGuard+r_shortWeapon
+  [128] horse+dash+sZ2+freeGuard+r_shortWeapon
+  [129] horse+run+sZ1+freeGuard+r_shortWeapon
+  [130] horse+sprint+sZ2+freeGuard+r_shortWeapon
+  [131] horse+sprint+sZ1+freeGuard+r_shortWeapon
+  [132] horse+run+sZ2+freeGuard+r_shortWeapon
+  [133] HorseCombatJump
+  [134] horse+walk+l_shield+r_longsword+sZ1+freeGuard
+  [135] horse+sprint+l_shield+r_longsword+sZ2+freeGuard
+  [136] horse+walk+l_shield+r_longsword+sZ2+freeGuard
+  [137] horse+run+l_shield+r_longsword+sZ1+freeGuard
+  [138] horse+sprint+l_shield+r_longsword+sZ1+freeGuard
+  [139] horse+dash+l_shield+r_longsword+sZ1+freeGuard
+  [140] horse+run+l_shield+r_longsword+sZ2+freeGuard
+  [141] horse+dash+l_shield+r_longsword+sZ2+freeGuard
+  [142] horse+l_shield+r_longsword+sZ1+freeGuard
+  [143] horse+l_shield+r_longsword+sZ2+freeGuard
+  [144] horse+l_torch+r_longsword+sZ2+freeGuard
+  [145] horse+l_torch+r_longsword+sZ1+freeGuard
+  [146] horse+l_torch+sZ1+freeGuard+r_shortWeapon
+  [147] horse+l_torch+sZ2+freeGuard+r_shortWeapon
+  [148] horse+sZ2+freeGuard+r_shortWeapon
+  [149] horse+sZ1+freeGuard+r_shortWeapon
+  [150] HorseCombatLand
+  [151] HorseCombatRear
+  [152] l_torch+r_longsword+sZ2+freeGuard
+  [153] l_torch+r_longsword+sZ1+freeGuard
+  [154] l_shield+r_longsword+sZ1+freeGuard
+  [155] l_shield+r_longsword+sZ2+freeGuard
+  [156] r_halberd+sZ1+freeGuard
+  [157] r_halberd+sZ2+freeGuard
+  [158] l_torch+sZ2+freeGuard+r_shortWeapon
+  [159] l_torch+sZ1+freeGuard+r_shortWeapon
+  [160] sZ2+freeGuard+r_shortWeapon
+  [161] sZ1+freeGuard+r_shortWeapon
+  [162] HorseCombatForcedRear
+  [163] horse+r_longsword+sZ2+freeGuard
+  [164] horse+r_longsword+sZ1+freeGuard
+  [165] HorseCombatFastStop
+  [166] horse+l_shield+sZ2+freeGuard+r_shortWeapon
+  [167] horse+l_shield+sZ1+freeGuard+r_shortWeapon

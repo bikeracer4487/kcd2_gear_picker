@@ -3,7 +3,7 @@
 	<SmartEntitys version="1">
 		<SmartEntityTemplate DatabaseId="4caeee3d-c192-1173-f2f2-82d03366e5b0" Name="sermiri" UpdatePriority="false">
 			<BehaviorTemplates>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="menhart_firstChallenge">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="menhart_firstChallenge" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/sermiri/menhart.xml" TreeName="menhart_firstChallenge" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="arne_firstChallenge">

@@ -11,6 +11,7 @@
 		<game_over game_over_id="7" game_over_name="DiedByBleeding" game_over_type_id="2" game_over_ui_message="game_over_died_by_bleeding" />
 		<game_over game_over_id="8" game_over_name="DiedBySelfHarm" game_over_type_id="2" game_over_ui_message="game_over_died_by_self_harm" />
 		<game_over game_over_id="10" game_over_name="LostABattle" game_over_type_id="4" game_over_ui_message="game_over_lostBattle" />
+		<game_over game_over_id="20" game_over_name="Test" game_over_type_id="1" game_over_ui_message="game_over_test" />
 		<game_over game_over_id="26" game_over_name="DiedWhileUnconscious" game_over_type_id="0" game_over_ui_message="game_over_killed_while_unconscious" />
 		<game_over game_over_id="39" game_over_name="prepadeni_capon_killed" game_over_type_id="0" game_over_ui_message="honicka_v_jan_ptacek_zemr_XRSP" />
 		<game_over game_over_id="41" game_over_name="game_over_zachranaPtacka_caponDied" game_over_type_id="2" game_over_ui_message="game_over_zachranaPtacka_caponDied_text" />

@@ -117,5 +117,14 @@
 		<InventoryPreset Name="inventory_unique_menhartHorse" Mode="OneChild">
 			<ClothingPresetRef Name="horse_menhart" />
 		</InventoryPreset>
+    <InventoryPreset Name="inventory_unique_legateHorse" Mode="OneChild">
+      <ClothingPresetRef Name="papezskyLegat_legateHorse" />
+    </InventoryPreset>
+    <InventoryPreset Name="inventory_unique_legateMenHorse" Mode="OneChild">
+      <ClothingPresetRef Name="papezskyLegat_legateMenHorse" />
+    </InventoryPreset>
+	<InventoryPreset Name="inventory_unique_katuvSlehPhantomHorse" Mode="OneChild">
+      <ClothingPresetRef Name="katuvSleh_phantomHorse" />
+    </InventoryPreset>
 	</InventoryPresets>
 </database>

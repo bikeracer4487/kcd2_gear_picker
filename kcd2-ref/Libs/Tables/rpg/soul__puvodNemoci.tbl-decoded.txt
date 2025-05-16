@@ -1,0 +1,17 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__puvodNemoci.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 106
+  Unique String Count ... 3
+  File Size ............. 262
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] puvodNemoci_confessor
+  [1] kutnohorsko_settlements_sedlec_commonFolk_monastery_monks
+  [2] char_DLC3_MNICH_ZPOVEDNIK

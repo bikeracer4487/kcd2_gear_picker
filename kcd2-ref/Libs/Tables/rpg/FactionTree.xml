@@ -70,8 +70,14 @@
 									<Children>
 										<Faction Name="kutnohorsko_millers_rabstejnka_millerAndFamily" />
 										<Faction Name="kutnohorsko_millers_rabstejnka_millerHelpers" />
+										<Faction Name="kutnohorsko_millers_rabstejnka_sMlynariNejsouZerty">
+											<Relations>
+												<Relation target="kutnohorsko_enemies_bandits_rabstejnskoAlchemistCamp" reputation="1" />
+											</Relations>
+										</Faction>
 									</Children>
 								</Faction>
+								<Faction Name="kutnohorsko_millers_staraLhota" UIName="ui_fac_kutnohorsko_settlements_rabstejnsko" UIDescription="ui_fac_kutnohorsko_settlements_rabstejnsko_desc" UIIcon="miller" Comment="Mlyn Stara Lhota" LocationId="a2fffca6-8f7e-4740-b4f0-ebd92bc9a819" Labels="solitude" />
 							</Children>
 						</Faction>
 						<Faction Name="kutnohorsko_allies" Comment="Spojenci">
@@ -135,7 +141,8 @@
 								</Faction>
 								<Faction Name="kutnohorsko_outskirts_gamekeepers" UIName="ui_fac_gamekeepers" UIDescription="ui_fac_gamekeepers_kh_desc" UIIcon="gamekeepers" Comment="Hajni">
 									<Children>
-										<Faction Name="kutnohorsko_outskirts_gamekeepers_opatovicko" Comment="Hajny Bohunek Opatovicko" Labels="solitude" />
+										<Faction Name="kutnohorsko_outskirts_gamekeepers_opatovicko" Comment="Hajny Bohunek Opatovicko" Labels="solitude" LocationId="f6249b0e-e34c-47f0-a16e-a3538f15ee61"/>
+										<Faction Name="kutnohorsko_outskirts_gamekeepers_rabstejnsko" Comment="Hajny Rabstejnsko" Labels="solitude" LocationId="4c1298a5-24a7-4d92-bf4d-5b614ffa8079"/>
 										<Faction Name="kutnohorsko_outskirts_gamekeepers_XXX" Comment="Hajny sablona" Labels="solitude">
 											<Children>
 												<Faction Name="kutnohorsko_outskirts_gamekeepers_XXX_gamekeeperAndFamily" Comment="Hajny a rodina" />
@@ -152,6 +159,12 @@
 										<Faction Name="kutnohorsko_outskirts_woodcutters_campNaBylance" Labels="camp" />
 										<Faction Name="kutnohorsko_outskirts_woodcutters_campVlciHory" Labels="camp" />
 									</Children>
+								</Faction>
+								<Faction Name="kutnohorsko_outskirts_campVlciHory_pusko" Labels="publicEnemy camp" >
+									<Relations>
+										<Relation target="kutnohorsko_outskirts_woodcutters_campVlciHory" reputation="0" />
+										<Relation target="player" reputation="1" />
+									</Relations>
 								</Faction>
 								<Faction Name="kutnohorsko_outskirts_charcoalburners" Comment="Uhliri">
 									<Children>
@@ -535,7 +548,7 @@
 										</Faction>
 									</Children>
 								</Faction>
-								<Faction Name="kutnohorsko_settlements_certovka" UIName="ui_fac_kutnohorsko_settlements_certovka" UIDescription="ui_fac_kutnohorsko_settlements_certovka_desc" UIIcon="village" Comment="Certovka " Labels="settlement">
+								<Faction Name="kutnohorsko_settlements_certovka" UIName="ui_fac_kutnohorsko_settlements_certovka" UIDescription="ui_fac_kutnohorsko_settlements_certovka_desc" UIIcon="village" Comment="Certovka " LocationId="8c80c9b5-93db-4012-8049-a99c2855056a" Labels="settlement">
 									<Children>
 										<Faction Name="kutnohorsko_settlements_certovka_commonFolk" UIName="ui_fac_commonFolk" UIDescription="ui_fac_commonFolk_kh_certovka_desc" UIIcon="common_folk">
 											<Children>
@@ -680,13 +693,6 @@
 										</Faction>
 									</Children>
 								</Faction>
-								<Faction Name="kutnohorsko_settlements_kuklicko" Comment="Kuklicko ">
-									<Children>
-										<Faction Name="kutnohorsko_settlements_kuklicko_enemiesReplaceMe" Comment="REPLACE ME" />
-										<Faction Name="kutnohorsko_settlements_kuklicko_soldiersReplaceMe" Comment="REPLACE ME" />
-										<Faction Name="kutnohorsko_settlements_kuklicko_civiliansReplaceMe" Comment="REPLACE ME" />
-									</Children>
-								</Faction>
 								<Faction Name="kutnohorsko_settlements_sukov" UIName="ui_fac_kutnohorsko_settlements_sukov" UIIcon="village" Comment="Sukov " LocationId="6b046a9c-eee6-4ccb-8af0-71e7c0e17c09">
 									<Children>
 										<Faction Name="kutnohorsko_settlements_sukov_enemiesReplaceMe" Comment="REPLACE ME" />
@@ -698,7 +704,7 @@
 									<Children>
 										<Faction Name="kutnohorsko_settlements_staraKutna_commonFolk" UIName="ui_fac_commonFolk" UIDescription="ui_fac_commonFolk_staraKutna_desc" UIIcon="common_folk">
 											<Children>
-												<Faction Name="kutnohorsko_settlements_staraKutna_commonFolk_tavern" UIName="ui_fac_tavern" UIDescription="ui_fac_tavern_staraKutna_desc" UIIcon="tavern" Comment="Zajezdni hostinec Stara Kutna">
+												<Faction Name="kutnohorsko_settlements_staraKutna_commonFolk_tavern" UIName="ui_fac_tavern" UIDescription="ui_fac_tavern_staraKutna_desc" UIIcon="tavern" LocationId="6f11a02a-bdc3-4fdd-b505-b6b1a2f46902" Comment="Zajezdni hostinec Stara Kutna">
 													<Children>
 														<Faction Name="kutnohorsko_settlements_staraKutna_commonFolk_tavern_staff" Comment="Zamestnanci hospody" />
 														<Faction Name="kutnohorsko_settlements_staraKutna_commonFolk_tavern_guests" Comment="Navstevnici" />
@@ -723,7 +729,7 @@
 										</Faction>
 									</Children>
 								</Faction>
-								<Faction Name="kutnohorsko_settlements_lorec" UIName="ui_fac_kutnohorsko_settlements_lorec" UIDescription="ui_fac_kutnohorsko_settlements_lorec_desc" UIIcon="village" Comment="Lorec " Labels="settlement">
+								<Faction Name="kutnohorsko_settlements_lorec" UIName="ui_fac_kutnohorsko_settlements_lorec" UIDescription="ui_fac_kutnohorsko_settlements_lorec_desc" UIIcon="village" Comment="Lorec" LocationId="c44f9fb8-01f6-4943-9314-ae50e3293eb9" Labels="settlement">
 									<Children>
 										<Faction Name="kutnohorsko_settlements_lorec_enemiesReplaceMe" Comment="REPLACE ME" />
 										<Faction Name="kutnohorsko_settlements_lorec_soldiersReplaceMe" Comment="REPLACE ME" />
@@ -985,6 +991,11 @@
 														</Faction>
 														<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vinna" Comment="Kutna Hora : Vinna">
 															<Children>
+																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vinna_parcel02" Comment="Vinna cp. 2 : Dum malire - DLC1" >
+																	<Children>
+																		<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vinna_parcel02_malir" Comment="placeholder frakce pro malire v KH" />
+																	</Children>
+																</Faction>	
 																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vinna_parcel04" Comment="Vinna cp. 4 : Dum platnere" />
 																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_vinna_parcel06" Comment="Vinna cp. 6 : Dum obecneho obchodnika" />
 															</Children>
@@ -1026,6 +1037,7 @@
 																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_chmelna_parcel09" Comment="Chmelna cp. 9 Lukostrelec|Shootmaster" />
 																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_chmelna_workers" Comment="Chmelna pracovnici kolem Caslavske brany" />
 																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_chmelna_budovaniLazniDrunkard" Comment="S41 - Budovani Lazni - opilci z questu" />
+																<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_chmelna_damaVNesnazch_marketa" Comment="S58 - Marketa po prestehovani do KH" />
 															</Children>
 														</Faction>
 														<Faction Name="kutnohorsko_settlements_kutnaHora_commonFolk_peasants_kostelni">
@@ -1131,20 +1143,6 @@
 										<Faction Name="kutnohorsko_settlements_mezholezy_soldiersReplaceMe" Comment="REPLACE ME" />
 										<Faction Name="kutnohorsko_settlements_mezholezy_civiliansReplaceMe" Comment="REPLACE ME" />
 										<Faction Name="kutnohorsko_settlements_mezholezy_soldiers" UIName="ui_fac_soldiers" UIDescription="ui_fac_soldiers_mezholezy_desc" UIIcon="soldiers" Comment="U42 : Kovani : Na Kovarne : opustene domy cp. 1 a 2 v Mezholezich" />
-									</Children>
-								</Faction>
-								<Faction Name="kutnohorsko_settlements_rabstejnsko" UIName="ui_fac_kutnohorsko_settlements_rabstejnsko" UIDescription="ui_fac_kutnohorsko_settlements_rabstejnsko_desc" UIIcon="outskirts" Comment="Rabstejnsko Stara Lhota" Labels="solitude">
-									<Children>
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_enemiesReplaceMe" Comment="REPLACE ME" />
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_soldiersReplaceMe" Comment="REPLACE ME" />
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_civiliansReplaceMe" Comment="REPLACE ME" />
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_sMlynariNejsouZerty">
-											<Relations>
-												<Relation target="kutnohorsko_enemies_bandits_rabstejnskoAlchemistCamp" reputation="1" />
-											</Relations>
-										</Faction>
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_huntsman" />
-										<Faction Name="kutnohorsko_settlements_rabstejnsko_mill" />
 									</Children>
 								</Faction>
 								<Faction Name="kutnohorsko_settlements_malesov" UIName="ui_fac_kutnohorsko_settlements_malesov" UIDescription="ui_fac_kutnohorsko_settlements_malesov_desc" UIIcon="castle" Comment="Malesov" LocationId="44d7d1af-51dc-4aa7-aad9-4572c0ef2944" Labels="settlement">
@@ -1309,7 +1307,7 @@
 								<Faction Name="trosecko_outskirts_cabbageStealerPOI" Comment="POI tabor Zlodej zeli na Podseminsku" LocationId="e2771416-6e56-4543-9079-ac3973a1c0b3" Labels="camp" />
 								<Faction Name="trosecko_outskirts_herbalist" Comment="Korenarky">
 									<Children>
-										<Faction Name="trosecko_outskirts_herbalist_vezicko" Comment="Korenarka Vezicko (lokace hostinec Zelejov)" LocationId="0d231c01-2911-49ec-9af9-9edd5fd3f7e1" Labels="solitude" />
+										<Faction Name="trosecko_outskirts_herbalist_vezicko" Comment="Korenarka Bozena Vezicko" LocationId="114f3c0b-0eff-42c1-b6db-8da0d091b90b" Labels="solitude" />
 										<Faction Name="trosecko_outskirts_herbalist_kopanina" Comment="Korenarka Kopanina (lokace Apolena)" LocationId="7c252a66-1319-467a-8a8a-e8d9a08e80d6" Labels="solitude" />
 									</Children>
 								</Faction>
@@ -1673,6 +1671,24 @@
 						</Faction>
 					</Children>
 				</Faction>
+				<Faction Name="klaster" LocationId="136c2de1-cd17-4852-8c8f-b3ce67b48c4d" Labels="settlement" LevelId="4">
+					<Children>
+						<Faction Name="klaster_monks" UIName="ui_fac_klaser_monks" UIDescription="ui_fac_klaser_monks_desc" UIIcon="nobility" />
+						<Faction Name="klaster_zachariasovi" UIName="ui_fac_klaser_zachariasovi" UIDescription="ui_fac_klaster_zachariasovi_desc" UIIcon="common_folk" />
+						<Faction Name="klaster_delnici" UIName="ui_fac_klaser_delnici" UIDescription="ui_fac_klaster_delnici_desc" UIIcon="peasants">
+							<Children>
+								<Faction Name="klaster_delnici_others"/>
+								<Faction Name="klaster_delnici_prepadak">
+									<Relations>
+										<Relation target="player" reputation="0" />
+									</Relations>
+								</Faction>
+							</Children>
+						</Faction>
+						<Faction Name="klaster_civilisti" UIName="ui_fac_klaser_civilisti" UIDescription="ui_fac_klaster_civilisti_desc" UIIcon="common_folk" />
+						<Faction Name="klaster_rytiri" UIName="ui_fac_klaser_rytiri" UIDescription="ui_fac_klaster_rytiri_desc" UIIcon="soldiers" />
+					</Children>
+				</Faction>
 				<Faction Name="eventNPCs_civilians" LocationId="d30cf4a5-2742-427b-9025-1cc22fd1f126">
 					<Children>
 						<Faction Name="eventNPCs_civilians_friends" />
@@ -1811,8 +1827,18 @@
 								<Faction Name="kutnohorsko_enemies_bandits_rabstejnskoAlchemistCamp" Labels="camp" />
 								<Faction Name="kutnohorsko_enemies_bandits_rabstejnskoInactiveZakopanyZitrek" Labels="camp" />
 								<Faction Name="kutnohorsko_enemies_bandits_hromovyKamenSoldiersCamp" Comment="Tabor vojáků Ondreje Beranni hlavy z S34" Labels="camp" />
-								<Faction Name="kutnohorsko_enemies_bandits_campOpatovicko" Comment="Tabor dezerteru ze Zikmundova tabora ve vybydlene vesnici v Opatovicich" Labels="camp" />
+								<Faction Name="kutnohorsko_enemies_bandits_campOpatovicko" Comment="Tabor dezerteru ze Zikmundova tabora ve vybydlene vesnici v Opatovicich" LocationId="f6249b0e-e34c-47f0-a16e-a3538f15ee61" Labels="camp">
+									<Relations>
+										<Relation target="kutnohorsko_settlements_zikmundovo" reputation="1" />
+									</Relations>
+								</Faction>
 								<Faction Name="kutnohorsko_enemies_bandits_campPOINaBylance" Comment="Tabor banditu prepadajici karavany Na Bylance" LocationId="829d82a3-9ac4-4f02-8f0f-8cd8375b3965" Labels="camp" />
+								<Faction Name="kutnohorsko_enemies_bandits_naBylance_archery" Comment="Banditi z DLC2 ze strelectke aktivity " LocationId="829d82a3-9ac4-4f02-8f0f-8cd8375b3965" />
+								<Faction Name="kutnohorsko_enemies_bandits_naBylance_archery_campAfter" Comment="Banditi z DLC2 ze strelectke aktivity po domluve s Koniasem " LocationId="829d82a3-9ac4-4f02-8f0f-8cd8375b3965" Labels="camp">
+									<Relations>
+										<Relation target="player" reputation="0.5" />
+									</Relations>
+								</Faction>
 								<Faction Name="kutnohorsko_enemies_bandits_campPOIKuklicko" Comment="POI - Tabor lapku v opustene osade" Labels="camp" />
 								<Faction Name="kutnohorsko_enemies_bandits_campXXX" Comment="Tabor lapku sablona" Labels="camp" />
 								<Faction Name="kutnohorsko_enemies_bandits_pritokyDeserters" Comment="Zikmundovi dezerteri v Pritokach" LocationId="0e312b1e-054f-4731-b86d-bfbe8d353827" Labels="camp">
@@ -1864,14 +1890,12 @@
 						<Relation target="kutnohorsko_settlements_certovka" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_grunta" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_pritoky" reputation="-1" />
-						<Relation target="kutnohorsko_settlements_kuklicko" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_sukov" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_staraKutna" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_lorec" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_sedlec" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_kutnaHora" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_mezholezy" reputation="-1" />
-						<Relation target="kutnohorsko_settlements_rabstejnsko" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_malesov" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_vrchlicko" reputation="-1" />
 						<Relation target="kutnohorsko_settlements_miskovice" reputation="-1" />

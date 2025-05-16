@@ -41,7 +41,7 @@
 			<InventoryPresetRef Name="weapons_apoloniaGuardsAndLevies" />
 		</InventoryPreset>
 
-		<InventoryPreset Name="clothes_apoloniaGuards">
+		<InventoryPreset Name="clothes_apoloniaGuards" Mode="OneChild">
 			<InventoryPresetRef Name="armor_bergovSoldier_combat_level_2" />
 			<InventoryPresetRef Name="armor_bergovSoldier_combat_level_3" />
 			<InventoryPresetRef Name="clothes_genericSoldierLight_combatLevel_2" />

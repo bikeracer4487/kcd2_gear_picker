@@ -14,6 +14,9 @@
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="katuvSleh_horseGuidingPlayer" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/katuvSleh/horseGuidingPlayer.xml" TreeName="katuvSleh_horseGuidingPlayer" />
+					<Inboxes>
+						<InboxTemplate InboxId="4c173392-88c1-9dcb-965b-e900e3ab1ca7" Priority="0" />
+					</Inboxes>
 				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>

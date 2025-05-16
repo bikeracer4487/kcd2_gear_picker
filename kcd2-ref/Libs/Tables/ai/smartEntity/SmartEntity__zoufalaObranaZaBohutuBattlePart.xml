@@ -165,6 +165,12 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="syncWithTrackviewAndWait">
 					<TreeLocation FileName="quests/zoufalaObranaZaBohutu/zoufalaObranaZaBohutuBattlePart.xml" TreeName="syncWithTrackviewAndWait" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="cert_orderPortcullisDown">
+					<TreeLocation FileName="quests/zoufalaObranaZaBohutu/zoufalaObranaZaBohutuBattlePart.xml" TreeName="cert_orderPortcullisDown" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="cert_orderPaviseMen">
+					<TreeLocation FileName="quests/zoufalaObranaZaBohutu/zoufalaObranaZaBohutuBattlePart.xml" TreeName="cert_orderPaviseMen" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

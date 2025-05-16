@@ -81,6 +81,7 @@
 		<!-- ADDITIONS -->
 		<AddressKeyword Name="KH_Kostelni_church" Weight="24" />
 		<AddressKeyword Name="Tvrz_Ratbor_church" Weight="24" />
+		<AddressKeyword Name="KH_Maliruv_house" Weight="96" />
 
 		<!-- INDOOR AREAS -->
 		<AddressKeyword Name="Hrad_Trosky_indoor" Weight="32" />
@@ -133,6 +134,7 @@
 		<AddressKeyword Name="Tachov_maypole_stealth" Weight="96" />
 		<AddressKeyword Name="Suchdol_hostages" Weight="96" />
 		<AddressKeyword Name="Pavlena_Troskovice" Weight="96" />
+		<AddressKeyword Name="KH_Strasidlo" Weight="96" />
 
 		<AddressKeyword Name="Ossuary_tomb" Weight="112" />
 
@@ -140,9 +142,11 @@
 		<AddressKeyword Name="pilgrimage_T_Kaplicka" Weight="96" />
 		<AddressKeyword Name="pilgrimage_T_Smirci_kamen" Weight="96" />
 		<AddressKeyword Name="pilgrimage_T_Smirci_kriz" Weight="96" />
+		<AddressKeyword Name="pilgrimage_T_Pohanska_svatyne" Weight="96" />
 
+		<AddressKeyword Name="pilgrimage_KH_Maliruv_hrob" Weight="96" />
+		<AddressKeyword Name="pilgrimage_KH_Pomatenec" Weight="96" />
 		<AddressKeyword Name="pilgrimage_KH_Sukov_outer" Weight="8" />
-
 		<AddressKeyword Name="pilgrimage_KH_Baba" Weight="96" />
 		<AddressKeyword Name="pilgrimage_KH_St_Vojtech_Spring" Weight="96" />
 		<AddressKeyword Name="pilgrimage_KH_Sukov_inner" Weight="96" />

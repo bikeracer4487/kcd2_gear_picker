@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tpod.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__tpod.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 43
-  String Data Size ...... 1833
-  Unique String Count ... 85
-  File Size ............. 7365
+  String Data Size ...... 1965
+  Unique String Count ... 89
+  File Size ............. 7497
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] tpod_man_10
@@ -69,31 +69,35 @@ String Table:
   [54] char_GENERIC_MAN_COMMONER_03
   [55] tpod_bandit_2
   [56] trosecko_enemies_poachers_campPodseminsko
-  [57] tpod_cabbageStealerPOI_1
-  [58] trosecko_outskirts_cabbageStealerPOI
-  [59] char_ZLODEJ_ZELI
-  [60] tpod_bandit_4
-  [61] tpod_horse_2
-  [62] tpod_horse_3
-  [63] tpod_kumanskaDruzina_man_2
-  [64] trosecko_enemies_cumans
-  [65] char_GENERIC_MAN_CUMAN_04
-  [66] tpod_man_7
-  [67] char_GENERIC_MAN_COMMONER_02
-  [68] tpod_dog_4
-  [69] tpod_bandit_3
-  [70] tpod_woman_3
-  [71] char_GENERIC_WOMAN_COMMONER_10
-  [72] tpod_kumanskaDruzina_man_4
-  [73] char_GENERIC_MAN_CUMAN_03
-  [74] tpod_bandit_1
-  [75] tpod_horse_1
-  [76] tpod_man_8
-  [77] char_GENERIC_MAN_COMMONER_17
-  [78] tpod_man_13
-  [79] char_GENERIC_MAN_COMMONER_18
-  [80] tpod_lapkaUCestyZTachova_man_1
-  [81] trosecko_enemies_bandits_poiLapkaUCestyZTachova
-  [82] Bandits
-  [83] char_GENERIC_MAN_ENEMY_BANDIT_03
-  [84] tpod_horse_5
+  [57] char_GENERIC_MAN_ENEMY_BANDIT_08
+  [58] tpod_cabbageStealerPOI_1
+  [59] trosecko_outskirts_cabbageStealerPOI
+  [60] char_ZLODEJ_ZELI
+  [61] tpod_bandit_4
+  [62] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [63] tpod_horse_2
+  [64] tpod_horse_3
+  [65] tpod_kumanskaDruzina_man_2
+  [66] trosecko_enemies_cumans
+  [67] char_GENERIC_MAN_CUMAN_04
+  [68] tpod_man_7
+  [69] char_GENERIC_MAN_COMMONER_02
+  [70] tpod_dog_4
+  [71] tpod_bandit_3
+  [72] char_GENERIC_MAN_ENEMY_BANDIT_04
+  [73] tpod_woman_3
+  [74] char_GENERIC_WOMAN_COMMONER_10
+  [75] tpod_kumanskaDruzina_man_4
+  [76] char_GENERIC_MAN_CUMAN_03
+  [77] tpod_bandit_1
+  [78] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [79] tpod_horse_1
+  [80] tpod_man_8
+  [81] char_GENERIC_MAN_COMMONER_17
+  [82] tpod_man_13
+  [83] char_GENERIC_MAN_COMMONER_18
+  [84] tpod_lapkaUCestyZTachova_man_1
+  [85] trosecko_enemies_bandits_poiLapkaUCestyZTachova
+  [86] Bandits
+  [87] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [88] tpod_horse_5

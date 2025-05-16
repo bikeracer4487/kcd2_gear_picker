@@ -63,7 +63,7 @@
 		<armor_type CanHealthChange="false" Id="76" Name="Belt" Surface="mat_leather" />
 		<armor_type CanHealthChange="false" Id="77" Name="Pouch" Surface="mat_leather" />
 		<armor_type CanHealthChange="false" EquipBuffId="30750623-dc45-4fa2-b82d-ae1ef8c52a8a" Id="78" Name="Spectacles" Surface="mat_leather" SurfacePriorityMultiplier="0" />
-		<armor_type Id="79" Name="Bells" Surface="mat_bells" />
+		<armor_type Id="79" Name="Bells" Surface="mat_bells" SurfacePriorityMultiplier="3.1" />
 		<armor_type Id="80" Name="LeatherCap" Surface="mat_leather" />
 		<armor_type EquipBuffId="5601746a-f692-4e65-a498-8102ed42cbcf" Id="81" Name="LeatherApron" Surface="mat_leather" />
 	</armor_types>

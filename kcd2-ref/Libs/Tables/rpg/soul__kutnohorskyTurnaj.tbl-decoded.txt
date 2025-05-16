@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kutnohorskyTurnaj.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__kutnohorskyTurnaj.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,13 +7,13 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 75
-  String Data Size ...... 4079
+  String Data Size ...... 4060
   Unique String Count ... 136
-  File Size ............. 13707
+  File Size ............. 13688
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] kutnohorskyTurnaj_nobleFan04
-  [1] kutnohorsko_settlements_kutnaHora_civiliansReplaceMe
+  [1] kutnohorsko_settlements_kutnaHora
   [2] char_GENERIC_MAN_NOBLEMAN_12
   [3] kutnohorskyTurnaj_fanInBoothMale_8
   [4] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_kutnohorskyTurnaj

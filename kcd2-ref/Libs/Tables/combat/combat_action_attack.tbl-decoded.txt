@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/combat/combat_action_attack.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\combat\combat_action_attack.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 1426136249
   Table Version ......... 30
   Line Count ............ 221
-  String Data Size ...... 25711
+  String Data Size ...... 25707
   Unique String Count ... 335
-  File Size ............. 107067
+  File Size ............. 107063
   Calculated Line Size .. 368 (rem. 0)
 String Table:
   [0] CombatAttack
@@ -84,7 +84,7 @@ String Table:
   [69] l_torch+r_noweapon+freeGuard+endFreeGuard+kick+attack_heavy
   [70] l_noweapon+r_noweapon+freeGuard+endFreeGuard+kick+attack_heavy
   [71] l_shield+freeGuard+endFreeGuard+slash+attack_heavy+r_swords
-  [72] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAHQAMMEREAEIiACtRAguUAoIwKECFQIRCCgiCJUQAQJCREB
+  [72] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAGAAcMEsRC5QLVAQCsChCIIVBBEIKCIIlRABAkJEQE=
   [73] freeGuard+endFreeGuard+slash+attack_heavy+r_shortSwords
   [74] freeGuard+endFreeGuard+stab+attack_heavy+r_shortSwords
   [75] freeGuard+endFreeGuard+stab+attack_heavy+r_bluntWeapon
@@ -277,7 +277,7 @@ String Table:
   [262] l_shield+leftGuard+eZ2+aZ2+slash+attack_heavy+r_swords+fZ2+oppMale
   [263] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAMAGwAgORMABfuCgEE8FXwEQ
   [264] leftGuard+eZ2+aZ2+slash+attack_heavy+r_bluntWeapon+l_noShield+fZ2+oppMale
-  [265] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAEAD8AgEDgGAgFRAT0U=
+  [265] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAEAD8AgEDwGAgFBPBw==
   [266] rightGuard+eZ2+aZ2+slash+attack_heavy+r_bluntWeapon+l_noShield+fZ0+oppMale
   [267] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAAADgKBVQFBVBQ==
   [268] l_shield+rightGuard+eZ1+aZ0+slash+attack_heavy+r_bluntWeapon+fZ0+oppMale
@@ -337,7 +337,7 @@ String Table:
   [322] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAAEAgPI=
   [323] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAAADIHCwsFBQ
   [324] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAEAGgMAgIFBQNQ==
-  [325] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAACABCIoKSio=
+  [325] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAACABCAoKqqo=
   [326] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAMAEooCIKkBQUJQV
   [327] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAMAGCsiwRFAECKhFUBAB
   [328] AQAAAAAAAAAAAAAAgD8AAIA/AwEAAAEAAEAC0AgKBahAFRU=

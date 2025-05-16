@@ -9,6 +9,7 @@
 		<mailbox_group mailbox_group_file_name="tutorials/tutorial_stealthtakedown_customhandlechoke.xml" mailbox_group_id="23304a3d-a2fa-44a1-994f-c4475f6ab7bd" mailbox_group_tree_name="tutorial_stealthTakedown_customHandleChoke" />
 		<mailbox_group mailbox_group_file_name="anmal/basic/switch/animal_continuouslyDoPerceptionSearchForTarget.xml" mailbox_group_id="4d319868-5302-407c-a2fe-51ef0f0fe4e8" mailbox_group_tree_name="switch_animal_continuouslyDoPerceptionSearchForTarget" />
 		<mailbox_group mailbox_group_file_name="crime/processOpenWorldCooldowns.xml" mailbox_group_id="53244bc5-4eb5-4b9e-95f0-3fab338d3278" mailbox_group_tree_name="crime_processOpenWorldCooldowns_npc" />
+		<mailbox_group mailbox_group_file_name="speech/switchDialog_initiatorChecks.xml" mailbox_group_id="59faee20-afa4-42ec-ae24-098f816812c2" mailbox_group_tree_name="speech_switchDialog_initiatorChecks" />
 		<mailbox_group mailbox_group_file_name="npc/basic/switch/handleHearingSubscriptions.xml" mailbox_group_id="60ed09d2-58a8-4fd1-8bc8-6bc1306f1c88" mailbox_group_tree_name="switch_handleHearingSubscriptions" />
 		<mailbox_group mailbox_group_file_name="animal/basic/switch/animal_horseBrain.xml" mailbox_group_id="61426837-4d6f-4669-9f4a-16553ab66856" mailbox_group_tree_name="switch_animal_horseBrain" />
 		<mailbox_group mailbox_group_file_name="crime/selfhelp_resolvecrimedialogue.xml" mailbox_group_id="628f2a48-57df-4673-9f9c-273209160419" mailbox_group_tree_name="crime_selfhelp_resolveCrimeDialogue" />

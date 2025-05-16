@@ -177,7 +177,6 @@
 		<AnyElementPreset Name="blacksmithLeaning">
 			<Elements>
 				<ElementType>ChangeAreaLabel</ElementType>
-				<ElementType>OpenShop</ElementType>
 			</Elements>
 		</AnyElementPreset>
 

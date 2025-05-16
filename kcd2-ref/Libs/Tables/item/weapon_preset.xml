@@ -155,7 +155,7 @@
 		<weapon_preset weapon_preset_id="0a3e66e0-27cc-4683-879e-8512d20b55c1" weapon_preset_name="taboryUCesty_archery_voko_man_2" Quality="2" Condition="0.68">
 			<weapon_preset_item item_class_id="48f25a62-e787-490e-83e9-9335bf303ef9" />
 			<weapon_preset_item item_class_id="081fc4a1-25e9-4492-8dc8-2d9d6668c07a" amount="20" />
-			<weapon_preset_item item_class_id="b3f7a363-5526-45b1-a32b-422a0a8e4da4" />
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="0a5c8a26-459a-4f5d-9984-853810bc4e38" weapon_preset_name="axe_shield_4_03_prague">
 			<weapon_preset_item item_class_id="0f0164d5-3746-4d07-a1ed-0f138225a6d9" />
@@ -218,6 +218,11 @@
 			<weapon_preset_item item_class_id="1c7c82d9-ba66-4702-8988-e018df1d6200" />
 			<weapon_preset_item item_class_id="dfea5d01-b25c-414a-9ab4-6911a5f82118" amount="100" />
 			<weapon_preset_item item_class_id="af6a6142-c6f7-4ae7-94a9-bb5be41ebecc" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="0e0d2ce1-bcca-440b-960e-cffb63ab5c6c" weapon_preset_name="archery_bloodTrail_bandit_2" Quality="2" Condition="0.58">
+			<weapon_preset_item item_class_id="13ba7468-11a2-483d-8cb9-25ce36a2d228" amount="10" />
+			<weapon_preset_item item_class_id="d2011311-2315-43a1-a953-76432df04329" />
+			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="0e609f47-5634-4641-b050-9d2ca54d2a84" weapon_preset_name="taboryUCesty_archery_urs_son" Quality="1" Condition="0.69">
 			<weapon_preset_item item_class_id="505b8feb-9447-462f-ab3d-68557f89d9f3" />
@@ -409,6 +414,9 @@
 			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
 			<weapon_preset_item item_class_id="beb081de-3b58-41a5-b63b-b6c23e3b33e1" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="1aedabc1-2641-412a-9172-6d6364457740" weapon_preset_name="DLC3_teutonic_huntingSword01">
+			<weapon_preset_item item_class_id="505b8feb-9447-462f-ab3d-68557f89d9f3" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="1b5dcb04-1625-4c3c-8adc-1bf23f3cb339" weapon_preset_name="tneb_michal_battleM09" Quality="2" Condition="0.8">
 			<weapon_preset_item item_class_id="9e31a288-7de0-4c0d-81cd-5cf00548d2d5" />
 		</weapon_preset>
@@ -471,6 +479,9 @@
 			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
 			<weapon_preset_item item_class_id="df271db8-60ac-46ec-9695-884bbb909f94" />
 			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="1f17b6cc-0922-4210-9edb-27c1b06de073" weapon_preset_name="kvrc_deserterLeader">
+			<weapon_preset_item item_class_id="23855649-1783-4e0d-95ad-d3478797b642" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="1f6d27cd-9271-4714-8bba-b9692acc7ce8" weapon_preset_name="hammer_shield_6_01_sigi">
 			<weapon_preset_item item_class_id="d5ccfb38-b110-4bc6-8af9-1dde41fabe12" />
@@ -881,6 +892,11 @@
 			<weapon_preset_item item_class_id="0077dfa2-b9be-4ae3-ae59-2803ba49dfcb" />
 			<weapon_preset_item item_class_id="caef375a-fa63-41a4-8873-58c358ccfc06" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="3c67477d-684a-4741-9bf5-4cf3b8167279" weapon_preset_name="archery_nobodyWantsArchery_banditLeader" Quality="2" Condition="0.62">
+			<weapon_preset_item item_class_id="a6fc95eb-9cf2-4554-ad72-9a9c09aae177" />
+			<weapon_preset_item item_class_id="081fc4a1-25e9-4492-8dc8-2d9d6668c07a" amount="12" />
+			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="3ce6b8e1-86db-4cac-8049-98e0918aa871" weapon_preset_name="huntingsword_shield_3_01_cuman">
 			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
 			<weapon_preset_item item_class_id="98df7fa4-9948-47aa-bcc7-7998114cae7e" />
@@ -985,6 +1001,14 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="41ced479-c2d5-41a4-a7f1-b142de6884ae" weapon_preset_name="kkut_mikulas" social_class_id="3">
 			<weapon_preset_item item_class_id="00cca9e3-8ef2-46db-8cbf-86ec51930919" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="42283da7-1183-4fe1-9e43-4eb9c66ddbb0" weapon_preset_name="archery_unpleasantSurprise_bandit_1" Quality="3" Condition="0.71">
+			<weapon_preset_item item_class_id="e5b3f681-3714-4623-97be-4015fa454797" amount="45" />
+			<weapon_preset_item item_class_id="d2011311-2315-43a1-a953-76432df04329" />
+			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="4232f5ee-3c79-4019-aeb4-7bf27d55f022" weapon_preset_name="S305_ZacharyAmbusher_01">
+			<weapon_preset_item item_class_id="bd74ce18-2623-48ba-a1a1-c9b09bbb2827" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="4316b95a-ca93-46dd-be50-6f912f8b54a6" weapon_preset_name="tneb_Mikes_M11_battle" Quality="1" Condition="0.73">
 			<weapon_preset_item item_class_id="7cac0c1a-ad34-4fd7-a1e6-4d45edcf307f" />
@@ -1213,6 +1237,10 @@
 			<weapon_preset_item item_class_id="42ec210a-7603-456f-afb4-9b9ebe3f66ee" />
 			<weapon_preset_item item_class_id="9e31a288-7de0-4c0d-81cd-5cf00548d2d5" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="4f9d0eed-c3fa-436a-9c2c-7d3c699bb5ca" weapon_preset_name="DLC3_teutonic_axe_pavise">
+			<weapon_preset_item item_class_id="53612e76-76fd-4dca-84b6-7905b986dc3b" />
+			<weapon_preset_item item_class_id="c9a95d87-d86e-43e7-a9ce-96fcdff87cfd" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="4fa37283-00d2-c10c-2a6e-992d755ea28e" weapon_preset_name="new_short_sword_medium_5" social_class_id="1" />
 		<weapon_preset weapon_preset_id="4fdd1227-31da-4298-9431-a9bb5dc8716c" weapon_preset_name="hammer_shield_5_01_prague">
 			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
@@ -1374,6 +1402,13 @@
 			<weapon_preset_item item_class_id="e4e1b22a-428a-4e20-aa92-ce216b324c0a" />
 			<weapon_preset_item item_class_id="081fc4a1-25e9-4492-8dc8-2d9d6668c07a" amount="250" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="5d075632-952f-431a-8a45-e20450cbd17d" weapon_preset_name="DLC3_teutonic_sword_pavise">
+			<weapon_preset_item item_class_id="87d7c73f-143e-4b21-8ef5-8d2d837962ae" />
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="5d453eff-c7de-4e0b-83f9-e3961452c11b" weapon_preset_name="DLC2_duels_woodenAxe">
+			<weapon_preset_item item_class_id="e86cf667-1449-4111-9bb5-17329a526278" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="5dd3ed76-67be-4944-adc1-63447367035f" weapon_preset_name="hammer_shield_5_03_prague">
 			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
 			<weapon_preset_item item_class_id="bc3c86e5-caab-44d5-abe0-75bbe7ccb345" />
@@ -1459,6 +1494,10 @@
 			<weapon_preset_item item_class_id="e116a835-82b6-4267-a44d-a911cae59f58" />
 			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="635b83c0-1d78-4cf8-94a5-5d693b5482f0" weapon_preset_name="DLC3_teutonic_sword_shield">
+			<weapon_preset_item item_class_id="a64f0d12-1669-4055-9573-ebb325541cd9" />
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="63e00611-7c5e-4063-9cc9-ce442f2d29dd" weapon_preset_name="tneb_Mikes_M02" Quality="1" Condition="0.37">
 			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
 		</weapon_preset>
@@ -1520,6 +1559,9 @@
 		<weapon_preset weapon_preset_id="676c240f-26e9-443e-9191-3494faa30265" weapon_preset_name="zachranaPtacka_soldier6_axe_shield">
 			<weapon_preset_item item_class_id="22a4f287-b9c5-4b85-9196-9873664a6895" />
 			<weapon_preset_item item_class_id="bd74ce18-2623-48ba-a1a1-c9b09bbb2827" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="67c2c54c-b850-4b45-acff-79292ee9b74b" weapon_preset_name="DLC3_teutonic_sword">
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="684be419-1a72-4c5e-9147-e6ee73150b5d" weapon_preset_name="khTournament_heavy_sword_shield_02">
 			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
@@ -1673,6 +1715,9 @@
 			<weapon_preset_item item_class_id="c6367565-6518-4b7c-8ca1-2dfb0c7a2055" />
 			<weapon_preset_item item_class_id="e5b3f681-3714-4623-97be-4015fa454797" amount="65" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="71d7d434-7c70-4ec1-84ba-829d8a812473" weapon_preset_name="S305_ZacharyAmbusher_03">
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="7217c85c-1046-41f6-9f03-b5f6a82fbfab" weapon_preset_name="mace_shield_3_03_bergov">
 			<weapon_preset_item item_class_id="af6a6142-c6f7-4ae7-94a9-bb5be41ebecc" />
 			<weapon_preset_item item_class_id="98498cc2-8514-4412-afb4-9585a6c13df1" />
@@ -1687,6 +1732,9 @@
 		<weapon_preset weapon_preset_id="73404cd2-96ad-44b2-acc9-fc9b66587003" weapon_preset_name="mace_shield_3_01_pisek">
 			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
 			<weapon_preset_item item_class_id="10f9a49f-07d0-4873-88d0-54d2cd5567f1" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="738ee203-a0d3-42f5-9a68-9ae553cebef8" weapon_preset_name="DLC3_teutonic_longsword">
+			<weapon_preset_item item_class_id="9e31a288-7de0-4c0d-81cd-5cf00548d2d5" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="74659a08-701b-499d-a176-119931bc8972" weapon_preset_name="khTournament_light_sword_shield_01_gold">
 			<weapon_preset_item item_class_id="f63af340-2ab6-49a7-9d12-bd06a0fa9712" />
@@ -1720,6 +1768,10 @@
 		<weapon_preset weapon_preset_id="75f24a17-4bcc-4517-bd34-b0a0c6693817" weapon_preset_name="sword_shield_3_01_sigi">
 			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 			<weapon_preset_item item_class_id="99568f8c-fbbf-418a-811d-9874fab20cd2" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="75f4c554-80ec-4ae0-b2cc-8bc8575b5819" weapon_preset_name="DLC3_teutonic_mace_shield">
+			<weapon_preset_item item_class_id="ed749f7d-1697-4242-95a5-781ec8b4a646" />
+			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="769b0c66-3863-4884-a1f8-93d4df2c9f69" weapon_preset_name="pocestny_duelist_4" Health="0.92" HealthVariation="0.1">
 			<weapon_preset_item item_class_id="9cf0a787-aca0-4a9b-8a27-67f1f3423f18" />
@@ -1758,10 +1810,23 @@
 			<weapon_preset_item item_class_id="166b4c7b-5e17-48db-bf0d-02f24eacdcbf" amount="24" />
 			<weapon_preset_item item_class_id="292ea6c3-92b9-40a1-890c-d558ab00a8f2" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="78ed62b3-46b6-4310-b441-2a7ccb6fc784" weapon_preset_name="pomatenec_crazyOldMan">
+			<weapon_preset_item item_class_id="d65e03d1-289d-4f6a-884c-f490c1dabe41" amount="1" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="79f82c0d-ee31-4acc-a11e-25c1bb21bc91" weapon_preset_name="kkut_man_328_newCrossbow" Quality="3" Condition="0.8">
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+			<weapon_preset_item item_class_id="48f25a62-e787-490e-83e9-9335bf303ef9" />
+			<weapon_preset_item item_class_id="b738d184-4ae1-4d74-8fac-b8db1943b1d4" amount="14" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="7a36872d-58ba-4388-8b61-4d7bce47f660" weapon_preset_name="nebakovObrana_battle_crossbow_light">
 			<weapon_preset_item item_class_id="c164f346-0463-4116-b790-094b11274e5e" />
 			<weapon_preset_item item_class_id="7673efc2-0566-4dde-9e18-f96c7790ce2e" />
 			<weapon_preset_item item_class_id="ec38d11f-63ca-4dac-b9f5-ce4ff648b59c" amount="500" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="7a4d4275-be26-474e-a010-6c5ba598f442" weapon_preset_name="archery_unpleasantSurprise_bandit_4" Quality="2" Condition="0.72">
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+			<weapon_preset_item item_class_id="41f61fe6-c890-4b56-ab59-54492f6b62ec" />
+			<weapon_preset_item item_class_id="710e3706-8974-404b-b23a-6f51670ef1ed" amount="35" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="7a60b678-b7ea-42ba-b616-73fe7d4db179" weapon_preset_name="prepadeni_voves" social_class_id="1">
 			<weapon_preset_item item_class_id="99ff086f-7dc0-4c38-9df1-88d63bcc88f8" />
@@ -1779,8 +1844,8 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="7b084eb0-3403-4870-9e7d-c1b6f3bd7826" weapon_preset_name="kcer_brabantSoldier_4" Quality="2" Condition="0.64">
 			<weapon_preset_item item_class_id="ea78735d-b371-46d4-a039-bef0ebbb088e" />
-			<weapon_preset_item item_class_id="398f4cbb-d1db-436b-aea3-fbeeaff1318e" amount="24" />
 			<weapon_preset_item item_class_id="d5ccfb38-b110-4bc6-8af9-1dde41fabe12" />
+			<weapon_preset_item item_class_id="f10ded12-a41c-40bf-a8ae-883d4e845059" amount="9" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="7b09cc66-e5ba-47a9-b930-0452b6e1fdbb" weapon_preset_name="taboryUCesty_dealer_raubritter_man" Quality="1" Condition="0.52">
 			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
@@ -1796,7 +1861,7 @@
 		<weapon_preset weapon_preset_id="7b828a88-e403-4bcd-acce-fd5402987cd6" weapon_preset_name="taboryUCesty_archery_voko" Quality="2" Condition="0.63">
 			<weapon_preset_item item_class_id="56287624-0cbb-48ff-bf0a-d61144f1a3a8" />
 			<weapon_preset_item item_class_id="1ed55cb8-80bd-4190-981b-146dc916d434" amount="24" />
-			<weapon_preset_item item_class_id="00cca9e3-8ef2-46db-8cbf-86ec51930919" />
+			<weapon_preset_item item_class_id="9e31a288-7de0-4c0d-81cd-5cf00548d2d5" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="7beda7d7-cf2a-4e7e-a3d3-0396b2073d40" weapon_preset_name="taboryUcesty_commonHuntSwordCrossbow" Quality="2" Condition="0.63">
 			<weapon_preset_item item_class_id="c164f346-0463-4116-b790-094b11274e5e" />
@@ -1886,11 +1951,18 @@
 			<weapon_preset_item item_class_id="166b4c7b-5e17-48db-bf0d-02f24eacdcbf" amount="30" />
 			<weapon_preset_item item_class_id="1da8f314-6441-4afc-9a4a-f516067e9613" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="81daab71-8b6b-4b33-ade0-bf5c3990911c" weapon_preset_name="DLC3_teutonic_sword_shield_tau">
+			<weapon_preset_item item_class_id="e4d7d1c8-ba49-4f15-a229-bbfe1c5b90ed" />
+			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="823d953c-88fa-4685-96a5-981e017ff8fe" weapon_preset_name="zachranaPtacka_soldier9_sword">
 			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="8255b878-7950-46aa-a969-fc1bff3fd0fe" weapon_preset_name="khTournament_light_longsword_01">
 			<weapon_preset_item item_class_id="2d466cad-74df-4337-ae97-4c7433a54b6d" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="82657c2b-280a-43c8-b07e-c8e23ea9cfd4" weapon_preset_name="DLC3_teutonic_leaderAlberich">
+			<weapon_preset_item item_class_id="00cca9e3-8ef2-46db-8cbf-86ec51930919" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="827d4d7b-57cc-4470-a397-abcb4fe1b106" weapon_preset_name="kzik_grozav">
 			<weapon_preset_item item_class_id="caef375a-fa63-41a4-8873-58c358ccfc06" />
@@ -1927,7 +1999,7 @@
 		<weapon_preset weapon_preset_id="84362f58-7c4d-448c-83c9-2875da25cae1" weapon_preset_name="taboryUCesty_shop_stork_man_1" Quality="2" Condition="0.69">
 			<weapon_preset_item item_class_id="0f41ad99-3307-47c8-a110-a7d9b4af75e8" />
 			<weapon_preset_item item_class_id="51a6d174-1994-4ea8-a9a7-78b6c3e89777" />
-			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="843b7d14-a70b-4c1f-9406-842966f2b42e" weapon_preset_name="UC_Uher" social_class_id="1">
 			<weapon_preset_item item_class_id="eeeb5a48-9a97-41a6-aee0-3e1b64fc2405" />
@@ -2059,6 +2131,15 @@
 		<weapon_preset weapon_preset_id="8c1557f5-0a39-4c53-ba80-31a82b389ed9" weapon_preset_name="sword_4_02">
 			<weapon_preset_item item_class_id="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="8c37afae-c241-49e8-bb64-868574233745" weapon_preset_name="DLC3_teutonic_axe_shield">
+			<weapon_preset_item item_class_id="ed749f7d-1697-4242-95a5-781ec8b4a646" />
+			<weapon_preset_item item_class_id="53612e76-76fd-4dca-84b6-7905b986dc3b" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="8c741f2c-49b4-442b-95df-3cc566737f8e" weapon_preset_name="archery_unpleasantSurprise_bandit_5" Quality="2" Condition="0.67">
+			<weapon_preset_item item_class_id="cb6ee20b-6eee-434c-af4c-8031502e2bec" />
+			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="22" />
+			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="8c7fd899-9adb-4148-ba86-bdb217b01495" weapon_preset_name="huntingsword_shield_3_01">
 			<weapon_preset_item item_class_id="505b8feb-9447-462f-ab3d-68557f89d9f3" />
 			<weapon_preset_item item_class_id="684cb3f5-a873-44cb-9a8e-413b3bd6a0e5" />
@@ -2119,9 +2200,18 @@
 			<weapon_preset_item item_class_id="bc3c86e5-caab-44d5-abe0-75bbe7ccb345" />
 			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="8fa67be7-c254-4ffa-9e5e-62b65346ddb8" weapon_preset_name="baladaZHadru_fighter_2" Quality="2" ConditionVariation="0.76">
+			<weapon_preset_item item_class_id="a6fc95eb-9cf2-4554-ad72-9a9c09aae177" />
+			<weapon_preset_item item_class_id="c82f1a8d-3617-42b7-98a9-36e96ff71294" amount="24" />
+			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="8fd88ed6-a549-44da-ae93-e90c1e8267ed" weapon_preset_name="axe_shield_6_02_pisek">
 			<weapon_preset_item item_class_id="214ffcdd-a7a7-4b7a-b484-f60c8d00b39b" />
 			<weapon_preset_item item_class_id="10f9a49f-07d0-4873-88d0-54d2cd5567f1" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="903d0e4c-afed-4e7a-a3e0-f2ef460ff9b1" weapon_preset_name="kvrc_deserter_3">
+			<weapon_preset_item item_class_id="2d59f644-4bdf-4059-9afa-805f47c00ac7" />
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="90946b9f-2eb1-41b9-8582-459d292a5441" weapon_preset_name="axe_shield_4_01_cuman">
 			<weapon_preset_item item_class_id="eeeb5a48-9a97-41a6-aee0-3e1b64fc2405" />
@@ -2348,6 +2438,12 @@
 		<weapon_preset weapon_preset_id="a09a7beb-879b-45ba-a58e-a77b4c294bb1" weapon_preset_name="taboryUCesty_duel_bohus" Quality="1" Condition="0.62">
 			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="a0a06db6-0d81-486f-b453-d2051b44b2ba" weapon_preset_name="archery_unpleasantSurprise_bandit_3" Quality="2" Condition="0.78">
+			<weapon_preset_item item_class_id="b77f912a-042b-47ca-8f42-5fddbcad3763" />
+			<weapon_preset_item item_class_id="c49aa63a-07a6-4417-9f9b-97f2712a4cd0" amount="38" />
+			<weapon_preset_item item_class_id="65a211bd-2c7e-40a8-984f-66c8730444e4" />
+			<weapon_preset_item item_class_id="760d7474-6e5f-4987-9631-d007d5fff22e" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="a0e9ee0f-c04e-4d82-9350-ce3de3db009e" weapon_preset_name="ksuc_petr_sword" social_class_id="1">
 			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
 		</weapon_preset>
@@ -2396,6 +2492,10 @@
 			<weapon_preset_item item_class_id="802507e9-d620-47b5-ae66-08fcc314e26a" amount="22" />
 			<weapon_preset_item item_class_id="f4324daf-fe09-495e-b954-16f23226cf58" />
 			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="a3dc1473-8a6b-4eae-8e31-e9e1203d3292" weapon_preset_name="DLC3_teutonic_hammer_shield">
+			<weapon_preset_item item_class_id="9afb8d78-6f8d-4311-a9b9-11727f211ff3" />
+			<weapon_preset_item item_class_id="a64f0d12-1669-4055-9573-ebb325541cd9" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="a3ea1499-afdd-482f-95c6-d8a3b3fa1243" weapon_preset_name="utokNebakov_Bergov_sword_shield_04" Quality="1" Condition="0.71">
 			<weapon_preset_item item_class_id="1da8f314-6441-4afc-9a4a-f516067e9613" />
@@ -2517,6 +2617,9 @@
 		<weapon_preset weapon_preset_id="aa068cf6-aae7-4210-9a85-25e52b7e059b" weapon_preset_name="kkut_jimram" social_class_id="3">
 			<weapon_preset_item item_class_id="d4b8b102-cc1c-41a9-a1ab-e9d49ecf362b" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="aa48a19f-e847-49d5-8949-e7d58305177e" weapon_preset_name="DLC3_teutonic_mace">
+			<weapon_preset_item item_class_id="9cc07405-4195-46ab-bf17-fd0fd99721bd" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="aaa3a203-ec2d-4be4-ba21-e3fcc8943ac6" weapon_preset_name="hammer_shield_4_01_semin">
 			<weapon_preset_item item_class_id="a92496ad-4a82-4815-93d8-5ae56bf78f88" />
 			<weapon_preset_item item_class_id="5e8aa93b-d1ff-476b-b526-a4f1b1eaa26d" />
@@ -2537,6 +2640,15 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="ab788d79-ae1c-4ad7-b54c-53e53e654204" weapon_preset_name="axe_2_01">
 			<weapon_preset_item item_class_id="81494400-b654-4aa7-8f31-c95c689db5f6" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="ac465866-0c02-4596-9a8d-934e536e27ea" weapon_preset_name="archery_unpleasantSurprise_bandit_2" Quality="3" Condition="0.64">
+			<weapon_preset_item item_class_id="db354284-2cf9-40a4-bcfc-e78d020204af" />
+			<weapon_preset_item item_class_id="c49aa63a-07a6-4417-9f9b-97f2712a4cd0" amount="38" />
+			<weapon_preset_item item_class_id="a92496ad-4a82-4815-93d8-5ae56bf78f88" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="acb684fa-cc0f-4383-a010-9f22a688244c" weapon_preset_name="kvrc_deserter_2">
+			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
+			<weapon_preset_item item_class_id="f371dead-0ea0-4d3b-9871-ab3fdc6328ec" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="acd6c9cd-8d4c-47bf-9c03-93f1dd9483bb" weapon_preset_name="taboryUCesty_dice_actors_man_2">
 			<weapon_preset_item item_class_id="505b8feb-9447-462f-ab3d-68557f89d9f3" />
@@ -2670,6 +2782,9 @@
 			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="88" />
 			<weapon_preset_item item_class_id="1da8f314-6441-4afc-9a4a-f516067e9613" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="b36f209b-ee55-4ae5-bbdc-bb8f1ef50d68" weapon_preset_name="S305_ZacharyAmbusher_02">
+			<weapon_preset_item item_class_id="40b0ff59-7db2-4c16-bf66-253853a34344" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="b3970401-d242-4ed4-81a8-d35806090608" weapon_preset_name="taboryUCesty_shop_andreas_squire_2" Quality="2" Condition="0.66">
 			<weapon_preset_item item_class_id="eeeb5a48-9a97-41a6-aee0-3e1b64fc2405" />
 			<weapon_preset_item item_class_id="feea3905-8f49-4098-83b5-7f5a572a45a8" />
@@ -2704,6 +2819,9 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="b5d77601-a4ef-4203-8427-ea119728389c" weapon_preset_name="hammer_4_01">
 			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="b5ffc97a-1f91-4480-bd0b-1d1d8296e2e9" weapon_preset_name="baladaZHadru_fighter_1" Quality="2" ConditionVariation="0.81">
+			<weapon_preset_item item_class_id="00cca9e3-8ef2-46db-8cbf-86ec51930919" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="b60186a4-3588-4313-85ac-d8eccccaf75d" weapon_preset_name="taboryUCesty_duel_bohus_man" Quality="1" Condition="0.59">
 			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
@@ -2790,9 +2908,9 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="bb3a4766-8877-4b63-8d6a-aa11d808edea" weapon_preset_name="taboryUCesty_duel_barnabas" Quality="1" Condition="0.66">
 			<weapon_preset_item item_class_id="56287624-0cbb-48ff-bf0a-d61144f1a3a8" />
-			<weapon_preset_item item_class_id="51bb7893-2054-40d3-a355-d278f416c482" />
-			<weapon_preset_item item_class_id="b3f7a363-5526-45b1-a32b-422a0a8e4da4" />
 			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="18" />
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
+			<weapon_preset_item item_class_id="e5f25908-a843-456a-b095-c31db34aa577" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="bb727966-e538-4e3e-8e79-539acd82b0b8" weapon_preset_name="hammer_shield_3_01_lipa">
 			<weapon_preset_item item_class_id="9afb8d78-6f8d-4311-a9b9-11727f211ff3" />
@@ -2866,7 +2984,7 @@
 			<weapon_preset_item item_class_id="fd65fbb0-115b-4b63-a410-c235a69860a1" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="be4bfed6-4cb0-4db9-baf8-d873151c944e" weapon_preset_name="taboryUCesty_dice_bedrich" Quality="1" Condition="0.64">
-			<weapon_preset_item item_class_id="b3f7a363-5526-45b1-a32b-422a0a8e4da4" />
+			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="be675533-32b5-4e35-a353-7ba7c2592b96" weapon_preset_name="tneb_Bejk_M07" Quality="1" Condition="0.56">
 			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
@@ -2991,6 +3109,10 @@
 			<weapon_preset_item item_class_id="9afb8d78-6f8d-4311-a9b9-11727f211ff3" />
 			<weapon_preset_item item_class_id="4bc7d395-bc6e-4695-8e7f-7f0a1c57e9b7" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="c6754ffb-c18f-4bcb-a428-d74fb6232edd" weapon_preset_name="archery_bloodTrail_bandit_1" Quality="2" Condition="0.55">
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+			<weapon_preset_item item_class_id="0b5b88e2-79d2-4913-95e3-42dc7391d770" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="c6c051d3-cbd3-420f-ba05-e1cf27ca91f6" weapon_preset_name="utokNebakov_Zizka_melee_hSword_shield_03" Quality="1" Condition="0.56">
 			<weapon_preset_item item_class_id="505b8feb-9447-462f-ab3d-68557f89d9f3" />
 			<weapon_preset_item item_class_id="1b078cf2-f9fe-471e-9826-8f910e1fd2b8" />
@@ -3001,6 +3123,10 @@
 			<weapon_preset_item item_class_id="efa237c7-3905-4813-b9c3-a32b449c17ad" />
 			<weapon_preset_item item_class_id="b77f912a-042b-47ca-8f42-5fddbcad3763" />
 			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="500" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="c76c9b6e-06ca-4bc6-b2a8-7303e75c6c4d" weapon_preset_name="DLC3_teutonic_axe_shield_tau">
+			<weapon_preset_item item_class_id="e4d7d1c8-ba49-4f15-a229-bbfe1c5b90ed" />
+			<weapon_preset_item item_class_id="bd74ce18-2623-48ba-a1a1-c9b09bbb2827" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="c7cd4e74-0295-4e35-ba53-0155fe65013a" weapon_preset_name="rutinaAVypad_sword_torch_01">
 			<weapon_preset_item item_class_id="4cea28a0-0814-405a-bf24-4fd711f7eb63" />
@@ -3020,6 +3146,10 @@
 			<weapon_preset_item item_class_id="afeb5bfd-377a-415b-8822-baca01844e34" />
 			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="90" />
 			<weapon_preset_item item_class_id="b77f912a-042b-47ca-8f42-5fddbcad3763" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="c8744c15-4733-4cc4-9d7a-613d75e931ab" weapon_preset_name="malirBezBudoucnosti_poslicek" Quality="3" Condition="0.95">
+			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
+			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="c90204a3-a374-47f9-81b9-9e126947efa3" weapon_preset_name="pocestny_duelist_2" Health="0.54" HealthVariation="0.06">
 			<weapon_preset_item item_class_id="9cf0a787-aca0-4a9b-8a27-67f1f3423f18" />
@@ -3044,6 +3174,12 @@
 			<weapon_preset_item item_class_id="8460003f-637f-4713-92c9-4954037c4b9c" amount="60" />
 			<weapon_preset_item item_class_id="9cf0a787-aca0-4a9b-8a27-67f1f3423f18" />
 			<weapon_preset_item item_class_id="cb6ee20b-6eee-434c-af4c-8031502e2bec" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="c9ee4841-37bd-4155-98af-aab4224b3147" weapon_preset_name="hladAZmar_axeShieldRanged">
+			<weapon_preset_item item_class_id="53612e76-76fd-4dca-84b6-7905b986dc3b" />
+			<weapon_preset_item item_class_id="55f81ddb-7c17-41c5-a17c-c9948766c1c8" />
+			<weapon_preset_item item_class_id="7673efc2-0566-4dde-9e18-f96c7790ce2e" />
+			<weapon_preset_item item_class_id="bcdd6887-8c80-4bae-8aa6-567574a75867" amount="30" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="c9ffa731-9cca-4f3c-9bf4-07b11f719714" weapon_preset_name="utokNebakov_BergovPolearmCombi_05" Quality="2" Condition="0.57">
 			<weapon_preset_item item_class_id="e5f25908-a843-456a-b095-c31db34aa577" />
@@ -3133,6 +3269,9 @@
 			<weapon_preset_item item_class_id="5a385f87-eadf-4542-84a1-728635365f4d" />
 			<weapon_preset_item item_class_id="53612e76-76fd-4dca-84b6-7905b986dc3b" />
 		</weapon_preset>
+		<weapon_preset weapon_preset_id="d15e05b4-1e8e-4d8f-bf91-681982d01b8e" weapon_preset_name="DLC3_teutonic_axe">
+			<weapon_preset_item item_class_id="53612e76-76fd-4dca-84b6-7905b986dc3b" />
+		</weapon_preset>
 		<weapon_preset weapon_preset_id="d16988c4-8e7f-463d-bf49-1b83ad5659ac" weapon_preset_name="kkut_gardener_1">
 			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
 			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
@@ -3187,6 +3326,12 @@
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="d48361c5-c0c9-4adb-b06a-fc6490edce08" weapon_preset_name="taboryUCesty_dice_bartolomej" Quality="2" Condition="0.65">
 			<weapon_preset_item item_class_id="e37bdf86-4cc8-4805-b04c-3b05964b9484" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="d4990a70-d3de-4d50-82f5-d1a95ec5b526" weapon_preset_name="DLC3_teutonic_huntingSword02">
+			<weapon_preset_item item_class_id="c58fa1d7-dd10-45e1-b6da-b65f1d0b3f7a" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="d4ef0d66-44f5-4154-bfe4-beb6927c96eb" weapon_preset_name="baladaZHadru_almuznik" Quality="3" ConditionVariation="0.84">
+			<weapon_preset_item item_class_id="007907cf-aeb9-4dfa-ad3f-e0262893e423" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="d5257ec0-dfe1-46b5-aaf7-ae25438da1c3" weapon_preset_name="tneb_kecal_M11_battle" Quality="1" Condition="0.8">
 			<weapon_preset_item item_class_id="9019a96a-d751-4a2f-b7d2-d9d397f54b71" />
@@ -3256,6 +3401,10 @@
 		<weapon_preset weapon_preset_id="d7edc147-9d6a-4b26-a5ba-a356010879ba" weapon_preset_name="mace_shield_4_01_vavak">
 			<weapon_preset_item item_class_id="839992c8-657b-4d5e-97c9-96ff94430d72" />
 			<weapon_preset_item item_class_id="4fc47d26-bd9a-4031-ad4c-d37a837065bd" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="d84f18d3-e28c-41ae-a201-e2309f9e14ac" weapon_preset_name="kkut_man_342">
+			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
+			<weapon_preset_item item_class_id="d4b8b102-cc1c-41a9-a1ab-e9d49ecf362b" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="d87c074e-1c8e-49c1-b9fd-97c8d781e01f" weapon_preset_name="barbora_longsword_torch">
 			<weapon_preset_item item_class_id="8c6b9277-e7ad-4246-974a-65b7000fbc5a" />
@@ -3400,7 +3549,7 @@
 			<weapon_preset_item item_class_id="a6fc95eb-9cf2-4554-ad72-9a9c09aae177" />
 			<weapon_preset_item item_class_id="e6652736-4cb4-42e9-b012-050064405f37" amount="19" />
 			<weapon_preset_item item_class_id="c59ce78e-aacd-45e1-bf66-d7d65036be70" />
-			<weapon_preset_item item_class_id="d5ccfb38-b110-4bc6-8af9-1dde41fabe12" />
+			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="dff6a7f8-aca0-4ca0-8b65-d6e1316b92f6" weapon_preset_name="kzik_cherthan">
 			<weapon_preset_item item_class_id="fd3682f9-621d-4d50-ae9d-1c0081f140ab" />
@@ -3671,11 +3820,11 @@
 			<weapon_preset_item item_class_id="3a640e5d-d8bd-4e8b-b61d-8cd5180e79e7" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="f6f553da-d3c2-4cd5-9cbb-ffca23afecd8" weapon_preset_name="taboryUCesty_duel_barnabas_man_2" Quality="1" Condition="0.59">
-			<weapon_preset_item item_class_id="d5ccfb38-b110-4bc6-8af9-1dde41fabe12" />
 			<weapon_preset_item item_class_id="588c12c6-f0fb-4b3e-847d-ce1df2739e73" />
 			<weapon_preset_item item_class_id="e6652736-4cb4-42e9-b012-050064405f37" amount="20" />
 			<weapon_preset_item item_class_id="e5f25908-a843-456a-b095-c31db34aa577" />
 			<weapon_preset_item item_class_id="e116a835-82b6-4267-a44d-a911cae59f58" />
+			<weapon_preset_item item_class_id="5f7ecb68-3d15-4cbf-988a-9e8de87fa0d9" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="f72d8f33-20d2-4a65-8eac-4a196dc8068d" weapon_preset_name="_test_archeryContest" social_class_id="1">
 			<weapon_preset_item item_class_id="4d3ab56f-92dc-45ea-805d-a570ef2dca76" />
@@ -3758,6 +3907,9 @@
 			<weapon_preset_item item_class_id="40b0ff59-7db2-4c16-bf66-253853a34344" />
 			<weapon_preset_item item_class_id="d2011311-2315-43a1-a953-76432df04329" />
 			<weapon_preset_item item_class_id="c49aa63a-07a6-4417-9f9b-97f2712a4cd0" amount="88" />
+		</weapon_preset>
+		<weapon_preset weapon_preset_id="fb8586fa-a1fb-4e74-886a-94d73f711806" weapon_preset_name="DLC3_teutonic_hammer">
+			<weapon_preset_item item_class_id="a92496ad-4a82-4815-93d8-5ae56bf78f88" />
 		</weapon_preset>
 		<weapon_preset weapon_preset_id="fc2987a8-e673-4e06-b093-6126d8bb1622" weapon_preset_name="kkut_krysa">
 			<weapon_preset_item item_class_id="c67de991-e22a-4a19-8b68-9369919c41dd" />

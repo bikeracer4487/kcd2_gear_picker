@@ -51,8 +51,11 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="crimeFollower_noMoveWithShock">
 					<TreeLocation FileName="test/zbynek.xml" TreeName="crimeFollower_noMoveWithShock" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="debug">
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="debug" PreventsMonsterLod="true">
 					<TreeLocation FileName="test/zbynek.xml" TreeName="debug" />
+					<Inboxes>
+						<InboxTemplate InboxId="47da3019-dba8-6def-f082-d5ec75928197" Priority="0" />
+					</Inboxes>
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="shockReaction_withSecondaryWeapon">
 					<TreeLocation FileName="test/zbynek.xml" TreeName="shockReaction_withSecondaryWeapon" />
@@ -89,6 +92,18 @@
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="checkChests">
 					<TreeLocation FileName="test/zbynek.xml" TreeName="checkChests" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="label_behavior">
+					<TreeLocation FileName="test/zbynek.xml" TreeName="label_behavior" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="label_interrupt">
+					<TreeLocation FileName="test/zbynek.xml" TreeName="label_interrupt" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="weaponDecorator">
+					<TreeLocation FileName="test/zbynek.xml" TreeName="weaponDecorator" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="turnOnPlayerJump">
+					<TreeLocation FileName="test/zbynek.xml" TreeName="turnOnPlayerJump" />
 				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>

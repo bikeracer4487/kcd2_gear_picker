@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="us-ascii"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <database name="barbora" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cutscene.xsd">
 	<Cutscenes version="1">
 		<!-- Barbora -->
@@ -234,8 +234,13 @@
 		<FaderCutscene Name="drak_afterAlchemistFistfight" />
 				<SkipTimeCutscene Name="drak_diggingBones" />
 		
-		<!-- dlc2Duels -->
-		<FastTravelCutscene Name="duels_teleportArena1" />
+		<!-- dlc1malovanoJest -->
+		<FaderCutscene Name="malovanoJest_teleportArgument" />
+		<FaderCutscene Name="malovanoJest_teleportBeforeDuel" />
+		<FaderCutscene Name="malovanoJest_teleportAfterDuel" />
+		<FaderCutscene Name="malovanoJest_teleportAdelaAfterDuel" />
+		<FaderCutscene Name="malovanoJest_teleportBailiffAfterDuel" />
+		<TextCutscene Name="malovanoJest_painting" StringName="premalova_vylepsujes_malbu_ELOi" Duration="3s" />
 
 		<!-- drevorubecAVlci -->
 		<TextCutscene Name="drevorubecAVlci_lumberjackTeachingHenry" StringName="drevorube_drevorubec_ti_u_NhN1" Duration="3s" />
@@ -397,6 +402,8 @@
 
 		<!-- hadkaKonaru -->
 		<FaderCutscene Name="hadkaKonaru_trialogTeleport" />
+		<TextCutscene Name="hadkaKonaru_pripravaOltare" StringName="hadkakona_priprava_oltare_vLPW" Duration="5s" />
+		<TextCutscene Name="hadkaKonaru_fail_presunKOltari" StringName="hadkakona_presun_k_oltari_Ccup" Duration="5s" />
 
 		<!-- havirskyTurnaj -->
 		<IngameCutscene Name="havirskyTurnaj_competition_lost" Time="9h20m" StartWeather="semicloudy_clear" StartBlendDuration="0s" EndWeather="semicloudy_clear" EndBlendDuration="0s" checkpoints="ch1_henry_lost ch2_henry_lost_end"/>
@@ -441,6 +448,10 @@
 		<FaderCutscene Name="hladAZmar_jindraLeaves" />
 		<SkipTimeCutscene Name="hladAZmar_dogSoupCooking" />
 		<SkipTimeCutscene Name="hladAZmar_shoeSoupCooking" />
+		
+		
+		<!-- hrisniLide -->
+		<FaderCutscene Name="hrisniLide_fader" />
 
 		<!-- hledaniLichtenstejna -->
 		<SkipTimeCutscene Name="hledaniLichtenstejna_waitForKozina" />
@@ -470,6 +481,7 @@
 		<!-- hrob -->
 		<TextCutscene Name="hrob_cleaningGrave" StringName="hrob_bez_spechu_uklizis_h_bCG2" Duration="5000ms"/>
 		<TextCutscene Name="hrob_returningSkull" Duration="500ms"/>
+		<TextCutscene Name="hrob_buryingGrave" StringName="hrob_zakopavas_hrob_s_poc_YJgF" Duration="5000ms"/>
 
 		<!-- hromovyKamen -->
 		<FaderCutscene Name="hromovyKamen_streamCamp" />
@@ -478,6 +490,8 @@
 
 		<!-- katuvSleh -->
 		<SkipTimeCutscene Name="katuvSleh_waitingForHorse" />
+		<FaderCutscene Name="katuvSleh_henrysHandGetsCut" />
+		<TextCutscene Name="katuvSleh_henryRemovingHorseShoe" StringName="katuvsleh_p_sundavas_podk_yxSh" Duration="4s"/>
 		
 		<!-- kejkliri -->
 		<FaderCutscene Name="kejkliri_startFirstTrialog" />
@@ -509,17 +523,11 @@
 		<IngameCutscene Name="kocovnickaCest_campCelebration" StartWeather="semicloudy_clear" StartBlendDuration="0s" />
 
 		<!-- konskeZavody trosecko-->
-		<FaderCutscene Name="jizdniLukostrelbaTrosecko_startCS" />
-		<!--<FaderCutscene Name="jizdniLukostrelbaTrosecko_postTeleportStartFader" />-->
+		<FaderCutscene Name="horseArcheryTrosecko_startCS" />
 		<FaderCutscene Name="crossCountryTrosecko_startTeleport_easy" />
 		<FaderCutscene Name="crossCountryTrosecko_startTeleport_medium" />
 		<FaderCutscene Name="crossCountryTrosecko_startTeleport_hard" />
-
-		<!-- konskeZavody kutnohorsko-->
-		<FaderCutscene Name="jizdniLukostrelba_kzik_startCS" />
-		<!-- UKNOWN LOCATION<FaderCutscene Name="jizdniLukostrelba_kzik_startCS" />-->
-		<FaderCutscene Name="crossCountry_kgru_startCS" />
-		<FaderCutscene Name="crossCountry_kmal_startCS" />
+		<TextCutscene Name="crossCountry_waitingForRaceToFinish" StringName="crosscoun_ph_ostatni_jezd_bnST" Duration="5s" />
 
 		<!-- konecZabomysichValek -->
 		<SkipTimeCutscene Name="konecZabomysichValek_waitForMorning" />
@@ -623,6 +631,11 @@
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_3_trackview" />
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_4_trackview" />
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_5_trackview" />
+		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_booth_1_trackview" />
+		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_booth_2_trackview" />
+		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_booth_3_trackview" />
+		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_booth_4_trackview" />
+		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleStanding_booth_5_trackview" />
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleLeaning_1_trackview" />
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleLeaning_2_trackview" />
 		<TrackViewCutscene Name="kutnohorskyTurnaj_fans_idleLeaning_3_trackview" />
@@ -662,6 +675,12 @@
 
 		<!-- taboryLapkuTrosecko -->
 		<FaderCutscene Name="taboryLapkuTrosecko_fader" />
+
+		<!-- malir -->
+		<IngameCutscene Name="malir_firstMeeting_ingame" PreemptedMusicDuration="10" PreemptedMusicStateToggle="SKIRMISH_ARMED_FORCED" />
+		
+		<!-- maliruvLek -->
+		<SkipTimeCutscene Name="maliruvLek_vykradaciHrobuSkipTime" />
 
 		<!-- masterstrikeTutorial -->
 		<FaderCutscene Name="masterstrikeTutorial_startTutorialu_vasko" />
@@ -720,6 +739,14 @@
 				<Profile Type="Default" FileName="cin_m0620t_natroskach__ptacek_execution_p03" />
 			</Profiles>
 		</RenderedCutscene>
+		<!-- nalezeniDelnici -->
+        <TextCutscene Name="nalazeniDelnici_vystrizliveni" StringName="vyslech_s_cekas_nez_elias_MtC8" Duration="5s" />
+        <IngameCutscene Name="nalazeniDelnici__zachary_confrontation" />
+        <IngameCutscene Name="nalazeniDelnici__killing_herbalist" />
+        <IngameCutscene Name="nalazeniDelnici__shack_fire" />
+		<!-- navstevaLekare -->
+		<FaderCutscene Name="navstevaLekare_prepareSickWenchHouse" />
+		
 		<!-- nebakovObrana -->
 		<FaderCutscene Name="nebakovObrana_fader" InterruptsIngameMusic="0" />
 		<FaderCutscene Name="nebakovObrana_battle_fader" PreemptedMusicDuration="10" PreemptedMusicStateToggle="STORY_M51_BATTLE_6_COURTYARD" />
@@ -1065,6 +1092,10 @@
 		<!-- relikvie -->
 		<FaderCutscene Name="relikvie_hrob" />
 
+		<!-- rodinnaChlouba -->
+		<TextCutscene Name="rodinnaChlouba_waitingForMechanism" stringName="ziskej_me_cekas_na_srdce__IOSN" Duration="4s" />
+		<FaderCutscene Name="rodinnaChlouba_putMechanismAtForge" />
+
 		<!-- rozinaKniha -->
 		<FaderCutscene Name="rozinaKniha_toRozaRoom" />
 		<TextCutscene Name="rozinaKniha_writingBook" stringName="roza_psan_cekas_nez_roza__Snv4" Duration="4s"/>
@@ -1249,10 +1280,11 @@
 		<FaderCutscene Name="stealthMiseZaJindru_interactiveBarnDoor" />
 
 		<!-- strasidlo -->
-		<TextCutscene Name="strasidlo_straseni" StringName="straseni__jindra_priprvuj_xLWm" Duration="5s" />
+		<TextCutscene Name="strasidlo_straseni" StringName="straseni__jindra_priprvuj_xLWm" Duration="5s" PreemptedMusicDuration="10" PreemptedMusicStateToggle="STORY_S131_THENIGHTMARE_PAINTER" />
 		<TextCutscene Name="strasidlo_vyroba" StringName="vyroba_ob_s_malirem_tvori_Gemz" Duration="5s" />
-		<TextCutscene Name="strasidlo_trialogue" StringName="zacatek_q_nasledujes_mali_Fvs4" Duration="5s" />
-		<FaderCutscene Name="strasidlo_fader" />
+		<FaderCutscene Name="strasidlo_faderPreTrialogue" />
+		<FaderCutscene Name="strasidlo_faderKrasekTeleport" />
+		<FaderCutscene Name="strasidlo_faderTeleportPoFightu" />
 
 		<!-- svatba -->
 		<FaderCutscene Name="svatba_fastTravelToWedding" />
@@ -1315,6 +1347,7 @@
 		<!-- svatyne -->
 		<TextCutscene Name="svatyne_teleportDoSvatyne" StringName="malir__ko_o_nekolik_hodin_6ltl" Duration="5s" />
 		<FaderCutscene Name="svatyne_babkaSePrevleka" />
+		<IngameCutscene Name="svatyne_painting" />
 
 		<!-- symbolSermirny -->
 		<FaderCutscene Name="symbolSermirny_teleportOutsideBucher" />
@@ -1342,13 +1375,19 @@
 				<SkipTimeCutscene Name="traskavePoselstvi_firefighting" />
 
 		<!-- truhlari -->
-		<TextCutscene Name="truhlari_BurnPainting_ingame" StringName="konec_que_placeholder_cut_F62p" Duration="5s" />
-		<TextCutscene Name="truhlari_FinishPaintingSad_ingame" StringName="konec_que_placeholder_cut_tbf2" Duration="5s" />
-		<TextCutscene Name="truhlari_FinishPaintingHappy_ingame" StringName="konec_que_placeholder_cut_iviu" Duration="5s" />
+		<IngameCutscene Name="truhlari_BurnPainting_ingame" />
+		<RenderedCutscene Name="truhlari_BurnPainting_render" Root="videos\s70\cin_s7030k_brushes__burning_altarpiece">
+			<Profiles>
+				<Profile Type="Default" FileName="cin_s7030k_brushes__burning_altarpiece" />
+			</Profiles>
+		</RenderedCutscene>
+		<IngameCutscene Name="truhlari_FinishPaintingSad_ingame" Checkpoints="ch01_varAB ch02_varA ch04_varAB"/>
+		<IngameCutscene Name="truhlari_FinishPaintingHappy_ingame" Checkpoints="ch01_varAB ch03_varB ch04_varAB"/>
 
 		
 		<!-- uchazec -->
 		<FaderCutscene Name="uchazec_intro" />
+		<IngameCutscene Name="uchazec_forgeFlashback"/>
 		<SkipTimeCutscene Name="uchazec_cekaniNaCechmistry" />
 		<SkipTimeCutscene Name="uchazec_ceremonie" />
 		<FaderCutscene Name="uchazec_uklid" />
@@ -1369,6 +1408,7 @@
 		<IngameCutscene Name="utokNaMalesov_duelWithCertLost" Checkpoints="ch07_cert_wins ch08_observer_1st_shot ch09_observer_2nd_shot ch10_cert_threatens_henry ch11_burning_the_village" />
 		<IngameCutscene Name="utokNaMalesov_duelWithCertEnd" Checkpoints="ch05_no_fight ch09_observer_2nd_shot ch10_cert_threatens_henry ch11_burning_the_village" />
 		<TrackViewCutscene Name="utokNaMalesov_outerCourtyardReinforcementShooters" />
+		<TrackViewCutscene Name="utokNaMalesov_outerCourtyardReinforcementShootersIdle" />
 		<TextCutscene Name="utokNaMalesov_gateOpening" StringName="otevirani_oteviras_branu__NJMp" Duration="3s" PreemptedMusicDuration="15" PreemptedMusicStateToggle="STORY_M44B_ATTACK_PHASE_2" />
 		<IngameCutscene Name="utokNaMalesov_cannonFired"  PreemptedMusicDuration="15" PreemptedMusicStateToggle="STORY_M44B_ATTACK_PHASE_3" />
 		<IngameCutscene Name="utokNaMalesov_pistaDreamGood" Time="0h" StartWeather="q_dream" StartBlendDuration="0s" EndWeather="cloudy_no_rain" EndBlendDuration="0s"/>
@@ -1445,10 +1485,10 @@
 				<Profile Type="Default" FileName="cin_m1240t_vezninatroskach__pista_chamber_01" />
 			</Profiles>
 		</RenderedCutscene>
-		<IngameCutscene Name="vezniNaTroskach_pistaDefeatWindow" checkpoints="ch0_dagger ch03_hug ch04_defenestration ch_05_dishonorable" />
-		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_sword" checkpoints="ch01_sword ch03_hug ch04_defenestration ch06_honorable" />
-		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_unarmedOrRanged" checkpoints="ch03_hug ch04_defenestration ch06_honorable" />
-		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_alternativeWeapon" checkpoints="ch02_alternativeweapons ch03_hug ch04_defenestration ch06_honorable" />
+		<IngameCutscene Name="vezniNaTroskach_pistaDefeatWindow" StartWeather="foggy_storm_no_rain" StartBlendDuration="0s" checkpoints="ch0_dagger ch03_hug ch04_defenestration ch_05_dishonorable" />
+		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_sword" StartWeather="foggy_storm_no_rain" StartBlendDuration="0s" checkpoints="ch01_sword ch03_hug ch04_defenestration ch06_honorable" />
+		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_unarmedOrRanged" StartWeather="foggy_storm_no_rain" StartBlendDuration="0s" checkpoints="ch03_hug ch04_defenestration ch06_honorable" />
+		<IngameCutscene Name="vezniNaTroskach_pistaDefeatDuel_alternativeWeapon" StartWeather="foggy_storm_no_rain" StartBlendDuration="0s" checkpoints="ch02_alternativeweapons ch03_hug ch04_defenestration ch06_honorable" />
 		<IngameCutscene Name="vezniNaTroskach_zikmundLetter" />
 		<RenderedCutscene Name="vezniNaTroskach_stormDream" Root="Videos\m12\cin_m1290t_vezninatroskach__storm_dream" Subtitles="cin_m1290t_vezninatroskach__storm_dream">
 			<Profiles>
@@ -1475,6 +1515,11 @@
 		<FaderCutscene Name="viktorka_viktorkaLocationIsKnown" />
 		<SkipTimeCutscene Name="viktorka_cureForSoldierIsTakingEffect" />
 
+		<!-- vrah -->
+		<FaderCutscene Name="vrah_duelStart" />
+
+		<!-- vyvolavani-->>
+		<FaderCutscene Name="vyvolavani_testFader" />
 		<!-- zaby -->
 		<FaderCutscene Name="zaby_displayedMaypole" />
 		<FaderCutscene Name="zaby_manureTeleport" />
@@ -1919,6 +1964,75 @@
 		<SkipTimeCutscene Name="pocestny_newborn_playerIsPoisoned" />
 
 		<FaderCutscene Name="trainingGrounds_teleport" PreemptedMusicDuration="15" PreemptedMusicStateToggle="PREEMPTED_SKIRMISH_FRIENDLY" />
+
+		<!-- DLC2 -->
+		<!-- ztracenyTovarys-->
+		<FastTravelCutscene Name="ztracenyTovarys_fastTravelToEldris" />
+
+		<!-- vlasskaTransmise-->
+		<TextCutscene Name="vlasskaTransmise_volfSobering" StringName="opilec_vo_volf_strizlivi_xhx7" Duration="3s" />
+		<FastTravelCutscene Name="vlasskaTransmise_fastTravelRunaway" />
+		<TextCutscene Name="vlasskaTransmise_travelBathhouse" StringName="s_volfem__jdes_s_volfem_d_HP3M" Duration="5s" />
+		<SkipTimeCutscene Name="vlasskaTransmise_volfCleaning" />
+		<FastTravelCutscene Name="vlasskaTransmise_fastTravelWalkToFabrizio" />
+		<TextCutscene Name="vlasskaTransmise_dinner" StringName="vecere_u__pporchetta_je_o_uS4R" Duration="5s" />
+		<FaderCutscene Name="vlasskaTransmise_streamingFader" />
+		<FaderCutscene Name="vlasskaTransmise_bathFader" />
+		<FastTravelCutscene Name="vlasskaTransmise_fastTravelWalkToBailiff" />
+		<FaderCutscene Name="vlasskaTransmise_placeholderRepairBeginning" />
+		<FaderCutscene Name="vlasskaTransmise_placeholderRepairFinnish" />
+
+		<!-- dlc2Donations -->
+		<SkipTimeCutscene Name="customWaffenrock_waitingForWaffenrockToBeTailored" />
+
+		<!-- dlc2Duels -->
+		<FastTravelCutscene Name="duels_teleportHradeckaFencingArena" />
+		<FastTravelCutscene Name="duels_teleportTournamentArena" />
+		<FastTravelCutscene Name="duels_teleportHavirskaArena" />
+		<FastTravelCutscene Name="duels_teleportDiraArena" />
+		<FastTravelCutscene Name="duels_teleportStaraKutnaArena" />
+		<FastTravelCutscene Name="duels_teleportHoranyArena" />
+		<FastTravelCutscene Name="duels_teleportMezholezsko" />
+		<FastTravelCutscene Name="duels_tvrdaRana_fastTravel" />
+
+		<!-- dlc2pasCudnosti -->
+		<TextCutscene Name="pasCudnosti_blacksmithingChastityBeltMouchaAlone" StringName="kovani_pa_moucha_kove_pas_wDcS" Duration="3s" />
+		<TextCutscene Name="pasCudnosti_blacksmithingChastityBeltTogether" StringName="kovani_pa_kovete_s_moucho_0ZTN" Duration="3s" />
+		<FaderCutscene Name="pasCudnosti2_lockpickingDoneFader" />
+
+		<!-- dlc2Archery-->
+		<FaderCutscene Name="archery_nobodyWantsArchery_fader" />
+		<FastTravelCutscene Name="archery_goToArcheryRange_fasttravel_birds" />
+		<FastTravelCutscene Name="archery_goToArcheryRange_fasttravel_targets" />
+		<FastTravelCutscene Name="archery_goToArcheryRange_fasttravel_inicial" />
+		<FastTravelCutscene Name="archery_goToArcheryRange_fasttravel_bloodTrail" />
+		<FastTravelCutscene Name="archery_goToArcheryRange_fasttravel_unpleasantSurprise" />
+
+		<!-- dlc2Dice-->
+		<TextCutscene Name="dice_chlastani" StringName="zase_alko_o_par_snapsu_po_BSl8" Duration="4s" />
+
+		<!-- DLC3 -->
+		<!-- puvodNemoci -->
+		<IngameCutscene Name="puvodNemoci_initialMonasteryCutscene" />
+		<IngameCutscene Name="puvodNemoci_introducingZacharias" />
+		<IngameCutscene Name="puvodNemoci_closingMonastery" />
+
+		<!-- nakaza -->
+		<TextCutscene Name="nakaza_plagueSuitMaking" StringName="morovy_ob_vyrabis_morovy__ncfr" Duration="5s" />
+		<TextCutscene Name="nakaza_disassemblingWall" StringName="hrac_je_u_cihlu_po_cihle__QjWg" Duration="5s" />
+
+		<!-- artefakt -->
+		<TextCutscene Name="artefakt_librarianPreparingBooks" StringName="knihovna_cekas_az_knihovn_rqMG" Duration="5s" />
+		<TextCutscene Name="artefakt_librarianPreparingBooks_secondVariation" StringName="knihovna_nasledujes_bratr_CwAl" Duration="3s" />
+		<TextCutscene Name="artefakt_diggingGrave" StringName="hledani_h_vykopavas_hrob_saCx" Duration="5s" />
+		<IngameCutscene Name="artefakt_lootingArtifact_withMercenaries" Time="21h00m" StartWeather="foggy_storm_no_rain" />
+		<IngameCutscene Name="artefakt_lootingArtifact_withoutMercenaries" Time="21h00m" StartWeather="foggy_storm_no_rain" />
+		<IngameCutscene Name="artefakt_lootingArtifact_henryDefeated" Time="22h00m" StartWeather="foggy_storm_no_rain" />
+
+		<!-- predaniVChramu -->
+		<FaderCutscene Name="predaniVChramu_duelSeZachariasem" />
+		<FaderCutscene Name="predaniVChramu_prichaziOpat" />
+		<FaderCutscene Name="predaniVChramu_prichodZachariase" />		
 
 		<!-- testCutscene -->
 		<FaderCutscene Name="test_streamProfile" />

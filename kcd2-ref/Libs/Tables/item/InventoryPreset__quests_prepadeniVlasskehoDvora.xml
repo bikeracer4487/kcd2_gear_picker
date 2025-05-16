@@ -155,7 +155,7 @@
 			<InventoryPresetRef Name="inventory_smallAmountOfHides"/>
 			<InventoryPresetRef Name="inventory_prepadeniVlasskehoDvora_chanceForRecipe"/>
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_prepadeniVlasskehoDvora_chanceForRecipe" Mode="AmountFraction" ModeValue="0.8" ModeValueVariation="0.5">
+		<InventoryPreset Name="inventory_prepadeniVlasskehoDvora_chanceForRecipe" Mode="AmountCount" ModeValue="0.6" ModeValueVariation="0.5">
 			<PresetItem Name="recipe_longswordduel" Amount="1"/>
 			<PresetItem Name="recipe_axebattle04" Amount="1"/>
 		</InventoryPreset>
@@ -166,9 +166,9 @@
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_prepadeniVlasskehoDvora_csabasKitchenChest">
 			<PresetItem Name="prepadeniVlasskehoDvora_juniperSchnapps" Amount="1"/>
-			<PresetItem Name="potion_insomnia_best" Amount="1"/>
-			<PresetItem Name="potion_marigold_best" Amount="1"/>
-			<PresetItem Name="potion_painkiller_best" Amount="1"/>
+			<PresetItem Name="potion_insomnia_high" Amount="1"/>
+			<PresetItem Name="potion_marigold_high" Amount="1"/>
+			<PresetItem Name="potion_painkiller_high" Amount="1"/>
 			<PresetItem Name="cheeseQuarterSmoked" Amount="1"/>
 			<PresetItem Name="beefTenderloinDried" Amount="1"/>
 			<PresetItem Name="deerRumpDried" Amount="1"/>

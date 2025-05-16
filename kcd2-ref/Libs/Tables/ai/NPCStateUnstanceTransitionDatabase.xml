@@ -30,6 +30,13 @@
 
 		<UnstanceTransitionData SourceUnstanceName="injured" TargetUnstanceName="heal_injured" Fragment="HealIn" Tags="lyingGround"/>
 		<UnstanceTransitionData SourceUnstanceName="heal_injured" TargetUnstanceName="injured" Fragment="HealOut" Tags="lyingGround"/>
+		<UnstanceTransitionData SourceUnstanceName="lyingInjured_bedLow" TargetUnstanceName="heal_injured" Fragment="HealIn" Tags="lyingGround"/>
+		<UnstanceTransitionData SourceUnstanceName="heal_injured" TargetUnstanceName="lyingInjured_bedLow" Fragment="HealOut" Tags="lyingGround"/>
+
+		<UnstanceTransitionData SourceUnstanceName="lyingInjured_bedHigh_typhus01" TargetUnstanceName="healing_typhus01_slave" Fragment="HealingBedTyphus01LeftIn"/>
+		<UnstanceTransitionData SourceUnstanceName="healing_typhus01_slave" TargetUnstanceName="lyingInjured_bedHigh_typhus01" Fragment="HealingBedTyphus01LeftOut"/>
+		<UnstanceTransitionData SourceUnstanceName="lyingInjured_bedHigh_typhus02" TargetUnstanceName="healing_typhus02_slave" Fragment="HealingBedTyphus02LeftIn"/>
+		<UnstanceTransitionData SourceUnstanceName="healing_typhus02_slave" TargetUnstanceName="lyingInjured_bedHigh_typhus02" Fragment="HealingBedTyphus02LeftOut"/>
 
 		<UnstanceTransitionData SourceUnstanceName="Quest_SittingWounded" TargetUnstanceName="Quest_SynchroSittingWounded" Fragment="Quest_TreatingIn"/>
 		<UnstanceTransitionData SourceUnstanceName="Quest_SynchroSittingWounded" TargetUnstanceName="Quest_SittingWounded" Fragment="Quest_TreatingOut"/>

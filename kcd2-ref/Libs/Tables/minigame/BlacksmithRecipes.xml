@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
 	<BlacksmithRecipes version="1">
-		<BlacksmithRecipe Id="basic_sword" UIIcon="horseshoe" Category="ShortSword" MinSkillLevel="5" WorkpieceId="sword" PerkId="cd9ff25b-2faa-4f78-aeb3-f108d1d7354b">
+		<BlacksmithRecipe Id="basic_sword" UIIcon="horseshoe" Category="ShortSword" MinSkillLevel="5" WorkpieceId="sword" PerkId="cd9ff25b-2faa-4f78-aeb3-f108d1d7354b" DlcId="8">
 			<UIName StringName="ui_nm_horseshoeMilitary" Text="Podkovy ryt&#xED;&#x159;sk&#xE9;" CreatedOn="29.4.2024 14:36:50" Translator="Ond&#x159;ej Bittner" />
-			<UIDesc StringName="ui_in_horseshoeMilitary" Text="Poctiv&#xE9; podkovy s ozuby, se kter&#xFD;mi lze dos&#xE1;hnout dobr&#xE9; rychlosti, ale mus&#xED; se pravideln&#x11B; vym&#x11B;&#x148;ovat za nov&#xE9;." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeMilitary" Text="Poctiv&#xE9; podkovy s ozuby, se kter&#xFD;mi lze p&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy zv&#xFD;&#x161;it koni jeho rychlost a&#x17E; o 5." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="0d7f31ff-feed-49ef-8029-16f5976d26c7" Amount="5" />
 				<BlacksmithRecipeIngredient ItemClassId="b141676e-4173-4f9d-8cff-c610ca66d68e" Amount="2" />
 			</Ingredients>
 			<Products>
 				<BlacksmithRecipeProduct ItemClassId="ce1953df-9f10-4138-8fb1-393a11474553" MinimalQuality="20" />
-				<BlacksmithRecipeProduct ItemClassId="328d293b-9913-4281-9804-ca62d72c31bb" MinimalQuality="80" />
+				<BlacksmithRecipeProduct ItemClassId="328d293b-9913-4281-9804-ca62d72c31bb" MinimalQuality="73" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axebattle01" UIIcon="axeBattle01" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="8a7f9b2a-b87b-42cc-9f9e-bb61c5012d3f">
@@ -33,7 +33,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="bd74ce18-2623-48ba-a1a1-c9b09bbb2827" MinimalQuality="55" />
+				<BlacksmithRecipeProduct ItemClassId="bd74ce18-2623-48ba-a1a1-c9b09bbb2827" MinimalQuality="53" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axebattle03" UIIcon="axeBattle03" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="394af9ae-46e8-4ea4-a09d-8e38e936f899">
@@ -45,7 +45,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="0f0164d5-3746-4d07-a1ed-0f138225a6d9" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="0f0164d5-3746-4d07-a1ed-0f138225a6d9" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axebattle04" UIIcon="axeBattle04" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="01a77d2b-2ac9-42a6-b7c2-eda3ab98f29f">
@@ -58,7 +58,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="214ffcdd-a7a7-4b7a-b484-f60c8d00b39b" MinimalQuality="65" />
+				<BlacksmithRecipeProduct ItemClassId="214ffcdd-a7a7-4b7a-b484-f60c8d00b39b" MinimalQuality="61" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axecuman" UIIcon="axeCuman" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="f0ff5c94-e0a6-436f-a838-6d6e8bb725ac">
@@ -70,7 +70,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="eeeb5a48-9a97-41a6-aee0-3e1b64fc2405" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="eeeb5a48-9a97-41a6-aee0-3e1b64fc2405" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axefancy" UIIcon="axeFancy" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="54dc97e3-c51c-4eed-92db-ab7818a022f3">
@@ -81,7 +81,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a4da84c-f12a-4bc8-94dc-a7d8d76788ea" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="50a9ac1e-dbb5-480b-8b5e-2ba3a1ff8d82" MinimalQuality="65" />
+				<BlacksmithRecipeProduct ItemClassId="50a9ac1e-dbb5-480b-8b5e-2ba3a1ff8d82" MinimalQuality="61" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_axework01" UIIcon="axeWork01" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="a5ad2b92-a42c-49b2-b3ce-648ecf28d4bb">
@@ -107,7 +107,7 @@
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_horseshoe" UIIcon="horseshoeFarmer" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="3190f739-995e-4c60-9aa7-d34ca3428494">
 			<UIName StringName="ui_nm_horseshoeFarmer" Text="Podkovy sedl&#xE1;ck&#xE9;" LoadedOn="30.5.2024 18:53:28" />
-			<UIDesc StringName="ui_in_horseshoeFarmer" Text="Podkovy, kter&#xE9; jsou v&#xFD;sledkem snahy za&#x10D;&#xED;naj&#xED;c&#xED;ho kov&#xE1;&#x159;e. Koni na rychlosti nijak nep&#x159;idaj&#xED; a dlouhou dobu tak&#xE9; nevydr&#x17E;&#xED;." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeFarmer" Text="Podkovy, kter&#xE9; jsou v&#xFD;sledkem snahy za&#x10D;&#xED;naj&#xED;c&#xED;ho kov&#xE1;&#x159;e. P&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy m&#x16F;&#x17E;ou koni zvednout rychlost a&#x17E; o 3." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="94d8f5f1-20a7-4840-98ad-1d198d381389" Amount="1" />
 			</Ingredients>
@@ -117,7 +117,7 @@
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_horseshoeMilitary" UIIcon="horseshoeMilitary" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="0f22d475-f795-4327-b67c-cf15cdbf1739">
 			<UIName StringName="ui_nm_horseshoeMilitary" Text="Podkovy ryt&#xED;&#x159;sk&#xE9;" CreatedOn="29.4.2024 16:21:24" Translator="Ond&#x159;ej Bittner" />
-			<UIDesc StringName="ui_in_horseshoeMilitary" Text="Poctiv&#xE9; podkovy s ozuby, se kter&#xFD;mi lze dos&#xE1;hnout dobr&#xE9; rychlosti, ale mus&#xED; se pravideln&#x11B; vym&#x11B;&#x148;ovat za nov&#xE9;." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeMilitary" Text="Poctiv&#xE9; podkovy s ozuby, se kter&#xFD;mi lze p&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy zv&#xFD;&#x161;it koni jeho rychlost a&#x17E; o 5." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="94d8f5f1-20a7-4840-98ad-1d198d381389" Amount="2" />
 			</Ingredients>
@@ -127,33 +127,44 @@
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_horseshoeNoble" UIIcon="horseshoeNoble" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="dd4260a9-158f-49b5-b0d0-6f93812c519f">
 			<UIName StringName="ui_nm_horseshoeNoble" Text="Podkovy &#x161;lechtick&#xE9;" CreatedOn="29.4.2024 16:21:24" Translator="Ond&#x159;ej Bittner" />
-			<UIDesc StringName="ui_in_horseshoeNoble" Text="Skv&#x11B;l&#xE9; podkovy pro vzne&#x161;en&#xE9;ho o&#x159;e. K&#x16F;&#x148; s nimi dos&#xE1;hne vysok&#xE9; rychlosti a n&#x11B;jakou dobu mu vydr&#x17E;&#xED;." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeNoble" Text="Skv&#x11B;l&#xE9; podkovy pro vzne&#x161;en&#xE9;ho o&#x159;e. P&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy lze zv&#xFD;&#x161;it koni jeho rychlost a&#x17E; o 6." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="5ded1ff4-9f81-4179-bb65-f786e6e80560" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="5ded1ff4-9f81-4179-bb65-f786e6e80560" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_horseshoeNomad" UIIcon="horseshoeNomad" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="f21034f8-fcea-4a79-983a-0dd9adbc99b8">
 			<UIName StringName="ui_nm_horseshoeNomad" Text="Podkovy lovarijsk&#xE9;" CreatedOn="29.4.2024 16:21:24" Translator="Ond&#x159;ej Bittner" />
-			<UIDesc StringName="ui_in_horseshoeNomad" Text="Podkovy podle n&#xE1;vrhu romsk&#xFD;ch kov&#xE1;&#x159;&#x16F; zvan&#xFD;ch fierari. Jezdec od nich m&#x16F;&#x17E;e o&#x10D;ek&#xE1;vat &#x161;t&#x11B;dr&#xFD; p&#x159;&#xED;rustek k rychlosti sv&#xE9;ho kon&#x11B;." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeNomad" Text="Podkovy podle n&#xE1;vrhu romsk&#xFD;ch kov&#xE1;&#x159;&#x16F; zvan&#xFD;ch fierari. P&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy od nich jezdec m&#x16F;&#x17E;e o&#x10D;ek&#xE1;vatzv&#xFD;&#x161;en&#xED; rychlosti a&#x17E; o 9." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="1dd2863e-0793-49ba-bb82-125af6b31ddc" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="1dd2863e-0793-49ba-bb82-125af6b31ddc" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_horseshoeRacing" UIIcon="horseshoeRacing" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="c3c4c774-5759-4e68-80fc-c70a295f183d">
 			<UIName StringName="ui_nm_horseshoeRacing" Text="Podkovy z&#xE1;vodn&#xED;" CreatedOn="29.4.2024 16:21:24" Translator="Ond&#x159;ej Bittner" />
-			<UIDesc StringName="ui_in_horseshoeRacing" Text="Bezchybn&#xE9; z&#xE1;vodn&#xED; podkovy, kter&#xE9; umo&#x17E;n&#xED; koni dos&#xE1;hnout nejvy&#x161;&#x161;&#xED; mo&#x17E;n&#xE9; rychlosti." LoadedOn="30.5.2024 18:53:28" />
+			<UIDesc StringName="ui_in_horseshoeRacing" Text="Bezchybn&#xE9; z&#xE1;vodn&#xED; podkovy, kter&#xE9; p&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy zv&#xFD;&#x161;i koni rychlost a&#x17E; o 11." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
 				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="4934fb15-73c4-4b71-912a-9bab78a53f66" MinimalQuality="80" />
+				<BlacksmithRecipeProduct ItemClassId="4934fb15-73c4-4b71-912a-9bab78a53f66" MinimalQuality="73" />
+			</Products>
+		</BlacksmithRecipe>
+		<BlacksmithRecipe Id="r_horseshoeSpecial_phantomHorse" UIIcon="horseshoeMilitary" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="c2b04d9a-bd9b-4eba-a3cc-6fd7a1c021e1" DlcId="3">
+			<UIName StringName="ui_nm_horseshoeSpecial_phantomHorse" Text="Podkovy p&#x159;&#xED;zra&#x10D;n&#xE9;ho kon&#x11B;" CreatedOn="24.1.2025 12:04:46" Translator="Dami&#xE1;n Klobu&#x161;ick&#xFD;" />
+			<UIDesc StringName="ui_in_horseshoeSpecial_phantomHorse" Text="Zvl&#xE1;&#x161;tn&#xED; podkovy, kter&#xE9; na sob&#x11B; m&#x11B;l p&#x159;izra&#x10D;n&#xFD; h&#x159;ebec Ashborne. P&#x159;i mal&#xE9; v&#xE1;ze v&#xFD;bavy zv&#xFD;&#x161;i koni rychlost a&#x17E; o 13." LoadedOn="24.2.2025 15:37:21" />
+			<Ingredients>
+				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
+				<BlacksmithRecipeIngredient ItemClassId="4a4da84c-f12a-4bc8-94dc-a7d8d76788ea" Amount="1" />
+			</Ingredients>
+			<Products>
+				<BlacksmithRecipeProduct ItemClassId="651333f0-7ae6-45a1-b9ec-bf0d4701c8e5" MinimalQuality="75" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_huntingSwordBasic" UIIcon="huntingSwordBasic" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="328b519f-4cb4-4127-a79a-27e6d3ffc4dc">
@@ -190,7 +201,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="d4b8b102-cc1c-41a9-a1ab-e9d49ecf362b" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="d4b8b102-cc1c-41a9-a1ab-e9d49ecf362b" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_huntingswordsashka" UIIcon="huntingSwordSashka" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="3385645f-9b90-4ecd-8693-97da184fab60">
@@ -203,7 +214,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="8b7515e1-21fb-4c18-b3da-86fabb5025bd" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="d73738be-a741-4ee5-ab62-104ce6162639" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="d73738be-a741-4ee5-ab62-104ce6162639" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_huntingswordsword" UIIcon="huntingswordsword" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="489a6940-d6d4-4e4f-9ebf-88ae357f988f">
@@ -217,7 +228,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="87a568f2-79f7-415f-a690-9a04c4585455" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="40b0ff59-7db2-4c16-bf66-253853a34344" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="40b0ff59-7db2-4c16-bf66-253853a34344" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniAsiDoVezi_protectiveAxe" UIIcon="axeWork01" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="47eaa87d-bc72-4cef-bec8-38dbf651a41c">
@@ -232,7 +243,7 @@
 				<BlacksmithRecipeProduct ItemClassId="fdfd6989-a28d-40bc-ac0d-882b4d1cf4f9" MinimalQuality="50" />
 			</Products>
 		</BlacksmithRecipe>
-		<BlacksmithRecipe Id="r_kovaniKatuvSleh_executionersSword" UIIcon="kovaniKatuvSleh_longSwordExecutioner" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="e52089c9-3a88-438b-8844-13ab33e59b0f">
+		<BlacksmithRecipe Id="r_kovaniKatuvSleh_executionersSword" UIIcon="kovaniKatuvSleh_longSwordExecutioner" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="e52089c9-3a88-438b-8844-13ab33e59b0f" DlcId="3">
 			<UIName StringName="ui_nm_r_kovaniKatuvSleh_executionersSword" Text="ui_nm_r_kovaniKatuvSleh_executionersSword" LoadedOn="12.7.2023 10:49:56" />
 			<UIDesc StringName="ui_in_kovaniKatuvSleh_executionersSword" Text="Zasvi&#x161;t&#xED; vzduchem, naposled zkou&#x161;&#xED;&#x161; zak&#x159;i&#x10D;et a pak nav&#x11B;ky u&#x17E; ml&#x10D;&#xED;&#x161;." LoadedOn="14.2.2024 11:51:55" />
 			<Ingredients>
@@ -240,11 +251,9 @@
 				<BlacksmithRecipeIngredient ItemClassId="651333f0-36d1-4321-975f-bc7833a773eb" Amount="1" />
 				<BlacksmithRecipeIngredient ItemClassId="87a65e52-dfa1-4b45-9306-0b7083f93c90" Amount="1" />
 				<BlacksmithRecipeIngredient ItemClassId="c76db6a9-9f8c-487a-bb0b-48b16b47b75f" Amount="1" />
-				<BlacksmithRecipeIngredient ItemClassId="94d8f5f1-20a7-4840-98ad-1d198d381389" Amount="2" />
-				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="3" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="44a65a44-426a-4a3d-9d41-3629a7be0e38" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="44a65a44-426a-4a3d-9d41-3629a7be0e38" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniKopie_penitent" UIIcon="longSwordSturdy" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="4aec1edd-07f7-486f-b974-9ba412e3109f">
@@ -258,7 +267,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="dcef5c55-3c70-4422-b625-a936607df179" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="dcef5c55-3c70-4422-b625-a936607df179" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniKovarskaSoutez_huntingKnifeForContest" UIIcon="huntingSwordBasic" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="91fede06-caec-46d0-8c4a-7fa58558b268">
@@ -295,7 +304,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="c25fc705-c957-4c9a-a831-0f112e3b148d" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="c25fc705-c957-4c9a-a831-0f112e3b148d" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniRelikvie_swordOfKnightValentin" UIIcon="kovaniRelikvie_shortSwordKnightValentin" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="77c75659-e348-41e7-9ffa-12a2727e41fa">
@@ -310,7 +319,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="94d8f5f1-20a7-4840-98ad-1d198d381389" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="366c6d07-8d42-460e-a66b-d6167f08e531" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="366c6d07-8d42-460e-a66b-d6167f08e531" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniSymbolSermirny_guildSwordRemake" UIIcon="sermiry_longSwordGuild" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="5f4749aa-8d38-4368-8564-e772090f2faa">
@@ -322,7 +331,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a4da84c-f12a-4bc8-94dc-a7d8d76788ea" Amount="2" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="b4fb48be-9adb-4750-b7e6-7a88f47aff97" MinimalQuality="75" />
+				<BlacksmithRecipeProduct ItemClassId="b4fb48be-9adb-4750-b7e6-7a88f47aff97" MinimalQuality="69" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovaniVajdovaKletba_rikonaris" UIIcon="sabreNoble" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="d6672f5f-0478-42d3-b227-22adffcc6493">
@@ -341,17 +350,17 @@
 				<BlacksmithRecipeProduct ItemClassId="f2ff6654-b73b-41f8-9390-c6d6e5e144ed" MinimalQuality="40" />
 			</Products>
 		</BlacksmithRecipe>
-		<BlacksmithRecipe Id="r_kovaniZavodniPodkovy_caulkinHorseshoe" UIIcon="horseshoe" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="f94b552d-aafd-43be-9c6f-a938cb550548">
+		<BlacksmithRecipe Id="r_kovaniZavodniPodkovy_caulkinHorseshoe" UIIcon="horseshoe" Category="Other" MinSkillLevel="1" WorkpieceId="horseshoe" PerkId="f94b552d-aafd-43be-9c6f-a938cb550548" DlcId="3">
 			<UIName StringName="ui_nm_r_kovaniZavodniPodkovy_caulkinHorseshoe" Text="ui_nm_r_kovaniZavodniPodkovy_caulkinHorseshoe" LoadedOn="12.7.2023 10:49:56" />
-			<UIDesc StringName="ui_in_r_kovaniZavodniPodkovy_caulkinHorseshoe" Text="ui_in_r_kovaniZavodniPodkovy_caulkinHorseshoe" LoadedOn="12.7.2023 10:49:56" />
+			<UIDesc StringName="ui_in_horseshoeCaulkin" Text="Poctiv&#xE9; podkovy s ozuby, se kter&#xFD;mi lze p&#x159;i n&#xED;zk&#xE9; v&#xE1;ze v&#xFD;bavy zv&#xFD;&#x161;it koni rychlost a&#x17E; o 5." CreatedOn="7.2.2025 18:25:30" Translator="Ond&#x159;ej Bittner" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="94d8f5f1-20a7-4840-98ad-1d198d381389" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="22799e4c-1489-44b1-807f-6bfa3df47425" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="22799e4c-1489-44b1-807f-6bfa3df47425" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
-		<BlacksmithRecipe Id="r_kovarskeZakazky_magdalenaAxe" UIIcon="axeWork01" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="0ff4db39-3a74-4366-9dd3-89ffe7e4cf17">
+		<BlacksmithRecipe Id="r_kovarskeZakazky_magdalenaAxe" UIIcon="axeWork01" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="0ff4db39-3a74-4366-9dd3-89ffe7e4cf17" DlcId="5">
 			<UIName StringName="ui_nm_kovarskeZakazky_magdalenaAxe" Text="Magdal&#xE9;nina sekera" CreatedOn="1.10.2024 11:52:01" Translator="Ond&#x159;ej Bittner" />
 			<UIDesc StringName="ui_in_kovarskeZakazky_magdalenaAxe" Text="Dom&#xE1;c&#xED; sekera, vylep&#x161;en&#xE1; p&#x159;ed lety kov&#xE1;&#x159;em &#x160;kodou ku pot&#x159;eb&#xE1;m jeho &#x17E;eny Magdal&#xE9;ny. Vydr&#x17E;&#xED; d&#xE9;le ne&#x17E; b&#x11B;&#x17E;n&#xE1; dom&#xE1;c&#xED; sekera." LoadedOn="21.10.2024 13:36:17" />
 			<Ingredients>
@@ -360,7 +369,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="8d09fdad-9e86-4bbd-906e-ec01b668a206" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="8d09fdad-9e86-4bbd-906e-ec01b668a206" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_kovarTrainingSword" UIIcon="huntingSwordBasic" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="113fbba6-ece5-4442-b789-e1427b35c253">
@@ -385,7 +394,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="3858560f-cf48-436f-8815-4426003288fb" MinimalQuality="55" />
+				<BlacksmithRecipeProduct ItemClassId="3858560f-cf48-436f-8815-4426003288fb" MinimalQuality="53" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_longswordcommon" UIIcon="longswordcommon" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="766b081c-8cd9-465a-b722-ae8ab356fa00">
@@ -413,7 +422,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="2" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="00cca9e3-8ef2-46db-8cbf-86ec51930919" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="00cca9e3-8ef2-46db-8cbf-86ec51930919" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_longswordHenry_reforged" UIIcon="longswordRadzig" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="2dd0b89c-4e60-405b-8d82-04e9538f4b54">
@@ -424,7 +433,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a4da84c-f12a-4bc8-94dc-a7d8d76788ea" Amount="3" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="62096670-22ca-473c-adc3-bc63a9369550" MinimalQuality="80" />
+				<BlacksmithRecipeProduct ItemClassId="62096670-22ca-473c-adc3-bc63a9369550" MinimalQuality="73" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_longswordold" UIIcon="longswordOld" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="ea0be1c3-88f1-4ecd-bea6-83c2f62663a7">
@@ -449,7 +458,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a4da84c-f12a-4bc8-94dc-a7d8d76788ea" Amount="3" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="25366cab-ddf2-4657-94a5-0fcf06a8dabb" MinimalQuality="80" />
+				<BlacksmithRecipeProduct ItemClassId="25366cab-ddf2-4657-94a5-0fcf06a8dabb" MinimalQuality="73" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_longswordsturdy" UIIcon="longswordSturdy" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="d7f0e4a4-ebdd-4134-b249-a4810943cb64">
@@ -463,10 +472,10 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="3" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="23855649-1783-4e0d-95ad-d3478797b642" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="23855649-1783-4e0d-95ad-d3478797b642" MinimalQuality="56" />
 			</Products>
 		</BlacksmithRecipe>
-		<BlacksmithRecipe Id="r_polearmBruncvik" UIIcon="polearm_bruncvik" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="bc052134-4e12-4d25-8940-c6711b8505d1">
+		<BlacksmithRecipe Id="r_polearmBruncvik" UIIcon="polearm_bruncvik" Category="Axe" MinSkillLevel="1" WorkpieceId="axe" PerkId="bc052134-4e12-4d25-8940-c6711b8505d1" DlcId="1">
 			<UIName StringName="ui_nm_polearmBruncvik" Text="Bruncv&#xED;kova d&#x159;evcov&#xE1; sekera" CreatedOn="21.3.2024 14:19:31" Translator="Ond&#x159;ej Bittner" />
 			<UIDesc StringName="ui_in_polearmBruncvik" Text="Ryt&#xED;&#x159;sk&#xE1; bojov&#xE1; sekera na holi. P&#x159;esn&#x11B; po takov&#xE9; tou&#x17E;il pan Ji&#x159;&#xED; Lev z Vartenberka. Nakonec jsem ji vyrobil a&#x17E; j&#xE1; podle ztracen&#xE9;ho n&#xE1;vodu." CreatedOn="21.3.2024 14:19:31" Translator="Ond&#x159;ej Bittner" />
 			<Ingredients>
@@ -475,16 +484,16 @@
 				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="aa11269e-ee54-46e0-b7c7-1efc50d7bcb8" MinimalQuality="80" />
+				<BlacksmithRecipeProduct ItemClassId="aa11269e-ee54-46e0-b7c7-1efc50d7bcb8" MinimalQuality="73" />
 			</Products>
 		</BlacksmithRecipe>
-		<BlacksmithRecipe Id="r_pomatenec_longsword" UIIcon="longswordcommon" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="e9a31851-bd48-4e19-a587-2eaf812aff2a">
+		<BlacksmithRecipe Id="r_pomatenec_longsword" UIIcon="pomatenec_longsword" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="e9a31851-bd48-4e19-a587-2eaf812aff2a">
 			<UIName StringName="ui_nm_pomatenec_longsword" Text="Dlouh&#xFD; me&#x10D; pomatence" LoadedOn="10.9.2024 15:15:23" />
-			<UIDesc StringName="ui_in_pomatenec_longsword" Text="Doplnit popisek." LoadedOn="10.9.2024 15:15:23" />
+			<UIDesc StringName="ui_in_pomatenec_longsword" Text="Me&#x10D; star&#xE9;ho bl&#xE1;zna ze zemnice, ke kter&#xE9; m&#x11B; poslal mal&#xED;&#x159; Vojt&#x11B;ch. Na &#x10D;epeli je vyryto: Confiteor Deo omnipotenti." LoadedOn="24.2.2025 15:37:21" />
 			<Ingredients>
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="3" />
-				<BlacksmithRecipeIngredient ItemClassId="dda85d8b-2bc0-4317-bc4b-adc95e878cbe" Amount="1" />
+				<BlacksmithRecipeIngredient ItemClassId="d65e03d1-289d-4f6a-884c-f490c1dabe41" Amount="1" />
 			</Ingredients>
 			<Products>
 				<BlacksmithRecipeProduct ItemClassId="3be8081d-e969-44af-b6dd-a9887d43a9b9" MinimalQuality="50" />
@@ -525,7 +534,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="4a6269c1-5c01-473d-ad69-e0a0c41643e7" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="fd3682f9-621d-4d50-ae9d-1c0081f140ab" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="fd3682f9-621d-4d50-ae9d-1c0081f140ab" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_shortswordbasilard" UIIcon="shortSwordBasilard" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="1a3d2c1d-4c99-4e1c-8df4-cedb66cc483e">
@@ -539,7 +548,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="e37bdf86-4cc8-4805-b04c-3b05964b9484" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="e37bdf86-4cc8-4805-b04c-3b05964b9484" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_shortswordbroad" UIIcon="shortswordBroad" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="8dafcb36-4680-4d63-9e97-0611bb8802e0">
@@ -554,7 +563,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" MinimalQuality="65" />
+				<BlacksmithRecipeProduct ItemClassId="9aa773b1-ede0-4ff5-bbd8-2595b36c8a1a" MinimalQuality="61" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_shortswordceremony" UIIcon="shortswordceremony" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="1db8f4e5-dc24-48e9-a05b-3d6212576fbb">
@@ -568,7 +577,7 @@
 				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="4092572e-a62e-44b2-bbff-c1faa4f9caed" MinimalQuality="70" />
+				<BlacksmithRecipeProduct ItemClassId="4092572e-a62e-44b2-bbff-c1faa4f9caed" MinimalQuality="64" />
 			</Products>
 		</BlacksmithRecipe>
 		<BlacksmithRecipe Id="r_shortswordcleaver" UIIcon="shortswordcleaver" Category="ShortSword" MinSkillLevel="1" WorkpieceId="sword" PerkId="67dd0d01-f819-4329-8a8d-0a493743904a">
@@ -607,7 +616,21 @@
 				<BlacksmithRecipeIngredient ItemClassId="e5ac7c40-263d-4fba-8c00-343e9b112aef" Amount="1" />
 			</Ingredients>
 			<Products>
-				<BlacksmithRecipeProduct ItemClassId="b3f7a363-5526-45b1-a32b-422a0a8e4da4" MinimalQuality="60" />
+				<BlacksmithRecipeProduct ItemClassId="b3f7a363-5526-45b1-a32b-422a0a8e4da4" MinimalQuality="56" />
+			</Products>
+		</BlacksmithRecipe>
+		<BlacksmithRecipe Id="r_uchazec_guildSword" UIIcon="longswordbroad" Category="LongSword" MinSkillLevel="1" WorkpieceId="longsword" PerkId="78fc983b-0fc6-4cae-b68b-d01695ccffa8" DlcId="5">
+			<UIName StringName="ui_nm_uchazec_guildSword" Text="Dlouh&#xFD; me&#x10D; kov&#xE1;&#x159;sk&#xE9;ho cechu" LoadedOn="24.2.2025 15:37:21" />
+			<UIDesc StringName="ui_in_uchazec_guildSword" Text="Dlouh&#xFD; me&#x10D; kovan&#xFD; p&#x159;i vstupn&#xED; zkou&#x161;ce kutnohorsk&#xE9;ho kov&#xE1;&#x159;sk&#xE9;ho cechu. Je pou&#x17E;&#xED;v&#xE1;n p&#x159;edev&#x161;&#xED;m k ceremoni&#xE1;ln&#xED;m &#xFA;&#x10D;el&#x16F;m." LoadedOn="24.2.2025 15:37:21" />
+			<Ingredients>
+				<BlacksmithRecipeIngredient ItemClassId="a1dda25f-3a35-4376-b198-4e5173c742a8" Amount="1" />
+				<BlacksmithRecipeIngredient ItemClassId="9023c10e-025c-4580-9b08-b0919e9f7346" Amount="1" />
+				<BlacksmithRecipeIngredient ItemClassId="d01f5606-5bba-42c1-9a48-b065e7a92ad7" Amount="1" />
+				<BlacksmithRecipeIngredient ItemClassId="3c1c0ae2-731e-40c1-a917-024fb3f000da" Amount="2" />
+				<BlacksmithRecipeIngredient ItemClassId="92aa6120-028e-48ee-8ed1-1c5f91afaa26" Amount="1" />
+			</Ingredients>
+			<Products>
+				<BlacksmithRecipeProduct ItemClassId="65dce76f-cbec-4355-8064-28151b78b818" MinimalQuality="73" />
 			</Products>
 		</BlacksmithRecipe>
 	</BlacksmithRecipes>

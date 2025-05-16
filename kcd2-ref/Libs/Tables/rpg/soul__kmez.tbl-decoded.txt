@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kmez.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__kmez.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 2656347562
   Layout Hash ........... 3826342426
   Table Version ......... 2
-  Line Count ............ 19
-  String Data Size ...... 607
-  Unique String Count ... 32
-  File Size ............. 3067
+  Line Count ............ 21
+  String Data Size ...... 666
+  Unique String Count ... 35
+  File Size ............. 3382
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] kmez_wildDog_2
@@ -23,24 +23,27 @@ String Table:
   [8] kutnohorsko_enemies_bandits_ukradenyKunBandits
   [9] char_GENERIC_MAN_ENEMY_BANDIT_06
   [10] kmez_wildDog_4
-  [11] kmez_wildDog_3
-  [12] kmez_bandit_7
-  [13] char_GENERIC_MAN_ENEMY_BANDIT_09
-  [14] kmez_bandit_2
-  [15] char_GENERIC_MAN_ENEMY_BANDIT_01
-  [16] kmez_bandit_1
-  [17] char_GENERIC_MAN_ENEMY_BANDIT_03
-  [18] kmez_wildDog_6
-  [19] kmez_wildDog_7
-  [20] kmez_bandit_3
-  [21] kmez_wildDog_5
-  [22] kmez_pajsl
-  [23] char_PAJSL
-  [24] kmez_jachym
-  [25] char_JACHYM
-  [26] kmez_benes
-  [27] char_BENES_OD_OKRISEK
-  [28] kmez_wildDog_1
-  [29] kmez_bandit_4
-  [30] kmez_bandit_6
-  [31] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [11] kmez_deadNonCuman_1
+  [12] deadBodies_enemies
+  [13] kmez_wildDog_3
+  [14] kmez_bandit_7
+  [15] char_GENERIC_MAN_ENEMY_BANDIT_09
+  [16] kmez_bandit_2
+  [17] char_GENERIC_MAN_ENEMY_BANDIT_01
+  [18] kmez_bandit_1
+  [19] char_GENERIC_MAN_ENEMY_BANDIT_03
+  [20] kmez_wildDog_6
+  [21] kmez_wildDog_7
+  [22] kmez_bandit_3
+  [23] kmez_wildDog_5
+  [24] kmez_pajsl
+  [25] char_PAJSL
+  [26] kmez_jachym
+  [27] char_JACHYM
+  [28] kmez_benes
+  [29] char_BENES_OD_OKRISEK
+  [30] kmez_wildDog_1
+  [31] kmez_bandit_4
+  [32] kmez_bandit_6
+  [33] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [34] kmez_deadVillager_1

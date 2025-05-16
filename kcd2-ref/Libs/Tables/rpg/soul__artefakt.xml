@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
+	<souls version="2">
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="klaster_zachariasovi" initial_clothing_dirt="0" social_class_id="61" soul_archetype_id="0" soul_id="2655dfe1-d401-4f34-8941-cc9a0882fbe2" soul_name="artefakt_zachariasMercenary_3" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_monastery" initial_clothing_dirt="0" social_class_id="33" soul_archetype_id="0" soul_id="4174c2ed-6ae9-49fc-9d49-25b58883eaad" soul_name="artefakt_monasteryKnight_2" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="klaster_zachariasovi" initial_clothing_dirt="0" social_class_id="61" soul_archetype_id="0" soul_id="7be22c86-2019-47b7-873b-5d8e9212f4dc" soul_name="artefakt_zachariasMercenary_2" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_monastery" initial_clothing_dirt="0" social_class_id="33" soul_archetype_id="0" soul_id="b922d710-b611-4444-a221-3e1ec0215925" soul_name="artefakt_monasteryKnight_3" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="klaster_zachariasovi" initial_clothing_dirt="0" social_class_id="61" soul_archetype_id="0" soul_id="e9f0be89-c913-4241-9871-c3a873cf55d7" soul_name="artefakt_zachariasMercenary_1" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_monastery" initial_clothing_dirt="0" social_class_id="33" soul_archetype_id="0" soul_id="fc4536b2-4964-4f79-af47-c6e7a3e5ec29" soul_name="artefakt_monasteryKnight_1" soul_vip_class_id="0" xp_multiplier="0" />
+	</souls>
+</database>

@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/credit_people.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ui\credit_people.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 3054588554
   Layout Hash ........... 2351292633
   Table Version ......... 1
-  Line Count ............ 2445
-  String Data Size ...... 26276
-  Unique String Count ... 2070
-  File Size ............. 84984
+  Line Count ............ 2464
+  String Data Size ...... 26522
+  Unique String Count ... 2089
+  File Size ............. 85686
   Calculated Line Size .. 24 (rem. 0)
 String Table:
   [0] cr_dan
@@ -2082,3 +2082,22 @@ String Table:
   [2067] cr2_nyang
   [2068] cr2_jmarecek
   [2069] cr2_mvancakova
+  [2070] cr2_ppkolar
+  [2071] cr2_kurbanova
+  [2072] cr2_jhamari
+  [2073] cr2_jstejkora
+  [2074] cr2_jjuhasova
+  [2075] cr2_scenek
+  [2076] cr2_ssramkova
+  [2077] cr2_jrehanek
+  [2078] cr2_fvymyslicky
+  [2079] cr2_imacik
+  [2080] cr2_kdavidova
+  [2081] cr2_lkis
+  [2082] cr2_mvagunda
+  [2083] cr2_mgregor
+  [2084] cr2_mrychetnik
+  [2085] cr2_vjuranek
+  [2086] cr2_mpanacek
+  [2087] cr2_aludwigova
+  [2088] cr2_dkonar

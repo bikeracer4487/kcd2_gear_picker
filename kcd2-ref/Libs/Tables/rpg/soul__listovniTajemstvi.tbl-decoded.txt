@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__listovniTajemstvi.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__listovniTajemstvi.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,19 +7,19 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 4
-  String Data Size ...... 304
+  String Data Size ...... 274
   Unique String Count ... 11
-  File Size ............. 844
+  File Size ............. 814
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] listovniTajemstvi_bandit_3
   [1] eventNPCs_enemies_hostile
   [2] Bandits
-  [3] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [3] char_ZLOUNUV_VRAHOUN_3
   [4] listovniTajemstvi_bandit_1
-  [5] char_GENERIC_MAN_ENEMY_BANDIT_11
+  [5] char_ZLOUNUV_VRAHOUN_1
   [6] listovniTajemstvi_bandit_2
-  [7] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [7] char_ZLOUNUV_VRAHOUN_2
   [8] listovniTajemstvi_kvetoslav
   [9] kutnohorsko_outskirts_miners_listovniTajemstvi
   [10] char_KVETOSLAV

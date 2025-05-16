@@ -1,0 +1,22 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__artefakt.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 6
+  String Data Size ...... 244
+  Unique String Count ... 8
+  File Size ............. 1040
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] artefakt_zachariasMercenary_3
+  [1] klaster_zachariasovi
+  [2] artefakt_monasteryKnight_2
+  [3] kutnohorsko_settlements_sedlec_commonFolk_monastery
+  [4] artefakt_zachariasMercenary_2
+  [5] artefakt_monasteryKnight_3
+  [6] artefakt_zachariasMercenary_1
+  [7] artefakt_monasteryKnight_1

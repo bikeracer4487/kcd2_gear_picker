@@ -13,6 +13,7 @@
 		<mailbox_filter mailbox_filter_id="0a293a29-fb95-4676-9af9-6dbf26194a10" mailbox_id="5b08050f-dad0-4528-95b5-86475e2d7d94" type="tutorial:onLockPickingTolerance" />
 		<mailbox_filter mailbox_filter_id="0a4feb8a-0906-44b9-84e9-03f1aaa80aa4" mailbox_id="478e1de0-7155-4d7e-8a49-9365db7996ba" type="pogrom:joinSkirmish" />
 		<mailbox_filter mailbox_filter_id="0e05fba0-f895-4181-a199-280264853823" mailbox_id="2f98f3a3-f122-4b9a-bda8-b7afcb030810" type="switch:animal_interruptData" />
+		<mailbox_filter mailbox_filter_id="1026065b-e9b4-4a84-8249-611b47fbc4ea" mailbox_id="9fc5abda-df10-4476-ae3d-35848a9c2712" type="switch:spawnPilloryBreakVolumeRequest" />
 		<mailbox_filter mailbox_filter_id="11a67738-6bab-4cff-bcb5-5d526cf652fc" mailbox_id="36b004ad-201f-4a0d-befb-2eb541bb1eda" type="wuid" />
 		<mailbox_filter mailbox_filter_id="1538c267-b8af-4e54-8e22-3d24e566ab4c" mailbox_id="c6efb93d-b6b9-488c-bc66-8f64b98f93ca" type="hitReaction" />
 		<mailbox_filter mailbox_filter_id="15ecf9a9-d6e8-4d80-b1c0-d1608754df58" mailbox_id="f427cdf9-da4a-46e7-82b4-1fee8382038b" type="carts:caravanaLeader" />
@@ -134,11 +135,13 @@
 		<mailbox_filter mailbox_filter_id="8dc04ce7-b11a-46e5-a0d5-41bf95da7fd8" mailbox_id="f3d07641-7b73-4c6b-ad97-f738ebca3b0a" type="greeting:synchronizationRequest" />
 		<mailbox_filter mailbox_filter_id="906605e8-7f09-4853-9fea-2797fa8ece64" mailbox_id="431f59b3-2eee-4575-8151-04edfd3b8c8e" type="tutorial:pickpocket_tutorial" />
 		<mailbox_filter mailbox_filter_id="93827676-5483-43d8-9e18-311d9ee59234" mailbox_id="4126c001-a9ac-46de-910f-e408551297fc" type="kettle:signal:onBuffCrimeNotice" />
+		<mailbox_filter mailbox_filter_id="9745a7fa-8dc2-4d25-8791-8b9a9517ce2f" mailbox_id="cf10dfaf-4343-4cc1-ba7b-de3814d28879" type="perceptionInfo" />
 		<mailbox_filter mailbox_filter_id="97de761d-b9f6-412b-8c78-30061348bda0" mailbox_id="02c3fa9b-0df8-40f7-8d85-7e262e78185f" type="dogpack" />
 		<mailbox_filter mailbox_filter_id="99c0de05-f37a-4fc1-b072-832ccadd975d" mailbox_id="787dda86-41ee-4a3b-9005-59135ff5e230" type="stashInfo:onClosedByPlayer" />
 		<mailbox_filter mailbox_filter_id="9a884e45-bb3d-4e66-8afb-7b8b561a59e8" mailbox_id="088ff8bf-87ee-4409-8021-d96f6290f1a4" type="crime:selfhelpChatFeedback" />
 		<mailbox_filter mailbox_filter_id="9d422642-a07e-45f8-a018-62eea8ac2ddc" mailbox_id="b16d56d2-417b-4818-89fa-5d0ebf582386" type="switch:cancelPerceptionIgnoreRequest" />
 		<mailbox_filter mailbox_filter_id="a414a795-cb4f-4719-8dd0-b7f5941fa119" mailbox_id="45020b1a-600f-f788-38e7-0ab6a7fc2495" type="interactionModule:itemSelection" />
+		<mailbox_filter mailbox_filter_id="a4441632-696e-4fc0-8ea4-aa9fd11d931d" mailbox_id="5ff4bed0-0044-4864-826b-a8a5a625aa2e" type="switch:discoverCorpse" />
 		<mailbox_filter mailbox_filter_id="a44bf716-8f3a-4080-95a2-b089f36e3add" mailbox_id="6ac7e2b3-a61d-4b51-a5f3-7eb0d0ba10cf" type="trackviewMessage" />
 		<mailbox_filter mailbox_filter_id="a5bb8839-b9d9-4553-ae3e-33569adbc74d" mailbox_id="2ab1a8e2-47c6-4018-bcb9-211bc26463b3" type="switch:interruptData" />
 		<mailbox_filter mailbox_filter_id="a624205a-f5e4-4aec-961c-e71b1e381f4f" mailbox_id="4126c001-a9ac-46de-910f-e408551297fc" type="kettle:signal:onMLODRefresh" />
@@ -182,6 +185,7 @@
 		<mailbox_filter mailbox_filter_id="e3d001bf-aaa8-47d6-9855-be68441592b5" mailbox_id="28d1e050-6d98-4f9f-acf5-64a98d48a2e8" type="crime:animal_returnFromStartleRequest" />
 		<mailbox_filter mailbox_filter_id="e6614a49-1052-4541-9c45-7d0492af599e" mailbox_id="a4ac9798-c772-4580-9188-eb11549e766a" type="greeting:waveRequest" />
 		<mailbox_filter mailbox_filter_id="e66308ad-cba6-4329-81c6-abc73f704927" mailbox_id="b06af3d9-4c4e-4cda-bea6-9dc3757ca810" type="onSoulRevivedForwarding" />
+		<mailbox_filter mailbox_filter_id="e9ff1031-9e88-4aa4-ad1d-45195e60a969" mailbox_id="c76e3262-c01f-4cbe-baf7-6176176fd88b" type="perceptionInfo" />
 		<mailbox_filter mailbox_filter_id="ea8367ba-9689-4395-ab90-e97dd0915348" mailbox_id="a09c7e03-00cc-41cf-814b-9a1fac2fb8fc" type="switch:onHotEntitySeenEvent" />
 		<mailbox_filter mailbox_filter_id="eb611a9e-3ba6-48ce-b4c1-540b3a922236" mailbox_id="eb69e9da-d2a7-4103-bfef-3f7d33be0aaf" type="dialog:onPrerequest" />
 		<mailbox_filter mailbox_filter_id="eb9cfc31-edff-4a2a-b3bf-06ad17b3924c" mailbox_id="ec64c1bd-e88d-458d-8dda-c94bdc549c1b" type="carts:npcHoppedOnNotification" />

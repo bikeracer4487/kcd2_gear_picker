@@ -1,0 +1,20 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__malovanoJest.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 2
+  String Data Size ...... 174
+  Unique String Count ... 6
+  File Size ............. 458
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] malovanoJest_noblewoman
+  [1] kutnohorsko_settlements_pritoky_nobility
+  [2] char_ADELA_Z_MNISKU
+  [3] malovanoJest_guard
+  [4] kutnohorsko_settlements_pritoky_soldiers_guards
+  [5] char_STRAZNY_JEDLICKA

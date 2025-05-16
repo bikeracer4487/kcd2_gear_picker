@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/prefab/prefab_phase_category.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\prefab\prefab_phase_category.tbl
 ======================================================================
 Header:
   File Format Version ... 3

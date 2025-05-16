@@ -1,0 +1,16 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__nakaza.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 1
+  String Data Size ...... 41
+  Unique String Count ... 2
+  File Size ............. 197
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] nakaza_prepadak
+  [1] klaster_delnici_prepadak

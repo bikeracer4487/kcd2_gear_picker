@@ -1,0 +1,23 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__predaniVChramu.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 8
+  String Data Size ...... 309
+  Unique String Count ... 9
+  File Size ............. 1361
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] predaniVChramu_chram_opatoviMuzi1
+  [1] klaster_zachariasovi
+  [2] predaniVChramu_krypta_zachariasuvMuz3
+  [3] predaniVChramu_krypta_zachariasuvMuz4
+  [4] predaniVChramu_krypta_zachariasuvMuz2
+  [5] predaniVChramu_chram_opatoviMuzi3
+  [6] predaniVChramu_chram_opatoviMuzi4
+  [7] predaniVChramu_chram_opatoviMuzi2
+  [8] predaniVChramu_krypta_zachariasuvMuz1

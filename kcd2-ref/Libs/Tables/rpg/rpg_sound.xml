@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="us-ascii"?>
 <database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
 	<rpg_sounds version="1">
-		<rpg_sound decrement_per_second="0.15" intensity_oneshot="225" noisiness_multiplier="0" notification_cooldown="3" notification_threshold="1" rpg_sound_id="1" rpg_sound_name="combat" />
+		<rpg_sound decrement_per_second="0.15" intensity_oneshot="225" noisiness_multiplier="0.2" notification_cooldown="3" notification_threshold="1" rpg_sound_id="1" rpg_sound_name="combat" />
 		<rpg_sound decrement_per_second="0.05" intensity_per_second="90" noisiness_multiplier="1" notification_cooldown="3" notification_threshold="1" rpg_sound_id="2" rpg_sound_name="lockpick" />
 		<rpg_sound decrement_per_second="0.35" intensity_oneshot="50" noisiness_multiplier="2" notification_cooldown="1.35" notification_threshold="1" rpg_sound_id="3" rpg_sound_name="movement" />
 		<rpg_sound decrement_per_second="0.2" intensity_per_second="64" noisiness_multiplier="1" notification_cooldown="3" notification_threshold="1" rpg_sound_id="4" rpg_sound_name="sharpener" />

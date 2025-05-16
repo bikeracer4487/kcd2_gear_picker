@@ -114,12 +114,12 @@
 	<!-- ==========NATURE STASHES=============== -->
 
 		<InventoryPreset Name="inventory_birdNest" Mode="OneChild">
-			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentCheap" Weight="0.8"/>
+			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentCheap" Weight="0.2"/>
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentMid" Weight="0.1"/>
 			<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentRare" Weight="0.05"/>
 			<InventoryPresetRef Name="inventory_singleRandomJewelNoGold" Weight="0.05"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfEggs" Weight="2"/>
-			<PresetItem Name="player_lockpick" Weight="1"/>
+			<PresetItem Name="player_lockpick" Weight="0.6"/>
 			<PresetItem Name="Spectacles01_m01" Weight="0.25"/>
 			<InventoryPresetRef Name="inventory_singleRandomDieBadgeLowStarter" Weight="0.2"/>     
 			<InventoryPresetRef Name="inventory_singleRandomDieBadgeMidStarter" Weight="0.01"/>     
@@ -127,6 +127,7 @@
 			<InventoryPresetRef Name="inventory_singleRandomDieLow" Weight="0.1"/>     
 			<InventoryPresetRef Name="inventory_singleRandomDieMid" Weight="0.01"/>     
 			<InventoryPresetRef Name="inventory_singleRandomDieHigh" Weight="0.001"/>     
+			<InventoryPresetRef Name="inventory_smallAmountQillFeathers" Weight="2"/>     
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_beeHive" Mode="AmountCount" ModeValue="10" ModeValueVariation="15">
 			<PresetItem Name="honey" Amount="10"/>
@@ -281,8 +282,9 @@
 			<InventoryPresetRef Name="inventory_singleRandomBurgherShoes" Weight="1" Health="0.1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_loot_dryer" Mode="AmountFraction" ModeValue="0.2" ModeValueVariation="0.05" Health="1.0"/>
-		<InventoryPreset Name="inventory_loot_henhouse" Health="0.41" HealthVariation="0.05" Mode="AmountCount" ModeValue="3" ModeValueVariation="2">
+		<InventoryPreset Name="inventory_loot_henhouse" Health="0.41" HealthVariation="0.05" Mode="AmountCount" ModeValue="4" ModeValueVariation="2">
 			<PresetItem Name="egg" Amount="5"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_loot_smokehouse" Mode="AmountFraction" ModeValue="0.6" ModeValueVariation="0.05" Health="1.0"/>
 		<InventoryPreset Name="inventory_officeStash" Mode="AmountCount" ModeValue="2" ModeValueVariation="0.5">
@@ -568,7 +570,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomJunkDamagedClothingHigh" Weight="0.6"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_noneChest_attic" Mode="AmountCount" ModeValue="2.4" ModeValueVariation="0.5" Health="0.12" HealthVariation="0.05">
-				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.2"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="1.2"/>
 				<InventoryPresetRef Name="inventory_randomVillageJunk"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfPewterCrockery" Weight="1.5"/>
 				<InventoryPresetRef Name="inventory_personalAmountOfShelfStableSupplies" Weight="1"/>
@@ -600,7 +602,6 @@
 			<InventoryPreset Name="inventory_attic_noneChest_mid" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.18" HealthVariation="0.1">
 				<PresetItem Name="torch_weapon" Amount="1"/>
 				<PresetItem Name="loot_sackOfNails" Amount="1"/>
-				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.4"/>
 				<InventoryPresetRef Name="inventory_money_pairOfShoes" Weight="0.1"/>
 				<InventoryPresetRef Name="inventory_singleRandomNiceAlcohol" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_personalAmountOfShelfStableSupplies" Weight="1"/>
@@ -610,6 +611,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomBsmtMetalCheap"/>
 				<InventoryPresetRef Name="inventory_personalAmountOfHides"/>
 				<InventoryPresetRef Name="inventory_singleRandomWaffenrock" Weight="0.3"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="1"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_attic_high" Mode="AmountCount" ModeValue="5.4" ModeValueVariation="0.5" Health="0.3" HealthVariation="0.3">
 				<InventoryPresetRef Name="inventory_stashMoney_rich" Weight="2"/>
@@ -651,7 +653,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomBarnRepairKit" Weight="0.2"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_noneChest_barn" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.3" HealthVariation="0.3">
-				<InventoryPresetRef Name="inventory_singleCobweb" Weight="1.5"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="2"/>
 				<InventoryPresetRef Name="inventory_money_pairOfShoes" Weight="0.1"/>
 				<PresetItem Name="loot_sackOfNails" Amount="1"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfBarnFood" Weight="4"/>
@@ -723,6 +725,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomCraftingSkin" Weight="0.5"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfHides" Weight="0.4"/>
 				<InventoryPresetRef Name="inventory_banditLoot_spareWeapons" Weight="0.6"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.5"/>
 				</InventoryPreset>
 			<InventoryPreset Name="inventory_bedside" Mode="AmountCount" ModeValue="4" ModeValueVariation="1" Health="0.3" HealthVariation="0.3">
 				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.1"/>
@@ -741,12 +744,13 @@
 				<InventoryPresetRef Name="inventory_singleRandomVillagerJewel" Weight="0.1"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_bedside_loner" Mode="AmountCount" ModeValue="3" ModeValueVariation="1" Health="0.3" HealthVariation="0.3">
-				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.1"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.5"/>
 				<InventoryPresetRef Name="inventory_someAmountOfBandages" Weight="0.4"/>
 				<InventoryPresetRef Name="inventory_money_lostChange"/>
 				<InventoryPresetRef Name="inventory_villagerHeirloom" Weight="0.2"/>
-				<InventoryPresetRef Name="inventory_villagerClothing"/>
-				<InventoryPresetRef Name="inventory_singleRandomFemaleVillagerClothing"/>
+				<InventoryPresetRef Name="inventory_villagerClothing" Weight="0.5"/>
+				<InventoryPresetRef Name="inventory_defaultLonerClothing"/>
+				<InventoryPresetRef Name="inventory_singleRandomFemaleVillagerClothing" Weight="0.3"/>
 				<InventoryPresetRef Name="inventory_singleRandomCheapAlcohol"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_bedsideRusticNice" Mode="AmountCount" ModeValue="4.5" ModeValueVariation="1" Health="0.3" HealthVariation="0.3">
@@ -894,6 +898,7 @@
 				<InventoryPresetRef Name="inventory_householdVillagerShoeRack" Weight="1"/>
 				<InventoryPresetRef Name="inventory_householdJunk" Weight="1"/>
 				<InventoryPresetRef Name="inventory_householdVillagerMedical_shelf" Weight="1"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.3"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_noneChest_household_smallBox" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5">
 				<PresetItem Name="repairKit_tailorsSmall" Amount="1" Weight="0.1"/>
@@ -931,7 +936,6 @@
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_household_noneChest_mid" Mode="AmountCount" ModeValue="2.4" ModeValueVariation="0.5">
 				<InventoryPresetRef Name="inventory_someOfUsedBurgherClothing" Weight="1"/>
-				<InventoryPresetRef Name="inventory_singleValuableBurgherClothing" Weight="0.1"/>
 				<InventoryPresetRef Name="inventory_burgherFemaleUsedClothing" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_householdVillagerMaintenance" Weight="0.3"/>
 				<InventoryPresetRef Name="inventory_householdBurgherShoeRack" Weight="0.6"/>
@@ -940,6 +944,8 @@
 				<InventoryPresetRef Name="inventory_stashMoney_low" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfBsmtMetalRare" Weight="0.1"/>
 				<InventoryPresetRef Name="inventory_singleLowPerfume" Weight="0.2"/>
+				<InventoryPresetRef Name="inventory_householdVillagerMedical_shelf" Weight="0.5"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.2"/>
 				<PresetItem Name="loot_cloth" Amount="1" Weight="0.3" Health="0.8" HealthVariation="0.1"/>
 				<PresetItem Name="loot_brocade" Amount="1" Weight="0.1"  Health="0.8" HealthVariation="0.1"/>
 			</InventoryPreset>
@@ -1058,6 +1064,7 @@
 				<InventoryPresetRef Name="inventory_smallAmountOfRandomBsmtComponent" Weight="0.5"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfRandomBsmtMetal" Weight="0.3"/>
 				<InventoryPresetRef Name="inventory_banditLoot_spareWeapons" Weight="0.6"/>
+				<InventoryPresetRef Name="inventory_singleRandomDamagedGambeson" Weight="0.3"/>
 				<InventoryPresetRef Name="inventory_randomBrokenWeapons" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_singleRandomLowMedicalPotion" Weight="0.05"/>
 				<InventoryPresetRef Name="inventory_singleRandomPoison" Weight="0.05"/>
@@ -1065,6 +1072,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomValuableBurgherCaparison" Weight="0.1"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfValuableBurgherClothing" Weight="0.5"/>
 				<InventoryPresetRef Name="inventory_singleRandomWaffenrock" Weight="0.5"/>
+				<InventoryPresetRef Name="inventory_singleRandomCaftan" Weight="0.5"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_noneChest_loot" Mode="AmountCount" ModeValue="1.8" ModeValueVariation="0.5" Health="0.33" HealthVariation="0.1">
 				<InventoryPresetRef Name="inventory_banditLoot_smallAmountOfCheapValuables" Weight="0.5"/>
@@ -1109,6 +1117,7 @@
 				<InventoryPresetRef Name="inventory_singleRandomValuableNobleCaparison" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_singleRandomValuableBurgherSaddle" Weight="0.1"/>
 				<InventoryPresetRef Name="inventory_singleRandomValuableBurgherGambeson" Weight="0.3"/>
+				<InventoryPresetRef Name="inventory_singleRandomCaftan" Weight="0.5"/>
 				<InventoryPresetRef Name="inventory_singleRandomWaffenrock" Weight="0.5"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_loot_noneChest_mid" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.33" HealthVariation="0.1">
@@ -1266,7 +1275,6 @@
 				<PresetItem Name="Spectacles01_m01" Amount="1" Weight="0.1"/>
 				<PresetItem Name="loot_candle" Amount="2" Weight="1"/>
 				<PresetItem Name="potion_bard_medium" Amount="1" Weight="0.2"/>
-				<InventoryPresetRef Name="inventory_someOfBurgherClothing" Weight="2"/>
 				<InventoryPresetRef Name="inventory_householdBurgherWritingUtensils" Weight="1"/>
 				<InventoryPresetRef Name="inventory_officeSkillBooks" Weight="0.05"/>
 				<InventoryPresetRef Name="inventory_officeRecepies" Weight="0.05"/>
@@ -1383,6 +1391,7 @@
 				<InventoryPresetRef Name="inventory_smallAmountOfBsmtMetalCheap"/>
 				<InventoryPresetRef Name="inventory_singleRandomBsmtComoponentMid" Weight="0.2"/>
 				<PresetItem Name="special_attire" Amount="1" Weight="0.2"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.3"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_workshop_noneChest_high" Mode="AmountCount" ModeValue="2.7" ModeValueVariation="0.5" Health="0.33" HealthVariation="0.1">
 				<PresetItem Name="loot_sackOfNails" Amount="1" Weight="0.1"/>
@@ -1516,6 +1525,7 @@
 				<InventoryPresetRef Name="inventory_smallAmountOfPewterCrockery" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_stashMoney_moderate" Weight="1"/>
 				<InventoryPresetRef Name="inventory_singleRandomDieLow" Weight="0.2"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.2"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_defaultJunk" Mode="OneChild" Health="0.41" HealthVariation="0.05">
 				<InventoryPresetRef Name="inventory_defaultJunkClothingLow" Weight="0.5"/>
@@ -1526,6 +1536,7 @@
 				<InventoryPresetRef Name="inventory_stashMoney_low" Weight="0.5" />
 				<InventoryPresetRef Name="inventory_smallAmountOfVillagerHides" Weight="2"/>
 				<InventoryPresetRef Name="inventory_smallAmountOfRottenBasicSupplies" Weight="0.5"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.2"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_defaultJunk_mid" Mode="AmountCount" ModeValue="3.6" ModeValueVariation="0.5" Health="0.41" HealthVariation="0.05">
 				<InventoryPresetRef Name="inventory_defaultJunkClothingHigh" Weight="0.5"/>
@@ -1555,6 +1566,7 @@
 				<InventoryPresetRef Name="inventory_defaultJunkCrafting" Weight="0.2"/>
 				<InventoryPresetRef Name="inventory_defaultJunkMedical" Weight="1"/>
 				<InventoryPresetRef Name="inventory_stashMoney_low" Weight="0.2"/>
+				<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.2"/>
 				<PresetItem Name="loot_cloth" Amount="1" Weight="1" Health="2"/>
 			</InventoryPreset>
 			<InventoryPreset Name="inventory_defaultJunk_high" Mode="AmountCount" ModeValue="4.6" ModeValueVariation="0.8" Health="0.41" HealthVariation="0.05">

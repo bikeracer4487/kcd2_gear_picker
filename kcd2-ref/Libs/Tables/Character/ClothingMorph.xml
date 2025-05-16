@@ -6,6 +6,7 @@
 	<Morph Name="#extend_hood_cloth_padded" />
 	<Morph Name="#extend_hood_coif" />
 	<Morph Name="#extend_coat_plate" />
+	<Morph Name="#coat_mPros_sleeve" />
 	<Morph Name="#morph_under_waist_extend" />
 	<Morph Name="#extend_secondary_belt" />
 	<Morph Name="#extend_secondary_belt_more" />
@@ -36,5 +37,7 @@
 	<Morph Name="#morph_brunswig" />
 	<Morph Name="#morph_chanfron" />
 	<Morph Name="#horse_head_hide" />
+	<Morph Name="#morph_barber" />
+	<Morph Name="#morph_barber_2" />
 	</ClothingMorphs>
 </database>

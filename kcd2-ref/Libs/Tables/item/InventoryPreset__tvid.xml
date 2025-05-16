@@ -32,5 +32,9 @@
 			<PresetItem Name="loot_tinPlate" Amount="2"/>
 		</InventoryPreset>
 
+		<InventoryPreset Name="inventory_tvid_woman_1">
+			<ClothingPresetRef Name="tvid_woman_1"/>
+			<InventoryPresetRef Name="pockets_villager"/>
+		</InventoryPreset>
 	</InventoryPresets>
 </database>

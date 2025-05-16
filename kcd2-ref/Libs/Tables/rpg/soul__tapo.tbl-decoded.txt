@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tapo.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__tapo.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 22
-  String Data Size ...... 1119
-  Unique String Count ... 48
-  File Size ............. 3963
+  String Data Size ...... 1086
+  Unique String Count ... 47
+  File Size ............. 3930
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] tapo_konrad
@@ -38,25 +38,24 @@ String Table:
   [23] tapo_kasparBandit_2
   [24] char_GENERIC_MAN_ENEMY_BANDIT_11
   [25] tkop_vrahBandit_1
-  [26] char_GENERIC_MAN_ENEMY_BANDIT_01
-  [27] tapo_kasparBandit_7
-  [28] char_GENERIC_MAN_ENEMY_BANDIT_02
-  [29] tkop_vrahBandit_6
-  [30] char_GENERIC_MAN_ENEMY_BANDIT_06
-  [31] tapo_ambroz
-  [32] trosecko_outskirts_hermits_ambroz
-  [33] char_POUSTEVNIK_AMBROZ
-  [34] tapo_kasparBandit_3
-  [35] char_GENERIC_MAN_ENEMY_BANDIT_12
-  [36] tkop_vrahBandit_5
-  [37] char_GENERIC_MAN_ENEMY_BANDIT_14
-  [38] tapo_dog_1
-  [39] tkop_vrah
-  [40] trosecko_enemies_bandits_vrahCamp_leader
-  [41] char_VRAH_BARNABAS
-  [42] tapo_kasparBandit_4
-  [43] tkop_vrahBandit_3
+  [26] tapo_kasparBandit_7
+  [27] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [28] tkop_vrahBandit_6
+  [29] char_GENERIC_MAN_ENEMY_BANDIT_06
+  [30] tapo_ambroz
+  [31] trosecko_outskirts_hermits_ambroz
+  [32] char_POUSTEVNIK_AMBROZ
+  [33] tapo_kasparBandit_3
+  [34] char_GENERIC_MAN_ENEMY_BANDIT_12
+  [35] tkop_vrahBandit_5
+  [36] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [37] tapo_dog_1
+  [38] tkop_vrah
+  [39] trosecko_enemies_bandits_vrahCamp_leader
+  [40] char_VRAH_BARNABAS
+  [41] tapo_kasparBandit_4
+  [42] tkop_vrahBandit_3
+  [43] char_GENERIC_MAN_ENEMY_BANDIT_08
   [44] tapo_kasparBandit_5
-  [45] char_GENERIC_MAN_ENEMY_BANDIT_08
-  [46] tkop_vrahBandit_2
-  [47] tapo_kasparBandit_1
+  [45] tkop_vrahBandit_2
+  [46] tapo_kasparBandit_1

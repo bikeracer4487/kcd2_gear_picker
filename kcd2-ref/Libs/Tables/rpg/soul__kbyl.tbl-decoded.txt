@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kbyl.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__kbyl.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 49
-  String Data Size ...... 2916
-  Unique String Count ... 111
-  File Size ............. 9216
+  String Data Size ...... 2811
+  Unique String Count ... 109
+  File Size ............. 9111
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] kbyl_woman_17
@@ -70,56 +70,54 @@ String Table:
   [55] kbyl_woman_12
   [56] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel08
   [57] kbyl_man_5
-  [58] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_butcher
-  [59] char_GENERIC_MAN_MERCHANT_CZECH_02
-  [60] kbyl_man_16
-  [61] char_GENERIC_MAN_GUARD_13
-  [62] kbyl_man_10
-  [63] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel05
-  [64] char_GENERIC_MAN_COMMONER_23
-  [65] kbyl_player_3
-  [66] char_KOSTKAR_3
-  [67] kbyl_woman_1
-  [68] char_GENERIC_WOMAN_COMMONER_07
-  [69] kbyl_woman_16
-  [70] kbyl_dog_1
-  [71] kbyl_drat
-  [72] char_CELEDIN_DRAT
-  [73] kbyl_additive_man_1
-  [74] char_PEKAR_LEPEK_BYLANY
-  [75] kbyl_man_8
-  [76] char_GENERIC_MAN_COMMONER_04
-  [77] kbyl_man_11
-  [78] char_GENERIC_MAN_COMMONER_14
-  [79] kbyl_woman_15
-  [80] char_GENERIC_WOMAN_COMMONER_11
-  [81] kbyl_baker
-  [82] kbyl_man_15
-  [83] char_GENERIC_MAN_GUARD_03
-  [84] kbyl_woman_11
-  [85] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_greengrocer
-  [86] char_GENERIC_WOMAN_COMMONER_04
-  [87] kbyl_man_18
-  [88] char_GENERIC_MAN_COMMONER_17
-  [89] kbyl_janHorse
-  [90] kbyl_man_6
-  [91] char_GENERIC_MAN_COMMONER_10
-  [92] kbyl_woman_14
-  [93] char_GENERIC_WOMAN_COMMONER_09
-  [94] kbyl_vendula
-  [95] kutnohorsko_outskirts_farms_zakopanyZitrekMikussHut_mikussFamily
-  [96] char_VENDULA
-  [97] kbyl_woman_13
-  [98] char_GENERIC_WOMAN_COMMONER_06
-  [99] kbyl_svatava
-  [100] char_SVATAVA
-  [101] kbyl_woman_2
-  [102] kbyl_man_12
-  [103] char_GENERIC_MAN_COMMONER_15
-  [104] kbyl_woman_5
-  [105] kbyl_man_4
-  [106] char_GENERIC_MAN_COMMONER_18
-  [107] kbyl_man_9
-  [108] char_GENERIC_MAN_COMMONER_13
-  [109] kbyl_slavaBrother
-  [110] char_GENERIC_MAN_COMMONER_05
+  [58] char_GENERIC_MAN_COMMONER_04
+  [59] kbyl_man_16
+  [60] char_GENERIC_MAN_GUARD_13
+  [61] kbyl_man_10
+  [62] kutnohorsko_settlements_bylany_commonFolk_peasants_parcel05
+  [63] char_GENERIC_MAN_COMMONER_23
+  [64] kbyl_player_3
+  [65] char_KOSTKAR_3
+  [66] kbyl_woman_1
+  [67] char_GENERIC_WOMAN_COMMONER_07
+  [68] kbyl_woman_16
+  [69] kbyl_dog_1
+  [70] kbyl_drat
+  [71] char_CELEDIN_DRAT
+  [72] kbyl_additive_man_1
+  [73] kbyl_man_8
+  [74] kbyl_man_11
+  [75] char_GENERIC_MAN_COMMONER_14
+  [76] kbyl_woman_15
+  [77] char_GENERIC_WOMAN_COMMONER_11
+  [78] kbyl_baker
+  [79] char_PEKAR_LEPEK_BYLANY
+  [80] kbyl_man_15
+  [81] char_GENERIC_MAN_GUARD_03
+  [82] kbyl_woman_11
+  [83] kutnohorsko_settlements_bylany_commonFolk_tradersAndCraftmans_greengrocer
+  [84] char_GENERIC_WOMAN_COMMONER_04
+  [85] kbyl_man_18
+  [86] char_GENERIC_MAN_COMMONER_17
+  [87] kbyl_janHorse
+  [88] kbyl_man_6
+  [89] char_GENERIC_MAN_COMMONER_10
+  [90] kbyl_woman_14
+  [91] char_GENERIC_WOMAN_COMMONER_09
+  [92] kbyl_vendula
+  [93] kutnohorsko_outskirts_farms_zakopanyZitrekMikussHut_mikussFamily
+  [94] char_VENDULA
+  [95] kbyl_woman_13
+  [96] char_GENERIC_WOMAN_COMMONER_06
+  [97] kbyl_svatava
+  [98] char_SVATAVA
+  [99] kbyl_woman_2
+  [100] kbyl_man_12
+  [101] char_GENERIC_MAN_COMMONER_15
+  [102] kbyl_woman_5
+  [103] kbyl_man_4
+  [104] char_GENERIC_MAN_COMMONER_18
+  [105] kbyl_man_9
+  [106] char_GENERIC_MAN_COMMONER_13
+  [107] kbyl_slavaBrother
+  [108] char_GENERIC_MAN_COMMONER_05

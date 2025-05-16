@@ -1,0 +1,27 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__archery.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 8
+  String Data Size ...... 445
+  Unique String Count ... 13
+  File Size ............. 1497
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] archery_bloodTrail_bandit_2
+  [1] kutnohorsko_enemies_bandits_naBylance_archery
+  [2] char_GENERIC_MAN_ENEMY_BANDIT_14
+  [3] archery_unpleasantSurprise_bandit_2
+  [4] archery_unpleasantSurprise_bandit_1
+  [5] archery_unpleasantSurprise_bandit_4
+  [6] archery_unpleasantSurprise_bandit_3
+  [7] archery_unpleasantSurprise_bandit_5
+  [8] archery_bloodTrail_bandit_1
+  [9] char_GENERIC_MAN_ENEMY_BANDIT_02
+  [10] archery_nobodyWantsArchery_banditLeader
+  [11] kutnohorsko_enemies_bandits_campPOINaBylance
+  [12] char_KONIAS

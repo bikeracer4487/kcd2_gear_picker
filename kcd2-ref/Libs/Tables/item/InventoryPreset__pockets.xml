@@ -86,6 +86,17 @@
 			<InventoryPresetRef Name="inventory_singleRandomReligiousTrinket" />
 			<InventoryPresetRef Name="inventory_singleRandomReligiousValuable" Weight="0.4" />
 		</InventoryPreset>
+		<InventoryPreset Name="pockets_DLC3_menAtArms" Mode="AmountCount" ModeValue="3" ModeValueVariation="0.5" >
+			<InventoryPresetRef Name="inventory_singleRandomSnack" />
+			<InventoryPresetRef Name="inventory_money_fewBeers" />
+			<InventoryPresetRef Name="inventory_singleRandomReligiousTrinket" Weight="2" />
+		</InventoryPreset>
+		<InventoryPreset Name="pockets_DLC3_dinedeBruder" Mode="AmountCount" ModeValue="4" ModeValueVariation="0.5" >
+			<InventoryPresetRef Name="inventory_singleRandomSnack" />
+			<InventoryPresetRef Name="inventory_money_niceChalice" />
+			<InventoryPresetRef Name="inventory_singleRandomReligiousTrinket" />
+			<InventoryPresetRef Name="inventory_singleRandomReligiousValuable" />
+		</InventoryPreset>
 		<InventoryPreset Name="pockets_musician" Mode="AmountCount" ModeValue="3.6" ModeValueVariation="1.5" >
 			<InventoryPresetRef Name="inventory_singleRandomSnack" />
 			<InventoryPresetRef Name="inventory_money_fewBeers" />

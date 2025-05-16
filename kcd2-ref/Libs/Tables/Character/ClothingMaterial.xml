@@ -118,7 +118,9 @@
 					<Material Name="Neutral_light_wolf" Hue="0" Saturation="0" Brightness="0.46" Specular="#3F3F3F" />
 				</Material>
 				<Material Name="Neutral_black_mat" Smoothness="170" GrimeDiffuse="#514A42" GrimeGloss="0.34" />
-				<Material Name="Neutral_black_wolf" Hue="288" Saturation="10" Brightness="0.32" Specular="#A0A0A0" Smoothness="209" ScratchTextureId="2" ScratchHue="360" ScratchSaturation="0.23" ScratchBrightness="0.83" />
+				<Material Name="Neutral_black_wolf" Hue="288" Saturation="10" Brightness="0.32" Specular="#A0A0A0" Smoothness="209" ScratchTextureId="2" ScratchHue="360" ScratchSaturation="0.23" ScratchBrightness="0.83">
+					<Material Name="Neutral_black_wolf01" Brightness="0.32" Smoothness="255" />
+				</Material>
 			</Material>
 			<Material Name="Fake_material_medium" Brightness="0.18" Specular="#AAAAAA">
 				<Material Name="Fake_material_medium_matte" Brightness="0.59" Specular="#919191" Smoothness="172" GrimeDiffuse="#595350">
@@ -158,7 +160,7 @@
 						<Material Name="01_Chestnut_light_marking_head" Saturation="0.15" Brightness="1" ScratchSaturation="0.02" ScratchBrightness="2.4" />
 					</Material>
 				</Material>
-				<Material Name="02_Chestnut_dark" Hue="342" Saturation="0.25" Brightness="0.5" Specular="#3D3D3D" Smoothness="196" ScratchTextureId="121" ScratchHue="330" ScratchSaturation="0.05" ScratchBrightness="0.5">
+				<Material Name="02_Chestnut_dark" Hue="342" Saturation="0.25" Brightness="0.5" Specular="#3F3F3F" Smoothness="255" ScratchTextureId="121" ScratchHue="330" ScratchSaturation="0.05" ScratchBrightness="0.5">
 					<Material Name="02_Chestnut_dark_marking" ScratchTextureId="121" ScratchSaturation="0.01" ScratchBrightness="2">
 						<Material Name="02_Chestnut_dark_marking_legs" ScratchBrightness="2.79" />
 						<Material Name="02_Chestnut_dark_marking_neutral" Smoothness="204" ScratchSaturation="0.25" ScratchBrightness="0.45" />
@@ -182,12 +184,13 @@
 						<Material Name="05_Wild_bay_marking_legs" ScratchSaturation="0.01" ScratchBrightness="8.63" />
 					</Material>
 				</Material>
-				<Material Name="06_Seal_brown" Hue="330" Saturation="0.15" Brightness="0.2" Specular="#4C4C4C" Smoothness="255" GrimeDiffuse="#262626" ScratchTextureId="121" ScratchHue="326" ScratchSaturation="0.35" ScratchBrightness="0.67">
+				<Material Name="06_Seal_brown" Hue="330" Saturation="0.15" Brightness="0.2" Specular="#4F4F4F" Smoothness="205" GrimeDiffuse="#262626" ScratchTextureId="121" ScratchHue="342" ScratchSaturation="0.26" ScratchBrightness="0.45">
 					<Material Name="06_Seal_brown_body" Brightness="0.66" ScratchSaturation="0.55" ScratchBrightness="0.28">
 						<Material Name="06_Seal_brown_body_marking" ScratchHue="330" ScratchSaturation="0.01" ScratchBrightness="2.27">
 							<Material Name="06_Seal_brown_body_marking_black" Saturation="0.2" Brightness="0.4" Smoothness="255" />
 						</Material>
 					</Material>
+					<Material Name="06_Seal_brown_marking" ScratchSaturation="0" ScratchBrightness="3.83" />
 				</Material>
 				<Material Name="07_Black" Hue="330" Saturation="0.01" Brightness="0.55" Specular="#2F2F35" Smoothness="255" GrimeDiffuse="#2D2927" GrimeGloss="0.71" ScratchTextureId="121" ScratchHue="330" ScratchSaturation="0.1" ScratchBrightness="0.35">
 					<Material Name="07_Black_dark" Saturation="0.05" Brightness="0.5" Specular="#333333" Smoothness="234" ScratchBrightness="0.1">
@@ -199,7 +202,7 @@
 							<Material Name="07_Black_marking_shinier_neutral" ScratchBrightness="0.5" />
 						</Material>
 					</Material>
-					<Material Name="07_Black_shiny" Hue="178" Saturation="0.01" Brightness="0.7" Specular="#232323" Smoothness="255" GrimeDiffuse="#3A3022" GrimeGloss="0.18" ScratchHue="113" ScratchSaturation="0.05">
+					<Material Name="07_Black_shiny" Hue="178" Saturation="0.01" Brightness="0.35" Specular="#333333" Smoothness="255" GrimeDiffuse="#3A3022" GrimeGloss="0.18" ScratchHue="113" ScratchSaturation="0.05">
 						<Material Name="07_Black_shiny_marking" GrimeDiffuse="#2D2929" ScratchSaturation="0.01" ScratchBrightness="2.81" />
 						<Material Name="07_Black_shiny_neutral" Saturation="0.01" ScratchHue="113" ScratchSaturation="0.05" ScratchBrightness="0.45" />
 						<Material Name="07_Black_shiny_brownish" Hue="3" Saturation="0" Brightness="0.45" Specular="#4F4747" Smoothness="254">
@@ -216,13 +219,14 @@
 				<Material Name="09_Cremello" Hue="360" Saturation="0.01" Brightness="1.53" Smoothness="255" ScratchTextureId="121" ScratchHue="351" ScratchSaturation="0" ScratchBrightness="2.43" />
 				<Material Name="10_Buckskin" Hue="340" Saturation="0.1" Brightness="2" Specular="#55656B" Smoothness="255" ScratchTextureId="121" ScratchSaturation="0.05" ScratchBrightness="0.5">
 					<Material Name="10_Buckskin_hooves" TextureId="71" Saturation="0.35" Brightness="1" Specular="#B5B5B5" Smoothness="254" ScratchTextureId="71" />
-					<Material Name="10_Buckskin_neutral" Brightness="0.9" ScratchHue="340" ScratchSaturation="0.1" ScratchBrightness="1.5">
+					<Material Name="10_Buckskin_neutral" Brightness="0.9" Specular="#515B66" Smoothness="255" ScratchHue="340" ScratchSaturation="0.1" ScratchBrightness="1.5">
 						<Material Name="10_Buckskin_neutral_head" Smoothness="255" ScratchBrightness="0.9" />
 						<Material Name="10_Buckskin_neutral_plush" Smoothness="28">
 							<Material Name="10_Buckskin_neutral_plush_marking" ScratchSaturation="0" ScratchBrightness="4.26" />
 						</Material>
 					</Material>
 					<Material Name="10_Buckskin_marking" ScratchBrightness="3.96" />
+					<Material Name="10_Buckskin_bohuta" ScratchHue="340" ScratchSaturation="0.1" ScratchBrightness="2" />
 				</Material>
 				<Material Name="12_Red_dun" Hue="338" Saturation="0.16" Brightness="1.39" Specular="#3A3A3A" ScratchTextureId="121" ScratchHue="336" ScratchSaturation="0.25" ScratchBrightness="0.69">
 					<Material Name="12_Red_dun_marking" Specular="#606060" Smoothness="255" ScratchTextureId="121" ScratchSaturation="0.05" ScratchBrightness="4.21" />
@@ -231,6 +235,7 @@
 						<Material Name="12_Red_dun_roach_marking" ScratchSaturation="0.05" ScratchBrightness="2.88" />
 						<Material Name="12_Red_dun_roach_hooves" Brightness="0.48" Specular="#333333" Smoothness="255" ScratchHue="341" ScratchSaturation="0.06" ScratchBrightness="1.14" />
 					</Material>
+					<Material Name="12_Red_dun_grulla" Smoothness="255" ScratchSaturation="0.2" ScratchBrightness="0.22" />
 				</Material>
 				<Material Name="11_Bay_dun" Hue="343" Saturation="0.1" Brightness="1.75" Specular="#4F4F4F" Smoothness="255" ScratchTextureId="121" ScratchHue="347" ScratchSaturation="0.98" ScratchBrightness="0.18">
 					<Material Name="11_Bay_dun_marking" ScratchHue="343" ScratchSaturation="0.01" ScratchBrightness="2.98">
@@ -258,13 +263,13 @@
 					</Material>
 				</Material>
 				<Material Name="16_Blue_roan" Hue="128" Saturation="0.02" Brightness="1.16" Specular="#212B2B" Smoothness="255" GrimeDiffuse="#1E1C1C" ScratchTextureId="121" ScratchHue="146" ScratchSaturation="0.05" ScratchBrightness="0.7">
-					<Material Name="16_Blue_roan_marking" Hue="193" Saturation="0.01" Brightness="1.6" Specular="#4F6D84" Smoothness="255" ScratchHue="128" ScratchSaturation="0.015" ScratchBrightness="2.71">
+					<Material Name="16_Blue_roan_marking" Hue="193" Saturation="0.01" Brightness="1.6" Specular="#4F6D84" Smoothness="142" ScratchHue="128" ScratchSaturation="0.015" ScratchBrightness="0">
 						<Material Name="16_Blue_roan_marking_neutral" Saturation="0.08" Brightness="0.7" Smoothness="225" ScratchSaturation="0.08" ScratchBrightness="0.61" />
 					</Material>
 					<Material Name="16_Blue_roan_neutral" ScratchHue="128" ScratchBrightness="0.68" />
 					<Material Name="16_Blue_roan_lighter" Hue="130" Saturation="0.08" Brightness="1">
-						<Material Name="16_Blue_roan_lighter_marking" ScratchBrightness="6.55" />
-						<Material Name="16_Blue_roan_lighter_neutral" ScratchHue="130" ScratchSaturation="0.08" ScratchBrightness="1" />
+						<Material Name="16_Blue_roan_lighter_marking" Saturation="0.025" ScratchSaturation="0.02" ScratchBrightness="3.69" />
+						<Material Name="16_Blue_roan_lighter_neutral" Saturation="0.025" ScratchHue="130" ScratchSaturation="0.025" ScratchBrightness="1" />
 					</Material>
 					<Material Name="16_Blue_roan_hooves" TextureId="71" Brightness="0.44" Specular="#EDEDED" ScratchTextureId="71" ScratchBrightness="2.98" />
 				</Material>
@@ -292,12 +297,16 @@
 				<Material Name="22_Napoli" Saturation="0.01" Brightness="5.04" Specular="#686D61" ScratchTextureId="121" ScratchSaturation="0.05" ScratchBrightness="3.59">
 					<Material Name="22_Napoli_hooves" TextureId="3" Specular="#707070" Smoothness="164" ScratchTextureId="3" ScratchHue="330" ScratchSaturation="0.05" ScratchBrightness="4.51" />
 					<Material Name="22_Napoli_darker" ScratchSaturation="0.01" ScratchBrightness="3.14" />
-					<Material Name="22_Napoli_albino" ScratchBrightness="3.25" />
-					<Material Name="22_Napoli_shiny" Specular="#4E5563" Smoothness="255" ScratchTextureId="71" ScratchBrightness="1.61" />
+					<Material Name="22_Napoli_albino" Brightness="4.4" ScratchBrightness="3" />
+					<Material Name="22_Napoli_shiny" Brightness="3" Specular="#4E5563" Smoothness="255" ScratchTextureId="71" ScratchBrightness="1.45" />
 				</Material>
 				<Material Name="23_Chocolate" Hue="360" Saturation="0.15" Brightness="0.56" Specular="#636363" Smoothness="190" ScratchTextureId="121" ScratchSaturation="0.01" ScratchBrightness="2.6">
 					<Material Name="23_Chocolate_dark" Hue="305" Saturation="1.5" Brightness="0.22" Specular="#424141" Smoothness="225" ScratchHue="0" ScratchSaturation="0.01" ScratchBrightness="0">
 						<Material Name="23_Chocolate_dark_marking" ScratchBrightness="2" />
+						<Material Name="23_Chocolate_dark_roach" Hue="315" Saturation="0.65" Brightness="0.45">
+							<Material Name="23_Chocolate_dark_roach_marking" ScratchHue="315" ScratchBrightness="3.69" />
+							<Material Name="23_Chocolate_dark_roach_neutral" ScratchHue="315" ScratchSaturation="0.65" ScratchBrightness="0.45" />
+						</Material>
 					</Material>
 					<Material Name="23_Chocolate_light" Saturation="0.1" Brightness="1" ScratchTextureId="42" ScratchBrightness="1.27" />
 					<Material Name="23_Chocolate_netral" ScratchHue="360" ScratchSaturation="0.15" ScratchBrightness="0.56" />
@@ -312,24 +321,29 @@
 					<Material Name="25_Sorrel_grulla" Smoothness="167" ScratchHue="340" ScratchSaturation="0.08" ScratchBrightness="0.8">
 						<Material Name="25_Sorrel_grulla_darker" Saturation="0.15" Specular="#63636B" Smoothness="191" ScratchHue="310" ScratchSaturation="0.65" ScratchBrightness="0.23" />
 					</Material>
-					<Material Name="25_Sorrel_gold" Hue="338" Saturation="0.18" Brightness="1.46" Specular="#ED8C5E" Smoothness="238" ScratchHue="338" ScratchSaturation="0.01" ScratchBrightness="4.92">
-						<Material Name="25_Sorrel_gold_neutral" ScratchHue="338" ScratchSaturation="0.2" ScratchBrightness="1.97" />
+					<Material Name="25_Sorrel_gold" Hue="306" Saturation="3" Brightness="0.45" Specular="#B2B2B2" Smoothness="92" ScratchHue="338" ScratchSaturation="0.01" ScratchBrightness="4.92">
+						<Material Name="25_Sorrel_gold_neutral" ScratchHue="308" ScratchSaturation="2.05" ScratchBrightness="0.45" />
 					</Material>
 				</Material>
 			</Material>
 			<Material Name="Fur_smooth" TextureId="7" GrimeDiffuse="#47423F" GrimeGloss="0.51" ScratchTextureId="7">
 				<Material Name="01_Chestnut_light_smooth" Hue="4" Saturation="1.75" Brightness="0.56" GrimeDiffuse="#35302F" GrimeSpecular="#282828" GrimeGloss="0.65" ScratchHue="4" ScratchSaturation="2" ScratchBrightness="0.35">
 					<Material Name="01_Chestnut_light_smooth_marking" ScratchSaturation="0.1" ScratchBrightness="1.95" />
+					<Material Name="01_Chestnut_light_smooth_inverted" Specular="#BFBFBF" Smoothness="209" ScratchSaturation="3.83" ScratchBrightness="0.35" />
+					<Material Name="01_Chestnut_light_smooth_head" Specular="#BFBFBF" Smoothness="209" ScratchSaturation="1.81" ScratchBrightness="0.1" />
 				</Material>
 				<Material Name="02_Chestnut_dark_smooth" Hue="360" Saturation="1.65" Brightness="0.2" ScratchHue="360" ScratchBrightness="0.31">
 					<Material Name="02_Chestnut_dark_smooth_marking" ScratchSaturation="0.38" ScratchBrightness="1.83">
 						<Material Name="02_Chestnut_dark_smooth_marking_head" ScratchBrightness="0.95" />
 					</Material>
-					<Material Name="02_Chestnut_dark_smooth_grey" ScratchSaturation="0.9" ScratchBrightness="0.49" />
+					<Material Name="02_Chestnut_dark_smooth_grey" ScratchSaturation="0.9" ScratchBrightness="0.49">
+						<Material Name="02_Chestnut_dark_smooth_grey_matt" Specular="#878787" Smoothness="165" />
+					</Material>
 				</Material>
 				<Material Name="03_Chestnut_dirty_smooth" Hue="330" Saturation="0.3" Brightness="0.45" ScratchSaturation="2.85" />
-				<Material Name="04_Light_bay_smooth" Hue="360" Saturation="1" Brightness="0.45" ScratchTextureId="7" ScratchHue="0" ScratchSaturation="2" ScratchBrightness="0.2">
+				<Material Name="04_Light_bay_smooth" Hue="360" Saturation="1" Brightness="0.45" Smoothness="255" ScratchTextureId="7" ScratchHue="0" ScratchSaturation="2" ScratchBrightness="0.2">
 					<Material Name="04_Light_bay_smooth_marking" ScratchHue="360" ScratchSaturation="0.35" ScratchBrightness="2.5" />
+					<Material Name="04_Light_bay_smooth_neutral" ScratchHue="360" ScratchSaturation="1" ScratchBrightness="0.45" />
 				</Material>
 				<Material Name="05_Wild_bay_smooth" Hue="352" Saturation="1.25" Brightness="0.57" ScratchSaturation="0.45" ScratchBrightness="0.89">
 					<Material Name="05_Wild_bay_smooth_marking" ScratchTextureId="42" ScratchBrightness="10">
@@ -366,7 +380,7 @@
 				<Material Name="13_Grulla_smooth" Hue="0" Saturation="0.47" Brightness="0.61" ScratchTextureId="7" ScratchHue="16" ScratchSaturation="0.3" ScratchBrightness="0.11">
 					<Material Name="13_Grulla_smooth_neutral" ScratchHue="0" ScratchSaturation="0.47" ScratchBrightness="0.33" />
 				</Material>
-				<Material Name="14_Red_roan_smooth" Hue="10" Saturation="1.3" Brightness="0.7" ScratchTextureId="121" ScratchSaturation="0.2" ScratchBrightness="0.39">
+				<Material Name="14_Red_roan_smooth" Hue="5" Saturation="1.58" Brightness="0.42" Specular="#B2B2B2" Smoothness="255" ScratchTextureId="121" ScratchSaturation="0.2" ScratchBrightness="0.39">
 					<Material Name="14_Red_roan_smooth_marking" ScratchTextureId="7" ScratchHue="10" ScratchBrightness="1.96" />
 					<Material Name="14_Red_roan_smooth_neutral" ScratchTextureId="7" ScratchHue="10" ScratchSaturation="1.3" ScratchBrightness="0.7" />
 				</Material>
@@ -376,7 +390,7 @@
 				<Material Name="16_Blue_roan_smooth" Hue="157" Saturation="0.4" Brightness="0.31" ScratchTextureId="13" ScratchHue="119" ScratchSaturation="0.1" ScratchBrightness="0">
 					<Material Name="16_Blue_roan_smooth_marking" ScratchTextureId="7" ScratchBrightness="1.36" />
 					<Material Name="16_Blue_roan_smooth_neutral" ScratchTextureId="7" ScratchHue="157" ScratchSaturation="0.4" ScratchBrightness="0.31" />
-					<Material Name="16_Blue_roan_smooth_lighter" Saturation="0.19" Brightness="0.45">
+					<Material Name="16_Blue_roan_smooth_lighter" Saturation="0.19" Brightness="0.45" ScratchTextureId="7" ScratchBrightness="0.77">
 						<Material Name="16_Blue_roan_smooth_lighter_marking" Hue="162" Saturation="0.24" ScratchTextureId="7" ScratchBrightness="3" />
 						<Material Name="16_Blue_roan_smooth_lighter_neutral" ScratchTextureId="7" ScratchHue="157" ScratchSaturation="0.5" ScratchBrightness="0.45" />
 					</Material>
@@ -408,15 +422,16 @@
 						<Material Name="Fur_noble_white_marking_neutral" Brightness="0.86" Smoothness="153" ScratchTextureId="42" ScratchSaturation="1" ScratchBrightness="1.56" />
 					</Material>
 					<Material Name="Fur_noble_white_mediium" Brightness="0.75" GrimeDiffuse="#302C2C" GrimeGloss="0.7" ScratchTextureId="42" ScratchSaturation="0.1" ScratchBrightness="1.36" />
-					<Material Name="Fur_noble_white_head" Brightness="2.27" Specular="#8A8AA3" Smoothness="222" ScratchTextureId="42" ScratchSaturation="1" ScratchBrightness="2.3" />
+					<Material Name="Fur_noble_white_head" Brightness="1.5" Specular="#8A8AA3" Smoothness="222" ScratchTextureId="42" ScratchSaturation="1" ScratchBrightness="1" />
 					<Material Name="Fur_noble_white_splash" Hue="0" Brightness="1.49" Specular="#878787" Smoothness="255" ScratchTextureId="71" ScratchSaturation="0.15" ScratchBrightness="0.66" />
-					<Material Name="Fur_noble_white_reversed" Hue="309" Saturation="0.49" Brightness="0.68" Specular="#515151" Smoothness="187" ScratchTextureId="42" ScratchBrightness="2.75" />
+					<Material Name="Fur_noble_white_reversed" Hue="309" Saturation="0.49" Brightness="0.68" Specular="#515151" Smoothness="187" ScratchTextureId="42" ScratchBrightness="1.5" />
 				</Material>
 				<Material Name="Fur_noble_black" Brightness="0.2" Specular="#303030" Smoothness="227">
 					<Material Name="Fur_noble_black_marking" ScratchTextureId="42" ScratchSaturation="0.1" ScratchBrightness="2" />
 					<Material Name="Fur_noble_black_neutral" ScratchTextureId="42" ScratchSaturation="1" ScratchBrightness="0.2" />
-					<Material Name="Fur_noble_black_plush" Saturation="0.78" Brightness="0.2" Specular="#1D2119" Smoothness="137" ScratchTextureId="121" ScratchSaturation="0" ScratchBrightness="1.86">
+					<Material Name="Fur_noble_black_plush" Saturation="0.78" Brightness="0.2" Specular="#1D2119" Smoothness="255" ScratchTextureId="121" ScratchSaturation="0" ScratchBrightness="1.86">
 						<Material Name="Fur_noble_black_plush_neutral" ScratchTextureId="42" ScratchSaturation="0.78" ScratchBrightness="0.78" />
+						<Material Name="Fur_noble_black_plush_head" Brightness="0.25" ScratchBrightness="0.7" />
 					</Material>
 					<Material Name="Fur_noble_black_greyish" TextureId="71" Hue="184" Saturation="0.2" Brightness="0.44" Specular="#474747" Smoothness="136" ScratchTextureId="71" ScratchSaturation="0" ScratchBrightness="2.93" />
 					<Material Name="Fur_noble_black_reversed" Brightness="0.29" ScratchBrightness="5.86" />
@@ -425,14 +440,14 @@
 					</Material>
 				</Material>
 				<Material Name="Fur_noble_marking" Brightness="2" Specular="#AD8888" Smoothness="140" ScratchBrightness="0">
-					<Material Name="Fur_noble_marking_rough" Specular="#9EA1CC" Smoothness="242" ScratchTextureId="121" ScratchHue="313" ScratchSaturation="0" ScratchBrightness="1.24" />
+					<Material Name="Fur_noble_marking_rough" Specular="#969696" Smoothness="141" ScratchTextureId="121" ScratchHue="313" ScratchSaturation="0" ScratchBrightness="1.24" />
 				</Material>
 				<Material Name="Fur_noble_brown" Hue="306" Saturation="2.1" Brightness="0.65" Specular="#6D5A47" Smoothness="255" GrimeDiffuse="#282626">
 					<Material Name="Fur_noble_brown_marking" ScratchTextureId="42" ScratchHue="306" ScratchSaturation="0" ScratchBrightness="1.25" />
 				</Material>
 				<Material Name="Fur_noble_chocolate" Hue="295" Saturation="10" Brightness="0.22" Specular="#665045" Smoothness="210">
 					<Material Name="Fur_noble_chocolate_marking" ScratchTextureId="71" ScratchSaturation="0.07" ScratchBrightness="1.91" />
-					<Material Name="Fur_noble_chocolate_neutral" ScratchTextureId="42" ScratchHue="328" ScratchSaturation="6.55" ScratchBrightness="0.45" />
+					<Material Name="Fur_noble_chocolate_neutral" ScratchTextureId="42" ScratchHue="328" ScratchSaturation="2.51" ScratchBrightness="0.95" />
 				</Material>
 			</Material>
 			<Material Name="Fur_cow" TextureId="42" Saturation="1" Brightness="0.74" Specular="#938585" Smoothness="237" GrimeDiffuse="#423732" GrimeGloss="0.63" ScratchTextureId="15" ScratchSaturation="0" ScratchBrightness="2.24">
@@ -459,8 +474,11 @@
 					<Material Name="Fur_shiny_silver_marking" ScratchBrightness="4.52" />
 					<Material Name="Fur_shiny_silver_blue" Hue="265" Saturation="3.25" Specular="#49566D" ScratchTextureId="7" ScratchHue="32" ScratchSaturation="0.1" ScratchBrightness="1.3" />
 					<Material Name="Fur_shiny_silver_lighter" ScratchBrightness="1.77" />
-					<Material Name="Fur_shiny_silver_smooth" Saturation="1.02" Brightness="0.91" Specular="#26333F" Smoothness="208" ScratchTextureId="71">
+					<Material Name="Fur_shiny_silver_smooth" Saturation="1.02" Brightness="1.3" Specular="#26333F" Smoothness="208" ScratchTextureId="71" ScratchBrightness="0.6">
 						<Material Name="Fur_shiny_silver_smooth_matt" Saturation="1" Brightness="0.85" Smoothness="255" />
+						<Material Name="Fur_shiny_silver_artax" Brightness="1.75" ScratchTextureId="121" ScratchSaturation="0.01" ScratchBrightness="1">
+							<Material Name="Fur_shiny_silver_artax_head" ScratchTextureId="42" ScratchHue="306" ScratchSaturation="1" ScratchBrightness="1.75" />
+						</Material>
 					</Material>
 				</Material>
 				<Material Name="Fur_shiny_white" Brightness="1.04" Specular="#5B5B5B" Smoothness="255" ScratchTextureId="7" ScratchSaturation="0.25" ScratchBrightness="1.29">
@@ -490,7 +508,7 @@
 						<Material Name="Fur_shiny_auburn_darker_head" Specular="#DDBBA5" Smoothness="186" />
 					</Material>
 					<Material Name="Fur_shiny_auburn_marking" Smoothness="21" ScratchSaturation="0" ScratchBrightness="3.27" />
-					<Material Name="Fur_shiny_auburn_plush" Saturation="10" Brightness="0.2" Specular="#44322A" Smoothness="123" ScratchBrightness="1.3" />
+					<Material Name="Fur_shiny_auburn_plush" Saturation="10" Brightness="0.3" Specular="#44322A" Smoothness="218" ScratchBrightness="1.3" />
 					<Material Name="Fur_shiny_auburn_gold" TextureId="71" Hue="12" Saturation="2.31" Brightness="0.47" Specular="#BFAC7D" Smoothness="141" GrimeDiffuse="#262117" ScratchTextureId="71" ScratchSaturation="0.01" ScratchBrightness="0.87">
 						<Material Name="Fur_shiny_auburn_gold_neutral" ScratchHue="1" ScratchSaturation="3.36" ScratchBrightness="0.6" />
 						<Material Name="Fur_shiny_auburn_gold_hooves" Hue="360" Saturation="1.6" Brightness="0.74" Specular="#876E65" Smoothness="198" />
@@ -503,7 +521,7 @@
 					</Material>
 				</Material>
 				<Material Name="Fur_shiny_chestnut" TextureId="71" Hue="0" Saturation="0.91" Brightness="0.51" Specular="#939393" Smoothness="255">
-					<Material Name="Fur_shiny_chestnut_darker" Brightness="0.31" GrimeDiffuse="#19120A" GrimeGloss="0.45" />
+					<Material Name="Fur_shiny_chestnut_darker" Brightness="0.31" Specular="#5E5E5E" Smoothness="169" GrimeDiffuse="#19120A" GrimeGloss="0.45" />
 					<Material Name="Fur_shiny_chestnut_light" Saturation="0.75" Brightness="1" Smoothness="0" />
 					<Material Name="Fur_shiny_chestnut_marking" Smoothness="131" ScratchSaturation="0.15" ScratchBrightness="5.79">
 						<Material Name="Fur_shiny_chestnut_marking_neutral" ScratchTextureId="71" ScratchSaturation="0.91" ScratchBrightness="0.51" />
@@ -512,16 +530,17 @@
 					<Material Name="Fur_shiny_chestnut_head" Saturation="0.65" Brightness="0.89" />
 					<Material Name="Fur_shiny_chestnut_velvet" Specular="#9E7D69" Smoothness="52" ScratchTextureId="71" ScratchSaturation="0.91" ScratchBrightness="0.51">
 						<Material Name="Fur_shiny_chestnut_velvet_marking" ScratchBrightness="5.74" />
-						<Material Name="Fur_shiny_chestnut_velvet_shinier" Hue="0" Saturation="1.1" Brightness="0.46" Smoothness="255" ScratchSaturation="0" ScratchBrightness="2.62" />
+						<Material Name="Fur_shiny_chestnut_velvet_shinier" Hue="0" Saturation="1.1" Brightness="0.46" Smoothness="223" ScratchSaturation="0" ScratchBrightness="2.62" />
 					</Material>
+					<Material Name="Fur_shiny_chestnut_neutral" Brightness="0.31" ScratchBrightness="0.22" />
 				</Material>
 				<Material Name="Fur_shiny_grey" Brightness="0.54" Specular="#424242" Smoothness="207" ScratchTextureId="42" ScratchBrightness="1.13">
 					<Material Name="Fur_shiny_grey_neutral" ScratchSaturation="1" ScratchBrightness="0.3" />
 					<Material Name="Fur_shiny_grey_dapple" Hue="104" Saturation="6.83" Brightness="0.55" Specular="#1C1C1C" ScratchHue="104" ScratchSaturation="4.18" ScratchBrightness="1" />
 				</Material>
 				<Material Name="Fur_shiny_sabiano" Specular="#383838" Smoothness="170" ScratchTextureId="42" ScratchHue="311" ScratchSaturation="10" ScratchBrightness="0.25" />
-				<Material Name="Fur_shiny_walnut" TextureId="71" Hue="21" Saturation="0.91" Brightness="0.23" Specular="#38332B" Smoothness="110" ScratchTextureId="71" ScratchHue="360" ScratchSaturation="1.19" ScratchBrightness="1.93">
-					<Material Name="Fur_shiny_walnut_lighter" Hue="5" Brightness="0.45" Smoothness="190" ScratchHue="5" ScratchSaturation="0.74" ScratchBrightness="0.33" />
+				<Material Name="Fur_shiny_walnut" TextureId="71" Hue="21" Saturation="0.91" Brightness="0.23" Specular="#38332B" Smoothness="148" ScratchTextureId="71" ScratchHue="360" ScratchSaturation="1.19" ScratchBrightness="0.8">
+					<Material Name="Fur_shiny_walnut_lighter" Hue="5" Brightness="0.45" Smoothness="190" ScratchHue="5" ScratchSaturation="1.47" ScratchBrightness="0.24" />
 				</Material>
 				<Material Name="Fur_shiny_groschen" Specular="#9B9B9B" ScratchTextureId="71" ScratchSaturation="0" ScratchBrightness="10">
 					<Material Name="Fur_shiny_groschen_body" Brightness="2.1" ScratchTextureId="14" ScratchBrightness="1.45" />
@@ -914,6 +933,7 @@
 			<Material Name="Nubuck" TextureId="7" TileU="15" TileV="15" GrimeDiffuse="#3F3A3A" GrimeGloss="0.62" ScratchTextureId="12" ScratchSaturation="0.82" ScratchBrightness="2.3">
 				<Material Name="Nubuck_black" Saturation="0" Brightness="0.16" GrimeDiffuse="#0F0D09" ScratchSaturation="0" ScratchBrightness="0.35">
 					<Material Name="Nubuck_black_brownish" Hue="360" Saturation="0.15" Brightness="0.3" ScratchBrightness="0.67" />
+					<Material Name="Nubuck_black_dark" Specular="#4F4F4F" />
 				</Material>
 				<Material Name="Nubuck_brown" Saturation="1.85" Brightness="0.35" GrimeDiffuse="#302820" ScratchTextureId="12" ScratchSaturation="0.69" ScratchBrightness="0.85">
 					<Material Name="Nubuck_brown_dark" Brightness="0.25" Specular="#6D6D6D" Smoothness="255" GrimeDiffuse="#211C14" ScratchTextureId="12" ScratchSaturation="0.03" ScratchBrightness="0.82">
@@ -931,6 +951,7 @@
 					<Material Name="Nubuck_blue_medium" Brightness="0.5" ScratchSaturation="1.2" ScratchBrightness="1.4" />
 					<Material Name="Nubuck_blue_dark" Saturation="2" Brightness="0.25" GrimeDiffuse="#211E1A" ScratchSaturation="1.1" ScratchBrightness="0.57">
 						<Material Name="Nubuck_blue_darker" Saturation="1.5" Brightness="0.22" GrimeDiffuse="#211D19" />
+						<Material Name="Nubuck_blue_dark_matt" Specular="#6D6D6D" />
 					</Material>
 				</Material>
 				<Material Name="Nubuck_green" Hue="282" Saturation="0.89" Brightness="0.36" ScratchHue="280" ScratchSaturation="0.65" ScratchBrightness="1">
@@ -946,7 +967,7 @@
 					<Material Name="Nubuck_grey_light" Brightness="1.3" ScratchBrightness="3" />
 					<Material Name="Nubuck_grey_dark" Brightness="0.35" ScratchBrightness="0.75" />
 					<Material Name="Nubuck_grey_medium" Brightness="1" GrimeGloss="0.74" ScratchBrightness="0.95">
-						<Material Name="Nubuck_grey_medium_darker" Brightness="0.8" ScratchBrightness="1.8" />
+						<Material Name="Nubuck_grey_medium_darker" Brightness="0.8" ScratchBrightness="1" />
 					</Material>
 				</Material>
 				<Material Name="Nubuck_purple" Hue="55" Saturation="1.5" Brightness="0.5" ScratchHue="55" ScratchBrightness="1.2">
@@ -970,11 +991,14 @@
 				</Material>
 				<Material Name="Nubuck_yellow" Hue="350" Saturation="2" Brightness="0.8" ScratchHue="347" ScratchSaturation="1.23" ScratchBrightness="1.73">
 					<Material Name="Nubuck_yellow_dark" Saturation="1.8" Brightness="0.42" ScratchSaturation="1.25" ScratchBrightness="0.88">
-						<Material Name="Nubuck_yellow_dark_green" Hue="335" Saturation="2.24" GrimeDiffuse="#352B22" GrimeGloss="0.74" ScratchSaturation="1.16" ScratchBrightness="0.89" />
+						<Material Name="Nubuck_yellow_dark_green" Hue="335" Saturation="2.24" GrimeDiffuse="#352B22" GrimeGloss="0.74" ScratchSaturation="1.16" ScratchBrightness="0.89">
+							<Material Name="Nubuck_yellow_dark_jezek" Hue="337" Saturation="2.5" Brightness="0.45" Specular="#FFFFFF" />
+						</Material>
 					</Material>
 					<Material Name="Nubuck_yellow_medium" Brightness="0.95" ScratchSaturation="1.25" ScratchBrightness="1.85" />
 					<Material Name="Nubuck_yellow_light" Saturation="1.8" Brightness="1.1" ScratchSaturation="1" ScratchBrightness="2.2" />
 					<Material Name="Nubuck_yellow_henrystart" Brightness="0.64" ScratchSaturation="0.88" ScratchBrightness="1.05" />
+					<Material Name="Nubuck_yellow_matt" Specular="#494949" />
 				</Material>
 				<Material Name="Nubuck_natural" GrimeDiffuse="#140E0E" GrimeGloss="0.73" ScratchSaturation="1" ScratchBrightness="1.7">
 					<Material Name="Nubuck_natural_light" Brightness="1.2" ScratchSaturation="1" ScratchBrightness="3">
@@ -1076,6 +1100,7 @@
 				<Material Name="Subtle_black" Brightness="0.1" Specular="#9E9E9E" GrimeDiffuse="#282420" GrimeGloss="0.65" ScratchSaturation="0.01" ScratchBrightness="0.61">
 					<Material Name="Subtle_black_lipa" Brightness="0.2" ScratchHue="324" ScratchSaturation="0.1" ScratchBrightness="2.15" />
 					<Material Name="Subtle_black_dark" Specular="#727272" Smoothness="255" />
+					<Material Name="Subtle_black_stGeorge" TileU="9" TileV="9" />
 				</Material>
 				<Material Name="Subtle_brown" Hue="303" Saturation="1.47" Brightness="0.32" Specular="#6D6D6D" GrimeDiffuse="#232120" GrimeGloss="0.71" ScratchHue="303" ScratchSaturation="0" ScratchBrightness="1.02">
 					<Material Name="Subtle_brown_light" Brightness="0.85" ScratchBrightness="1.3" />
@@ -1507,8 +1532,8 @@
 					<Material Name="Painted_red_aulitz" Hue="329" Saturation="0.99" Brightness="0.8" Specular="#593636" Smoothness="255" ScratchHue="0" />
 					<Material Name="Painted_red_Kuttenberg" Saturation="0.6" />
 				</Material>
-				<Material Name="Painted_white" Hue="308" Saturation="0" Brightness="5.42" Smoothness="255">
-					<Material Name="Painted_white_dark" Saturation="0" Brightness="3" />
+				<Material Name="Painted_white" Hue="308" Saturation="0" Brightness="5.42" Smoothness="255" GrimeDiffuse="#473D3D" GrimeSpecular="#000000">
+					<Material Name="Painted_white_dark" Saturation="0" Brightness="3" GrimeDiffuse="#2B1D1D" GrimeSpecular="#3A3232" />
 					<Material Name="Painted_white_Kuttenberg" Saturation="0.08" Brightness="5" />
 					<Material Name="Painted_white_darker" Brightness="3" Smoothness="200" />
 					<Material Name="Painted_white_grey" Brightness="1.5" />
@@ -1520,6 +1545,8 @@
 				<Material Name="Painted_black" Saturation="0.02" Brightness="0.09" Specular="#E8E8E8">
 					<Material Name="Painted_black_blue" Hue="0" Saturation="0" Brightness="0.4" Specular="#0077FF" Smoothness="140" />
 				</Material>
+				<Material Name="Painted_green" Hue="238" Saturation="0.1" Brightness="1.1" Specular="#4C4141" ScratchBrightness="1" />
+				<Material Name="Painted_blue" Hue="121" Saturation="0.15" Brightness="0.95" Specular="#7A939B" />
 			</Material>
 			<Material Name="Iron" TextureId="126" GrimeDiffuse="#3A3A3A" ScratchTextureId="67">
 				<Material Name="Iron_dark" Specular="#A5A5A5">
@@ -1534,7 +1561,9 @@
 			<Material Name="Dull" TextureId="24" Specular="#FFFFFF" Smoothness="215">
 				<Material Name="Dull_more" Smoothness="195" />
 			</Material>
-			<Material Name="Bronze" TextureId="20" />
+			<Material Name="Bronze" TextureId="20">
+				<Material Name="Bronze01" Smoothness="236" />
+			</Material>
 		</Material>
 		<Material Name="NoDraw" AlphaTest="200" />
 		<Material Name="Pearl" TextureId="118" Specular="#FFFFFF" Smoothness="255" TileU="10" TileV="10" GrimeDiffuse="#493E23" GrimeSpecular="#444444" GrimeGloss="0.05" ScratchTextureId="67">
@@ -1618,7 +1647,9 @@
 					</Material>
 					<Material Name="Cotton_White_Whiter" Saturation="0.045" Brightness="4.5" GrimeDiffuse="#49443E" GrimeGloss="0.48" ScratchHue="316" ScratchSaturation="0.05" ScratchBrightness="5.16" />
 					<Material Name="Cotton_White_Cold" Hue="172" Saturation="0.01" Brightness="4.41" GrimeDiffuse="#59514B" GrimeGloss="0.22" ScratchHue="315" ScratchSaturation="0.01" ScratchBrightness="3.99">
-						<Material Name="Cotton_White_Cold_Darker" Brightness="4.41" />
+						<Material Name="Cotton_White_Cold_Darker" Brightness="4.41">
+							<Material Name="Cotton_White_Cold_Darker01" Hue="345" Saturation="0.02" Brightness="3.34" />
+						</Material>
 					</Material>
 					<Material Name="Cotton_White_drowner" GrimeDiffuse="#564B40" GrimeGloss="1" ScratchBrightness="4.17" />
 				</Material>
@@ -1644,16 +1675,19 @@
 				<Material Name="Cotton_Blue" Hue="129" Saturation="0.17" Brightness="1.24" GrimeDiffuse="#232222" GrimeSpecular="#332E2A" GrimeGloss="0.33" ScratchHue="129" ScratchBrightness="2.31">
 					<Material Name="Cotton_Blue_Light" Hue="148" Saturation="0.15" Brightness="1.75" ScratchHue="147" ScratchSaturation="0.15" ScratchBrightness="2.2" />
 					<Material Name="Cotton_Blue_medium" Hue="148" Saturation="0.2" Brightness="0.79" ScratchHue="147" ScratchBrightness="1" />
+					<Material Name="Cotton_Blue_Coat15" Hue="147" Saturation="0.13" Brightness="1.1" ScratchSaturation="0.07" ScratchBrightness="1.8" />
 				</Material>
 				<Material Name="Cotton_Green" Hue="188" Saturation="0.75">
 					<Material Name="Cotton_Green01" Hue="245" Saturation="0.07" Brightness="1.7" Smoothness="255" GrimeDiffuse="#231F1F" GrimeGloss="0.57" ScratchHue="245" ScratchSaturation="0.02" ScratchBrightness="2.17" />
 					<Material Name="Cotton_Green02" Hue="292" Saturation="0.03" Brightness="1.27" GrimeDiffuse="#2B2929" GrimeGloss="0.34" ScratchHue="292" ScratchSaturation="0.02" ScratchBrightness="1.55" />
 					<Material Name="Cotton_Green_capon" Hue="175" Saturation="0.45" ScratchHue="175" ScratchBrightness="1.35" />
+					<Material Name="Cotton_Green03" Saturation="0.2" GrimeDiffuse="#2D2A29" GrimeSpecular="#1E1D1D" ScratchHue="195" ScratchSaturation="0.2" />
 				</Material>
 				<Material Name="01_Cotton_Wine" Hue="10" Saturation="0.55" Brightness="0.9" Specular="#992626">
 					<Material Name="01_Cotton_Wine_darker" Saturation="0.2" GrimeGloss="0.48" ScratchSaturation="0.21" ScratchBrightness="1.29">
 						<Material Name="01_Cotton_Wine_lighter" Hue="4" Saturation="0.3" Brightness="1.36" ScratchHue="357" ScratchSaturation="0.2" ScratchBrightness="2.83" />
 					</Material>
+					<Material Name="01_Cotton_Wine_Coat15" Saturation="0.42" Brightness="0.6" ScratchBrightness="1.08" />
 				</Material>
 				<Material Name="02_Cotton_Speckled_Gray" Saturation="0.01" Brightness="2.2" Specular="#333333" GrimeDiffuse="#1E1C1A" GrimeSpecular="#211F1F" GrimeGloss="0.57" ScratchSaturation="0.015" ScratchBrightness="2.87" />
 				<Material Name="03_Cotton_Dark_Brown" Hue="350" Saturation="0.25" Brightness="0.8" Smoothness="255" GrimeDiffuse="#231E1C" GrimeGloss="0.59" ScratchHue="350" ScratchSaturation="0.17" />
@@ -1701,7 +1735,9 @@
 						<Material Name="Cotton_Black_velvet_desaturated" Specular="#2E3354" />
 						<Material Name="Cotton_Black_velvet_lighter" Brightness="0.55" />
 					</Material>
-					<Material Name="Cotton_Black_desaturated" Saturation="0.05" Brightness="0.6" Specular="#3D3D4C" ScratchSaturation="0.02" />
+					<Material Name="Cotton_Black_desaturated" Saturation="0.05" Brightness="0.6" Specular="#3D3D4C" ScratchSaturation="0.02">
+						<Material Name="Cotton_Black_desaturated_more" Saturation="0.01" Brightness="1" />
+					</Material>
 					<Material Name="Cotton_Black_medium" Saturation="0.05" Brightness="0.45" />
 				</Material>
 				<Material Name="Cotton_Moss" Hue="217" Saturation="0.07" Brightness="1.6" GrimeDiffuse="#231F1F" GrimeSpecular="#353535" GrimeGloss="0.36" ScratchHue="217" ScratchSaturation="0.05" ScratchBrightness="2.09" />
@@ -1895,6 +1931,7 @@
 					<Material Name="Wool_Plain_black" Brightness="0.65" Specular="#333344" GrimeDiffuse="#16120B" GrimeGloss="0.16" ScratchSaturation="0" ScratchBrightness="1.88">
 						<Material Name="Wool_Plain_browinsh" Hue="345" Saturation="0.08" Brightness="0.5" GrimeDiffuse="#1C1818" GrimeGloss="0.24" ScratchHue="345" ScratchSaturation="0.05" ScratchBrightness="1.02" />
 						<Material Name="Wool_Plain_black_more" Brightness="0.35" Specular="#3E5959" />
+						<Material Name="Wool_Plain_black_medium" Brightness="0.5" />
 					</Material>
 					<Material Name="Wool_Plain_brown" Hue="345" Saturation="0.15" ScratchHue="345" ScratchBrightness="2.65">
 						<Material Name="Wool_Plain_brown_dark" Saturation="0.2" Brightness="0.65" ScratchBrightness="1.68" />
@@ -1949,7 +1986,7 @@
 						</Material>
 						<Material Name="Wool_Plain_whiter" Brightness="4.14" />
 						<Material Name="Wool_Plain_whiteAbbot" Hue="327" Saturation="0.075" Brightness="5.09" GrimeDiffuse="#333230" ScratchHue="327" ScratchSaturation="0.05" ScratchBrightness="5.9">
-							<Material Name="Wool_Plain_whiteAbbot_hood" Brightness="3.42" />
+							<Material Name="Wool_Plain_whiteAbbot_hood" Brightness="2.48" />
 						</Material>
 						<Material Name="Wool_Plain_white_Kuttenberg" Saturation="0.06" Brightness="2" GrimeDiffuse="#3A3736">
 							<Material Name="Wool_Plain_white_Kuttenberg_coat" Brightness="3.23" ScratchBrightness="3.52" />
@@ -2053,7 +2090,9 @@
 						<Material Name="Wool_Checker_brown_medium" Brightness="1.25" GrimeDiffuse="#1C1919" ScratchBrightness="2.44" />
 					</Material>
 					<Material Name="Wool_Checker_blue" Hue="130" Saturation="0.15" Brightness="1" ScratchHue="130" ScratchSaturation="0.1" ScratchBrightness="2">
-						<Material Name="Wool_Checker_blue_dark" Saturation="0.25" Brightness="0.65" ScratchBrightness="1.27" />
+						<Material Name="Wool_Checker_blue_dark" Saturation="0.25" Brightness="0.65" ScratchBrightness="1.27">
+							<Material Name="Wool_Checker_blue_dark_Coat15" Hue="151" Saturation="0.2" />
+						</Material>
 						<Material Name="Wool_Checker_blue_medium" Brightness="1.25" GrimeDiffuse="#181D2D" ScratchBrightness="1.6">
 							<Material Name="Wool_Checker_blue_greenish" Hue="163" Saturation="0.13" Brightness="1" GrimeDiffuse="#1F2021" GrimeGloss="0.26" ScratchHue="163" ScratchSaturation="0.1" ScratchBrightness="1.47">
 								<Material Name="Wool_Checker_blue_greenish_darker" Brightness="0.7" GrimeDiffuse="#232323" ScratchBrightness="1.58" />
@@ -2232,6 +2271,7 @@
 					<Material Name="Wool_Old_Beige" Hue="331" Saturation="0.065" Brightness="3.45" ScratchHue="331" ScratchSaturation="0.05" ScratchBrightness="2.69" />
 					<Material Name="Wool_Old_Yellow_Komar" Hue="335" Saturation="0.21" Brightness="2.47" GrimeDiffuse="#351B09" ScratchHue="335" ScratchBrightness="3.8" />
 					<Material Name="Wool_Old_Red_Komar" Hue="2" Saturation="0.3" Brightness="0.72" GrimeDiffuse="#351B09" ScratchHue="360" ScratchSaturation="0.06" ScratchBrightness="1.13" />
+					<Material Name="Wool_Old_Blue" TextureId="75" Hue="166" Saturation="0.06" Brightness="0.75" Specular="#5D7893" Smoothness="255" TileU="8" TileV="8" ScratchSaturation="0" ScratchBrightness="2.24" />
 				</Material>
 				<Material Name="Wool_Stripes" TextureId="98" Specular="#B5B5B5" Smoothness="255" ScratchSaturation="0.1" ScratchBrightness="3">
 					<Material Name="01_Wool_Stripes_Wine" Hue="6" Saturation="0.55" Brightness="0.7" Specular="#992626" Smoothness="255" ScratchHue="6" ScratchSaturation="0.2" ScratchBrightness="1.06">
@@ -2555,8 +2595,8 @@
 				<Material Name="Pattern_08" TextureId="101">
 					<Material Name="Pattern_08_beige" Hue="327" Saturation="0.1" Brightness="1.1" />
 					<Material Name="Pattern_08_brown" Hue="336" Saturation="0.29" Brightness="0.35" />
-					<Material Name="Pattern_08_grey" Brightness="0.9">
-						<Material Name="Pattern_08_grey_dark" Specular="#7F7F7F">
+					<Material Name="Pattern_08_grey" Brightness="0.9" Specular="#727272" Smoothness="255">
+						<Material Name="Pattern_08_grey_dark" Hue="149" Saturation="2.34" Brightness="0.37" Specular="#3E4347">
 							<Material Name="Pattern_08_grey_Sigismund" Hue="0" Saturation="0.06" Brightness="2.87" Smoothness="255" />
 							<Material Name="Pattern_08_grey_dark01" Hue="152" Saturation="0.84" Brightness="1.02" Specular="#6B6B6B" Smoothness="183" RotateUV="17.41" />
 						</Material>
@@ -2821,6 +2861,7 @@
 				</Material>
 				<Material Name="Pattern_21" TextureId="96">
 					<Material Name="Pattern_21_bruncvik" Hue="161" Saturation="0.1" Brightness="0.65" Specular="#7A8EFF" ScratchSaturation="0" ScratchBrightness="1.32" />
+					<Material Name="Pattern_21_brighter" Brightness="1.7" />
 				</Material>
 			</Material>
 			<Material Name="Felt_Thread" TextureId="37" GrimeGloss="0.25" ScratchTextureId="31" ScratchSaturation="0.04" ScratchBrightness="1.46">
@@ -2879,6 +2920,7 @@
 					<Material Name="Linen_white_lighter" Hue="335" Saturation="0.065" Brightness="6.9" GrimeDiffuse="#8C8172" ScratchSaturation="0.04" ScratchBrightness="5.6" />
 					<Material Name="Linen_white_Kuttenberg" Saturation="0.05" Brightness="3" GrimeDiffuse="#282622" ScratchBrightness="2.43" />
 					<Material Name="Linen_white_medium_cold" Hue="208" Saturation="0.02" Brightness="4" />
+					<Material Name="Linen_white_medium" Saturation="0.035" Brightness="5" />
 				</Material>
 				<Material Name="Linen_yellow" Hue="319" Saturation="0.2" Brightness="3" Specular="#88991E" GrimeDiffuse="#4C3D1A" GrimeGloss="0.48" ScratchHue="320" ScratchSaturation="0.15" ScratchBrightness="2.58">
 					<Material Name="Linen_yellow_dark" Hue="303" Saturation="1" Brightness="1.35" ScratchBrightness="1.81">
@@ -2993,11 +3035,14 @@
 							<Material Name="Satin_plain_gold_caponhorse" Hue="326" Saturation="0.25" Brightness="2.95" Specular="#D8A242" />
 							<Material Name="Satin_plain_gold_shinier_capon" Hue="340" Saturation="0.1" Brightness="5" Specular="#FFFFFF" Smoothness="255" />
 							<Material Name="Satin_plain_gold_capon_buttons" Saturation="0.75" Brightness="1.2" Specular="#FFD99E" />
+							<Material Name="Satin_plain_gold_shinier_MJ" Saturation="0.1" Brightness="1.7" />
 						</Material>
 						<Material Name="Satin_plain_gold_Pisek" Saturation="0.5" Brightness="0.8" Specular="#6D5C2E" />
 						<Material Name="Satin_plain_gold_ruthard" Hue="314" Saturation="2.04" Brightness="2.5" Specular="#FFD600" />
 						<Material Name="Satin_plain_gold_matt" Smoothness="171" />
-						<Material Name="Satin_plain_gold_light" Saturation="0.35" Brightness="1.29" />
+						<Material Name="Satin_plain_gold_light" Saturation="0.35" Brightness="1.29">
+							<Material Name="Satin_plain_gold_lighter" Hue="310" Saturation="0.4" Brightness="2" />
+						</Material>
 						<Material Name="Satin_plain_gold_Vavak" Brightness="2" Specular="#839975" Smoothness="169" />
 					</Material>
 					<Material Name="Satin_plain_red" Saturation="0" Brightness="0.55" Specular="#FF7575" ScratchSaturation="0.25" ScratchBrightness="2.5">
@@ -3144,7 +3189,9 @@
 					<Material Name="Brocade_black_rose" Saturation="0.6" Brightness="0.3" Specular="#44371F" Smoothness="173" />
 				</Material>
 				<Material Name="Brocade_red" Specular="#FF3030" Smoothness="206">
-					<Material Name="Brocade_red_brick" Hue="115" Saturation="0" Brightness="0" Specular="#752821" Smoothness="110" />
+					<Material Name="Brocade_red_brick" Hue="115" Saturation="0" Brightness="0" Specular="#752821" Smoothness="110">
+						<Material Name="Brocade_red_brick_coat15" Brightness="0" Specular="#CC5949" />
+					</Material>
 				</Material>
 				<Material Name="Brocade01" TextureId="126" Saturation="0" Specular="#88CC88" Smoothness="74" TileU="1" TileV="1" GrimeDiffuse="#1E1C1A" GrimeGloss="0.44" ScratchTextureId="5" ScratchHue="258" ScratchSaturation="0.1" ScratchBrightness="0.98" />
 				<Material Name="Brocade_green" Hue="230" Saturation="0" Brightness="1" Specular="#3B723B" Smoothness="85">
@@ -3156,6 +3203,7 @@
 					</Material>
 				</Material>
 				<Material Name="Brocade_moss" Specular="#8EAA3A" Smoothness="199" />
+				<Material Name="Brocade_blue" Specular="#72D8D8" Smoothness="191" />
 			</Material>
 			<Material Name="Velvet" TextureId="58">
 				<Material Name="Velvet_Wine" Hue="3" Saturation="0.69" Brightness="0" Specular="#AD3A3A" Smoothness="255" ScratchSaturation="0.19">
@@ -3348,6 +3396,7 @@
 					<Material Name="Checker_red_dark" Brightness="0.5" Specular="#FFFFFF" ScratchBrightness="3.19" />
 				</Material>
 				<Material Name="Checker_moss" Hue="250" Saturation="0.15" Brightness="0.62" />
+				<Material Name="Checker_black" Brightness="0.7" />
 			</Material>
 			<Material Name="Velur" TextureId="124">
 				<Material Name="Velur_white" Hue="303" Saturation="0.02" Brightness="1.5" Specular="#D6F7D2">
@@ -3373,6 +3422,47 @@
 					<Material Name="Velur_grey_dark" Hue="199" Saturation="0.05" Brightness="0.4" Specular="#898C8C" Smoothness="189" />
 				</Material>
 			</Material>
+		</Material>
+		<Material Name="Tincture" TextureId="16" Saturation="0.1" Brightness="0.1" Specular="#757575" TileU="10" TileV="10" ScratchTextureId="16">
+			<Material Name="Tincture_Black" Saturation="0.05" Brightness="0.35" ScratchTextureId="1" ScratchSaturation="0.1" ScratchBrightness="0.5">
+				<Material Name="Tincture_Black_Light" Saturation="0.01" Brightness="0.8" />
+				<Material Name="Tincture_Black_Dark" Brightness="0.09" Specular="#595959" />
+			</Material>
+			<Material Name="Tincture_White" Hue="332" Saturation="0.01" Brightness="3.2" ScratchSaturation="0.01" ScratchBrightness="2">
+				<Material Name="Tincture_White_Medium" Brightness="3" />
+				<Material Name="Tincture_White_Dark" Brightness="2" />
+			</Material>
+			<Material Name="Tincture_Green" Hue="250" Saturation="0.3" Brightness="0.4" Smoothness="255" ScratchHue="240" ScratchSaturation="0.05">
+				<Material Name="Tincture_Green_Dark" Saturation="2.1" Brightness="0.1" Specular="#5E5E5E" ScratchSaturation="0.1" ScratchBrightness="0.35" />
+				<Material Name="Tincture_Green_Light" Saturation="0.12" Brightness="1.3" Specular="#303030" ScratchSaturation="0.1" ScratchBrightness="1.1" />
+			</Material>
+			<Material Name="Tincture_Blue" Hue="159" Saturation="0.9" Brightness="0.4" ScratchHue="150" ScratchSaturation="0.2">
+				<Material Name="Tincture_Blue_Dark" Saturation="1.65" Brightness="0.15" Smoothness="255" />
+				<Material Name="Tincture_Blue_Light" Hue="145" Saturation="0.25" Brightness="1" />
+			</Material>
+			<Material Name="Tincture_Red" Hue="10" Saturation="1" Brightness="0.5" ScratchHue="0" ScratchSaturation="0.3" ScratchBrightness="0.74">
+				<Material Name="Tincture_Red_Dark" Saturation="1.5" Brightness="0.15" Specular="#2B2B2B" />
+				<Material Name="Tincture_Red_Light" Hue="0" Saturation="0.5" Brightness="1.3" ScratchSaturation="0.2" ScratchBrightness="1" />
+			</Material>
+			<Material Name="Tincture_Yellow" Hue="303" Saturation="1.5" Brightness="1" ScratchHue="300" ScratchSaturation="0.29" ScratchBrightness="1.45">
+				<Material Name="Tincture_Yellow_Dark" Saturation="2" Brightness="0.6" ScratchSaturation="1.31" ScratchBrightness="0.75" />
+				<Material Name="Tincture_Yellow_Light" Hue="317" Saturation="0.6" Brightness="2.2" ScratchSaturation="0.16" ScratchBrightness="1.7" />
+			</Material>
+			<Material Name="Tincture_Grey" Saturation="0.01" Brightness="2" Specular="#383838" ScratchSaturation="0.01" ScratchBrightness="1.5" />
+			<Material Name="Tincture_Creamy" Hue="330" Saturation="0.1" Brightness="3" ScratchHue="330" ScratchSaturation="0.1" />
+			<Material Name="Tincture_Wine" Hue="10" Saturation="0.4" Brightness="0.4" Specular="#282828" ScratchHue="10" ScratchSaturation="0.2" ScratchBrightness="0.3" />
+			<Material Name="Tincture_Moss" Hue="265" Saturation="0.12" Brightness="0.8" Specular="#494949" ScratchHue="265" ScratchSaturation="0.1" />
+			<Material Name="Tincture_Brown" Hue="305" Saturation="2.5" Brightness="0.19" Specular="#4C4C4C" ScratchHue="305" ScratchSaturation="2" ScratchBrightness="0.56" />
+			<Material Name="Tincture_Peach" Hue="311" Saturation="1.35" Brightness="0.7" ScratchHue="311" ScratchSaturation="1.2" ScratchBrightness="0.49" />
+			<Material Name="Tincture_Navy" Hue="140" Saturation="0.35" Brightness="0.3" Specular="#425575" ScratchHue="140" ScratchSaturation="0.2" ScratchBrightness="0.56" />
+			<Material Name="Tincture_Olive" Hue="295" Saturation="0.35" Brightness="1.01" ScratchHue="295" ScratchSaturation="0.2" ScratchBrightness="0.64" />
+			<Material Name="Tincture_Bordo" Hue="5" Saturation="0.35" Brightness="0.25" Specular="#593259" Smoothness="255" ScratchHue="20" ScratchSaturation="0.1" ScratchBrightness="0.5" />
+			<Material Name="Tincture_Ochre" Hue="320" Saturation="0.25" Brightness="1.8" ScratchHue="320" ScratchSaturation="0.2" />
+			<Material Name="Tincture_Rose" Hue="5" Saturation="0.35" Brightness="1" ScratchHue="5" ScratchSaturation="0.05" ScratchBrightness="0.56" />
+			<Material Name="Tincture_Madder" Hue="15" Saturation="2" Brightness="0.15" Specular="#724242" ScratchHue="15" ScratchSaturation="1.13" ScratchBrightness="0.1" />
+			<Material Name="Tincture_Ultramarine" Hue="135" Saturation="0.45" Brightness="0.5" Specular="#2E5A66" ScratchHue="148" ScratchSaturation="0.1" ScratchBrightness="0.49" />
+			<Material Name="Tincture_Azurite" Hue="169" Saturation="0.01" Brightness="0.25" Specular="#369362" ScratchHue="169" ScratchSaturation="0.05" ScratchBrightness="0.53" />
+			<Material Name="Tincture_Salmon" Hue="358" Saturation="0.25" Brightness="1.36" ScratchHue="358" ScratchSaturation="0.2" />
 		</Material>
 		<Material Name="Uberlod">
 			<Material Name="UberlodHair" TextureId="74" Hue="329" Saturation="0.2" Brightness="0.64" TileU="3" TileV="3">

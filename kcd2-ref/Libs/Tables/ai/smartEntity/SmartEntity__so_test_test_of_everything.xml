@@ -206,6 +206,9 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="test_bug_hurlingStones">
 					<TreeLocation FileName="test/test_of_everything/test_bug_hurlingStones.xml" TreeName="test_test_of_everything_bug_hurlingStones" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="test_bug_vykuchToNPCSwitch">
+					<TreeLocation FileName="test/test_of_everything/test_bug_vykuchToNPCSwitch.xml" TreeName="test_test_of_everything_bug_vykuchToNPCSwitch" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

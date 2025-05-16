@@ -229,6 +229,7 @@
 			<PresetItem Name="SkullCap01_m03_D1" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="MailShort02_m02_C1" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="GambesonShort02_m01_E1" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="GambesonShort02_m06_E1" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="CoifSmall02_m01_E1" Amount="1" Quality="1" Condition="1" />
 			<!-- misc -->
 			<PresetItem Name="daggerCommon" Amount="1" />
@@ -324,6 +325,7 @@
 			<PresetItem Name="special_sulfur" Amount="2" />
 			<PresetItem Name="special_teethBoar" Amount="2" />
 			<PresetItem Name="special_attire" Amount="4" />
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- recipes -->
 			<PresetItem Name="recipe_antidotePotion" Amount="1" Health="1" />
 			<PresetItem Name="recipe_chamomileDecoction" Amount="1" Health="1" />
@@ -366,6 +368,7 @@
 			<PresetItem Name="herb_valerian" Amount="6" />
 			<PresetItem Name="herb_ginger" Amount="8" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="1" />
 			<!-- <PresetItem Name="special_cobweb" Amount="4" /> -->
 			<PresetItem Name="special_charcoal" Amount="4" />
 			<PresetItem Name="special_charcoalImproved" Amount="3" />
@@ -473,6 +476,7 @@
 			<PresetItem Name="arrow_normal" Amount="24" />
 			<PresetItem Name="arrow_precise" Amount="12" />
 			<PresetItem Name="bolt_normal" Amount="18" />
+			<PresetItem Name="bolt_precise" Amount="15" />
 			<!-- potions -->
 			<PresetItem Name="potion_bowmanBrew_medium" Amount="1" />
 			<!-- ointment -->
@@ -642,6 +646,7 @@
 			<PresetItem Name="Waffenrock08_m15_B" Amount="1" Quality="2" Condition="1" />
 			<!-- armor -->
 			<PresetItem Name="CoifSmall02_m06_E1" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="CoifSmall02_m07_E1" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="CoifLarge01_m06_D2" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="CollarPadded01_m05_C1" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="GambesonLong01_m17_B3" Amount="1" Quality="3" Condition="1" />
@@ -850,7 +855,7 @@
 			<PresetItem Name="recipe_horseshoe" Amount="1"  />
 			<PresetItem Name="recipe_horseshoeMilitary" Amount="1"  />
 			<PresetItem Name="recipe_longswordcommon" Amount="1" />
-			<PresetItem Name="recipe_shortswordheavy" Amount="1" />
+			<PresetItem Name="recipe_shortswordbroad" Amount="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_weaponSmall" Amount="5" Health="1" />
 			<PresetItem Name="repairKit_armourSmall" Amount="6" Health="1" />
@@ -1006,6 +1011,7 @@
 			<PresetItem Name="player_lockpick" Amount="3" />
 			<PresetItem Name="Pouch_test_1slot" Amount="1" />
 			<PresetItem Name="belt_2slot" Amount="1" />
+			<PresetItem Name="daggerCommon" Amount="1" />
 			<!-- potions -->
 			<PresetItem Name="potion_saviourSchnapps" Amount="3" />
 			<!-- crafting -->
@@ -1066,6 +1072,7 @@
 			<PresetItem Name="Hood07_m04_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="HoseSeparate04_m03_E" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gloves01_m01_C1" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall02_m04_E1" Amount="1" Quality="1" Condition="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_blacksmithSuchdolFortress" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="3600" />
@@ -1074,14 +1081,14 @@
 			<PresetItem Name="axeBattle03" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="axeFancy" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="maceHeavy" Amount="1" Quality="2" Condition="1" />
-			<PresetItem Name="mace04" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="mace04" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="maceDagger" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="warhammer03" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="warhammer04" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="warhammer04" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="huntingSwordGuard" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="huntingSwordSword" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="shortswordBroad" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="shortswordHeavy" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="shortswordHeavy" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="longswordBroad" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="polearmGlaive" Amount="1" Quality="2" Condition="1" />
 			<!-- armor -->
@@ -1133,7 +1140,7 @@
 			<PresetItem Name="arrow_precise" Amount="39" />
 			<PresetItem Name="bolt_precise" Amount="27" />
 			<!-- horse -->
-			<PresetItem Name="horseshoeMilitary" Amount="7"  Health="1" />
+			<PresetItem Name="horseshoeMilitary" Amount="7" Health="1" />
 			<PresetItem Name="horseshoeFarmer" Amount="4" Health="1" />
 			<PresetItem Name="Spurs01_m02_C" Amount="1" Quality="2" Condition="1" />
 		</InventoryPreset>
@@ -1180,14 +1187,14 @@
 			<PresetItem Name="money" Amount="4420" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle02" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="mace03" Amount="1" Quality="2" Condition="1" />
-			<PresetItem Name="mace04" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="mace03" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="mace04" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="maceBailiff" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="maceDagger" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="maceHeavy" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="warhammer02" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="warhammer03" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="warhammer04" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="warhammer04" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="warhammerStab" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="warhammerRaven" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="huntingSwordGuard" Amount="1" Quality="2" Condition="1" />
@@ -1246,6 +1253,7 @@
 			<PresetItem Name="arrow_normal" Amount="58" />
 			<PresetItem Name="bolt_normal" Amount="49" />
 			<PresetItem Name="arrow_precise" Amount="35" />
+			<PresetItem Name="arrow_piercing" Amount="28" />
 			<PresetItem Name="bolt_precise" Amount="31" />
 			<!-- horse -->
 			<PresetItem Name="horseshoeFarmer" Amount="6" Health="1" />
@@ -1270,7 +1278,7 @@
 			<PresetItem Name="shortswordBroad" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="longswordBroad" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="shortswordCommon" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="shortswordHeavy" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="shortswordHeavy" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="shortSwordBasilard" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="sabreCommon" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="sabreNoble" Amount="1" Quality="1" Condition="1" />
@@ -1336,8 +1344,8 @@
 			<PresetItem Name="money" Amount="4830" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle03" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="axeBattle04" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="axeCuman" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="axeBattle04" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="axeCuman" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="mace02" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="mace04" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="maceHetman" Amount="1" Quality="2" Condition="1" />
@@ -1354,7 +1362,7 @@
 			<PresetItem Name="polearmSpear" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="polearmGuisarm" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="sabreCommon" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="sabreNoble" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="sabreNoble" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
 			<PresetItem Name="Cuirass01_m01_C2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Gloves02_m06_D3" Amount="1" Quality="2" Condition="1" />
@@ -1423,6 +1431,7 @@
 			<PresetItem Name="herb_ginger" Amount="8" />
 			<!-- special -->
 			<PresetItem Name="special_bilin" Amount="2" />
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- <PresetItem Name="special_cobweb" Amount="4" /> -->
 			<PresetItem Name="special_charcoal" Amount="4" />
 			<PresetItem Name="special_charcoalImproved" Amount="3" />
@@ -1437,7 +1446,6 @@
 			<PresetItem Name="recipe_nighthawkPotion" Amount="1" />
 			<PresetItem Name="recipe_vitalityPotion" Amount="1" />
 			<PresetItem Name="recipe_staminaPotion" Amount="1" />
-			<PresetItem Name="recipe_banePotion" Amount="1" />
 			<PresetItem Name="recipe_painkillerPotion" Amount="1" />
 			<PresetItem Name="recipe_embrocationPotion" Amount="1" />
 			<PresetItem Name="recipe_paralysisPotion" Amount="1" />
@@ -1475,6 +1483,7 @@
 			<PresetItem Name="herb_valerian" Amount="6" />
 			<PresetItem Name="herb_ginger" Amount="3" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- <PresetItem Name="special_cobweb" Amount="6" /> -->
 			<PresetItem Name="special_charcoal" Amount="6" />
 			<PresetItem Name="special_charcoalImproved" Amount="3" />
@@ -1564,7 +1573,7 @@
 			<PresetItem Name="Hood07_m02_C" Amount="1" Quality="3"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_blacksmithKHKupecka_corner" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3480" />
+			<PresetItem Name="money" Amount="7480" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle01" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="axeBattle02" Amount="1" Quality="2" Condition="1" />
@@ -1619,7 +1628,7 @@
 			<PresetItem Name="Spurs01_m02_C" Amount="1" Quality="2" Condition="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_blacksmithKHKupecka_crossroad" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3610" />
+			<PresetItem Name="money" Amount="7610" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle03" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="mace03" Amount="1" Quality="1" Condition="1" />
@@ -1687,7 +1696,7 @@
 			<PresetItem Name="huntingSwordSword" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="shortswordBroad" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="shortSwordBasilard" Amount="1" Quality="2" Condition="1" />
-			<PresetItem Name="shortswordHeavy" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="shortswordHeavy" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="longswordBroad" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="longswordCommon" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
@@ -1803,7 +1812,7 @@
 			<PresetItem Name="Spurs01_m04_C" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_weaponSmithRadnicniStreet" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="6230" />
+			<PresetItem Name="money" Amount="14230" />
 			<!-- melee -->
 			<PresetItem Name="mace02" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="mace03" Amount="2" Quality="2" Condition="1" />
@@ -1823,6 +1832,15 @@
 			<PresetItem Name="polearmPoleaxe" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="polearmSpear" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="polearmVoulge" Amount="1" Quality="3" Condition="1" />
+			<!-- shileds -->
+			<PresetItem Name="shieldHeater_sigismund_D" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_whole_K" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_whole_R" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_bar_GY" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_cross_yk" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_gyronny_gy_B" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_gyronny_yk" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_chevronny_rw" Amount="1" Health="1" />
 			<!-- misc -->
 			<PresetItem Name="daggerCommon" Amount="1" />
 			<PresetItem Name="player_lockpick" Amount="15" />
@@ -1851,7 +1869,7 @@
 			<PresetItem Name="bsmt_woodExotic" Amount="5" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_weaponSmithRadnicniSquare" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="7150" />
+			<PresetItem Name="money" Amount="15150" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle01" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="axeBattle02" Amount="3" Quality="2" Condition="1" />
@@ -1877,6 +1895,16 @@
 			<PresetItem Name="shortswordHeavy" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="longswordCommon" Amount="3" Quality="2" Condition="1" />
 			<PresetItem Name="longswordSturdy" Amount="2" Quality="2" Condition="1" />
+			<!-- shiled -->
+			<PresetItem Name="shieldKite_kuttenberg_B" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_sigismund_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_eagle_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_chevronny_rw_a" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_chevronny_yk" Amount="1" Health="1" />
+			<PresetItem Name="shieldHeater_sigismund_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_bar_RW" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_GY_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_half_RK" Amount="1" Health="1" />
 			<!-- misc -->
 			<PresetItem Name="daggerCommon" Amount="1" />
 			<PresetItem Name="player_lockpick" Amount="4" />
@@ -1885,10 +1913,9 @@
 			<PresetItem Name="recipe_huntingSwordBasic" Amount="1" />
 			<PresetItem Name="recipe_huntingswordfalchion" Amount="1" />
 			<PresetItem Name="recipe_longswordsturdy" Amount="1" />
-			<PresetItem Name="recipe_shortswordbasilard" Amount="1" />
-			<PresetItem Name="recipe_shortswordbroad" Amount="1" />
 			<PresetItem Name="recipe_shortswordcommon" Amount="1" />
 			<PresetItem Name="recipe_shortswordcleaver" Amount="1" />
+			<PresetItem Name="recipe_shortswordheavy" Amount="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_weaponSmall" Amount="29" Health="1" />
 			<PresetItem Name="repairKit_armourSmall" Amount="10" Health="1" />
@@ -1909,7 +1936,7 @@
 			<PresetItem Name="bsmt_woodExotic" Amount="12" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_weaponSmithKupecka" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="6150" />
+			<PresetItem Name="money" Amount="14850" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle03" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="axeBattle04" Amount="1" Quality="3" Condition="1" />
@@ -1933,8 +1960,8 @@
 			<PresetItem Name="polearmSpear" Amount="2" Quality="2" Condition="1" />
 			<PresetItem Name="polearmPoleaxe" Amount="2" Quality="2" Condition="1" />
 			<!-- shields -->
-			<PresetItem Name="shieldKite_bendy_rw" Amount="1" Health="1" />
-			<PresetItem Name="shieldKite_cross_gw" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_chevronny_rwy" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_kuttenberg_A" Amount="1" Health="1" />
 			<PresetItem Name="shieldKite_gyronny_gy" Amount="1" Health="1" />
 			<PresetItem Name="shieldkite_partyPerBend_by" Amount="1" Health="1" />
 			<PresetItem Name="shieldPavise_bar_RK" Amount="1" Health="1" />
@@ -1968,7 +1995,7 @@
 			<PresetItem Name="bsmt_guardStrong" Amount="5" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_weaponSmithLeflirska" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="6240" />
+			<PresetItem Name="money" Amount="14240" />
 			<!-- melee -->
 			<PresetItem Name="axeBattle03" Amount="3" Quality="2" Condition="1" />
 			<PresetItem Name="axeBattle04" Amount="2" Quality="2" Condition="1" />
@@ -1989,6 +2016,14 @@
 			<PresetItem Name="longswordSturdy" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="polearmBardiche" Amount="2" Quality="2" Condition="1" />
 			<PresetItem Name="polearmGuisarm" Amount="3" Quality="2" Condition="1" />
+			<!-- shield -->
+			<PresetItem Name="shieldPavise_RGW_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_RWY_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_sigismund_A" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_sigismund_B" Amount="1" Health="1" />
+			<PresetItem Name="shieldPavise_whole_R" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_rw" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_cross_gw" Amount="1" Health="1" />
 			<!-- misc -->
 			<PresetItem Name="daggerCommon" Amount="1" />
 			<PresetItem Name="player_lockpick" Amount="6" />
@@ -2034,6 +2069,7 @@
 			<PresetItem Name="herb_wormwood" Amount="8" />
 			<PresetItem Name="herb_ginger" Amount="6" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- <PresetItem Name="special_cobweb" Amount="6" /> -->
 			<PresetItem Name="special_charcoal" Amount="3" />
 			<PresetItem Name="special_charcoalImproved" Amount="2" />
@@ -2078,6 +2114,7 @@
 			<PresetItem Name="herb_valerian" Amount="12"/>
 			<PresetItem Name="herb_ginger" Amount="8"/>
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- <PresetItem Name="special_cobweb" Amount="6" /> -->
 			<PresetItem Name="special_charcoal" Amount="5" />
 			<PresetItem Name="special_charcoalImproved" Amount="4" />
@@ -2099,6 +2136,7 @@
 			<PresetItem Name="herb_dried_urticaria" Amount="5" />
 			<PresetItem Name="herb_dried_valerian" Amount="6" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="2" />
 			<!-- <PresetItem Name="special_cobweb" Amount="5" /> -->
 			<PresetItem Name="special_charcoal" Amount="4" />
 			<PresetItem Name="special_charcoalImproved" Amount="4" />
@@ -2154,6 +2192,7 @@
 			<PresetItem Name="herb_dried_valerian" Amount="6" />
 			<PresetItem Name="herb_dried_mint" Amount="10" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="1" />
 			<!-- <PresetItem Name="special_cobweb" Amount="6" /> -->
 			<PresetItem Name="special_charcoal" Amount="6" />
 			<PresetItem Name="special_charcoalImproved" Amount="2" />
@@ -2197,7 +2236,7 @@
 			<PresetItem Name="skillbook_alchemy_II_kcd2" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_apothecaryKuttenberg" Health="1" >
-			<PresetItem Name="money" Amount="4130" />
+			<PresetItem Name="money" Amount="8130" />
 			<!-- herbs -->
 			<PresetItem Name="herb_dried_belladona" Amount="8" />
 			<PresetItem Name="herb_dried_comfrey" Amount="10" />
@@ -2212,6 +2251,7 @@
 			<PresetItem Name="herb_dried_urticaria" Amount="6" />
 			<PresetItem Name="herb_dried_valerian" Amount="7" />
 			<!-- special -->
+			<PresetItem Name="special_bezoar" Amount="4" />
 			<!-- <PresetItem Name="special_cobweb" Amount="5" /> -->
 			<PresetItem Name="special_charcoal" Amount="4" />
 			<PresetItem Name="special_charcoalImproved" Amount="4" />
@@ -2304,6 +2344,8 @@
 			<PresetItem Name="special_attire" Amount="4" />
 			<PresetItem Name="special_mushroomAmanita" Amount="6" />
 			<PresetItem Name="special_saltpeter" Amount="2" />
+			<PresetItem Name="skin_hare" Amount="6" />
+			<PresetItem Name="skin_roe" Amount="5"/>
 			<!-- herbs -->
 			<PresetItem Name="herb_belladona" Amount="10" />
 			<PresetItem Name="herb_paris" Amount="6" />
@@ -2347,13 +2389,15 @@
 			<PresetItem Name="special_attire" Amount="5" />
 			<PresetItem Name="special_mushroomAmanita" Amount="3" />
 			<PresetItem Name="special_saltpeter" Amount="2" />
+			<PresetItem Name="skin_hare" Amount="7" />
+			<PresetItem Name="skin_roe" Amount="3"/>
 			<!-- herbs -->
 			<PresetItem Name="herb_belladona" Amount="9" />
 			<PresetItem Name="herb_paris" Amount="10" />
 			<PresetItem Name="herb_hypericum" Amount="5" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_shootmasterSigismundCamp" Health="1" >
-			<PresetItem Name="money" Amount="4320" />
+			<PresetItem Name="money" Amount="6320" />
 			<!-- ranged weapons -->
 			<PresetItem Name="cuman_bow_b" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="cuman_bow_a_b" Amount="1" Quality="3" Condition="1"/>
@@ -2382,7 +2426,7 @@
 			<PresetItem Name="repairKit_bowyerSmall" Amount="15" Health="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_shootmasterKuttenberg" Health="1" >
-			<PresetItem Name="money" Amount="4710" />
+			<PresetItem Name="money" Amount="10710" />
 			<!-- ranged weapons -->
 			<PresetItem Name="bow_a" Amount="1" Quality="2" Condition="1"/>
 			<PresetItem Name="bow_c" Amount="1" Quality="3" Condition="1"/>
@@ -2418,7 +2462,7 @@
 			<PresetItem Name="skillbook_marksmanship_lvl2_kcd2" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_gunsmithKuttenberg" Health="1" >
-			<PresetItem Name="money" Amount="6660" />
+			<PresetItem Name="money" Amount="14990" />
 			<!-- ranged weapons -->
 			<InventoryPresetRef Name="inventory_gunsmithWeaponsQ3" />
 			<InventoryPresetRef Name="inventory_gunsmithWeaponsQ2" />
@@ -2448,7 +2492,7 @@
 			<PresetItem Name="skillbook_alchemy_II_kcd2" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_arenaShopSigismundCamp" Health="1" >
-			<PresetItem Name="money" Amount="4310" />
+			<PresetItem Name="money" Amount="6310" />
 			<!-- weapons -->
 			<PresetItem Name="axeBattle02" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="axeCuman" Amount="1" Quality="2" Condition="1" />
@@ -2477,13 +2521,23 @@
 			<PresetItem Name="shieldPavise_sigismund_A" Amount="1" Condition="1"/>
 			<!-- armor -->
 			<PresetItem Name="Gloves02_m02_D3" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Gloves05_m07_B2" Amount="1" Quality="2" Condition="1" />
-			<PresetItem Name="Gloves01_m08_C1" Amount="1" Quality="2" Condition="1" />
-			<PresetItem Name="Caftan04_m06_D2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gloves05_m07_B2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gloves01_m08_C1" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan01_m01_D1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Caftan01_m02_D1" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Caftan03_m02_C1" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Caftan01_m03_D1" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan02_m01_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan02_m02_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan02_m03_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan04_m06_D2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan03_m02_C1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Caftan04_m01_D2" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Caftan05_m02_D3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Caftan05_m02_D3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan05_m05_D3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan05_m07_D3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan05_m10_D3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan05_m11_D3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Caftan05_m12_D3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="GambesonShort01_m01_D2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="GambesonLong01_m08_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonLong04_m08_A5" Amount="1" Quality="1" Condition="1" />
@@ -2491,18 +2545,29 @@
 			<PresetItem Name="CoifSmall02_m02_E1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="CoifLarge01_m05_D2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifLarge02_m04_C3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifLarge02_m05_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPadded03_m03_B2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="LegsPadded01_m01_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPadded03_m06_B2" Amount="1" Quality="2" Condition="1" />
+			<!-- clothing -->
+			<PresetItem Name="HoseLoose01_m01_C" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="HoseLoose01_m07_C" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="HoseLoose01_m08_C" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="HoseLoose01_m09_C" Amount="1" Quality="3" Condition="1"/>
 			<!-- shoes -->
-			<PresetItem Name="BootsKnee01_m03_C" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="BootsKnee01_m03_C" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="BootsKnee02_m03_B" Amount="1" Quality="3" Condition="1"/>
-			<PresetItem Name="BootsKnee04_m08_D" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="BootsKnee04_m07_D" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="BootsKnee04_m08_D" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="BootsKnee05_m06_C" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="BootsKnee05_m09_C" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="BootsKnee05_m02_C" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="Shoes01_m06_D" Amount="1" Quality="3" Condition="1"/>
 			<PresetItem Name="Shoes01_m04_D" Amount="1" Quality="2" Condition="1"/>
+			<!-- caps -->
+			<PresetItem Name="Cap13_m01_D" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="Cap13_m02_D" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="Cap13_m03_D" Amount="1" Quality="3" Condition="1"/>
 			<!-- potions -->
 			<PresetItem Name="potion_insomnia" Amount="4" />
 			<PresetItem Name="potion_marigold_medium" Amount="7" />
@@ -2533,14 +2598,20 @@
 			<PresetItem Name="Cap07_m11_B" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="Cap08_m03_B" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="Cap24_m05_B" Amount="1" Quality="1" Condition="1" />
-			<PresetItem Name="Cap24_m07_B" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap24_m08_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap25_m05_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap25_m06_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap25_m07_C" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Coat04_m07_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Coat04_m12_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Coat11_m01_C" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="Coat11_m04_C" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="Hood01_m02_D" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood02_m10_C" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Hood05_m06_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood06_m03_B" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Hood07_m01_C" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Hood07_m05_C" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="HoseJoined01_m08_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="HoseJoined02_m09_B" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="HoseJoined02_m15_B" Amount="1" Quality="2" Condition="1" />
@@ -2559,6 +2630,8 @@
 			<PresetItem Name="CoifSmall02_m03_E1" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifLarge01_m07_D2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifLarge02_m01_C3" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="CoifLarge02_m02_C3" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="CoifLarge02_m03_C3" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="LegsPadded01_m10_C3" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="LegsPadded03_m08_B2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPadded01_m11_C3" Amount="1" Quality="3" Condition="1" />
@@ -2605,15 +2678,27 @@
 			<PresetItem Name="Cap19_m04_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap08_m04_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap10_m09_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap24_m01_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap24_m05_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap25_m08_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap25_m09_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap25_m10_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Habit03_m04_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Habit03_m05_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Habit03_m06_C" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
 			<PresetItem Name="CoifLarge01_m02_D2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="CoifLarge02_m04_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifSmall01_m08_C2" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall01_m02_C2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifSmall03_m06_B3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonLong01_m20_B3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonShort04_m07_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonShort04_m11_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonLong01_m18_B3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="GambesonShort03_m03_A4" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="GambesonShort03_m09_A4" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="GambesonShort04_m04_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPadded01_m04_C3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPadded03_m10_B2" Amount="1" Quality="2" Condition="1" />
 			<!-- ointment -->
@@ -2621,12 +2706,14 @@
 			<PresetItem Name="repairKit_armourSmall" Amount="8" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_tailorKonskyTrh" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3030" />
+			<PresetItem Name="money" Amount="6530" />
 			<InventoryPresetRef Name="inventory_femaleTailorClothing" />
 			<!-- clothing -->
 			<PresetItem Name="Cap10_m02_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap12_m03_D" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap17_m07_C" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap24_m02_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap24_m03_B" Amount="1" Quality="2" Condition="1"/>
 			<PresetItem Name="Cap25_m09_C" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood02_m03_C" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood05_m04_B" Amount="1" Quality="2" Condition="1" />
@@ -2671,10 +2758,13 @@
 			<PresetItem Name="PaddedCaparison04_m08" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="PaddedCaparison04_m09" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="PaddedCaparison04_m10" Amount="1" Quality="2" Condition="1" />
-						<!-- armor -->
+			<!-- armor -->
 			<PresetItem Name="CollarPadded01_m06_C1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="GambesonLong04_m01_A5" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonLong04_m12_A5" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall01_m03_C2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifSmall01_m04_C2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifSmall01_m05_C2" Amount="1" Quality="3" Condition="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_tailorsSmall" Amount="15" Health="1" />
 			<PresetItem Name="repairKit_armourSmall" Amount="4" Health="1" />
@@ -2683,19 +2773,38 @@
 			<PresetItem Name="belt_3slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_tailorRadnicniMiddle" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="5800" />
+			<PresetItem Name="money" Amount="8800" />
 			<InventoryPresetRef Name="inventory_femaleTailorClothing" />
 			<!-- clothing -->
 			<PresetItem Name="Cap14_m08_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap18_m04_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap22_m03_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap22_m04_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap22_m05_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap22_m09_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Cap24_m04_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap24_m06_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap24_m07_B" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap34_m01_A" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap34_m04_A" Amount="1" Quality="2" Condition="1"/>
+			<PresetItem Name="Cap34_m05_A" Amount="1" Quality="2" Condition="1"/>
 			<PresetItem Name="Coat01_m06_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Coat08_m03_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Coat11_m06_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood03_m05_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood03_m06_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood03_m07_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood03_m08_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood03_m09_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood05_m01_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood05_m03_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood05_m08_B" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood07_m07_C" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Hood09_m02_C" Amount="1" Quality="1" Condition="1" />
+			<PresetItem Name="Hood09_m05_C" Amount="1" Quality="1" Condition="1" />
 			<PresetItem Name="Hood12_m02_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood12_m03_A" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood12_m04_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood12_m07_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="HoseJoined02_m02_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="HoseJoined02_m10_B" Amount="1" Quality="3" Condition="1" />
@@ -2742,6 +2851,8 @@
 			<PresetItem Name="PaddedCaparison03_m09" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="PaddedCaparison03_m10" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
+			<PresetItem Name="CoifSmall01_m06_C2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifSmall01_m07_C2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="CoifSmall03_m02_B3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="CoifSmall03_m04_B3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="CoifSmall03_m05_B3" Amount="1" Quality="3" Condition="1" />
@@ -2779,7 +2890,7 @@
 			<PresetItem Name="belt_3slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_tailorRadnicniCorner" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="6220" />
+			<PresetItem Name="money" Amount="8220" />
 			<InventoryPresetRef Name="inventory_femaleTailorClothing" />
 			<!-- clothing -->
 			<PresetItem Name="Cap02_m02_B" Amount="1" Quality="2" Condition="1" />
@@ -2792,7 +2903,15 @@
 			<PresetItem Name="Cap18_m10_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cap22_m01_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cap22_m02_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap22_m06_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap22_m07_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap24_m08_B" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="Cap24_m10_B" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="Cap33_m01_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap33_m02_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap33_m03_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cap33_m04_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cap33_m06_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cap34_m06_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Coat01_m01_A" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Coat01_m07_A" Amount="1" Quality="2" Condition="1" />
@@ -2801,12 +2920,18 @@
 			<PresetItem Name="Coat08_m07_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Coat08_m08_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Coat08_m10_A" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Hood03_m02_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood03_m01_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood03_m03_A" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Hood03_m07_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood03_m02_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood03_m05_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood05_m05_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood05_m06_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood05_m07_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood09_m06_C" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood09_m10_C" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood12_m01_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood12_m05_A" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Hood12_m06_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood12_m09_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Hood12_m10_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="HoseJoined02_m13_B" Amount="1" Quality="2" Condition="1" />
@@ -2854,8 +2979,12 @@
 			<PresetItem Name="PaddedCaparison05_m03" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
 			<PresetItem Name="CoifLarge02_m06_C3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifLarge02_m07_C3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall03_m01_B3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall03_m03_B3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonLong01_m19_B3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="GambesonShort04_m10_C3" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="GambesonShort04_m04_C3" Amount="1" Quality="2" Condition="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_tailorsSmall" Amount="22" Health="1" />
 			<PresetItem Name="repairKit_armourSmall" Amount="6" Health="1" />
@@ -2866,7 +2995,7 @@
 			<PresetItem Name="belt_3slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_tailorRadnicniStand" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3500" />
+			<PresetItem Name="money" Amount="5500" />
 			<InventoryPresetRef Name="inventory_femaleTailorClothing" />
 			<!-- clothing -->
 			<PresetItem Name="Cap02_m09_B" Amount="1" Quality="2" Condition="1" />
@@ -2884,8 +3013,11 @@
 			<PresetItem Name="CoifCap01_m02_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="CoifCap01_m08_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood01_m10_D" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood05_m05_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood11_m01_C" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood11_m03_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood11_m06_C" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="Hood11_m09_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood11_m12_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="HoseJoined01_m09_C" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="HoseJoined01_m14_C" Amount="1" Quality="2" Condition="1" />
@@ -2911,6 +3043,9 @@
 			<PresetItem Name="Gloves02_m08_D3" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Gloves05_m01_B2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Gloves05_m06_B2" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall02_m04_E1" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall02_m07_E1" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CoifSmall02_m08_E1" Amount="1" Quality="2" Condition="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_tailorsSmall" Amount="5" Health="1" />
 			<PresetItem Name="repairKit_armourSmall" Amount="5" Health="1" />
@@ -3024,7 +3159,7 @@
 			<PresetItem Name="special_pigSkin" Amount="13" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_shoemakerRadnicniMiddle" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3820" />
+			<PresetItem Name="money" Amount="5820" />
 			<!-- clothing -->
 			<PresetItem Name="BootsAnkle04_m01_A" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BootsAnkle04_m06_A" Amount="1" Quality="3" Condition="1" />
@@ -3035,6 +3170,7 @@
 			<PresetItem Name="BootsKnee02_m05_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BootsKnee02_m07_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BootsKnee02_m08_B" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BootsKnee05_m04_C" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Shoes02_m06_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Shoes02_m07_B" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Shoes05_m03_B" Amount="1" Quality="2" Condition="1" />
@@ -3070,7 +3206,7 @@
 			<PresetItem Name="BasicSaddle01_m11" Amount="1" Quality="2" Condition="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_shoemakerRadnicniCrossroad" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3200" />
+			<PresetItem Name="money" Amount="5200" />
 			<!-- clothing -->
 			<PresetItem Name="Gloves01_m07_C1" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Gloves06_m04_A2" Amount="1" Quality="3" Condition="1" />
@@ -3112,7 +3248,7 @@
 			<PresetItem Name="BasicSaddle01_m10" Amount="1" Quality="2" Condition="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerSigismundsCamp" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="7550" />
+			<PresetItem Name="money" Amount="8550" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate02_m04_C3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BascinetOpen02_m02_C1" Amount="1" Quality="3" Condition="1" />
@@ -3120,6 +3256,7 @@
 			<PresetItem Name="BascinetVisor01_m02_C3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Brigandine01_m01_D3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Brigandine03_m02_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Brigandine03_m04_A4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Brigandine10_m01_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BrigandineArm02_m01_C3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BrigandineArm02_m04_C3" Amount="1" Quality="3" Condition="1" />
@@ -3130,6 +3267,9 @@
 			<PresetItem Name="Cuirass08_m03_C4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets04_m02_C2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets04_m05_C2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gauntlets05_m01_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gauntlets05_m02_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gauntlets05_m03_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="KettleHat02_m03_D2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="LegsBrigandine01_m01_D2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="LegsBrigandine01_m03_D2" Amount="1" Quality="3" Condition="1" />
@@ -3154,6 +3294,11 @@
 			<PresetItem Name="BascinetOpen07_m02_C2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BascinetOpen09_m01_B1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BascinetOpen10_m03_D2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetOpen06_m04_B3" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="BascinetOpen06_m05_B3" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="BascinetOpen06_m06_B3" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="BascinetOpen06_m08_B3" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="BascinetOpen07_m03_C2" Amount="1" Quality="3" Condition="1"/>
 			<!-- misc -->
 			<PresetItem Name="player_lockpick" Amount="15" />
 			<!-- crafting -->
@@ -3172,6 +3317,7 @@
 			<PresetItem Name="WarChanfron03_m06" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="WarChanfron01_m03" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="WarChanfron01_m09" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="CumanChanfron01_m01" Amount="1" Quality="2" Condition="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_armourSmall" Amount="12" Health="1" />
 			<!-- shields -->
@@ -3191,7 +3337,7 @@
 			<PresetItem Name="shieldPavise_sigismund_B" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHVinna" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="7550" />
+			<PresetItem Name="money" Amount="15550" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate04_m01_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="ArmPlate04_m05_A5" Amount="1" Quality="3" Condition="1" />
@@ -3265,7 +3411,7 @@
 			<PresetItem Name="shieldPavise_bar_RK" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHTarmark" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="8900" />
+			<PresetItem Name="money" Amount="15900" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate04_m02_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="ArmPlate04_m06_A5" Amount="1" Quality="3" Condition="1" />
@@ -3295,8 +3441,6 @@
 			<PresetItem Name="Cuirass08_m04_C4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cuirass08_m05_C4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets02_m03_B4" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Gauntlets05_m01_A5" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Gauntlets05_m02_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets08_m05_B4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets08_m06_B4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="KettleHat07_m01_A5" Amount="1" Quality="3" Condition="1" />
@@ -3339,7 +3483,7 @@
 			<PresetItem Name="shieldPavise_half_RW" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHRadnicni" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="8250" />
+			<PresetItem Name="money" Amount="16250" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate02_m02_C3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BascinetOpen03_m03_C4" Amount="1" Quality="3" Condition="1" />
@@ -3351,38 +3495,14 @@
 			<PresetItem Name="LegsPlate07_m02_E1" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="SkullCap04_m02_C3" Amount="1" Quality="3" Condition="1" />
 			<!-- shields -->
-			<PresetItem Name="shieldKite_bendy_by" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_gw" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_quart_by" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_quart_rw_B" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_quart_rwg" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_quart_rwy" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_bendy_rw" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_cross_gy" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_cross_yk" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_gyronny_gy_B" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_gyronny_yk" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_chevronny_rw" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_chevronny_rwy" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_kuttenberg_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_kuttenberg_B" Amount="1"  Health="1" />
-			<PresetItem Name="shieldKite_sigismund_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_eagle_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_chevronny_rw_a" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_chevronny_yk" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_sigismund_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_sigismund_D" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_whole_K" Amount="1"  Health="1" />
-			<PresetItem Name="shieldHeater_whole_R" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_bar_GY" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_bar_RW" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_GY_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_half_RK" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_RGW_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_RWY_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_sigismund_A" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_sigismund_B" Amount="1"  Health="1" />
-			<PresetItem Name="shieldPavise_whole_R" Amount="1"  Health="1" />
+			<PresetItem Name="shieldKite_bendy_by" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_gw" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_quart_by" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_quart_rw_B" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_quart_rwg" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_quart_rwy" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_bendy_rw" Amount="1" Health="1" />
+			<PresetItem Name="shieldKite_cross_gy" Amount="1" Health="1" />
 			<!-- crafting -->
 			<PresetItem Name="special_cowSkin" Amount="8" />
 			<PresetItem Name="special_deerSkin" Amount="10" />
@@ -3397,7 +3517,7 @@
 			<PresetItem Name="repairKit_armourSmall" Amount="18" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHPlatnerska" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="8080" />
+			<PresetItem Name="money" Amount="16080" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate04_m07_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="ArmPlate05_m03_B4" Amount="1" Quality="3" Condition="1" />
@@ -3426,7 +3546,6 @@
 			<PresetItem Name="Cuirass07_m03_A4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cuirass07_m08_A4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Cuirass08_m07_C4" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="Gauntlets05_m03_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="Gauntlets08_m04_B4" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="KettleHat03_m03_B3" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="KettleHat05_m03_D3" Amount="1" Quality="3" Condition="1" />
@@ -3472,7 +3591,7 @@
 			<PresetItem Name="shieldPavise_whole_G" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHKupecka" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="8590" />
+			<PresetItem Name="money" Amount="17590" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate04_m04_A5" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="ArmPlate04_m08_A5" Amount="1" Quality="3" Condition="1" />
@@ -3549,7 +3668,7 @@
 			<PresetItem Name="shieldPavise_bar_GW" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_armorerKHKupeckaStand" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4900" />
+			<PresetItem Name="money" Amount="8900" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate01_m03_C2" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="BascinetOpen02_m03_C1" Amount="1" Quality="3" Condition="1" />
@@ -3588,7 +3707,7 @@
 			<PresetItem Name="shieldKite_whole_R" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_saddlerRadnicni" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4370" />
+			<PresetItem Name="money" Amount="10370" />
 			<!-- horse -->
 			<PresetItem Name="BasicBridle02_m05" Amount="1"/>
 			<PresetItem Name="BasicBridle02_m09" Amount="1"/>
@@ -3642,7 +3761,7 @@
 			<PresetItem Name="belt_4slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_saddlerKonskyTrh" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4240" />
+			<PresetItem Name="money" Amount="10240" />
 			<!-- horse -->
 			<PresetItem Name="BasicBridle02_m03" Amount="1"/>
 			<PresetItem Name="BasicBridle02_m08" Amount="1"/>
@@ -3697,7 +3816,7 @@
 			<PresetItem Name="belt_4slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_horseTraderGrunta" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4200" />
+			<PresetItem Name="money" Amount="8200" />
 			<!-- horse -->
 			<PresetItem Name="BasicBridle02_m01" Amount="1"/>
 			<PresetItem Name="BasicBridle02_m07" Amount="1"/>
@@ -3784,7 +3903,7 @@
 			<PresetItem Name="belt_3slot" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_horseTraderKuttenberg" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="5450" />
+			<PresetItem Name="money" Amount="8450" />
 			<!-- horse -->
 			<PresetItem Name="BasicBridle01_m10" Amount="1"/>
 			<PresetItem Name="BasicBridle02_m06" Amount="1"/>
@@ -3980,6 +4099,7 @@
 			<!-- potions -->
 			<PresetItem Name="potion_nighthawk_medium" Amount="2" />
 			<PresetItem Name="potion_padfoot" Amount="3" />
+			<PresetItem Name="potion_hair_o_dog" Amount="2" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHHradeckaSesivanejch" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="1890" />
@@ -3997,6 +4117,7 @@
 			<PresetItem Name="MultiplierDiceBadgeGold" Amount="1" />
 			<PresetItem Name="die_Kolacova" Amount="1" />
 			<PresetItem Name="die_Matematikova" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHKonskyTrh" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="2320" />
@@ -4015,6 +4136,7 @@
 			<PresetItem Name="MultiplierDiceBadgeSilver" Amount="1" />
 			<PresetItem Name="MultiplierDiceBadgePlumb" Amount="1" />
 			<PresetItem Name="die_Kralova" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="2" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHKupeckaCisareKarla" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="2340" />
@@ -4033,6 +4155,7 @@
 			<PresetItem Name="DoubleTakeDiceBadge" Amount="1" />
 			<PresetItem Name="HeadStartDiceBadgeGold" Amount="1" />
 			<PresetItem Name="skillbook_drinking_II_kcd2" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="2" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHPlatnerska" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="2530" />
@@ -4049,6 +4172,7 @@
 			<PresetItem Name="bsmt_hardware" Amount="6" />
 			<PresetItem Name="HeadStartDiceBadgeSilver" Amount="1" />
 			<PresetItem Name="DoubleTakeDiceBadgeGold" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHTarmark" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="2420" />
@@ -4065,6 +4189,7 @@
 			<PresetItem Name="HeadStartDiceBadgeGold" Amount="1" />
 			<PresetItem Name="Cap31_m02_D" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap04_m02_D" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHVlasskaSvatych" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="2290" />
@@ -4082,6 +4207,7 @@
 			<PresetItem Name="die_Gamblerova_good" Amount="1" />
 			<PresetItem Name="HeadStartDiceBadgeSilver" Amount="1" />
 			<PresetItem Name="MultiplierDiceBadgeGold" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperKHZidovska" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="1990" />
@@ -4106,6 +4232,7 @@
 			<PresetItem Name="DoubleTakeDiceBadge" Amount="1" />
 			<PresetItem Name="dieFavourable" Amount="1" />
 			<PresetItem Name="die_Matematikova" Amount="1" />
+			<PresetItem Name="potion_hair_o_dog" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_innkeeperMalesov" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="1260" />
@@ -4300,7 +4427,7 @@
 			<PresetItem Name="milk" Amount="3" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_merchantKHTarmark" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4520" />
+			<PresetItem Name="money" Amount="6520" />
 			<InventoryPresetRef Name="inventory_commonMerchantKits" />
 			<InventoryPresetRef Name="inventory_commonMerchantFood" />
 			<InventoryPresetRef Name="inventory_commonInnkeeperSoap" />
@@ -4326,9 +4453,11 @@
 			<PresetItem Name="Cap05_m08_D" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Cap23_m02_B" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="Hood06_m10_B" Amount="1" Quality="2" Condition="1" />
+			<!-- crafting -->
+			<PresetItem Name="skin_hare" Amount="3" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_merchantKHZidovska" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3890" />
+			<PresetItem Name="money" Amount="6890" />
 			<InventoryPresetRef Name="inventory_commonMerchantKits" />
 			<InventoryPresetRef Name="inventory_commonInnkeeperSoap" />
 			<InventoryPresetRef Name="inventory_commonInnkeeperTorch" />
@@ -4357,7 +4486,7 @@
 			<PresetItem Name="Cap27_m04_D" Amount="1" Quality="2" Condition="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_merchantKHVinna" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4230" />
+			<PresetItem Name="money" Amount="7230" />
 			<InventoryPresetRef Name="inventory_commonMerchantKits" />
 			<InventoryPresetRef Name="inventory_commonMerchantFood" />
 			<InventoryPresetRef Name="inventory_commonInnkeeperSoap" />
@@ -4423,6 +4552,8 @@
 			<!-- documents -->
 			<PresetItem Name="recipe_hoochPotion" Amount="1" />
 			<PresetItem Name="skillbook_heavyWeapons_lvl2_kcd2" Amount="1" />
+			<!-- crafting -->
+			<PresetItem Name="skin_hare" Amount="2" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_merchantBylansko" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="3480" />
@@ -4446,7 +4577,7 @@
 			<PresetItem Name="potion_saviourSchnapps" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_scribeKHPlatnerska" Health="1" >
-			<PresetItem Name="money" Amount="4810" />
+			<PresetItem Name="money" Amount="6810" />
 			<!-- books -->
 			<PresetItem Name="lorebook_canzoniere" Amount="1" />
 			<PresetItem Name="loreBook_Historia_Troiana" Amount="1" />
@@ -4465,7 +4596,7 @@
 			<PresetItem Name="skillbook_vitality_II_kcd2" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_scribeKHRadnicni" Health="1" >
-			<PresetItem Name="money" Amount="4810" />
+			<PresetItem Name="money" Amount="6810" />
 			<!-- books -->
 			<PresetItem Name="lorebook_atalanta" Amount="1" />
 			<PresetItem Name="lorebook_legendOfSaintDorothy" Amount="1" />
@@ -4586,6 +4717,7 @@
 		<InventoryPreset Name="inventory_shop_horseTraderStaraKutna" Mode="All" Health="1" >
 			<PresetItem Name="money" Amount="11450" />
 			<!-- horse -->
+			<PresetItem Name="NomadBridle01_m01" Amount="1"/>
 			<PresetItem Name="BasicBridle01_m09" Amount="1"/>
 			<PresetItem Name="BasicBridle02_m09" Amount="1"/>
 			<PresetItem Name="BasicBridle03_m10" Amount="1"/>
@@ -4647,7 +4779,7 @@
 			<PresetItem Name="horseshoeFarmer" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_blacksmithCertovka" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="4520" />
+			<PresetItem Name="money" Amount="6520" />
 			<!-- melee -->
 			<PresetItem Name="mace02" Amount="1" Quality="3" Condition="1" />
 			<PresetItem Name="axeFancy" Amount="1" Quality="2" Condition="1" />
@@ -4656,7 +4788,7 @@
 			<PresetItem Name="warhammer03" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="shortswordCleaver" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="longswordBroad" Amount="1" Quality="3" Condition="1" />
-			<PresetItem Name="longSwordDuel" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="longSwordDuel" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="longswordSturdy" Amount="1" Quality="3" Condition="1" />
 			<!-- armor -->
 			<PresetItem Name="ArmPlate05_m04_B4" Amount="1" Quality="3" Condition="1" />
@@ -4679,6 +4811,7 @@
 			<PresetItem Name="recipe_longswordcommon" Amount="1" />
 			<PresetItem Name="recipe_longswordsturdy" Amount="1" />
 			<PresetItem Name="recipe_shortswordcommon" Amount="1" />
+			<PresetItem Name="recipe_shortswordbasilard" Amount="1" />
 			<PresetItem Name="recipe_huntingswordsword" Amount="1" />
 			<!-- ointment -->
 			<PresetItem Name="repairKit_weaponSmall" Amount="14" Health="1" />
@@ -4710,7 +4843,7 @@
 			<PresetItem Name="Spurs01_m02_C" Amount="1" Health="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_shop_horseBlacksmithKonskyTrh" Mode="All" Health="1" >
-			<PresetItem Name="money" Amount="3520" />
+			<PresetItem Name="money" Amount="12520" />
 			<!-- armor -->
 			<PresetItem Name="Gauntlets04_m03_C2" Amount="1" Quality="2" Condition="1" />
 			<PresetItem Name="LegsPlate06_m03_D1" Amount="1" Quality="2" Condition="1" />
@@ -4802,6 +4935,115 @@
 			<PresetItem Name="bread" Amount="4"/>
 			<PresetItem Name="potion_saviourSchnapps" Amount="2" />
 			<PresetItem Name="potion_antidote" Amount="1" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_shop_shootmasterKafkaDLC2" Health="1" >
+			<PresetItem Name="money" Amount="10100" />
+			<!-- ranged weapons -->
+			<PresetItem Name="crossbowMediumFancy01" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="crossbowMediumNormal01" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="bow_d_a" Amount="1" Quality="3" Condition="1"/>
+			<PresetItem Name="bow_e" Amount="1" Quality="3" Condition="1"/>
+			<!-- ammo -->
+			<PresetItem Name="arrow_normal" Amount="24" />
+			<PresetItem Name="arrow_precise" Amount="12" />
+			<PresetItem Name="bolt_normal" Amount="18" />
+			<PresetItem Name="bolt_precise" Amount="15" />
+			<PresetItem Name="bolt_cutting" Amount="20" />
+			<PresetItem Name="bolt_enh_cutting" Amount="15" />
+			<PresetItem Name="arrow_cutting" Amount="23" />
+			<PresetItem Name="arrow_enh_cutting" Amount="19" />
+			<PresetItem Name="arrow_enh_precise" Amount="21" />
+			<PresetItem Name="bolt_enh_precise" Amount="20" />
+			<!-- potions -->
+			<PresetItem Name="potion_bowmanBrew_medium" Amount="3" />
+			<!-- ointment -->
+			<PresetItem Name="repairKit_bowyerSmall" Amount="8" Health="1" />
+			<!-- skillbook -->
+			<PresetItem Name="skillbook_marksmanship_lvl2_kcd2" Amount="1" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_shop_armorerMouchaDLC2" Mode="All" Health="1" >
+			<PresetItem Name="money" Amount="16050" />
+			<!-- armor -->
+			<PresetItem Name="ArmPlate04_m02_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="ArmPlate04_m05_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="ArmPlate04_m08_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetVisor04_m02_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetVisor04_m03_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetVisor04_m04_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetVisor05_m04_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BascinetVisor05_m06_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BrigandineArm06_m03_B5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BrigandineArm06_m05_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="BrigandineArm06_m07_B5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifMail02_m01_B3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifMail02_m03_B3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CoifMail02_m04_B3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CollarChain02_m01_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="CollarChain02_m03_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass03_m01_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass03_m05_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass05_m02_B3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass07_m01_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass07_m05_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass07_m08_A4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass08_m03_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Cuirass08_m06_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gloves06_m01_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gloves06_m04_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="Gloves06_m08_A2" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="KettleHat07_m07_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate03_m01_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate03_m02_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate03_m03_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate03_m05_A5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate05_m02_C3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate05_m04_C3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="LegsPlate05_m06_C3" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="MailLong01_m01_C5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="MailLong01_m02_C5" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="MailShort01_m01_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="MailShort01_m03_C4" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="SkullCap04_m03_C3" Amount="1" Quality="3" Condition="1" />
+			<!-- misc -->
+			<PresetItem Name="player_lockpick" Amount="15" />
+			<!-- crafting -->
+			<PresetItem Name="special_cowSkin" Amount="3" />
+			<PresetItem Name="special_deerSkin" Amount="3" />
+			<PresetItem Name="special_pigSkin" Amount="3" />
+			<PresetItem Name="bsmt_ironBad" Amount="20" />
+			<PresetItem Name="bsmt_hardware" Amount="11" />
+			<PresetItem Name="bsmt_ironGood" Amount="18" />
+			<PresetItem Name="bsmt_steelNormal" Amount="15" />
+			<PresetItem Name="bsmt_copper" Amount="13" />
+			<PresetItem Name="bsmt_steelGood" Amount="12" />
+			<!-- ointment -->
+			<PresetItem Name="repairKit_armourSmall" Amount="15" Health="1" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_shop_smelterPuskoDLC2" Mode="All" Health="1" >
+			<PresetItem Name="money" Amount="13230" />
+			<!-- melee -->
+			<PresetItem Name="axeBattle03" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="axeBattle04" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="axeFancy" Amount="1" Quality="3" Condition="1" />
+			<PresetItem Name="mace03" Amount="1" Quality="2" Condition="1" />
+			<PresetItem Name="mace04" Amount="2" Quality="2" Condition="1" />
+			<PresetItem Name="warhammer03" Amount="3" Quality="2" Condition="1" />
+			<PresetItem Name="warhammer04" Amount="3" Quality="2" Condition="1" />
+			<PresetItem Name="warhammerStab" Amount="3" Quality="3" Condition="1" />
+			<PresetItem Name="handgunFancy01" Amount="3" Quality="3" Condition="1" />
+			<PresetItem Name="hookgunNormal01" Amount="3" Quality="3" Condition="1" />
+			<!-- misc -->
+			<PresetItem Name="player_lockpick" Amount="15" />
+			<!-- ointment -->
+			<PresetItem Name="repairKit_weaponSmall" Amount="25" Health="1" />
+			<PresetItem Name="repairKit_armourSmall" Amount="9" Health="1" />
+			<!-- crafting -->
+			<PresetItem Name="bsmt_hardware" Amount="8" />
+			<PresetItem Name="bsmt_ironGood" Amount="16" />
+			<PresetItem Name="bsmt_steelNormal" Amount="8" />
+			<PresetItem Name="bsmt_copper" Amount="5" />
+			<PresetItem Name="bsmt_steelGood" Amount="12" />
+			<PresetItem Name="bsmt_woodExotic" Amount="5" />
 		</InventoryPreset>
 
 

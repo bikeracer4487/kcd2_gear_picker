@@ -46,20 +46,17 @@
 			<PresetItem Name="money" Amount="3120" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_svatyAntonin_gamblers">
-			<InventoryPresetRef Name="clothes_villager_male" />
 			<InventoryPresetRef Name="pockets_gambler" />
 			<PresetItem Name="svatyAntonin_saintGameSign" Amount="1" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_svatyAntonin_gamblers_dedicatedGambler">
-			<InventoryPresetRef Name="clothes_villager_male" />
+			<InventoryPresetRef Name="clothes_burgher_male" />
 			<InventoryPresetRef Name="pockets_villager" />
 			<PresetItem Name="svatyAntonin_saintGameSign" Amount="1" />
 			<PresetItem Name="ExtraDicebadgeSilver" Amount="1" />
-			<PresetItem Name="SetDiceDiceBadgeSilver" Amount="1" />
 			<PresetItem Name="AntibustDiceBadgePlumb" Amount="1" />
 			<PresetItem Name="die_Matematikova" Amount="1" />
-			<PresetItem Name="die_Kralova" Amount="1" />
-			<PresetItem Name="money" Amount="4610" />
+			<PresetItem Name="money" Amount="3800" />
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_svatyAntonin_hensl">
 			<PresetItem Name="TunicLong01_m04_C" Amount="1" />

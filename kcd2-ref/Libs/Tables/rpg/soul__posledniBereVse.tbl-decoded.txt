@@ -1,0 +1,18 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__posledniBereVse.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 120
+  Unique String Count ... 4
+  File Size ............. 532
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] posledniBereVse_kupec
+  [1] kutnohorsko_settlements_sedlec_commonFolk_looters
+  [2] posledniBereVse_posila1
+  [3] posledniBereVse_posila2

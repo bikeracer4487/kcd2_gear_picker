@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/mailbox.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ai\mailbox.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 1491143094
   Layout Hash ........... 1289368665
   Table Version ......... 1
-  Line Count ............ 172
-  String Data Size ...... 3766
-  Unique String Count ... 172
-  File Size ............. 9298
+  Line Count ............ 176
+  String Data Size ...... 3896
+  Unique String Count ... 176
+  File Size ............. 9556
   Calculated Line Size .. 32 (rem. 0)
 String Table:
   [0] carts_teleportRequest
@@ -96,91 +96,95 @@ String Table:
   [81] horseHandler_cleanupAssets
   [82] crime_campTrespassChatFeedback
   [83] onLockPickingTolerance
-  [84] battle_groupTag
-  [85] follow
-  [86] pigFeederInbox
-  [87] trackviewMessage
-  [88] dice_init
-  [89] battle_behaviorCompleted
-  [90] storyteller_reactionRequest
-  [91] crime_managePlayerUrging_yieldPriorityBark
-  [92] battle_formationSetup
-  [93] crime_stopUrgingPlayer
-  [94] combat_openworldSurrender
-  [95] hlasatel_dialogTrigger
-  [96] crime_stopFightByConcept
-  [97] ladderEvents
-  [98] lookAround_updateScanPosition
-  [99] crime_switchBark
-  [100] callEvents
-  [101] onStashClosed
-  [102] OnHitShootingTarget
-  [103] dialogState
-  [104] combat_stopFight
-  [105] crime_selfhelpResolveDialogFeedback
-  [106] lovVlku_behaviourChangeRequest
-  [107] deathMailbox_daycycle
-  [108] blacksmithingTutorial_OnPhaseChange
-  [109] switch_teleportRequest
-  [110] crime_playerFinalSurrender
-  [111] crime_stopCrime
-  [112] dice_minigameResult
-  [113] dialogMailbox_requestDone
-  [114] battle_groupController_wakeAll
-  [115] lookAround_updateSoundPosition
-  [116] switch_onHotEntitySeen
-  [117] carts_aiSignal
-  [118] perceptionInfo_checkProperty
-  [119] animalStartle
-  [120] player
-  [121] greeting_waveRequest
-  [122] interactionModuleOnInteraction
-  [123] dice_badgeInfo
-  [124] carts_initiateChat
-  [125] BattleBloodDecals
-  [126] onSoulRevivedForwarding
-  [127] switch_cancelPerceptionIgnoreRequest
-  [128] entityModuleOnBoidKilled
-  [129] player_sleepWalking
-  [130] crime_playerIsSurrendering
-  [131] prepadeni_bark
-  [132] situation_switchGossip
-  [133] battle_TestControlMB
-  [134] battle_groupController_init
-  [135] combat_playerLeftSurrenderingNPC
-  [136] dog_stopBarkingRequest
-  [137] crime_cooperationNotification
-  [138] perceptionInfo_estimatePlayersPosition
-  [139] crime_hearingSubscription
-  [140] hitReaction_surrender
-  [141] perceptionInfo_watch
-  [142] crime_hearingSubscriptionNotification
-  [143] crime_attackInitiatedByConcept
-  [144] openWorldCooldowns
-  [145] crime_dailyCheck_chestEntry
-  [146] player_getUsableMessage
-  [147] carts_currentStop
-  [148] archeryContest
-  [149] prepadeniNaCeste_calm
-  [150] carts_playerBoardRequest
-  [151] rentRoom
-  [152] situation_flutist
-  [153] crime_stimulus
-  [154] crime_checkMatesRequest
-  [155] battle_ladderSetup
-  [156] dialogMailbox
-  [157] carts_npcHoppedOn
-  [158] perceptionInfo_perceptionSearch
-  [159] crime_checkPebbleDistraction
-  [160] trainingGrounds_fighters
-  [161] perceptionInfo_watchCombat
-  [162] crime_theftVolumeSeenDuringCheckHomeStashes
-  [163] onStashOpened
-  [164] greeting_synchronizationRequest
-  [165] battle_formationHolder_init
-  [166] carts_caravanaLeader
-  [167] perceptionInfo_checkLyingBody
-  [168] door_communication
-  [169] storyteller_dialogTrigger
-  [170] horsePlayerModule_onHorsePossessed
-  [171] diceEvent
+  [84] crime_discoverCorpse
+  [85] battle_groupTag
+  [86] follow
+  [87] pigFeederInbox
+  [88] trackviewMessage
+  [89] dice_init
+  [90] battle_behaviorCompleted
+  [91] storyteller_reactionRequest
+  [92] crime_managePlayerUrging_yieldPriorityBark
+  [93] battle_formationSetup
+  [94] crime_stopUrgingPlayer
+  [95] combat_openworldSurrender
+  [96] hlasatel_dialogTrigger
+  [97] crime_stopFightByConcept
+  [98] ladderEvents
+  [99] lookAround_updateScanPosition
+  [100] crime_switchBark
+  [101] callEvents
+  [102] onStashClosed
+  [103] OnHitShootingTarget
+  [104] dialogState
+  [105] combat_stopFight
+  [106] crime_selfhelpResolveDialogFeedback
+  [107] lovVlku_behaviourChangeRequest
+  [108] deathMailbox_daycycle
+  [109] blacksmithingTutorial_OnPhaseChange
+  [110] switch_teleportRequest
+  [111] crime_playerFinalSurrender
+  [112] crime_stopCrime
+  [113] dice_minigameResult
+  [114] dialogMailbox_requestDone
+  [115] battle_groupController_wakeAll
+  [116] lookAround_updateSoundPosition
+  [117] crime_spawnPilloryBreakVolumeRequest
+  [118] switch_onHotEntitySeen
+  [119] carts_aiSignal
+  [120] perceptionInfo_checkProperty
+  [121] animalStartle
+  [122] player
+  [123] greeting_waveRequest
+  [124] interactionModuleOnInteraction
+  [125] dice_badgeInfo
+  [126] carts_initiateChat
+  [127] BattleBloodDecals
+  [128] onSoulRevivedForwarding
+  [129] switch_cancelPerceptionIgnoreRequest
+  [130] entityModuleOnBoidKilled
+  [131] player_sleepWalking
+  [132] crime_playerIsSurrendering
+  [133] prepadeni_bark
+  [134] situation_switchGossip
+  [135] battle_TestControlMB
+  [136] battle_groupController_init
+  [137] combat_playerLeftSurrenderingNPC
+  [138] dog_stopBarkingRequest
+  [139] crime_cooperationNotification
+  [140] perceptionInfo_estimatePlayersPosition
+  [141] crime_hearingSubscription
+  [142] hitReaction_surrender
+  [143] perceptionInfo_report
+  [144] perceptionInfo_watch
+  [145] crime_hearingSubscriptionNotification
+  [146] crime_attackInitiatedByConcept
+  [147] openWorldCooldowns
+  [148] speech_switchDialog_initiatorCheck_perceptionInfo
+  [149] crime_dailyCheck_chestEntry
+  [150] player_getUsableMessage
+  [151] carts_currentStop
+  [152] archeryContest
+  [153] prepadeniNaCeste_calm
+  [154] carts_playerBoardRequest
+  [155] rentRoom
+  [156] situation_flutist
+  [157] crime_stimulus
+  [158] crime_checkMatesRequest
+  [159] battle_ladderSetup
+  [160] dialogMailbox
+  [161] carts_npcHoppedOn
+  [162] perceptionInfo_perceptionSearch
+  [163] crime_checkPebbleDistraction
+  [164] trainingGrounds_fighters
+  [165] perceptionInfo_watchCombat
+  [166] crime_theftVolumeSeenDuringCheckHomeStashes
+  [167] onStashOpened
+  [168] greeting_synchronizationRequest
+  [169] battle_formationHolder_init
+  [170] carts_caravanaLeader
+  [171] perceptionInfo_checkLyingBody
+  [172] door_communication
+  [173] storyteller_dialogTrigger
+  [174] horsePlayerModule_onHorsePossessed
+  [175] diceEvent

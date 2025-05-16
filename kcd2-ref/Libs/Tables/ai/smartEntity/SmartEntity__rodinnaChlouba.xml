@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<database name="barbora" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../database.xsd">
+	<SmartEntitys version="1">
+		<SmartEntityTemplate DatabaseId="3b074c79-11dd-4d35-a1f6-4683f57fd7bd" Name="rodinnaChlouba" UpdatePriority="false">
+			<BehaviorTemplates>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="moucha_sittingSad">
+					<TreeLocation FileName="quests/rodinnaChlouba/rodinnaChlouba.xml" TreeName="moucha_sittingSad" />
+				</SmartBehaviorTemplate>
+			</BehaviorTemplates>
+		</SmartEntityTemplate>
+	</SmartEntitys>
+</database>

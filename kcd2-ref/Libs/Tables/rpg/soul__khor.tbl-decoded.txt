@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__khor.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__khor.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -87,7 +87,7 @@ String Table:
   [72] khor_woman_3
   [73] char_GENERIC_WOMAN_COMMONER_09
   [74] khor_man_31
-  [75] char_GENERIC_MAN_GUARD_16
+  [75] char_GENERIC_MAN_GUARD_02
   [76] khor_man_15
   [77] khor_man_16
   [78] khor_cuca

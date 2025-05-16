@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="InventoryPreset.xsd">
+	<InventoryPresets version="2">
+		<InventoryPreset Name="inventory_puvodNemoci_translatorsChest">
+			<PresetItem Name="puvodNemoci_planOfBasement" Amount="1" />
+			<PresetItem Name="loot_candle" Amount="7" />
+			<PresetItem Name="loot_oakGallInk" Amount="3" />
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_puvodNemoci_blazenaChest">
+			<PresetItem Name="money" Amount="3480" />
+		</InventoryPreset>
+	</InventoryPresets>
+</database>

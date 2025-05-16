@@ -821,6 +821,18 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="singleResistingArrestFix">
 					<TreeLocation FileName="crime/singleResistingArrestFix.xml" TreeName="crime_singleResistingArrestFix" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="canAttributeNonattributedCrime">
+					<TreeLocation FileName="crime/canAttributeNonattributedCrime.xml" TreeName="crime_canAttributeNonattributedCrime" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="insertNpcCannotAttributeNonattributedCrime">
+					<TreeLocation FileName="crime/insertNpcCannotAttributeNonattributedCrime.xml" TreeName="crime_insertNpcCannotAttributeNonattributedCrime" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="lookAround_reactToIntenseSound">
+					<TreeLocation FileName="crime/lookAround/reactToIntenseSound.xml" TreeName="crime_lookAround_reactToIntenseSound" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="processDiscoverCorpseMessages">
+					<TreeLocation FileName="crime/processDiscoverCorpseMessages.xml" TreeName="crime_processDiscoverCorpseMessages" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

@@ -5,11 +5,11 @@
 			<InventoryPresetRef Name="clothes_wench_female" />
 			<InventoryPresetRef Name="pockets_villager" /> <!-- jine pockets -->
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_wench_female" Health="0.5" HealthVariation="0.1">
+		<InventoryPreset Name="inventory_wench_female" Health="0.25" HealthVariation="0.1">
 			<InventoryPresetRef Name="clothes_wench_female" />
 			<InventoryPresetRef Name="pockets_villager" />
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_wench_female_old" Health="0.3" HealthVariation="0.1">
+		<InventoryPreset Name="inventory_wench_female_old" Health="0.25" HealthVariation="0.1">
 			<InventoryPresetRef Name="clothes_wench_female_old"/>
 			<InventoryPresetRef Name="pockets_villager"/>
 		</InventoryPreset>

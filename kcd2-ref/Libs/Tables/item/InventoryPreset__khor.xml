@@ -18,5 +18,9 @@
 			<PresetItem Name="wine" Amount="1"/>
 			<PresetItem Name="loot_silverCup" Amount="1"/>
 		</InventoryPreset>
+		<InventoryPreset Name="inventory_khor_man_12">
+			<ClothingPresetRef Name="khor_man_12_miner"/>
+			<InventoryPresetRef Name="pockets_miner"/>
+		</InventoryPreset>
 	</InventoryPresets>
 </database>

@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/game_over.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\game_over.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 1831475791
   Layout Hash ........... 444951957
   Table Version ......... 1
-  Line Count ............ 62
-  String Data Size ...... 4190
-  Unique String Count ... 117
-  File Size ............. 6202
+  Line Count ............ 63
+  String Data Size ...... 4210
+  Unique String Count ... 119
+  File Size ............. 6254
   Calculated Line Size .. 32 (rem. 0)
 String Table:
   [0] DiedUnknown
@@ -32,100 +32,102 @@ String Table:
   [17] game_over_died_by_self_harm
   [18] LostABattle
   [19] game_over_lostBattle
-  [20] DiedWhileUnconscious
-  [21] game_over_killed_while_unconscious
-  [22] prepadeni_capon_killed
-  [23] honicka_v_jan_ptacek_zemr_XRSP
-  [24] game_over_zachranaPtacka_caponDied
-  [25] game_over_zachranaPtacka_caponDied_text
-  [26] game_over_zachranaPtacka_brabantDied
-  [27] game_over_zachranaPtacka_brabantDied_text
-  [28] game_over_zachranaPtacka_caponLostDuringRide
-  [29] game_over_zachranaPtacka_caponLostDuringRide_text
-  [30] game_over_crime_execution
-  [31] game_over_crime_execution_text
-  [32] game_over_licht_died_alone
-  [33] game_over_licht_died_alone_text
-  [34] game_over_licht_is_dead
-  [35] game_over_licht_is_dead_text
-  [36] game_over_samuel_is_dead
-  [37] game_over_samuel_is_dead_text
-  [38] game_over_sara_is_dead
-  [39] game_over_sara_is_dead_text
-  [40] game_over_sedmStatecnych2_playerCameLateToSaveKomar
-  [41] game_over_sedmStatecnych2_playerCameLateToSaveKomar_text
-  [42] game_over_sedmStatecnych2_komarHanged
-  [43] game_over_sedmStatecnych2_komarHanged_text
-  [44] game_over_sedmStatecnych2_playerLeftKomarToDie
-  [45] game_over_sedmStatecnych2_playerLeftKomarToDie_text
-  [46] game_over_sedmStatecnych2_playerLeftMiskoviceAndHansDied
-  [47] game_over_sedmStatecnych2_playerLeftMiskoviceAndHansDied_text
-  [48] game_over_sedmStatecnych2_baillifExecutedHans
-  [49] game_over_sedmStatecnych2_baillifExecutedHans_text
-  [50] game_over_henry_ran_away
-  [51] game_over_caponExecuted
-  [52] game_over_setkaniVRatbori1_kuttenbergCouncilStartedWithoutHenry
-  [53] game_over_setkaniVRatbori1_kuttenbergCouncilStartedWithoutHenry_text
-  [54] game_over_setkaniVRatbori1_SigismundDead
-  [55] game_over_setkaniVRatbori1_SigismundDead_text
-  [56] game_over_setkaniVRatbori1_disGuiseBlown
-  [57] game_over_setkaniVRatbori1_disGuiseBlown_text
-  [58] game_over_utokNebakov_TroskyCrime
-  [59] game_over_utokNebakov_TroskyCrime_text
-  [60] game_over_utokNebakov_NebakovCrime
-  [61] game_over_obranaNebakov_NebakovCrime_text
-  [62] game_over_utokNebakov_AmbushCapon
-  [63] game_over_utokNebakov_AmbushCapon_text
-  [64] game_over_zizkaDead
-  [65] game_over_zizkaDead_text
-  [66] game_over_bohutaDead
-  [67] game_over_bohutaDead_text
-  [68] game_over_katerinaDead
-  [69] game_over_katerinaDead_text
-  [70] game_over_failed_gunpowder_production
-  [71] game_over_drunk_gunpowder_production
-  [72] game_over_bohutaArrested
-  [73] game_over_bohutaArrested_text
-  [74] game_over_traskavePoselstvi_gunpowder_explosion
-  [75] game_over_traskavePoselstvi_gunpowder_explosion_text
-  [76] game_over_utokNaMalesov_Alarm
-  [77] game_over_utokNaMalesov_HenryAlarmCastle
-  [78] game_over_vezniNaTroskach_fleedDuel
-  [79] game_over_papezskyLegat_legateGotTooFar
-  [80] game_over_setkaniVRatbori1_mayhemAtCouncil_text
-  [81] game_over_prepadeniVlasskehoDvora_bohutaExposed
-  [82] game_over_prepadeniVlasskehoDvora_bohutaExposed_text
-  [83] game_over_oblehaniSuchdole_crime
-  [84] game_over_oblehaniSuchdole_crime_text
-  [85] game_over_oblehaniSuchdole_gate_breached
-  [86] game_over_oblehaniSuchdole_gate_breached_text
-  [87] game_over_bitvaZaBohutu_walls_captured
-  [88] game_over_bitvaZaBohutu_walls_captured_text
-  [89] game_over_bitvaZaBohutu_courtyard_lost
-  [90] game_over_bitvaZaBohutu_courtyard_lost_text
-  [91] game_over_socky_commited_crime
-  [92] game_over_socky_commited_crime_text
-  [93] game_over_bohutovaVlozka_riotAtNebakov
-  [94] game_over_bohutovaVlozka_riotAtNebakov_text
-  [95] game_over_traskavePoselstvi_gunpowderSuicide
-  [96] game_over_traskavePoselstvi_gunpowderSuicide_text
-  [97] game_over_zikmundunduvTabor_musaGuardKilled
-  [98] game_over_zikmundunduvTabor_musaGuardKilled_text
-  [99] game_over_erik_chaseFailed
-  [100] game_over_erik_chaseFailed_text
-  [101] game_over_zikmundunduvTabor_timeLimitOut
-  [102] game_over_zikmundunduvTabor_timeLimitOut_text
-  [103] game_over_sedmStatecny_henry_left
-  [104] game_over_sedmeroStatecnych_henry_left_text
-  [105] game_over_obranaNebakov_allGuysFallen
-  [106] game_over_obranaNebakov_allGuysFallen_text
-  [107] game_over_prijezdNaSuchdol_crimeComitted
-  [108] game_over_prijezdNaSuchdol_crimeComitted_text
-  [109] game_over_bohutovaVlozka_banditsKilledEriksMen
-  [110] game_over_bohutovaVlozka_banditsKilledEriksMen_text
-  [111] game_over_posledniPomazani_wallsLost
-  [112] game_over_posledniPomazani_wallsLost_text
-  [113] game_over_papezskyLegat_crimeCommitedSuchdol
-  [114] game_over_papezskyLegat_crimeCommitedSuchdol_text
-  [115] game_over_pogrom_henryDiedByHalberd
-  [116] game_over_pogrom_henryDiedByHalberd_text
+  [20] Test
+  [21] game_over_test
+  [22] DiedWhileUnconscious
+  [23] game_over_killed_while_unconscious
+  [24] prepadeni_capon_killed
+  [25] honicka_v_jan_ptacek_zemr_XRSP
+  [26] game_over_zachranaPtacka_caponDied
+  [27] game_over_zachranaPtacka_caponDied_text
+  [28] game_over_zachranaPtacka_brabantDied
+  [29] game_over_zachranaPtacka_brabantDied_text
+  [30] game_over_zachranaPtacka_caponLostDuringRide
+  [31] game_over_zachranaPtacka_caponLostDuringRide_text
+  [32] game_over_crime_execution
+  [33] game_over_crime_execution_text
+  [34] game_over_licht_died_alone
+  [35] game_over_licht_died_alone_text
+  [36] game_over_licht_is_dead
+  [37] game_over_licht_is_dead_text
+  [38] game_over_samuel_is_dead
+  [39] game_over_samuel_is_dead_text
+  [40] game_over_sara_is_dead
+  [41] game_over_sara_is_dead_text
+  [42] game_over_sedmStatecnych2_playerCameLateToSaveKomar
+  [43] game_over_sedmStatecnych2_playerCameLateToSaveKomar_text
+  [44] game_over_sedmStatecnych2_komarHanged
+  [45] game_over_sedmStatecnych2_komarHanged_text
+  [46] game_over_sedmStatecnych2_playerLeftKomarToDie
+  [47] game_over_sedmStatecnych2_playerLeftKomarToDie_text
+  [48] game_over_sedmStatecnych2_playerLeftMiskoviceAndHansDied
+  [49] game_over_sedmStatecnych2_playerLeftMiskoviceAndHansDied_text
+  [50] game_over_sedmStatecnych2_baillifExecutedHans
+  [51] game_over_sedmStatecnych2_baillifExecutedHans_text
+  [52] game_over_henry_ran_away
+  [53] game_over_caponExecuted
+  [54] game_over_setkaniVRatbori1_kuttenbergCouncilStartedWithoutHenry
+  [55] game_over_setkaniVRatbori1_kuttenbergCouncilStartedWithoutHenry_text
+  [56] game_over_setkaniVRatbori1_SigismundDead
+  [57] game_over_setkaniVRatbori1_SigismundDead_text
+  [58] game_over_setkaniVRatbori1_disGuiseBlown
+  [59] game_over_setkaniVRatbori1_disGuiseBlown_text
+  [60] game_over_utokNebakov_TroskyCrime
+  [61] game_over_utokNebakov_TroskyCrime_text
+  [62] game_over_utokNebakov_NebakovCrime
+  [63] game_over_obranaNebakov_NebakovCrime_text
+  [64] game_over_utokNebakov_AmbushCapon
+  [65] game_over_utokNebakov_AmbushCapon_text
+  [66] game_over_zizkaDead
+  [67] game_over_zizkaDead_text
+  [68] game_over_bohutaDead
+  [69] game_over_bohutaDead_text
+  [70] game_over_katerinaDead
+  [71] game_over_katerinaDead_text
+  [72] game_over_failed_gunpowder_production
+  [73] game_over_drunk_gunpowder_production
+  [74] game_over_bohutaArrested
+  [75] game_over_bohutaArrested_text
+  [76] game_over_traskavePoselstvi_gunpowder_explosion
+  [77] game_over_traskavePoselstvi_gunpowder_explosion_text
+  [78] game_over_utokNaMalesov_Alarm
+  [79] game_over_utokNaMalesov_HenryAlarmCastle
+  [80] game_over_vezniNaTroskach_fleedDuel
+  [81] game_over_papezskyLegat_legateGotTooFar
+  [82] game_over_setkaniVRatbori1_mayhemAtCouncil_text
+  [83] game_over_prepadeniVlasskehoDvora_bohutaExposed
+  [84] game_over_prepadeniVlasskehoDvora_bohutaExposed_text
+  [85] game_over_oblehaniSuchdole_crime
+  [86] game_over_oblehaniSuchdole_crime_text
+  [87] game_over_oblehaniSuchdole_gate_breached
+  [88] game_over_oblehaniSuchdole_gate_breached_text
+  [89] game_over_bitvaZaBohutu_walls_captured
+  [90] game_over_bitvaZaBohutu_walls_captured_text
+  [91] game_over_bitvaZaBohutu_courtyard_lost
+  [92] game_over_bitvaZaBohutu_courtyard_lost_text
+  [93] game_over_socky_commited_crime
+  [94] game_over_socky_commited_crime_text
+  [95] game_over_bohutovaVlozka_riotAtNebakov
+  [96] game_over_bohutovaVlozka_riotAtNebakov_text
+  [97] game_over_traskavePoselstvi_gunpowderSuicide
+  [98] game_over_traskavePoselstvi_gunpowderSuicide_text
+  [99] game_over_zikmundunduvTabor_musaGuardKilled
+  [100] game_over_zikmundunduvTabor_musaGuardKilled_text
+  [101] game_over_erik_chaseFailed
+  [102] game_over_erik_chaseFailed_text
+  [103] game_over_zikmundunduvTabor_timeLimitOut
+  [104] game_over_zikmundunduvTabor_timeLimitOut_text
+  [105] game_over_sedmStatecny_henry_left
+  [106] game_over_sedmeroStatecnych_henry_left_text
+  [107] game_over_obranaNebakov_allGuysFallen
+  [108] game_over_obranaNebakov_allGuysFallen_text
+  [109] game_over_prijezdNaSuchdol_crimeComitted
+  [110] game_over_prijezdNaSuchdol_crimeComitted_text
+  [111] game_over_bohutovaVlozka_banditsKilledEriksMen
+  [112] game_over_bohutovaVlozka_banditsKilledEriksMen_text
+  [113] game_over_posledniPomazani_wallsLost
+  [114] game_over_posledniPomazani_wallsLost_text
+  [115] game_over_papezskyLegat_crimeCommitedSuchdol
+  [116] game_over_papezskyLegat_crimeCommitedSuchdol_text
+  [117] game_over_pogrom_henryDiedByHalberd
+  [118] game_over_pogrom_henryDiedByHalberd_text

@@ -1,0 +1,94 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__ssed.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 61
+  String Data Size ...... 1362
+  Unique String Count ... 80
+  File Size ............. 9198
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] ssed_knight_3
+  [1] klaster_rytiri
+  [2] ssed_monk_4
+  [3] klaster_monks
+  [4] ssed_monk_1
+  [5] char_DLC3_NOVIC_BENEDIKT
+  [6] ssed_monk_12
+  [7] ssed_knight_14
+  [8] ssed_knight_9
+  [9] ssed_herbalist
+  [10] char_DLC3_BYLINAR
+  [11] ssed_knight_12
+  [12] ssed_knight_16
+  [13] ssed_knight_15
+  [14] ssed_monk_3
+  [15] ssed_translatorFriend
+  [16] char_DLC3_KAMARAD_PREKLADATELE
+  [17] ssed_knight_7
+  [18] ssed_monasteryWorker_1
+  [19] klaster_delnici
+  [20] ssed_monk_11
+  [21] ssed_monk_19
+  [22] ssed_monk_6
+  [23] ssed_monasteryWorker_5
+  [24] ssed_blazenasBoss
+  [25] klaster_civilisti
+  [26] char_DLC3_NADRIZENY_BLAZENY
+  [27] ssed_knight_13
+  [28] ssed_knight_10
+  [29] ssed_knight_11
+  [30] ssed_monk_17
+  [31] ssed_deadMonk
+  [32] ssed_monk_20
+  [33] ssed_knight_1
+  [34] ssed_monk_24
+  [35] ssed_monkFromScretRoom
+  [36] ssed_monk_7
+  [37] ssed_knight_5
+  [38] ssed_knight_6
+  [39] ssed_knight_4
+  [40] ssed_monk_10
+  [41] ssed_knight_8
+  [42] ssed_knightLeader_1
+  [43] char_DLC3_RYTIR_ALBERICH
+  [44] ssed_monk_5
+  [45] ssed_confessor
+  [46] kutnohorsko_settlements_sedlec_commonFolk_monastery_monks
+  [47] ssed_monk_22
+  [48] ssed_monasteryWorker_3
+  [49] ssed_monk_9
+  [50] ssed_blazenasFriend
+  [51] char_DLC3_KAMARADKA_BLAZENY
+  [52] ssed_monk_14
+  [53] ssed_monasteryWorker_4
+  [54] ssed_man_1
+  [55] klaster_zachariasovi
+  [56] char_DLC3_POBOCNIK_ZACHARIASE
+  [57] ssed_monk_8
+  [58] ssed_cellarius
+  [59] char_DLC3_CELLARIUS_JULIAN
+  [60] ssed_knihovnik
+  [61] char_DLC3_KNIHOVNIK_KRYSPIN
+  [62] ssed_monk_13
+  [63] ssed_monk_21
+  [64] ssed_blazena
+  [65] char_DLC3_BLAZENA
+  [66] ssed_man_2
+  [67] ssed_knight_2
+  [68] ssed_monk_23
+  [69] ssed_translator
+  [70] char_DLC3_MNICH_PREKLADATEL
+  [71] ssed_monasteryWorker_2
+  [72] ssed_monk_16
+  [73] ssed_monk_18
+  [74] ssed_monk_2
+  [75] ssed_zacharias
+  [76] char_DLC3_ZACHARIAS
+  [77] ssed_elias
+  [78] char_ELIAS
+  [79] ssed_monk_15

@@ -150,6 +150,8 @@
 		<metarole metarole_name="AUTOTEST_NPCSTATE_SAVELOAD" />
 		<metarole metarole_name="BANDITA_VOLA_POPLACH" />
 		<metarole metarole_name="BARBER" />
+		<metarole metarole_name="BARBER_SLUZBA_ZAPLACENA" />
+		<metarole metarole_name="BARBER_SLUZBA_ZRUSENA" />
 		<metarole metarole_name="BARKOVANI_V_PRUBEHU_WATCHE" />
 		<metarole metarole_name="BATTLE_IDLE_BARK" />
 		<metarole metarole_name="BFF_REAGUJE_NA_HRACE_TROPICIHO_HLOUPOSTI" />
@@ -241,6 +243,7 @@
 		<metarole metarole_name="HAJNY_VIDI_MRTVE_ZVIRE" />
 		<metarole metarole_name="HAJNY_VIDI_UTOK_NA_ZVIRE" />
 		<metarole metarole_name="HAJNY_VIDI_VRAZDU_ZVIRETE" />
+		<metarole metarole_name="HARDCORE_MODE_PERK_BAD_BACK_HERB_DEBUFF" />
 		<metarole metarole_name="HIT_REAKCE_PRVNI_UTEK" />
 		<metarole metarole_name="HIT_REAKCE_SILNA" />
 		<metarole metarole_name="HIT_REAKCE_SLABA" />
@@ -382,6 +385,7 @@
 		<metarole metarole_name="NASEL_ZTRACENOU_VEC" />
 		<metarole metarole_name="NEBAKOV_PRUZKUM_VOJAK_ZADRZEL_HRACE_PRO_TRESPASS" />
 		<metarole metarole_name="NENASEL_ZTRACENOU_VEC" />
+		<metarole metarole_name="NERVOZNI_BUSENI_NA_DVERE" />
 		<metarole metarole_name="NEUHOF_KAMARAD_NOSIC" />
 		<metarole metarole_name="NEUHOF_KRMENI_INIT" />
 		<metarole metarole_name="NEUHOF_LAPKA_FORCUJE_NA_HENRYHO" />
@@ -991,6 +995,5 @@
 		<metarole metarole_name="ZIZKA_VYPRAVI_SEDM_STATECNYCH" />
 		<metarole metarole_name="ZPEV" />
 		<metarole metarole_name="ZRZEK_UKRYT_BARKUJE_NA_HENRYHO" />
-		<metarole metarole_name="HARDCORE_MODE_PERK_BAD_BACK_HERB_DEBUFF" />
 	</metaroles>
 </database>

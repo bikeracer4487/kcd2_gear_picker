@@ -68,6 +68,7 @@
 
 		<Type Name="questFightStatus">
 			<Member Name="status" Type="enum:combat_questFightStatus" />
+			<Member Name="timestamp" Type="int64" />
 		</Type>
 
 		<Type Name="temporaryFriendsAfterSurrender">
@@ -541,6 +542,11 @@
 			<Member name="forgetCrimeInfo" type="bool" />
 		</Type>
 
+		<Type name="pilloryBreakVolumeData">
+			<Member name="timestamp" type="int64" />
+			<Member name="prisoner" type="wuid" />
+		</Type>
+
 		<Type name="produceSound"> <!-- used to send a message from Skald to AI to call ProduceSound node in player's brain -->
 			<Member Name="position" Type="wuid" />
 			<Member Name="sound" Type="enum:sound" />
@@ -606,6 +612,10 @@
 
 		<Type Name="awareness">
 			<Member Name="perceptible" Type="wuid" />
+		</Type>
+
+		<Type Name="discoverCorpse">
+			<Member Name="corpse" Type="wuid" />
 		</Type>
 
 		<Type Name="unconsciousBody">
@@ -796,12 +806,14 @@
 
 			<Type name="missingNpc">
 				<Member name="missingNpc" type="wuid" />
+				<Member name="canBeFound" type="bool" InitialValue="true" />
 				<Member name="missingNpcData" type="crime:missingNpcData" />
 				<Member name="volume" type="wuid" />
 				<Member name="alwaysUseDataDestination" type="bool" InitialValue="false" />
 			</Type>
 
 			<Type Name="murder">
+				<Member Name="information" Type="information" />
 				<Member Name="corpse" Type="wuid" />
 				<Member Name="isCarried" Type="bool" />
 				<Member Name="freshlyAttributedCrime" Type="bool" />
@@ -1018,6 +1030,7 @@
 			<Type name="check">
 				<Member Name="information" Type="information" />
 				<Member name="target" type="wuid" />
+				<Member name="iconDisabled" type="bool" />
 			</Type>
 
 			<Type name="choke">
@@ -1046,6 +1059,7 @@
 				<Member name="missingNpc" type="wuid" />
 				<Member name="suspiciousDoor" type="wuid" />
 				<Member name="suspiciousDoorFreshlyOpened" type="bool" />
+				<Member name="suspiciousDoorNonattributable" type="bool" />
 			</Type>
 
 			<Type name="checkStash" >
@@ -1288,6 +1302,11 @@
 		<Type Name="cancelPerceptionIgnoreRequest">
 			<Member Name="wasIgnoredAtLeastFor" type="string" />
 			<Member Name="perceptibleObject" type="wuid" />
+		</Type>
+
+		<Type Name="spawnPilloryBreakVolumeRequest">
+			<Member Name="pillory" type="wuid"  ConceptWuidType="LinkableObject" />
+			<Member Name="prisoner" type="wuid" ConceptWuidType="Soul" />
 		</Type>
 
 		<!-- [PP]@KCD2-81734 - running custom trees in NPC's switch -->
@@ -1767,16 +1786,19 @@
 			<Member Name="metarole" Type="string" />
 			<Member Name="ingameDialogType" Type="enum:speech_ingameDialogType" InitialValue="$enum:speech_ingameDialogType.Bark" />
 			<Member Name="repeatAfterSeconds" Type="int" InitialValue="-1" />
+			<Member Name="repeatAfterSecondsVariation" Type="int" InitialValue="0" />
 			<Member Name="playDialogAnimations" Type="bool" InitialValue="false" />
 			<Member Name="maxScheduledPriority" Type="int" InitialValue="-1" />
 			<Member Name="context" Type="string" />
 			<Member Name="percievingPlayer" Type="bool" InitialValue="false" />
 			<Member Name="playerDistance" Type="int" InitialValue="-1" />
 			<Member Name="playerInArea" Type="wuid" />
+			<Member Name="continuousInitiatorChecks" Type="bool" InitialValue="false"/>
 			<Member Name="playerInDialog" Type="bool" />
 			<Member Name="initiator" Type="wuid" />
 			<Member Name="lookAtEnabled" Type="bool" InitialValue="false"/>
 			<Member Name="lookAtId" Type="wuid" InitialValue="null"/>
+			<Member Name="boostPerceptionPriority" Type="bool" InitialValue="false"/>
 		</Type>
 	</Type>
 
@@ -2185,6 +2207,7 @@
 	<Type name="shootingTargetHitData">
 		<Member name="hitScore" type="int" />
 		<Member name="shooter" type="wuid" />
+		<Member name="target" type="wuid" />
 	</Type>
 
 	<!--****************************** SITUATIONS  ***********************************-->
@@ -2416,7 +2439,7 @@
 		</Type>			
 		<Type Name="hideHUD" />	
 		<Type Name="reactToPlayer" >	
-			<Member Name="reactionType" Type="enum:jizdniLukostrelba_spectatorsReactionType" />
+			<Member Name="reactionType" Type="enum:horseArchery_spectatorsReactionType" />
 		</Type>
 	</Type>
 	

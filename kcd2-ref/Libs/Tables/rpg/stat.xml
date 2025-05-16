@@ -5,5 +5,6 @@
 		<stat stat_id="1" stat_name="agility" ui_desc_string_name="ui_stat_agility_desc" ui_levelup_string_name="ui_stat_agility_levelup" ui_string_name="ui_stat_agility" />
 		<stat stat_id="2" stat_name="vitality" ui_desc_string_name="ui_stat_vitality_desc" ui_levelup_string_name="ui_stat_vitality_levelup" ui_string_name="ui_stat_vitality" />
 		<stat stat_id="3" stat_name="speech" ui_desc_string_name="ui_stat_speech_desc" ui_levelup_string_name="ui_stat_speech_levelup" ui_string_name="ui_stat_speech" />
+		<stat stat_id="9" stat_name="prestige" ui_desc_string_name="ui_stat_prestige_desc" ui_levelup_string_name="ui_stat_prestige_levelup" ui_string_name="ui_stat_prestige" />
 	</stats>
 </database>

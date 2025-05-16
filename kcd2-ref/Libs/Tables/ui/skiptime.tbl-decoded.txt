@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/skiptime.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ui\skiptime.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 4287536536
   Layout Hash ........... 1042526249
   Table Version ......... 1
-  Line Count ............ 86
-  String Data Size ...... 4715
-  Unique String Count ... 179
-  File Size ............. 8871
+  Line Count ............ 89
+  String Data Size ...... 4931
+  Unique String Count ... 185
+  File Size ............. 9231
   Calculated Line Size .. 48 (rem. 0)
 String Table:
   [0] Undefined
@@ -191,3 +191,9 @@ String Table:
   [176] ui_dlg_uchazec_ceremony
   [177] papezskyLegat_waitToLeaveToLorec
   [178] ui_dlg_papezskyLegat_waitToLeaveToLorec
+  [179] maliruvLek_waitForVykradaciHrobu
+  [180] skirmish_cekas_na_vykrada_5G6D
+  [181] dlc2_donationsTournament_makingWaffenrock
+  [182] ui_dlg_dlc2_donationsTournament_makingWaffenrock
+  [183] dlc2_donations_VolfBathing
+  [184] ui_dlg_dlc2_donations_VolfBathing

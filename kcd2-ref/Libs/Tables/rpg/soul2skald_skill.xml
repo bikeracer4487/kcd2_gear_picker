@@ -11,6 +11,7 @@
 		<soul2skald_skill skill_id="19" soul_id="020cb8b3-a7dd-472b-b515-be23a51a637e" value="26" />
 		<soul2skald_skill skill_id="0" soul_id="02122817-7473-42f8-bb71-6f588a0897ed" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="02122817-7473-42f8-bb71-6f588a0897ed" value="13" />
+		<soul2skald_skill skill_id="4" soul_id="02c59661-b14a-4f3c-9239-f31de1e2be57" value="22" />
 		<soul2skald_skill skill_id="0" soul_id="0335d3a1-ef19-4220-bcdf-163c45c2c446" value="15" />
 		<soul2skald_skill skill_id="4" soul_id="0335d3a1-ef19-4220-bcdf-163c45c2c446" value="15" />
 		<soul2skald_skill skill_id="8" soul_id="0335d3a1-ef19-4220-bcdf-163c45c2c446" value="15" />
@@ -60,12 +61,12 @@
 		<soul2skald_skill skill_id="20" soul_id="0e237d54-d6ab-4a35-ae08-f06843bd4c0d" value="11" />
 		<soul2skald_skill skill_id="23" soul_id="0e237d54-d6ab-4a35-ae08-f06843bd4c0d" value="11" />
 		<soul2skald_skill skill_id="24" soul_id="0e237d54-d6ab-4a35-ae08-f06843bd4c0d" value="11" />
-		<soul2skald_skill skill_id="19" soul_id="0e2f6a11-043e-4286-9c79-a7439ea1c74b" value="10" />
+		<soul2skald_skill skill_id="19" soul_id="0e2f6a11-043e-4286-9c79-a7439ea1c74b" value="14" />
 		<soul2skald_skill skill_id="19" soul_id="0e54d768-7b9f-44e9-b6c0-2c315ea1fc5e" value="21" />
 		<soul2skald_skill skill_id="15" soul_id="0e6dc4ef-54a0-4c72-b17e-137750e08afd" value="14" />
 		<soul2skald_skill skill_id="16" soul_id="0e6dc4ef-54a0-4c72-b17e-137750e08afd" value="15" />
-		<soul2skald_skill skill_id="19" soul_id="0fab60ed-59d8-4001-b4f6-a86bdd6bbb29" value="14" />
-		<soul2skald_skill skill_id="19" soul_id="10cb98e4-42e4-4959-8569-bef8aaae6795" value="13" />
+		<soul2skald_skill skill_id="19" soul_id="0fab60ed-59d8-4001-b4f6-a86bdd6bbb29" value="18" />
+		<soul2skald_skill skill_id="19" soul_id="10cb98e4-42e4-4959-8569-bef8aaae6795" value="17" />
 		<soul2skald_skill skill_id="0" soul_id="1108f841-ddf6-490d-b168-2f1d4e4f4daf" value="17" />
 		<soul2skald_skill skill_id="4" soul_id="1108f841-ddf6-490d-b168-2f1d4e4f4daf" value="17" />
 		<soul2skald_skill skill_id="15" soul_id="11333886-44e6-437c-a4fa-b7a04af4e485" value="17" />
@@ -85,6 +86,7 @@
 		<soul2skald_skill skill_id="4" soul_id="11dd5610-423d-43b6-8ba8-9bded7530397" value="18" />
 		<soul2skald_skill skill_id="14" soul_id="11dd5610-423d-43b6-8ba8-9bded7530397" value="14" />
 		<soul2skald_skill skill_id="15" soul_id="11dd5610-423d-43b6-8ba8-9bded7530397" value="12" />
+		<soul2skald_skill skill_id="4" soul_id="122458eb-6d15-4dea-adc4-ac9da5f1bf0d" value="21" />
 		<soul2skald_skill skill_id="0" soul_id="12499edc-acb7-43f7-9804-207e38dc3440" value="9" />
 		<soul2skald_skill skill_id="4" soul_id="12499edc-acb7-43f7-9804-207e38dc3440" value="9" />
 		<soul2skald_skill skill_id="6" soul_id="12499edc-acb7-43f7-9804-207e38dc3440" value="3" />
@@ -116,30 +118,30 @@
 		<soul2skald_skill skill_id="4" soul_id="16506a51-3a65-4c74-85a3-60c8299b6dd1" value="15" />
 		<soul2skald_skill skill_id="19" soul_id="16518f92-b447-4260-9275-69cfe0333563" value="8" />
 		<soul2skald_skill skill_id="0" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="20" />
-		<soul2skald_skill skill_id="4" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="14" />
+		<soul2skald_skill skill_id="4" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="15" />
 		<soul2skald_skill skill_id="6" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="5" />
 		<soul2skald_skill skill_id="8" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="12" />
 		<soul2skald_skill skill_id="14" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="12" />
-		<soul2skald_skill skill_id="19" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="23" />
-		<soul2skald_skill skill_id="19" soul_id="1674d8f3-2b36-4196-8fd6-e08671da4b33" value="13" />
+		<soul2skald_skill skill_id="19" soul_id="165f8204-8656-41a6-ba84-8c0b6ed25fc5" value="21" />
+		<soul2skald_skill skill_id="19" soul_id="1674d8f3-2b36-4196-8fd6-e08671da4b33" value="18" />
 		<soul2skald_skill skill_id="19" soul_id="17a7aec8-8a32-4dba-b72b-20cb3caf2f8a" value="17" />
 		<soul2skald_skill skill_id="15" soul_id="17e4f4d8-6a9c-4a2a-af6b-8181f00bb1ef" value="9" />
 		<soul2skald_skill skill_id="4" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="20" />
 		<soul2skald_skill skill_id="16" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="0" />
-		<soul2skald_skill skill_id="19" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="18" />
 		<soul2skald_skill skill_id="20" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="21" />
 		<soul2skald_skill skill_id="23" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="18" />
 		<soul2skald_skill skill_id="24" soul_id="197da49f-dd7a-4482-a40e-6628a4dba452" value="12" />
 		<soul2skald_skill skill_id="0" soul_id="19f5a288-78fe-4183-80a7-93dd8c755463" value="16" />
 		<soul2skald_skill skill_id="4" soul_id="19f5a288-78fe-4183-80a7-93dd8c755463" value="6" />
 		<soul2skald_skill skill_id="14" soul_id="19f5a288-78fe-4183-80a7-93dd8c755463" value="16" />
-		<soul2skald_skill skill_id="19" soul_id="1a8056cb-24a6-4119-851e-3a404966103b" value="15" />
+		<soul2skald_skill skill_id="19" soul_id="1a8056cb-24a6-4119-851e-3a404966103b" value="18" />
 		<soul2skald_skill skill_id="0" soul_id="1b132d81-81d5-4547-813f-3bff813a7fbe" value="16" />
 		<soul2skald_skill skill_id="4" soul_id="1b132d81-81d5-4547-813f-3bff813a7fbe" value="17" />
 		<soul2skald_skill skill_id="13" soul_id="1b132d81-81d5-4547-813f-3bff813a7fbe" value="12" />
-		<soul2skald_skill skill_id="33" soul_id="1b132d81-81d5-4547-813f-3bff813a7fbe" value="13" />
 		<soul2skald_skill skill_id="33" soul_id="1b21ebf4-0ccd-450e-b182-8703a01c6ff8" value="9" />
+		<soul2skald_skill skill_id="19" soul_id="1bfaf60d-52dd-41a4-9399-742567031177" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="1c451d5e-547f-47ce-87db-b74c695eb7bf" value="14" />
 		<soul2skald_skill skill_id="19" soul_id="1c5fa73f-294e-4b3c-80bc-355a9e6602ab" value="12" />
 		<soul2skald_skill skill_id="1" soul_id="1d0178f0-7013-4ed3-beea-c1fc4c96a4f1" value="20" />
@@ -195,9 +197,9 @@
 		<soul2skald_skill skill_id="14" soul_id="259d20cb-cc00-4419-b261-b250fd399be0" value="11" />
 		<soul2skald_skill skill_id="26" soul_id="259d20cb-cc00-4419-b261-b250fd399be0" value="12" />
 		<soul2skald_skill skill_id="0" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="16" />
-		<soul2skald_skill skill_id="4" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="15" />
+		<soul2skald_skill skill_id="4" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="18" />
 		<soul2skald_skill skill_id="14" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="12" />
-		<soul2skald_skill skill_id="19" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="25e8f061-1dbc-4ded-96d3-17e93b18e3d1" value="22" />
 		<soul2skald_skill skill_id="0" soul_id="25f9c5b0-ba93-4146-8104-1b6dcd3434ec" value="1" />
 		<soul2skald_skill skill_id="4" soul_id="25f9c5b0-ba93-4146-8104-1b6dcd3434ec" value="1" />
 		<soul2skald_skill skill_id="15" soul_id="25f9c5b0-ba93-4146-8104-1b6dcd3434ec" value="5" />
@@ -221,9 +223,10 @@
 		<soul2skald_skill skill_id="16" soul_id="27ff3615-113e-4446-91f6-e68e74c84a4a" value="13" />
 		<soul2skald_skill skill_id="26" soul_id="2833a48c-b222-4131-87c6-e3ef913a51ce" value="15" />
 		<soul2skald_skill skill_id="0" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="12" />
-		<soul2skald_skill skill_id="4" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="18" />
+		<soul2skald_skill skill_id="4" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="24" />
 		<soul2skald_skill skill_id="14" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="12" />
-		<soul2skald_skill skill_id="19" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="23" />
+		<soul2skald_skill skill_id="19" soul_id="28e1018b-49b4-4d29-93df-5d93257e56e0" value="21" />
+		<soul2skald_skill skill_id="4" soul_id="290fa028-a5f7-467a-a87f-fb754a5e6335" value="21" />
 		<soul2skald_skill skill_id="15" soul_id="298fbedc-a401-462d-8da9-b1d767d4e1c2" value="12" />
 		<soul2skald_skill skill_id="0" soul_id="29cb0dd3-2c37-4a86-b885-8f7923d60d1d" value="16" />
 		<soul2skald_skill skill_id="4" soul_id="29cb0dd3-2c37-4a86-b885-8f7923d60d1d" value="20" />
@@ -235,6 +238,7 @@
 		<soul2skald_skill skill_id="15" soul_id="2b22e767-19e6-4dd2-a441-4b49b3a929a7" value="13" />
 		<soul2skald_skill skill_id="16" soul_id="2b22e767-19e6-4dd2-a441-4b49b3a929a7" value="14" />
 		<soul2skald_skill skill_id="17" soul_id="2b22e767-19e6-4dd2-a441-4b49b3a929a7" value="13" />
+		<soul2skald_skill skill_id="19" soul_id="2b245c63-61e9-485d-b72c-5d474a65ae9b" value="20" />
 		<soul2skald_skill skill_id="19" soul_id="2b428cc4-03dc-49a8-8447-3a09c2b0e31c" value="8" />
 		<soul2skald_skill skill_id="15" soul_id="2c128363-f706-4453-b5b2-908c3504e61b" value="16" />
 		<soul2skald_skill skill_id="16" soul_id="2c128363-f706-4453-b5b2-908c3504e61b" value="16" />
@@ -243,6 +247,7 @@
 		<soul2skald_skill skill_id="15" soul_id="2c276aad-6253-451d-aa18-58dd8433ba68" value="1" />
 		<soul2skald_skill skill_id="19" soul_id="2cf0930c-0eb5-4aae-84bf-f7a438dfe465" value="8" />
 		<soul2skald_skill skill_id="19" soul_id="2d7c0456-a46b-4552-a806-9f1b2f9130ec" value="24" />
+		<soul2skald_skill skill_id="4" soul_id="2f63e9bd-d15c-45e4-8e06-9a768892089b" value="21" />
 		<soul2skald_skill skill_id="0" soul_id="2fd3157f-17ea-4c44-bd6a-dac8d217ea3a" value="2" />
 		<soul2skald_skill skill_id="1" soul_id="2fd3157f-17ea-4c44-bd6a-dac8d217ea3a" value="15" />
 		<soul2skald_skill skill_id="4" soul_id="2fd3157f-17ea-4c44-bd6a-dac8d217ea3a" value="3" />
@@ -265,12 +270,12 @@
 		<soul2skald_skill skill_id="6" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="10" />
 		<soul2skald_skill skill_id="13" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="6" />
 		<soul2skald_skill skill_id="14" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="10" />
-		<soul2skald_skill skill_id="19" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="17" />
-		<soul2skald_skill skill_id="26" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="12" />
+		<soul2skald_skill skill_id="19" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="23" />
+		<soul2skald_skill skill_id="26" soul_id="32474f1b-2483-43f8-adec-8bc9f4ceb8ee" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="3266e0e7-37b9-423a-a808-0dc56e805c25" value="15" />
 		<soul2skald_skill skill_id="24" soul_id="3266e0e7-37b9-423a-a808-0dc56e805c25" value="16" />
 		<soul2skald_skill skill_id="26" soul_id="3266e0e7-37b9-423a-a808-0dc56e805c25" value="13" />
-		<soul2skald_skill skill_id="19" soul_id="3305f895-eca4-4ac5-a430-c1258a5cb58e" value="12" />
+		<soul2skald_skill skill_id="19" soul_id="3305f895-eca4-4ac5-a430-c1258a5cb58e" value="16" />
 		<soul2skald_skill skill_id="13" soul_id="358ca730-5253-4daa-bd68-89e333d25668" value="15" />
 		<soul2skald_skill skill_id="24" soul_id="358ca730-5253-4daa-bd68-89e333d25668" value="25" />
 		<soul2skald_skill skill_id="0" soul_id="36274067-8ec0-4e0f-84a8-0f01da8d33d7" value="16" />
@@ -296,7 +301,7 @@
 		<soul2skald_skill skill_id="15" soul_id="396c4b04-ec6a-418e-9934-dd35f2460543" value="21" />
 		<soul2skald_skill skill_id="16" soul_id="396c4b04-ec6a-418e-9934-dd35f2460543" value="17" />
 		<soul2skald_skill skill_id="19" soul_id="3a63a42f-754e-4904-9089-97efa73c2cfd" value="14" />
-		<soul2skald_skill skill_id="19" soul_id="3b33c1c6-541a-4d47-85fb-a1472f7ae139" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="3b33c1c6-541a-4d47-85fb-a1472f7ae139" value="18" />
 		<soul2skald_skill skill_id="4" soul_id="3b568a9c-5159-4363-86ad-c6b85aa9bf40" value="12" />
 		<soul2skald_skill skill_id="4" soul_id="3b647411-a637-4922-812a-ee4138f120b8" value="9" />
 		<soul2skald_skill skill_id="8" soul_id="3b647411-a637-4922-812a-ee4138f120b8" value="20" />
@@ -318,6 +323,7 @@
 		<soul2skald_skill skill_id="6" soul_id="409ac843-b2eb-4c44-bbc0-3bdd627d847b" value="3" />
 		<soul2skald_skill skill_id="8" soul_id="409ac843-b2eb-4c44-bbc0-3bdd627d847b" value="13" />
 		<soul2skald_skill skill_id="14" soul_id="409ac843-b2eb-4c44-bbc0-3bdd627d847b" value="11" />
+		<soul2skald_skill skill_id="19" soul_id="40b3760e-4b69-43a7-af1f-2f803b64e99a" value="15" />
 		<soul2skald_skill skill_id="19" soul_id="40cb757e-63dc-f5d0-b3a3-848c7ca29e82" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="40f25686-531d-4ba8-bd7a-9ff7eb1845b7" value="13" />
 		<soul2skald_skill skill_id="16" soul_id="40f25686-531d-4ba8-bd7a-9ff7eb1845b7" value="12" />
@@ -443,6 +449,7 @@
 		<soul2skald_skill skill_id="4" soul_id="47766d82-a19e-adaf-8fdc-c272aa4aca86" value="8" />
 		<soul2skald_skill skill_id="28" soul_id="47766d82-a19e-adaf-8fdc-c272aa4aca86" value="5" />
 		<soul2skald_skill skill_id="29" soul_id="47766d82-a19e-adaf-8fdc-c272aa4aca86" value="5" />
+		<soul2skald_skill skill_id="4" soul_id="477f05e5-ebb3-5492-fd64-e05681355782" value="21" />
 		<soul2skald_skill skill_id="19" soul_id="477f05e5-ebb3-5492-fd64-e05681355782" value="22" />
 		<soul2skald_skill skill_id="19" soul_id="47f829e6-7932-3669-96ca-ff62934bd682" value="13" />
 		<soul2skald_skill skill_id="19" soul_id="481cdcf3-023f-31d7-5187-dc8dafb74097" value="17" />
@@ -457,6 +464,7 @@
 		<soul2skald_skill skill_id="19" soul_id="493628d9-b208-b6f1-dcfa-1ad2de18a4ad" value="14" />
 		<soul2skald_skill skill_id="15" soul_id="49613399-1d12-88da-430f-bee7ff37da85" value="4" />
 		<soul2skald_skill skill_id="24" soul_id="49613399-1d12-88da-430f-bee7ff37da85" value="4" />
+		<soul2skald_skill skill_id="4" soul_id="4977f29a-b914-b3f4-ad64-ad3a13bad188" value="16" />
 		<soul2skald_skill skill_id="19" soul_id="4977f29a-b914-b3f4-ad64-ad3a13bad188" value="14" />
 		<soul2skald_skill skill_id="0" soul_id="4986433e-3fc2-72f3-0a5b-4312af1404a9" value="8" />
 		<soul2skald_skill skill_id="4" soul_id="4986433e-3fc2-72f3-0a5b-4312af1404a9" value="8" />
@@ -524,10 +532,13 @@
 		<soul2skald_skill skill_id="14" soul_id="4b86d6c0-5a6f-ad48-25da-431521880792" value="6" />
 		<soul2skald_skill skill_id="15" soul_id="4b86d6c0-5a6f-ad48-25da-431521880792" value="6" />
 		<soul2skald_skill skill_id="19" soul_id="4b976ba9-5091-4c52-0b99-a2c914e1cca6" value="16" />
-		<soul2skald_skill skill_id="6" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="13" />
-		<soul2skald_skill skill_id="13" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="14" />
-		<soul2skald_skill skill_id="14" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="16" />
-		<soul2skald_skill skill_id="26" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="12" />
+		<soul2skald_skill skill_id="6" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="16" />
+		<soul2skald_skill skill_id="13" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="17" />
+		<soul2skald_skill skill_id="14" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="19" />
+		<soul2skald_skill skill_id="26" soul_id="4bb85c62-b0f9-c430-27e5-2ecfd254df90" value="15" />
+		<soul2skald_skill skill_id="1" soul_id="4bc10425-171d-37c4-4c5b-610024423fba" value="17" />
+		<soul2skald_skill skill_id="19" soul_id="4bc10425-171d-37c4-4c5b-610024423fba" value="15" />
+		<soul2skald_skill skill_id="26" soul_id="4bc10425-171d-37c4-4c5b-610024423fba" value="10" />
 		<soul2skald_skill skill_id="0" soul_id="4be25533-2725-37f7-b9fe-0b9df3f851ba" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="4be25533-2725-37f7-b9fe-0b9df3f851ba" value="14" />
 		<soul2skald_skill skill_id="15" soul_id="4be25533-2725-37f7-b9fe-0b9df3f851ba" value="16" />
@@ -601,6 +612,10 @@
 		<soul2skald_skill skill_id="19" soul_id="4f65cff0-aa7c-d535-2b2b-bfcfcfd48bbf" value="22" />
 		<soul2skald_skill skill_id="4" soul_id="4f9abd13-5f96-c6d7-529b-836fe83caab7" value="9" />
 		<soul2skald_skill skill_id="8" soul_id="4f9abd13-5f96-c6d7-529b-836fe83caab7" value="8" />
+		<soul2skald_skill skill_id="19" soul_id="4f9dbfa1-28cd-42f8-a187-8378c9bcb36f" value="17" />
+		<soul2skald_skill skill_id="1" soul_id="4fc4dfec-f706-16e8-7db2-522512975793" value="17" />
+		<soul2skald_skill skill_id="14" soul_id="4fc4dfec-f706-16e8-7db2-522512975793" value="15" />
+		<soul2skald_skill skill_id="26" soul_id="4fc4dfec-f706-16e8-7db2-522512975793" value="10" />
 		<soul2skald_skill skill_id="1" soul_id="4fef51d5-b508-7a5b-e6fe-5e9911d3e5b0" value="30" />
 		<soul2skald_skill skill_id="15" soul_id="4fef51d5-b508-7a5b-e6fe-5e9911d3e5b0" value="30" />
 		<soul2skald_skill skill_id="16" soul_id="4fef51d5-b508-7a5b-e6fe-5e9911d3e5b0" value="30" />
@@ -641,7 +656,7 @@
 		<soul2skald_skill skill_id="8" soul_id="587678eb-b645-40f6-af37-a10762e40505" value="14" />
 		<soul2skald_skill skill_id="14" soul_id="587678eb-b645-40f6-af37-a10762e40505" value="12" />
 		<soul2skald_skill skill_id="26" soul_id="587678eb-b645-40f6-af37-a10762e40505" value="4" />
-		<soul2skald_skill skill_id="19" soul_id="5877ded5-a870-4e8d-924b-c1325b24cca9" value="10" />
+		<soul2skald_skill skill_id="19" soul_id="5877ded5-a870-4e8d-924b-c1325b24cca9" value="14" />
 		<soul2skald_skill skill_id="0" soul_id="587c85ba-51e7-43bc-a3c1-e370d216cc7d" value="18" />
 		<soul2skald_skill skill_id="4" soul_id="58fa6292-4b45-442a-99b9-7c0e5d14e6bf" value="12" />
 		<soul2skald_skill skill_id="6" soul_id="58fa6292-4b45-442a-99b9-7c0e5d14e6bf" value="4" />
@@ -656,7 +671,7 @@
 		<soul2skald_skill skill_id="26" soul_id="5982caf5-3e2a-43d4-850f-bb6530691725" value="16" />
 		<soul2skald_skill skill_id="4" soul_id="598318a7-93d4-4d6f-8754-78b23d0c2b38" value="15" />
 		<soul2skald_skill skill_id="8" soul_id="598318a7-93d4-4d6f-8754-78b23d0c2b38" value="23" />
-		<soul2skald_skill skill_id="19" soul_id="598318a7-93d4-4d6f-8754-78b23d0c2b38" value="22" />
+		<soul2skald_skill skill_id="19" soul_id="598318a7-93d4-4d6f-8754-78b23d0c2b38" value="21" />
 		<soul2skald_skill skill_id="4" soul_id="59927b73-d0ba-46e1-aa38-b00df1e560c0" value="9" />
 		<soul2skald_skill skill_id="6" soul_id="59927b73-d0ba-46e1-aa38-b00df1e560c0" value="10" />
 		<soul2skald_skill skill_id="8" soul_id="59927b73-d0ba-46e1-aa38-b00df1e560c0" value="14" />
@@ -671,6 +686,10 @@
 		<soul2skald_skill skill_id="19" soul_id="59f7c93f-7d8b-4053-9743-9a3ad7ed192a" value="8" />
 		<soul2skald_skill skill_id="24" soul_id="59f7c93f-7d8b-4053-9743-9a3ad7ed192a" value="16" />
 		<soul2skald_skill skill_id="34" soul_id="59f7c93f-7d8b-4053-9743-9a3ad7ed192a" value="16" />
+		<soul2skald_skill skill_id="4" soul_id="5a0d7c94-1af0-491b-9951-832ee1993eae" value="20" />
+		<soul2skald_skill skill_id="6" soul_id="5a0d7c94-1af0-491b-9951-832ee1993eae" value="14" />
+		<soul2skald_skill skill_id="8" soul_id="5a0d7c94-1af0-491b-9951-832ee1993eae" value="10" />
+		<soul2skald_skill skill_id="26" soul_id="5a0d7c94-1af0-491b-9951-832ee1993eae" value="20" />
 		<soul2skald_skill skill_id="33" soul_id="5b7bc7a3-499d-4e19-a021-729de4ea1e31" value="18" />
 		<soul2skald_skill skill_id="0" soul_id="5bd81902-4c4e-46d4-ad84-d06a98940fb7" value="8" />
 		<soul2skald_skill skill_id="4" soul_id="5bd81902-4c4e-46d4-ad84-d06a98940fb7" value="8" />
@@ -691,6 +710,9 @@
 		<soul2skald_skill skill_id="0" soul_id="5f7233f6-f35e-44e8-84d3-72f0046dac7f" value="8" />
 		<soul2skald_skill skill_id="4" soul_id="5f7233f6-f35e-44e8-84d3-72f0046dac7f" value="12" />
 		<soul2skald_skill skill_id="14" soul_id="5f7233f6-f35e-44e8-84d3-72f0046dac7f" value="6" />
+		<soul2skald_skill skill_id="19" soul_id="5fe2b02e-6260-4431-b97b-2121969409be" value="22" />
+		<soul2skald_skill skill_id="4" soul_id="6099ee6d-1d4b-4340-bb0d-1c7b91313fcf" value="18" />
+		<soul2skald_skill skill_id="8" soul_id="6099ee6d-1d4b-4340-bb0d-1c7b91313fcf" value="21" />
 		<soul2skald_skill skill_id="19" soul_id="6099ee6d-1d4b-4340-bb0d-1c7b91313fcf" value="19" />
 		<soul2skald_skill skill_id="15" soul_id="61e0a214-9bb6-497d-a15b-026f49ba2aaa" value="12" />
 		<soul2skald_skill skill_id="15" soul_id="621e1f93-1347-4e41-9347-c4ba050abf75" value="11" />
@@ -702,6 +724,7 @@
 		<soul2skald_skill skill_id="14" soul_id="63ae9a6e-4c29-40cc-a376-07acd6e841f4" value="8" />
 		<soul2skald_skill skill_id="0" soul_id="63c20e9f-8b54-43cc-a3f8-19a2fc5ffc70" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="63c20e9f-8b54-43cc-a3f8-19a2fc5ffc70" value="13" />
+		<soul2skald_skill skill_id="33" soul_id="646c3dac-8388-42d4-abab-8234fd031858" value="21" />
 		<soul2skald_skill skill_id="19" soul_id="66c25d60-fce9-49e6-bb8b-105ccb5114b5" value="20" />
 		<soul2skald_skill skill_id="26" soul_id="6732e246-88e1-4191-8e2c-93c8b28ca38f" value="17" />
 		<soul2skald_skill skill_id="15" soul_id="67ca35e8-a496-4285-a7d8-ba31e39891f1" value="8" />
@@ -719,6 +742,7 @@
 		<soul2skald_skill skill_id="8" soul_id="684a139b-cfb9-405e-a62c-a4a12a58972f" value="6" />
 		<soul2skald_skill skill_id="26" soul_id="684a139b-cfb9-405e-a62c-a4a12a58972f" value="10" />
 		<soul2skald_skill skill_id="19" soul_id="68636d99-8313-4571-93de-701a72fd20c1" value="20" />
+		<soul2skald_skill skill_id="19" soul_id="6892f368-bb5b-4a0f-877e-8ad526b9b200" value="21" />
 		<soul2skald_skill skill_id="1" soul_id="68a7a14a-2277-47ee-8d2b-279548608c2b" value="14" />
 		<soul2skald_skill skill_id="1" soul_id="69e6b5eb-68d1-4991-9453-27fa206262a0" value="7" />
 		<soul2skald_skill skill_id="15" soul_id="69e6b5eb-68d1-4991-9453-27fa206262a0" value="9" />
@@ -761,6 +785,7 @@
 		<soul2skald_skill skill_id="15" soul_id="7177794d-25fa-4cb5-bb0f-eaa6e131d420" value="9" />
 		<soul2skald_skill skill_id="26" soul_id="71f285d4-042f-4c0c-b1a5-53cbb0adac57" value="10" />
 		<soul2skald_skill skill_id="15" soul_id="7224749d-d4f2-407c-ad47-13cd2576f31b" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="7228d987-8d0b-428e-b5fd-0595944c9710" value="24" />
 		<soul2skald_skill skill_id="0" soul_id="735e2e63-8a74-4794-95fe-924d87adae10" value="18" />
 		<soul2skald_skill skill_id="4" soul_id="735e2e63-8a74-4794-95fe-924d87adae10" value="16" />
 		<soul2skald_skill skill_id="14" soul_id="735e2e63-8a74-4794-95fe-924d87adae10" value="11" />
@@ -776,8 +801,11 @@
 		<soul2skald_skill skill_id="6" soul_id="74bab062-afb4-4a17-859a-79bcdf4be73a" value="17" />
 		<soul2skald_skill skill_id="12" soul_id="74bab062-afb4-4a17-859a-79bcdf4be73a" value="17" />
 		<soul2skald_skill skill_id="26" soul_id="74bab062-afb4-4a17-859a-79bcdf4be73a" value="17" />
+		<soul2skald_skill skill_id="4" soul_id="76550ca5-9a82-4015-9f84-edd7bd86e9d0" value="21" />
+		<soul2skald_skill skill_id="8" soul_id="76550ca5-9a82-4015-9f84-edd7bd86e9d0" value="25" />
+		<soul2skald_skill skill_id="19" soul_id="76550ca5-9a82-4015-9f84-edd7bd86e9d0" value="25" />
 		<soul2skald_skill skill_id="15" soul_id="768f43db-f6ce-4a29-96d8-d3fac87dab08" value="14" />
-		<soul2skald_skill skill_id="19" soul_id="770dbd10-09ec-4128-9d78-a2a6d9782427" value="12" />
+		<soul2skald_skill skill_id="19" soul_id="770dbd10-09ec-4128-9d78-a2a6d9782427" value="16" />
 		<soul2skald_skill skill_id="26" soul_id="786b48a9-2c2b-461b-a76b-bff4b9166402" value="15" />
 		<soul2skald_skill skill_id="15" soul_id="78aed5c4-1595-4f21-9638-a018a03f4448" value="12" />
 		<soul2skald_skill skill_id="16" soul_id="78aed5c4-1595-4f21-9638-a018a03f4448" value="12" />
@@ -787,10 +815,11 @@
 		<soul2skald_skill skill_id="26" soul_id="79662caa-1e72-4cee-8e70-185da2799e6c" value="12" />
 		<soul2skald_skill skill_id="19" soul_id="7a7cae99-7fc3-484e-84d2-be685f40f41e" value="4" />
 		<soul2skald_skill skill_id="19" soul_id="7ae09abc-5eb1-4b23-9e6f-98351d81f1c9" value="15" />
-		<soul2skald_skill skill_id="19" soul_id="7b924eec-e696-45c9-b7af-37808891515b" value="17" />
+		<soul2skald_skill skill_id="19" soul_id="7b924eec-e696-45c9-b7af-37808891515b" value="19" />
 		<soul2skald_skill skill_id="4" soul_id="7bc28937-bc5e-4d7f-bdba-8bc0546775fc" value="15" />
 		<soul2skald_skill skill_id="8" soul_id="7befb673-f462-46c3-9028-3ad186eb9b85" value="22" />
 		<soul2skald_skill skill_id="14" soul_id="7befb673-f462-46c3-9028-3ad186eb9b85" value="22" />
+		<soul2skald_skill skill_id="19" soul_id="7c29a20e-112b-4d03-8b09-4fd407781c8d" value="24" />
 		<soul2skald_skill skill_id="4" soul_id="7d063ba3-7d27-4d58-b582-d3771f323cce" value="10" />
 		<soul2skald_skill skill_id="13" soul_id="7d063ba3-7d27-4d58-b582-d3771f323cce" value="18" />
 		<soul2skald_skill skill_id="33" soul_id="7d063ba3-7d27-4d58-b582-d3771f323cce" value="12" />
@@ -828,8 +857,9 @@
 		<soul2skald_skill skill_id="8" soul_id="81ffe926-34b7-4599-bd78-39e2fff9ca18" value="20" />
 		<soul2skald_skill skill_id="0" soul_id="82346ad3-062e-4648-8287-c6e2d246bdc1" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="82346ad3-062e-4648-8287-c6e2d246bdc1" value="18" />
-		<soul2skald_skill skill_id="19" soul_id="846dcb75-f6b4-4eb8-8e97-580a6355c2a8" value="16" />
+		<soul2skald_skill skill_id="19" soul_id="846dcb75-f6b4-4eb8-8e97-580a6355c2a8" value="19" />
 		<soul2skald_skill skill_id="20" soul_id="850e6524-296f-4fbd-888b-bc8c046910bd" value="22" />
+		<soul2skald_skill skill_id="4" soul_id="857b2b02-35e9-4081-b75c-434fc7b4d7c2" value="25" />
 		<soul2skald_skill skill_id="17" soul_id="857fa420-7c34-4bda-b5d1-22380c80307e" value="23" />
 		<soul2skald_skill skill_id="19" soul_id="857fa420-7c34-4bda-b5d1-22380c80307e" value="23" />
 		<soul2skald_skill skill_id="20" soul_id="857fa420-7c34-4bda-b5d1-22380c80307e" value="23" />
@@ -854,19 +884,20 @@
 		<soul2skald_skill skill_id="27" soul_id="88f31d56-83de-4272-a9ca-c5aa1fcdfd6b" value="7" />
 		<soul2skald_skill skill_id="30" soul_id="88f31d56-83de-4272-a9ca-c5aa1fcdfd6b" value="7" />
 		<soul2skald_skill skill_id="0" soul_id="89fd30c0-a444-407c-aea4-ad2fa2d391ad" value="18" />
+		<soul2skald_skill skill_id="4" soul_id="8a0d0073-67d7-4f68-a269-cc040aca13a6" value="21" />
 		<soul2skald_skill skill_id="15" soul_id="8aba829d-c9fa-454e-84e0-953595ba1792" value="10" />
 		<soul2skald_skill skill_id="17" soul_id="8aba829d-c9fa-454e-84e0-953595ba1792" value="10" />
 		<soul2skald_skill skill_id="23" soul_id="8aba829d-c9fa-454e-84e0-953595ba1792" value="10" />
 		<soul2skald_skill skill_id="24" soul_id="8aba829d-c9fa-454e-84e0-953595ba1792" value="10" />
 		<soul2skald_skill skill_id="4" soul_id="8b21eff9-71cc-4bd3-9fc4-c0dff1cdd728" value="12" />
-		<soul2skald_skill skill_id="19" soul_id="8b5c2570-6023-4510-8ec8-4be89c24729a" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="8b5c2570-6023-4510-8ec8-4be89c24729a" value="18" />
 		<soul2skald_skill skill_id="0" soul_id="8c0462e8-2ff8-4b6d-81ee-63f780b90fab" value="11" />
 		<soul2skald_skill skill_id="4" soul_id="8c0462e8-2ff8-4b6d-81ee-63f780b90fab" value="8" />
 		<soul2skald_skill skill_id="8" soul_id="8c0462e8-2ff8-4b6d-81ee-63f780b90fab" value="16" />
 		<soul2skald_skill skill_id="14" soul_id="8c0462e8-2ff8-4b6d-81ee-63f780b90fab" value="11" />
 		<soul2skald_skill skill_id="19" soul_id="8c0462e8-2ff8-4b6d-81ee-63f780b90fab" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="8c9b009e-be62-4778-a0d2-c3697db1709b" value="11" />
-		<soul2skald_skill skill_id="19" soul_id="8dcfd531-a7bb-4087-a0f0-8b639c2c6c13" value="11" />
+		<soul2skald_skill skill_id="19" soul_id="8dcfd531-a7bb-4087-a0f0-8b639c2c6c13" value="15" />
 		<soul2skald_skill skill_id="17" soul_id="8df6c4bc-5ac8-40a3-9fa6-a9da07181136" value="23" />
 		<soul2skald_skill skill_id="19" soul_id="8df6c4bc-5ac8-40a3-9fa6-a9da07181136" value="23" />
 		<soul2skald_skill skill_id="20" soul_id="8df6c4bc-5ac8-40a3-9fa6-a9da07181136" value="23" />
@@ -878,7 +909,8 @@
 		<soul2skald_skill skill_id="4" soul_id="8f2954cb-16b8-4fbe-831e-4a214d7c6227" value="9" />
 		<soul2skald_skill skill_id="6" soul_id="8f2954cb-16b8-4fbe-831e-4a214d7c6227" value="3" />
 		<soul2skald_skill skill_id="14" soul_id="8f2954cb-16b8-4fbe-831e-4a214d7c6227" value="10" />
-		<soul2skald_skill skill_id="19" soul_id="8fa80baf-6781-42cf-bbd6-71ed96addfbf" value="16" />
+		<soul2skald_skill skill_id="4" soul_id="8f5ec799-c4c0-40db-8228-f7476d5cdd97" value="20" />
+		<soul2skald_skill skill_id="19" soul_id="8fa80baf-6781-42cf-bbd6-71ed96addfbf" value="19" />
 		<soul2skald_skill skill_id="8" soul_id="90083f0c-e348-4346-a05b-ee72e61b93f9" value="18" />
 		<soul2skald_skill skill_id="19" soul_id="90d9e811-bfcc-4b01-b864-34cbfeff2102" value="14" />
 		<soul2skald_skill skill_id="24" soul_id="90d9e811-bfcc-4b01-b864-34cbfeff2102" value="14" />
@@ -887,6 +919,7 @@
 		<soul2skald_skill skill_id="24" soul_id="91066582-3374-4c47-abfa-c91d08023991" value="18" />
 		<soul2skald_skill skill_id="26" soul_id="91066582-3374-4c47-abfa-c91d08023991" value="17" />
 		<soul2skald_skill skill_id="19" soul_id="9108ba4b-bb83-4516-8a05-973d0a426cfa" value="15" />
+		<soul2skald_skill skill_id="19" soul_id="91218b8c-2e6a-494f-b437-0d3a08902c40" value="14" />
 		<soul2skald_skill skill_id="15" soul_id="921219e2-8ac9-472c-b88f-cf5866511329" value="12" />
 		<soul2skald_skill skill_id="16" soul_id="921219e2-8ac9-472c-b88f-cf5866511329" value="11" />
 		<soul2skald_skill skill_id="17" soul_id="921219e2-8ac9-472c-b88f-cf5866511329" value="11" />
@@ -918,7 +951,7 @@
 		<soul2skald_skill skill_id="16" soul_id="97594b3c-c520-4f04-9e66-dd9099dc8221" value="12" />
 		<soul2skald_skill skill_id="23" soul_id="97594b3c-c520-4f04-9e66-dd9099dc8221" value="15" />
 		<soul2skald_skill skill_id="24" soul_id="97594b3c-c520-4f04-9e66-dd9099dc8221" value="16" />
-		<soul2skald_skill skill_id="19" soul_id="9841bb6e-d632-4fdd-bfd9-ed1ef0dbf9be" value="23" />
+		<soul2skald_skill skill_id="19" soul_id="9841bb6e-d632-4fdd-bfd9-ed1ef0dbf9be" value="22" />
 		<soul2skald_skill skill_id="0" soul_id="98c7479c-48c2-4197-a49d-49a71466b033" value="16" />
 		<soul2skald_skill skill_id="4" soul_id="98c7479c-48c2-4197-a49d-49a71466b033" value="15" />
 		<soul2skald_skill skill_id="14" soul_id="98c7479c-48c2-4197-a49d-49a71466b033" value="7" />
@@ -950,6 +983,7 @@
 		<soul2skald_skill skill_id="6" soul_id="9f96412a-162b-449e-a6f2-a8315133d3a1" value="17" />
 		<soul2skald_skill skill_id="4" soul_id="9ff48217-d259-4e8c-acac-9b23b7c7fe49" value="12" />
 		<soul2skald_skill skill_id="15" soul_id="9ff48217-d259-4e8c-acac-9b23b7c7fe49" value="10" />
+		<soul2skald_skill skill_id="4" soul_id="a081e02a-6bbf-4a17-bf26-e6a31aea10af" value="21" />
 		<soul2skald_skill skill_id="0" soul_id="a1b43c2f-09ad-436a-8ce2-99b4f97fc1ec" value="13" />
 		<soul2skald_skill skill_id="4" soul_id="a1b43c2f-09ad-436a-8ce2-99b4f97fc1ec" value="9" />
 		<soul2skald_skill skill_id="14" soul_id="a1b43c2f-09ad-436a-8ce2-99b4f97fc1ec" value="12" />
@@ -966,13 +1000,14 @@
 		<soul2skald_skill skill_id="34" soul_id="a1c017eb-2949-4527-9903-ed809c43340d" value="4" />
 		<soul2skald_skill skill_id="4" soul_id="a1e66fdf-fc76-4b67-a901-123517475141" value="16" />
 		<soul2skald_skill skill_id="15" soul_id="a2d23450-b63a-4283-ac9e-08178d40a9fd" value="12" />
-		<soul2skald_skill skill_id="19" soul_id="a2ff922a-0e9e-4b0f-9f1f-1432809e6c73" value="10" />
+		<soul2skald_skill skill_id="19" soul_id="a2ff922a-0e9e-4b0f-9f1f-1432809e6c73" value="15" />
 		<soul2skald_skill skill_id="19" soul_id="a4069cec-e270-4221-8318-654822240a9b" value="19" />
 		<soul2skald_skill skill_id="15" soul_id="a640861e-3070-4440-8a07-b68284e9e6ad" value="29" />
 		<soul2skald_skill skill_id="16" soul_id="a640861e-3070-4440-8a07-b68284e9e6ad" value="23" />
 		<soul2skald_skill skill_id="23" soul_id="a640861e-3070-4440-8a07-b68284e9e6ad" value="23" />
 		<soul2skald_skill skill_id="19" soul_id="a6a00666-335e-4721-a04a-22269c286dd0" value="13" />
 		<soul2skald_skill skill_id="4" soul_id="a6bb7fac-0c84-4b8a-a660-75f3ee34b903" value="14" />
+		<soul2skald_skill skill_id="26" soul_id="a70def02-6ff0-490d-9c1e-66ee3452de33" value="18" />
 		<soul2skald_skill skill_id="29" soul_id="a7bdac0c-278d-481d-8c1b-57bb7a567eb0" value="15" />
 		<soul2skald_skill skill_id="19" soul_id="a96ca08a-36b4-4c60-8978-a5d4e16f66cc" value="20" />
 		<soul2skald_skill skill_id="4" soul_id="a9a3e090-ee0f-417b-af10-02e8336f00e9" value="12" />
@@ -980,6 +1015,7 @@
 		<soul2skald_skill skill_id="19" soul_id="a9abbde8-9b9a-451b-ae36-210fbed26304" value="14" />
 		<soul2skald_skill skill_id="29" soul_id="aa025bc0-1a2c-4c0e-82ab-b016c4130a1e" value="15" />
 		<soul2skald_skill skill_id="15" soul_id="ab719546-a3f3-47f2-ab16-23285a6163d2" value="11" />
+		<soul2skald_skill skill_id="4" soul_id="ad262fa7-b484-4013-a0d4-a9bee7cde6b7" value="20" />
 		<soul2skald_skill skill_id="15" soul_id="ae32d1d3-0208-4b0a-b0dd-50ec6f20847a" value="24" />
 		<soul2skald_skill skill_id="23" soul_id="ae32d1d3-0208-4b0a-b0dd-50ec6f20847a" value="24" />
 		<soul2skald_skill skill_id="0" soul_id="b076039c-ec78-43c9-9901-d441f6fc9125" value="14" />
@@ -993,7 +1029,8 @@
 		<soul2skald_skill skill_id="15" soul_id="b0e024e7-a13b-450d-8950-fa025ed93975" value="12" />
 		<soul2skald_skill skill_id="19" soul_id="b0e024e7-a13b-450d-8950-fa025ed93975" value="14" />
 		<soul2skald_skill skill_id="26" soul_id="b0e024e7-a13b-450d-8950-fa025ed93975" value="14" />
-		<soul2skald_skill skill_id="19" soul_id="b1270c6f-34d2-40c2-814c-867080dc2bd4" value="9" />
+		<soul2skald_skill skill_id="19" soul_id="b1270c6f-34d2-40c2-814c-867080dc2bd4" value="14" />
+		<soul2skald_skill skill_id="4" soul_id="b12f6ebe-9a12-4b7e-9545-d7eb22e0571a" value="25" />
 		<soul2skald_skill skill_id="26" soul_id="b13275cc-2ac0-421e-a655-8311b5f7ca32" value="12" />
 		<soul2skald_skill skill_id="0" soul_id="b158442c-f468-4aa1-bda9-eda92566e280" value="10" />
 		<soul2skald_skill skill_id="4" soul_id="b158442c-f468-4aa1-bda9-eda92566e280" value="9" />
@@ -1001,7 +1038,7 @@
 		<soul2skald_skill skill_id="14" soul_id="b158442c-f468-4aa1-bda9-eda92566e280" value="10" />
 		<soul2skald_skill skill_id="8" soul_id="b244b8da-82af-487b-b82e-0a7d59326abe" value="10" />
 		<soul2skald_skill skill_id="19" soul_id="b27e40a3-ff55-4945-9eeb-5769ca22b9c4" value="4" />
-		<soul2skald_skill skill_id="19" soul_id="b30ad630-1d85-4b2d-b71e-de91f17f34b6" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="b30ad630-1d85-4b2d-b71e-de91f17f34b6" value="17" />
 		<soul2skald_skill skill_id="15" soul_id="b3a7dcc2-70ec-43c4-8bdd-b9e1529c382d" value="12" />
 		<soul2skald_skill skill_id="16" soul_id="b3a7dcc2-70ec-43c4-8bdd-b9e1529c382d" value="14" />
 		<soul2skald_skill skill_id="17" soul_id="b3a7dcc2-70ec-43c4-8bdd-b9e1529c382d" value="13" />
@@ -1060,12 +1097,12 @@
 		<soul2skald_skill skill_id="6" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="10" />
 		<soul2skald_skill skill_id="8" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="10" />
 		<soul2skald_skill skill_id="14" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="11" />
-		<soul2skald_skill skill_id="15" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
-		<soul2skald_skill skill_id="16" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
-		<soul2skald_skill skill_id="17" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
-		<soul2skald_skill skill_id="19" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
-		<soul2skald_skill skill_id="23" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
-		<soul2skald_skill skill_id="24" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="8" />
+		<soul2skald_skill skill_id="15" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
+		<soul2skald_skill skill_id="16" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
+		<soul2skald_skill skill_id="17" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
+		<soul2skald_skill skill_id="19" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
+		<soul2skald_skill skill_id="23" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
+		<soul2skald_skill skill_id="24" soul_id="bfd2bbab-2878-4453-a87b-fd2e26f1c7e0" value="9" />
 		<soul2skald_skill skill_id="0" soul_id="c016e9a1-d361-4d69-9529-244bba61fdc0" value="3" />
 		<soul2skald_skill skill_id="4" soul_id="c016e9a1-d361-4d69-9529-244bba61fdc0" value="5" />
 		<soul2skald_skill skill_id="6" soul_id="c016e9a1-d361-4d69-9529-244bba61fdc0" value="7" />
@@ -1080,7 +1117,12 @@
 		<soul2skald_skill skill_id="19" soul_id="c12fa624-2b9e-4e61-a416-9c1d685c29de" value="4" />
 		<soul2skald_skill skill_id="15" soul_id="c1d7a46c-7538-445d-a1f2-f853b708735b" value="12" />
 		<soul2skald_skill skill_id="16" soul_id="c1d7a46c-7538-445d-a1f2-f853b708735b" value="15" />
-		<soul2skald_skill skill_id="26" soul_id="c1dae12e-3db8-4aec-996d-478dc89ae01b" value="15" />
+		<soul2skald_skill skill_id="4" soul_id="c1dae12e-3db8-4aec-996d-478dc89ae01b" value="18" />
+		<soul2skald_skill skill_id="6" soul_id="c1dae12e-3db8-4aec-996d-478dc89ae01b" value="12" />
+		<soul2skald_skill skill_id="8" soul_id="c1dae12e-3db8-4aec-996d-478dc89ae01b" value="12" />
+		<soul2skald_skill skill_id="26" soul_id="c1dae12e-3db8-4aec-996d-478dc89ae01b" value="25" />
+		<soul2skald_skill skill_id="0" soul_id="c24f9034-60e5-439e-bafb-d2ee341e81f3" value="20" />
+		<soul2skald_skill skill_id="4" soul_id="c24f9034-60e5-439e-bafb-d2ee341e81f3" value="21" />
 		<soul2skald_skill skill_id="4" soul_id="c264f585-f97b-45fb-9bc1-805672c56b0c" value="9" />
 		<soul2skald_skill skill_id="8" soul_id="c264f585-f97b-45fb-9bc1-805672c56b0c" value="21" />
 		<soul2skald_skill skill_id="33" soul_id="c264f585-f97b-45fb-9bc1-805672c56b0c" value="14" />
@@ -1092,6 +1134,7 @@
 		<soul2skald_skill skill_id="16" soul_id="c2d5bea4-47c6-4e1b-85c3-7ccdc92c6be3" value="16" />
 		<soul2skald_skill skill_id="23" soul_id="c2d5bea4-47c6-4e1b-85c3-7ccdc92c6be3" value="16" />
 		<soul2skald_skill skill_id="24" soul_id="c2d5bea4-47c6-4e1b-85c3-7ccdc92c6be3" value="16" />
+		<soul2skald_skill skill_id="4" soul_id="c468e3cd-3d19-4031-8e77-1b6784f37c21" value="25" />
 		<soul2skald_skill skill_id="0" soul_id="c4a09f4c-0c36-444e-9915-bfa1734c7d01" value="10" />
 		<soul2skald_skill skill_id="4" soul_id="c4a09f4c-0c36-444e-9915-bfa1734c7d01" value="17" />
 		<soul2skald_skill skill_id="6" soul_id="c4a09f4c-0c36-444e-9915-bfa1734c7d01" value="8" />
@@ -1139,7 +1182,6 @@
 		<soul2skald_skill skill_id="8" soul_id="caffeca8-1e52-43ba-a4a8-e70b9439185b" value="14" />
 		<soul2skald_skill skill_id="13" soul_id="caffeca8-1e52-43ba-a4a8-e70b9439185b" value="14" />
 		<soul2skald_skill skill_id="14" soul_id="caffeca8-1e52-43ba-a4a8-e70b9439185b" value="8" />
-		<soul2skald_skill skill_id="33" soul_id="caffeca8-1e52-43ba-a4a8-e70b9439185b" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="cb088fc4-e97f-4740-b359-768782a040a4" value="12" />
 		<soul2skald_skill skill_id="15" soul_id="cb088fc4-e97f-4740-b359-768782a040a4" value="12" />
 		<soul2skald_skill skill_id="0" soul_id="cbc48944-a010-4850-952c-3a1187ed7c36" value="21" />
@@ -1156,17 +1198,17 @@
 		<soul2skald_skill skill_id="0" soul_id="cc6cb387-6962-4743-8435-74afc121ee67" value="15" />
 		<soul2skald_skill skill_id="4" soul_id="cc6cb387-6962-4743-8435-74afc121ee67" value="14" />
 		<soul2skald_skill skill_id="14" soul_id="cc6cb387-6962-4743-8435-74afc121ee67" value="10" />
-		<soul2skald_skill skill_id="4" soul_id="cf22a294-f8ef-4151-9147-79dae3154fa0" value="11" />
-		<soul2skald_skill skill_id="19" soul_id="cf22a294-f8ef-4151-9147-79dae3154fa0" value="24" />
+		<soul2skald_skill skill_id="4" soul_id="cf22a294-f8ef-4151-9147-79dae3154fa0" value="14" />
+		<soul2skald_skill skill_id="19" soul_id="cf22a294-f8ef-4151-9147-79dae3154fa0" value="23" />
 		<soul2skald_skill skill_id="33" soul_id="cf22a294-f8ef-4151-9147-79dae3154fa0" value="14" />
-		<soul2skald_skill skill_id="19" soul_id="d02cae90-e5ef-4da1-9e35-44cab52fb734" value="18" />
+		<soul2skald_skill skill_id="19" soul_id="d02cae90-e5ef-4da1-9e35-44cab52fb734" value="20" />
 		<soul2skald_skill skill_id="0" soul_id="d1c93f5f-5325-4a1d-a120-20a86a283111" value="16" />
 		<soul2skald_skill skill_id="0" soul_id="d2e3d989-6bdb-46e5-966a-5749a452b0ab" value="3" />
 		<soul2skald_skill skill_id="1" soul_id="d2e3d989-6bdb-46e5-966a-5749a452b0ab" value="12" />
 		<soul2skald_skill skill_id="4" soul_id="d2e3d989-6bdb-46e5-966a-5749a452b0ab" value="16" />
 		<soul2skald_skill skill_id="15" soul_id="d2e3d989-6bdb-46e5-966a-5749a452b0ab" value="10" />
-		<soul2skald_skill skill_id="19" soul_id="d33cdfbb-3201-4368-99ac-9bc6781546dd" value="11" />
-		<soul2skald_skill skill_id="19" soul_id="d41c1dc0-8bea-4981-98e0-a95e73c85834" value="9" />
+		<soul2skald_skill skill_id="19" soul_id="d33cdfbb-3201-4368-99ac-9bc6781546dd" value="15" />
+		<soul2skald_skill skill_id="19" soul_id="d41c1dc0-8bea-4981-98e0-a95e73c85834" value="14" />
 		<soul2skald_skill skill_id="8" soul_id="d4efda26-f436-4ff3-a3de-5598c04b7843" value="14" />
 		<soul2skald_skill skill_id="0" soul_id="d605e078-8e66-4f7a-891a-86178c821bea" value="18" />
 		<soul2skald_skill skill_id="4" soul_id="d605e078-8e66-4f7a-891a-86178c821bea" value="18" />
@@ -1181,12 +1223,12 @@
 		<soul2skald_skill skill_id="26" soul_id="d861600e-b48b-4984-a26c-417c3a4bfbf9" value="15" />
 		<soul2skald_skill skill_id="19" soul_id="d8c014bd-d771-4383-8541-218b2824e75d" value="20" />
 		<soul2skald_skill skill_id="14" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="11" />
-		<soul2skald_skill skill_id="15" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
-		<soul2skald_skill skill_id="16" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
-		<soul2skald_skill skill_id="17" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
-		<soul2skald_skill skill_id="19" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
-		<soul2skald_skill skill_id="23" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
-		<soul2skald_skill skill_id="24" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="8" />
+		<soul2skald_skill skill_id="15" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
+		<soul2skald_skill skill_id="16" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
+		<soul2skald_skill skill_id="17" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
+		<soul2skald_skill skill_id="19" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
+		<soul2skald_skill skill_id="23" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
+		<soul2skald_skill skill_id="24" soul_id="d8c2149c-3767-4a43-8c5a-8c9fcb1a6b58" value="9" />
 		<soul2skald_skill skill_id="15" soul_id="d9869c1a-ffad-4eee-a3dc-22d5e3a31a46" value="12" />
 		<soul2skald_skill skill_id="4" soul_id="d999fce1-e31f-4595-a6c8-c83c215307a1" value="18" />
 		<soul2skald_skill skill_id="0" soul_id="daf5dccd-7c3a-4dea-8ea5-5724bd30381c" value="6" />
@@ -1204,7 +1246,7 @@
 		<soul2skald_skill skill_id="26" soul_id="dcd165d3-09e4-42ef-9825-0b3a34bcffe8" value="13" />
 		<soul2skald_skill skill_id="15" soul_id="dcdf7a85-2245-4d4a-ae95-268a68f56352" value="12" />
 		<soul2skald_skill skill_id="16" soul_id="dcdf7a85-2245-4d4a-ae95-268a68f56352" value="19" />
-		<soul2skald_skill skill_id="19" soul_id="dcfe7bb6-cc96-4a98-8d38-383ee069e61a" value="17" />
+		<soul2skald_skill skill_id="19" soul_id="dcfe7bb6-cc96-4a98-8d38-383ee069e61a" value="20" />
 		<soul2skald_skill skill_id="19" soul_id="dd416da1-cb50-46e9-91f8-db5670d40adb" value="13" />
 		<soul2skald_skill skill_id="19" soul_id="dd5f78b0-331a-48a1-a276-4bcda2e1948f" value="8" />
 		<soul2skald_skill skill_id="8" soul_id="dd7d0dd5-5df9-4f60-a2c7-b8447ca09d64" value="17" />
@@ -1301,6 +1343,9 @@
 		<soul2skald_skill skill_id="6" soul_id="eca898a5-75bf-4bcd-810f-60469f0f52ca" value="6" />
 		<soul2skald_skill skill_id="8" soul_id="eca898a5-75bf-4bcd-810f-60469f0f52ca" value="6" />
 		<soul2skald_skill skill_id="14" soul_id="eca898a5-75bf-4bcd-810f-60469f0f52ca" value="11" />
+		<soul2skald_skill skill_id="4" soul_id="ed79e7b5-1e70-4988-a824-97259a1155bd" value="25" />
+		<soul2skald_skill skill_id="6" soul_id="ed79e7b5-1e70-4988-a824-97259a1155bd" value="12" />
+		<soul2skald_skill skill_id="26" soul_id="ed79e7b5-1e70-4988-a824-97259a1155bd" value="18" />
 		<soul2skald_skill skill_id="0" soul_id="ef406388-7d87-4394-8bb8-883c12ec69eb" value="14" />
 		<soul2skald_skill skill_id="4" soul_id="ef406388-7d87-4394-8bb8-883c12ec69eb" value="18" />
 		<soul2skald_skill skill_id="8" soul_id="ef406388-7d87-4394-8bb8-883c12ec69eb" value="8" />
@@ -1318,9 +1363,12 @@
 		<soul2skald_skill skill_id="15" soul_id="f140e67d-5b74-4433-8339-c40bbe92253e" value="7" />
 		<soul2skald_skill skill_id="16" soul_id="f140e67d-5b74-4433-8339-c40bbe92253e" value="10" />
 		<soul2skald_skill skill_id="19" soul_id="f143064b-6463-454f-99a2-f21f70e53e4c" value="23" />
+		<soul2skald_skill skill_id="4" soul_id="f16b1707-9ae3-4d8b-be93-91c86f7149bb" value="21" />
 		<soul2skald_skill skill_id="15" soul_id="f29aeef9-7fcd-4931-976a-c82374cfb1e8" value="20" />
 		<soul2skald_skill skill_id="16" soul_id="f353c6f5-8066-49bf-8ed2-dd2787770721" value="21" />
 		<soul2skald_skill skill_id="15" soul_id="f4177f97-8965-42a5-8bc5-bf6bafc4d013" value="14" />
+		<soul2skald_skill skill_id="4" soul_id="f6aa4907-90fa-434c-85f7-d3bd96c326b6" value="20" />
+		<soul2skald_skill skill_id="8" soul_id="f6aa4907-90fa-434c-85f7-d3bd96c326b6" value="18" />
 		<soul2skald_skill skill_id="15" soul_id="f6c04421-ba03-4519-9a33-0feefe99d59e" value="10" />
 		<soul2skald_skill skill_id="0" soul_id="f70b5f5b-a923-41be-97ab-ad82c2b70683" value="23" />
 		<soul2skald_skill skill_id="4" soul_id="f70b5f5b-a923-41be-97ab-ad82c2b70683" value="23" />

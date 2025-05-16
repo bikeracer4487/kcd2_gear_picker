@@ -231,6 +231,18 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="openVisor">
 					<TreeLocation FileName="quests/prepadeniVlasskehoDvora/prepadeniVlasskehoDvora.xml" TreeName="openVisor" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="waitWithTorch">
+					<TreeLocation FileName="quests/prepadeniVlasskehoDvora/prepadeniVlasskehoDvora.xml" TreeName="waitWithTorch" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="waitAndWatch">
+					<TreeLocation FileName="quests/prepadeniVlasskehoDvora/prepadeniVlasskehoDvora.xml" TreeName="waitAndWatch" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="zizka_chatAtMetro">
+					<TreeLocation FileName="quests/prepadeniVlasskehoDvora/prepadeniVlasskehoDvora.xml" TreeName="zizka_chatAtMetro" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="cert_getUp">
+					<TreeLocation FileName="quests/prepadeniVlasskehoDvora/prepadeniVlasskehoDvora.xml" TreeName="cert_getUp" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

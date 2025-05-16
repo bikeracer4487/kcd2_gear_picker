@@ -28,7 +28,7 @@
 		<voice abbreviation="jbea" fallback_voice_id="1" fallback_voice_level="2" is_fake="false" voice_actor_id="84" voice_groups="Guards;Czechs;Merchants" voice_id="144" voice_name="James Beaumont" voice_technical_name="jamesBeaumont" />
 		<voice abbreviation="abou" fallback_voice_id="1" fallback_voice_level="2" is_fake="false" voice_actor_id="85" voice_groups="Czechs" voice_id="145" voice_name="Adrian Bouchet" voice_technical_name="adrianBouchet" />
 		<voice abbreviation="amon" fallback_voice_id="164" fallback_voice_level="0" is_fake="false" voice_actor_id="86" voice_groups="Bandits;Czechs" voice_id="146" voice_name="Alex Montyro" voice_technical_name="alechMontyro" />
-		<voice abbreviation="aals" fallback_voice_id="68" fallback_voice_level="1" is_fake="false" voice_actor_id="87" voice_groups="Czechs;UltralightMerchants" voice_id="147" voice_name="Angela Alsop" voice_technical_name="angelaAlsop" />
+		<voice abbreviation="aals" fallback_voice_id="68" fallback_voice_level="1" is_fake="false" voice_actor_id="87" voice_groups="Czechs;UltralightMerchants" voice_id="147" voice_name="Teresa Polk" voice_technical_name="angelaAlsop" />
 		<voice abbreviation="bmcf" fallback_voice_id="254" fallback_voice_level="0" is_fake="false" voice_actor_id="88" voice_groups="Czechs" voice_id="148" voice_name="Sandra Osgerby" voice_technical_name="beccaMcfadden" />
 		<voice abbreviation="dosg" fallback_voice_id="140" fallback_voice_level="0" is_fake="false" voice_actor_id="89" voice_groups="Guards;Czechs;Merchants" voice_id="149" voice_name="Daniel Osgerby" voice_technical_name="danielOsgerby" />
 		<voice abbreviation="dzap" fallback_voice_id="1" fallback_voice_level="2" is_fake="false" voice_actor_id="90" voice_groups="Czechs;No Christian Blasphemy" voice_id="150" voice_name="Daniel Zappi" voice_technical_name="danielZappi" />
@@ -88,5 +88,7 @@
 		<voice abbreviation="mcos" fallback_voice_id="222" fallback_voice_level="1" is_fake="false" voice_groups="Roma" voice_id="260" voice_name="Marcel Costea (Vajda2 Roma)" voice_technical_name="marcelCostea" />
 		<voice abbreviation="F50" fallback_voice_id="2" fallback_voice_level="2" is_fake="false" voice_groups="Roma" voice_id="261" voice_name="Žena Roma Mladá (Marika2)" voice_technical_name="F50" />
 		<voice abbreviation="ssch" fallback_voice_id="2" fallback_voice_level="2" is_fake="false" voice_groups="Jews;UltralightMerchants" voice_id="262" voice_name="Sandra Schneider" voice_technical_name="sandraSchneider" />
+		<voice abbreviation="vpai" fallback_voice_id="144" fallback_voice_level="0" is_fake="false" voice_groups="Czechs" voice_id="263" voice_name="Matthew Brenher" voice_technical_name="voicePainter" />
+		<voice abbreviation="jcli" fallback_voice_id="83" fallback_voice_level="0" is_fake="false" voice_groups="Czechs" voice_id="264" voice_name="John Comer (lisp)" voice_technical_name="johnComerLisp" />
 	</voices>
 </database>

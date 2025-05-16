@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/dlc.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\dlc.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -15,13 +15,13 @@ String Table:
   [0] ui_dlc_barber
   [1] Yes
   [2] ui_dlc_horse_racing
-  [3] NotPublished
-  [4] ui_dlc_hardcore_mode
-  [5] No
-  [6] ui_dlc_season_pass_shields
-  [7] OnlyPurchased
-  [8] ui_dlc_gold_edition_huntsman
-  [9] ui_dlc_quest_for_valor
-  [10] ui_dlc_forge_tycoon
+  [3] ui_dlc_hardcore_mode
+  [4] No
+  [5] ui_dlc_season_pass_shields
+  [6] ui_dlc_gold_edition_huntsman
+  [7] ui_dlc_quest_for_valor
+  [8] OnlyPurchased
+  [9] ui_dlc_forge_tycoon
+  [10] NotPublished
   [11] ui_dlc_mysteria_ecclesiae
   [12] ui_dlc_bandit_camps

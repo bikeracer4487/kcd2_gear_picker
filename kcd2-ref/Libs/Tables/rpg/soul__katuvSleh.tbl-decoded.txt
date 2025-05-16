@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__katuvSleh.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__katuvSleh.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 3
-  String Data Size ...... 175
-  Unique String Count ... 8
-  File Size ............. 587
+  String Data Size ...... 195
+  Unique String Count ... 9
+  File Size ............. 607
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] katuvSleh_looter
@@ -20,3 +20,4 @@ String Table:
   [5] char_MRTVY_GAMBLER_KATUV_SLEH
   [6] katuvSleh_horse
   [7] animal_wild_neutral
+  [8] char_KUN_KATUV_SLEH

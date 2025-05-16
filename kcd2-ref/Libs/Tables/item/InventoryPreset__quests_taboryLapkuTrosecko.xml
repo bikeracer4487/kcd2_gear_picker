@@ -15,7 +15,7 @@
 		<InventoryPreset Name="inventory_taboryLapkuTrosecko_kaspar">
 			<InventoryPresetRef Name="clothes_bandits_tro" />
 			<InventoryPresetRef Name="melee_combat_level_4_longsword" />
-			<InventoryPresetRef Name="pockets_bandit_light" />
+			<InventoryPresetRef Name="pockets_bandit_medium" />
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_taboryLapkuTrosecko_kasparStash">
@@ -25,7 +25,12 @@
 			<PresetItem Name="loot_silverChalice" Amount="1"/>
 		</InventoryPreset>
 
-		<InventoryPreset Name="inventory_taboryLapkuTrosecko_plesnivec" Health="0.09" HealthVariation="0.03">
+		<InventoryPreset Name="inventory_taboryLapkuTrosecko_plesnivec">
+			<ClothingPresetRef Name="taboryLapku_plesnivec" />
+			<InventoryPresetRef Name="pockets_bandit_light" />
+		</InventoryPreset>
+
+		<InventoryPreset Name="inventory_taboryLapkuTrosecko_plesnivecMonk" Health="0.09" HealthVariation="0.03">
 			<ClothingPresetRef Name="taboryLapku_plesnivec" />
 			<InventoryPresetRef Name="melee_combat_level_2_mace" />
 			<InventoryPresetRef Name="pockets_bandit_light" />
@@ -34,7 +39,7 @@
 		<InventoryPreset Name="inventory_taboryLapkuTrosecko_tlama">
 			<ClothingPresetRef Name="taboryLapku_tlama" />
 			<WeaponPresetRef Name="taboryLapku_tlama" />
-			<InventoryPresetRef Name="pockets_bandit_light" />
+			<InventoryPresetRef Name="pockets_bandit_medium" />
 		</InventoryPreset>
 	</InventoryPresets>
 </database>

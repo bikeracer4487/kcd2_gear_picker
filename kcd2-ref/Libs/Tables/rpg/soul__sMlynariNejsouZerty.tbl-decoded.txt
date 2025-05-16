@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__sMlynariNejsouZerty.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__sMlynariNejsouZerty.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,11 +7,11 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 1
-  String Data Size ...... 98
+  String Data Size ...... 93
   Unique String Count ... 3
-  File Size ............. 254
+  File Size ............. 249
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] sMlynariNejsouZerty_marketa
-  [1] kutnohorsko_settlements_rabstejnsko_sMlynariNejsouZerty
+  [1] kutnohorsko_millers_rabstejnka_sMlynariNejsouZerty
   [2] char_MLYNARKA

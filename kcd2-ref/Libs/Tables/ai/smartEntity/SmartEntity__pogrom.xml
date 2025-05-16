@@ -233,6 +233,9 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="idle">
 					<TreeLocation FileName="quests/pogrom/pogrom.xml" TreeName="idle" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="interrupt_waitAction">
+					<TreeLocation FileName="quests/pogrom/pogrom.xml" TreeName="interrupt_waitAction" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 			<UnstanceResources>
 				<UnstanceResource Resource="groomHorse" Unstance="camper_horseGroomingRight_female_horse" />

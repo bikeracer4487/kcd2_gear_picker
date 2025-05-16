@@ -1448,6 +1448,16 @@
 				<ChangeHorseUsageEffect DataSource="CurrentState" RemovesHorseUsage="True" />
 			</Effects>
 		</StopUsingHorse>
+		<StopUsingHorse Name="StopUsingHorse" Urgency="Instant" >
+			<Conditions>
+				<StanceCondition RequiredStance="horse" />
+				<HorseUsageCondition />
+				<HorseParkedCondition Negate="True" />
+			</Conditions>
+			<Effects>
+				<ChangeHorseUsageEffect DataSource="CurrentState" RemovesHorseUsage="True" />
+			</Effects>
+		</StopUsingHorse>
 		<RiderActionIn Name="GetOnHorseToPark">
 			<Conditions>
 				<NoUnstanceCondition />
@@ -1459,7 +1469,28 @@
 				<ChangeStanceEffect DataSource="CurrentState" TargetStance="horse" />
 			</Effects>
 		</RiderActionIn>
+		<RiderActionIn Name="GetOnHorseToPark" Urgency="Instant" >
+			<Conditions>
+				<NoUnstanceCondition />
+				<RightHandCondition DataSource="CurrentState" RequiresEmpty="True" />
+				<LeftHandCondition DataSource="CurrentState" RequiresEmpty="True" />
+				<HorseUsageCondition />
+			</Conditions>
+			<Effects>
+				<ChangeStanceEffect DataSource="CurrentState" TargetStance="horse" />
+			</Effects>
+		</RiderActionIn>
 		<Success Name="StopUsingParkedHorse">
+			<Conditions>
+				<StanceCondition RequiredStance="standing" />
+				<HorseUsageCondition />
+				<HorseParkedCondition />
+			</Conditions>
+			<Effects>
+				<ChangeHorseUsageEffect DataSource="CurrentState" RemovesHorseUsage="True" />
+			</Effects>
+		</Success>
+		<Success Name="StopUsingParkedHorse" Urgency="Instant" >
 			<Conditions>
 				<StanceCondition RequiredStance="standing" />
 				<HorseUsageCondition />
@@ -1596,5 +1627,18 @@
 			<ChangeRightHandContentEffect DataSource="CurrentState" LeavesEmpty="True" ValidationMode="Validate" />
 		</Effects>
 	</ExplicitFragmentAnimAction>
+	
+	
+	<!--
+	=============================== RETURN DROPPED QUEST ITEMS ====================================
+	-->
+	
+	<ReturnDroppedQuestItemAction Name="ReturnDroppedQuestItemRight" Hand="Right" />
+	<ReturnDroppedQuestItemAction Name="ReturnDroppedQuestItemRight" Hand="Right" Urgency="Instant" />
+	
+	<ReturnDroppedQuestItemAction Name="ReturnDroppedQuestItemLeft" Hand="Left" />
+	<ReturnDroppedQuestItemAction Name="ReturnDroppedQuestItemLeft" Hand="Left" Urgency="Instant" />
+	
+	
 	</NPCStateActionDatabase>
 </database>

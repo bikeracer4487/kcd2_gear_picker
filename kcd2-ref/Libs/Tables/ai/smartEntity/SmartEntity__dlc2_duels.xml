@@ -12,6 +12,36 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="exactMove">
 					<TreeLocation FileName="move/move.xml" TreeName="exactMove" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="move">
+					<TreeLocation FileName="move/move.xml" TreeName="move_move" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="moveAndWatch">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="moveAndWatch" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="leaveLevel" PreventsMonsterLod="true">
+					<TreeLocation FileName="world/sa_land.xml" TreeName="leaveLevel" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="tour_simple" PreventsMonsterLod="true">
+					<TreeLocation FileName="speech\tour_simple.xml" TreeName="speech_tour_simple" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="npcPolylog">
+					<TreeLocation FileName="speech/npcpolylog.xml" TreeName="npcPolylog" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="moveAndBark">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="moveAndBark" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="waitBeforeCombat">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="waitBeforeCombat" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="repeatBark">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="repeatBark" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="searchChestAndBark">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="searchChestAndBark" />
+				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="drankFall">
+					<TreeLocation FileName="quests/duels/duels.xml" TreeName="drankFall" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

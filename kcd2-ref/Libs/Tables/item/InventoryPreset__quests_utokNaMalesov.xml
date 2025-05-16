@@ -73,59 +73,59 @@
 		<!--=====PRESETS FOR CONCRETE UNITS===================================-->
 	<!--=====CLOTHING PRESETS FOR ENEMIES===================================-->
 	<InventoryPreset Name="inventory_utokNaMalesov_reinforcement_clothing" Mode="OneChild">
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_01" Weight="0.9" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_02" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_03" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_04" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_05" Weight="0.8" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_02" Weight="0.8" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_04" Weight="1.1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_01" Weight="1.1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_02" Weight="0.9" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_03" Weight="0.9" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_04" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_01" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_02" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_03" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_04" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_05" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_02" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_04" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_01" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_02" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_03" Weight="0.8" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_04" Weight="0.8" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="0.8" />
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_utokNaMalesov_bergovinnerCourtyardDefender_clothing" Mode="OneChild">
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_02" Weight="0.8" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_03" Weight="0.8" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_04" Weight="0.8" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_05" Weight="0.8" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_02" Weight="0.4" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_03" Weight="0.4" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_04" Weight="0.4" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_2_05" Weight="0.4" />
 			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_02" Weight="1" />
 			<ClothingPresetRef Name="utokMalesov_bergovSoldier_3_04" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_03" Weight="1.3" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_04" Weight="1.3" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="1.3" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_03" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_04" Weight="1" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="1" />
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_01" Weight="1" /> <!--=====HeavyKnight====-->
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_02" Weight="1" /> <!--=====HeavyKnight====-->
-			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_03" Weight="0.4" /> <!--=====HeavyKnight====-->
-			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_04" Weight="0.4" /> <!--=====HeavyKnight====-->
-			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_05" Weight="0.4" /> <!--=====HeavyKnight====-->
+			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_03" Weight="0.6" /> <!--=====HeavyKnight====-->
+			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_04" Weight="0.6" /> <!--=====HeavyKnight====-->
+			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_05" Weight="0.6" /> <!--=====HeavyKnight====-->
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_utokNaMalesov_bergovShooters_clothing" Mode="OneChild">
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01" Weight="0.7" />
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_02" Weight="0.7" />
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_1" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_2" Weight="1" /> <!--=====LightWithoutHelmet====-->
+			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_2" Weight="0.5" /> <!--=====LightWithoutHelmet====-->
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_3" Weight="1" />
-			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_4" Weight="1" /> <!--=====LightWithoutHelmet====-->
+			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_4" Weight="0.5" /> <!--=====LightWithoutHelmet====-->
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_5" Weight="1" />
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_6" Weight="0.7" />
 			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_7" Weight="0.7" />
-			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_8" Weight="1" /> <!--=====LightWithoutHelmet====-->
+			<ClothingPresetRef Name="utokMalesov_soldier_bergov_shooter_01_8" Weight="0.5" /> <!--=====LightWithoutHelmet====-->
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_utokNaMalesov_bergovDefenderTower_clothing" Mode="OneChild">
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_05" Weight="0.5" />
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_01" Weight="1" /> <!--=====HeavyKnight====-->
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_02" Weight="1.1" /> <!--=====HeavyKnight====-->
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_03" Weight="1" /> <!--=====HeavyKnight====-->
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_04" Weight="1.1" /> <!--=====HeavyKnight====-->
 			<ClothingPresetRef Name="utokMalesov_bergovGuard_5_05" Weight="1" /> <!--=====HeavyKnight====-->
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_01" Weight="0.6" />
-			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_02" Weight="0.6" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_01" Weight="0.5" />
+			<ClothingPresetRef Name="utokMalesov_bergovSoldier_4_02" Weight="0.5" />
 		</InventoryPreset>
 
 		<InventoryPreset Name="inventory_utokNaMalesov_bergovDefenderTowerGun_clothing" Mode="OneChild">

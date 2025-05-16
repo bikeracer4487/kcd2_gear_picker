@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__tvid.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__tvid.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 18
-  String Data Size ...... 830
-  Unique String Count ... 40
-  File Size ............. 3162
+  String Data Size ...... 850
+  Unique String Count ... 41
+  File Size ............. 3182
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] tvid_huntsmansHorse
@@ -39,16 +39,17 @@ String Table:
   [24] tvid_fishersWife
   [25] char_RYBAROVA_ZENA_VIDLAK
   [26] tvid_woman_1
-  [27] char_BOZETECHA
-  [28] tvid_man_4
-  [29] char_GENERIC_MAN_COMMONER_05
-  [30] tvid_dog_2
-  [31] tvid_man_7
-  [32] char_GENERIC_MAN_GAMEKEEPER_01
-  [33] tvid_horse_1
-  [34] char_KUN_RYBAR_VIDLAK
-  [35] tvid_man_6
-  [36] char_GENERIC_MAN_GAMEKEEPER_04
-  [37] tvid_dog_1
-  [38] tvid_horse_2
-  [39] char_KUN_KOZELUH_VIDLAK
+  [27] UltralightMerchants
+  [28] char_BOZETECHA
+  [29] tvid_man_4
+  [30] char_GENERIC_MAN_COMMONER_05
+  [31] tvid_dog_2
+  [32] tvid_man_7
+  [33] char_GENERIC_MAN_GAMEKEEPER_01
+  [34] tvid_horse_1
+  [35] char_KUN_RYBAR_VIDLAK
+  [36] tvid_man_6
+  [37] char_GENERIC_MAN_GAMEKEEPER_04
+  [38] tvid_dog_1
+  [39] tvid_horse_2
+  [40] char_KUN_KOZELUH_VIDLAK

@@ -81,13 +81,13 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="fan_common_leaningSpotDecision">
 					<TreeLocation FileName="quests/kutnohorskyTurnaj/kutnohorskyTurnaj.xml" TreeName="fan_common_leaningSpotDecision" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="npc_changeEquip" SkipMLODMove="true">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="npc_changeEquip" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/kutnohorskyTurnaj/kutnohorskyTurnaj.xml" TreeName="npc_changeEquip" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="moveAndWaitPointFast">
 					<TreeLocation FileName="quests/kutnohorskyTurnaj/kutnohorskyTurnaj.xml" TreeName="moveAndWaitPointFast" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="2" Name="fighter_animRoundEnd">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="2" Name="fighter_animRoundEnd" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/kutnohorskyTurnaj/kutnohorskyTurnaj.xml" TreeName="fighter_animRoundEnd" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="1" Name="reditel_winnerWalk" PreventsMonsterLod="true">

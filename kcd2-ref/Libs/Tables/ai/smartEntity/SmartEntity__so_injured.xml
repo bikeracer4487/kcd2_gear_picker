@@ -6,12 +6,6 @@
 				<Resource MaxInstances="-1" Name="injured" />
 			</Resources>
 			<BehaviorTemplates>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_injured_ground">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_injured_ground" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_sick">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_sick" />
-				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_wounded">
 					<TreeLocation FileName="special/so_injured.xml" TreeName="use_wounded" />
 				</SmartBehaviorTemplate>
@@ -33,44 +27,8 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="wounded">
 					<TreeLocation FileName="special/so_injured.xml" TreeName="wounded" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_healLeft">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_healLeft" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_healRight">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_healRight" />
-				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_woundedSittting">
 					<TreeLocation FileName="special/so_injured.xml" TreeName="use_woundedSittting" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_hunterInjury">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_hunterInjury" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_treating_wounded">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_treating_wounded" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_treating_healer">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_treating_healer" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_healLeft_bed">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_healLeft_bed" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_injured_bed">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_injured_bed" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_givePotion_bed">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_givePotion_bed" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_givePotion_ground">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_givePotion_ground" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_takePotion_bed">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_takePotion_bed" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_takePotion_ground">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_takePotion_ground" />
-				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_heal">
-					<TreeLocation FileName="special/so_injured.xml" TreeName="use_heal" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="1" Name="use_injured">
 					<TreeLocation FileName="special/so_injured.xml" TreeName="use_injured" />

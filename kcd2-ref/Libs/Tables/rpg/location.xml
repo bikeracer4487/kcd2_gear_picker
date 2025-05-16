@@ -39,8 +39,9 @@
 		<location icon_id="certovka" level_id="3" location_category_id="1" location_id="8c80c9b5-93db-4012-8049-a99c2855056a" location_name="location_certovka" ui_type="Unique" />
 		<location icon_id="bohounovice" level_id="3" location_category_id="1" location_id="95157e58-fea5-4449-ad1a-bee09df6ddae" location_name="location_bohounovice" ui_type="Unique" />
 		<location icon_id="kutna_hora" level_id="3" location_category_id="1" location_id="98d121c8-f500-425f-87f6-bef4a97f26d5" location_name="location_kutnaHora" ui_type="Unique" />
+		<location location_category_id="1" location_id="98fef988-2e25-467f-888f-bea0d13ca3a3" location_name="location_forge_builder" ui_type="Hidden" />
 		<location icon_id="tachov" level_id="2" location_category_id="1" location_id="a0e9f8c2-76d8-4cde-ab9c-ff96d99d6c84" location_name="location_tachov" menu_cutscene_name="main_menu_trosecko2" ui_type="Unique" />
-		<location level_id="2" location_category_id="1" location_id="a2fffca6-8f7e-4740-b4f0-ebd92bc9a819" location_name="location_staraLhota" ui_type="Hidden" />
+		<location level_id="3" location_category_id="1" location_id="a2fffca6-8f7e-4740-b4f0-ebd92bc9a819" location_name="location_staraLhota" ui_type="Hidden" />
 		<location icon_id="mill" level_id="3" location_category_id="1" location_id="aa763cb0-2bb3-40e3-ab09-edf577620027" location_name="location_danemark" ui_type="Common" />
 		<location level_id="4" location_category_id="4" location_id="ab38b4dc-aff7-4afd-8fbe-e8bf8b0a5199" location_name="location_svet_kl" menu_cutscene_name="main_menu_kutnohorsko4" ui_type="Hidden" />
 		<location icon_id="village" level_id="3" location_category_id="1" location_id="bb6cf9eb-f56f-49d8-9ef0-82b6bdeb44f5" location_name="location_mezholezy" menu_cutscene_name="main_menu_kutnohorsko2" ui_type="Common" />

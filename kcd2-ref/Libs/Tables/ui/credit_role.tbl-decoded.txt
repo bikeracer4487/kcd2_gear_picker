@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ui/credit_role.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ui\credit_role.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 2640528556
   Layout Hash ........... 2351292633
   Table Version ......... 1
-  Line Count ............ 707
-  String Data Size ...... 12229
-  Unique String Count ... 707
-  File Size ............. 29225
+  Line Count ............ 718
+  String Data Size ...... 12453
+  Unique String Count ... 718
+  File Size ............. 29713
   Calculated Line Size .. 24 (rem. 0)
 String Table:
   [0] cr_creative_director
@@ -719,3 +719,14 @@ String Table:
   [704] cr2_pln_qa_lead_prjmng
   [705] cr2_pln_cqa_jr_spec
   [706] cr2_chi_simp_lead_editor
+  [707] cr2_ashGames
+  [708] cr2_ashGames_dir
+  [709] cr2_ashGames_des
+  [710] cr2_ashGames_des_lead
+  [711] cr2_ashGames_des_nar
+  [712] cr2_ashGames_script
+  [713] cr2_ashGames_script_lead
+  [714] cr2_ashGames_script_quest
+  [715] cr2_ashGames_prod
+  [716] cr2_ashGames_prod_lead
+  [717] cr2_ashGames_producer

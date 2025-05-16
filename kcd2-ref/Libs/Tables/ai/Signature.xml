@@ -322,6 +322,14 @@
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="target" requirementType="In" type="_wuid" values="" />
 			</Parameters>
 		</TreeSignature>
+		<TreeSignature EnableBehavior="true" Name="crossCountryRide">
+			<Parameters>
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="dashTimeSeconds" requirementType="In" type="_int" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="sprintTimeSeconds" requirementType="In" type="_int" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="dashTimeVariationSeconds" requirementType="In" type="_int" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="sprintTimeVariationSeconds" requirementType="In" type="_int" values="" />
+			</Parameters>
+		</TreeSignature>
 		<TreeSignature EnableBehavior="true" Name="crossCountryRiderInit">
 			<Parameters>
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="difficultyNumber" requirementType="In" type="_int" values="" />
@@ -514,6 +522,13 @@
 			<Parameters>
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="alias" requirementType="In" type="_string" values="" />
 				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="participants" requirementType="In" type="wuid" values="" />
+			</Parameters>
+		</TreeSignature>
+		<TreeSignature EnableBehavior="true" Name="forcePolylogData_animations">
+			<Parameters>
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="alias" requirementType="In" type="_string" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="animationApproach" requirementType="In" type="enum:animationApproach" values="$enum:animationApproach.dontPlayDialogAnimations" />
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="participants" requirementType="In" type="_wuid" values="" />
 			</Parameters>
 		</TreeSignature>
 		<TreeSignature CallBehavior="true" EnableBehavior="true" Name="forcePolylogInitiatorAlias">
@@ -1263,6 +1278,12 @@
 				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="tp" requirementType="In" type="_wuid" values="" />
 			</Parameters>
 		</TreeSignature>
+		<TreeSignature CallBehavior="true" EnableBehavior="true" Name="phaseUpdated">
+			<Parameters>
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="phase" requirementType="ConstReference" type="_int" values="0" />
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="waypoints" requirementType="In" type="_wuid" values="" />
+			</Parameters>
+		</TreeSignature>
 		<TreeSignature AddInterrupt="true" Name="pickUpItem">
 			<Parameters>
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="pickUpItemData" requirementType="In" type="switch:interruptData:pickUpItem" values="" />
@@ -1476,6 +1497,18 @@
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="lookPlace" requirementType="In" type="_wuid" values="" />
 			</Parameters>
 		</TreeSignature>
+		<TreeSignature EnableBehavior="true" Name="questWatch">
+			<Parameters>
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="RelativeSpeedLimit" requirementType="In" type="enum:movementSpeed" values="" />
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="barkAliases" requirementType="In" type="_string" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="cooldown" requirementType="In" type="_string" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="cooldownVariation" requirementType="In" type="_string" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="crimeFollowerTarget" requirementType="In" type="_wuid" values="" />
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="drawTorch" requirementType="In" type="_bool" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="groupCooldown" requirementType="In" type="_string" values="" />
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="participants" requirementType="In" type="_wuid" values="" />
+			</Parameters>
+		</TreeSignature>
 		<TreeSignature CallBehavior="true" EnableBehavior="true" Name="randomMove">
 			<Parameters>
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="anchor" requirementType="In" type="_wuid" values="" />
@@ -1686,10 +1719,20 @@
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="string" requirementType="In" type="_string" values="" />
 			</Parameters>
 		</TreeSignature>
+		<TreeSignature EnableBehavior="true" Name="stringArray">
+			<Parameters>
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="stringArray" requirementType="In" type="_string" values="" />
+			</Parameters>
+		</TreeSignature>
 		<TreeSignature EnableBehavior="true" Name="stringArrayWuidArray">
 			<Parameters>
 				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="strings" requirementType="In" type="_string" values="" />
 				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="wuids" requirementType="In" type="_wuid" values="" />
+			</Parameters>
+		</TreeSignature>
+		<TreeSignature CallBehavior="true" Name="stringArraz">
+			<Parameters>
+				<VariableInfo form="Array" isOptional="false" isPersistent="false" name="stringArray" requirementType="In" type="_string" values="" />
 			</Parameters>
 		</TreeSignature>
 		<TreeSignature CallBehavior="true" EnableBehavior="true" Name="stringBool">
@@ -1987,6 +2030,7 @@
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="urgeIsChat" requirementType="In" type="_bool" values="" />
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="useMetarole" requirementType="In" type="_bool" values="" />
 				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="waveAtPlayer" requirementType="In" type="_bool" values="" />
+				<VariableInfo form="Single" isOptional="false" isPersistent="false" name="displayConfrontingCrimeIcon" requirementType="In" type="_bool" values="" />
 			</Parameters>
 		</TreeSignature>
 		<TreeSignature CallBehavior="true" EnableBehavior="true" Name="urgeDialog_crimeScene">

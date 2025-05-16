@@ -81,6 +81,7 @@
 		<RandomEventOptionSet Name="S54Vazoun_Player" Options="GreetS54Vazoun IgnoreS54Vazoun" />
 		<RandomEventOptionSet Name="S54Poslicek_Event" Options="GreetS54Poslicek IgnoreS54Poslicek" />
 		<RandomEventOptionSet Name="S54Poslicek_Player" Options="GreetS54Poslicek IgnoreS54Poslicek" />
+		<RandomEventOptionSet Name="U07Plesnivec_Player" Options="ExamineWandererDevil Ignore" />
 		<RandomEventOptionSet Name="Frisk" Options="Stop Ignore" />
 		<RandomEventOptionSet Name="Arrest" Options="Stop Flee" />
 		<RandomEventOptionSet Name="Selfhelp" Options="Stop Flee" />

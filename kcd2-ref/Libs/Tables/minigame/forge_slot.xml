@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
+	<forge_slots version="1">
+		<forge_slot name="armorer" scope="yard" ui_name="ui_nm_slot_armorer" ui_order="100" />
+		<forge_slot name="bed" scope="room" ui_name="ui_nm_slot_bed" ui_order="20" />
+		<forge_slot name="beehives" scope="yard" ui_name="ui_nm_slot_beehives" ui_order="112" />
+		<forge_slot name="bookshelf" scope="room" ui_name="ui_nm_slot_bookshelf" ui_order="23" />
+		<forge_slot name="candlesOrSinkOrTaxidermy" scope="room" ui_name="ui_nm_slot_candTaxidermy" ui_order="29" />
+		<forge_slot name="cellar" scope="yard" ui_name="ui_nm_slot_cellar" ui_order="105" />
+		<forge_slot name="doors" scope="room" ui_name="ui_nm_slot_doors" ui_order="28" />
+		<forge_slot name="foodShelf" scope="room" ui_name="ui_nm_slot_foodShelf" ui_order="26" />
+		<forge_slot name="fresco" scope="house" ui_name="ui_nm_slot_fresco" ui_order="5" />
+		<forge_slot name="gates" scope="yard" ui_name="ui_nm_slot_gates" ui_order="106" />
+		<forge_slot name="gazebo" scope="yard" ui_name="ui_nm_slot_gazebo" ui_order="107" />
+		<forge_slot name="ground" scope="yard" ui_name="ui_nm_slot_ground" ui_order="108" />
+		<forge_slot name="chandelier" scope="room" ui_name="ui_nm_slot_chandelier" ui_order="31" />
+		<forge_slot name="chest" scope="room" ui_name="ui_nm_slot_chest" ui_order="27" />
+		<forge_slot name="lowerFloor" scope="house" ui_name="ui_nm_slot_loweFloor" ui_order="0" />
+		<forge_slot name="maidenOrBarrel" scope="room" ui_name="ui_nm_slot_maidBarrel" ui_order="30" />
+		<forge_slot name="path" scope="yard" ui_name="ui_nm_slot_path" ui_order="109" />
+		<forge_slot name="roofAndGable" scope="house" ui_name="ui_nm_slot_roofGable" ui_order="2" />
+		<forge_slot name="signboard" scope="house" ui_name="ui_nm_slot_signboard" ui_order="7" />
+		<forge_slot name="smelter" scope="yard" ui_name="ui_nm_slot_smelter" ui_order="101" />
+		<forge_slot name="smokehouse" scope="yard" ui_name="ui_nm_slot_smokehouse" ui_order="102" />
+		<forge_slot name="stables" scope="yard" ui_name="ui_nm_slot_stables" ui_order="103" />
+		<forge_slot name="stove" scope="room" ui_name="ui_nm_slot_stove" ui_order="21" />
+		<forge_slot name="table" scope="room" ui_name="ui_nm_slot_table" ui_order="22" />
+		<forge_slot name="upperFloor" scope="house" ui_name="ui_nm_slot_uppeFloor" ui_order="1" />
+		<forge_slot name="wallPaint" scope="house" ui_name="ui_nm_slot_wallPaintHouse" ui_order="3" />
+		<forge_slot name="wallSlot1" scope="room" ui_name="ui_nm_slot_wallSlot1" ui_order="32" />
+		<forge_slot name="wallSlot2" scope="room" ui_name="ui_nm_slot_wallSlot2" ui_order="33" />
+		<forge_slot name="wallStatuettesAndVine" scope="house" ui_name="ui_nm_slot_wallVine" ui_order="6" />
+		<forge_slot name="wardrobe" scope="room" ui_name="ui_nm_slot_wardrobe" ui_order="24" />
+		<forge_slot name="watertub" scope="yard" ui_name="ui_nm_slot_watertub" ui_order="111" />
+		<forge_slot name="well" scope="yard" ui_name="ui_nm_slot_well" ui_order="110" />
+		<forge_slot name="windows" scope="house" ui_name="ui_nm_slot_windows" ui_order="4" />
+		<forge_slot name="workshop" scope="yard" ui_name="ui_nm_slot_workshop" ui_order="104" />
+		<forge_slot name="writingShelf" scope="room" ui_name="ui_nm_slot_writShelf" ui_order="25" />
+		<forge_slot name="wallPaintRoom" scope="room" ui_name="ui_nm_slot_wallPaintRoom" ui_order="34" />
+	</forge_slots>
+</database>

@@ -85,6 +85,7 @@
 		<mailbox mailbox_id="55e95eea-6ce5-43b5-bcda-c79e978f00c3" mailbox_name="horseHandler_cleanupAssets" message_limit="-1" on_accept="1" />
 		<mailbox mailbox_id="5a0068cd-acd7-4ed6-8185-9d997b5f5e03" mailbox_name="crime_campTrespassChatFeedback" message_limit="4" on_accept="2" />
 		<mailbox mailbox_id="5b08050f-dad0-4528-95b5-86475e2d7d94" mailbox_name="onLockPickingTolerance" message_limit="50" on_accept="2" />
+		<mailbox mailbox_id="5ff4bed0-0044-4864-826b-a8a5a625aa2e" mailbox_name="crime_discoverCorpse" message_limit="-1" on_accept="1" />
 		<mailbox mailbox_id="609ce6ba-a45c-43c4-b69f-3e61ce8d54ec" mailbox_name="battle_groupTag" message_limit="50" on_accept="1" />
 		<mailbox mailbox_id="6148aefd-39a7-431a-bd15-7b93564e35f2" mailbox_name="follow" message_limit="8" on_accept="1" />
 		<mailbox mailbox_id="6a12fa71-eb17-4cd5-86f7-7b3433bb1259" mailbox_name="pigFeederInbox" message_limit="-1" on_accept="2" />
@@ -117,6 +118,7 @@
 		<mailbox mailbox_id="9e90f33a-6094-4389-9eee-f4e10cbde938" mailbox_name="dialogMailbox_requestDone" message_limit="-1" on_accept="2" />
 		<mailbox mailbox_id="9ef6d4c1-5e15-44e9-977a-e1beb13161c6" mailbox_name="battle_groupController_wakeAll" message_limit="-1" on_accept="2" />
 		<mailbox mailbox_id="9f52ee75-d5b0-4392-b7e5-5de71f9fcad1" mailbox_name="lookAround_updateSoundPosition" message_limit="50" on_accept="1" />
+		<mailbox mailbox_id="9fc5abda-df10-4476-ae3d-35848a9c2712" mailbox_name="crime_spawnPilloryBreakVolumeRequest" message_limit="-1" on_accept="1" />
 		<mailbox mailbox_id="a09c7e03-00cc-41cf-814b-9a1fac2fb8fc" mailbox_name="switch_onHotEntitySeen" message_limit="8" on_accept="1" />
 		<mailbox mailbox_id="a10ecf16-001d-4a25-97ed-32ddc4c7b52e" mailbox_name="carts_aiSignal" message_limit="-1" on_accept="2" />
 		<mailbox mailbox_id="a2a720ec-409d-4eee-8ff2-b95ecb7f7784" mailbox_name="perceptionInfo_checkProperty" message_limit="8" on_accept="1" />
@@ -142,10 +144,12 @@
 		<mailbox mailbox_id="c277be54-9678-4952-b80c-6620d10b823a" mailbox_name="perceptionInfo_estimatePlayersPosition" message_limit="8" on_accept="1" />
 		<mailbox mailbox_id="c5c9dc07-543e-45a7-bced-81f1341a9202" mailbox_name="crime_hearingSubscription" message_limit="8" on_accept="1" />
 		<mailbox mailbox_id="c6efb93d-b6b9-488c-bc66-8f64b98f93ca" mailbox_name="hitReaction_surrender" message_limit="8" on_accept="1" />
+		<mailbox mailbox_id="c76e3262-c01f-4cbe-baf7-6176176fd88b" mailbox_name="perceptionInfo_report" message_limit="4" on_accept="1" />
 		<mailbox mailbox_id="c951148d-f875-4b2a-b201-e35569621711" mailbox_name="perceptionInfo_watch" message_limit="4" on_accept="1" />
 		<mailbox mailbox_id="ccdc05e7-7627-4573-95c7-a30682e6c983" mailbox_name="crime_hearingSubscriptionNotification" message_limit="8" on_accept="1" />
 		<mailbox mailbox_id="cdf79a16-8e04-4daa-b41a-69120f4e2ae6" mailbox_name="crime_attackInitiatedByConcept" message_limit="-1" on_accept="1" />
 		<mailbox mailbox_id="ce10a1b3-2432-4aaf-819c-96f7da70b23a" mailbox_name="openWorldCooldowns" message_limit="1" on_accept="1" />
+		<mailbox mailbox_id="cf10dfaf-4343-4cc1-ba7b-de3814d28879" mailbox_name="speech_switchDialog_initiatorCheck_perceptionInfo" message_limit="4" on_accept="1" />
 		<mailbox mailbox_id="d119c763-b125-4ebf-bd92-54d9d4401cbf" mailbox_name="crime_dailyCheck_chestEntry" message_limit="-1" on_accept="1" />
 		<mailbox mailbox_id="d368cfbc-615a-464a-861e-5c505d56f5b8" mailbox_name="player_getUsableMessage" message_limit="64" on_accept="1" />
 		<mailbox mailbox_id="d700c72a-aa61-4184-9090-0083d4a47be0" mailbox_name="carts_currentStop" message_limit="-1" on_accept="1" />

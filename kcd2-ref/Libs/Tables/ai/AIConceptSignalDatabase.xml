@@ -95,7 +95,7 @@
 			<Parameter Name="punishmentType" Type="enum:crime_punishmentType" />
 		</AIConceptSignal>
 
-	<AIConceptSignal Name="crime_secondArrest_interruptFinished" />
+		<AIConceptSignal Name="crime_secondArrest_interruptFinished" />
 
 		<!-- used in StopCrime module -->
 		<AIConceptSignal Name="crime_stopCrime_onReactorsStopped" />
@@ -274,6 +274,7 @@
 	<AIConceptSignal Name="shootingTargetHitData">
 		<Parameter Name="hitScore" Type="int" />
 	  <Parameter Name="shooter" Type="wuid" />
+		<Parameter Name="target" Type="wuid" />
 	</AIConceptSignal>
 	
 	<!-- for crossCountry music control -->
@@ -379,6 +380,11 @@
 	<AIConceptSignal Name="eliciting_crowdCheck">
   		<Parameter Name="crowdSize" Type="int" />
 	</AIConceptSignal>
+
+	<!-- S25 Kočovnická čest -->
+	<AIConceptSignal Name="kocovnickaCest_woodcutterAttacksPlayer">
+		<Parameter Name="woodcutter" Type="cast:wuid_soul" />
+	</AIConceptSignal>  
 	
 	</AIConceptSignalDatabase>
 

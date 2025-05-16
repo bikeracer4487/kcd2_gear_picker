@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/achievement.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\achievement.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 155717249
   Layout Hash ........... 4219760709
   Table Version ......... 1
-  Line Count ............ 51
-  String Data Size ...... 856
-  Unique String Count ... 100
-  File Size ............. 3740
+  Line Count ............ 64
+  String Data Size ...... 1121
+  Unique String Count ... 128
+  File Size ............. 4733
   Calculated Line Size .. 56 (rem. 0)
 String Table:
   [0] Bodyguard
@@ -111,4 +111,32 @@ String Table:
   [96] Platinum
   [97] 0
   [98] Hardcore
-  [99] AgainstAllOdds
+  [99] 50
+  [100] AgainstAllOdds
+  [101] 51
+  [102] FlagellumDei
+  [103] 52
+  [104] unhollyTrinity
+  [105] 53
+  [106] HenrysPaintersRemedy
+  [107] 54
+  [108] RestInOnePiece
+  [109] 55
+  [110] PrankGoneWrong
+  [111] 56
+  [112] ShouldntHavePushedIt
+  [113] 57
+  [114] StainedHonour
+  [115] 58
+  [116] HumanCanOpener
+  [117] 59
+  [118] WayWithWords
+  [119] 60
+  [120] RevengeSolvesNothing
+  [121] 61
+  [122] NoUseCryingOverSpilledInk
+  [123] 62
+  [124] BohemianGraffiti
+  [125] 63
+  [126] BohemianArise
+  [127] 64

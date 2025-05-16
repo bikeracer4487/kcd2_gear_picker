@@ -1,0 +1,21 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__maliruvLek.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 3
+  String Data Size ...... 239
+  Unique String Count ... 7
+  File Size ............. 651
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] maliruvLek_vykradacHrobu_3
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_kostelni_beggars
+  [2] char_GENERIC_MAN_COMMONER_03
+  [3] maliruvLek_vykradacHrobu_1
+  [4] char_GENERIC_MAN_COMMONER_13
+  [5] maliruvLek_vykradacHrobu_2
+  [6] char_GENERIC_MAN_COMMONER_02

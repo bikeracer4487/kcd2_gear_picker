@@ -3,5 +3,7 @@
 	<item_tags version="1">
 		<item_tag item_tag_name="harvester" />
 		<item_tag item_tag_name="poached" />
+		<item_tag item_tag_name="trainingWeapon" />
+		<item_tag item_tag_name="shieldNotAvailableInTheShieldPainting" />
 	</item_tags>
 </database>

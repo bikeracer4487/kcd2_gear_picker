@@ -110,6 +110,7 @@
 		<ScriptParam Name="combat_moraleForCombat" Value="0.2" Comment="" />
 		<ScriptParam Name="combat_fledFromAttack" Value="60000" Comment="ms" />
 		<ScriptParam Name="crime_surrenderingMaxDistance" Value="8.0" Comment="@KCD2-235217" />
+		<ScriptParam Name="crime_forceUncertainByFar" Value="150.0" Comment="@KCD2-509050" />
 		<ScriptParam Name="crime_playerIsVeryBadassThreshold" Value="0.82" Comment="" />
 		<ScriptParam Name="crime_corpseDailyCheckNumberOfLoopsBeforeChecking" Value="3" Comment="" />
 		<ScriptParam Name="crime_chestDailyCheckNumberOfLoopsBeforeChecking" Value="2" Comment="" />
@@ -256,10 +257,12 @@
 		<ScriptParam Name="crime_poaching_theft_multiplier" Value="1" Comment="" />
 		<ScriptParam Name="crime_assaultAnimal_multiplier" Value="0.5" Comment="" />
 		<ScriptParam Name="crime_murderAnimal_multiplier" Value="2" Comment="" />
+		<ScriptParam Name="crime_attributableDogCommandInCombatTimeout" Value="3000" Comment="ms" />
 		<ScriptParam Name="combat_surrenderHealthThresholdDelayed" Value="30.00" Comment="KCD2-67760" />
 		<ScriptParam Name="combat_surrenderHealthThresholdInstant" Value="10.00" Comment="KCD2-67760" />
 		<ScriptParam Name="combat_surrenderCooldownPublicFriend" Value="20000.00" Comment="20s" />
 		<ScriptParam Name="combat_surrenderCooldownPublicEnemy" Value="60000.00" Comment="1m" />
+		<ScriptParam Name="combat_fightStatusCooldown" Value="900000.00" Comment="15m" />
 
 		<!-- barkReaction priorities -->
 		<ScriptParam Name="crime_barkReactionPriority_companionComment_violent" Value="110" Comment="" />

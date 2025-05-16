@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/skald/voice.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\skald\voice.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 403996935
   Layout Hash ........... 1807636333
   Table Version ......... 1
-  Line Count ............ 87
-  String Data Size ...... 2826
-  Unique String Count ... 248
-  File Size ............. 7030
+  Line Count ............ 89
+  String Data Size ...... 2896
+  Unique String Count ... 254
+  File Size ............. 7196
   Calculated Line Size .. 48 (rem. 0)
 String Table:
   [0] UNDEFINED
@@ -90,7 +90,7 @@ String Table:
   [75] Alex Montyro
   [76] amon
   [77] alechMontyro
-  [78] Angela Alsop
+  [78] Teresa Polk
   [79] aals
   [80] angelaAlsop
   [81] Sandra Osgerby
@@ -260,3 +260,9 @@ String Table:
   [245] Sandra Schneider
   [246] ssch
   [247] sandraSchneider
+  [248] Matthew Brenher
+  [249] vpai
+  [250] voicePainter
+  [251] John Comer (lisp)
+  [252] jcli
+  [253] johnComerLisp

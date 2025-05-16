@@ -10,6 +10,7 @@
 		<perk_script perk_editor_name="BS recipe r_shortswordceremony" perk_id="1db8f4e5-dc24-48e9-a05b-3d6212576fbb" />
 		<perk_script perk_editor_name="FirstAid" perk_id="280c4479-84cc-4936-b03b-a094bafc1ca0" />
 		<perk_script perk_editor_name="BS recipe longswordHenry_reforged" perk_id="2dd0b89c-4e60-405b-8d82-04e9538f4b54" />
+		<perk_script perk_editor_name="Wildrider" perk_id="2df5690d-4079-4342-90c5-3ae814ab2194" />
 		<perk_script perk_editor_name="BS recipe r_horseshoe" perk_id="3190f739-995e-4c60-9aa7-d34ca3428494" />
 		<perk_script perk_editor_name="BS recipe r_huntingSwordBasic" perk_id="328b519f-4cb4-4127-a79a-27e6d3ffc4dc" />
 		<perk_script perk_editor_name="BS recipe r_shortswordheavy" perk_id="330b075a-2568-4d2d-bca1-b02cb60df582" />
@@ -68,6 +69,7 @@
 		<perk_script perk_editor_name="BattleCry" perk_id="6ee145c6-e7a6-46c4-a7a9-3049e8adf0ca" />
 		<perk_script perk_editor_name="DogPerson" perk_id="6ef70c3e-aac3-4368-8b75-d37d9910cf6e" />
 		<perk_script perk_editor_name="BS recipe r_longswordduel" perk_id="71eb98d9-b05e-4f76-b2b9-4de81a4204ca" />
+		<perk_script perk_editor_name="BS recipe - r_uchazec_guildSword" perk_id="78fc983b-0fc6-4cae-b68b-d01695ccffa8" />
 		<perk_script perk_editor_name="BasicLaw II" perk_id="74a0160c-1106-42b1-af40-dec4e5a1bd95" />
 		<perk_script perk_editor_name="BS recipe r_longswordcommon" perk_id="766b081c-8cd9-465a-b722-ae8ab356fa00" />
 		<perk_script perk_editor_name="BS recipe r_kovaniRelikvie_swordOfKnightValentin" perk_id="77c75659-e348-41e7-9ffa-12a2727e41fa" />
@@ -85,6 +87,7 @@
 		<perk_script perk_editor_name="BS recipe r_axework01" perk_id="a5ad2b92-a42c-49b2-b3ce-648ecf28d4bb" />
 		<perk_script perk_editor_name="SilverTongue" perk_id="a7096e82-8e3d-4325-9552-6827374697cd" />
 		<perk_script perk_editor_name="BS recipe r_axework02" perk_id="a7f9e9a6-31e5-403b-8fcc-40b70ada86cb" />
+		<perk_script perk_editor_name="On the road" perk_id="aa552942-c60e-49d1-ab77-40090261730f" />
 		<perk_script perk_editor_name="CharmingLad" perk_id="ac90a350-03aa-493d-8a41-2c6061eab74d" />
 		<perk_script perk_editor_name="BS recipe r_polearmBruncvik" perk_id="bc052134-4e12-4d25-8940-c6711b8505d1" />
 		<perk_script perk_editor_name="BattleCryII" perk_id="beca7769-0259-4e8f-9c10-aa9a10847cea" />
@@ -102,13 +105,16 @@
 		<perk_script perk_editor_name="BS recipe r_horseshoeNoble" perk_id="dd4260a9-158f-49b5-b0d0-6f93812c519f" />
 		<perk_script perk_editor_name="GoodNatured" perk_id="e37dfc8f-e674-4d29-b114-8d037277cd1b" />
 		<perk_script perk_editor_name="BS recipe r_kovaniKatuvSleh_executionersSword" perk_id="e52089c9-3a88-438b-8844-13ab33e59b0f" />
-		<perk_script perk_editor_name="BS recipe r_longswordold" perk_id="ea0be1c3-88f1-4ecd-bea6-83c2f62663a7" />
+		<perk_script perk_editor_name="Salva" perk_id="e6f1b73e-3183-4c1a-ab67-bf086ce91e75" />
 		<perk_script perk_editor_name="BS recipe r_pomatenec_longsword" perk_id="e9a31851-bd48-4e19-a587-2eaf812aff2a" />
+		<perk_script perk_editor_name="BS recipe r_longswordold" perk_id="ea0be1c3-88f1-4ecd-bea6-83c2f62663a7" />
 		<perk_script perk_editor_name="Escape artist I" perk_id="ecee2a90-309a-48d6-bc66-eec9b0825a63" />
 		<perk_script perk_editor_name="BS recipe r_axecuman" perk_id="f0ff5c94-e0a6-436f-a838-6d6e8bb725ac" />
 		<perk_script perk_editor_name="Black arts apprentice" perk_id="f1d825fa-bff0-46db-a442-4457381c9241" />
 		<perk_script perk_editor_name="BS recipe r_horseshoeNomad" perk_id="f21034f8-fcea-4a79-983a-0dd9adbc99b8" />
 		<perk_script perk_editor_name="BS recipe r_sabrenoble" perk_id="f54a514c-8fdf-46fe-9f0a-0883d07ba5a3" />
+		<perk_script perk_editor_name="BS recipe r_horseshoeSpecial_phantomHorse" perk_id="c2b04d9a-bd9b-4eba-a3cc-6fd7a1c021e1" />
 		<perk_script perk_editor_name="BS recipe r_kovaniZavodniPodkovy_caulkinHorseshoe" perk_id="f94b552d-aafd-43be-9c6f-a938cb550548" />
+		<perk_script perk_editor_name="Sagittarius" perk_id="ff4d11ff-b2f3-4618-8789-bb8ea5a1fc50" />
 	</perk_scripts>
 </database>

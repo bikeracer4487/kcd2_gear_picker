@@ -88,7 +88,7 @@
 		<statistic statistic_group_id="0" statistic_name="Imprisoned" type="IntegerSum" ui_name="stat_imprisoned" />
 		<statistic statistic_group_id="0" statistic_name="IsHardcoreMode" type="IntegerProxy" />
 		<statistic statistic_group_id="3" statistic_name="ItemsPickpocketed" type="IntegerSum" ui_name="stat_items_pickpocketed" ui_order="74" />
-		<statistic statistic_group_id="5" statistic_name="ItemsRepairDiscount" type="IntegerSum" ui_name="stat_items_repaired_discount" />
+		<statistic statistic_group_id="0" statistic_name="ItemsRepairDiscount" type="IntegerSum" ui_name="stat_items_repaired_discount" />
 		<statistic statistic_group_id="5" statistic_name="ItemsRepaired" type="IntegerSum" ui_name="stat_items_repaired" />
 		<statistic statistic_group_id="3" statistic_name="ItemsStolen" type="IntegerSum" ui_name="stat_items_stolen" ui_order="72" />
 		<statistic statistic_group_id="1" statistic_name="LiquorConsumed" type="IntegerSum" ui_name="stat_liquor_consumed" ui_order="26" />

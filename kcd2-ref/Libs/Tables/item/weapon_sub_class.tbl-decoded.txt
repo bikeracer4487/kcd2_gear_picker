@@ -1,16 +1,16 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/item/weapon_sub_class.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\item\weapon_sub_class.tbl
 ======================================================================
 Header:
   File Format Version ... 3
-  Descriptors Hash ...... 1544500516
-  Layout Hash ........... 1361462829
+  Descriptors Hash ...... 1742236026
+  Layout Hash ........... 4149617061
   Table Version ......... 1
-  Line Count ............ 7
-  String Data Size ...... 84
-  Unique String Count ... 7
-  File Size ............. 224
-  Calculated Line Size .. 16 (rem. 0)
+  Line Count ............ 11
+  String Data Size ...... 463
+  Unique String Count ... 15
+  File Size ............. 755
+  Calculated Line Size .. 24 (rem. 0)
 String Table:
   [0] undefined
   [1] axe for stabbing
@@ -19,3 +19,11 @@ String Table:
   [4] pocketed
   [5] training
   [6] stub
+  [7] shield kite
+  [8] objects/characters/humans/male/weapon/shield/shield_kite/shield_kite_decal.mtl
+  [9] shield pavise
+  [10] objects/characters/humans/male/weapon/shield/shield_pavise/shield_pavise_decal.mtl
+  [11] shield cuman
+  [12] objects/characters/humans/male/weapon/shield/shield_cuman/shield_cuman_decal.mtl
+  [13] shield heater
+  [14] objects/characters/humans/male/weapon/shield/shield_heater/shield_heater_decal.mtl

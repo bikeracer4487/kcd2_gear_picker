@@ -103,12 +103,12 @@ def process_tbl_file(file_path):
     try:
         output_path = f"{file_path}-decoded.txt"
         
-        # Skip if output file already exists
+        # Check if overwriting existing file
         if os.path.exists(output_path):
-            print(f"Output file already exists, skipping: {output_path}")
-            return
-        
-        print(f"Processing: {file_path}")
+            print(f"Overwriting existing file: {output_path}")
+        else:
+            print(f"Processing: {file_path}")
+            
         tbl_file = TBLFile()
         tbl_file.read(file_path)
         

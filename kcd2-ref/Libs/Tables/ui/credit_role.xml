@@ -708,5 +708,16 @@
 		<credit_role credit_layout_id="7" credit_role_id="1394" credit_role_name="cr2_pln_qa_lead_prjmng" order_by="8037" role_group="plaion" />
 		<credit_role credit_layout_id="7" credit_role_id="1395" credit_role_name="cr2_pln_cqa_jr_spec" order_by="8053" role_group="plaion" />
 		<credit_role credit_layout_id="7" credit_role_id="1396" credit_role_name="cr2_chi_simp_lead_editor" order_by="3406" role_group="loca_chi" />
+		<credit_role credit_layout_id="4" credit_role_id="1397" credit_role_name="cr2_ashGames" order_by="6600" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1398" credit_role_name="cr2_ashGames_dir" order_by="6605" role_group="ashborneGames" />
+		<credit_role credit_layout_id="12" credit_role_id="1399" credit_role_name="cr2_ashGames_des" order_by="6607" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1400" credit_role_name="cr2_ashGames_des_lead" order_by="6610" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1401" credit_role_name="cr2_ashGames_des_nar" order_by="6615" role_group="ashborneGames" />
+		<credit_role credit_layout_id="12" credit_role_id="1402" credit_role_name="cr2_ashGames_script" order_by="6620" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1403" credit_role_name="cr2_ashGames_script_lead" order_by="6625" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1404" credit_role_name="cr2_ashGames_script_quest" order_by="6630" role_group="ashborneGames" />
+		<credit_role credit_layout_id="12" credit_role_id="1405" credit_role_name="cr2_ashGames_prod" order_by="6635" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1406" credit_role_name="cr2_ashGames_prod_lead" order_by="6640" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1407" credit_role_name="cr2_ashGames_producer" order_by="6645" role_group="ashborneGames" />
 	</credit_roles>
 </database>

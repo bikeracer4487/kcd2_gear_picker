@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="barbora" xsi:noNamespaceSchemaLocation="../database.xsd">
+	<souls version="2">
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_looters" initial_clothing_dirt="0" social_class_id="60" soul_archetype_id="0" soul_id="24dff3f8-89e7-40d0-bab0-1589635bc66e" soul_name="posledniBereVse_kupec" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_looters" initial_clothing_dirt="0" social_class_id="60" soul_archetype_id="0" soul_id="48f8fb4c-e528-43da-ae91-cfa26c70fa67" soul_name="posledniBereVse_posila1" soul_vip_class_id="0" xp_multiplier="0" />
+		<soul brain_id="4b914d1c-724a-a92d-3e6b-d183d35b8b98" digestion_multiplier="0" factionName="kutnohorsko_settlements_sedlec_commonFolk_looters" initial_clothing_dirt="0" social_class_id="60" soul_archetype_id="0" soul_id="fbf72506-1c06-4da2-a363-52c9920bd2e8" soul_name="posledniBereVse_posila2" soul_vip_class_id="0" xp_multiplier="0" />
+	</souls>
+</database>

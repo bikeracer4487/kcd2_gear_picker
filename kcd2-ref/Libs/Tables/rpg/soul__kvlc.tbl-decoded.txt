@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/soul__kvlc.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__kvlc.tbl
 ======================================================================
 Header:
   File Format Version ... 3
@@ -7,9 +7,9 @@ Header:
   Layout Hash ........... 3826342426
   Table Version ......... 2
   Line Count ............ 5
-  String Data Size ...... 238
+  String Data Size ...... 232
   Unique String Count ... 11
-  File Size ............. 906
+  File Size ............. 900
   Calculated Line Size .. 128 (rem. 0)
 String Table:
   [0] kvlc_dog_1
@@ -17,7 +17,7 @@ String Table:
   [2] kvlc_man_2
   [3] char_GENERIC_MAN_COMMONER_23
   [4] kvlc_man_1
-  [5] char_GENERIC_MAN_COMMONER_02
+  [5] char_PREDAK_DREVORUBCU
   [6] kvlc_deadGamekeeper
   [7] deadBodies
   [8] char_OBESENY_HAJNY_VLCI_HORY

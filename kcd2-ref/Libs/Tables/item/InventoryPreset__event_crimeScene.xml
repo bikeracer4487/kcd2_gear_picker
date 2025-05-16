@@ -10,6 +10,10 @@
 			<InventoryPresetRef Name="clothes_burgher_male"/>
 			<InventoryPresetRef Name="pockets_burgher"/>
 		</InventoryPreset>
+        		<InventoryPreset Name="inventory_crimeScene_villager" Health="0.03" HealthVariation="0.02">
+			<InventoryPresetRef Name="clothes_villager_male"/>
+			<InventoryPresetRef Name="pockets_villager"/>
+		</InventoryPreset>
 		<InventoryPreset Name="inventory_crimeScene_horse" Mode="OneChild" Health="0.03" HealthVariation="0.02">
 			<ClothingPresetRef Name="horse_common01" />
 			<ClothingPresetRef Name="horse_common02" />

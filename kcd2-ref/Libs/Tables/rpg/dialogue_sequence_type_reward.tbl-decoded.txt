@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/dialogue_sequence_type_reward.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\dialogue_sequence_type_reward.tbl
 ======================================================================
 Header:
   File Format Version ... 3

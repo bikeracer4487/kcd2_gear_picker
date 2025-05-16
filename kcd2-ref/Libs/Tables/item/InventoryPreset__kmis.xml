@@ -36,6 +36,7 @@
 			<PresetItem Name="recipe_aesopPotion" Amount="1"/>
 			<PresetItem Name="herb_dried_belladona" Amount="6"/>
 			<PresetItem Name="special_teethBoar" Amount="3"/>
+			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_kmis_man_8">
 			<InventoryPresetRef Name="clothes_labourer"/>

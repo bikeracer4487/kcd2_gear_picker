@@ -1,5 +1,5 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/ai/ai_variable_sync.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\ai\ai_variable_sync.tbl
 ======================================================================
 Header:
   File Format Version ... 3

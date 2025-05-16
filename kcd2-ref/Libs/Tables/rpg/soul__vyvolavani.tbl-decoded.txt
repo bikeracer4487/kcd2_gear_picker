@@ -1,0 +1,23 @@
+======================================================================
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\soul__vyvolavani.tbl
+======================================================================
+Header:
+  File Format Version ... 3
+  Descriptors Hash ...... 2656347562
+  Layout Hash ........... 3826342426
+  Table Version ......... 2
+  Line Count ............ 5
+  String Data Size ...... 402
+  Unique String Count ... 9
+  File Size ............. 1070
+  Calculated Line Size .. 128 (rem. 0)
+String Table:
+  [0] vyvolavani_eliciter_2
+  [1] kutnohorsko_settlements_kutnaHora_commonFolk_tradersAndCraftmans_kupecka
+  [2] vyvolavani_eliciter_4
+  [3] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_platnerska_parcel06
+  [4] vyvolavani_eliciter_1
+  [5] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_konskyTrh_parcel01
+  [6] vyvolavani_eliciter_3
+  [7] vyvolavani_eliciter_5
+  [8] kutnohorsko_settlements_kutnaHora_commonFolk_peasants_radnicni_parcel21

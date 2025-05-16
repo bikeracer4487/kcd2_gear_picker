@@ -1,15 +1,15 @@
 ======================================================================
-== /Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Libs/Tables/rpg/location.tbl
+== C:\GitHub\kcd2_gear_picker\kcd2-ref\Libs\Tables\rpg\location.tbl
 ======================================================================
 Header:
   File Format Version ... 3
   Descriptors Hash ...... 2466939752
   Layout Hash ........... 2429396061
   Table Version ......... 1
-  Line Count ............ 62
-  String Data Size ...... 1687
-  Unique String Count ... 101
-  File Size ............. 6675
+  Line Count ............ 63
+  String Data Size ...... 1710
+  Unique String Count ... 102
+  File Size ............. 6778
   Calculated Line Size .. 80 (rem. 0)
 String Table:
   [0] location_cikanskyTabor
@@ -82,34 +82,35 @@ String Table:
   [67] bohounovice
   [68] location_kutnaHora
   [69] kutna_hora
-  [70] location_tachov
-  [71] tachov
-  [72] location_staraLhota
-  [73] location_danemark
-  [74] location_svet_kl
-  [75] location_mezholezy
-  [76] location_klasterniHrbitov
-  [77] location_klasterniVinice
-  [78] location_semin
-  [79] semin
-  [80] location_bukovina
-  [81] location_dolany
-  [82] location_zdar_east
-  [83] location_krcak
-  [84] location_svet_tr
-  [85] main_menu_trosecko
-  [86] location_svet_kh
-  [87] main_menu_kutnohorsko
-  [88] location_zajezdniHostinecPritoky
-  [89] location_podseminskyMlyn
-  [90] location_kopecVysoka
-  [91] location_kostnice
-  [92] location_zelejov
-  [93] zelejov
-  [94] location_zikmunduvTaborAOpatovice
-  [95] location_opatovice
-  [96] opatovice
-  [97] location_tvrzNebakov
-  [98] nebakov
-  [99] location_vrchlicko
-  [100] location_vezak
+  [70] location_forge_builder
+  [71] location_tachov
+  [72] tachov
+  [73] location_staraLhota
+  [74] location_danemark
+  [75] location_svet_kl
+  [76] location_mezholezy
+  [77] location_klasterniHrbitov
+  [78] location_klasterniVinice
+  [79] location_semin
+  [80] semin
+  [81] location_bukovina
+  [82] location_dolany
+  [83] location_zdar_east
+  [84] location_krcak
+  [85] location_svet_tr
+  [86] main_menu_trosecko
+  [87] location_svet_kh
+  [88] main_menu_kutnohorsko
+  [89] location_zajezdniHostinecPritoky
+  [90] location_podseminskyMlyn
+  [91] location_kopecVysoka
+  [92] location_kostnice
+  [93] location_zelejov
+  [94] zelejov
+  [95] location_zikmunduvTaborAOpatovice
+  [96] location_opatovice
+  [97] opatovice
+  [98] location_tvrzNebakov
+  [99] nebakov
+  [100] location_vrchlicko
+  [101] location_vezak

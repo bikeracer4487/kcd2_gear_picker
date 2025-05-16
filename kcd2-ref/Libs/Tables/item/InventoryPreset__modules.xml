@@ -18,7 +18,7 @@
 		<InventoryPreset Name="inventory_someAmountOfNails" Mode="AmountCount" ModeValue="3" ModeValueVariation="1">
 			<PresetItem Name="loot_sackOfNails" Amount="10"/>
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_chanceOfaSingleCobweb" Mode="AmountFraction" ModeValue="0.3" ModeValueVariation="1">
+		<InventoryPreset Name="inventory_chanceOfaSingleCobweb" Mode="AmountFraction" ModeValue="0.8" ModeValueVariation="0.5">
 			<PresetItem Name="special_cobweb" Amount="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleCobweb">
@@ -142,6 +142,7 @@
 			<InventoryPresetRef Name="inventory_singleRandomFemaleVillagerClothing" />
 			<InventoryPresetRef Name="inventory_chanceOfSmallAmountOfHerbs" Weight="1"/>
 			<InventoryPresetRef Name="inventory_chanceForSoap" Weight="1"/>
+			<InventoryPresetRef Name="inventory_chanceOfaSingleCobweb" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_householdVillagerMedical" Mode="AmountCount" ModeValue="3" ModeValueVariation="0.5" Health="0.9" HealthVariation="0.1">
 			<InventoryPresetRef Name="inventory_singleRandomLowMedicalPotion" Weight="1.5" />
@@ -165,6 +166,7 @@
 			<InventoryPresetRef Name="inventory_someOfBurgherClothing" Weight="1"/>
 			<InventoryPresetRef Name="inventory_chanceOfSmallAmountOfHerbs" Weight="1"/>
 			<InventoryPresetRef Name="inventory_chanceForSoap" Weight="1"/>
+			<InventoryPresetRef Name="inventory_chanceOfaSingleCobweb" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_householdVillagerMaintenance" Mode="AmountCount" ModeValue="1.8" ModeValueVariation="0.5">
 			<PresetItem Name="repairKit_tailorsSmall" Amount="1" Weight="0.05"/>
@@ -271,7 +273,7 @@
 			<PresetItem Name="loot_cloth" Amount="3" Weight="0.5" Health="0.3" HealthVariation="0.1"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfLockpicks" Weight="0.05"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfBsmtMetalCheap" Weight="0.8"/>
-			<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.1"/>
+			<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.3"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfVillagerHides" Weight="0.5"/>
 			<InventoryPresetRef Name="inventory_singleRandomCraftingSkin" Weight="0.3"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfUsedVillagerShoes" Weight="0.5"/>
@@ -313,9 +315,11 @@
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_defaultJunk_junkSack" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.1" HealthVariation="0.08">
 			<InventoryPresetRef Name="inventory_smallAmountOfVillagerHides" Weight="1"/>
+			<InventoryPresetRef Name="inventory_defaultLonerClothing" Weight="1"/>
 			<InventoryPresetRef Name="inventory_singleRandomCraftingSkin" Weight="0.05"/>
 			<InventoryPresetRef Name="inventory_someAmountOfBandages" Weight="0.05"/>
 			<InventoryPresetRef Name="inventory_smallAmountOfDamagedVillagerTorsoClothing" Weight="0.6"/>
+			<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.3"/>
 			<PresetItem Name="loot_cloth" Amount="1" Weight="0.3"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_defaultJunk_junkBurgherSack" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.5" HealthVariation="0.1">
@@ -359,10 +363,10 @@
 			<InventoryPresetRef Name="inventory_smallAmountOfBarnFood" Weight="1"/>
 			<InventoryPresetRef Name="inventory_someAmountOfBandages" Weight="0.2"/>
 			<InventoryPresetRef Name="inventory_singleRandomAlcohol" Weight="0.5"/>
+			<InventoryPresetRef Name="inventory_defaultLonerClothing" Weight="1"/>
+			<InventoryPresetRef Name="inventory_singleCobweb" Weight="0.5"/>
 		</InventoryPreset>
-
-
-
+		
 	<!-- ================VALUABLES========================= -->
 
 	<InventoryPreset Name="inventory_officeValuables" Mode="AmountCount" ModeValue="0.6" ModeValueVariation="0.5">
@@ -672,7 +676,7 @@
 		<InventoryPreset Name="inventory_smallAmountOfCandles" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="1.5" Health="1.0">
 			<PresetItem Name="loot_candle" Amount="5"/>
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_singleValuableBurgherClothing" Mode="OneChild" Quality="3" Condition="0.3" ConditionVariation="0.1">
+		<InventoryPreset Name="inventory_singleValuableBurgherClothing" Mode="OneChild" Health="0.2" HealthVariation="0.1">
 			<InventoryPresetRef Name="inventory_singleRandomValuableBurgherTorsoClothing"/>
 			<InventoryPresetRef Name="inventory_singleRandomValuableBurgherHood"/>
 			<InventoryPresetRef Name="inventory_singleRandomValuableBurgherCap"/>
@@ -1979,6 +1983,135 @@
 			<InventoryPresetRef Name="inventory_singleRandomVillagerFemaleHood"/>
 			<InventoryPresetRef Name="inventory_singleRandomVillagerFemaleShoes"/>
 		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomLonerCap" Mode="OneChild">
+			<PresetItem Name="Cap19_m01_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m02_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m03_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m04_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m05_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m06_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m07_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m08_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m09_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap19_m10_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m01_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m02_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m03_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m04_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m05_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m06_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m07_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m08_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m09_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap20_m10_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m10_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m10_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap13_m10_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap30_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap30_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap30_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap30_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap29_m02_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap29_m06_C" Amount="1" Weight="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomLonerTorso" Mode="OneChild">
+			<PresetItem Name="Coat10_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat10_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat10_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat10_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat10_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m01_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m02_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m03_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m05_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m06_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m09_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m10_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat13_m11_C" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong04_m10_D" Amount="1" Weight="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomLonerHose" Mode="OneChild">
+			<PresetItem Name="HoseSeparate05_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m10_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m11_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m12_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m13_D" Amount="1" Weight="1"/>
+			<PresetItem Name="HoseSeparate05_m14_D" Amount="1" Weight="1"/>
+			<PresetItem Name="LegsPadded02_m09_E1" Amount="1" Weight="1"/>
+			<PresetItem Name="LegsPadded02_m14_E1" Amount="1" Weight="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomBeggarTorso" Mode="OneChild" >
+			<PresetItem Name="Coat03_m01_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat03_m02_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat03_m03_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat03_m04_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Coat03_m05_E" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong05_m08_E" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong05_m09_E" Amount="1" Weight="1"/>
+			<PresetItem Name="TunicLong05_m11_E" Amount="1" Weight="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomBeggarHood" Mode="OneChild" >
+			<PresetItem Name="Hood04_m01_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m02_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m03_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m04_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m05_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m06_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m07_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m08_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood04_m09_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Hood08_m10_D" Amount="1" Weight="1"/>
+		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleRandomBlacksmithTorsoClothing" Mode="OneChild">
 			<PresetItem Name="TunicShort05_m01_D" Amount="1" Weight="1"/>
 			<PresetItem Name="TunicShort05_m03_D" Amount="1" Weight="1"/>
@@ -2026,6 +2159,8 @@
 			<PresetItem Name="Cap18_m09_A" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap22_m04_A" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap23_m01_A" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap34_m01_A" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap34_m04_A" Amount="1" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleRandomValuableBurgherCap" Mode="OneChild">
 			<PresetItem Name="Cap10_m01_B" Amount="1" Weight="1"/>
@@ -2084,6 +2219,20 @@
 			<PresetItem Name="Hood06_m03_B" Amount="1" Weight="1"/>
 			<PresetItem Name="Hood06_m04_B" Amount="1" Weight="1"/>
 			<PresetItem Name="Hood06_m05_B" Amount="1" Weight="1"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_singleRandomCaftan" Mode="OneChild">
+			<PresetItem Name="Caftan01_m06_D1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan01_m07_D1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan01_m10_D1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan02_m04_A2" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan02_m07_A2" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan02_m08_A2" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan02_m09_A2" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan03_m03_C1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan03_m07_C1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan03_m08_C1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan03_m09_C1" Amount="1" Weight="1"/>
+			<PresetItem Name="Caftan04_m05_D2" Amount="1" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleRandomValuableBurgherHood" Mode="OneChild">
 			<PresetItem Name="Hood03_m01_A" Amount="1" Weight="1"/>
@@ -2392,6 +2541,7 @@
 			<PresetItem Name="Cap03_m01_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap03_m03_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap03_m02_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap03_m04_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap04_m01_D" Amount="1" Weight="10"/>
 			<PresetItem Name="Cap05_m06_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap05_m04_D" Amount="1" Weight="1"/>
@@ -2399,6 +2549,16 @@
 			<PresetItem Name="Cap05_m02_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap05_m03_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap05_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m01_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m02_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m03_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap06_m10_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap09_m02_C" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap09_m05_C" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap09_m03_C" Amount="1" Weight="1"/>
@@ -2410,6 +2570,10 @@
 			<PresetItem Name="Cap21_m04_C" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap21_m05_C" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap21_m06_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap21_m07_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap21_m08_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap21_m09_C" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap21_m10_C" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap26_m02_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap26_m03_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap26_m01_D" Amount="1" Weight="1"/>
@@ -2473,10 +2637,19 @@
 			<PresetItem Name="Cap11_m02_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap11_m03_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap11_m04_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m05_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m06_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m07_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m08_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m09_D" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap11_m10_D" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap16_m01_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap16_m02_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap16_m03_E" Amount="1" Weight="1"/>
 			<PresetItem Name="Cap16_m04_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap16_m05_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap16_m06_E" Amount="1" Weight="1"/>
+			<PresetItem Name="Cap16_m07_E" Amount="1" Weight="1"/>
 			<InventoryPresetRef Name="inventory_singleRandomCoifCap" Weight="5"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleRandomVillagerShoes" Mode="OneChild">
@@ -2532,7 +2705,7 @@
 			<PresetItem Name="Coat04_m10_C" Weight="1"/>
 			<PresetItem Name="Coat04_m11_C" Weight="1"/>
 		</InventoryPreset>
-		<InventoryPreset Name="inventory_smallAmountOfDamagedVillagerTorsoClothing" Mode="AmountCount" ModeValue="2.5" ModeValueVariation="1" Health="0.006" HealthVariation="0.005">
+		<InventoryPreset Name="inventory_smallAmountOfDamagedVillagerTorsoClothing" Mode="AmountCount" ModeValue="2.5" ModeValueVariation="1" Health="0.1" HealthVariation="0.05">
 			<PresetItem Name="TunicShort01_m02_C" Amount="1" Weight="1"/>
 			<PresetItem Name="TunicShort01_m03_C" Amount="1" Weight="1"/>
 			<PresetItem Name="TunicShort01_m06_C" Amount="1" Weight="1"/>
@@ -2594,6 +2767,12 @@
 			<PresetItem Name="F_Cap02_m02_B" Amount="1" Weight="1"/>
 			<PresetItem Name="F_Cap03_m01_B" Amount="1" Weight="1"/>
 			<PresetItem Name="F_Cap03_m02_B" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Cap03_m03_B" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Wreath01_m01" Amount="1" Weight="0.5"/>
+			<PresetItem Name="F_Wreath01_m02" Amount="1" Weight="0.5"/>
+			<PresetItem Name="F_Wreath01_m03" Amount="1" Weight="0.5"/>
+			<PresetItem Name="F_Wreath01_m04" Amount="1" Weight="0.5"/>
+			<PresetItem Name="F_Wreath01_m05" Amount="1" Weight="0.5"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_singleRandomBurgherFemaleHeadcover" Mode="OneChild">
 			<PresetItem Name="F_Veil01_m01_B" Amount="1" Weight="1"/>
@@ -2878,6 +3057,21 @@
 			<PresetItem Name="F_SimpleDress07_m18_C" Amount="1" Weight="1"/>
 			<PresetItem Name="F_SimpleDress07_m19_C" Amount="1" Weight="1"/>
 			<PresetItem Name="F_SimpleDress07_m20_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m01_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m02_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m03_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m04_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m05_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m06_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m07_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m08_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m09_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m10_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m11_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m12_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m13_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m14_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m15_C" Amount="1" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_smallAmountOfVillagerDress" Mode="AmountCount" ModeValue="3.1" ModeValueVariation="1" Health="1.0">
 			<PresetItem Name="F_SimpleDress01_m02_D" Amount="1" Weight="1"/>
@@ -2996,6 +3190,21 @@
 			<PresetItem Name="F_SimpleDress07_m18_C" Amount="1" Weight="1"/>
 			<PresetItem Name="F_SimpleDress07_m19_C" Amount="1" Weight="1"/>
 			<PresetItem Name="F_SimpleDress07_m20_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m01_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m02_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m03_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m04_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m05_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m06_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m07_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m08_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m09_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m10_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m11_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m12_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m13_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m14_C" Amount="1" Weight="1"/>
+			<PresetItem Name="F_Surcote01_m15_C" Amount="1" Weight="1"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_smallAmountOfBurgherDress" Mode="AmountCount" ModeValue="3.1" ModeValueVariation="1" Health="1.0">
 			<PresetItem Name="F_Cotehardie01_m01_B" Amount="1" Weight="1"/>
@@ -3159,6 +3368,18 @@
 			<InventoryPresetRef Name="inventory_singleRandomVillagerTorsoClothing"/>
 			<InventoryPresetRef Name="inventory_singleRandomVillagerHose"/>
 			<InventoryPresetRef Name="inventory_singleRandomVillagerOtherClothing"/>
+			<InventoryPresetRef Name="inventory_singleRandomLonerCap"/>
+			<InventoryPresetRef Name="inventory_singleRandomLonerTorso"/>
+			<InventoryPresetRef Name="inventory_singleRandomLonerHose"/>
+			<InventoryPresetRef Name="inventory_singleRandomBeggarTorso" Weight="0.2"/>
+			<InventoryPresetRef Name="inventory_singleRandomBeggarHood" Weight="0.2"/>
+		</InventoryPreset>
+		<InventoryPreset Name="inventory_defaultLonerClothing" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.2" HealthVariation="0.05">
+			<InventoryPresetRef Name="inventory_singleRandomLonerCap"/>
+			<InventoryPresetRef Name="inventory_singleRandomLonerTorso"/>
+			<InventoryPresetRef Name="inventory_singleRandomLonerHose"/>
+			<InventoryPresetRef Name="inventory_singleRandomBeggarTorso" Weight="0.2"/>
+			<InventoryPresetRef Name="inventory_singleRandomBeggarHood" Weight="0.2"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_defaultJunkClothingHigh" Mode="AmountCount" ModeValue="2.6" ModeValueVariation="0.5" Health="0.12" HealthVariation="0.05">
 			<InventoryPresetRef Name="inventory_singleRandomBurgherHood" Weight="1"/>
@@ -3210,6 +3431,13 @@
 			<PresetItem Name="GambesonShort02_m01_E1" Amount="1" Weight="1" />
 			<PresetItem Name="GambesonShort02_m02_E1" Amount="1" Weight="1" />
 			<PresetItem Name="GambesonShort02_m03_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m04_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m05_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m06_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m07_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m08_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m09_E1" Amount="1" Weight="1" />
+			<PresetItem Name="GambesonShort02_m10_E1" Amount="1" Weight="1" />
 			<PresetItem Name="GambesonShort03_m01_A4" Amount="1" Weight="1" />
 			<PresetItem Name="GambesonShort03_m02_A4" Amount="1" Weight="1" />
 			<PresetItem Name="GambesonShort04_m01_C3" Amount="1" Weight="1" />

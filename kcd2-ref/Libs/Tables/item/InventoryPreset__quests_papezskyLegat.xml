@@ -99,7 +99,7 @@
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_rider_bow">
 			<InventoryPresetRef Name="inventory_papalAdjutant_clothing"/>
-			<WeaponPresetRef Name="archer_3_01"/>
+			<WeaponPresetRef Name="archer_2_01"/>
 		</InventoryPreset>
 		<InventoryPreset Name="inventory_papezskyLegat_deadGuy">
 			<ClothingPresetRef Name="papezskyLegat_deadPiper"/>

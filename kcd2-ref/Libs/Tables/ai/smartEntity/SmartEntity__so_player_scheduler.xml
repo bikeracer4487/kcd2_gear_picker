@@ -33,6 +33,9 @@
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="playerAction_teleportWithItems" PreventsMonsterLod="true">
 					<TreeLocation FileName="player/scheduler/playerAction_teleportWithItems.xml" TreeName="player_playerAction_teleportWithItems" />
 				</SmartBehaviorTemplate>
+				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="playerAction_drawTorch" PreventsMonsterLod="true">
+					<TreeLocation FileName="player/scheduler/playerAction_drawTorch.xml" TreeName="player_playerAction_drawTorch" />
+				</SmartBehaviorTemplate>
 			</BehaviorTemplates>
 		</SmartEntityTemplate>
 	</SmartEntitys>

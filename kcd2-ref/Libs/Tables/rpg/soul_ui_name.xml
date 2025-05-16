@@ -146,5 +146,6 @@
 		<soul_ui_name soul_ui_name_id="147" soul_ui_name_name="nomad_woman" string_name="soul_ui_name_nomad_woman" />
 		<soul_ui_name soul_ui_name_id="148" soul_ui_name_name="hen" string_name="soul_ui_name_hen" />
 		<soul_ui_name soul_ui_name_id="149" soul_ui_name_name="q_setkaniVRatbori2_enemy" string_name="soul_ui_name_q_setkaniVRatbori2_enemy" />
+		<soul_ui_name soul_ui_name_id="150" soul_ui_name_name="q_stealthMiseZaJindru_drunkSoldier" string_name="soul_ui_name_q_stealthMiseZaJindru_drunkSoldier" />
 	</soul_ui_names>
 </database>

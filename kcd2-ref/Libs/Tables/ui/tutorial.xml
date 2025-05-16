@@ -21,7 +21,7 @@
 		<PopupTutorial Text="ui_tut_AlchemyTutorialPhase7" Priority="1" WindowSize="0" DurationOverride="100000h" Name="AlchemyTutorialPhase7" />
 		<PopupTutorial Text="ui_tut_AlchemyTutorialPhase8" Priority="1" WindowSize="0" DurationOverride="100000h" Name="AlchemyTutorialPhase8" />
 		<PopupTutorial Text="ui_tut_AlchemyTutorialPhase9" Priority="1" WindowSize="0" DurationOverride="100000h" Name="AlchemyTutorialPhase9" />
-		<OverlayTutorial UiOrder="55" UiScreenName="BasicCombat" IsSystemOverlay="false" Name="BasicCombat" GameModeFilter="normal" >
+		<OverlayTutorial UiOrder="55" UiScreenName="BasicCombat" IsSystemOverlay="false" Name="BasicCombat" GameModeFilter="normal">
 			<UiName StringName="ui_tutorial_overlay_basicCombat" Text="Boj pro za&#x10D;&#xE1;te&#x10D;n&#xED;ky" LoadedOn="14.1.2025 10:31:30" />
 		</OverlayTutorial>
 		<OverlayTutorial UiOrder="55" UiScreenName="BasicCombatHC" IsSystemOverlay="false" Name="BasicCombatHC" GameModeFilter="hardcore">
@@ -93,17 +93,19 @@
 		<PopupTutorial Text="ui_tut_ComboTutorialPhase0" Priority="1" DisableCloseButton="true" WindowSize="1" DurationOverride="100000h" Name="ComboTutorialPhase0" Repeatable="true" />
 		<PopupTutorial Text="ui_tut_ComboTutorialPhase0a" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="ComboTutorialPhase0a" Repeatable="true" />
 		<PopupTutorial Text="ui_tut_ComboTutorialPhase1" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="ComboTutorialPhase1" Repeatable="true" />
+		<PopupTutorial Text="ui_tut_ComboTutorialPhase1_withHint" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="ComboTutorialPhase1_withHint" Repeatable="true" />
 		<PopupTutorial Text="crime_arrest_text_48rq" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_arrest" />
 		<PopupTutorial Text="crime_bodyfoundtrespass_t_hQkl" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_BodyFoundTrespass" />
 		<PopupTutorial Text="crime_checkhomestashesthe_MvmX" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_CheckHomeStashesTheft" />
 		<PopupTutorial Text="crime_crimeattribution_te_fVDX" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_crimeAttribution" />
 		<PopupTutorial Text="crime_crimelist_text_CP1z" Priority="0" DialogueSync="true" WindowSize="0" DurationOverride="10s" Name="crime_crimeList" />
 		<PopupTutorial Text="crime_defensemode_text_Jj2D" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_defenseMode" />
+		<PopupTutorial Text="crime_ownedbed_text_XglW" Priority="0" WindowSize="0" Name="crime_OwnedBed" />
 		<PopupTutorial Text="crime_playerissuspicious__wuYB" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_PlayerIsSuspicious" />
 		<PopupTutorial Text="crime_secondaryperception_zdtJ" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_SecondaryPerceptionTheft" />
 		<PopupTutorial Text="crime_surrendercooldown_t_qIp6" Priority="0" WindowSize="0" DurationOverride="10s" Name="crime_surrenderCooldown" />
-		<PopupTutorial Text="ui_tut_m02_t08_investigationIcon" Priority="0" WindowSize="0" DurationOverride="10s" OverlayLink="OB_T34_Crime" Name="crimeIcon_investigating" GameModeFilter="normal" />
 		<PopupTutorial Text="m02_rabbiticon_text_DOtU" Priority="0" WindowSize="0" DurationOverride="10s" OverlayLink="OB_T34_Crime" Name="crimeIcon_general" GameModeFilter="normal" />
+		<PopupTutorial Text="ui_tut_m02_t08_investigationIcon" Priority="0" WindowSize="0" DurationOverride="10s" OverlayLink="OB_T34_Crime" Name="crimeIcon_investigating" GameModeFilter="normal" />
 		<PopupTutorial Text="ui_tut_DrawBowWithoutArrowsTutorialText" Priority="0" WindowSize="0" DurationOverride="10s" Name="DrawBowWithoutArrowsTutorialText" />
 		<PopupTutorial Text="ui_tut_DrawBowWithoutStatsTutorialText" Priority="0" WindowSize="0" DurationOverride="10s" Name="DrawBowWithoutStatsTutorialText" />
 		<PopupTutorial Text="ui_tut_DrawWithoutStatsTutorialText" Priority="0" WindowSize="0" DurationOverride="10s" Name="DrawWithoutStatsTutorialText" />
@@ -141,7 +143,6 @@
 		<OverlayTutorial UiOrder="20" UiScreenName="RPG" IsSystemOverlay="false" Name="M02_O16_RPG">
 			<UiName StringName="ui_tutorial_overlay_rpg" Text="Hr&#xE1;&#x10D;" LoadedOn="24.9.2024 19:33:46" />
 		</OverlayTutorial>
-		<PopupTutorial Text="m02_rabbiticon_text_DOtU" Priority="0" WindowSize="0" DurationOverride="10s" OverlayLink="OB_T34_Crime" Name="m02_RabbitIcon" />
 		<PopupTutorial Text="ui_tut_m02_t01_bleeding" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T01_Bleeding" />
 		<PopupTutorial Text="ui_tut_m02_t02_hunger" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T02_Hunger" />
 		<PopupTutorial Text="ui_tut_m02_t04_savingGame" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T04_SavingGame" />
@@ -150,10 +151,6 @@
 		<PopupTutorial Text="ui_tut_m02_t06_compass" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T06_Compass" GameModeFilter="normal" />
 		<PopupTutorial Text="m02_t06_compasshc_text_TYOm" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T06_CompassHC" GameModeFilter="hardcore" />
 		<PopupTutorial Text="ui_tut_m02_t07_buryCorpse" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T07_BuryCorpse" />
-		<PopupTutorial Text="ui_tut_m02_t08_investigationIcon" Priority="0" WindowSize="0" DurationOverride="10s" OverlayLink="OB_T34_Crime" Name="M02_T08_InvestigationIcon" GameModeFilter="normal" />
-		<PopupTutorial Text="ui_tut_m02_t09_confrontationIcon" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T09_ConfrontationIcon" />
-		<PopupTutorial Text="ui_tut_m02_t10_goldenSwordsIcon" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T10_GoldenSwordsIcon" />
-		<PopupTutorial Text="ui_tut_m02_t11_silverSwordsIcon" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T11_SilverSwordsIcon" />
 		<PopupTutorial Text="ui_tut_m02_t12_avoidCombat" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T12_AvoidCombat" />
 		<PopupTutorial Text="ui_tut_m02_t13_alchemy" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T13_Alchemy" />
 		<PopupTutorial Text="ui_tut_m02_t14_tiredeness" Priority="0" WindowSize="0" DurationOverride="10s" Name="M02_T14_Tiredeness" />
@@ -161,7 +158,7 @@
 		<OverlayTutorial UiOrder="120" UiScreenName="OpenWorld" IsSystemOverlay="false" Name="M03_T1_Openworld">
 			<UiName StringName="ui_tutorial_overlay_openWorld" Text="Zlo&#x10D;in a reputace" LoadedOn="24.9.2024 19:33:46" />
 		</OverlayTutorial>
-		<PopupTutorial Text="ui_tut_m05_t01_enoughCharisma" Priority="0" WindowSize="0" DurationOverride="30s" OverlayLink="HenryFall" Name="M05_T01_enoughCharisma" RemindAfterLongTime="false" Repeatable="true" />
+		<PopupTutorial Text="ui_tut_m05_t01_enoughCharisma" Priority="0" WindowSize="0" DurationOverride="30s" OverlayLink="CharismaHelp" Name="M05_T01_enoughCharisma" RemindAfterLongTime="false" Repeatable="true" />
 		<OverlayTutorial UiOrder="0" UiScreenName="M09PointOfNoReturn" VisibleInMenu="false" IsSystemOverlay="true" Name="M09__PointOfNoReturn" />
 		<OverlayTutorial UiOrder="270" UiScreenName="StoneThrowing" IsSystemOverlay="false" Name="M11_StoneThrowingTutorial">
 			<UiName StringName="ui_tutorial_overlay_stoneThrowing" Text="Shazov&#xE1;n&#xED; kamen&#x16F;" LoadedOn="24.9.2024 19:33:46" />
@@ -183,6 +180,7 @@
 		<PopupTutorial Text="ui_tut_MasterstrikeTutorialPhase1" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="MasterstrikeTutorialPhase1" />
 		<PopupTutorial Text="ui_tut_MasterstrikeTutorialPhase2" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="MasterstrikeTutorialPhase2" />
 		<PopupTutorial Text="ui_tut_MasterstrikeTutorialPhase3" Priority="1" DisableCloseButton="true" WindowSize="0" DurationOverride="100000h" Name="MasterstrikeTutorialPhase3" />
+		<PopupTutorial Text="mountedarcheryfollowroad__KExE" Priority="0" WindowSize="0" DurationOverride="10s" Name="MountedArcheryFollowRoad" />
 		<OverlayTutorial UiOrder="50" UiScreenName="Skillcheck" IsSystemOverlay="false" Name="OB_O01_Skillcheck">
 			<UiName StringName="ui_tutorial_overlay_skillcheck" Text="P&#x159;esv&#x11B;d&#x10D;ov&#xE1;n&#xED;" LoadedOn="24.9.2024 19:33:46" />
 		</OverlayTutorial>
@@ -254,6 +252,8 @@
 		<OverlayTutorial UiOrder="70" UiScreenName="CombosHC" IsSystemOverlay="false" Name="OB_O22_CombosHC" GameModeFilter="hardcore">
 			<UiName StringName="ui_tutorial_overlay_combos" Text="Boj pro pokro&#x10D;il&#xE9;" LoadedOn="14.1.2025 10:31:30" />
 		</OverlayTutorial>
+		<OverlayTutorial UiOrder="75" VisibleInMenu="false" IsSystemOverlay="false" Name="OB_O22a_CombosTraining" GameModeFilter="normal" />
+		<OverlayTutorial UiOrder="75" VisibleInMenu="false" IsSystemOverlay="false" Name="OB_O22a_CombosTrainingHC" GameModeFilter="hardcore" />
 		<OverlayTutorial UiOrder="80" UiScreenName="Masterstrike" IsSystemOverlay="false" Name="OB_O23_Masterstrike" GameModeFilter="normal">
 			<UiName StringName="ui_tutorial_overlay_masterstrike" Text="Mistrovsk&#xFD; &#xFA;tok" LoadedOn="14.1.2025 10:31:30" />
 		</OverlayTutorial>
@@ -262,6 +262,9 @@
 		</OverlayTutorial>
 		<OverlayTutorial UiOrder="215" UiScreenName="BarberMinigame" IsSystemOverlay="false" Name="OB_O24_Barber">
 			<UiName StringName="ui_tutorial_overlay_barber" Text="Brad&#xFD;&#x159;" CreatedOn="22.1.2025 12:04:47" Translator="Michal Jarol&#xED;mek" />
+		</OverlayTutorial>
+		<OverlayTutorial UiOrder="217" UiScreenName="ShieldPainting" IsSystemOverlay="false" Name="OB_O25_ShieldPainting">
+			<UiName StringName="ui_tutorial_overlay_shieldPainting" Text="Malov&#xE1;n&#xED; na &#x161;t&#xED;t" CreatedOn="22.1.2025 12:18:57" Translator="Michal Jarol&#xED;mek" />
 		</OverlayTutorial>
 		<PopupTutorial Text="ui_tut_ob_T01_cookingFood" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T01_CookingFood" />
 		<PopupTutorial Text="ui_tut_ob_T02_smokingFood" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T02_SmokingFood" />
@@ -296,7 +299,7 @@
 		<PopupTutorial Text="ui_tut_ob_t31_dicebadge" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T31_DiceBadge" />
 		<PopupTutorial Text="ob_t32_helmvisor_text_ACel" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T32_HelmVisor" />
 		<PopupTutorial Text="ob_t33_horseequip_text_PB77" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T33_HorseEquip" />
-		<OverlayTutorial UiOrder="110" UiScreenName="Crime" IsSystemOverlay="false" Name="OB_T34_Crime">
+		<OverlayTutorial UiOrder="110" UiScreenName="Crime" IsSystemOverlay="false" Name="OB_T34_Crime" GameModeFilter="normal">
 			<UiName StringName="ui_tutorial_overlay_Crime" Text="Ukazatel chov&#xE1;n&#xED; (Zaj&#xED;c)" LoadedOn="14.1.2025 10:31:30" />
 		</OverlayTutorial>
 		<PopupTutorial Text="ui_tut_ob_t34_firstAlchemyTable" Priority="0" WindowSize="0" DurationOverride="10s" Name="OB_T34_FirstAlchemyTable" />
@@ -311,6 +314,9 @@
 		<PopupTutorial Text="ui_tut_PickpocketingTutorial0a" Priority="0" DialogueSync="true" WindowSize="1" DurationOverride="10s" Name="PickpocketingTutorial0a" />
 		<PopupTutorial Text="ui_tut_PickpocketingTutorial1" Priority="0" WindowSize="1" DurationOverride="10s" Name="PickpocketingTutorial1" />
 		<PopupTutorial Text="ui_tut_PlayerMountEncumbered" Priority="0" WindowSize="0" DurationOverride="10s" Name="PlayerMountEncumbered" RepeatCooldown="30s" />
+		<OverlayTutorial UiOrder="0" UiScreenName="PointOfNoReturnMonastery" VisibleInMenu="false" IsSystemOverlay="true" Name="PointOfNoReturn_Monastery">
+			<UiName StringName="ui_tutorial_overlay_Crime" Text="Ukazatel chov&#xE1;n&#xED; (Zaj&#xED;c)" LoadedOn="14.1.2025 10:31:30" />
+		</OverlayTutorial>
 		<OverlayTutorial UiOrder="280" UiScreenName="PouringWine" IsSystemOverlay="false" Name="PouringWine">
 			<UiName StringName="ui_tutorial_overlay_PouringWine" Text="Nal&#xE9;v&#xE1;n&#xED; v&#xED;na" LoadedOn="24.9.2024 19:33:46" />
 		</OverlayTutorial>

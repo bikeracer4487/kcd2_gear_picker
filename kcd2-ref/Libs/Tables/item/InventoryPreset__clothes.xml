@@ -412,6 +412,9 @@
 			<ClothingPresetRef Name="f_nomad_02" />
 			<ClothingPresetRef Name="f_nomad_03" />
 			<ClothingPresetRef Name="f_nomad_04" />
+            <ClothingPresetRef Name="f_nomad_05" />
+			<ClothingPresetRef Name="f_nomad_06" />
+			<ClothingPresetRef Name="f_nomad_07" />
 		</InventoryPreset>
 		<InventoryPreset Name="clothes_nomad_male" Mode="OneChild">
 			<ClothingPresetRef Name="nomad_01" />

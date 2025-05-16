@@ -3,7 +3,7 @@
 	<SmartEntitys version="1">
 		<SmartEntityTemplate DatabaseId="af5b870b-a91d-401b-8358-7dd450b7e152" Name="taboryLapkuTrosecko" UpdatePriority="false">
 			<BehaviorTemplates>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="kaspar_overseeTreasure">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="kaspar_overseeTreasure" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/taboryLapkuTrosecko/kaspar.xml" TreeName="kaspar_overseeTreasure" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="leaveLevel" PreventsMonsterLod="true">
@@ -18,7 +18,7 @@
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="monk_ambush">
 					<TreeLocation FileName="quests/taboryLapkuTrosecko/bandits.xml" TreeName="monk_ambush" />
 				</SmartBehaviorTemplate>
-				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="kaspar_angry">
+				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="kaspar_angry" PreventsMonsterLod="true">
 					<TreeLocation FileName="quests/taboryLapkuTrosecko/kaspar.xml" TreeName="kaspar_angry" />
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="bandits_ambushAttack">
@@ -26,6 +26,9 @@
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Disabled" MaxInstances="-1" Name="monk_ambushBark">
 					<TreeLocation FileName="quests/taboryLapkuTrosecko/bandits.xml" TreeName="monk_ambushBark" />
+					<Inboxes>
+						<InboxTemplate InboxId="5201b5fc-b24b-49ab-b409-23c13ae08e4e" Priority="0" />
+					</Inboxes>
 				</SmartBehaviorTemplate>
 				<SmartBehaviorTemplate InitialState="Enabled" MaxInstances="-1" Name="wait">
 					<TreeLocation FileName="quests\hledaniPsa\hledaniPsa.xml" TreeName="wait" />
