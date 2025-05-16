@@ -29,6 +29,8 @@ When working with this repository, the following guidelines should be followed:
 - `/src/main/`: Contains the core code we'll be modifying
 - `/src/helmet_only/`, `/src/random/`, `/src/ranged/`: Reference code only, not to be used
 - `/kcd2-ref/`: Contains reference materials about KCD2's armor system mechanics
+  - `/Libs/Tables/item/`: Contains item definitions and properties
+  - `/Localization/English/`: Contains localization files for looking up item display names
 
 ## Documentation Update Guidelines
 
@@ -70,6 +72,25 @@ The implementation must adhere to these core requirements based on KCD2's armor 
    - Correctly identify item materials (cloth, leather, chainmail, plate)
    - Consider material-specific strengths and weaknesses in optimizations
    - Apply appropriate weights to different stats based on optimization goals
+
+## Item Lookup Guidelines
+
+When looking up game items for analysis or implementation:
+
+1. **Item Name Resolution Process:**
+   - First, identify the item's internal name or ID from item XML files (typically in `/kcd2-ref/Libs/Tables/item/`)
+   - Next, look for the item's `UIName` attribute, which is a localization key (e.g., `ui_nm_legsplate02_m01`)
+   - Finally, use the localization file (`/kcd2-ref/Localization/English/text_ui_items.xml`) to find the in-game display name by matching the UIName key in the first cell of a row
+
+2. **Special Considerations:**
+   - Some items have alias references that point to the actual item (e.g., `alias_prepadeni_legsPlate`)
+   - Look for the `SourceItemId` attribute in ItemAlias entries to find the referenced actual item
+   - When analyzing item properties, always work with the actual item entry, not the alias
+
+3. **Important Item Properties:**
+   - For armor items, check `ArmorArchetypeId` to determine special behaviors such as slot occupation
+   - Items with `ArmorArchetypeId="58"` occupy both leg and boot slots
+   - Check `HidingGroups` attribute to understand what visual elements an item might hide or replace
 
 ## Version Tracking
 

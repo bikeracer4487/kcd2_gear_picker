@@ -12,7 +12,8 @@ This document provides a comprehensive technical breakdown of the Kingdom Come D
 6. [Layering Dependencies](#layering-dependencies)
 7. [Equipment Parts](#equipment-parts)
 8. [Armor Statistics](#armor-statistics)
-9. [Implications for Gear Optimization](#implications-for-gear-optimization)
+9. [Item Localization](#item-localization)
+10. [Implications for Gear Optimization](#implications-for-gear-optimization)
 
 ## Overview
 
@@ -192,6 +193,55 @@ Material effectiveness against damage types:
   - Calculation: Cumulative across all equipment
 - **Durability/Condition**: Maximum potential robustness and current repair state
 - **Dirt & Blood**: Dynamic indicators affecting Charisma and Conspicuousness
+
+## Item Localization
+
+KCD2 uses a localization system to map internal item IDs and attributes to displayable in-game names. Understanding this system is crucial for identifying items properly:
+
+### Localization Structure
+
+1. **Item Definition Files** (found in `/Libs/Tables/item/`)
+   - Define items with internal names (e.g., `LegsPlate02_m01_B4`)
+   - Contain the `UIName` attribute which is a localization key (e.g., `ui_nm_legsplate02_m01`)
+   - Contain the item's actual properties (`DefenseStab`, `Weight`, `ArmorArchetypeId`, etc.)
+
+2. **Localization Files** (found in `/Localization/English/`)
+   - `text_ui_items.xml` contains the mapping from UIName keys to actual display names
+   - Each entry has the format: `<Row><Cell>UIName_key</Cell><Cell>Display_name</Cell><Cell>Display_name</Cell></Row>`
+   - The first cell contains the UIName key from the item definition
+   - The second and third cells contain the display name (the human-readable name shown in-game)
+
+### Alias Items
+
+Some items in KCD2 are referenced via alias, particularly for quest-specific items:
+
+```xml
+<ItemAlias SourceItemId="18f3756f-9d76-48a4-afa5-72f4ccc0e16b" IconId="LegsPlate02_m01_B4" 
+UIInfo="ui_in_legs_plate02" UIName="ui_nm_legsplate02_m01" Weight="0" IsQuestItem="true" 
+Id="5bf2deb5-22b7-4d21-9f37-7892205fd204" Name="alias_prepadeni_legsPlate" />
+```
+
+- The `Name` attribute contains the alias identifier (e.g., `alias_prepadeni_legsPlate`)
+- The `SourceItemId` attribute references the actual item being aliased
+- When examining item properties, always refer to the source item, not the alias
+
+### Item Name Resolution Process
+
+To find an item's in-game display name:
+
+1. Locate the item in the item definition files using its internal name or ID
+2. Extract the `UIName` attribute value (e.g., `ui_nm_legsplate02_m01`)
+3. Look up this key in the first cell of a row in `text_ui_items.xml`
+4. The second cell contains the item's in-game display name (e.g., "Milanese plate leg armour")
+
+Example:
+```xml
+<Row>
+  <Cell>ui_nm_legsplate02_m01</Cell>
+  <Cell>Milanese plate leg armour</Cell>
+  <Cell>Milanese plate leg armour</Cell>
+</Row>
+```
 
 ## Implications for Gear Optimization
 
