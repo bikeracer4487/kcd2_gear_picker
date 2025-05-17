@@ -1,0 +1,4 @@
+module Atomics {
+    header "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/Atomics.build/Atomics-Swift.h"
+    requires objc
+}

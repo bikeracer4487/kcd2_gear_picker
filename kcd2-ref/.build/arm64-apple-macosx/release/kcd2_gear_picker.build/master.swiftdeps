@@ -1,0 +1,6 @@
+version: "Apple Swift version 6.1 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)"
+options: "f551f8b17405390c5242ce887e1a97589099e4266216fcd126332ec18aee538a"
+build_start_time: [1747442639, 973924000]
+build_end_time: [1747442641, 654594000]
+inputs:
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Sources/kcd2_gear_picker_executable/main.swift": [1747440561, 428231408]

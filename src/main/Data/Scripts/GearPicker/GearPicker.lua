@@ -214,6 +214,7 @@ local GearPicker = {
             string.format("Scripts/%s/ItemCategory.lua", modName),
             string.format("Scripts/%s/ApiLimitations.lua", modName),
             string.format("Scripts/%s/AlternativeInventory.lua", modName),
+            string.format("Scripts/%s/SimplifiedInventoryScan.lua", modName),
             string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/GearScan.lua", modName),
             string.format("Scripts/%s/GearOptimizer.lua", modName),
@@ -257,7 +258,7 @@ local GearPicker = {
         end
         
         -- Final confirmation message
-        System.LogAlways(string.format("$2[GearPicker] Mod v%s initialized. Press F6 to scan inventory, F7-F9 for quick gear optimization.", self.VERSION))
+        System.LogAlways(string.format("$2[GearPicker] Mod v%s initialized. Press F6 to scan inventory (Alt+F6 for simplified scan), F7-F9 for quick gear optimization.", self.VERSION))
     end,
     
     -- Add compatibility utility factory method
@@ -318,6 +319,31 @@ local GearPicker = {
         
         this.__factories.apiLimitations = ApiLimitations:new()
         return this.__factories.apiLimitations
+    end,
+    
+    --- Simplified inventory scanner that combines approaches from archived mod
+    simplifiedInventoryScan = function(self)
+        --- @type GearPicker
+        local this = self
+        
+        if this.__factories.simplifiedInventoryScan then
+            return this.__factories.simplifiedInventoryScan
+        end
+        
+        --- @type SimplifiedInventoryScan
+        local SimplifiedInventoryScan = this.ClassRegistry.SimplifiedInventoryScan
+        if not SimplifiedInventoryScan then
+            System.LogAlways("$4[GearPicker ERROR] SimplifiedInventoryScan class not found in registry")
+            return nil
+        end
+        
+        this.__factories.simplifiedInventoryScan = SimplifiedInventoryScan:new(
+            _G.player, 
+            _G.Script, 
+            _G.ItemManager,
+            this:itemCategory()
+        )
+        return this.__factories.simplifiedInventoryScan
     end,
 }
 

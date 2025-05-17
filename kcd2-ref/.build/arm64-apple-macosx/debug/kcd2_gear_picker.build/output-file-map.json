@@ -1,0 +1,29 @@
+{
+  "": {
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/master.swiftdeps"
+  },
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/dice_sim_allcombos-ALL.swift": {
+    "dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-ALL.d",
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-ALL.swift.o",
+    "swiftmodule": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-ALL~partial.swiftmodule",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-ALL.swiftdeps"
+  },
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/dice_sim_allcombos-top10.swift": {
+    "dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-top10.d",
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-top10.swift.o",
+    "swiftmodule": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-top10~partial.swiftmodule",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_allcombos-top10.swiftdeps"
+  },
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/dice_sim_grouped.swift": {
+    "dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped.d",
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped.swift.o",
+    "swiftmodule": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped~partial.swiftmodule",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped.swiftdeps"
+  },
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/dice_sim_grouped_turns.swift": {
+    "dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped_turns.d",
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped_turns.swift.o",
+    "swiftmodule": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped_turns~partial.swiftmodule",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/debug/kcd2_gear_picker.build/dice_sim_grouped_turns.swiftdeps"
+  }
+}

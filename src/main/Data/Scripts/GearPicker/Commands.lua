@@ -34,6 +34,11 @@ local Commands = {
                 "GearPicker:commands():scanInventory()",
                 "Scans and logs all inventory items with stats."
         )
+        this.system.AddCCommand(
+                "gear_picker__scan_inventory_simplified",
+                "GearPicker:commands():scanInventorySimplified()",
+                "Scans inventory using simplified approach based on the original mod."
+        )
         
         -- Optimization priority commands
         this.system.AddCCommand(
@@ -142,12 +147,15 @@ local Commands = {
         -- Bind F6 key to inventory scan for easy testing
         this.system.ExecuteCommand("bind f6 gear_picker__scan_inventory")
         
+        -- Bind Alt+F6 to simplified inventory scan
+        this.system.ExecuteCommand("bind alt+f6 gear_picker__scan_inventory_simplified")
+        
         -- Add keybinds for quick optimization
         this.system.ExecuteCommand("bind f7 gear_picker__optimize_armor")
         this.system.ExecuteCommand("bind f8 gear_picker__optimize_stealth")
         this.system.ExecuteCommand("bind f9 gear_picker__optimize_charisma")
         
-        Log.info("All commands registered. Gear scan is bound to F6 key.")
+        Log.info("All commands registered. Gear scan is bound to F6 key, simplified scan to Alt+F6.")
         Log.info("Quick optimization: F7=Armor, F8=Stealth, F9=Charisma")
     end,
 
@@ -223,6 +231,73 @@ local Commands = {
     end,
     
     -- Gear scanning command
+    scanInventorySimplified = function(self)
+        System.LogAlways("$2[GearPicker] =========================================================")
+        System.LogAlways("$2[GearPicker] STARTING SIMPLIFIED INVENTORY SCAN...")
+        System.LogAlways("$2[GearPicker] =========================================================")
+        
+        -- Create a direct version of the callback that uses System.LogAlways
+        local directLogInventoryDetails = function(inventoryItems, equippedItems)
+            System.LogAlways("\n$6[GearPicker] =========================================================")
+            System.LogAlways("$6[GearPicker] SIMPLIFIED SCAN RESULTS - " .. #inventoryItems .. " items, " .. #equippedItems .. " equipped")
+            System.LogAlways("$6[GearPicker] =========================================================")
+            
+            -- Log equipped items
+            System.LogAlways("\n$5[GearPicker] EQUIPPED ITEMS:")
+            for i, item in ipairs(equippedItems) do
+                System.LogAlways("$2[GearPicker] " .. i .. ". " .. item.name)
+                
+                -- Add details if available
+                if item.slot then
+                    System.LogAlways("$2[GearPicker]    Slot: " .. item.slot)
+                end
+                
+                -- Weight
+                if item.weight and item.weight > 0 then
+                    System.LogAlways("$2[GearPicker]    Weight: " .. item.weight)
+                end
+            end
+            
+            -- Log player's overall weight stats if available
+            local playerStats = GearPicker:equippedItem():getDerivedStats()
+            if playerStats.equippedWeight then
+                System.LogAlways("\n$6[GearPicker] PLAYER EQUIPMENT WEIGHT: " .. playerStats.equippedWeight)
+            end
+            
+            -- Send final completion message
+            System.LogAlways("\n$6[GearPicker] =========================================================")
+            System.LogAlways("$6[GearPicker] Simplified inventory scan complete!")
+            System.LogAlways("$6[GearPicker] =========================================================")
+        end
+        
+        -- Check if simplified scanner is available
+        if not GearPicker.simplifiedInventoryScan or type(GearPicker.simplifiedInventoryScan) ~= "function" then
+            System.LogAlways("$4[GearPicker] ERROR: Simplified inventory scanner not available!")
+            return
+        end
+        
+        -- Create and use the simplified inventory scanner
+        local simplifiedScanner = GearPicker:simplifiedInventoryScan()
+        if not simplifiedScanner then
+            System.LogAlways("$4[GearPicker] ERROR: Failed to create simplified inventory scanner!")
+            return
+        end
+        
+        -- Start the scan
+        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Starting simplified inventory scan...")
+        simplifiedScanner:scanInventory(directLogInventoryDetails)
+        
+        -- Add a progress indicator
+        for i = 1, 10 do
+            local timeout = i * 300 -- 300ms, 600ms, 900ms, etc.
+            GearPicker:timedTrigger():start(timeout, function() 
+                return true 
+            end, function()
+                System.LogAlways("$5[GearPicker] Simplified scan in progress... (" .. i .. "/10)")
+            end)
+        end
+    end,
+    
     scanInventory = function(self)
         System.LogAlways("$2[GearPicker] =========================================================")
         System.LogAlways("$2[GearPicker] STARTING INVENTORY SCAN...")

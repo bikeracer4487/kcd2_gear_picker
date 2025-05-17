@@ -1,0 +1,12 @@
+{
+  "": {
+    "dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/kcd2_gear_picker.d",
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/kcd2_gear_picker.o",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/master.swiftdeps"
+  },
+  "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/Sources/kcd2_gear_picker_executable/main.swift": {
+    "object": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/main.swift.o",
+    "swiftmodule": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/douglas.mason/Documents/GitHub/kcd2_gear_picker/kcd2-ref/.build/arm64-apple-macosx/release/kcd2_gear_picker.build/main.swiftdeps"
+  }
+}
