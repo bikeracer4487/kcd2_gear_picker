@@ -2,33 +2,34 @@
 
 This document outlines the inventory scanning approach used in the Gear Picker mod to identify and collect information about items in the player's inventory in Kingdom Come Deliverance 2.
 
-## Inventory Access Challenges
+## Core Principles
 
-KCD2's modding API has certain limitations when it comes to accessing the player's inventory:
+1. **Focus on Stats Collection**: The primary purpose of inventory scanning is to collect comprehensive stats for all equippable gear.
+2. **No Simulated Items**: We never create simulated items - we only work with real gear that exists in the inventory.
+3. **Equipped State Irrelevant**: We don't track or care about whether items are equipped or not - this mod is about analyzing ALL available gear.
+4. **Only Armor/Clothing**: We filter out weapons, consumables, and other non-armor items, focusing solely on equippable clothing/armor.
 
-1. Some API methods like `inventory:GetItems()` can be unreliable on certain game versions
-2. Item attributes and methods may not be consistently available across all game versions
-3. Different game patches may change or update the API
+## Inventory Access Approaches
 
-## Multi-Method Inventory Access
-
-Our implementation uses multiple methods to reliably access the player's inventory:
+The inventory scanner implements multiple approaches to access inventory items, in order to handle potential API limitations:
 
 1. **Primary Method:** `inventory:GetInventoryTable()`
-   - This is used in the original Helmet Off Dialog mod and appears more reliable
+   - This is used first and appears more reliable
    - Returns a comprehensive list of all items in the player's inventory
 
-2. **Fallback Method:** `inventory:GetItems()`
-   - Standard API method that's used if GetInventoryTable isn't available
-   - Generally works but may be less reliable in some game versions
+2. **Fallback Method:** Direct index access
+   - If GetInventoryTable fails, we iterate through inventory slots by index
+   - Uses `inventory:GetCount()` to determine inventory size
+   - Then iterates through each index with `inventory:GetItem(i)`
 
-## Item Classification
+## Item Filtering
 
-For each item in the inventory, we determine if it's potential gear by:
+We filter inventory items to focus only on equippable armor/clothing by:
 
-1. Using the ItemCategory service to check if the item is armor, clothing, jewelry, or weapon
-2. Checking if the item can be equipped using the `CanEquip()` method
-3. Examining the item name to filter out non-gear items like consumables, arrows, and misc items
+1. Using the `CanEquip()` method to check if the item is equippable
+2. Filtering out weapons by name pattern matching
+3. Filtering out consumables and other non-gear items
+4. Keeping only items that could potentially be equipped as armor/clothing
 
 ## Comprehensive Stat Collection
 
@@ -53,25 +54,31 @@ For each identified gear item, we collect all available stats:
 
 ### Equipment Information
 - Equipment slot
-- Equipped status
 - Material type
 
-## Item Material Detection
+## Item Categorization
 
-When item material isn't directly available, we use heuristic rules based on the item's stats:
+Items are categorized in two ways:
 
-```lua
--- Try to determine material based on stats pattern
-if stats.slashDefense > stats.stabDefense * 1.5 and stats.slashDefense > stats.bluntDefense * 1.5 then
-    stats.material = "chainmail"  -- Chainmail is much better against slash
-elseif stats.stabDefense > 20 and stats.slashDefense > 20 and stats.bluntDefense > 20 then
-    stats.material = "plate"  -- Plate has high defense across all types
-elseif stats.stabDefense < 10 and stats.slashDefense < 10 and stats.charisma > 0 then
-    stats.material = "cloth"  -- Cloth has low defense but often has charisma
-elseif stats.stabDefense > 5 and stats.slashDefense > 5 and stats.bluntDefense < 15 then
-    stats.material = "leather"  -- Leather has moderate defense
-end
-```
+1. **Slot Determination**
+   - Uses name patterns and item properties to determine the equipment slot
+   - Maps items to slots like "head", "torso_outer", "hands", etc.
+
+2. **Material Detection**
+   - First attempts to determine material from name patterns
+   - When name-based detection isn't conclusive, uses heuristic rules based on stat patterns:
+   ```lua
+   -- Examples of stat-based material determination
+   if stats.slashDefense > stats.stabDefense * 1.5 and stats.slashDefense > stats.bluntDefense * 1.5 then
+       stats.material = "chainmail"  -- Chainmail is much better against slash
+   elseif stats.stabDefense > 15 and stats.slashDefense > 15 and stats.bluntDefense > 15 then
+       stats.material = "plate"  -- Plate has high defense across all types
+   elseif stats.stabDefense < 5 and stats.slashDefense < 5 and stats.charisma > 0 then
+       stats.material = "cloth"  -- Cloth has low defense but often has charisma
+   elseif stats.stabDefense > 3 and stats.slashDefense > 3 and stats.bluntDefense < 10 then
+       stats.material = "leather"  -- Leather has moderate defense
+   end
+   ```
 
 ## Error Tolerance
 
@@ -79,36 +86,31 @@ All API calls are wrapped in pcall to ensure that errors don't break the scannin
 
 ```lua
 pcall(function()
-    if item.GetWeight then stats.weight = item:GetWeight() 
-    elseif item.weight then stats.weight = item.weight end
-    
-    -- More stat collection...
+    if item.GetWeight then stats.weight = item:GetWeight() end
+    if item.GetCondition then stats.condition = item:GetCondition() end
+    if item.GetMaxCondition then stats.maxCondition = item:GetMaxCondition() end
 end)
 ```
 
 This allows the scanner to collect as much information as possible even if some methods fail.
 
-## Equipped Items Detection
+## Implementation Guidelines
 
-We can identify equipped items through multiple approaches:
+When implementing or modifying the inventory scanning functionality, follow these key principles:
 
-1. Using the direct `IsEquipped()` method if available
-2. Checking if the item has a non-empty equipped slot via `GetEquippedSlot()`
+1. **NEVER create simulated or fake items** - only work with actual items from the inventory
+2. **NEVER use weight-based detection** - this is unnecessary and complicates the code
+3. **NEVER track equipped state** - we only care about the existence and stats of gear
+4. **ALWAYS use pcall** for error tolerance around API calls
+5. **ALWAYS implement multiple inventory access methods** for API robustness
 
-## Performance Considerations
+## Logging Strategy
 
-- We process items one by one with small delays to prevent freezing the game
-- We log progress only occasionally to avoid console spam
-- Error handling ensures the process keeps going even if some item methods fail
+The inventory scanner uses a clear logging strategy to help with debugging:
 
-## Implementation Strategy
+1. Progress indicators for scanning large inventories
+2. Detailed stats logging for each identified gear item
+3. Summary information with counts of processed items and found gear
+4. Color-coded logs for different types of information
 
-The simplified inventory scanning approach follows this process:
-
-1. Get all inventory items through the most reliable available method
-2. Filter for potential gear items (armor, weapons, clothing, etc.)
-3. For each gear item, collect all available stats and information
-4. Track equipped items separately for quick access
-5. Return the complete inventory data for optimization decision-making
-
-This streamlined approach focuses on gathering comprehensive item information without needing to determine what's currently equipped through complex methods like weight-based detection.
+This combination of approaches ensures that the inventory scanner can reliably collect all the item data needed for the gear optimization algorithms to function properly.

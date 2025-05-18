@@ -1,5 +1,5 @@
--- SimplifiedInventoryScan.lua - A simplified direct inventory scanning approach
--- Based on the original approach from archived_mod that's known to work
+-- SimplifiedInventoryScan.lua - A direct inventory scanning approach focused on stats collection
+-- No simulation, no equipped state tracking, just pure inventory item data
 
 local Log = _G.GearPicker.Log
 
@@ -11,8 +11,7 @@ local SimplifiedInventoryScan = {
             script = script, 
             itemManager = itemManager,
             itemCategory = itemCategory,
-            inventoryItems = {},
-            equippedItems = {}
+            inventoryItems = {}
         }
         setmetatable(instance, { __index = self })
         Log.info("SimplifiedInventoryScan: New instance created")
@@ -20,16 +19,15 @@ local SimplifiedInventoryScan = {
         return instance
     end,
     
-    -- Scan the inventory using direct approach
+    -- Scan inventory with the sole purpose of gathering gear stats
     scanInventory = function(self, callback)
         --- @type SimplifiedInventoryScan
         local this = self
         
-        System.LogAlways("$2[GearPicker] Starting simplified inventory scan...")
+        System.LogAlways("$2[GearPicker] Starting simplified gear scanner...")
         
         -- Reset data
         this.inventoryItems = {}
-        this.equippedItems = {}
         
         -- Try to get inventory items with multiple approaches
         local inventoryItems = {}
@@ -74,7 +72,6 @@ local SimplifiedInventoryScan = {
         -- Process each item we found
         local processedCount = 0
         local gearCount = 0
-        local equippedCount = 0
         
         for _, itemId in ipairs(inventoryItems) do
             processedCount = processedCount + 1
@@ -90,8 +87,8 @@ local SimplifiedInventoryScan = {
             
             if not item then goto continue end
             
-            -- Simple filter for potential gear items
-            if not this:isPotentialGear(item) then goto continue end
+            -- Simple filter for potential gear items (ONLY equippable armor/clothing)
+            if not this:isEquippableGear(item) then goto continue end
             
             -- We have a potential gear item - collect stats
             gearCount = gearCount + 1
@@ -101,11 +98,11 @@ local SimplifiedInventoryScan = {
             if stats then
                 table.insert(this.inventoryItems, stats)
                 
-                -- Check if equipped and add to equipped list if so
-                if stats.isEquipped then
-                    equippedCount = equippedCount + 1
-                    table.insert(this.equippedItems, stats)
-                end
+                -- Log each gear item found
+                local infoStr = string.format("$5[GearPicker] Found gear: %s (Def: S=%d/L=%d/B=%d)",
+                    stats.name, stats.stabDefense, stats.slashDefense, stats.bluntDefense)
+                
+                System.LogAlways(infoStr)
             end
             
             ::continue::
@@ -114,18 +111,17 @@ local SimplifiedInventoryScan = {
         -- Final results summary
         System.LogAlways("$6[GearPicker] =========================================================")
         System.LogAlways("$6[GearPicker] SCAN COMPLETE - Processed " .. processedCount .. " items")
-        System.LogAlways("$6[GearPicker] Found " .. gearCount .. " gear items")
-        System.LogAlways("$6[GearPicker] Found " .. equippedCount .. " equipped items")
+        System.LogAlways("$6[GearPicker] Found " .. gearCount .. " equippable gear items")
         System.LogAlways("$6[GearPicker] =========================================================")
         
-        -- If we have a callback, call it with our results
+        -- If we have a callback, call it with our results (sending empty array as second parameter)
         if callback then
-            callback(this.inventoryItems, this.equippedItems)
+            callback(this.inventoryItems, {})
         end
     end,
     
-    -- Check if an item is potentially gear (armor, weapon, etc.)
-    isPotentialGear = function(self, item)
+    -- Check if an item is equippable armor/clothing (NOT weapons)
+    isEquippableGear = function(self, item)
         if not item then return false end
         
         -- Check if it's an item that can be equipped
@@ -136,42 +132,40 @@ local SimplifiedInventoryScan = {
             end
         end)
         
-        -- Check if it's already equipped
-        local isEquipped = false
-        pcall(function()
-            if item.IsEquipped then
-                isEquipped = item:IsEquipped()
-            end
-        end)
+        if not canEquip then return false end
         
-        -- Get the item name and class for filtering
+        -- Get the item name for filtering
         local name = ""
-        local uiName = ""
         pcall(function()
             if item.class then
                 name = self.itemManager.GetItemName(item.class) or ""
-                uiName = self.itemManager.GetItemUIName(item.class) or ""
             end
         end)
         
-        -- Apply some basic filtering using name patterns
         local lcName = string.lower(name)
+        
+        -- Skip weapons (we only want armor/clothing)
+        if lcName:find("sword") or
+           lcName:find("axe") or
+           lcName:find("mace") or
+           lcName:find("bow") or
+           lcName:find("arrow") or
+           lcName:find("shield") or
+           lcName:find("hammer") then
+            return false
+        end
         
         -- Skip consumables and non-equipment
         if lcName:find("potion") or 
            lcName:find("herb") or
            lcName:find("book") or
-           lcName:find("apple") or
-           lcName:find("mushroom") or
-           lcName:find("flower") or
-           lcName:find("alcohol") or
+           lcName:find("food") or
            lcName:find("torch") or
-           lcName:find("arrow") then
+           lcName:find("lockpick") then
             return false
         end
         
-        -- Return result - if it can be equipped or is equipped, it's potential gear
-        return canEquip or isEquipped
+        return true
     end,
     
     -- Collect stats for an item
@@ -184,7 +178,6 @@ local SimplifiedInventoryScan = {
             name = "Unknown Item",
             uiName = "",
             slot = "unknown",
-            isEquipped = false,
             weight = 0,
             
             -- Defense stats
@@ -207,7 +200,7 @@ local SimplifiedInventoryScan = {
             -- Material type
             material = "unknown",
             
-            -- Categories
+            -- Categories (armor slot categories)
             categories = {}
         }
         
@@ -216,21 +209,6 @@ local SimplifiedInventoryScan = {
             if item.class then
                 stats.name = self.itemManager.GetItemName(item.class) or "Unknown"
                 stats.uiName = self.itemManager.GetItemUIName(item.class) or ""
-            end
-        end)
-        
-        -- Check if equipped
-        pcall(function()
-            if item.IsEquipped then
-                stats.isEquipped = item:IsEquipped()
-            end
-            
-            -- Check equipped slot as alternative
-            if item.GetEquippedSlot then
-                local slot = item:GetEquippedSlot()
-                if slot and slot ~= "" then
-                    stats.isEquipped = true
-                end
             end
         end)
         
@@ -269,32 +247,6 @@ local SimplifiedInventoryScan = {
         
         -- Categorize the item
         self:categorizeItem(stats)
-        
-        -- Log any item with some stats
-        if stats.stabDefense > 0 or stats.slashDefense > 0 or stats.bluntDefense > 0 or
-           stats.noise > 0 or stats.visibility > 0 or stats.charisma > 0 then
-            System.LogAlways("$5[GearPicker] Found item: " .. stats.name .. " (" .. (stats.isEquipped and "equipped" or "not equipped") .. ")")
-        end
-        
-        -- For equipped items, show more detail
-        if stats.isEquipped then
-            local defenseStr = ""
-            if stats.stabDefense > 0 then defenseStr = defenseStr .. "Stab=" .. stats.stabDefense .. " " end
-            if stats.slashDefense > 0 then defenseStr = defenseStr .. "Slash=" .. stats.slashDefense .. " " end
-            if stats.bluntDefense > 0 then defenseStr = defenseStr .. "Blunt=" .. stats.bluntDefense .. " " end
-            
-            if defenseStr ~= "" then
-                System.LogAlways("$3[GearPicker]   Defense: " .. defenseStr)
-            end
-            
-            if stats.weight > 0 then
-                System.LogAlways("$3[GearPicker]   Weight: " .. stats.weight)
-            end
-            
-            if stats.slot and stats.slot ~= "unknown" then
-                System.LogAlways("$3[GearPicker]   Slot: " .. stats.slot)
-            end
-        end
         
         return stats
     end,
@@ -349,15 +301,39 @@ local SimplifiedInventoryScan = {
             else
                 stats.material = "cloth"
             end
-        elseif lcName:find("sword") or lcName:find("axe") or lcName:find("mace") then
-            stats.slot = "weapon"
-            table.insert(stats.categories, "weapon")
-        elseif lcName:find("shield") then
-            stats.slot = "offhand"
-            table.insert(stats.categories, "shield")
-        elseif lcName:find("bow") or lcName:find("crossbow") then
-            stats.slot = "ranged"
-            table.insert(stats.categories, "ranged")
+        elseif lcName:find("hood") or lcName:find("hat") then
+            stats.slot = "head"
+            table.insert(stats.categories, "hood")
+            stats.material = "cloth"
+        elseif lcName:find("pant") or lcName:find("hose") or lcName:find("leg") or lcName:find("chausse") then
+            stats.slot = "legs"
+            table.insert(stats.categories, "legs")
+            
+            if lcName:find("mail") then
+                stats.material = "chainmail"
+            elseif lcName:find("plate") then
+                stats.material = "plate"
+            elseif lcName:find("leather") then
+                stats.material = "leather"
+            else
+                stats.material = "cloth"
+            end
+        elseif lcName:find("sleeve") or lcName:find("arm") then
+            stats.slot = "arms"
+            table.insert(stats.categories, "arms")
+            
+            if lcName:find("mail") then
+                stats.material = "chainmail"
+            elseif lcName:find("plate") then
+                stats.material = "plate"
+            elseif lcName:find("leather") then
+                stats.material = "leather"
+            else
+                stats.material = "cloth"
+            end
+        elseif lcName:find("ring") or lcName:find("necklace") or lcName:find("pendant") then
+            stats.slot = "jewelry"
+            table.insert(stats.categories, "jewelry")
         end
         
         -- Determine material type if not already set

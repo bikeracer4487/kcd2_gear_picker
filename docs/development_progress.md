@@ -4,7 +4,7 @@
 
 **Project Stage**: Refactoring and Core Implementation
 
-**Last Updated**: May 16, 2025
+**Last Updated**: May 18, 2025
 
 ## Completed Tasks
 
@@ -31,10 +31,8 @@
 18. ✅ Updated commands to support gear optimization and preset management
 19. ✅ Fixed compatibility issues with old HelmetOffDialog code
 20. ✅ Implemented enhanced error handling and compatibility modules
-21. ✅ Created alternative inventory scanning system to handle API limitations
-22. ✅ Added ApiLimitations module for graceful handling of API constraints
-23. ✅ Implemented simulated inventory generation when items can't be accessed directly
-24. ✅ Added comprehensive diagnostics system for troubleshooting API issues
+21. ✅ Completely redesigned inventory scanning system with focus on simplicity and reliability
+22. ✅ Removed all simulated inventory and weight-based detection code
 
 ## In Progress
 
@@ -53,26 +51,25 @@
 ## New Core Files
 
 1. **GearPicker.lua**: Main class that initializes the mod and provides factory methods for other components
-2. **GearScan.lua**: Implements comprehensive inventory scanning and analysis
+2. **SimplifiedInventoryScan.lua**: Implements direct inventory scanning with focus on gear stats collection
 3. **GearOptimizer.lua**: Handles optimization calculations for different scenarios
 4. **GearSwitcher.lua**: Manages switching between different gear loadouts and presets
-5. **AlternativeInventory.lua**: Provides fallback inventory scanning methods for API compatibility issues
-6. **ApiLimitations.lua**: Handles API constraints gracefully with simulated inventory data
-7. **Diagnostics.lua**: Advanced diagnostic tools for identifying API issues
+5. **Diagnostics.lua**: Advanced diagnostic tools for identifying API issues
 
 ## Recent Findings & Changes
 
-1. **API Limitations Handling**: Discovered and implemented workarounds for KCD2 inventory API limitations:
-   - Created AlternativeInventory scanner with multiple fallback methods
-   - Implemented ApiLimitations module to gracefully handle missing API access
-   - Added simulated inventory generation based on equipped weight detection
-   - Provided clear user notifications about API constraints
+1. **Inventory Scanning Simplification**: Completely redesigned the inventory scanning approach:
+   - Removed all simulated inventory creation
+   - Eliminated weight-based detection of equipped items
+   - Simplified to focus solely on collecting stats for all equippable gear
+   - Implemented multiple inventory access methods for reliability
+   - Better filtering to focus only on equippable armor/clothing items
 
 2. **Enhanced Stats Collection**: We've successfully implemented comprehensive stat collection for all gear items:
    - Defensive stats (Stab/Slash/Blunt)
    - Stealth stats (Visibility/Conspicuousness/Noise)
    - Social stats (Charisma)
-   - Physical properties (Weight/Condition/Cleanliness)
+   - Physical properties (Weight/Condition)
    
 3. **Material Detection**: Implemented reliable material type detection for different gear:
    - Plate armor detection based on naming patterns
@@ -81,7 +78,8 @@
    - Comprehensive categorization for all 16 armor slots
 
 4. **Hotkey Configuration**: Updated hotkeys to support gear functionality:
-   - F6: Scan and log inventory items (previously F5)
+   - F6: Scan and log inventory items
+   - Alt+F6: Use simplified inventory scan approach
    - F7: Optimize for maximum armor protection
    - F8: Optimize for maximum stealth
    - F9: Optimize for maximum charisma
@@ -102,21 +100,37 @@
 6. 📝 Add UI elements for easier interaction with the mod
 7. 📝 Create comprehensive testing scenarios for all core features
 
+## Lessons Learned
+
+### Inventory Scanning Approach
+
+**Previous Issue**: The initial implementation was overcomplicated, trying to track equipped state, generating simulated items, and using complex weight-based detection.
+
+**Solution**: Completely rewrote the inventory scanning functionality with these principles:
+1. **Focus on Stats Collection**: Gather comprehensive stats for all equippable gear
+2. **No Simulated Items**: Never create simulated items - only work with real gear
+3. **Ignore Equipped State**: Don't track or care about whether items are equipped
+4. **Simple Processing**: Use straightforward synchronous processing
+5. **Multiple Access Methods**: Implement fallbacks for inventory access
+6. **Error Tolerance**: Extensive use of pcall for robust error handling
+
+### Key Principles for Future Development
+
+1. **Simplicity Over Complexity**: Prefer simpler approaches that do one thing well
+2. **Focus on Core Functionality**: For Phase 1, focus on collecting and presenting accurate item stats
+3. **No Fake Data**: Never generate simulated or fake data - only work with real game information
+4. **Robust Error Handling**: Use pcall extensively to handle potential API failures
+5. **Clear Documentation**: Document implementation decisions and lessons learned
+
 ## Challenges and Solutions
 
 ### Challenge: KCD2 API Limitations
-We discovered significant API limitations in KCD2 where the GetItems() function doesn't work as expected, preventing direct access to inventory items.
+We discovered significant API limitations in KCD2 where some inventory access methods don't work as expected.
 
-**Solution**: Created a comprehensive fallback system with multiple approaches:
-1. AlternativeInventory module that tries multiple methods to access inventory items
-2. ApiLimitations class that creates simulated inventory based on detected equipment weight
-3. Enhanced diagnostics to give users clear information about API constraints
-4. User-friendly warning messages explaining the limitations and what to expect
-
-### Challenge: Compatibility with Legacy Code
-As the mod evolved from HelmetOffDialog to GearPicker, we encountered issues with legacy code references and functions.
-
-**Solution**: Created a comprehensive compatibility module that handles legacy references and properly patches global functions to prevent errors while maintaining compatibility with existing mods or save files.
+**Solution**: Implemented multiple inventory access approaches:
+1. Try GetInventoryTable first (more reliable)
+2. Fall back to iterating through inventory by index with GetItem(i)
+3. Robust error handling to continue functioning when some APIs fail
 
 ### Challenge: Implementing Proper Layering Logic
 To ensure that armor is equipped in the correct order, we need to carefully manage the layering dependencies.
@@ -127,11 +141,6 @@ To ensure that armor is equipped in the correct order, we need to carefully mana
 Optimizing for different scenarios requires balancing multiple competing stats.
 
 **Solution**: Created configurable weighting system that allows different priorities for various stats based on the optimization goal (armor, stealth, charisma).
-
-### Challenge: Efficient Gear Switching
-Switching between different gear loadouts needs to be efficient and handle dependencies.
-
-**Solution**: Implemented GearSwitcher class that manages the sequential unequipping and equipping of items in the correct order.
 
 ## Future Considerations
 

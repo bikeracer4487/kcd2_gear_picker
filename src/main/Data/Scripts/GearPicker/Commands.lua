@@ -311,15 +311,15 @@ local Commands = {
             System.LogAlways("$4[GearPicker] WARNING: Diagnostics function not available")
         end
         
-        -- Create a direct version of the callback that uses System.LogAlways
-        local directLogInventoryDetails = function(inventoryItems, equippedItems)
+        -- Callback for inventory scan results
+        local displayInventoryResults = function(inventoryItems, _)
             System.LogAlways("\n$6[GearPicker] =========================================================")
-            System.LogAlways("$6[GearPicker] INVENTORY SCAN RESULTS - " .. #inventoryItems .. " items, " .. #equippedItems .. " equipped")
+            System.LogAlways("$6[GearPicker] INVENTORY SCAN RESULTS - " .. #inventoryItems .. " items")
             System.LogAlways("$6[GearPicker] =========================================================")
             
             -- Group items by slot for better organization
             local slotGroups = {}
-            for _, item in ipairs(equippedItems) do
+            for _, item in ipairs(inventoryItems) do
                 local slot = item.slot or "unknown"
                 if not slotGroups[slot] then
                     slotGroups[slot] = {}
@@ -330,23 +330,32 @@ local Commands = {
             -- Sort slots for consistent display
             local orderedSlots = {
                 "head", "head_under", "neck", 
-                "torso_outer", "torso_outer_layer", "torso_middle", "torso_under",
-                "arms", "hands", "legs", "feet", "feet_accessory",
-                "jewelry1", "jewelry2", "ranged"
+                "torso_outer", "torso_middle", "torso_under",
+                "arms", "hands", "legs", "feet",
+                "jewelry", "unknown"
             }
             
-            System.LogAlways("\n$5[GearPicker] EQUIPPED GEAR BY SLOT:")
-            
-            -- First display items for known slots in order
+            -- Display items by slot
             for _, slot in ipairs(orderedSlots) do
                 local slotItems = slotGroups[slot] or {}
                 if #slotItems > 0 then
                     -- Convert slot name to friendly display name
                     local friendlySlotName = slot:gsub("_", " ")
                     friendlySlotName = friendlySlotName:sub(1,1):upper() .. friendlySlotName:sub(2)
-                    System.LogAlways("\n$6[GearPicker] SLOT: " .. friendlySlotName)
+                    System.LogAlways("\n$6[GearPicker] SLOT: " .. friendlySlotName .. " (" .. #slotItems .. " items)")
                     
-                    for _, item in ipairs(slotItems) do
+                    -- Sort items by defense value
+                    table.sort(slotItems, function(a, b) 
+                        local defA = (a.stabDefense or 0) + (a.slashDefense or 0) + (a.bluntDefense or 0)
+                        local defB = (b.stabDefense or 0) + (b.slashDefense or 0) + (b.bluntDefense or 0)
+                        return defA > defB
+                    end)
+                    
+                    -- Display only the top 5 items per slot to avoid flooding console
+                    local itemsToShow = math.min(5, #slotItems)
+                    for i = 1, itemsToShow do
+                        local item = slotItems[i]
+                        
                         -- Colorize output based on item material
                         local colorCode = "$5" -- Default
                         if item.material == "plate" then
@@ -389,166 +398,31 @@ local Commands = {
                             System.LogAlways(colorCode .. "[GearPicker]     " .. otherStatsString)
                         end
                     end
-                end
-            end
-            
-            -- Log player's overall stats
-            local playerStats = GearPicker:equippedItem():getDerivedStats()
-            System.LogAlways("\n$6[GearPicker] OVERALL PLAYER STATS:")
-            System.LogAlways("$3[GearPicker] Defense: Stab=" .. playerStats.stabDefense .. 
-                             ", Slash=" .. playerStats.slashDefense .. 
-                             ", Blunt=" .. playerStats.bluntDefense)
-            System.LogAlways("$3[GearPicker] Stealth: Noise=" .. playerStats.noise .. 
-                             ", Visibility=" .. playerStats.visibility .. 
-                             ", Conspicuousness=" .. playerStats.conspicuousness)
-            System.LogAlways("$3[GearPicker] Charisma: " .. playerStats.charisma)
-            System.LogAlways("$3[GearPicker] Weight: " .. playerStats.equippedWeight .. 
-                             " / " .. playerStats.maxWeight .. 
-                             " (" .. math.floor(playerStats.equippedWeight/playerStats.maxWeight*100) .. "%)")
-            
-            -- Log best unequipped gear for each slot
-            local bestUnequippedArmor = {}
-            local bestUnequippedCharisma = {}
-            local bestUnequippedStealth = {}
-            
-            -- Find best unequipped gear by slot for different optimization goals
-            for _, item in ipairs(inventoryItems) do
-                if not item.isEquipped and item.slot and item.slot ~= "unknown" then
-                    local slot = item.slot
                     
-                    -- For armor (highest combined defense)
-                    local totalDefense = item.stabDefense + item.slashDefense + item.bluntDefense
-                    if not bestUnequippedArmor[slot] or totalDefense > (bestUnequippedArmor[slot].stabDefense + bestUnequippedArmor[slot].slashDefense + bestUnequippedArmor[slot].bluntDefense) then
-                        bestUnequippedArmor[slot] = item
-                    end
-                    
-                    -- For charisma (highest charisma value)
-                    if not bestUnequippedCharisma[slot] or item.charisma > bestUnequippedCharisma[slot].charisma then
-                        bestUnequippedCharisma[slot] = item
-                    end
-                    
-                    -- For stealth (lowest combined stealth penalties)
-                    local stealthPenalty = item.noise + item.visibility + item.conspicuousness
-                    if not bestUnequippedStealth[slot] or stealthPenalty < (bestUnequippedStealth[slot].noise + bestUnequippedStealth[slot].visibility + bestUnequippedStealth[slot].conspicuousness) then
-                        if stealthPenalty > 0 then -- Only consider items with some stealth properties
-                            bestUnequippedStealth[slot] = item
-                        end
+                    -- If there are more items, show a count
+                    if #slotItems > itemsToShow then
+                        System.LogAlways("$5[GearPicker]   ... and " .. (#slotItems - itemsToShow) .. " more items")
                     end
                 end
             end
             
-            -- Display best unequipped armor options
-            local hasBetterItems = false
-            for _, slot in ipairs(orderedSlots) do
-                local item = bestUnequippedArmor[slot]
-                if item and item.stabDefense + item.slashDefense + item.bluntDefense > 0 then
-                    if not hasBetterItems then
-                        System.LogAlways("\n$6[GearPicker] BEST UNEQUIPPED ARMOR OPTIONS:")
-                        hasBetterItems = true
-                    end
-                    System.LogAlways("$1[GearPicker] " .. item.name .. " for slot " .. item.slot .. 
-                        " (Stab=" .. item.stabDefense .. ", Slash=" .. item.slashDefense .. ", Blunt=" .. item.bluntDefense .. ")")
-                end
-            end
-            
-            -- Send final completion message
+            -- Summary message
             System.LogAlways("\n$6[GearPicker] =========================================================")
             System.LogAlways("$6[GearPicker] Inventory scan complete! Press F6 to scan again.")
             System.LogAlways("$6[GearPicker] Use F7 to optimize for armor, F8 for stealth, F9 for charisma")
             System.LogAlways("$6[GearPicker] =========================================================")
         end
         
-        -- Ensure GearPicker and gearScan are properly initialized
-        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Initializing inventory scan...")
+        -- Use simplifiedInventoryScan - our new streamlined approach
+        local scanner = GearPicker:simplifiedInventoryScan()
         
-        if not GearPicker then
-            System.LogAlways("$4[GearPicker] ERROR: GearPicker global object is nil!")
+        if not scanner then
+            System.LogAlways("$4[GearPicker] ERROR: SimplifiedInventoryScan not available!")
             return
         end
         
-        -- Check gearScan factory method
-        if not GearPicker.gearScan then
-            System.LogAlways("$4[GearPicker] ERROR: GearPicker.gearScan factory method not found!")
-            return
-        end
-        
-        -- Try to get alternativeInventory scanner first
-        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Checking for alternative inventory scanner...")
-        
-        -- Check if alternativeInventory is available
-        if GearPicker.alternativeInventory and type(GearPicker.alternativeInventory) == "function" then
-            System.LogAlways("$7[GearPicker] DIAGNOSTIC: Alternative inventory scanner found, trying that first...")
-            
-            local altInventory = GearPicker:alternativeInventory()
-            if altInventory and altInventory.scanInventory then
-                System.LogAlways("$7[GearPicker] NOTICE: Using alternative inventory scanning method (GetItems API issue workaround)")
-                
-                -- Use alternative scanner with our callback
-                altInventory:scanInventory(directLogInventoryDetails)
-                
-                System.LogAlways("$7[GearPicker] DIAGNOSTIC: Alternative scan initiated successfully")
-                return -- Exit after starting alternative scan
-            else
-                System.LogAlways("$4[GearPicker] WARNING: Alternative inventory scanner creation failed, falling back to standard scanner")
-            end
-        else
-            System.LogAlways("$4[GearPicker] WARNING: Alternative inventory scanner not available, falling back to standard scanner")
-        end
-        
-        -- Fall back to standard scanner
-        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Falling back to standard inventory scanner...")
-        
-        -- Get gearScan instance
-        local gearScan = GearPicker:gearScan()
-        
-        if not gearScan then
-            System.LogAlways("$4[GearPicker] ERROR: Failed to create GearScan instance!")
-            return
-        end
-        
-        -- Check if scanInventory method exists
-        if not gearScan.scanInventory then
-            System.LogAlways("$4[GearPicker] ERROR: gearScan.scanInventory method not found!")
-            return
-        end
-        
-        System.LogAlways("$7[GearPicker] DIAGNOSTIC: Starting inventory scan with custom callback...")
-        
-        -- Use our direct logging method
-        gearScan:scanInventory(directLogInventoryDetails)
-        
-        System.LogAlways("$7[GearPicker] DIAGNOSTIC: scanInventory method called successfully")
-        
-        -- Add a delayed message to indicate the scan is in progress
-        for i = 1, 20 do
-            local timeout = i * 300 -- 300ms, 600ms, 900ms, etc.
-            GearPicker:timedTrigger():start(timeout, function() 
-                return true 
-            end, function()
-                System.LogAlways("$5[GearPicker] Scanning inventory in progress... (" .. i .. "/20)")
-                
-                -- After 3 seconds, add an additional message
-                if i == 10 then
-                    -- Check if scanning is still active by checking processing queue in GearScan
-                    local gearScan = GearPicker:gearScan()
-                    if gearScan.processingQueue and #gearScan.processingQueue > 0 then
-                        System.LogAlways("$3[GearPicker] Scanning " .. #gearScan.processingQueue .. " gear items...")
-                        System.LogAlways("$3[GearPicker] Currently at item " .. gearScan.processingIndex .. " of " .. #gearScan.processingQueue)
-                    else
-                        System.LogAlways("$4[GearPicker] No items in processing queue. Scan may have failed.")
-                    end
-                end
-                
-                -- After 6 seconds, add a troubleshooting message if scan isn't complete
-                if i == 20 then
-                    local gearScan = GearPicker:gearScan()
-                    if not gearScan.scanningComplete then
-                        System.LogAlways("$4[GearPicker] Scan taking longer than expected. This could indicate an issue.")
-                        System.LogAlways("$4[GearPicker] If no results appear, try running scan again.")
-                    end
-                end
-            end)
-        end
+        System.LogAlways("$7[GearPicker] Starting simplified inventory scan...")
+        scanner:scanInventory(displayInventoryResults)
     end,
     
     -- Optimization commands

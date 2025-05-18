@@ -9,7 +9,7 @@ KCD2 Gear Picker is a mod for Kingdom Come Deliverance 2 that helps optimize gea
 - Maximum Stealth
 - Maximum Charisma
 
-The mod uses an innovative weight-based technique to identify equipped items, as the game doesn't provide direct API access to determine which items are currently equipped.
+The mod uses a direct item scanning approach, focusing on collecting comprehensive stats for all equippable gear items, regardless of whether they're currently equipped.
 
 ## Repository Structure
 
@@ -47,11 +47,11 @@ The mod follows a modular architecture with these key components:
 
 3. **UnequipGear**: Core module that handles detection and removal of gear.
 
-4. **EquippedItem**: Implements the weight-based detection mechanism for identifying equipped items:
-   - Measures the player's equipment weight
-   - Unequips an item
-   - Measures weight again to detect changes
-   - Uses this weight difference to determine what was equipped
+4. **ItemScanner**: Implements a direct inventory scanning approach:
+   - Retrieves all items from player inventory
+   - Filters for equippable armor/clothing items
+   - Collects comprehensive stats for each item (defense, stealth, charisma, etc.)
+   - Uses name patterns and stat profiles to categorize items by type
 
 5. **ItemCategory**: Defines different item categories (Helmet, HeadChainmail, Coif, etc.) and provides methods to check if items belong to specific categories.
 
