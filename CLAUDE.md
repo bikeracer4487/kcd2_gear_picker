@@ -66,5 +66,6 @@ The mod uses a factory pattern extensively, with the main HelmetOffDialog class 
 3. The mod uses a single integrated approach rather than multiple optional modules
 4. Always run tests to verify functionality before committing changes
 5. Update version information in `src/main/mod.manifest` when appropriate
+6. NEVER add Claude co-author credits to git commits or any files in the repository
 
 Refer to `/docs/operating_guidelines.md` for complete development guidelines.
