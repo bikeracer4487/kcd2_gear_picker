@@ -240,6 +240,10 @@ local EmbeddedScan = {
 _G.GearPicker = _G.GearPicker or {}
 _G.GearPicker.ClassRegistry = _G.GearPicker.ClassRegistry or {}
 _G.GearPicker.ClassRegistry.EmbeddedScan = EmbeddedScan
+
+-- Also make it globally accessible for the emergency fallback in Commands.lua
+_G.EmbeddedScan = EmbeddedScan
+
 System.LogAlways("$2[GearPicker] Successfully registered EmbeddedScan class")
 
 return EmbeddedScan

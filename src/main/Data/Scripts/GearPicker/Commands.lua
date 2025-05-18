@@ -419,51 +419,117 @@ local Commands = {
         
         -- If all else fails, try manual creation of EmbeddedScan
         if not scanner then
-            System.LogAlways("$4[GearPicker] WARNING: All built-in scanners failed, trying manual embedded scan...")
+            System.LogAlways("$4[GearPicker] WARNING: All built-in scanners failed, trying emergency methods...")
             
-            -- Try one more time with direct EmbeddedScan script loading
+            -- First try to directly load the script file again
             if Script.LoadScript("Scripts/GearPicker/EmbeddedScan.lua") == 1 then
-                System.LogAlways("$7[GearPicker] Manually loaded EmbeddedScan.lua, creating direct scanner...")
+                System.LogAlways("$7[GearPicker] Manually loaded EmbeddedScan.lua")
                 
-                -- Directly create EmbeddedScan class (emergency fallback)
-                local EmbeddedScan = {
-                    new = function(self, player, script, itemManager, itemCategory)
-                        local instance = { player = player, script = script, itemManager = itemManager, itemCategory = itemCategory, inventoryItems = {} }
-                        setmetatable(instance, { __index = self })
-                        return instance
-                    end,
-                    
-                    scanInventory = function(self, callback)
-                        System.LogAlways("$5[GearPicker] Running embedded emergency scan...")
-                        System.LogAlways("$5[GearPicker] (This is a simplified emergency scanner with minimal functionality)")
-                        
-                        -- Ultra-basic inventory access
-                        local inventoryItems = {}
-                        local count = 0
-                        pcall(function() count = self.player.inventory:GetCount() end)
-                        
-                        if count > 0 then
-                            for i = 0, count - 1 do
-                                local item = nil
-                                pcall(function() item = self.player.inventory:GetItem(i) end)
-                                if item and item.id then
-                                    local stats = { id = item.id, name = "Unknown Item", stabDefense = 0, slashDefense = 0, bluntDefense = 0 }
-                                    pcall(function() stats.name = self.itemManager.GetItemName(item.class) or "Unknown" end)
-                                    table.insert(inventoryItems, stats)
+                -- Try to get the global EmbeddedScan class
+                if _G.EmbeddedScan then
+                    System.LogAlways("$2[GearPicker] Found global EmbeddedScan class, creating instance...")
+                    scanner = _G.EmbeddedScan:new(_G.player, _G.Script, _G.ItemManager, nil)
+                end
+            end
+            
+            -- If still no scanner, try with SimplifiedInventoryScan
+            if not scanner and Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua") == 1 then
+                System.LogAlways("$7[GearPicker] Manually loaded SimplifiedInventoryScan.lua")
+                
+                -- Try to get the global SimplifiedInventoryScan class
+                if _G.SimplifiedInventoryScan then
+                    System.LogAlways("$2[GearPicker] Found global SimplifiedInventoryScan class, creating instance...")
+                    scanner = _G.SimplifiedInventoryScan:new(_G.player, _G.Script, _G.ItemManager, nil)
+                end
+            end
+            
+            -- Ultimate fallback - direct inline emergency scanner
+            if not scanner then
+                System.LogAlways("$4[GearPicker] WARNING: Creating ultimate fallback scanner inline...")
+                
+                -- Create a minimal inline scanner as last resort
+                local EmergencyScanner = {
+                    new = function(self, player, script, itemManager)
+                        return {
+                            player = player,
+                            script = script, 
+                            itemManager = itemManager,
+                            inventoryItems = {},
+                            
+                            -- Minimal scan implementation
+                            scanInventory = function(this, callback)
+                                System.LogAlways("$5[GearPicker] Running last resort emergency scan...")
+                                
+                                -- Basic inventory access
+                                local inventoryItems = {}
+                                local count = 0
+                                pcall(function() count = this.player.inventory:GetCount() end)
+                                
+                                if count > 0 then
+                                    System.LogAlways("$5[GearPicker] Found " .. count .. " inventory items")
+                                    for i = 0, count - 1 do
+                                        local item = nil
+                                        pcall(function() item = this.player.inventory:GetItem(i) end)
+                                        if item and item.id then
+                                            local stats = { 
+                                                id = item.id, 
+                                                name = "Unknown Item", 
+                                                slot = "unknown",
+                                                stabDefense = 0, 
+                                                slashDefense = 0, 
+                                                bluntDefense = 0 
+                                            }
+                                            pcall(function() 
+                                                if item.class then
+                                                    stats.name = this.itemManager.GetItemName(item.class) or "Unknown" 
+                                                end
+                                            end)
+                                            pcall(function() 
+                                                if item.GetSlot then
+                                                    stats.slot = item:GetSlot() or "unknown" 
+                                                end
+                                            end)
+                                            pcall(function() 
+                                                if item.GetStabDefense then
+                                                    stats.stabDefense = item:GetStabDefense() or 0 
+                                                end
+                                            end)
+                                            pcall(function() 
+                                                if item.GetSlashDefense then
+                                                    stats.slashDefense = item:GetSlashDefense() or 0 
+                                                end
+                                            end)
+                                            pcall(function() 
+                                                if item.GetBluntDefense then
+                                                    stats.bluntDefense = item:GetBluntDefense() or 0 
+                                                end
+                                            end)
+                                            
+                                            -- Only include items with defense stats
+                                            if (stats.stabDefense > 0 or stats.slashDefense > 0 or stats.bluntDefense > 0) then
+                                                table.insert(inventoryItems, stats)
+                                                System.LogAlways("$2[GearPicker] Found gear item: " .. stats.name)
+                                            end
+                                        end
+                                    end
+                                end
+                                
+                                System.LogAlways("$5[GearPicker] Emergency scan found " .. #inventoryItems .. " gear items")
+                                
+                                if callback then
+                                    callback(inventoryItems, {})
                                 end
                             end
-                        end
-                        
-                        System.LogAlways("$5[GearPicker] Emergency scan found " .. #inventoryItems .. " items")
-                        
-                        if callback then
-                            callback(inventoryItems, {})
-                        end
+                        }
                     end
                 }
                 
-                scanner = EmbeddedScan:new(_G.player, _G.Script, _G.ItemManager, nil)
-            else
+                -- Create the emergency scanner
+                scanner = EmergencyScanner:new(_G.player, _G.Script, _G.ItemManager)
+            end
+            
+            -- If all our attempts failed, give up
+            if not scanner then
                 System.LogAlways("$4[GearPicker] ERROR: All inventory scanning methods failed!")
                 return
             end

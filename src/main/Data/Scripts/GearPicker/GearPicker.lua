@@ -223,6 +223,9 @@ local GearPicker = {
             string.format("Scripts/%s/Diagnostics.lua", modName),
         }
         
+        -- Pre-initialize class registry
+        self.ClassRegistry = self.ClassRegistry or {}
+        
         -- Log script loading details
         local loadedCount = 0
         local failedCount = 0
@@ -233,14 +236,38 @@ local GearPicker = {
                 System.LogAlways("$4[GearPicker ERROR] Unable to load script: " .. script)
                 failedCount = failedCount + 1
             else
-                -- Add extra logging for the SimplifiedInventoryScan file
+                -- Add extra logging for scanner files
                 if script:find("SimplifiedInventoryScan.lua") then
                     System.LogAlways("$2[GearPicker] Successfully loaded SimplifiedInventoryScan.lua")
+                    
+                    -- Force class registration if missing
+                    if not this.ClassRegistry.SimplifiedInventoryScan and _G.SimplifiedInventoryScan then
+                        System.LogAlways("$4[GearPicker] SimplifiedInventoryScan not in registry, fixing...")
+                        this.ClassRegistry.SimplifiedInventoryScan = _G.SimplifiedInventoryScan
+                        System.LogAlways("$2[GearPicker] SimplifiedInventoryScan force-registered to ClassRegistry")
+                    end
+                    
                     -- Check if it was properly registered
                     if this.ClassRegistry and this.ClassRegistry.SimplifiedInventoryScan then
                         System.LogAlways("$2[GearPicker] SimplifiedInventoryScan class properly registered")
                     else
                         System.LogAlways("$4[GearPicker ERROR] SimplifiedInventoryScan not registered after loading")
+                    end
+                elseif script:find("EmbeddedScan.lua") then
+                    System.LogAlways("$2[GearPicker] Successfully loaded EmbeddedScan.lua")
+                    
+                    -- Force class registration if missing
+                    if not this.ClassRegistry.EmbeddedScan and _G.EmbeddedScan then
+                        System.LogAlways("$4[GearPicker] EmbeddedScan not in registry, fixing...")
+                        this.ClassRegistry.EmbeddedScan = _G.EmbeddedScan
+                        System.LogAlways("$2[GearPicker] EmbeddedScan force-registered to ClassRegistry")
+                    end
+                    
+                    -- Check if it was properly registered
+                    if this.ClassRegistry and this.ClassRegistry.EmbeddedScan then
+                        System.LogAlways("$2[GearPicker] EmbeddedScan class properly registered")
+                    else
+                        System.LogAlways("$4[GearPicker ERROR] EmbeddedScan not registered after loading")
                     end
                 end
                 loadedCount = loadedCount + 1
@@ -423,9 +450,33 @@ local GearPicker = {
 -- Set up GearPicker global
 _G.GearPicker = _G.GearPicker or GearPicker
 
+-- Force ClassRegistry creation even before init if needed
+if not _G.GearPicker.ClassRegistry then
+    _G.GearPicker.ClassRegistry = {}
+    System.LogAlways("$2[GearPicker] Created global ClassRegistry")
+end
+
 -- Provide easier check for other mods or scripts to detect if GearPicker is loaded
 _G.IsGearPickerLoaded = function()
     return _G.GearPickerLoaded == true
+end
+
+-- Force immediate load of scan classes to debug issues
+System.LogAlways("$7[GearPicker] Pre-loading scan classes for reliability...")
+Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua")
+Script.LoadScript("Scripts/GearPicker/EmbeddedScan.lua")
+
+-- Check scan class availability
+if _G.GearPicker.ClassRegistry.SimplifiedInventoryScan then
+    System.LogAlways("$2[GearPicker] SimplifiedInventoryScan registered in ClassRegistry")
+else
+    System.LogAlways("$4[GearPicker] SimplifiedInventoryScan not registered in ClassRegistry")
+end
+
+if _G.GearPicker.ClassRegistry.EmbeddedScan then
+    System.LogAlways("$2[GearPicker] EmbeddedScan registered in ClassRegistry")
+else
+    System.LogAlways("$4[GearPicker] EmbeddedScan not registered in ClassRegistry")
 end
 
 -- Log initial load for troubleshooting
