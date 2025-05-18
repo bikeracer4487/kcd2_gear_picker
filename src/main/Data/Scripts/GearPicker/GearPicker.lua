@@ -215,6 +215,7 @@ local GearPicker = {
             string.format("Scripts/%s/ApiLimitations.lua", modName),
             string.format("Scripts/%s/AlternativeInventory.lua", modName),
             string.format("Scripts/%s/SimplifiedInventoryScan.lua", modName),
+            string.format("Scripts/%s/EmbeddedScan.lua", modName),
             string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/GearScan.lua", modName),
             string.format("Scripts/%s/GearOptimizer.lua", modName),
@@ -344,17 +345,7 @@ local GearPicker = {
         
         -- Do a full diagnostic to help debug the issue
         if not this.ClassRegistry then
-            System.LogAlways("$4[GearPicker ERROR] ClassRegistry is nil!")
-            
-            -- Attempt to manually load the file
-            System.LogAlways("$7[GearPicker] Attempting to manually load SimplifiedInventoryScan.lua...")
-            local result = Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua")
-            if result == 1 then
-                System.LogAlways("$2[GearPicker] Manual load of SimplifiedInventoryScan.lua succeeded")
-            else
-                System.LogAlways("$4[GearPicker ERROR] Manual load of SimplifiedInventoryScan.lua failed")
-            end
-            
+            System.LogAlways("$4[GearPicker ERROR] ClassRegistry is nil!")            
             return nil
         end
         
@@ -364,28 +355,68 @@ local GearPicker = {
             System.LogAlways("$7[GearPicker]   - " .. className)
         end
         
-        --- @type SimplifiedInventoryScan
+        -- First try SimplifiedInventoryScan
         local SimplifiedInventoryScan = this.ClassRegistry.SimplifiedInventoryScan
-        if not SimplifiedInventoryScan then
-            System.LogAlways("$4[GearPicker ERROR] SimplifiedInventoryScan class not found in registry")
+        if SimplifiedInventoryScan then
+            System.LogAlways("$2[GearPicker] Found SimplifiedInventoryScan class, creating instance...")
+            this.__factories.simplifiedInventoryScan = SimplifiedInventoryScan:new(
+                _G.player, 
+                _G.Script, 
+                _G.ItemManager,
+                this:itemCategory()
+            )
+            
+            if this.__factories.simplifiedInventoryScan then
+                System.LogAlways("$2[GearPicker] Successfully created SimplifiedInventoryScan instance")
+                return this.__factories.simplifiedInventoryScan
+            end
+        end
+        
+        -- Try EmbeddedScan as fallback
+        System.LogAlways("$7[GearPicker] SimplifiedInventoryScan not available, trying EmbeddedScan...")
+        local EmbeddedScan = this.ClassRegistry.EmbeddedScan
+        if EmbeddedScan then
+            System.LogAlways("$2[GearPicker] Found EmbeddedScan class, creating instance...")
+            this.__factories.simplifiedInventoryScan = EmbeddedScan:new(
+                _G.player, 
+                _G.Script, 
+                _G.ItemManager,
+                this:itemCategory()
+            )
+            
+            if this.__factories.simplifiedInventoryScan then
+                System.LogAlways("$2[GearPicker] Successfully created EmbeddedScan instance as fallback")
+                return this.__factories.simplifiedInventoryScan
+            end
+        end
+        
+        System.LogAlways("$4[GearPicker ERROR] No inventory scanner found in ClassRegistry")
+        return nil
+    end,
+    
+    --- Embedded backup inventory scanner
+    embeddedScan = function(self)
+        --- @type GearPicker
+        local this = self
+        
+        if this.__factories.embeddedScan then
+            return this.__factories.embeddedScan
+        end
+        
+        local EmbeddedScan = this.ClassRegistry.EmbeddedScan
+        if not EmbeddedScan then
+            System.LogAlways("$4[GearPicker ERROR] EmbeddedScan class not found in registry")
             return nil
         end
         
-        System.LogAlways("$2[GearPicker] Found SimplifiedInventoryScan class, creating instance...")
-        this.__factories.simplifiedInventoryScan = SimplifiedInventoryScan:new(
+        this.__factories.embeddedScan = EmbeddedScan:new(
             _G.player, 
             _G.Script, 
             _G.ItemManager,
             this:itemCategory()
         )
         
-        if this.__factories.simplifiedInventoryScan then
-            System.LogAlways("$2[GearPicker] Successfully created SimplifiedInventoryScan instance")
-        else
-            System.LogAlways("$4[GearPicker ERROR] Failed to create SimplifiedInventoryScan instance")
-        end
-        
-        return this.__factories.simplifiedInventoryScan
+        return this.__factories.embeddedScan
     end,
 }
 

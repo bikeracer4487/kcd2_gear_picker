@@ -413,34 +413,59 @@ local Commands = {
             System.LogAlways("$6[GearPicker] =========================================================")
         end
         
-        -- Try to use simplifiedInventoryScan - our new streamlined approach
-        System.LogAlways("$7[GearPicker] Trying to use SimplifiedInventoryScan...")
+        -- Try to use simplifiedInventoryScan which now has a built-in fallback to EmbeddedScan
+        System.LogAlways("$7[GearPicker] Trying to use inventory scanner...")
         local scanner = GearPicker:simplifiedInventoryScan()
         
+        -- If all else fails, try manual creation of EmbeddedScan
         if not scanner then
-            System.LogAlways("$4[GearPicker] WARNING: SimplifiedInventoryScan not available, trying alternative approaches...")
+            System.LogAlways("$4[GearPicker] WARNING: All built-in scanners failed, trying manual embedded scan...")
             
-            -- Try to reload the script
-            System.LogAlways("$7[GearPicker] Attempting to reload SimplifiedInventoryScan.lua...")
-            if Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua") == 1 then
-                System.LogAlways("$2[GearPicker] SimplifiedInventoryScan.lua loaded, trying again...")
-                scanner = GearPicker:simplifiedInventoryScan()
-            end
-            
-            -- If still not available, try GearScan as fallback
-            if not scanner and GearPicker.gearScan then
-                System.LogAlways("$7[GearPicker] Falling back to GearScan...")
-                scanner = GearPicker:gearScan()
-                if scanner then
-                    System.LogAlways("$7[GearPicker] Using GearScan as fallback...")
-                else
-                    System.LogAlways("$4[GearPicker] ERROR: No inventory scanner available!")
-                    return
-                end
-            else if not scanner then
+            -- Try one more time with direct EmbeddedScan script loading
+            if Script.LoadScript("Scripts/GearPicker/EmbeddedScan.lua") == 1 then
+                System.LogAlways("$7[GearPicker] Manually loaded EmbeddedScan.lua, creating direct scanner...")
+                
+                -- Directly create EmbeddedScan class (emergency fallback)
+                local EmbeddedScan = {
+                    new = function(self, player, script, itemManager, itemCategory)
+                        local instance = { player = player, script = script, itemManager = itemManager, itemCategory = itemCategory, inventoryItems = {} }
+                        setmetatable(instance, { __index = self })
+                        return instance
+                    end,
+                    
+                    scanInventory = function(self, callback)
+                        System.LogAlways("$5[GearPicker] Running embedded emergency scan...")
+                        System.LogAlways("$5[GearPicker] (This is a simplified emergency scanner with minimal functionality)")
+                        
+                        -- Ultra-basic inventory access
+                        local inventoryItems = {}
+                        local count = 0
+                        pcall(function() count = self.player.inventory:GetCount() end)
+                        
+                        if count > 0 then
+                            for i = 0, count - 1 do
+                                local item = nil
+                                pcall(function() item = self.player.inventory:GetItem(i) end)
+                                if item and item.id then
+                                    local stats = { id = item.id, name = "Unknown Item", stabDefense = 0, slashDefense = 0, bluntDefense = 0 }
+                                    pcall(function() stats.name = self.itemManager.GetItemName(item.class) or "Unknown" end)
+                                    table.insert(inventoryItems, stats)
+                                end
+                            end
+                        end
+                        
+                        System.LogAlways("$5[GearPicker] Emergency scan found " .. #inventoryItems .. " items")
+                        
+                        if callback then
+                            callback(inventoryItems, {})
+                        end
+                    end
+                }
+                
+                scanner = EmbeddedScan:new(_G.player, _G.Script, _G.ItemManager, nil)
+            else
                 System.LogAlways("$4[GearPicker] ERROR: All inventory scanning methods failed!")
                 return
-            end
             end
         end
         
