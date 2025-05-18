@@ -1,0 +1,5 @@
+<Table>
+<Row><Cell>ui_hud_reputation_notification_crime_reported</Cell><Cell>Crime reported</Cell><Cell>Crime reported</Cell></Row>
+<Row><Cell>ui_hud_reputation_notification_reputation_gained</Cell><Cell>Reputation gained</Cell><Cell>Reputation gained</Cell></Row>
+<Row><Cell>ui_hud_reputation_notification_reputation_lost</Cell><Cell>Reputation lost</Cell><Cell>Reputation lost</Cell></Row>
+</Table>

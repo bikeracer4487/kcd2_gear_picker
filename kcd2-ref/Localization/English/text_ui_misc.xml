@@ -1,0 +1,1389 @@
+<Table>
+<Row><Cell>ach_againstAllOdds_desc</Cell><Cell>You finished the game in Hardcore mode with all negative perks enabled.</Cell><Cell>You finished the game in Hardcore mode with all negative perks enabled.</Cell></Row>
+<Row><Cell>ach_againstAllOdds_name</Cell><Cell>Against All Odds</Cell><Cell>Against All Odds</Cell></Row>
+<Row><Cell>ach_againstAllOdds_not_achieved_desc</Cell><Cell>Finish the game in Hardcore mode with all negative perks enabled.</Cell><Cell>Finish the game in Hardcore mode with all negative perks enabled.</Cell></Row>
+<Row><Cell>ach_AHansInTheHand_desc</Cell><Cell>You saved Capon from the gallows. Too bad.</Cell><Cell>You saved Capon from the gallows.</Cell></Row>
+<Row><Cell>ach_aHansInTheHand_name</Cell><Cell>Capon in the hand</Cell><Cell>A Bird in the Hand</Cell></Row>
+<Row><Cell>ach_bodyguard_desc</Cell><Cell>You beat Capon in training. Again.</Cell><Cell>You defeated Capon during practice. Again.</Cell></Row>
+<Row><Cell>ach_bodyguard_name</Cell><Cell>BodyGuard WHS</Cell><Cell>Déjà Vu</Cell></Row>
+<Row><Cell>ach_bodyguard_not_achieved_desc</Cell><Cell>Defeat Capon in training!</Cell><Cell>Defeat Capon during practice!</Cell></Row>
+<Row><Cell>ach_BohemianAris_desc</Cell><Cell>You were ahead of your time and created the foundations for the state emblem of Bohemia.</Cell><Cell>You were ahead of your time and created the foundations for the state emblem of Bohemia.</Cell></Row>
+<Row><Cell>ach_BohemianArise_name</Cell><Cell>Bohemians Rise Up!</Cell><Cell>Bohemians Rise Up!</Cell></Row>
+<Row><Cell>ach_BohemianAris_not_achieved_desc</Cell><Cell>Have the emblems of Bohemia, Moravia and Silesia painted on any shield.</Cell><Cell>Have the emblems of Bohemia, Moravia and Silesia painted on any shield.</Cell></Row>
+<Row><Cell>ach_BohemianGraffiti_desc</Cell><Cell>You painted every type of shield.</Cell><Cell>You painted every type of shield.</Cell></Row>
+<Row><Cell>ach_BohemianGraffiti_name</Cell><Cell>Bohemian Graffitti</Cell><Cell>Bohemian Graffitti</Cell></Row>
+<Row><Cell>ach_BohemianGraffiti_not_achieved_desc</Cell><Cell>Have every type of shield painted.</Cell><Cell>Have every type of shield painted.</Cell></Row>
+<Row><Cell>ach_changeOfScenery_desc</Cell><Cell>Welcome to Kuttenberg!</Cell><Cell>Welcome to the Kuttenberg region!</Cell></Row>
+<Row><Cell>ach_changeOfScenery_name</Cell><Cell>New place...</Cell><Cell>New Horizons</Cell></Row>
+<Row><Cell>ach_closeOne_desc</Cell><Cell>You managed to talk your way out of an execution.</Cell><Cell>You managed to talk your way out of an execution.</Cell></Row>
+<Row><Cell>ach_closeOne_name</Cell><Cell>Hangman's nooses</Cell><Cell>Slip the Noose</Cell></Row>
+<Row><Cell>ach_collector_desc</Cell><Cell>You managed to get a gold badge.</Cell><Cell>You won a gold badge in a game of dice.</Cell></Row>
+<Row><Cell>ach_collector_name</Cell><Cell>Collector</Cell><Cell>Shiny</Cell></Row>
+<Row><Cell>ach_collector_not_achieved_desc</Cell><Cell>Get a gold badge from the cubers!</Cell><Cell>Win a gold badge in a game of dice!</Cell></Row>
+<Row><Cell>ach_dieAnotherDay_desc</Cell><Cell>As Godwin, you saved your brother.</Cell><Cell>As Godwin, you saved your brother.</Cell></Row>
+<Row><Cell>ach_dieAnotherDay_name</Cell><Cell>Death is postponed</Cell><Cell>Die Another Day</Cell></Row>
+<Row><Cell>ach_dirtySeven_desc</Cell><Cell>You found all of the Devil's comrades-in-arms.</Cell><Cell>You found all of Dry Devil's comrades-in-arms.</Cell></Row>
+<Row><Cell>ach_dirtySeven_name</Cell><Cell>Seven unwashed</Cell><Cell>The Dirty Seven</Cell></Row>
+<Row><Cell>ach_duel_desc</Cell><Cell>You shot an enemy with a rifle.</Cell><Cell>You shot a gun-wielding enemy with a gun.</Cell></Row>
+<Row><Cell>ach_duel_name</Cell><Cell>Duel</Cell><Cell>High Noon</Cell></Row>
+<Row><Cell>ach_endOfFrogMouseWar_desc</Cell><Cell>You've pacified both villages. For now.</Cell><Cell>You've helped the two quarreling villages reconcile. For now.</Cell></Row>
+<Row><Cell>ach_endOfFrogMouseWar_name</Cell><Cell>Truce</Cell><Cell>Truce</Cell></Row>
+<Row><Cell>ach_everyDayIsFriday_desc</Cell><Cell>You fasted the whole game and didn't kill any animals.</Cell><Cell>You finished the game without eating meat or killing any animals.</Cell></Row>
+<Row><Cell>ach_everyDayIsFriday_name</Cell><Cell>Lent</Cell><Cell>Lent</Cell></Row>
+<Row><Cell>ach_faceToFace_desc</Cell><Cell>You finally met Aulitz.</Cell><Cell>You finally met Markvart von Aulitz.</Cell></Row>
+<Row><Cell>ach_faceToFace_name</Cell><Cell>Face to face</Cell><Cell>Face to Face</Cell></Row>
+<Row><Cell>ach_favouriteTool_desc</Cell><Cell>You've killed a man with every kind of weapon.</Cell><Cell>You've defeated an enemy with every type of weapon.</Cell></Row>
+<Row><Cell>ach_favouriteTool_name</Cell><Cell>Favourite instrument</Cell><Cell>Weapon of Choice</Cell></Row>
+<Row><Cell>ach_favouriteTool_not_achieved_desc</Cell><Cell>Kill at least one person with each type of weapon.</Cell><Cell>Defeat an enemy with every type of weapon!</Cell></Row>
+<Row><Cell>ach_firstToThrowSTone_desc</Cell><Cell>You killed an enemy with a thrown rock. Nice work.</Cell><Cell>You killed an enemy with a boulder dropped from the battlements. Karl would be proud!</Cell></Row>
+<Row><Cell>ach_firstToThrowStone_name</Cell><Cell>Let him cast the first stone</Cell><Cell>Rock and Stone!</Cell></Row>
+<Row><Cell>ach_firstToThrowStone_not_achieved_desc</Cell><Cell>Kill the enemy with a stone thrown from the walls!</Cell><Cell>Kill an enemy with a boulder dropped from the battlements.</Cell></Row>
+<Row><Cell>ach_flagellumDei_desc</Cell><Cell>You scored 150 points in the mounted archery competition.</Cell><Cell>You scored 150 points in the mounted archery competition.</Cell></Row>
+<Row><Cell>ach_flagellumDei_name</Cell><Cell>Flagellum Dei</Cell><Cell>Flagellum Dei</Cell></Row>
+<Row><Cell>ach_flagellumDei_not_achieved_desc</Cell><Cell>Score 150 points in the mounted archery competition.</Cell><Cell>Score 150 points in the mounted archery competition.</Cell></Row>
+<Row><Cell>ach_gentleTouch_desc</Cell><Cell>You picked the hardest lock.</Cell><Cell>You picked the hardest lock.</Cell></Row>
+<Row><Cell>ach_gentleTouch_name</Cell><Cell>Light touch</Cell><Cell>Nimble Fingers</Cell></Row>
+<Row><Cell>ach_groschenMustFlow_desc</Cell><Cell>You spent ten thousand groschen.</Cell><Cell>You spent ten thousand groschen.</Cell></Row>
+<Row><Cell>ach_groschenMustFlow_name</Cell><Cell>The groschen are spinning</Cell><Cell>Groschen Must Flow</Cell></Row>
+<Row><Cell>ach_groschenMustFlow_not_achieved_desc</Cell><Cell>Spend your groschen big!</Cell><Cell>Spend a lot of groschen!</Cell></Row>
+<Row><Cell>ach_hardboughtMercy_desc</Cell><Cell>You saved Maleshov and you weren't caught.</Cell><Cell>You saved Maleshov without getting caught.</Cell></Row>
+<Row><Cell>ach_hardboughtMercy_name</Cell><Cell>Every good deed</Cell><Cell>No Good Deed</Cell></Row>
+<Row><Cell>ach_hardcore_desc</Cell><Cell>You finished the story in Hardcore mode.</Cell><Cell>You finished the story in Hardcore mode.</Cell></Row>
+<Row><Cell>ach_hardcore_name</Cell><Cell>Hardcore Henry II</Cell><Cell>Hardcore Henry II</Cell></Row>
+<Row><Cell>ach_hardcore_not_achieved_desc</Cell><Cell>Finish the story in Hardcore mode.</Cell><Cell>Finish the story in Hardcore mode.</Cell></Row>
+<Row><Cell>ach_headsOfHydra_desc</Cell><Cell>All three commanders are dead, and the powder magazine is down too.</Cell><Cell>All three commanders are dead, and the powder magazine's been taken care of.</Cell></Row>
+<Row><Cell>ach_headsOfHydra_name</Cell><Cell>Hydra's head</Cell><Cell>The Hydra's Heads</Cell></Row>
+<Row><Cell>ach_henryOfAllTrades_desc</Cell><Cell>You have successfully completed every mini-game.</Cell><Cell>You have successfully completed every mini-game.</Cell></Row>
+<Row><Cell>ach_henryOfAllTrades_name</Cell><Cell>How many crafts can you do</Cell><Cell>Jack of All Trades</Cell></Row>
+<Row><Cell>ach_henryOfAllTrades_not_achieved_desc</Cell><Cell>Complete each of the mini-games at least once.</Cell><Cell>Complete each of the mini-games at least once.</Cell></Row>
+<Row><Cell>ach_HenrysPaintersRemedy_desc</Cell><Cell>You gave the painter medicine of the highest quality.</Cell><Cell>You gave the painter medicine of the highest quality.</Cell></Row>
+<Row><Cell>ach_HenrysPaintersRemedy_name</Cell><Cell>Nothing But the Best</Cell><Cell>Nothing But the Best</Cell></Row>
+<Row><Cell>ach_HenrysPaintersRemedy_not_achieved_desc</Cell><Cell>Give the painter medicine of the highest quality</Cell><Cell>Give the painter medicine of the highest quality.</Cell></Row>
+<Row><Cell>ach_henryTheHandyman_desc</Cell><Cell>You've fulfilled most of the content of the game.</Cell><Cell>You've completed most of the game's content.</Cell></Row>
+<Row><Cell>ach_henryTheHandyman_name</Cell><Cell>Henry, work of all kinds</Cell><Cell>Been There, Done That</Cell></Row>
+<Row><Cell>ach_hicBoom_desc</Cell><Cell>Making gunpowder drunk is not recommended.</Cell><Cell>Making gunpowder while drunk isn't a very good idea.</Cell></Row>
+<Row><Cell>ach_hicBoom_name</Cell><Cell>Hiccup-Boom</Cell><Cell>Hic-Hic-Boom</Cell></Row>
+<Row><Cell>ach_HumanCanOpener_desc</Cell><Cell>The painter told you everything.</Cell><Cell>The painter told you everything.</Cell></Row>
+<Row><Cell>ach_HumanCanOpener_name</Cell><Cell>Confessor</Cell><Cell>Confessor</Cell></Row>
+<Row><Cell>ach_kickAss_desc</Cell><Cell>You beat the best brawler around.</Cell><Cell>You beat the best brawler around.</Cell></Row>
+<Row><Cell>ach_kickAss_name</Cell><Cell>Henry the Grinding Machine</Cell><Cell>Henry the Bruiser</Cell></Row>
+<Row><Cell>ach_kickAss_not_achieved_desc</Cell><Cell>Beat the best brawler around!</Cell><Cell>Beat the best brawler around!</Cell></Row>
+<Row><Cell>ach_knightlyOath_desc</Cell><Cell>You rewarded the spice queen for her help as promised.</Cell><Cell>You rewarded the herbwoman for her help as promised.</Cell></Row>
+<Row><Cell>ach_knightlyOath_name</Cell><Cell>Word of the Knight</Cell><Cell>A Knight's Word</Cell></Row>
+<Row><Cell>ach_masterOfMasteres_name</Cell><Cell>Master of Masters</Cell><Cell>Master of Masters</Cell></Row>
+<Row><Cell>ach_masterofMasters_desc</Cell><Cell>You beat Zavish in three events.</Cell><Cell>You beat Zavish in three disciplines.</Cell></Row>
+<Row><Cell>ach_matchmakerHenry_desc</Cell><Cell>You brought Viktorka her sweetheart. Against his will.</Cell><Cell>You brought Victoria her sweetheart. Against his will.</Cell></Row>
+<Row><Cell>ach_matchmakerHenry_name</Cell><Cell>Jindra the Matchmaker</Cell><Cell>Henry the Matchmaker</Cell></Row>
+<Row><Cell>ach_neverMissAThing_desc</Cell><Cell>You won the miners' competition on the highest difficulty.</Cell><Cell>You won the miners' competition on the highest difficulty.</Cell></Row>
+<Row><Cell>ach_neverMissAThing_name</Cell><Cell>Sharpshooter</Cell><Cell>Canny Shooter</Cell></Row>
+<Row><Cell>ach_neverMissAThing_not_achieved_desc</Cell><Cell>Win the miners' competition on the highest difficulty.</Cell><Cell>Win the miners' competition on the highest difficulty.</Cell></Row>
+<Row><Cell>ach_NoUseCryingOverSpilledInk_desc</Cell><Cell>You finished Brushes with Death.</Cell><Cell>You finished Brushes with Death.</Cell></Row>
+<Row><Cell>ach_NoUseCryingOverSpilledInk_name</Cell><Cell>Masterpiece</Cell><Cell>Masterpiece</Cell></Row>
+<Row><Cell>ach_oldFriends_desc</Cell><Cell>You found Gray.</Cell><Cell>You found Pebbles.</Cell></Row>
+<Row><Cell>ach_oldFriends_name</Cell><Cell>An old friend</Cell><Cell>An Old Friend</Cell></Row>
+<Row><Cell>ach_oldFriends_not_achieved_desc</Cell><Cell>Find Gray!</Cell><Cell>Find Pebbles!</Cell></Row>
+<Row><Cell>ach_oldRaven_desc</Cell><Cell>You've found the true master in Nebak.</Cell><Cell>You found the true Lord of Nebakov.</Cell></Row>
+<Row><Cell>ach_oldRaven_name</Cell><Cell>Old Raven</Cell><Cell>Old Raven</Cell></Row>
+<Row><Cell>ach_onlyGivethAway_desc</Cell><Cell>You've lost ten thousand groschen.</Cell><Cell>You've lost ten thousand groschen.</Cell></Row>
+<Row><Cell>ach_onlyGivethAway_name</Cell><Cell>The Lord just took</Cell><Cell>The Lord Taketh Away</Cell></Row>
+<Row><Cell>ach_originalGunslinger_desc</Cell><Cell>You got four loaded rifles ready.</Cell><Cell>You got four loaded hand cannons ready.</Cell></Row>
+<Row><Cell>ach_originalGunslinger_name</Cell><Cell>The first gunslinger</Cell><Cell>Original Gunslinger</Cell></Row>
+<Row><Cell>ach_overkill_desc</Cell><Cell>You pulverized a rabbit with a rifle shot.</Cell><Cell>You pulverized a rabbit with a gunshot.</Cell></Row>
+<Row><Cell>ach_overkill_name</Cell><Cell>Meatloaf</Cell><Cell>Overkill</Cell></Row>
+<Row><Cell>ach_platinum_desc</Cell><Cell>You've won all the trophies and you deserve some eternal peace.</Cell><Cell>You obtained all trophies! Now go and touch some grass.</Cell></Row>
+<Row><Cell>ach_platinum_name</Cell><Cell>Kingdom Came</Cell><Cell>Kingdom Came</Cell></Row>
+<Row><Cell>ach_platinum_not_achieved_desc</Cell><Cell>Get all the trophies!</Cell><Cell>Obtain all trophies!</Cell></Row>
+<Row><Cell>ach_PrankGoneWrong_desc</Cell><Cell>Hopefully now Stihlau understand there are some things you shouldn't joke about.</Cell><Cell>Hopefully now Stihlau understand there are some things you shouldn't joke about.</Cell></Row>
+<Row><Cell>ach_PrankGoneWrong_name</Cell><Cell>All Fun and Games</Cell><Cell>All Fun and Games</Cell></Row>
+<Row><Cell>ach_reforged_desc</Cell><Cell>You've cut the sword you've been searching for so long...</Cell><Cell>You reforged the sword you'd been searching for so long.</Cell></Row>
+<Row><Cell>ach_reforged_name</Cell><Cell>Retrieved from</Cell><Cell>Reforged</Cell></Row>
+<Row><Cell>ach_rememberRemember_desc</Cell><Cell>You didn't think it was gonna blow. Really?</Cell><Cell>Did you really think it wouldn't blow up? Really?</Cell></Row>
+<Row><Cell>ach_rememberRemember_name</Cell><Cell>Do not enter the fire</Cell><Cell>Remember, Remember…</Cell></Row>
+<Row><Cell>ach_RestInOnePiece_desc</Cell><Cell>The skull finally reached its final resting place.</Cell><Cell>The skull finally reached its final resting place.</Cell></Row>
+<Row><Cell>ach_RestInOnePiece_name</Cell><Cell>Rest in One PIece</Cell><Cell>Rest in One Piece</Cell></Row>
+<Row><Cell>ach_RestInOnePiece_not_achieved_desc</Cell><Cell>Return the skull to the rest of the body.</Cell><Cell>Return the skull to the rest of the body.</Cell></Row>
+<Row><Cell>ach_revenge_desc</Cell><Cell>Toth is dead. It's about time.</Cell><Cell>Istvan is dead. It's about time!</Cell></Row>
+<Row><Cell>ach_revenge_name</Cell><Cell>Revenge</Cell><Cell>Vengeance</Cell></Row>
+<Row><Cell>ach_RevengeSolvesNothing_desc</Cell><Cell>You let Burkhard live.</Cell><Cell>You let Burkhard live.</Cell></Row>
+<Row><Cell>ach_RevengeSolvesNothing_name</Cell><Cell>Vengeance Solves Nothing</Cell><Cell>Vengeance Solves Nothing</Cell></Row>
+<Row><Cell>ach_ShouldntHavePushedIt_desc</Cell><Cell>If you hadn't poked around, Libor wouldn't be swinging.</Cell><Cell>If you hadn't poked around, Libor wouldn't be swinging.</Cell></Row>
+<Row><Cell>ach_ShouldntHavePushedIt_name</Cell><Cell>Curiosity Killed the Cat</Cell><Cell>Curiosity Killed the Cat</Cell></Row>
+<Row><Cell>ach_silenceIsGolden_desc</Cell><Cell>Thanks to you, the raid on Semine didn't happen.</Cell><Cell>Thanks to you, the raid on Semine didn't happen.</Cell></Row>
+<Row><Cell>ach_silenceIsGolden_name</Cell><Cell>Silence gold</Cell><Cell>Silence is Golden</Cell></Row>
+<Row><Cell>ach_StainedHonour_desc</Cell><Cell>But not paid for.</Cell><Cell>But not paid for.</Cell></Row>
+<Row><Cell>ach_StainedHonour_name</Cell><Cell>Painted</Cell><Cell>Painted</Cell></Row>
+<Row><Cell>ach_sweetDreams_desc</Cell><Cell>You cut down an enemy who was looking for you.</Cell><Cell>You slit the throat of an enemy who was looking for you.</Cell></Row>
+<Row><Cell>ach_sweetDreams_name</Cell><Cell>Sweet dreams</Cell><Cell>Lights Out</Cell></Row>
+<Row><Cell>ach_sweetDreams_not_achieved_desc</Cell><Cell>Subdue the enemy who is looking for you!</Cell><Cell>Slit the throat of an enemy looking for you!</Cell></Row>
+<Row><Cell>ach_technicalAdvance_desc</Cell><Cell>You killed an enemy with a crossbow shot to the head at long range.</Cell><Cell>You killed an enemy with a crossbow shot to the head at long range.</Cell></Row>
+<Row><Cell>ach_technicalAdvance_name</Cell><Cell>Progress</Cell><Cell>Bohemian Sniper</Cell></Row>
+<Row><Cell>ach_technicalAdvance_not_achieved_desc</Cell><Cell>Kill an enemy with a crossbow shot to the head at long range!</Cell><Cell>Kill an enemy with a crossbow shot to the head at long range!</Cell></Row>
+<Row><Cell>ach_thatWasMyFavouritePair_desc</Cell><Cell>While you were lying around unconscious, someone pinched your shoes.</Cell><Cell>While you were passed out, somebody nicked your shoes.</Cell></Row>
+<Row><Cell>ach_thatWasMyFavouritePair_name</Cell><Cell>My shoes!</Cell><Cell>My Shoes!</Cell></Row>
+<Row><Cell>ach_theKuttenbergTales_desc</Cell><Cell>You helped Rosa finish her book.</Cell><Cell>You helped Rosa finish her book.</Cell></Row>
+<Row><Cell>ach_theKuttenbergTales_name</Cell><Cell>Tales from Kutná Hora</Cell><Cell>Tales of Kuttenberg</Cell></Row>
+<Row><Cell>ach_theKuttenbergTales_not_achieved_desc</Cell><Cell>Help Rosa with her book!</Cell><Cell>Help Rosa with her book!</Cell></Row>
+<Row><Cell>ach_thePenitent_desc</Cell><Cell>You've gone through a penitential pilgrimage.</Cell><Cell>You made the penitential pilgrimage.</Cell></Row>
+<Row><Cell>ach_thePenitent_name</Cell><Cell>Repentant Man</Cell><Cell>Penitent One</Cell></Row>
+<Row><Cell>ach_thePenitent_not_achieved_desc</Cell><Cell>Come and take part in the pilgrimage! You don't have to kneel.</Cell><Cell>Repent and make the penitential pilgrimage! You don't have to kneel.</Cell></Row>
+<Row><Cell>ach_thereIsNoShortcutToHeaven_desc</Cell><Cell>You helped the legate to martyrdom.</Cell><Cell>You helped the legate attain martyrdom.</Cell></Row>
+<Row><Cell>ach_thereIsNoShortcutToHeaven_name</Cell><Cell>Martyr</Cell><Cell>Martyr</Cell></Row>
+<Row><Cell>ach_theStoryEnds_desc</Cell><Cell>You finished the story to the end.</Cell><Cell>You completed the story.</Cell></Row>
+<Row><Cell>ach_theStoryEnds_name</Cell><Cell>The end</Cell><Cell>The End</Cell></Row>
+<Row><Cell>ach_thisIsMyWeapon_desc</Cell><Cell>You killed the enemy with a combo.</Cell><Cell>You killed an enemy with a combo.</Cell></Row>
+<Row><Cell>ach_thisIsMyWeapon_name</Cell><Cell>That's how gentlemen cut...</Cell><Cell>Fancy Fighting</Cell></Row>
+<Row><Cell>ach_thisIsMyWeapon_not_achieved_desc</Cell><Cell>Kill the enemy with a combo!</Cell><Cell>Kill an enemy with a combo!</Cell></Row>
+<Row><Cell>ach_thisWillEndBadly_desc</Cell><Cell>And that was just a beginning...</Cell><Cell>And that was just a beginning...</Cell></Row>
+<Row><Cell>ach_thisWillEndBadly_name</Cell><Cell>This is gonna be a mess.</Cell><Cell>This Won't End Well</Cell></Row>
+<Row><Cell>ach_toPutAPressureOn_desc</Cell><Cell>Three times you won a fight while you were bleeding.</Cell><Cell>You won three skirmishes while bleeding.</Cell></Row>
+<Row><Cell>ach_toPutAPressureOn_name</Cell><Cell>Under Pressure</Cell><Cell>Under Pressure</Cell></Row>
+<Row><Cell>ach_toPutAPressureOn_not_achieved_desc</Cell><Cell>Win three fights while bleeding!</Cell><Cell>Win a skirmish while bleeding three times!</Cell></Row>
+<Row><Cell>ach_trueCardinal_name</Cell><Cell>The unadulterated Cardinal</Cell><Cell>True Cardinal</Cell></Row>
+<Row><Cell>ach_trueCardinam_desc</Cell><Cell>You passed the church council without a single suspicion.</Cell><Cell>You made it through the church council without raising suspicion.</Cell></Row>
+<Row><Cell>ach_trustyAlly_desc</Cell><Cell>You found and saved Mutt.</Cell><Cell>You found and saved Mutt.</Cell></Row>
+<Row><Cell>ach_trustyAlly_name</Cell><Cell>A loyal ally</Cell><Cell>Man's Best Friend</Cell></Row>
+<Row><Cell>ach_underBrownFlag_desc</Cell><Cell>You hung used underwear on the pub. Very used.</Cell><Cell>You hung used underwear on the tavern. Very used.</Cell></Row>
+<Row><Cell>ach_underBrownFlag_name</Cell><Cell>The dishonored flag</Cell><Cell>Under a Brown Flag</Cell></Row>
+<Row><Cell>ach_unholyTrinity_desc</Cell><Cell>You helped the executioner, knacker, and ossuary guardian.</Cell><Cell>You helped the executioner, knacker, and ossuary guardian.</Cell></Row>
+<Row><Cell>ach_unholyTrinity_name</Cell><Cell>Boneworks</Cell><Cell>Boneworks</Cell></Row>
+<Row><Cell>ach_WayWithWords_desc</Cell><Cell>Every strophe is a work of art.</Cell><Cell>Every strophe is a work of art.</Cell></Row>
+<Row><Cell>ach_WayWithWords_name</Cell><Cell>Poet's Gut</Cell><Cell>Poet's Gut</Cell></Row>
+<Row><Cell>ach_youCanRun_desc</Cell><Cell>You shattered the enemy's shield.</Cell><Cell>You broke an enemy's shield.</Cell></Row>
+<Row><Cell>ach_youCanRun_name</Cell><Cell>Without protection</Cell><Cell>Without Protection</Cell></Row>
+<Row><Cell>action_pr_odemknout_Yz7D</Cell><Cell>Unlock</Cell><Cell>Unlock</Cell></Row>
+<Row><Cell>ambrozuv__odkryt_hrob_RnVV</Cell><Cell>Uncover the grave</Cell><Cell>Uncover the grave</Cell></Row>
+<Row><Cell>aplikace__nasypat_blechy_CkN1</Cell><Cell>Spread fleas</Cell><Cell>Sprinkle fleas</Cell></Row>
+<Row><Cell>aranka_pr_vedes_aranku_za_XK6U</Cell><Cell>You lead Aranka to Marika.</Cell><Cell>You lead Aranka to Marika.</Cell></Row>
+<Row><Cell>audience_dvere_nelze_otev_nZVP</Cell><Cell>The door cannot be opened.</Cell><Cell>The door cannot be opened.</Cell></Row>
+<Row><Cell>aulitzuv__k_aulitzovi_bm9e</Cell><Cell>Open</Cell><Cell>Open</Cell></Row>
+<Row><Cell>aulitzuv__prohlednout_zbr_eVI1</Cell><Cell>Inspect armour</Cell><Cell>Inspect armour</Cell></Row>
+<Row><Cell>azzahrob_chlast_CSx2</Cell><Cell>Gravedigger's brandy</Cell><Cell>Gravediggers' brandy</Cell></Row>
+<Row><Cell>bandits_r_lektvar_xlRh</Cell><Cell>Potion</Cell><Cell>Potion</Cell></Row>
+<Row><Cell>bark_na_h_prohlednout_si__M1R1</Cell><Cell>Examine Burkhard</Cell><Cell>Examine Burkhard</Cell></Row>
+<Row><Cell>barky_jin_samomluva_iFjQ</Cell><Cell>Talking to himself</Cell><Cell>Talking to himself.</Cell></Row>
+<Row><Cell>barky_na__prohlednout_mF9u</Cell><Cell>Animal</Cell><Cell>Animal</Cell></Row>
+<Row><Cell>barky_na__telo_yZTc</Cell><Cell>Body</Cell><Cell>Body</Cell></Row>
+<Row><Cell>barky_pri_dve_skaly_g1Wx</Cell><Cell>Two rocks</Cell><Cell>Two rocks</Cell></Row>
+<Row><Cell>barky_pri_loviste_jelenu_LUrn</Cell><Cell>Deer hunting grounds</Cell><Cell>Deerhunting grounds</Cell></Row>
+<Row><Cell>barky_pri_osamela_skala_OEm4</Cell><Cell>Lonely rock</Cell><Cell>Lone rock</Cell></Row>
+<Row><Cell>barky_pri_trosecka_brana_V2DP</Cell><Cell>Trosky gate</Cell><Cell>Trosky gate</Cell></Row>
+<Row><Cell>bed_inter_tohle_neni_tvoj_ALnK</Cell><Cell>This is not your bed.</Cell><Cell>This is not your bed.</Cell></Row>
+<Row><Cell>bejk__pai_malovat_53MA</Cell><Cell>Paint on the bull</Cell><Cell>Paint on the bull</Cell></Row>
+<Row><Cell>bejk__pai_nalit_DyGB</Cell><Cell>Pour in the lullaby potion</Cell><Cell>Pour in the lullaby potion</Cell></Row>
+<Row><Cell>bitevnica_vojak_volajici__xltS</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>bohuta_ba_placeholder_boh_et7s</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>bohuta_ba_placeholder_foc_n6Uf</Cell><Cell>Look at the road</Cell><Cell>Look at the road</Cell></Row>
+<Row><Cell>bohuta_je_u_mlyna_LEgW</Cell><Cell>At the mill</Cell><Cell>At the mill</Cell></Row>
+<Row><Cell>bohuta_je_vjezd_do_rokle_XDjf</Cell><Cell>Entry to gorge</Cell><Cell>Entry to gorge</Cell></Row>
+<Row><Cell>bohuta_na_tady_se_napit_n_0dA7</Cell><Cell>You can’t drink here.</Cell><Cell>You can’t drink here.</Cell></Row>
+<Row><Cell>bohuta_na_tou_dobou_na_tv_WqOu</Cell><Cell>At that time at Raborsch fortress…</Cell><Cell>At that time at Raborsch fortress…</Cell></Row>
+<Row><Cell>bohuta_se_p_popijis_s_pta_g4Xi</Cell><Cell>Drinking with Capon…</Cell><Cell>Drinking with Capon…</Cell></Row>
+<Row><Cell>bohuta__v_podivat_se_ryql</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>bohutovav_podivej_se_na_n_G1HL</Cell><Cell>Look at Nebakov</Cell><Cell>Look at Nebakov</Cell></Row>
+<Row><Cell>boj_na_hr_musim_branit_hr_Uz8f</Cell><Cell>I must defend the walls</Cell><Cell>I must defend the walls</Cell></Row>
+<Row><Cell>boj_na_hr_pouzit_zebrik_9Omf</Cell><Cell>Use the ladder</Cell><Cell>Use ladder</Cell></Row>
+<Row><Cell>bolek_1_v_jidlo_kyDt</Cell><Cell>Food</Cell><Cell>Food</Cell></Row>
+<Row><Cell>brana_a_j_interaktor_na_o_CztT</Cell><Cell>Open the gate </Cell><Cell>Open the gate </Cell></Row>
+<Row><Cell>brouseni__mec_zRAD</Cell><Cell>Sword</Cell><Cell>Sword</Cell></Row>
+<Row><Cell>burry_dead_pohrbit_1L85</Cell><Cell>Bury</Cell><Cell>Bury</Cell></Row>
+<Row><Cell>cart_logic_jet_za_vozem_H7Dy</Cell><Cell>Follow the vehicle</Cell><Cell>Follow the vehicle</Cell></Row>
+<Row><Cell>cart_logic_prestat_sledov_pfkf</Cell><Cell>Stop following</Cell><Cell>Stop following</Cell></Row>
+<Row><Cell>cekani_na_cekate_s_ptacke_RhFm</Cell><Cell>You and Capon are waiting for Hashek.</Cell><Cell>You and Capon are waiting for Hashek.</Cell></Row>
+<Row><Cell>cekani_na_pockat_na_noc_9DEJ</Cell><Cell>Wait until night</Cell><Cell>Wait until night</Cell></Row>
+<Row><Cell>certinatr_odhalit_certy_WBGG</Cell><Cell>Reveal the devils</Cell><Cell>Reveal the devils</Cell></Row>
+<Row><Cell>certinatr_pokropit_7PRz</Cell><Cell>Sprinkle</Cell><Cell>Sprinkle</Cell></Row>
+<Row><Cell>certinatr_vycitit_certy_rqPJ</Cell><Cell>Smell the devils</Cell><Cell>Smell the devils</Cell></Row>
+<Row><Cell>cesta_cho_prozkoumat_IRoz</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>cesta_cho_rozebirani_zdi__8kT3</Cell><Cell>Stone by stone, you carefully take apart the wall of the Maleshov cellars.</Cell><Cell>Stone by stone, you carefully take apart the wall of the Maleshov cellars.</Cell></Row>
+<Row><Cell>cesta_k_m_placeholder_rea_JrxK</Cell><Cell>Appreciate Kubyenka's singing</Cell><Cell>Appreciate Kubyenka's singing</Cell></Row>
+<Row><Cell>chat_play_reagovat_QnwW</Cell><Cell>Show off</Cell><Cell>Show off</Cell></Row>
+<Row><Cell>cisteni_r_na_vycisteni_Q2pu</Cell><Cell>For cleaning</Cell><Cell>For cleaning</Cell></Row>
+<Row><Cell>co_dum_dal_kovove_veci_arEd</Cell><Cell>Metal things</Cell><Cell>Metal things</Cell></Row>
+<Row><Cell>constants_kauri_tengriho_uelX</Cell><Cell>The Cowrie (Tengri's)</Cell><Cell>The Cowrie (Tengri's)</Cell></Row>
+<Row><Cell>constants_mech_tengriho_Yola</Cell><Cell>The Wineskin (Tengri's)</Cell><Cell>The Wineskin (Tengri's)</Cell></Row>
+<Row><Cell>constants_mech_tezky_j23R</Cell><Cell>The Wineskin (Hard)</Cell><Cell>The Wineskin (Hard)</Cell></Row>
+<Row><Cell>constants_nakrcnik_tengri_Z0B7</Cell><Cell>The Torque (Tengri's)</Cell><Cell>The Torque (Tengri's)</Cell></Row>
+<Row><Cell>constants_nakrcnik_tezky_8PtI</Cell><Cell>The Torque (Hard)</Cell><Cell>The Torque (Hard)</Cell></Row>
+<Row><Cell>constants_nausnice_tengri_ZVkb</Cell><Cell>The Earring (Tengri's)</Cell><Cell>The Earring (Tengri's)</Cell></Row>
+<Row><Cell>constants_psi_hlava_tengr_HWQ6</Cell><Cell>The Hounskull (Tengri's)</Cell><Cell>The Hounskull (Tengri's)</Cell></Row>
+<Row><Cell>constants_psi_hlava_tezka_F7Ur</Cell><Cell>The Hounskull (Hard)</Cell><Cell>The Hounskull (Hard)</Cell></Row>
+<Row><Cell>constants_srp_tengriho_psu2</Cell><Cell>The Sickle (Tengri's)</Cell><Cell>The Sickle (Tengri's)</Cell></Row>
+<Row><Cell>constants_srp_tezky_AG1p</Cell><Cell>The Sickle (Hard)</Cell><Cell>The Sickle (Hard)</Cell></Row>
+<Row><Cell>constants_track1_trosky_XMm4</Cell><Cell>The Cowrie (Easy)</Cell><Cell>The Cowrie (Easy)</Cell></Row>
+<Row><Cell>constants_track2_trosky_AC2F</Cell><Cell>The Stirrup (Easy)</Cell><Cell>The Stirrup (Easy)</Cell></Row>
+<Row><Cell>constants_track3_trosky_RXXg</Cell><Cell>The Torque (Easy)</Cell><Cell>The Torque (Easy)</Cell></Row>
+<Row><Cell>constants_track4_trosky_3XQU</Cell><Cell>The Hounskull (Easy)</Cell><Cell>The Hounskull (Easy)</Cell></Row>
+<Row><Cell>constants_track5_trosky_n8An</Cell><Cell>The Sickle (Easy)</Cell><Cell>The Sickle (Easy)</Cell></Row>
+<Row><Cell>constants_track6_trosky_J3IV</Cell><Cell>The Wineskin (Easy)</Cell><Cell>The Wineskin (Easy)</Cell></Row>
+<Row><Cell>constants_track_7_trosky_f5yM</Cell><Cell>The Cowrie (Hard)</Cell><Cell>The Cowrie (Hard)</Cell></Row>
+<Row><Cell>constants_trmen_tengriho_BO4a</Cell><Cell>The Stirrup (Tengri's)</Cell><Cell>The Stirrup (Tengri's)</Cell></Row>
+<Row><Cell>constants_trmen_tezky_Mllc</Cell><Cell>The Stirrup (Hard)</Cell><Cell>The Stirrup (Hard)</Cell></Row>
+<Row><Cell>crime_rea_obet_si_od_tebe_UdAx</Cell><Cell>The victim took compensation, and thus the criem is solved.</Cell><Cell>The victim took compensation, and thus the crime is solved.</Cell></Row>
+<Row><Cell>crime_rea_v_bezvedomi_jsi_jiWY</Cell><Cell>You were robbed while unconscious!</Cell><Cell>You were robbed while unconscious!</Cell></Row>
+<Row><Cell>crimescen_prozkoumat_npw3</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>crime_sce_prozkoumat_dS5s</Cell><Cell>Examine it</Cell><Cell>Inspect</Cell></Row>
+<Row><Cell>crosscoun_ph_ostatni_jezd_bnST</Cell><Cell>You wait for the race to finish.</Cell><Cell>You're waiting for the race to finish.</Cell></Row>
+<Row><Cell>crosscoun_prohral_jsi_dzOc</Cell><Cell>You lost.</Cell><Cell>You lose.</Cell></Row>
+<Row><Cell>crosscoun_vyhral_jsi_mNBf</Cell><Cell>You win.</Cell><Cell>You win.</Cell></Row>
+<Row><Cell>diagnoza__prohlednout_vJrm</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>diagnoz_prohlednout_Crcj</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>divadlo_n_prepadeni_na_dv_gkyg</Cell><Cell>Backyard ambush</Cell><Cell>Backyard ambush</Cell></Row>
+<Row><Cell>divadylka_sledovat_hadku_X1qB</Cell><Cell>Observe the argument</Cell><Cell>Observe the argument</Cell></Row>
+<Row><Cell>divadylko_podivat_se_gJHi</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>dobyvani__prozkoumat_VdZW</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>dobyvani__roza_ze_spani_o_S1aE</Cell><Cell>Rosa occasionally speaks in her sleep. If only you could understand Latin...</Cell><Cell>Rosa occasionally speaks in her sleep. If only you could understand Latin...</Cell></Row>
+<Row><Cell>dobyvani__zaklepat_1YOg</Cell><Cell>Knock</Cell><Cell>Knock</Cell></Row>
+<Row><Cell>dog_pochvala_7CXv</Cell><Cell>Praise</Cell><Cell>Praise</Cell></Row>
+<Row><Cell>dog_ted_nemuzes_zavolat_p_Fype</Cell><Cell>You can’t call the dog now</Cell><Cell>You can’t call the dog now</Cell></Row>
+<Row><Cell>doors_p_otevrit_lr2g</Cell><Cell>Open</Cell><Cell>Open</Cell></Row>
+<Row><Cell>drak_podivat_se_P7rs</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>drak_prozkoumat_BHLU</Cell><Cell>Explore</Cell><Cell>Explore</Cell></Row>
+<Row><Cell>drevorube_drevorubec_ti_u_NhN1</Cell><Cell>The woodcutter shows you his tricks</Cell><Cell>The woodcutter shows you his tricks</Cell></Row>
+<Row><Cell>druha__hl_pozadat_psa_o_r_9HqU</Cell><Cell>Ask dog for advice</Cell><Cell>Ask dog for advice</Cell></Row>
+<Row><Cell>druha_sme_mluvit_s_vorech_kVBm</Cell><Cell>Talk to Mutt</Cell><Cell>Talk to Mutt</Cell></Row>
+<Row><Cell>druhy_den_placeholder_pro_YX7v</Cell><Cell>Wait here for the miners</Cell><Cell>Wait here for the miners</Cell></Row>
+<Row><Cell>drunkness_zpivat_zSCH</Cell><Cell>Shout</Cell><Cell>Shout</Cell></Row>
+<Row><Cell>duel_s_ce_tady_bude_duvod_Wupb</Cell><Cell>Unfortunately, this won’t be solved by shouting.</Cell><Cell>Unfortunately, this won’t be solved by shouting.</Cell></Row>
+<Row><Cell>dukazy_dubove_drivi_dhCg</Cell><Cell>Examine the oak wood</Cell><Cell>Examine the oak wood</Cell></Row>
+<Row><Cell>dukazy_harampadi_0BRq</Cell><Cell>Examine the odds and ends</Cell><Cell>Examine the odds and ends</Cell></Row>
+<Row><Cell>dukazy_hlineny_hrnec_CSGJ</Cell><Cell>Examine the bowl of water</Cell><Cell>Examine the bowl of water</Cell></Row>
+<Row><Cell>dukazy_hraci_deska_Z38x</Cell><Cell>Examine the game board</Cell><Cell>Examine the game board</Cell></Row>
+<Row><Cell>dukazy_hrebiky_caIY</Cell><Cell>Examine the nails</Cell><Cell>Examine the nails</Cell></Row>
+<Row><Cell>dukazy_kozlik_AH3Y</Cell><Cell>Examine the herbs</Cell><Cell>Examine the herbs</Cell></Row>
+<Row><Cell>dukazy_neporadek_3jd0</Cell><Cell>Examine the mess</Cell><Cell>Examine the mess</Cell></Row>
+<Row><Cell>dukazy_postel_GQ1I</Cell><Cell>Examine the bed</Cell><Cell>Examine the bed</Cell></Row>
+<Row><Cell>dukazy_psaci_stul_qCpH</Cell><Cell>Examine the writing desk</Cell><Cell>Examine the writing desk</Cell></Row>
+<Row><Cell>dukazy_ruzovy_ker_JG6R</Cell><Cell>Examine the rose bush</Cell><Cell>Examine the rose bush</Cell></Row>
+<Row><Cell>dukazy_skvrna_na_zemi_2zpv</Cell><Cell>Examine the stain on the ground</Cell><Cell>Examine the stain</Cell></Row>
+<Row><Cell>dukazy_vino_IWoA</Cell><Cell>Examine the wine</Cell><Cell>Examine the wine</Cell></Row>
+<Row><Cell>dukazy_zbroj_shjM</Cell><Cell>Examine the armour</Cell><Cell>Examine the armour</Cell></Row>
+<Row><Cell>dvojityag_podivat_se_kNmF</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>dvojityag_promluvit_uL1K</Cell><Cell>Talk</Cell><Cell>Talk</Cell></Row>
+<Row><Cell>ears_deli_vlci_usi_AA0q</Cell><Cell>Wolf ears</Cell><Cell>Wolf ears</Cell></Row>
+<Row><Cell>easter_egg_mort_OOAt</Cell><Cell>Morte</Cell><Cell>Morte</Cell></Row>
+<Row><Cell>envirotra_podivat_se_Ns3Q</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>enviro_tr_prozkoumat_CSLM</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>erik_dopr_nebakov_COdJ</Cell><Cell>Look at Nebakov</Cell><Cell>Look at Nebakov</Cell></Row>
+<Row><Cell>faze_2_prozkoumat_1CEt</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>filtr_zbroj_pro_ptacka_KYuq</Cell><Cell>Weapon for Capon</Cell><Cell>Armour for Capon</Cell></Row>
+<Row><Cell>filtr_zbroj_pro_ptacka_YrQB</Cell><Cell>Weapon for Capon</Cell><Cell>Weapon for Capon</Cell></Row>
+<Row><Cell>finale_bi_otevrit_islK</Cell><Cell>Open</Cell><Cell>Open</Cell></Row>
+<Row><Cell>finale_bi_skirmish_a6CV</Cell><Cell>Skirmish</Cell><Cell>Skirmish</Cell></Row>
+<Row><Cell>first_pha_podivat_se_na_v_AdfP</Cell><Cell>Look at the wine.</Cell><Cell>Look at the wine</Cell></Row>
+<Row><Cell>focus_cam_focus_camera_na_QvXQ</Cell><Cell>Look at Victoria.</Cell><Cell>Look at Victoria.</Cell></Row>
+<Row><Cell>focus_cam_ph__porozhledno_5Chr</Cell><Cell>PH - take a look around.</Cell><Cell>PH - take a look around.</Cell></Row>
+<Row><Cell>focus_cam_placeholder_ste_wT77</Cell><Cell>Barking?</Cell><Cell>Barking?</Cell></Row>
+<Row><Cell>focus_cam_pohlednout_na_k_Zldl</Cell><Cell>Look at the horses</Cell><Cell>Look at the horse</Cell></Row>
+<Row><Cell>focus_kam_prozkoumej_obla_AhAn</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>game_over_bitvaZaBohutu_courtyard_lost_text</Cell><Cell>You failed to defend the fortress and the Praguers took the courtyard.</Cell><Cell>You failed to defend the fortress and the Praguers took the courtyard.</Cell></Row>
+<Row><Cell>game_over_bitvaZaBohutu_walls_captured_text</Cell><Cell>Too many defenders died and the Praguers managed to take the battlements.</Cell><Cell>Too many defenders died and the Praguers managed to take the battlements.</Cell></Row>
+<Row><Cell>game_over_bohutaArrested_text</Cell><Cell>Godwin couldn't finish his task because he was arrested.</Cell><Cell>Godwin couldn't finish his task because he was arrested.</Cell></Row>
+<Row><Cell>game_over_bohutaDead_text</Cell><Cell>Godwin died.</Cell><Cell>Godwin died.</Cell></Row>
+<Row><Cell>game_over_bohutovaVlozka_banditsKilledEriksMen_text</Cell><Cell>You did not help Erik, thus any hope of saving Henry and Capon is gone.</Cell><Cell>You did not help Erik, thus any hope of saving Henry and Capon is gone.</Cell></Row>
+<Row><Cell>game_over_bohutovaVlozka_riotAtNebakov_text</Cell><Cell>You took too long, and the rbels took Nebakov. You can forget about saving Henry and Capon now.</Cell><Cell>You took too long, and the rebels took Nebakov. You can forget about saving Henry and Capon now.</Cell></Row>
+<Row><Cell>game_over_caponExecuted</Cell><Cell>You did not save Hans Capon from execution on time.</Cell><Cell>You did not save Hans Capon from execution on time.</Cell></Row>
+<Row><Cell>game_over_crime_execution_text</Cell><Cell>You have been executed for your crimes.</Cell><Cell>You have been executed for your crimes.</Cell></Row>
+<Row><Cell>game_over_died_by_bleeding</Cell><Cell>You have bled to death.</Cell><Cell>You have bled to death.</Cell></Row>
+<Row><Cell>game_over_died_by_collision</Cell><Cell>You have died.</Cell><Cell>You have died. </Cell></Row>
+<Row><Cell>game_over_died_by_fall</Cell><Cell>You have fallen to your death.</Cell><Cell>You have fallen to your death.</Cell></Row>
+<Row><Cell>game_over_died_by_poison</Cell><Cell>You have been poisoned.</Cell><Cell>You have been poisoned.</Cell></Row>
+<Row><Cell>game_over_died_by_scripted_hit</Cell><Cell>You were murdered under unforseen circumstances.</Cell><Cell>You were murdered under unforeseen circumstances.</Cell></Row>
+<Row><Cell>game_over_died_by_self_harm</Cell><Cell>You have died by your own hand.</Cell><Cell>You have died by your own hand.</Cell></Row>
+<Row><Cell>game_over_died_by_starving</Cell><Cell>You have starved to death. </Cell><Cell>You have starved to death. </Cell></Row>
+<Row><Cell>game_over_died_in_combat</Cell><Cell>You have died in combat.</Cell><Cell>You have died in combat.</Cell></Row>
+<Row><Cell>game_over_died_unknown</Cell><Cell>You have died.</Cell><Cell>You have died.</Cell></Row>
+<Row><Cell>game_over_drunk_gunpowder_production</Cell><Cell>Making gunpowder while drunk was not a very good idea.</Cell><Cell>Making gunpowder while drunk was not a very good idea.</Cell></Row>
+<Row><Cell>game_over_erik_chaseFailed_text</Cell><Cell>You did not make it to Suchdol in time.</Cell><Cell>You did not make it to Suchdol in time.</Cell></Row>
+<Row><Cell>game_over_failed_gunpowder_production</Cell><Cell>You weren't paying attention while making gunpowder, and it blew up in your face.</Cell><Cell>You weren't paying attention while making gunpowder, and it blew up in your face.</Cell></Row>
+<Row><Cell>game_over_henry_ran_away</Cell><Cell>You did not bring the horse to the cave.</Cell><Cell>You did not bring the horse to the cave.</Cell></Row>
+<Row><Cell>game_over_katerinaDead_text</Cell><Cell>Katherine died.</Cell><Cell>Katherine died.</Cell></Row>
+<Row><Cell>game_over_killed_while_unconscious</Cell><Cell>You were killed while unconscious.</Cell><Cell>You were killed while unconscious.</Cell></Row>
+<Row><Cell>game_over_licht_died_alone_text</Cell><Cell>You did not follow Liechtenstein and he was killed!</Cell><Cell>You did not follow Liechtenstein and he was killed!</Cell></Row>
+<Row><Cell>game_over_licht_is_dead_text</Cell><Cell>Liechtenstein now rests in peace.</Cell><Cell>Liechtenstein now rests in peace.</Cell></Row>
+<Row><Cell>game_over_lostBattle</Cell><Cell>You lost the battle.</Cell><Cell>You lost the battle. </Cell></Row>
+<Row><Cell>game_over_oblehaniSuchdole_crime_text</Cell><Cell>Due to your serious transgresions, you lost the trust of your friends, and were executed at the fortress.</Cell><Cell>Due to your serious transgressions, you lost the trust of your friends, and were executed at the fortress.</Cell></Row>
+<Row><Cell>game_over_oblehaniSuchdole_gate_breached_text</Cell><Cell>The enemy managed to get through the gate and take the fortress.</Cell><Cell>The enemy managed to get through the gate and take the fortress.</Cell></Row>
+<Row><Cell>game_over_obranaNebakov_allGuysFallen_text</Cell><Cell>All of your allies died.</Cell><Cell>All of your allies died.</Cell></Row>
+<Row><Cell>game_over_obranaNebakov_NebakovCrime_text</Cell><Cell>You'll hang for your crimes!</Cell><Cell>You'll hang for your crimes!</Cell></Row>
+<Row><Cell>game_over_papezskyLegat_crimeCommitedSuchdol_text</Cell><Cell>While you were serving your punishment in the pillory, the Church Council took place peacefully. Due to your incompetence, you missed your only chance to get your hands on Sigismund's silver.</Cell><Cell>While you were serving your punishment in the pillory, the Church Council took place in the city. Due to your incompetence, you missed your only chance to get your hands on Sigismund's silver.</Cell></Row>
+<Row><Cell>game_over_papezskyLegat_legateGotTooFar</Cell><Cell>You let the papal legate escape, and thus ruined the entire plan.</Cell><Cell>You let the papal legate escape, and thus ruined the entire plan.</Cell></Row>
+<Row><Cell>game_over_pogrom_henryDiedByHalberd_text</Cell><Cell>Breaking through a wall of halberds only works in myths in legends – usually a halberd will end up breaking through your skull, like it just did.</Cell><Cell>Breaking through a wall of halberds only actually works in myths and legends – more often than not, a halberd will end up breaking through your skull. Like it just did.</Cell></Row>
+<Row><Cell>game_over_posledniPomazani_wallsLost_text</Cell><Cell>The enemy took the battlements.</Cell><Cell>The enemy took the battlements.</Cell></Row>
+<Row><Cell>game_over_prepadeniVlasskehoDvora_bohutaExposed_text</Cell><Cell>Godwin was found out. Your plan failed.</Cell><Cell>Godwin was found out. Your plan failed.</Cell></Row>
+<Row><Cell>game_over_prijezdNaSuchdol_crimeComitted_text</Cell><Cell>You lost Peter of Pisek's trust. You will not be able to save Capon now.</Cell><Cell>You lost Peter of Pisek's trust. You will not be able to save Capon now.</Cell></Row>
+<Row><Cell>game_over_samuel_is_dead_text</Cell><Cell>Samuel is dead. Your days of fraternising are over.</Cell><Cell>Samuel is dead. Your days of fraternising are over.</Cell></Row>
+<Row><Cell>game_over_sara_is_dead_text</Cell><Cell>Sara died.</Cell><Cell>Sara died.</Cell></Row>
+<Row><Cell>game_over_sedmeroStatecnych_henry_left_text</Cell><Cell>Without your help, Zizka never met Dry Devil. In the end, Capon was released and unceremoniously returned home.</Cell><Cell>Without your help, Zizka never met Dry Devil. In the end, Capon was released and unceremoniously returned home.</Cell></Row>
+<Row><Cell>game_over_sedmStatecnych2_baillifExecutedHans_text</Cell><Cell>You took too long after the injured villager died. Hans was executed in Miskowitz before you could save him.</Cell><Cell>You took too long after the injured villager died. Janosh was executed in Miskowitz before you could save him.</Cell></Row>
+<Row><Cell>game_over_sedmStatecnych2_komarHanged_text</Cell><Cell>You did not manage to cut Adder's rope in time and he chocked to death.</Cell><Cell>You did not manage to cut Adder's rope in time and he choked to death.</Cell></Row>
+<Row><Cell>game_over_sedmStatecnych2_playerCameLateToSaveKomar_text</Cell><Cell>You did not make it to the forest in time and the butcher hung Adder.</Cell><Cell>You did not make it to the forest in time and the butcher hung Adder.</Cell></Row>
+<Row><Cell>game_over_sedmStatecnych2_playerLeftKomarToDie_text</Cell><Cell>You ran from the battle and left Adder to his fate. </Cell><Cell>You ran from the battle and left Adder to his fate. </Cell></Row>
+<Row><Cell>game_over_sedmStatecnych2_playerLeftMiskoviceAndHansDied_text</Cell><Cell>You left Miskowitz after the injured villager died. That's why Hans was executed.</Cell><Cell>You left Miskowitz after the injured villager died. That's why Janosh was executed.</Cell></Row>
+<Row><Cell>game_over_setkaniVRatbori1_disGuiseBlown_text</Cell><Cell>You did not manage to serve the lords at the council and were banished.</Cell><Cell>You did not manage to serve the lords at the council and were banished.</Cell></Row>
+<Row><Cell>game_over_setkaniVRatbori1_kuttenbergCouncilStartedWithoutHenry_text</Cell><Cell>You took too long and the city council started without. Your allies will never discover Sigismund's plan now.</Cell><Cell>You took too long and the city council started without you. Your allies will never discover Sigismund's plan now.</Cell></Row>
+<Row><Cell>game_over_setkaniVRatbori1_mayhemAtCouncil_text</Cell><Cell>You were not inconspicuous enough at the court. You were revealed to be a spy, and the next morning you were executed.</Cell><Cell>You were not inconspicuous enough at the court. You were revealed to be a spy, and the next morning you were executed.</Cell></Row>
+<Row><Cell>game_over_setkaniVRatbori1_SigismundDead_text</Cell><Cell>You killed King Sigismund, although you died at his guards' hands shortly after. King Wenceslas soon returned to the Bohemian throne, Jan Hus was never burned at the stake, and the Hussite Wars never took place.</Cell><Cell>You killed King Sigismund, although you died at his guards' hands shortly after. King Wenceslas soon returned to the Bohemian throne, Jan Hus was never burned at the stake, and the Hussite Wars never took place.</Cell></Row>
+<Row><Cell>game_over_socky_commited_crime_text</Cell><Cell>You were justly punished for your crimes and banished from the village. That very day, Lord Capon was beaten to death by disgruntled villagers. </Cell><Cell>You were justly punished for your crimes and banished from the village. That very day, Lord Capon was beaten to death by disgruntled villagers. </Cell></Row>
+<Row><Cell>game_over_test</Cell><Cell>If you see this, report it!</Cell><Cell>If you see this, report it!</Cell></Row>
+<Row><Cell>game_over_traskavePoselstvi_gunpowder_explosion_text</Cell><Cell>You did not manage to escape in time. You died underground, crushed by rocks.</Cell><Cell>You did not manage to escape in time. You died underground, crushed by rocks.</Cell></Row>
+<Row><Cell>game_over_traskavePoselstvi_gunpowderSuicide_text</Cell><Cell>Throwing a barrel of gunpowder into the fire was not a very good idea… But it was a worth a try.</Cell><Cell>Throwing a barrel of gunpowder into the fire was not a very good idea… But it was a worth a try.</Cell></Row>
+<Row><Cell>game_over_utokNaMalesov_HenryAlarmCastle</Cell><Cell>You were spotted by the castle guards.</Cell><Cell>You were spotted by the castle guards.</Cell></Row>
+<Row><Cell>game_over_utokNebakov_AmbushCapon_text</Cell><Cell>Hans Capon died.</Cell><Cell>Hans Capon died.</Cell></Row>
+<Row><Cell>game_over_utokNebakov_TroskyCrime_text</Cell><Cell>You lost Lord von Bergow's trust!</Cell><Cell>You lost Lord von Bergow's trust!</Cell></Row>
+<Row><Cell>game_over_vezniNaTroskach_fleedDuel</Cell><Cell>You ran from an honourable duel!</Cell><Cell>You ran from an honourable duel!</Cell></Row>
+<Row><Cell>game_over_zachranaPtacka_brabantDied_text</Cell><Cell>Vaquelin Brabant fell while escaping from Maleshov!</Cell><Cell>Vauquelin Brabant fell while escaping from Maleshov!</Cell></Row>
+<Row><Cell>game_over_zachranaPtacka_caponDied_text</Cell><Cell>Hans Capon fell while escaping from Maleshov!</Cell><Cell>Hans Capon fell while escaping from Maleshov!</Cell></Row>
+<Row><Cell>game_over_zachranaPtacka_caponLostDuringRide_text</Cell><Cell>You were supposed to escort Hans Capon to safety!</Cell><Cell>You were supposed to escort Hans Capon to safety!</Cell></Row>
+<Row><Cell>game_over_zikmundunduvTabor_musaGuardKilled_text</Cell><Cell>You commited a crime and revealed yourself to the enemy. Katz no longers trusts you.</Cell><Cell>You committed a crime and revealed yourself to the enemy. Katz no longer trusts you.</Cell></Row>
+<Row><Cell>game_over_zikmundunduvTabor_timeLimitOut_text</Cell><Cell>You ran out of time and Musa was executed. Katz no longer trusts you.</Cell><Cell>You ran out of time and Musa was executed. Katz no longer trusts you.</Cell></Row>
+<Row><Cell>game_over_zizkaDead_text</Cell><Cell>Jan Zizka died.</Cell><Cell>Jan Zizka died.</Cell></Row>
+<Row><Cell>gejzovo_t_odvazat_gejzu_AkSz</Cell><Cell>Untie Gejza</Cell><Cell>Untie Gejza</Cell></Row>
+<Row><Cell>gejzovo_t_p_podivat_se_Ftjm</Cell><Cell>Look at the body</Cell><Cell>Look at the body</Cell></Row>
+<Row><Cell>gejzovo_t_p_prohlednout_ei1b</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>generic_a_rozebrat_zed_nY7o</Cell><Cell>Pull down the wall</Cell><Cell>Pull down the wall</Cell></Row>
+<Row><Cell>generic_a_rozriznout_pouta_KiJ3</Cell><Cell>Cut the handcuffs</Cell><Cell>Cut the handcuffs</Cell></Row>
+<Row><Cell>getting_t_vyzvednout_osta_khGJ</Cell><Cell>Pick up the remains</Cell><Cell>Pick up the remains</Cell></Row>
+<Row><Cell>gorily_u__prozkoumat_FvtC</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>group_desc_amorous_adventures</Cell><Cell>The Amorous Adventures of Bold Sir Hans Capon</Cell><Cell>The Amorous Adventures of Bold Sir Hans Capon</Cell></Row>
+<Row><Cell>group_desc_a_womans_lot</Cell><Cell>A Woman's Lot</Cell><Cell>A Woman's Lot</Cell></Row>
+<Row><Cell>group_desc_band_of_bastards</Cell><Cell>Band of Bastards</Cell><Cell>Band of Bastards</Cell></Row>
+<Row><Cell>group_desc_base_game</Cell><Cell>Base Game</Cell><Cell>Base Game</Cell></Row>
+<Row><Cell>group_desc_colonization</Cell><Cell>From the Ashes</Cell><Cell>From the Ashes</Cell></Row>
+<Row><Cell>group_desc_hardcore_mode</Cell><Cell>Hardcore Mode</Cell><Cell>Hardcore Mode</Cell></Row>
+<Row><Cell>group_desc_tournament</Cell><Cell>Tournament!</Cell><Cell>Tournament!</Cell></Row>
+<Row><Cell>group_name_amorous_adventures</Cell><Cell>The Amorous Adventures of Bold Sir Hans Capon</Cell><Cell>The Amorous Adventures of Bold Sir Hans Capon</Cell></Row>
+<Row><Cell>group_name_a_womans_lot</Cell><Cell>A Woman's Lot</Cell><Cell>A Woman's Lot</Cell></Row>
+<Row><Cell>group_name_band_of_bastards</Cell><Cell>Band of Bastards</Cell><Cell>Band of Bastards</Cell></Row>
+<Row><Cell>group_name_base_game</Cell><Cell>Base Game</Cell><Cell>Base Game</Cell></Row>
+<Row><Cell>group_name_colonization</Cell><Cell>From the Ashes</Cell><Cell>From the Ashes</Cell></Row>
+<Row><Cell>group_name_hardcore_mode</Cell><Cell>Hardcore Mode</Cell><Cell>Hardcore Mode</Cell></Row>
+<Row><Cell>group_name_tournament</Cell><Cell>Tournament!</Cell><Cell>Tournament!</Cell></Row>
+<Row><Cell>hadkakona_presun_k_oltari_Ccup</Cell><Cell>A little later…</Cell><Cell>A little later…</Cell></Row>
+<Row><Cell>hadkakona_priprava_oltare_vLPW</Cell><Cell>Offerings are brought to the altar.</Cell><Cell>Offerings are brought to the altar.</Cell></Row>
+<Row><Cell>hansovo_u_maso_na_klobasy_uxF1</Cell><Cell>Meat for sausages</Cell><Cell>Meat for sausages</Cell></Row>
+<Row><Cell>henryho_c_o_neco_drive_1nSJ</Cell><Cell>A while earlier…</Cell><Cell>A while earlier…</Cell></Row>
+<Row><Cell>henry_kom_prozkoumat_wN3n</Cell><Cell>Black powder storage</Cell><Cell>Black powder storage</Cell></Row>
+<Row><Cell>henry_poh_nevykopany_hrob_WnlM</Cell><Cell>Undug grave</Cell><Cell>Undug grave</Cell></Row>
+<Row><Cell>hibernable_podivat_se_e0Vt</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>hibernable_pozdeji_toho_v_i1jE</Cell><Cell>Later that evening at Raborsh Fortress…</Cell><Cell>Later that evening at Raborsch Fortress…</Cell></Row>
+<Row><Cell>hibernace_podivat_se_na_m_au9W</Cell><Cell>Look at a corpse</Cell><Cell>Look at a corpse</Cell></Row>
+<Row><Cell>hibernati_morticius_te_uc_vZqg</Cell><Cell>Morticius teaches you to be poetic.</Cell><Cell>Morticius teaches you to be poetic.</Cell></Row>
+<Row><Cell>hidden_al_tahnes_ptacka_c_sJck</Cell><Cell>You're dragging Capon through the secret passageway out of Maleshov</Cell><Cell>You're dragging Capon through the secret passageway out of Maleshov</Cell></Row>
+<Row><Cell>hladovy_d_jidlo_label_del_34la</Cell><Cell>Food for Dietrich.</Cell><Cell>Food for Dietrich.</Cell></Row>
+<Row><Cell>hledani_a_focus_camera_na_mSvp</Cell><Cell>Take a look around.</Cell><Cell>Take a look around</Cell></Row>
+<Row><Cell>hledani_a_prokopavas_se_d_82DR</Cell><Cell>You're digging through to the secret passageway.</Cell><Cell>You're digging through to the secret passageway.</Cell></Row>
+<Row><Cell>hledani_a_prozkoumat_zNy5</Cell><Cell>Explore.</Cell><Cell>Explore</Cell></Row>
+<Row><Cell>hledani_c_zkontrolovat_ku_OFvs</Cell><Cell>Check the Cuman</Cell><Cell>Check the Cuman</Cell></Row>
+<Row><Cell>hledani_d_cerny_prach_Tc2j</Cell><Cell>Examine the floor</Cell><Cell>Examine the floor</Cell></Row>
+<Row><Cell>hledani_d_dzbanek_vina_hi3D</Cell><Cell>Examine the vessels</Cell><Cell>Examine the vessels</Cell></Row>
+<Row><Cell>hledani_d_kaluz_krve_PiM1</Cell><Cell>Examine the blood</Cell><Cell>Examine the blood</Cell></Row>
+<Row><Cell>hledani_d_krev_ve_zlabu_TQOS</Cell><Cell>Examine the tub</Cell><Cell>Examine the tub</Cell></Row>
+<Row><Cell>hledani_d_nejstastnejsi_k_q6PS</Cell><Cell>The luckiest die in the world</Cell><Cell>The luckiest die in the world</Cell></Row>
+<Row><Cell>hledani_d_paklic_NKvb</Cell><Cell>Lock pick</Cell><Cell>Lock pick</Cell></Row>
+<Row><Cell>hledani_d_prazsky_vuz_7mvo</Cell><Cell>Prague wagon</Cell><Cell>Prague wagon</Cell></Row>
+<Row><Cell>hledani_d_prozkoumat_truh_Ct3L</Cell><Cell>Examine the chest</Cell><Cell>Examine the chest</Cell></Row>
+<Row><Cell>hledani_d_prst_bozi_1R3N</Cell><Cell>Examine the cannon</Cell><Cell>Examine the cannon</Cell></Row>
+<Row><Cell>hledani_d_rozhlednout_se_6RQv</Cell><Cell>Take a look around</Cell><Cell>Take a look around</Cell></Row>
+<Row><Cell>hledani_d_sekera_bVyL</Cell><Cell>Examine the axe</Cell><Cell>Examine the axe</Cell></Row>
+<Row><Cell>hledani_d_zamek_tTwP</Cell><Cell>Examine the lock pick</Cell><Cell>Examine the lock pick</Cell></Row>
+<Row><Cell>hledani_d_zavrena_brana_xkPR</Cell><Cell>Closed gate</Cell><Cell>Closed gate</Cell></Row>
+<Row><Cell>hledani_d_zkrvavena_dyka_UYHg</Cell><Cell>Bloody dagger</Cell><Cell>Bloody dagger</Cell></Row>
+<Row><Cell>hledani_h_podivat_se_na_s_Y18j</Cell><Cell>Look at the barn</Cell><Cell>Look at the barn</Cell></Row>
+<Row><Cell>hledani_h_podivat_se_na_s_zHZW</Cell><Cell>Look at the tree</Cell><Cell>Look at the tree</Cell></Row>
+<Row><Cell>hledani_h_prohlednout_S8uh</Cell><Cell>Investigate</Cell><Cell>Investigate</Cell></Row>
+<Row><Cell>hledani_h_zhodnotil_hrob_NK9l</Cell><Cell>Grave</Cell><Cell>Grave</Cell></Row>
+<Row><Cell>hledani_k_mrtvi_mnisi_Hnfy</Cell><Cell>Dead monks</Cell><Cell>Dead monks</Cell></Row>
+<Row><Cell>hledani_k_neporusene_telo_P0RU</Cell><Cell>Preserved body</Cell><Cell>Preserved body</Cell></Row>
+<Row><Cell>hledani_k_relikviar_BoO9</Cell><Cell>Reliquary</Cell><Cell>Reliquary</Cell></Row>
+<Row><Cell>hledani_k_sebrat_kosti_x4nz</Cell><Cell>Pick up the bones</Cell><Cell>Pick up the bones</Cell></Row>
+<Row><Cell>hledani_k_uklidit_kosti_Ze7t</Cell><Cell>Clean up the bones</Cell><Cell>Clean up the bones</Cell></Row>
+<Row><Cell>hledani_k_utrhnout_ruzi_Xg4F</Cell><Cell>Pluck a rose</Cell><Cell>Pluck a rose</Cell></Row>
+<Row><Cell>hledani_k_vchod_do_krypty_18Fm</Cell><Cell>Trapdoor to the crypt</Cell><Cell>Trapdoor to the crypt</Cell></Row>
+<Row><Cell>hledani_k_vykopat_hrob_dmC9</Cell><Cell>Dig a grave</Cell><Cell>Dig a grave</Cell></Row>
+<Row><Cell>hledanili_kozina_d7os</Cell><Cell>Tramp</Cell><Cell>Tramp</Cell></Row>
+<Row><Cell>hledanili_prohlednou_si_qrdZ</Cell><Cell>Examine.</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>hledani_m_hledani_svatyne_2MAv</Cell><Cell>Investigate closer</Cell><Cell>Investigate closer</Cell></Row>
+<Row><Cell>hledani_m_podivat_se_na_k_JLCA</Cell><Cell>Look at the blood</Cell><Cell>Look at the blood</Cell></Row>
+<Row><Cell>hledani_m_podivat_se_Uc2w</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>hledani_o_podivat_se_a6As</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>hledani_o_podivat_se_bVVj</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>hledani_o_podivat_se_Vd8W</Cell><Cell>Look around.</Cell><Cell>Look around.</Cell></Row>
+<Row><Cell>hledani_o_prozkoumat_CqOS</Cell><Cell>Examine.</Cell><Cell>Examine.</Cell></Row>
+<Row><Cell>hledani_o_vlci_usi_BIxB</Cell><Cell>Wolf ears.</Cell><Cell>Wolf ears.</Cell></Row>
+<Row><Cell>hledani_t_prohlednout_mrt_Uqn0</Cell><Cell>Examine the corpse</Cell><Cell>Examine the corpse</Cell></Row>
+<Row><Cell>hledani_t_prohlednout_voz_Uwsy</Cell><Cell>Examine the cart</Cell><Cell>Examine the cart</Cell></Row>
+<Row><Cell>hledani_t_prohlednout_vuz_qNy1</Cell><Cell>Examine the wagon</Cell><Cell>Examine the wagon</Cell></Row>
+<Row><Cell>hledani_t_prozkoumat_rGEq</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>hledani_z_placeholder_pod_SurG</Cell><Cell>Dead deer</Cell><Cell>Dead deer</Cell></Row>
+<Row><Cell>honicka_v_jan_ptacek_zemr_XRSP</Cell><Cell>Hans Capon died.</Cell><Cell>Hans Capon died.</Cell></Row>
+<Row><Cell>horse_but_nelze_vykuchat_e1SD</Cell><Cell>Cannot be gutted</Cell><Cell>Cannot be gutted</Cell></Row>
+<Row><Cell>horsebuyi_handlir_priprav_MrBA</Cell><Cell>The horse trader is preparing your new horse.</Cell><Cell>The horse trader is preparing your new horse.</Cell></Row>
+<Row><Cell>horsebuyi_podkoni_priprav_NBNb</Cell><Cell>The stableman is preparing your new horse.</Cell><Cell>The stableman is preparing your new horse.</Cell></Row>
+<Row><Cell>horsebuyi_podkoni_priprav_ug41</Cell><Cell>The stableman is preparing Pebbles.</Cell><Cell>The stableman is preparing Pebbles.</Cell></Row>
+<Row><Cell>horsebuyi_podkoni_se_nale_IMDd</Cell><Cell>The stableman is taking proper care of your horse.</Cell><Cell>The stableman is taking proper care of your horse.</Cell></Row>
+<Row><Cell>horse_tra_sedivka_ax00</Cell><Cell>Pebbles?</Cell><Cell>Pebbles?</Cell></Row>
+<Row><Cell>hospodsti_s_hospodskym_v__6fCY</Cell><Cell>With the innkeeper in Bylany</Cell><Cell>With the innkeeper in Bylany</Cell></Row>
+<Row><Cell>hospodsti_s_hospodskym_v__ZlGQ</Cell><Cell>With the innkeeper in Pschitoky</Cell><Cell>With the innkeeper in Pschitoky</Cell></Row>
+<Row><Cell>hostinapr_jidlo_Vryx</Cell><Cell>Food</Cell><Cell>Food</Cell></Row>
+<Row><Cell>hovna_prozkoumat_ICyA</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>hovory_s__vyber_zbran_pro_oL1e</Cell><Cell>Choose a weapon for Brabant</Cell><Cell>Choose a weapon for Brabant</Cell></Row>
+<Row><Cell>hovory_s__vyber_zbran_pro_rHcH</Cell><Cell>Choose a weapon for Capon</Cell><Cell>Choose a weapon for Capon</Cell></Row>
+<Row><Cell>h_prohlednout_CwgP</Cell><Cell>See</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>hrace_hea_dalsi_kolo_soub_4FYl</Cell><Cell>Another round of the duel is about to begin!</Cell><Cell>Another round of the duel is about to start!</Cell></Row>
+<Row><Cell>hrac_jde__podivat_se_XPnW</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>hrac_na_h_podivat_se_3u8c</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>hrac_na_h_pouzit_Ga3P</Cell><Cell>Use the ladder</Cell><Cell>Use ladder</Cell></Row>
+<Row><Cell>hrac_na_h_ted_nemuzes_zeb_ZzSD</Cell><Cell>You can't use the ladder right now</Cell><Cell>You can't use the ladder right now.</Cell></Row>
+<Row><Cell>hracovo_v_sebrat_svoje_vy_KGEv</Cell><Cell>Take your equipment</Cell><Cell>Take your equipment</Cell></Row>
+<Row><Cell>hrac_pove_povesit_trenky_f9vJ</Cell><Cell>Hang the underwear</Cell><Cell>Hang the braies</Cell></Row>
+<Row><Cell>hrac_pris_vzit_si_zpatky__T34N</Cell><Cell>Take back your things</Cell><Cell>Take back your things</Cell></Row>
+<Row><Cell>hrac_si_j_jit_spat_2vhs</Cell><Cell>Rest.</Cell><Cell>Rest</Cell></Row>
+<Row><Cell>hrac_si_j_jit_spat_hiMj</Cell><Cell>Go to sleep</Cell><Cell>Go to sleep</Cell></Row>
+<Row><Cell>hrac_si_j_sednout_mOTP</Cell><Cell>Sit.</Cell><Cell>Sit</Cell></Row>
+<Row><Cell>hrac_si_j_sednout_Z5Ay</Cell><Cell>Sit down</Cell><Cell>Sit down</Cell></Row>
+<Row><Cell>hrac_si_s_jit_spat_KNlc</Cell><Cell>Go to sleep.</Cell><Cell>Go to sleep</Cell></Row>
+<Row><Cell>hrbitov_a_prohlednout_telo_eJPr</Cell><Cell>Examine body</Cell><Cell>Examine body</Cell></Row>
+<Row><Cell>hrob_bez_spechu_uklizis_h_bCG2</Cell><Cell>You carefully clean the grave, pulling weeds, clearing branches and stones. You make sure it's nice and tidy.</Cell><Cell>You carefully clean the grave, pulling weeds, clearing branches and stones. You make sure it's nice and tidy.</Cell></Row>
+<Row><Cell>hrob_pomodlit_se_3NGY</Cell><Cell>Pray</Cell><Cell>Pray</Cell></Row>
+<Row><Cell>hrob_uklidit_hrob_vaoh</Cell><Cell>Clean the grave</Cell><Cell>Clean the grave</Cell></Row>
+<Row><Cell>hrob_vratit_lebku_PQRF</Cell><Cell>Return the skull</Cell><Cell>Return the skull</Cell></Row>
+<Row><Cell>hrob_vykopat_hrob_HFp3</Cell><Cell>Dig up the grave</Cell><Cell>Dig up the grave</Cell></Row>
+<Row><Cell>hrob_zakopat_hrob_RE3k</Cell><Cell>Rebury the grave</Cell><Cell>Rebury the grave</Cell></Row>
+<Row><Cell>hrob_zakopavas_hrob_s_poc_YJgF</Cell><Cell>You rebury the grave, feeling you did something worthwhile.</Cell><Cell>You refill the grave, feeling you did something worthwhile.</Cell></Row>
+<Row><Cell>hromadny__vykopavas_masov_sVBv</Cell><Cell>You're digging up a mass grave</Cell><Cell>You're digging up a mass grave.</Cell></Row>
+<Row><Cell>infiltrac_lecit_nSWu</Cell><Cell>Treat</Cell><Cell>Treat</Cell></Row>
+<Row><Cell>infiltrac_prohlednout_otce_Bp9L</Cell><Cell>Examine father</Cell><Cell>Examine father</Cell></Row>
+<Row><Cell>inicialy__prozkoumat_skra_aCGL</Cell><Cell>Examine the markings</Cell><Cell>Examine the markings</Cell></Row>
+<Row><Cell>interakce_nemam_arancin_l_jZP8</Cell><Cell>I don't have Aranka's potion.</Cell><Cell>I don't have Aranka's potion.</Cell></Row>
+<Row><Cell>interakce_otevrit_hrob_wvrb</Cell><Cell>Open the tomb.</Cell><Cell>Open the tomb</Cell></Row>
+<Row><Cell>interakce_otravit_vino_GSoX</Cell><Cell>Poison the wine</Cell><Cell>Poison the wine</Cell></Row>
+<Row><Cell>interakce_otravit_zleb_IEOb</Cell><Cell>Poison the trough</Cell><Cell>Poison the trough</Cell></Row>
+<Row><Cell>interakce_prohlednout_viko_2qWW</Cell><Cell>Examine the lid.</Cell><Cell>Examine the lid</Cell></Row>
+<Row><Cell>interakce_sarkofag_KKR4</Cell><Cell>Sarcophagus.</Cell><Cell>Sarcophagus</Cell></Row>
+<Row><Cell>italstina_cirkevni_rada_s_viZM</Cell><Cell>The church council meeting is approaching and the preparations are in full swing</Cell><Cell>The church council meeting is approaching and the preparations are in full swing.</Cell></Row>
+<Row><Cell>italstina_obleci_se_do_vl_4SKW</Cell><Cell>Dress up in Italian clothes</Cell><Cell>Dress up in Italian clothes</Cell></Row>
+<Row><Cell>item_deli_lecivy_lektvar_WP1H</Cell><Cell>Mandrake potion</Cell><Cell>Mandrake potion</Cell></Row>
+<Row><Cell>itemdeliv_boty_kFdv</Cell><Cell>Shoes</Cell><Cell>Shoes</Cell></Row>
+<Row><Cell>itemdeliv_hromovy_kamen_gLPJ</Cell><Cell>Thunderstone</Cell><Cell>Thunderstone</Cell></Row>
+<Row><Cell>jan_v_ohr_oslovit_8BlP</Cell><Cell>Address</Cell><Cell>Address</Cell></Row>
+<Row><Cell>jan_zizka_hejtman_lVKY</Cell><Cell>Captain</Cell><Cell>Captain</Cell></Row>
+<Row><Cell>jan_zizka_jaromir_z_nebak_tvWk</Cell><Cell>Jaromír from Nebákov</Cell><Cell>Jaromier of Nebakov</Cell></Row>
+<Row><Cell>jezirkouz_podivat_se_dolu_2rIY</Cell><Cell>Look down</Cell><Cell>Look down</Cell></Row>
+<Row><Cell>jidlo_prohlednout_jidlo_IqxK</Cell><Cell>Examine food</Cell><Cell>Examine food</Cell></Row>
+<Row><Cell>jidlo_pro_jidlo_pro_hynka_MhNm</Cell><Cell>Food for Hynek</Cell><Cell>Food for Hynek</Cell></Row>
+<Row><Cell>jidnra_ba_prohlednout_telo_MJ32</Cell><Cell>Examine the body</Cell><Cell>Examine the body</Cell></Row>
+<Row><Cell>jidnra_jd_spat_QuYX</Cell><Cell>Sleep</Cell><Cell>Sleep</Cell></Row>
+<Row><Cell>jindra_ko_podivat_se_naho_xDae</Cell><Cell>Look up</Cell><Cell>Look up</Cell></Row>
+<Row><Cell>jindra_na_podivat_se_bPdo</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>jindra_pa_podivat_se_na_p_tv1A</Cell><Cell>Look at the furnace</Cell><Cell>Look at the furnace</Cell></Row>
+<Row><Cell>jindra_pa_podivat_se_na_r_fnmz</Cell><Cell>Look at the stamp mill</Cell><Cell>Look at the crusher</Cell></Row>
+<Row><Cell>jindra_pa_podivat_se_na_s_2Zcx</Cell><Cell>Look at the warehouse</Cell><Cell>Look at the warehouse</Cell></Row>
+<Row><Cell>jindra_se_promluvil_jsem__LxW3</Cell><Cell>I talked to Jezhek.</Cell><Cell>I talked to Jezhek.</Cell></Row>
+<Row><Cell>jindrich__vyjednavani_ukaD</Cell><Cell>Negotiate.</Cell><Cell>Negotiate.</Cell></Row>
+<Row><Cell>jit_spat_jit_spat_cjyX</Cell><Cell>Go to sleep</Cell><Cell>Go to sleep</Cell></Row>
+<Row><Cell>jit_spat_mel_by_sis_jit_l_F7Kg</Cell><Cell>You should go to bed</Cell><Cell>You should go to bed</Cell></Row>
+<Row><Cell>jit_spat_sednout_si_yJzE</Cell><Cell>Sit down</Cell><Cell>Sit down</Cell></Row>
+<Row><Cell>jmena_obj_konec_questu_6AkE</Cell><Cell>End of quest</Cell><Cell>End of quest</Cell></Row>
+<Row><Cell>jmena_obj_zacatek_questu_JJyn</Cell><Cell>Beginning of the quest</Cell><Cell>Quest start</Cell></Row>
+<Row><Cell>kajicna_p_grosu_AZTL</Cell><Cell>groschen.</Cell><Cell>groschen.</Cell></Row>
+<Row><Cell>kajicna_p_jsi_bez_viny_NNjk</Cell><Cell>You have no sins.</Cell><Cell>You have no sins.</Cell></Row>
+<Row><Cell>kajicna_p_kdyz_jsi_pronas_FoXw</Cell><Cell>You cannot pay indulgence when there is a price on your head!</Cell><Cell>You cannot pay indulgence when there is a price on your head!</Cell></Row>
+<Row><Cell>kajicna_p_nemas_dost_penez_gDSg</Cell><Cell>You don't have enough money!</Cell><Cell>You don't have enough money!</Cell></Row>
+<Row><Cell>kajicna_p_pomodlit_se_BFAT</Cell><Cell>Pray</Cell><Cell>Pray</Cell></Row>
+<Row><Cell>kajicna_p_slozit_odpustek_VfYM</Cell><Cell>Pay indulgence</Cell><Cell>Pay indulgence</Cell></Row>
+<Row><Cell>kajicna_p_tvoje_reputace__Saiv</Cell><Cell>An indulgence will not improve your reputation any further.</Cell><Cell>An indulgence will not improve your reputation any further.</Cell></Row>
+<Row><Cell>kasna_prohlidnout_si_kasnu_RR6z</Cell><Cell>Examine the cistern.</Cell><Cell>Examine the fountain</Cell></Row>
+<Row><Cell>katuvsleh_nyni_nemuzes_na_gOyR</Cell><Cell>You can't mount up now.</Cell><Cell>You can't mount up now.</Cell></Row>
+<Row><Cell>katuvsleh_pockat_do_pulno_vZ8v</Cell><Cell>Wait till midnight</Cell><Cell>Wait till midnight</Cell></Row>
+<Row><Cell>katuvsleh_prizracny_kun_HrlO</Cell><Cell>Ghostly horse</Cell><Cell>Ghostly horse</Cell></Row>
+<Row><Cell>katuvsleh_p_sundavas_podk_yxSh</Cell><Cell>You're taking a horseshoe off the horse.</Cell><Cell>You're removing a horseshoe.</Cell></Row>
+<Row><Cell>katuvsleh_p_vyzout_kone_f265</Cell><Cell>Remove horseshoe</Cell><Cell>Remove horseshoe</Cell></Row>
+<Row><Cell>klasterni_kvetiny_pro_adl_p1mP</Cell><Cell>Flowers for Adleta.</Cell><Cell>Flowers for Adleta.</Cell></Row>
+<Row><Cell>kocicipani_poslouchat_ewI5</Cell><Cell>Listen.</Cell><Cell>Listen.</Cell></Row>
+<Row><Cell>kohouti_v_musis_pockat_k4Wf</Cell><Cell>You must wait</Cell><Cell>You must wait</Cell></Row>
+<Row><Cell>kohouti_v_sebrat_p1cO</Cell><Cell>Collect</Cell><Cell>Collect</Cell></Row>
+<Row><Cell>kone_a_od_odjet_sam_OCcY</Cell><Cell>Leave alone</Cell><Cell>Leave alone</Cell></Row>
+<Row><Cell>kone_a_od_odjet_se_samem_RhHd</Cell><Cell>Leave with Sam</Cell><Cell>Leave with Sam</Cell></Row>
+<Row><Cell>kone_a_od_p_jsi_v_combatu_33BF</Cell><Cell>You can't leave now!</Cell><Cell>You can't leave now!</Cell></Row>
+<Row><Cell>konec_que_placeholder_cut_F62p</Cell><Cell>(Placeholder) Cutscene where the painter burns the painting; who knows if it ends well</Cell><Cell>(Placeholder) Cutscene where the painter burns the painting; who knows if it ends well</Cell></Row>
+<Row><Cell>konec_que_placeholder_cut_iviu</Cell><Cell>(Placeholder) Cutscene where the painter has finished the painting, and we’re pleased</Cell><Cell>(Placeholder) Cutscene where the painter has finished the painting, and we’re pleased</Cell></Row>
+<Row><Cell>konec_que_placeholder_cut_tbf2</Cell><Cell>(Placeholder) Cutscene where the painter has finished the painting, but we’re saddened by it</Cell><Cell>(Placeholder) Cutscene where the painter has finished the painting, but we’re saddened by it</Cell></Row>
+<Row><Cell>kone_obje_porozhlednout_se_y3JI</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>konfronta_zajmout_mincmis_YPN8</Cell><Cell>Capture the Mint Master.</Cell><Cell>Capture the Mint Master.</Cell></Row>
+<Row><Cell>konkubina_saty_NvlO</Cell><Cell>Dress</Cell><Cell>Dress</Cell></Row>
+<Row><Cell>konkubina_vino_YxtC</Cell><Cell>Wine</Cell><Cell>Wine</Cell></Row>
+<Row><Cell>konkubina_vonavka_ry05</Cell><Cell>Perfume</Cell><Cell>Perfume</Cell></Row>
+<Row><Cell>kostky_se_hraj_kostky_tH50</Cell><Cell>Play dice.</Cell><Cell>Play dice.</Cell></Row>
+<Row><Cell>kovarska__odevzdat_marte__30r7</Cell><Cell>Give the horseshoes to Marta.</Cell><Cell>Give the horseshoes to Martha.</Cell></Row>
+<Row><Cell>kradeni_m_nonplayer_ZwRZ</Cell><Cell>NonPlayer</Cell><Cell>NonPlayer</Cell></Row>
+<Row><Cell>kradeni_m_ukrast_vaGT</Cell><Cell>Steal</Cell><Cell>Steal</Cell></Row>
+<Row><Cell>kradeni_t_najit_minci_v_z_JUWo</Cell><Cell>Find the coin</Cell><Cell>Find the coin</Cell></Row>
+<Row><Cell>kradez_kn_dlouhe_mece_HTWW</Cell><Cell>Longsword</Cell><Cell>Longsword</Cell></Row>
+<Row><Cell>krizovatky_prozkoumat_iKKh</Cell><Cell>Explore</Cell><Cell>Explore</Cell></Row>
+<Row><Cell>kumani_u__obslouzit_kumany_H7T1</Cell><Cell>Serve the Cumans</Cell><Cell>Serve the Cumans</Cell></Row>
+<Row><Cell>kunohorsk_mezitim_na_radn_o0Z1</Cell><Cell>Meanwhile, at Kuttenberg City Hall.</Cell><Cell>Meanwhile, at Kuttenberg City Hall.</Cell></Row>
+<Row><Cell>ladder_di_nepratele_jsou__YPVy</Cell><Cell>The enemy is too close!</Cell><Cell>The enemy is too close!</Cell></Row>
+<Row><Cell>ladder_di_shodit_zebrik_MF3f</Cell><Cell>Drop the ladder</Cell><Cell>Knock down ladder</Cell></Row>
+<Row><Cell>ladder_nech_to_na_nem_mfpl</Cell><Cell>The ally is already dropping the ladder.</Cell><Cell>An ally is already knocking down the ladder.</Cell></Row>
+<Row><Cell>ladder_nemas_halapartnu_YMC3</Cell><Cell>You don't have a halberd!</Cell><Cell>You don't have a halberd!</Cell></Row>
+<Row><Cell>ladder_nepritel_je_pripis_5RyY</Cell><Cell>The enemy is too close.</Cell><Cell>The enemy is too close.</Cell></Row>
+<Row><Cell>ladder_pockej_SVte</Cell><Cell>The enemy is too high!</Cell><Cell>The enemy is too high up!</Cell></Row>
+<Row><Cell>ladder_use_6Foo</Cell><Cell>Knock down ladder</Cell><Cell>Knock down ladder</Cell></Row>
+<Row><Cell>laska_ke__pokusit_se_nase_6D3W</Cell><Cell>Try to mount.</Cell><Cell>Try to mount.</Cell></Row>
+<Row><Cell>lecebne_p_p_alkohol_pro_j_4SwU</Cell><Cell>Alcohol for Jan</Cell><Cell>Alcohol for Jan</Cell></Row>
+<Row><Cell>lecebne_p_p_painkiller_pr_JLQN</Cell><Cell>Something for Jan's pain</Cell><Cell>Something for Jan's pain</Cell></Row>
+<Row><Cell>leceni_cv_osetrit_6cBJ</Cell><Cell>Treat</Cell><Cell>Treat</Cell></Row>
+<Row><Cell>leceni__hromovy_kamen_FYom</Cell><Cell>Thunderstone</Cell><Cell>Thunderstone</Cell></Row>
+<Row><Cell>leceni_ko_osetrit_fwYF</Cell><Cell>Treat</Cell><Cell>Treat</Cell></Row>
+<Row><Cell>leceni_ma_osetrit_0KQY</Cell><Cell>Treat</Cell><Cell>Treat</Cell></Row>
+<Row><Cell>leceni_musuv_lektvar_e9GQ</Cell><Cell>Musa's potion</Cell><Cell>Musa's potion</Cell></Row>
+<Row><Cell>leceni_pt_pomodlit_se_rY5c</Cell><Cell>Pray</Cell><Cell>Pray</Cell></Row>
+<Row><Cell>leceni_pt_zakopavas_neboz_gPO7</Cell><Cell>After a lot of arduous work.</Cell><Cell>After quite a bit of arduous work.</Cell></Row>
+<Row><Cell>leceni_pt_zkontrolovat_pt_oQ7a</Cell><Cell>Check on Capon</Cell><Cell>Check on Capon</Cell></Row>
+<Row><Cell>lecenisuc_hermankovy_odvar_STJZ</Cell><Cell>Chamomile decoction</Cell><Cell>Chamomile decoction</Cell></Row>
+<Row><Cell>lecenisuc_med_UTDV</Cell><Cell>Dried chamomile</Cell><Cell>Dried chamomile</Cell></Row>
+<Row><Cell>lecenisuc_prozkoumat_mrtL</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>leceni_vo_lecit_vojaka_bN9y</Cell><Cell>Treat the soldier.</Cell><Cell>Treat the soldier.</Cell></Row>
+<Row><Cell>leceni_vo_predat_lektvar__3rLM</Cell><Cell>Hand over the antidote.</Cell><Cell>Hand over the Digestive Potion.</Cell></Row>
+<Row><Cell>leceni_vo_prohlednout_voj_X59A</Cell><Cell>Examine the soldier.</Cell><Cell>Examine the soldier</Cell></Row>
+<Row><Cell>leceni__z_lecit_a5z1</Cell><Cell>Treat</Cell><Cell>Treat</Cell></Row>
+<Row><Cell>leceni_zr_bandaz_4eNg</Cell><Cell>Something for the pain.</Cell><Cell>Something for the pain.</Cell></Row>
+<Row><Cell>leceni_zr_lecit_zraneneho_f9eY</Cell><Cell>Heal the wounded</Cell><Cell>Heal the wounded</Cell></Row>
+<Row><Cell>leceni_zr_lecivy_lektvar_0Hdn</Cell><Cell>Spirits for the wound</Cell><Cell>Spirits for the wound</Cell></Row>
+<Row><Cell>leceni_zr_lepsi_lecivy_le_kfpW</Cell><Cell>A better healing potion</Cell><Cell>A better healing potion</Cell></Row>
+<Row><Cell>leceni_zr_prozkoumat_stav_7uby</Cell><Cell>Examine the wounded</Cell><Cell>Examine the wounded</Cell></Row>
+<Row><Cell>lecen_lecit_TSn4</Cell><Cell>Heal</Cell><Cell>Heal</Cell></Row>
+<Row><Cell>lejno_prohlednout_nocnik_bsEQ</Cell><Cell>Examine chamber pot</Cell><Cell>Examine chamber pot</Cell></Row>
+<Row><Cell>likvidace_vlci_6qqh</Cell><Cell>Wolves</Cell><Cell>Wolves</Cell></Row>
+<Row><Cell>location__podivat_se_po_p_tQSE</Cell><Cell>Look around for pearls.</Cell><Cell>Look around for pearls.</Cell></Row>
+<Row><Cell>lom_pod_t_prohlednout_kam_AJzr</Cell><Cell>Examine the stones</Cell><Cell>Examine the stones</Cell></Row>
+<Row><Cell>lost_mean_smysl_zivota_mj5r</Cell><Cell>Meaning of life</Cell><Cell>Meaning of life</Cell></Row>
+<Row><Cell>loukove_p_dat_pastvinu_ta_GPl2</Cell><Cell>Give the pasture to Tachov</Cell><Cell>Give the pasture to Tachov</Cell></Row>
+<Row><Cell>loukove_p_dat_pastvinu_ze_Eh64</Cell><Cell>Give the pasture to Zhelejov</Cell><Cell>Give the pasture to Zhelejov</Cell></Row>
+<Row><Cell>loukove_p_pribit_hrebik_RVkY</Cell><Cell>Return the nail</Cell><Cell>Return the nail</Cell></Row>
+<Row><Cell>loukove_p_prozkoumat_hreb_TyA7</Cell><Cell>Examine the nail</Cell><Cell>Examine the nail</Cell></Row>
+<Row><Cell>loukove_p_vyrvat_hrebik_NGdU</Cell><Cell>Pull out the nail</Cell><Cell>Pull out the nail</Cell></Row>
+<Row><Cell>lurewolves_pocihat_si_na__WHeI</Cell><Cell>Lurking on wolves</Cell><Cell>Lurk on wolves</Cell></Row>
+<Row><Cell>lurewolves_schovka_RuDJ</Cell><Cell>Hiding place</Cell><Cell>Hiding place</Cell></Row>
+<Row><Cell>lurewolves_vypnout_7Gje</Cell><Cell>Turn off</Cell><Cell>Turn off</Cell></Row>
+<Row><Cell>main_hibe_lecit_petra_gMF9</Cell><Cell>Heal Peter.</Cell><Cell>Treat Peter</Cell></Row>
+<Row><Cell>main_hibe_prohlednout_pet_JjQj</Cell><Cell>Examine Peter</Cell><Cell>Examine Peter</Cell></Row>
+<Row><Cell>majordomus_action_prompt__vD34</Cell><Cell>Kuttenberg City Council, morning </Cell><Cell>Kuttenberg City Council, morning.</Cell></Row>
+<Row><Cell>malir__ko_o_nekolik_hodin_6ltl</Cell><Cell>Veles Shrine - a few hours later</Cell><Cell>Veles Shrine - a few hours later</Cell></Row>
+<Row><Cell>malir_placeholder_cutscen_oldu</Cell><Cell>(Placeholder) Cutscene where Henry arrives at the unknown painter tied to a tree, talking to a skull, just as wolves attack!</Cell><Cell>(Placeholder) Cutscene where Henry arrives at the unknown painter tied to a tree, talking to a skull, just as wolves attack!</Cell></Row>
+<Row><Cell>malovani__stit_pro_malova_TZaC</Cell><Cell>Shield to paint</Cell><Cell>Shield to paint</Cell></Row>
+<Row><Cell>malovani__stity_na_odbarv_hl33</Cell><Cell>Shield designs to be erased</Cell><Cell>Shield designs to be erased</Cell></Row>
+<Row><Cell>malovanoj_ukol_dokoncen_RFpD</Cell><Cell>Quest complete.</Cell><Cell>Quest complete.</Cell></Row>
+<Row><Cell>marketing_podivat_se_jCZu</Cell><Cell>Announcing the bathhouse.</Cell><Cell>Announce the bathhouse</Cell></Row>
+<Row><Cell>maso_jako_blabla_aqHR</Cell><Cell>blahblah</Cell><Cell>blahblah</Cell></Row>
+<Row><Cell>mazak_hyn_hynek_VuUO</Cell><Cell>Hynek</Cell><Cell>Hynek</Cell></Row>
+<Row><Cell>mensi_tab_rozhlednout_se_vpLD</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>mission_p_ted_dvere_neote_gDJl</Cell><Cell>You can't unlock this now, you have enemies on your tail!</Cell><Cell>You can't unlock this now, you have enemies on your tail!</Cell></Row>
+<Row><Cell>mrtva_anna_pohlednout_na__Y7ds</Cell><Cell>Look at Anna</Cell><Cell>Look at Anna</Cell></Row>
+<Row><Cell>mrtvola_v_prohlednout_mrt_fyzK</Cell><Cell>Examine the corpse</Cell><Cell>Examine the corpse</Cell></Row>
+<Row><Cell>mrtvy_hen_placeholder_vyh_MmWo</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>mrtvy_mar_placeholder_pod_g9mH</Cell><Cell>Look at the dead body</Cell><Cell>Look at the dead body</Cell></Row>
+<Row><Cell>mucirna_jit_mucit_wtfQ</Cell><Cell>Go to the torture chamber.</Cell><Cell>Go to the torture chamber</Cell></Row>
+<Row><Cell>mucirna_muceni_skoncilo_Sw8w</Cell><Cell>Torture ended.</Cell><Cell>Torture ended.</Cell></Row>
+<Row><Cell>musa_byliny_0kK4</Cell><Cell>Examine the herbs</Cell><Cell>Examine the herbs</Cell></Row>
+<Row><Cell>musa_cennosti_ovV8</Cell><Cell>Examine the items of value</Cell><Cell>Examine the items of value</Cell></Row>
+<Row><Cell>musa_knihy_xK6y</Cell><Cell>Examine the vessel</Cell><Cell>Examine the vessel</Cell></Row>
+<Row><Cell>musa_lektvary_uOau</Cell><Cell>Examine the potions</Cell><Cell>Examine the potions</Cell></Row>
+<Row><Cell>musa_luzka_pro_nemocne_IBCy</Cell><Cell>Examine the sick beds</Cell><Cell>Examine the sick beds</Cell></Row>
+<Row><Cell>musa_modlitebni_koberec_6NfL</Cell><Cell>Examine the prayer rug</Cell><Cell>Examine the prayer rug</Cell></Row>
+<Row><Cell>musa_operacni_stul_Fj2u</Cell><Cell>Examine the table</Cell><Cell>Examine the table</Cell></Row>
+<Row><Cell>musuv_sta_prozkoumat_telo_R1rU</Cell><Cell>(Examine the body)</Cell><Cell>Examine the body</Cell></Row>
+<Row><Cell>mysi1_malujes_bejka_asi_p_iYHz</Cell><Cell>You're working on a masterpiece.</Cell><Cell>You're working on a masterpiece.</Cell></Row>
+<Row><Cell>na_nebako_test3_zKs6</Cell><Cell>test 3</Cell><Cell>test 3</Cell></Row>
+<Row><Cell>na_palouc_odriznout_Xg5g</Cell><Cell>Cut Adder off</Cell><Cell>Cut Adder down</Cell></Row>
+<Row><Cell>na_palouc_rozriznout_pouta_KZpg</Cell><Cell>Cut the restraints</Cell><Cell>Cut the restraints</Cell></Row>
+<Row><Cell>na_palouc_zbran_pro_komara_CcZz</Cell><Cell>Weapon for Adder</Cell><Cell>Weapon for Adder</Cell></Row>
+<Row><Cell>narocne_r_uklidit_zvratky_alRG</Cell><Cell>Clean up the vomit</Cell><Cell>Clean up vomit</Cell></Row>
+<Row><Cell>nastaveni_sednout_si_6eqQ</Cell><Cell>Sit down</Cell><Cell>Sit down</Cell></Row>
+<Row><Cell>nastaveni_tohle_neni_tvoj_aQ1n</Cell><Cell>This isn't your bed.</Cell><Cell>This isn't your bed.</Cell></Row>
+<Row><Cell>na_vnitrn_potions_ondro_d_yFqP</Cell><Cell>Medicine for the chamberlain</Cell><Cell>Medicine for the chamberlain</Cell></Row>
+<Row><Cell>navrat_psa_placeholder_vo_QU8O</Cell><Cell>Mutt! Come here!</Cell><Cell>Mutt! Come here!</Cell></Row>
+<Row><Cell>navsteva__alkohol_R5ME</Cell><Cell>Alcohol</Cell><Cell>Alcohol</Cell></Row>
+<Row><Cell>navsteva__lektvary_eH1L</Cell><Cell>Potions</Cell><Cell>Potions</Cell></Row>
+<Row><Cell>navsteva__tucne_jidlo_nWLx</Cell><Cell>Fatty food</Cell><Cell>Fatty food</Cell></Row>
+<Row><Cell>nebakovob_brb_mA2s</Cell><Cell>brb</Cell><Cell>brb</Cell></Row>
+<Row><Cell>nebakovob_hrob_4Y8d</Cell><Cell>Grave</Cell><Cell>Grave</Cell></Row>
+<Row><Cell>neoznacen_karluv_hrob_P3sG</Cell><Cell>Examine the fresh grave</Cell><Cell>Examine the fresh grave</Cell></Row>
+<Row><Cell>neoznacen_vytahnout_z_kar_msGN</Cell><Cell>Pull the arrow out of Karel</Cell><Cell>Pull the arrow out of Karel</Cell></Row>
+<Row><Cell>nextnextg_pozdeji_8Rfg</Cell><Cell>Later...</Cell><Cell>Later...</Cell></Row>
+<Row><Cell>nocni_bit_dvere_jsou_zabl_0mQs</Cell><Cell>The door is blocked</Cell><Cell>The door is blocked</Cell></Row>
+<Row><Cell>nocni_bit_pohlednout_na_o_Nv1C</Cell><Cell>Look at Christopher</Cell><Cell>Look at Christopher</Cell></Row>
+<Row><Cell>nocni_bit_vtrhnout_do_salu_6epi</Cell><Cell>Break down the door</Cell><Cell>Break down the door</Cell></Row>
+<Row><Cell>nocni_hli_pozdeji_v_noci_hCKF</Cell><Cell>Later at night...</Cell><Cell>Later at night...</Cell></Row>
+<Row><Cell>noseni_py_ukrast_CQRi</Cell><Cell>Pick up</Cell><Cell>Pick up</Cell></Row>
+<Row><Cell>notificat_jsi_tak_pretize_Hmp3</Cell><Cell>You're too overencumbered to get on the horse!</Cell><Cell>You're too overencumbered to get on the horse!</Cell></Row>
+<Row><Cell>notificat_zavod_dokoncen_mcPw</Cell><Cell>Race complete.</Cell><Cell>Race complete.</Cell></Row>
+<Row><Cell>notifikac_nejdriv_si_seze_UIEY</Cell><Cell>You can't launder without soap.</Cell><Cell>You can't launder without soap.</Cell></Row>
+<Row><Cell>notifikac_oplachl_ses_jak_G7fE</Cell><Cell>You're as clean as you can get at a trough.</Cell><Cell>You're as clean as you can get at a trough.</Cell></Row>
+<Row><Cell>notifikac_oplach_ses_UZGJ</Cell><Cell>You've washed yourself as much as the trough allows.</Cell><Cell>You've washed yourself as much as the trough allows.</Cell></Row>
+<Row><Cell>notifikac_tvoje_tvaricky__QnCM</Cell><Cell>You've rinsed the worst dirt off yourself.</Cell><Cell>You've rinsed the worst dirt off yourself.</Cell></Row>
+<Row><Cell>notifikac_tvoje_tvar_je_t_3vZL</Cell><Cell>You won't get any cleaner here. Find a bathhouse or a trough at least.</Cell><Cell>You won't get any cleaner here. Find a bathhouse or a trough at least.</Cell></Row>
+<Row><Cell>notifikac_v_bezvedomi_te__09GD</Cell><Cell>You were thrown out of a private area while you were unconscious.</Cell><Cell>You were thrown out of a private area while you were unconscious.</Cell></Row>
+<Row><Cell>notifikac_vyprat_pradlo_eZfq</Cell><Cell>Launder clothes</Cell><Cell>Launder clothes</Cell></Row>
+<Row><Cell>obeseny_s_placeholder_pom_GQY7</Cell><Cell>Prepare Sam for his burial.</Cell><Cell>Prepare Sam for his burial</Cell></Row>
+<Row><Cell>obeseny_s_placeholder_vis_wYG5</Cell><Cell>Take a look at Sam</Cell><Cell>Take a look at Sam</Cell></Row>
+<Row><Cell>objective_hadry_YbSY</Cell><Cell>Skin.</Cell><Cell>Skin.</Cell></Row>
+<Row><Cell>objective_mrtvola_fJmZ</Cell><Cell>Corpse.</Cell><Cell>Corpse.</Cell></Row>
+<Row><Cell>objective_povesena_mrsina_GZ7k</Cell><Cell>Hanging carcass.</Cell><Cell>Hanging carcass.</Cell></Row>
+<Row><Cell>objective_prozkoumat_BGcl</Cell><Cell>Examine.</Cell><Cell>Examine.</Cell></Row>
+<Row><Cell>objective_sebrat_svoje_ve_1RZt</Cell><Cell>Pick up your things.</Cell><Cell>Pick up your things</Cell></Row>
+<Row><Cell>objective_vykuchana_srna_2dXt</Cell><Cell>Gutted deer.</Cell><Cell>Gutted deer.</Cell></Row>
+<Row><Cell>oderin_de_postel_je_obsaz_BGaE</Cell><Cell>The bed is occupied</Cell><Cell>The bed is occupied</Cell></Row>
+<Row><Cell>oderin_de_sednout_wPpv</Cell><Cell>Sit down</Cell><Cell>Sit down</Cell></Row>
+<Row><Cell>oderin_de_spat_a_ulozit_PDzF</Cell><Cell>Sleep and save</Cell><Cell>Sleep and save</Cell></Row>
+<Row><Cell>odevzavac_jidlo_Q75W</Cell><Cell>Food</Cell><Cell>Food</Cell></Row>
+<Row><Cell>odevzdani_bascinet_s_hled_Nag7</Cell><Cell>bascinet with visor</Cell><Cell>Bascinet with visor</Cell></Row>
+<Row><Cell>odevzdani_damske_saty_dA4m</Cell><Cell>Woman's dress</Cell><Cell>Woman's dress</Cell></Row>
+<Row><Cell>odevzdani_dlouhy_mec_7ZmS</Cell><Cell>longsword</Cell><Cell>longsword</Cell></Row>
+<Row><Cell>odevzdani_jidlo_6jrh</Cell><Cell>Food</Cell><Cell>Food</Cell></Row>
+<Row><Cell>odevzdani_kozlik_IlEq</Cell><Cell>Valerian  </Cell><Cell>Valerian  </Cell></Row>
+<Row><Cell>odevzdani_kratky_mec_l2fh</Cell><Cell>shortsword</Cell><Cell>shortsword</Cell></Row>
+<Row><Cell>odevzdani_maso_9Ecm</Cell><Cell>meat</Cell><Cell>Meat</Cell></Row>
+<Row><Cell>odevzdani_pochodne_ltV9</Cell><Cell>torch</Cell><Cell>Torch</Cell></Row>
+<Row><Cell>odevzdani_podkovy_RMMT</Cell><Cell>horseshoes</Cell><Cell>horseshoes</Cell></Row>
+<Row><Cell>odevzdani_sekera_MlSS</Cell><Cell>axe</Cell><Cell>axe</Cell></Row>
+<Row><Cell>odevzdani_soutezni_tesak_C0Qk</Cell><Cell>Hunting sword for the competition</Cell><Cell>Competition hunting sword</Cell></Row>
+<Row><Cell>odevzdani_vejce_QouL</Cell><Cell>egg</Cell><Cell>Egg</Cell></Row>
+<Row><Cell>odevzdava_cennosti_lciC</Cell><Cell>Valuables</Cell><Cell>Valuables</Cell></Row>
+<Row><Cell>odjezd_do_pozdeji_tehoz_d_R6Bk</Cell><Cell>later, near Kuttenberg</Cell><Cell>Later, near Kuttenberg.</Cell></Row>
+<Row><Cell>odjezd_z__pockat_nez_ptac_RlHf</Cell><Cell>Wait for Capon.</Cell><Cell>Wait for Capon.</Cell></Row>
+<Row><Cell>oltarvesk_odsouvas_kriz_a_77oh</Cell><Cell>You push aside the cross and the heavy stone.</Cell><Cell>You push aside the cross and the heavy stone.</Cell></Row>
+<Row><Cell>oltarvesk_odsunout_kQhn</Cell><Cell>Push aside</Cell><Cell>Push aside</Cell></Row>
+<Row><Cell>olupovac__co_se_tu_deje_jdHZ</Cell><Cell>What's going on here?</Cell><Cell>What's going on here?</Cell></Row>
+<Row><Cell>openworld_chatttt_J13A</Cell><Cell>Address</Cell><Cell>Speak</Cell></Row>
+<Row><Cell>openworld_pohlednout_na_t_mVSf</Cell><Cell>Examine the burned area</Cell><Cell>Examine the burned area</Cell></Row>
+<Row><Cell>open_worl_poslechnout_si__352A</Cell><Cell>Listen to conversation</Cell><Cell>Listen to conversation</Cell></Row>
+<Row><Cell>opijeni_z_alkohol_eAJ0</Cell><Cell>Alcohol</Cell><Cell>Alcohol</Cell></Row>
+<Row><Cell>opily_cech_betrunkenes_ge_K398</Cell><Cell>Yell</Cell><Cell>Yell</Cell></Row>
+<Row><Cell>opratka_a_obesenec_xBA3</Cell><Cell>Hanged man</Cell><Cell>Hanged man</Cell></Row>
+<Row><Cell>opratka_a_opratka_cuXs</Cell><Cell>Noose on a branch</Cell><Cell>Noose on a branch</Cell></Row>
+<Row><Cell>o_samote__nalit_Qgj0</Cell><Cell>Pour</Cell><Cell>Pour</Cell></Row>
+<Row><Cell>osetrovan_obvaz_mV5L</Cell><Cell>Bandage</Cell><Cell>Bandage</Cell></Row>
+<Row><Cell>osvobozen_nejprve_zneskod_jmcO</Cell><Cell>Neutralise the jailer first!</Cell><Cell>Neutralise the jailer first!</Cell></Row>
+<Row><Cell>osvobozov_rozvazat_FEWY</Cell><Cell>Untie</Cell><Cell>Untie</Cell></Row>
+<Row><Cell>otevirani_oteviras_branu__NJMp</Cell><Cell>Opening the gates for the Dry Devil…</Cell><Cell>Opening the gates for the Dry Devil…</Cell></Row>
+<Row><Cell>paralel_f_nalit_bile_1Fvs</Cell><Cell>Pour Tokai white</Cell><Cell>Pour Tokai white</Cell></Row>
+<Row><Cell>paralel_f_nalit_cervene_00Og</Cell><Cell>Pour Monastery red</Cell><Cell>Pour Monastery red</Cell></Row>
+<Row><Cell>party_placeholder_save_Oafr</Cell><Cell>The morning after the drinking session</Cell><Cell>The morning after the drinking session</Cell></Row>
+<Row><Cell>pasacek_vylepsit_alsikovu_4uAl</Cell><Cell>Improve Alshik's snack</Cell><Cell>Improve Alshik's snack</Cell></Row>
+<Row><Cell>past_nemuzes_spat_kdyz_ch_N62E</Cell><Cell>You can’t sleep when you’re hunting a killer.</Cell><Cell>You can’t sleep when you’re hunting a killer.</Cell></Row>
+<Row><Cell>past_spat_DXo5</Cell><Cell>Sleep</Cell><Cell>Sleep</Cell></Row>
+<Row><Cell>pata_cast_prozkoumat_mohy_PyUd</Cell><Cell>Explore the cairn</Cell><Cell>Explore the cairn</Cell></Row>
+<Row><Cell>patrani_p_nelze_otevrit_mnaE</Cell><Cell>Closed.</Cell><Cell>Closed.</Cell></Row>
+<Row><Cell>patrani_p_prozkoumat_ePGJ</Cell><Cell>Examine.</Cell><Cell>Investigate</Cell></Row>
+<Row><Cell>peasants__jidlo_H2C1</Cell><Cell>Food</Cell><Cell>Food</Cell></Row>
+<Row><Cell>pes_v_lese_placeholder_po_rXku</Cell><Cell>Look at the dog</Cell><Cell>Look at the dog</Cell></Row>
+<Row><Cell>placing_r_pohrbit_janovy__BShu</Cell><Cell>Bury Jan's remains</Cell><Cell>Bury Jan's remains</Cell></Row>
+<Row><Cell>po_bitce_promluvit_FtIE</Cell><Cell>Speak</Cell><Cell>Speak</Cell></Row>
+<Row><Cell>pogrom_zajistit_dvere_3m2w</Cell><Cell>Door to the backyard</Cell><Cell>Door to the courtyard</Cell></Row>
+<Row><Cell>pohrbivan_pohrbit__wcM2</Cell><Cell>Bury</Cell><Cell>Bury</Cell></Row>
+<Row><Cell>pohrebni__hlidas_gejzovo__PemT</Cell><Cell>You guard Gejza's body until Tibor returns with the family.</Cell><Cell>You guard Gejza's body until Tibor returns with the family.</Cell></Row>
+<Row><Cell>pohrebni__vracis_se_s_ost_ygdA</Cell><Cell>You return to the camp with the others.</Cell><Cell>You return to the camp with the others.</Cell></Row>
+<Row><Cell>poi_kutno_podivat_se_zEOk</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>poi_kutno_prohlednout_h5Ns</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>poi_kutno_rozhlednout_se_8pEg</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>poi_trose_prohlednout_s3Ns</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>popytlack_kozesina_odevzd_kbnr</Cell><Cell>Hide delivered.</Cell><Cell>Hide delivered.</Cell></Row>
+<Row><Cell>porada_s__pit_vino_CTXT</Cell><Cell>Drink wine.</Cell><Cell>Drink wine.</Cell></Row>
+<Row><Cell>poustevnik_mount_steal_jXIQ</Cell><Cell>Mount (steal)</Cell><Cell>Mount (steal)</Cell></Row>
+<Row><Cell>poustevnik_prozkoumat_kone_z6yp</Cell><Cell>Examine the horse</Cell><Cell>Examine the horse</Cell></Row>
+<Row><Cell>poustevnik_prozkoumat_kri_kEXi</Cell><Cell>Examine the cross</Cell><Cell>Examine the cross</Cell></Row>
+<Row><Cell>pouziti_i_bucks_blood_lek_WoDL</Cell><Cell>Buck's Blood potion</Cell><Cell>Buck's Blood</Cell></Row>
+<Row><Cell>pozvanka__klara_ti_leci_t_MJod</Cell><Cell>Klara has you in her care so don't fuss too much.</Cell><Cell>Klara has you in her care so don't fuss too much.</Cell></Row>
+<Row><Cell>pracharna_probihaji_posle_uG71</Cell><Cell>Last preparations are taking place before the grand revelation.</Cell><Cell>Last preparations are taking place before the grand revelation.</Cell></Row>
+<Row><Cell>prach_v_z_sebrat_soudek_s_b9jo</Cell><Cell>Take a barrel of powder</Cell><Cell>Take a barrel of powder</Cell></Row>
+<Row><Cell>prchajici_prohlednout_si__q2I9</Cell><Cell>Examine the ladder.</Cell><Cell>Examine the ladder</Cell></Row>
+<Row><Cell>predani_a_neco_k_piti_rag1</Cell><Cell>Something to drink</Cell><Cell>Something to drink</Cell></Row>
+<Row><Cell>predani_b_bylinky_GyX9</Cell><Cell>Herbs</Cell><Cell>Herbs</Cell></Row>
+<Row><Cell>predani_cestujes_na_misto_iGd1</Cell><Cell>Go with Jan to the place where he will meet with Laszlo Farkas</Cell><Cell>You and Jan are on your way to meet with László Farkas</Cell></Row>
+<Row><Cell>predani_l_lektvar_Jx7t</Cell><Cell>Potion</Cell><Cell>Potion</Cell></Row>
+<Row><Cell>predani_l_lektvar_n8SX</Cell><Cell>Potion</Cell><Cell>Potion</Cell></Row>
+<Row><Cell>predani_l_zdravotnicky_ma_aQJ7</Cell><Cell>Medical material</Cell><Cell>Medical material</Cell></Row>
+<Row><Cell>predani_o_lektvar_BVAD</Cell><Cell>Potion</Cell><Cell>Potion</Cell></Row>
+<Row><Cell>predani_z_lektvar_tbMS</Cell><Cell>Potion</Cell><Cell>Potion</Cell></Row>
+<Row><Cell>predbitev_o_neco_pozdeji_vc1J</Cell><Cell>A little later</Cell><Cell>A little later</Cell></Row>
+<Row><Cell>premalova_nemuzes_malovat_UbBv</Cell><Cell>Someone might have seen you!</Cell><Cell>Someone might have seen you!</Cell></Row>
+<Row><Cell>premalova_podivat_se_na_m_CHzs</Cell><Cell>Look at the painting</Cell><Cell>Look at the painting</Cell></Row>
+<Row><Cell>premalova_premalovat_Fyi2</Cell><Cell>Repaint</Cell><Cell>Repaint</Cell></Row>
+<Row><Cell>premalova_vylepsujes_malbu_ELOi</Cell><Cell>Enhancing the painting...</Cell><Cell>Enhancing the painting...</Cell></Row>
+<Row><Cell>prepadeni_podivat_se__seZm</Cell><Cell>Take a look </Cell><Cell>Take a look </Cell></Row>
+<Row><Cell>prevracen_podivat_se_H83I</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>prijezd_n_jaromir_z_nebak_ppFZ</Cell><Cell>Jaromier of Nebakov</Cell><Cell>Jaromier of Nebakov</Cell></Row>
+<Row><Cell>promluv_s_placeholder_zav_bJ0j</Cell><Cell>Zavish of Garbow's shield</Cell><Cell>Zavish of Garbow's shield</Cell></Row>
+<Row><Cell>prozkouma_misto_po_dyce_wFnp</Cell><Cell>The spot where the dagger was</Cell><Cell>The spot where the dagger was</Cell></Row>
+<Row><Cell>prozkouma_podivat_se_na_d_WorJ</Cell><Cell>Look at the dagger</Cell><Cell>Look at the dagger</Cell></Row>
+<Row><Cell>prubeh_qu_jezirko_cL0R</Cell><Cell>Pond pier</Cell><Cell>Pond pier</Cell></Row>
+<Row><Cell>prubeh_qu_kamenna_mohyla_lViU</Cell><Cell>Grave</Cell><Cell>Grave</Cell></Row>
+<Row><Cell>prubeh_qu_rybniky_xWY9</Cell><Cell>Big stone</Cell><Cell>Big stone</Cell></Row>
+<Row><Cell>prubeh_qu_stary_dub_bxgC</Cell><Cell>Old oak</Cell><Cell>Old oak</Cell></Row>
+<Row><Cell>pruzkum_a_saty_JhMA</Cell><Cell>Dress for the bathmaid</Cell><Cell>Dress for the bathmaid</Cell></Row>
+<Row><Cell>pruzkum_b_prozkoumat_Ggdt</Cell><Cell>Investigate</Cell><Cell>Investigate</Cell></Row>
+<Row><Cell>pruzkum_m_kaluz_amIy</Cell><Cell>Puddle</Cell><Cell>Puddle</Cell></Row>
+<Row><Cell>pruzkum_m_prohlednout_kal_iBfR</Cell><Cell>Examine the puddle of blood</Cell><Cell>Examine the puddle of blood</Cell></Row>
+<Row><Cell>pruzkum_prozkoumat_EENo</Cell><Cell>Investigate</Cell><Cell>Investigate</Cell></Row>
+<Row><Cell>pruzkum_z_maso_na_taliri_oCVf</Cell><Cell>Wolf's heart on a plate</Cell><Cell>Wolf's heart on a plate</Cell></Row>
+<Row><Cell>pruzkum_z_mece_XxwT</Cell><Cell>Wooden swords</Cell><Cell>Wooden swords</Cell></Row>
+<Row><Cell>pruzkum_z_rozpadly_zebrin_R50J</Cell><Cell>Broken wagon</Cell><Cell>Broken wagon</Cell></Row>
+<Row><Cell>pruzkum_z_strasak_v_mrave_64nd</Cell><Cell>Scarecrow in an anthill</Cell><Cell>Scarecrow in an anthill</Cell></Row>
+<Row><Cell>pruzkum_z_trouchnivejici__OBKD</Cell><Cell>Rotting roof</Cell><Cell>Rotting roof</Cell></Row>
+<Row><Cell>pruzkum_z_vlci_kuze_j2Bg</Cell><Cell>Wolf's skin</Cell><Cell>Wolf's skin</Cell></Row>
+<Row><Cell>pruzkum_z_vysernice_vasd</Cell><Cell>Latrine</Cell><Cell>Latrine</Cell></Row>
+<Row><Cell>pruzkum_z_zemnice_gB5u</Cell><Cell>Dugout</Cell><Cell>Dugout</Cell></Row>
+<Row><Cell>prvni_set_zacatek_dA9P</Cell><Cell>Start</Cell><Cell>Start</Cell></Row>
+<Row><Cell>prvni_sme_pivo_3DtF</Cell><Cell>Beer</Cell><Cell>Beer</Cell></Row>
+<Row><Cell>psi_zivot_prozkoumat_gjh4</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>ptacek_a__zapiskat__dopsa_fOgn</Cell><Cell>Check the tower.</Cell><Cell>Check the tower</Cell></Row>
+<Row><Cell>ptacek_prohlednout_veci_BASc</Cell><Cell>Inspect belongings.</Cell><Cell>Inspect belongings.</Cell></Row>
+<Row><Cell>ptacek_ve_mluvit_s_ptackem_m8k0</Cell><Cell>Talk to Capon</Cell><Cell>Talk to Capon</Cell></Row>
+<Row><Cell>pyramidky_kosti_fwMM</Cell><Cell>Add bones to the pile</Cell><Cell>Add bones to the pile</Cell></Row>
+<Row><Cell>pyramidky_lebky_UUOj</Cell><Cell>Add skulls to the pile</Cell><Cell>Add skulls to the pile</Cell></Row>
+<Row><Cell>pyramidky_rozbite_lebky_IeSy</Cell><Cell>Add cracked skulls to the pile</Cell><Cell>Add cracked skulls to the pile</Cell></Row>
+<Row><Cell>pytlak_2__prohlednout_par_vLna</Cell><Cell>Inspect the antlers.</Cell><Cell>Inspect the antlers.</Cell></Row>
+<Row><Cell>quest_ite_hrebik_GvX8</Cell><Cell>Old nail</Cell><Cell>Old nail</Cell></Row>
+<Row><Cell>quest_ite_neni_duvod_s_ni_vWhG</Cell><Cell>There's no point in doing anything with it</Cell><Cell>There's no point in doing anything with it</Cell></Row>
+<Row><Cell>quest_ite_prohlednout_sud_e7bJ</Cell><Cell>View the barrel</Cell><Cell>View the barrel</Cell></Row>
+<Row><Cell>quiet_and_upozornit_Tnsb</Cell><Cell>Draw attention</Cell><Cell>Draw attention</Cell></Row>
+<Row><Cell>rada_a_vy_chysta_se_vysle_qoOo</Cell><Cell>The interrogation of the captive von Bergow is being prepared.</Cell><Cell>The interrogation of the captive von Bergow is being prepared.</Cell></Row>
+<Row><Cell>radnice_vyvesit_sermirsky_koUG</Cell><Cell>Display the Kuttenberg sword</Cell><Cell>Display the Kuttenberg sword</Cell></Row>
+<Row><Cell>rano_po_k_podivat_se_na_h_dEcD</Cell><Cell>Look at the grave.</Cell><Cell>Look at the grave.</Cell></Row>
+<Row><Cell>rasuvucen_bylinky_rfuw</Cell><Cell>Herbs</Cell><Cell>Herbs</Cell></Row>
+<Row><Cell>rasuvucen_cerstve_maso_kHO9</Cell><Cell>Fresh meat</Cell><Cell>Fresh meat</Cell></Row>
+<Row><Cell>rasuvucen_ochutnat_PMsw</Cell><Cell>Taste</Cell><Cell>Taste</Cell></Row>
+<Row><Cell>robbed_me_boty_3Hsj</Cell><Cell>Shoes</Cell><Cell>Boots</Cell></Row>
+<Row><Cell>robbed_me_kalhoty_LerT</Cell><Cell>Trousers</Cell><Cell>Trousers</Cell></Row>
+<Row><Cell>robbed_me_obleceni_MQjK</Cell><Cell>Clothing</Cell><Cell>Clothing</Cell></Row>
+<Row><Cell>roza_psan_cekas_nez_roza__Snv4</Cell><Cell>You're waiting for Rosa to finish your story.</Cell><Cell>You're waiting for Rosa to finish your story.</Cell></Row>
+<Row><Cell>rozebrani_interaktor_na_r_taVY</Cell><Cell>Take apart the wall</Cell><Cell>Take apart the wall</Cell></Row>
+<Row><Cell>rozhovor__dlouhy_mec_x1PI</Cell><Cell>horseshoes</Cell><Cell>horseshoes</Cell></Row>
+<Row><Cell>rvacka_v__podivat_se_na_k_d20J</Cell><Cell>Look at the Cumans</Cell><Cell>Look at the Cumans</Cell></Row>
+<Row><Cell>sack_and__pick_up_AoHz</Cell><Cell>Steal</Cell><Cell>Steal</Cell></Row>
+<Row><Cell>samotne_k_ukrast_majku_hqPp</Cell><Cell>Steal the maypole</Cell><Cell>Steal the maypole</Cell></Row>
+<Row><Cell>save_hry_save_lazne_rZMT</Cell><Cell>Save bathhouse</Cell><Cell>Save bathhouse</Cell></Row>
+<Row><Cell>scenka_ex_hluk_4Ec7</Cell><Cell>Noise?</Cell><Cell>Noise?</Cell></Row>
+<Row><Cell>s_certem_dalsi_den_rano_SvdX</Cell><Cell>The next morning…</Cell><Cell>The next morning…</Cell></Row>
+<Row><Cell>s_certem_pivo_tece_proudem_XHAf</Cell><Cell>The beer's flowing like water…</Cell><Cell>The beer's flowing like water…</Cell></Row>
+<Row><Cell>semin__od_predat_podkovy__64QO</Cell><Cell>Hand over the studded horseshoes.</Cell><Cell>Hand over the spiked horseshoes.</Cell></Row>
+<Row><Cell>sermirna_porozhlednout_se_de3O</Cell><Cell>Take a look around</Cell><Cell>Take a look around</Cell></Row>
+<Row><Cell>se_strazn_pivo_Cvnx</Cell><Cell>Beer</Cell><Cell>Beer</Cell></Row>
+<Row><Cell>setkani_s_placeholder_naz_vud3</Cell><Cell>Meeting Fiolka</Cell><Cell>Meeting Fiolka</Cell></Row>
+<Row><Cell>se_zajatci_lektvary_Bz17</Cell><Cell>Potions</Cell><Cell>Potions</Cell></Row>
+<Row><Cell>shaneni_g_prohledat_dutinu_QEzB</Cell><Cell>Search the tree hollow.</Cell><Cell>Search the tree hollow</Cell></Row>
+<Row><Cell>sidlo_rut_otevrit_N6Zq</Cell><Cell>Open</Cell><Cell>Open</Cell></Row>
+<Row><Cell>skip_do_t_cekani_na_turnaj_KEzb</Cell><Cell>You're waiting for the Kuttenberg tournament to commence.</Cell><Cell>You're waiting for the Kuttenberg tournament to commence.</Cell></Row>
+<Row><Cell>skirmish__pomoct_certovi_Z3P0</Cell><Cell>Help the Dry Devil</Cell><Cell>Help the Dry Devil</Cell></Row>
+<Row><Cell>sklep_poslouchat_UOsN</Cell><Cell>Listen</Cell><Cell>Listen</Cell></Row>
+<Row><Cell>skrys_pyt_prohlednout_par_RG3n</Cell><Cell>Examine the antlers</Cell><Cell>Examine the antlers</Cell></Row>
+<Row><Cell>smrt_pech_mrtvy_pecha_bj7V</Cell><Cell>Examine the body</Cell><Cell>Examine the body</Cell></Row>
+<Row><Cell>souboje_nemas_spravny_equ_lVlR</Cell><Cell>You need to wear proper gear for the tournament duel.</Cell><Cell>You need to wear proper gear for the tournament duel.</Cell></Row>
+<Row><Cell>spizovaci_prozkoumat_IeyX</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>spizovaci_prozkoumat_seno_45nr</Cell><Cell>Examine the manure</Cell><Cell>Examine the manure</Cell></Row>
+<Row><Cell>spodni_ve_prozkoumat_mveo</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>s_rezniko_neco_na_bolest_eekl</Cell><Cell>Something for the pain</Cell><Cell>Something for the pain</Cell></Row>
+<Row><Cell>start_obl_za_svoje_provin_I9aA</Cell><Cell>You've been punished for your wrongdoing.</Cell><Cell>You've been punished for your wrongdoing.</Cell></Row>
+<Row><Cell>stealth_r_zbran_placehold_yI9v</Cell><Cell>Melee weapon</Cell><Cell>Melee weapon</Cell></Row>
+<Row><Cell>stopovani_krev_rJNB</Cell><Cell>Look at the blood</Cell><Cell>Look at the blood</Cell></Row>
+<Row><Cell>stopovani_podivat_se_QYki</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>stopovani_prohlednout_U8ku</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>straseni__jindra_priprvuj_xLWm</Cell><Cell>You light fires and dress as a devil.</Cell><Cell>You light fires and dress as a devil.</Cell></Row>
+<Row><Cell>strazni_z_alkohol_GBdP</Cell><Cell>Examine the alcohol</Cell><Cell>Examine the alcohol</Cell></Row>
+<Row><Cell>strazni_z_koste_6TZC</Cell><Cell>Examine the broom</Cell><Cell>Examine the broom</Cell></Row>
+<Row><Cell>strazni_z_postel_koME</Cell><Cell>Examine the bed</Cell><Cell>Examine the bed</Cell></Row>
+<Row><Cell>stream_a__podivat_se_TpoE</Cell><Cell>Take a look.</Cell><Cell>Take a look.</Cell></Row>
+<Row><Cell>streamova_nelze_vykuchat_rS3S</Cell><Cell>Cannot be skinned.</Cell><Cell>Cannot be skinned.</Cell></Row>
+<Row><Cell>strelivo__prozkoumat_X9Px</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>strelnice_havrani_pirka_PG1d</Cell><Cell>Rook feathers</Cell><Cell>Rook feathers</Cell></Row>
+<Row><Cell>studna_slezt_dolu_BxFF</Cell><Cell>Climb down</Cell><Cell>Climb down</Cell></Row>
+<Row><Cell>studna_ve_studni_topn</Cell><Cell>At the well.</Cell><Cell>At the well.</Cell></Row>
+<Row><Cell>suchdol_v_nedostupna_akce_tKfa</Cell><Cell>Inaccessible action</Cell><Cell>Inaccessible action</Cell></Row>
+<Row><Cell>suchdol_v_nedostupne_7okC</Cell><Cell>Inaccessible </Cell><Cell>Inaccessible </Cell></Row>
+<Row><Cell>suchdol_v_spat_Bc0A</Cell><Cell>Sleep</Cell><Cell>Sleep</Cell></Row>
+<Row><Cell>suchdol_v_ted_nemuzes_spat_w8im</Cell><Cell>I should go to my bed...</Cell><Cell>I should go to my bed...</Cell></Row>
+<Row><Cell>suicide_g_otrhat_kvetiny_soGh</Cell><Cell>Tear the flowers</Cell><Cell>Pluck the flowers</Cell></Row>
+<Row><Cell>sword_del_replace_me_item_KQNv</Cell><Cell>Sword</Cell><Cell>Sword</Cell></Row>
+<Row><Cell>taborodbo_ukol_splnen_UJJ4</Cell><Cell>Quest completed.</Cell><Cell>Quest completed.</Cell></Row>
+<Row><Cell>tachovsky_prohlednout_si__6sCw</Cell><Cell>Examine the waterfall</Cell><Cell>Examine the waterfall</Cell></Row>
+<Row><Cell>tajna_skr_placeholder_pod_s9sa</Cell><Cell>Look at the hiding place</Cell><Cell>Look at the hiding place</Cell></Row>
+<Row><Cell>tanec_jindrich_tanci_s_do_QrkA</Cell><Cell>Henry is dancing with Doubravka who is stepping on his feet.</Cell><Cell>Henry is dancing with Doubravka who is stepping on his feet.</Cell></Row>
+<Row><Cell>tanec_s_d_jindri_tanci_s__KBW4</Cell><Cell>Henry is dancing with Mousey.</Cell><Cell>Henry is dancing with Myshka.</Cell></Row>
+<Row><Cell>taras_na__prizrak_7jEN</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>teleport__druhe_pribehove_qam8</Cell><Cell>First beer, second beer... Isn't it a beautiful world!  </Cell><Cell>First beer, second beer... Isn't it a beautiful world!  </Cell></Row>
+<Row><Cell>teleport__prvni_pribehove_QeRJ</Cell><Cell>The wedding is slowly beginning. People aren't staggering yet, but it's only a matter of time.</Cell><Cell>The wedding is slowly beginning. People aren't staggering yet, but it's only a matter of time.</Cell></Row>
+<Row><Cell>teleport__treti_pribehove_hDDR</Cell><Cell>Seven beers and four shots of rum, the girls got beautiful, the old women got young...</Cell><Cell>After six shots of schnapps and several beers, the young women got prettier, the old ones lost years.</Cell></Row>
+<Row><Cell>tibor_v_z_osvobodit_tibora_Y9Iz</Cell><Cell>Free Tibor</Cell><Cell>Free Tibor</Cell></Row>
+<Row><Cell>timeskip_pockej_na_marketu_gMp8</Cell><Cell>Wait for Margaret</Cell><Cell>Wait for Margaret</Cell></Row>
+<Row><Cell>trosky_pr_nadvori_KwGs</Cell><Cell>Courtyard</Cell><Cell>Courtyard</Cell></Row>
+<Row><Cell>trosky_pr_panna_TApJ</Cell><Cell>The Maiden</Cell><Cell>The Maiden</Cell></Row>
+<Row><Cell>truhla_a__prozkoumat_truh_R2uT</Cell><Cell>Examine the chest</Cell><Cell>Examine the chest</Cell></Row>
+<Row><Cell>turnajove_bojuj_srabe_L02m</Cell><Cell>Fight, you coward.</Cell><Cell>Fight, you coward.</Cell></Row>
+<Row><Cell>turnajove_oblec_si_vybavu_gdLI</Cell><Cell>Put on your gear.</Cell><Cell>Put on your gear.</Cell></Row>
+<Row><Cell>turnajove_vyckej_na_konec_JOo3</Cell><Cell>Wait for the end of the tournament.</Cell><Cell>Wait for the end of the tournament.</Cell></Row>
+<Row><Cell>turnajove_vyckej_na_svuj__LU5m</Cell><Cell>Wait for your duel.</Cell><Cell>Wait for your duel.</Cell></Row>
+<Row><Cell>turnaj_probiha_turnaj_toh_UPHN</Cell><Cell>The stakes are too high to be procrastinating.</Cell><Cell>The stakes are too high to be procrastinating.</Cell></Row>
+<Row><Cell>u66__ande_prohledat_okno_sMj4</Cell><Cell>Search window</Cell><Cell>Search window</Cell></Row>
+<Row><Cell>u66__ande_prohledat_panaka_ZLJl</Cell><Cell>Search the figure</Cell><Cell>Search the figure</Cell></Row>
+<Row><Cell>u66__ande_prohledat_trubku_7O1J</Cell><Cell>Search the pipe</Cell><Cell>Search the pipe</Cell></Row>
+<Row><Cell>u_hynka_prohlednout_telo_pNhh</Cell><Cell>Examine corpse</Cell><Cell>Examine corpse</Cell></Row>
+<Row><Cell>ui_de_armorerCheap</Cell><Cell></Cell><Cell>Pro klidnou práci v dílně je potřeba hlavně, aby na vás nepršelo, to ostatní může klidně počkat.</Cell></Row>
+<Row><Cell>ui_de_armorerExpensive</Cell><Cell></Cell><Cell>Konečně pořádná zděná dílna, kde lze dělat v dešti i zimě a nelezou sem slepice ani jiná havěť.</Cell></Row>
+<Row><Cell>ui_de_armorerRubble</Cell><Cell></Cell><Cell>Na tomto místě nejspíš kdysi stála nějaká stodola. Dnes po ní zbylo jen pár zarostlých chátrajících zdí.</Cell></Row>
+<Row><Cell>ui_de_bed_basic</Cell><Cell></Cell><Cell>Ošklivá postel s proleželým slamníkem. Nic co by nestálo za to vyhodit, když má člověk na lepší.</Cell></Row>
+<Row><Cell>ui_de_bed_fir01</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
+<Row><Cell>ui_de_bed_fir02</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
+<Row><Cell>ui_de_bed_fir03</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter01</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter02</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter03</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_penitent01</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
+<Row><Cell>ui_de_bed_penitent02</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
+<Row><Cell>ui_de_bed_penitent03</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
+<Row><Cell>ui_de_bed_philander01</Cell><Cell></Cell><Cell>Po několika prohýřených dnech a nocích není nad to dostat se do vlastní postele. Zajímavé je, že ráno se obvykle probudíš s botama na nohou.</Cell></Row>
+<Row><Cell>ui_de_bed_philander02</Cell><Cell></Cell><Cell>Po několika prohýřených dnech a nocích není nad to dostat se do vlastní postele. Zajímavé je, že ráno se obvykle probudíš s botama na nohou.</Cell></Row>
+<Row><Cell>ui_de_bed_philander03</Cell><Cell></Cell><Cell>Po několika prohýřených dnech a nocích není nad to dostat se do vlastní postele. Zajímavé je, že ráno se obvykle probudíš s botama na nohou.</Cell></Row>
+<Row><Cell>ui_de_bed_sleeper01</Cell><Cell></Cell><Cell>Na světě jsou různé záliby, některé hříšné jiné bohulibé. Těžko říct, kam zařadit oblibu poctivého spánku s následným vstáváním, které se často promění v další usínání.</Cell></Row>
+<Row><Cell>ui_de_bed_sleeper02</Cell><Cell></Cell><Cell>Na světě jsou různé záliby, některé hříšné jiné bohulibé. Těžko říct, kam zařadit oblibu poctivého spánku s následným vstáváním, které se často promění v další usínání.</Cell></Row>
+<Row><Cell>ui_de_bed_sleeper03</Cell><Cell></Cell><Cell>Na světě jsou různé záliby, některé hříšné jiné bohulibé. Těžko říct, kam zařadit oblibu poctivého spánku s následným vstáváním, které se často promění v další usínání.</Cell></Row>
+<Row><Cell>ui_de_bed_smith01</Cell><Cell></Cell><Cell>Jasně, pro někoho je spánek jen vynucenou přestávkou v hlavním smyslu jeho života. Ono se totiž na kovadlině špatně spí.</Cell></Row>
+<Row><Cell>ui_de_bed_smith02</Cell><Cell></Cell><Cell>Jasně, pro někoho je spánek jen vynucenou přestávkou v hlavním smyslu jeho života. Ono se totiž na kovadlině špatně spí.</Cell></Row>
+<Row><Cell>ui_de_bed_smith03</Cell><Cell></Cell><Cell>Jasně, pro někoho je spánek jen vynucenou přestávkou v hlavním smyslu jeho života. Ono se totiž na kovadlině špatně spí.</Cell></Row>
+<Row><Cell>ui_de_beehives</Cell><Cell></Cell><Cell>Každý má nějakou zálibu a nejlepší je taková, co vám navíc přinese užitek. Med je totiž nejenom sladký, ale hlavně velice drahý.</Cell></Row>
+<Row><Cell>ui_de_beehivesRubble</Cell><Cell></Cell><Cell>Těžko říct, o co jde. Někdo snad chtěl kdysi tuhle hromadu spálit, ale už se k tomu nedostal.</Cell></Row>
+<Row><Cell>ui_de_bookshelf01</Cell><Cell></Cell><Cell>Mezi bohatými měšťany se v poslední době objevila nová móda. Čtení knih běžnými laiky je pro mnohé kněží hříchem. Otázkou je, zda není hříchem spíš to, co se v těch knihách někdy píše.</Cell></Row>
+<Row><Cell>ui_de_bookshelf02</Cell><Cell></Cell><Cell>Mezi bohatými měšťany se v poslední době objevila nová móda. Čtení knih běžnými laiky je pro mnohé kněží hříchem. Otázkou je, zda není hříchem spíš to, co se v těch knihách někdy píše.</Cell></Row>
+<Row><Cell>ui_de_bookshelf03</Cell><Cell></Cell><Cell>Mezi bohatými měšťany se v poslední době objevila nová móda. Čtení knih běžnými laiky je pro mnohé kněží hříchem. Otázkou je, zda není hříchem spíš to, co se v těch knihách někdy píše.</Cell></Row>
+<Row><Cell>ui_de_candles_candles</Cell><Cell></Cell><Cell>Nezdá se to, ale svícen je symbolem luxusu. Včelí vosk ani železné pruty nejsou právě nejlevnější věc na trhu. Naštěstí jako kovář si aspoň s tím železem nemusíš lámat hlavu.</Cell></Row>
+<Row><Cell>ui_de_candles_rubble</Cell><Cell></Cell><Cell>Všechno to jsou naprosto nezbytné věci denní potřeby, akorát nejmíň už deset let je nikdo nepotřeboval.</Cell></Row>
+<Row><Cell>ui_de_candles_sink</Cell><Cell></Cell><Cell>Když se po ránu umyješ, je to malý krok pro tebe, ale velký pro lidi ve tvém okolí.</Cell></Row>
+<Row><Cell>ui_de_candles_taxidermy</Cell><Cell></Cell><Cell>Co si můžeš pořídit, když už opravdu už všechno máš? Není nad dalšího věrného přítele, co se nebojí říct pravdu do očí.</Cell></Row>
+<Row><Cell>ui_de_cellarFixed</Cell><Cell></Cell><Cell>Nejlepší pivo je ze sedmého schodu, to je léty prověřená pravda, na které není potřeba nic měnit. Tedy pokud nejste spíš přes víno.</Cell></Row>
+<Row><Cell>ui_de_cellarRubble</Cell><Cell></Cell><Cell>Tahle díra v zemi je zralá tak na zasypání. Opravit ji bude stát jistě hodně úsilí, ale zase natočit si vlastní pivo a uzenky, to se neomrzí.</Cell></Row>
+<Row><Cell>ui_de_chandelier_candles</Cell><Cell></Cell><Cell>Osvětlení tvořené soustavou drobných svícnů zavěšených pod sebou.</Cell></Row>
+<Row><Cell>ui_de_chandelier_smith</Cell><Cell></Cell><Cell>Osvětlení z kovaných pásů železa osazených drahými svícemi.</Cell></Row>
+<Row><Cell>ui_de_chandelier_townsman</Cell><Cell></Cell><Cell>Osvětlení z kovaných pásů železa osazených drahými svícemi.</Cell></Row>
+<Row><Cell>ui_de_chandelier_wheel</Cell><Cell></Cell><Cell>Jednoduchý lustr tvořený starým kolem a množstvím levnějších svící.</Cell></Row>
+<Row><Cell>ui_de_chest_01</Cell><Cell></Cell><Cell>Běžný kus nábytku kam jde ukládat cokoliv, co nechce mít člověk přímo u sebe.</Cell></Row>
+<Row><Cell>ui_de_chest_02</Cell><Cell></Cell><Cell>Pevná dubová truhla s lepším dobře promazaným zámkem.</Cell></Row>
+<Row><Cell>ui_de_chest_03</Cell><Cell></Cell><Cell>Čím víc železa, tím lepší truhla.</Cell></Row>
+<Row><Cell>ui_de_chest_04</Cell><Cell></Cell><Cell>Pořádná truhla do které se vejde všechno, co by mělo být pod zámkem.</Cell></Row>
+<Row><Cell>ui_de_chest_05</Cell><Cell></Cell><Cell>Vyřezávaná truhla mořená do krásné tmavé barvy osazená lepším zámkem.</Cell></Row>
+<Row><Cell>ui_de_chest_06</Cell><Cell></Cell><Cell>Nádherná umělecká práce doprovázená těžkým zámkem vyrobeným skutečně zkušeným zámečníkem.</Cell></Row>
+<Row><Cell>ui_de_chest_basic</Cell><Cell></Cell><Cell>Rozklížená a s rezavým zámkem nakousnutá červotočem.</Cell></Row>
+<Row><Cell>ui_de_doors_basic</Cell><Cell></Cell><Cell>Staré rozklížené dveře, které sice stále jde zavřít, ale parády už moc neudělají.</Cell></Row>
+<Row><Cell>ui_de_doors_green</Cell><Cell></Cell><Cell>Pořádné okované dveře namořené na zeleno.</Cell></Row>
+<Row><Cell>ui_de_doors_red</Cell><Cell></Cell><Cell>Pořádné okované dveře namořené na červeno.</Cell></Row>
+<Row><Cell>ui_de_doors_rustic</Cell><Cell></Cell><Cell>Okované jasanové dveře s pořádným železným kruhem místo kliky, takže i při cestě z hospody má člověk velkou šanci, že ji trefí.</Cell></Row>
+<Row><Cell>ui_de_floorSlot_basic</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
+<Row><Cell>ui_de_floorSlot_carpets</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
+<Row><Cell>ui_de_floorSlot_furs</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_dark</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_light</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_rustic</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
+<Row><Cell>ui_de_fresco01</Cell><Cell></Cell><Cell>PL: Malba 1 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
+<Row><Cell>ui_de_fresco02</Cell><Cell></Cell><Cell>PL: Malba 2 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
+<Row><Cell>ui_de_fresco03</Cell><Cell></Cell><Cell>PL: Malba 3 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
+<Row><Cell>ui_de_fresco04</Cell><Cell></Cell><Cell>PL: Malba 4 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
+<Row><Cell>ui_de_gateColored</Cell><Cell></Cell><Cell>PL: Brána z malovaných a mořených dubových fošen pobitá železem, jak se na kovářského mistra sluší.</Cell></Row>
+<Row><Cell>ui_de_gateRubble</Cell><Cell></Cell><Cell>PL: Brána vedoucí z ulice na dvůr má svá nejlepší léta dávno za sebou. Měla by se vyměnit za nějakou z poctivých dubových fošen.</Cell></Row>
+<Row><Cell>ui_de_gazeboFixed</Cell><Cell></Cell><Cell>Zkrátka není nad to, sednout si po práci na vlastní zahradu a vychutnávat klidný podvečer.</Cell></Row>
+<Row><Cell>ui_de_gazeboRubble</Cell><Cell></Cell><Cell>Tady měl kdysi někdo jistě jasnou myšlenku, proč sem nanosil hromadu kamení.</Cell></Row>
+<Row><Cell>ui_de_ground_gravel</Cell><Cell></Cell><Cell>Vyštěrkovat dvorek před kovárnou úplně postačí, aby se tady kola vozu nebořila a člověk se neušpinil hned jak vyjde z domu.</Cell></Row>
+<Row><Cell>ui_de_ground_mud</Cell><Cell></Cell><Cell>Mezi kovárnou a dílnami leží blátivý kus země, který ti sice říká pane, ale po každém dešti se změní v bahenní lázeň plnou hnusné břečky.</Cell></Row>
+<Row><Cell>ui_de_ground_stone</Cell><Cell></Cell><Cell>Bahnitá louže před kovárnou může být minulostí, když se vydlážděný poctivými kameny. Někdy prostě člověku udělá radost i takových pár šutrů vedle sebe.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_basic</Cell><Cell></Cell><Cell>Neopravené přízemí staré kovárny.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_blue</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v barvě malachitu.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_brown</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v okrové barvě.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_gray</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v šedé barvě.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_orange</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v barvě pálené cihly.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_sand</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v barvě říčního písku.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_white</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v bílé barvě vápna.</Cell></Row>
+<Row><Cell>ui_de_lowerFloor_yellow</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou ve žluté barvě.</Cell></Row>
+<Row><Cell>ui_de_maiden_barrel</Cell><Cell></Cell><Cell>Není nad to, mít po ruce záložní dávku vína, kdyby se člověku udělalo šoufl nebo si potřeboval zředit zlou krev.</Cell></Row>
+<Row><Cell>ui_de_maiden_kneeler</Cell><Cell></Cell><Cell>Zbožnost vždy až na prvním místě jak se říká. Myslet na svoji nesmrtelnou duši by měl každý dobrý křesťan, protože smrtí to rozhodně nekončí.</Cell></Row>
+<Row><Cell>ui_de_maiden_maiden</Cell><Cell></Cell><Cell>Někdo by mohl říct, že je lepší všechno cenné dát pod zámek, ale jaký zloděj by se tahal s kusy plechu. To by musel mít pytel nekonečného objemu.</Cell></Row>
+<Row><Cell>ui_de_maiden_rubble</Cell><Cell></Cell><Cell>Tenhle starý sud je opravdu neskutečně plný pavučin.</Cell></Row>
+<Row><Cell>ui_de_path_gravel</Cell><Cell></Cell><Cell>Vyštěrkovat cestu je nejlepší způsob jak ji zpevnit, aby po každém menším dešti nebyla hned plná bláta.</Cell></Row>
+<Row><Cell>ui_de_path_mud</Cell><Cell></Cell><Cell>Ze dvorku vede blátivá cestička dozadu na zahradu.</Cell></Row>
+<Row><Cell>ui_de_path_stone</Cell><Cell></Cell><Cell>Blátivá cesta ze dvorku na zahradu může být minulostí, když se vyskládá pořádnými říčními kameny. Dřina, ale když ji může udělat někdo jinej, tak čirá radost.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_rubble</Cell><Cell></Cell><Cell>Zničená střecha staré kovárny. Střecha je základem každého domu a tahle je bohužel z poloviny rozpadlá.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleBlue</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v barvě malachitu.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleBrown</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v okrové barvě.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleDovetailFormwork</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem s bedněným štítem zaklopeným do tvaru rybího ocasu.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleGray</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v šedé barvě.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleOrange</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v barvě pálené cihly.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shinglePlanks</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem s bedněným štítem zaklopeným poctivými prkny.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleSand</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v barvě říčního písku.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleWhite</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v bílé barvě vápna.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shingleYellow</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým ve žluté barvě</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchBlue</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v barvě malachitu.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchBrown</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v okrové barvě.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchDovetailFormwork</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky s bedněným štítem zaklopeným do tvaru rybího ocasu.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchGray</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v šedé barvě.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchOrange</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v barvě pálené cihly.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchPlanks</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky s bedněným štítem zaklopeným poctivými prkny.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchSand</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v barvě říčního písku.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchWhite</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v bílé barvě vápna.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchYellow</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým ve žluté barvě.</Cell></Row>
+<Row><Cell>ui_de_signBoard_01</Cell><Cell></Cell><Cell>Malovaná cedule odkazuje na to, že se zde dělají podkovy a opravují vidle a lopaty.</Cell></Row>
+<Row><Cell>ui_de_signBoard_02</Cell><Cell></Cell><Cell>Malovaná cedule odkazuje na to, že se zde dělají podkovy a opravují vidle a lopaty.</Cell></Row>
+<Row><Cell>ui_de_signBoard_03</Cell><Cell></Cell><Cell>Cechovní znamení dává tušit, že zde sídlí dobrý kovář a člen kutnohorského kovářského bratrstva.</Cell></Row>
+<Row><Cell>ui_de_signBoard_04</Cell><Cell></Cell><Cell>Cechovní znamení dává tušit, že zde sídlí dobrý kovář a člen kutnohorského kovářského bratrstva.</Cell></Row>
+<Row><Cell>ui_de_signBoard_05</Cell><Cell></Cell><Cell>Malovaný znak hlásá, že zde sídlí uznávaný mistr kovářského řemesla a uznávaný člen kutnohorského kovářského cechu</Cell></Row>
+<Row><Cell>ui_de_signBoard_06</Cell><Cell></Cell><Cell>Malovaný znak hlásá, že zde sídlí uznávaný mistr kovářského řemesla a uznávaný člen kutnohorského kovářského cechu</Cell></Row>
+<Row><Cell>ui_de_signBoard_07</Cell><Cell></Cell><Cell>Malovaný znak hlásá, že zde sídlí uznávaný mistr kovářského řemesla a uznávaný člen kutnohorského kovářského cechu</Cell></Row>
+<Row><Cell>ui_de_signBoard_08</Cell><Cell></Cell><Cell>Malovaný znak hlásá, že zde sídlí uznávaný mistr kovářského řemesla a uznávaný člen kutnohorského kovářského cechu</Cell></Row>
+<Row><Cell>ui_de_smelterCheap</Cell><Cell></Cell><Cell>Pro klidnou práci v dílně je potřeba hlavně, aby na vás nepršelo, to ostatní může klidně počkat.</Cell></Row>
+<Row><Cell>ui_de_smelterExpensive</Cell><Cell></Cell><Cell>Konečně pořádná zděná dílna, kde lze slévat v dešti i zimě a nelezou  sem slepice ani jiná havěť.</Cell></Row>
+<Row><Cell>ui_de_smelterRubble</Cell><Cell></Cell><Cell>Na tomto místě dřív stála nějaká kůlna, ale moc z ní nezbylo. Nyní by se tohle místo dalo využít pro nějakou novou dílnu.</Cell></Row>
+<Row><Cell>ui_de_smokehouseFixed</Cell><Cell></Cell><Cell>Není nad dobře vyuzenou klobásu nebo vepřový bůček. Nic neudělá člověku lepší den, než k dobrému pivu zakrojit domácí uzené.</Cell></Row>
+<Row><Cell>ui_de_smokehouseRubble</Cell><Cell></Cell><Cell>Tak tady je jasné, co to bylo a už není.</Cell></Row>
+<Row><Cell>ui_de_stables_dryingRack</Cell><Cell></Cell><Cell>Tohle místo je vynikající pro větší stodolu, kam lze ustájit koně, uložit seno a v komoře vedle mít pěknou sušárnu na bylinky pro alchymistické pokusy.</Cell></Row>
+<Row><Cell>ui_de_stables_rubble</Cell><Cell></Cell><Cell>Tenhle pozemek stojí přímo nad starými šachtami. Tohle je jistě hlušina vytěžená z dolů.</Cell></Row>
+<Row><Cell>ui_de_stables_sty</Cell><Cell></Cell><Cell>Tohle místo je vynikající pro větší stodolu, kam lze ustájit koně, uložit seno a v chlívku vedle mít pěkného pašíka, co potěší minimálně hned dvakrát.</Cell></Row>
+<Row><Cell>ui_de_statueVine_noStatuteHops</Cell><Cell></Cell><Cell>Nad vraty do kovárny je skvělé místo pro popínavé stonky chmele.</Cell></Row>
+<Row><Cell>ui_de_statueVine_noStatuteWine</Cell><Cell></Cell><Cell>Nad vraty do kovárny je skvělé místo pro popínavé stonky vína.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute01Hops</Cell><Cell></Cell><Cell>Pokud má jeden dost peněz, může se stát mecenášem. Krásná tvář Panny Marie připomíná nevinnost a čistotu. Nad bočními vraty kovárny je potom dost místa pro popínavé stonky chmele.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute01NoVine</Cell><Cell></Cell><Cell>Pokud má jeden dost peněz, může se stát mecenášem. Krásná tvář Panny Marie připomíná nevinnost a čistotu.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute01Wine</Cell><Cell></Cell><Cell>Pokud má jeden dost peněz, může se stát mecenášem. Krásná tvář Panny Marie připomíná nevinnost a čistotu. Nad bočními vraty kovárny je potom dost místa pro popínavé stonky vína.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute02Hops</Cell><Cell></Cell><Cell>Pro sochaře není problém opracovat skálu, ale jen umělec vdechne tváři svaté Magdaleny krásu stejně jako nekonečný smutek. Nad bočními vraty do kovárny je potom skvělé místo pro popínavé stonky chmele.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute02NoVine</Cell><Cell></Cell><Cell>Pro sochaře není problém opracovat skálu, ale jen umělec vdechne tváři svaté Magdaleny krásu stejně jako nekonečný smutek.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute02Wine</Cell><Cell></Cell><Cell>Pro sochaře není problém opracovat skálu, ale jen umělec vdechne tváři svaté Magdaleny krásu stejně jako nekonečný smutek. Nad bočními vraty do kovárny je potom skvělé místo pro popínavé stonky vína.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute03Hops</Cell><Cell></Cell><Cell>Kdo víc, než kovář potřebuje svatou přímluvu, vždyť si neustále zahrává s ohněm. Patronem kovářů je samotný svatý Petr, strážce nebeské brány. Nad bočními vraty kovárny je potom dost místa pro popínavé stonky chmele.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute03NoVine</Cell><Cell></Cell><Cell>Kdo víc, než kovář potřebuje svatou přímluvu, vždyť si neustále zahrává s ohněm. Patronem kovářů je samotný svatý Petr, strážce nebeské brány.</Cell></Row>
+<Row><Cell>ui_de_statueVine_statute03Wine</Cell><Cell></Cell><Cell>Kdo víc, než kovář potřebuje svatou přímluvu, vždyť si neustále zahrává s ohněm. Patronem kovářů je samotný svatý Petr, strážce nebeské brány. Nad bočními vraty kovárny je potom dost místa pro popínavé stonky vína.</Cell></Row>
+<Row><Cell>ui_de_stove_barrel</Cell><Cell></Cell><Cell>Otopné zařízení tvořené vzdušnou šachtou a pálenými hrnci zasazenými tak, aby do sebe natáhly teplo a potom dlouho sálaly.</Cell></Row>
+<Row><Cell>ui_de_stove_knightGreen</Cell><Cell></Cell><Cell>Nejlepší a také nejdražší topení jaké lze získat. Kachle s vytlačenou výzdobou a pokryté zelenou glazurou. Nejsou jen zdrojem příjemného tepla, ale i odrazem zámožnosti svého majitele.</Cell></Row>
+<Row><Cell>ui_de_stove_knightRed</Cell><Cell></Cell><Cell>Nejlepší a také nejdražší topení jaké lze získat. Kachle s vytlačenou výzdobou a pokryté rumělkovou glazurou. Nejsou jen zdrojem příjemného tepla, ale i odrazem zámožnosti svého majitele.</Cell></Row>
+<Row><Cell>ui_de_stove_rubble</Cell><Cell></Cell><Cell>Zbytek z původní kamenné pece napojené na komín ve zdi.</Cell></Row>
+<Row><Cell>ui_de_stove_tileDark</Cell><Cell></Cell><Cell>Vysoká kamna zručně postavená z hlubokých pálených kachlů v cihlové barvě. Pro většinu sedláků nedosažitelný symbol bohatství.</Cell></Row>
+<Row><Cell>ui_de_stove_tileLight</Cell><Cell></Cell><Cell>Vysoká kamna zručně postavená z hlubokých pálených kachlů ve světlé barvě. Pro většinu sedláků nedosažitelný symbol bohatství.</Cell></Row>
+<Row><Cell>ui_de_table_bachelor</Cell><Cell></Cell><Cell>Pořádek je pro negramoty. Když nad něčím člověk bádá, tak to poslední co potřebuje, aby mu někdo sahal na jeho stůl.</Cell></Row>
+<Row><Cell>ui_de_table_basic</Cell><Cell></Cell><Cell>Těchto pár prken na dvou kozách plně naplňuje obsah rčení, že nic není tak trvalé jako dočasné řešení.</Cell></Row>
+<Row><Cell>ui_de_table_fasting</Cell><Cell></Cell><Cell>Udělat něco pro své zdraví, je nejlepší cesta jak si udržet formu a dobrou náladu. Protože šťavnatá pečínka chutná nejlépe po pořádném půstu.</Cell></Row>
+<Row><Cell>ui_de_table_herbalist</Cell><Cell></Cell><Cell>Kdo je připraven není překvapen. Záliba ve sbírání bylin přináší užitek, když člověk ví jak na to, má trpělivost a nikdo mu do toho nekecá.</Cell></Row>
+<Row><Cell>ui_de_table_marksman</Cell><Cell></Cell><Cell>Lovení zvěře to je záležitost dobré přípravy a zkušenosti, zvlášť pokud člověk není urozený a za pytlačení mu hrozí šibenice.</Cell></Row>
+<Row><Cell>ui_de_table_merchant</Cell><Cell></Cell><Cell>Pořádek v obchodě musí být, i kdyby na chleba nebylo. Každopádně tak hluboko majitel tohohle stolu jistě neklesne.</Cell></Row>
+<Row><Cell>ui_de_table_padfoot</Cell><Cell></Cell><Cell>Na jisté činnosti je potřeba se připravit pěkně v klidu a doma. Nikdo přece nemusí vědět, co majitel tohohle stolu dělá po nocích.</Cell></Row>
+<Row><Cell>ui_de_table_sturdy</Cell><Cell></Cell><Cell>Člověk se nesmí bát praštit do stolu, když jde o důležitou věc.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_basic</Cell><Cell></Cell><Cell>Neopravené horní patro staré kovárny.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_blue</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v barvě malachitu.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_brown</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v okrové barvě.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_gray</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v šedé barvě.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_logsLimed</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Zdi sroubené z poctivých klád a omazané vápennou omítkou.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_logsNatural</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Zdi sroubené z poctivých klád a omazané hliněnnou omítkou.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_orange</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v barvě pálené cihly.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_sand</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v barvě říčního písku.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_white</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v bílé barvě vápna.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_yellow</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou ve žluté barvě.</Cell></Row>
+<Row><Cell>ui_de_wallPaint01</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem ve žlutém odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint02</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem v zeleném odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint03</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem v červeném odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint04</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s bohatým barevným vzorem pikového trojlístku ve žlutém odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint05</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s bohatým barevným vzorem pikového trojlístku v zeleném odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint06</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s bohatým barevným vzorem pikového trojlístku v červeném odstínu.</Cell></Row>
+<Row><Cell>ui_de_wallPaint07</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice náročným vzorem krojových křížků na laně ve žlutém odstínu </Cell></Row>
+<Row><Cell>ui_de_wallPaint08</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice náročným vzorem krojových křížků na laně v zeleném odstínu </Cell></Row>
+<Row><Cell>ui_de_wallPaint09</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice náročným vzorem krojových křížků na laně v červeném odstínu </Cell></Row>
+<Row><Cell>ui_de_wallPaint10</Cell><Cell></Cell><Cell>PL: Popis výmalby až bude</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockDark_fillBlockDark</Cell><Cell></Cell><Cell>Malování omítky tmavými linkami s nárožím zdobeným tmavými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockDark_fillBlockLight</Cell><Cell></Cell><Cell>Malování omítky světlými linkami s nárožím zdobeným tmavými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockDark_noFill</Cell><Cell></Cell><Cell>Malování nároží domu v podobě tmavých kvádříků.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockLight_fillBlockDark</Cell><Cell></Cell><Cell>Malování omítky tmavými linkami s nárožím zdobeným světlými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockLight_fillBlockLight</Cell><Cell></Cell><Cell>Malování omítky světlými linkami s nárožím zdobeným tmavými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_BlockLight_noFill</Cell><Cell></Cell><Cell>Malování nároží domu v podobě světlých kvádříků.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Diagonals_fillBlockDark</Cell><Cell></Cell><Cell>Malování omítky tmavými linkami s nárožím zdobeným kosenými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Diagonals_fillBlockLight</Cell><Cell></Cell><Cell>Malování omítky světlými linkami s nárožím zdobeným kosenými kvádříky.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Diagonals_noFill</Cell><Cell></Cell><Cell>Malování nároží domu v podobě kosených kvádříků.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Envelopes_fillBlockDark</Cell><Cell></Cell><Cell>Malování omítky tmavými linkami s nárožím zdobeným na italský způsob.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Envelopes_fillBlockLight</Cell><Cell></Cell><Cell>Malování omítky světlými linkami s nárožím zdobeným na italský způsob.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_Envelopes_noFill</Cell><Cell></Cell><Cell>Malování nároží domu na italský způsob.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_noCorner_fillBlockDark</Cell><Cell></Cell><Cell>Malování omítky tmavými linkami bez nároží.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_noCorner_fillBlockLight</Cell><Cell></Cell><Cell>Malování omítky světlými linkami bez nároží.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_noCorner_fillDiamonds</Cell><Cell></Cell><Cell>Malování omítky diamanty bez nároží.</Cell></Row>
+<Row><Cell>ui_de_wallPaint_noCorner_noFill</Cell><Cell></Cell><Cell>Na omítce domu není provedena žádná malba.</Cell></Row>
+<Row><Cell>ui_de_wallSlot01_antlers</Cell><Cell></Cell><Cell>Trofej z lovu na urostlého pána lesa, za který ovšem hrozí oprátka. Jak se asi dostala sem?</Cell></Row>
+<Row><Cell>ui_de_wallSlot01_banner</Cell><Cell></Cell><Cell>Kožich z uloveného paroháče lze jednoduše koupit nebo ulovit. To druhé ovšem je mnohem zábavnější a proto trestné, pan Jan Ptáček by jistě mohl vyprávět.</Cell></Row>
+<Row><Cell>ui_de_wallSlot01_tapestry</Cell><Cell></Cell><Cell>Člověk se záměrně obklopuje množstvím podstatných a naprosto nevyhoditelných věcí. Po nějaké době je vyhazuje jen proto, aby chybu opakoval.</Cell></Row>
+<Row><Cell>ui_de_wallSlot02_antlers</Cell><Cell></Cell><Cell>Trofej z lovu na největšího paroháče v okolí. Dneska se už tahle zvířata jen tak nevidí, možná protože zdobí zdi panských pokojů.</Cell></Row>
+<Row><Cell>ui_de_wallSlot02_banner</Cell><Cell></Cell><Cell>Kožich z černé zveře, jak lovci říkají divokým sviním. Ulovit dospělého kance chce velkou dávku odvahy. Jeden si za to může vysloužit i panský erb jako slavný rytíř Jetřich z Buzic.</Cell></Row>
+<Row><Cell>ui_de_wallSlot02_tapestry</Cell><Cell></Cell><Cell>Bohatí lidé kupují věci a potom mají starost, jak je ukázat, aby jim je přitom někdo jiný neukradl. Z tohoto rozporu těží zejména zámečníci a výrobci kovaných mříží.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_alchemist01</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uchovávání lektvarů, bylin a dryjáků. Vejde se toho tam poměrně dost, jen si v tom člověk musí udržet pořádek, protože záměna může mít smrtelné následky.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_alchemist02</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uchovávání lektvarů, bylin a dryjáků. Vejde se toho tam poměrně dost, jen si v tom člověk musí udržet pořádek, protože záměna může mít smrtelné následky.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_alchemist03</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uchovávání lektvarů, bylin a dryjáků. Vejde se toho tam poměrně dost, jen si v tom člověk musí udržet pořádek, protože záměna může mít smrtelné následky.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_basic</Cell><Cell></Cell><Cell>Jasně, proč to vyhazovat, když by se to ještě mohlo hodit.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_guild01</Cell><Cell></Cell><Cell>Nábytek s větším počtem polic uspořádaných tak, aby se do nich vešly listiny dle zakázek, měsíců a ročních období, protože pořádek dělá kupce. A taky ušetříte čas při odevzdávání daní.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_guild02</Cell><Cell></Cell><Cell>Nábytek s větším počtem polic uspořádaných tak, aby se do nich vešly listiny dle zakázek, měsíců a ročních období, protože pořádek dělá kupce. A taky ušetříte čas při odevzdávání daní.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_guild03</Cell><Cell></Cell><Cell>Nábytek s větším počtem polic uspořádaných tak, aby se do nich vešly listiny dle zakázek, měsíců a ročních období, protože pořádek dělá kupce. A taky ušetříte čas při odevzdávání daní.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_knight01</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uskladnění bojové výzbroje a výstroje. Ostatně lepší je mít dražší kousky pěkně pod zámkem.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_knight02</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uskladnění bojové výzbroje a výstroje. Ostatně lepší je mít dražší kousky pěkně pod zámkem.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_knight03</Cell><Cell></Cell><Cell>Nábytek uzpůsobený pro uskladnění bojové výzbroje a výstroje. Ostatně lepší je mít dražší kousky pěkně pod zámkem.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_oak</Cell><Cell></Cell><Cell>Poctivé hoblované dubové dřevo. Nic co by oslnilo, ale svůj účel to dozajista splní anneí drahá.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_stableboy01</Cell><Cell></Cell><Cell>Nábytek pro skladování kožené koňské výstroje. Díky pytlíkům se směsí bylin obstojí i proti nájezdu kožojedů a molů. Nejspíš sežerou za odměnu něco jiného.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_stableboy02</Cell><Cell></Cell><Cell>Nábytek pro skladování kožené koňské výstroje. Díky pytlíkům se směsí bylin obstojí i proti nájezdu kožojedů a molů. Nejspíš sežerou za odměnu něco jiného.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_stableboy03</Cell><Cell></Cell><Cell>Nábytek pro skladování kožené koňské výstroje. Díky pytlíkům se směsí bylin obstojí i proti nájezdu kožojedů a molů. Nejspíš sežerou za odměnu něco jiného.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_thief01</Cell><Cell></Cell><Cell>Skříň se spoustou skrytých zásuvek a tajných skrýší, kdyby náhodou někoho z městské hlídky napadlo udělat prohlídku v domě málo počestného měšťana.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_thief02</Cell><Cell></Cell><Cell>Skříň se spoustou skrytých zásuvek a tajných skrýší, kdyby náhodou někoho z městské hlídky napadlo udělat prohlídku v domě málo počestného měšťana.</Cell></Row>
+<Row><Cell>ui_de_wardrobe_thief03</Cell><Cell></Cell><Cell>Skříň se spoustou skrytých zásuvek a tajných skrýší, kdyby náhodou někoho z městské hlídky napadlo udělat prohlídku v domě málo počestného měšťana.</Cell></Row>
+<Row><Cell>ui_de_watertubFixed</Cell><Cell></Cell><Cell>Tohle místo poblíž studny je jako dělané pro pořádné necky, když si chce člověk může vyprat prádlo a nechat slunce a vítr, aby odvedly svůj kus práce.</Cell></Row>
+<Row><Cell>ui_de_watertubRubble</Cell><Cell></Cell><Cell>Tady není o čem mluvit, prostě staré vyhodit a pořídit nové.</Cell></Row>
+<Row><Cell>ui_de_wellFixed</Cell><Cell></Cell><Cell>Pevná kamenná studna postavená daleko od všeho, co by mohlo znečistit vodu. Navíc člověk nemusí k obecní studni a to šetří čas a nervy.</Cell></Row>
+<Row><Cell>ui_de_wellRubble</Cell><Cell></Cell><Cell>Tahle zasypaná šachta má jistě svůj půvab, ale možná by stálo za to, najít pro ni nějaké nové a lepší využití.</Cell></Row>
+<Row><Cell>ui_de_windows01</Cell><Cell></Cell><Cell>Zdobení omítky kolem oken a podloubí domu pomocí prostých linek.</Cell></Row>
+<Row><Cell>ui_de_workshop</Cell><Cell></Cell><Cell>Přístavek pro alchymistické pokusy a zastřešená dílna pro menší i větší opravy všeho možného.</Cell></Row>
+<Row><Cell>ui_de_workshopRubble</Cell><Cell></Cell><Cell>Těžko říct, k čemu přesně tohle místo dříve sloužilo, ale je jistě zbytečné nad tím příliš bádat.</Cell></Row>
+<Row><Cell>ui_de_writingShelf_dark</Cell><Cell></Cell><Cell>Police plná věcí, které odrbaný vesnický křupan příliš neocení. Pro ty ostatní je to symbol dobré úrovně a pokroku.</Cell></Row>
+<Row><Cell>ui_de_writingShelf_light</Cell><Cell></Cell><Cell>Police plná věcí, které odrbaný vesnický křupan příliš neocení. Pro ty ostatní je to symbol dobré úrovně a pokroku.</Cell></Row>
+<Row><Cell>ui_de_writingShelf_rustic</Cell><Cell></Cell><Cell>Police plná věcí, které odrbaný vesnický křupan příliš neocení. Pro ty ostatní je to symbol dobré úrovně a pokroku.</Cell></Row>
+<Row><Cell>ui_door_close</Cell><Cell>Close</Cell><Cell>Close</Cell></Row>
+<Row><Cell>ui_door_open</Cell><Cell>Open</Cell><Cell>Open</Cell></Row>
+<Row><Cell>ui_hud_butcher</Cell><Cell>Butcher</Cell><Cell>Butcher</Cell></Row>
+<Row><Cell>ui_hud_sleep_and_save</Cell><Cell>Sleep and save</Cell><Cell>Sleep and save</Cell></Row>
+<Row><Cell>ui_investigate</Cell><Cell>Investigate</Cell><Cell>Investigate</Cell></Row>
+<Row><Cell>ui_nm_armorerCheap</Cell><Cell>Armourer's shelter</Cell><Cell>Armourer's shelter</Cell></Row>
+<Row><Cell>ui_nm_armorerExpensive</Cell><Cell>Armourer's workshop</Cell><Cell>Armourer's workshop</Cell></Row>
+<Row><Cell>ui_nm_armorerRubble</Cell><Cell>Ruined workshop</Cell><Cell>Ruined workshop</Cell></Row>
+<Row><Cell>ui_nm_bed_basic</Cell><Cell>Old bed</Cell><Cell>Old bed</Cell></Row>
+<Row><Cell>ui_nm_bed_fir01</Cell><Cell>Fir wood bed brown</Cell><Cell>Fir wood bed brown</Cell></Row>
+<Row><Cell>ui_nm_bed_fir02</Cell><Cell>Fir wood bed red</Cell><Cell>Fir wood bed red</Cell></Row>
+<Row><Cell>ui_nm_bed_fir03</Cell><Cell>Fir wood bed green</Cell><Cell>Fir wood bed green</Cell></Row>
+<Row><Cell>ui_nm_bed_hunter01</Cell><Cell>Hunter's bed fox</Cell><Cell>Hunter's bed fox</Cell></Row>
+<Row><Cell>ui_nm_bed_hunter02</Cell><Cell>Hunter's bed deer</Cell><Cell>Hunter's bed deer</Cell></Row>
+<Row><Cell>ui_nm_bed_hunter03</Cell><Cell>Hunter's bed wolf</Cell><Cell>Hunter's bed wolf</Cell></Row>
+<Row><Cell>ui_nm_bed_penitent01</Cell><Cell>Zahor's bed sinful</Cell><Cell>Zahor's bed sinful</Cell></Row>
+<Row><Cell>ui_nm_bed_penitent02</Cell><Cell>Zahor's bed penitent</Cell><Cell>Zahor's bed penitent</Cell></Row>
+<Row><Cell>ui_nm_bed_penitent03</Cell><Cell>Zahor's bed righteous</Cell><Cell>Zahor's bed righteous</Cell></Row>
+<Row><Cell>ui_nm_bed_philander01</Cell><Cell>Philanderer's bed Rivola</Cell><Cell>Philanderer's bed Rivola</Cell></Row>
+<Row><Cell>ui_nm_bed_philander02</Cell><Cell>Philanderer's bed Klaret</Cell><Cell>Philanderer's bed Klaret</Cell></Row>
+<Row><Cell>ui_nm_bed_philander03</Cell><Cell>Philanderer's bed Malvasia</Cell><Cell>Philanderer's bed Malvasia</Cell></Row>
+<Row><Cell>ui_nm_bed_sleeper01</Cell><Cell>Sleeper's bed forest</Cell><Cell>Sleeper's bed forest</Cell></Row>
+<Row><Cell>ui_nm_bed_sleeper02</Cell><Cell>Sleeper's bed field</Cell><Cell>Sleeper's bed field</Cell></Row>
+<Row><Cell>ui_nm_bed_sleeper03</Cell><Cell>Sleeper's bed sea</Cell><Cell>Sleeper's bed sea</Cell></Row>
+<Row><Cell>ui_nm_bed_smith01</Cell><Cell>Blacksmith's bed yellow</Cell><Cell>Blacksmith's bed yellow</Cell></Row>
+<Row><Cell>ui_nm_bed_smith02</Cell><Cell>Blacksmith's bed red</Cell><Cell>Blacksmith's bed red</Cell></Row>
+<Row><Cell>ui_nm_bed_smith03</Cell><Cell>Blacksmith's bed green</Cell><Cell>Blacksmith's bed green</Cell></Row>
+<Row><Cell>ui_nm_beehives</Cell><Cell>Bee hives</Cell><Cell>Bee hives</Cell></Row>
+<Row><Cell>ui_nm_beehivesRubble</Cell><Cell>Remains of wood</Cell><Cell>Remains of wood</Cell></Row>
+<Row><Cell>ui_nm_bookshelf01</Cell><Cell>Bookcase light</Cell><Cell>Bookcase light</Cell></Row>
+<Row><Cell>ui_nm_bookshelf02</Cell><Cell>Bookcase red</Cell><Cell>Bookcase red</Cell></Row>
+<Row><Cell>ui_nm_bookshelf03</Cell><Cell>Bookcase green</Cell><Cell>Bookcase green</Cell></Row>
+<Row><Cell>ui_nm_candles_candles</Cell><Cell>Candelabre</Cell><Cell>Candlestick</Cell></Row>
+<Row><Cell>ui_nm_candles_rubble</Cell><Cell>Pile of rubbish</Cell><Cell>Pile of rubbish</Cell></Row>
+<Row><Cell>ui_nm_candles_sink</Cell><Cell>Lavabo</Cell><Cell>Lavabo</Cell></Row>
+<Row><Cell>ui_nm_candles_taxidermy</Cell><Cell>Krabat</Cell><Cell>Krabat</Cell></Row>
+<Row><Cell>ui_nm_cellarFixed</Cell><Cell>Dry cellar</Cell><Cell>Dry cellar</Cell></Row>
+<Row><Cell>ui_nm_cellarRubble</Cell><Cell>Collapsed cellar</Cell><Cell>Collapsed cellar</Cell></Row>
+<Row><Cell>ui_nm_chandelier_candles</Cell><Cell>Candelabra chandelier</Cell><Cell>Candelabra chandelier</Cell></Row>
+<Row><Cell>ui_nm_chandelier_smith</Cell><Cell>Blacksmith's chandelier</Cell><Cell>Blacksmith's chandelier</Cell></Row>
+<Row><Cell>ui_nm_chandelier_townsman</Cell><Cell>Burgher's chandelier</Cell><Cell>Burgher's chandelier</Cell></Row>
+<Row><Cell>ui_nm_chandelier_wheel</Cell><Cell>Circular chandelier</Cell><Cell>Circular chandelier</Cell></Row>
+<Row><Cell>ui_nm_chest_01</Cell><Cell>Village chest</Cell><Cell>Village chest</Cell></Row>
+<Row><Cell>ui_nm_chest_02</Cell><Cell>Oak chest</Cell><Cell>Oak chest</Cell></Row>
+<Row><Cell>ui_nm_chest_03</Cell><Cell>Reinforced chest</Cell><Cell>Reinforced chest</Cell></Row>
+<Row><Cell>ui_nm_chest_04</Cell><Cell>Merchant's chest</Cell><Cell>Merchant's chest</Cell></Row>
+<Row><Cell>ui_nm_chest_05</Cell><Cell>Burgher's chest</Cell><Cell>Burgher's chest</Cell></Row>
+<Row><Cell>ui_nm_chest_06</Cell><Cell>Painted chest</Cell><Cell>Painted chest</Cell></Row>
+<Row><Cell>ui_nm_chest_basic</Cell><Cell>Old chest</Cell><Cell>Old chest</Cell></Row>
+<Row><Cell>ui_nm_doors_basic</Cell><Cell>Crooked door</Cell><Cell>Crooked door</Cell></Row>
+<Row><Cell>ui_nm_doors_green</Cell><Cell>Green door</Cell><Cell>Green door</Cell></Row>
+<Row><Cell>ui_nm_doors_red</Cell><Cell>Red door</Cell><Cell>Red door</Cell></Row>
+<Row><Cell>ui_nm_doors_rustic</Cell><Cell>Larch door</Cell><Cell>Larch door</Cell></Row>
+<Row><Cell>ui_nm_floorSlot_basic</Cell><Cell></Cell><Cell>PL:Tohle není</Cell></Row>
+<Row><Cell>ui_nm_floorSlot_carpets</Cell><Cell></Cell><Cell>PL:Tohle není</Cell></Row>
+<Row><Cell>ui_nm_floorSlot_furs</Cell><Cell></Cell><Cell>PL:Tohle není</Cell></Row>
+<Row><Cell>ui_nm_foodShelf_dark</Cell><Cell>Food shelf dark</Cell><Cell>Food shelf dark</Cell></Row>
+<Row><Cell>ui_nm_foodShelf_light</Cell><Cell>Food shelf light</Cell><Cell>Food shelf light</Cell></Row>
+<Row><Cell>ui_nm_foodShelf_rustic</Cell><Cell>Food shelf larch</Cell><Cell>Food shelf larch</Cell></Row>
+<Row><Cell>ui_nm_fresco01</Cell><Cell>Mural 1</Cell><Cell>Mural 1</Cell></Row>
+<Row><Cell>ui_nm_fresco02</Cell><Cell>Mural 2</Cell><Cell>Mural 2</Cell></Row>
+<Row><Cell>ui_nm_fresco03</Cell><Cell>Mural 3</Cell><Cell>Mural 3</Cell></Row>
+<Row><Cell>ui_nm_fresco04</Cell><Cell>Mural 4</Cell><Cell>Mural 4</Cell></Row>
+<Row><Cell>ui_nm_gateColored</Cell><Cell>Painted gate</Cell><Cell>Painted gate</Cell></Row>
+<Row><Cell>ui_nm_gateRubble</Cell><Cell>Old gate</Cell><Cell>Old gate</Cell></Row>
+<Row><Cell>ui_nm_gazeboFixed</Cell><Cell>Garden bench</Cell><Cell>Garden bench</Cell></Row>
+<Row><Cell>ui_nm_gazeboRubble</Cell><Cell>Pile of boards</Cell><Cell>Pile of boards</Cell></Row>
+<Row><Cell>ui_nm_ground_gravel</Cell><Cell>Gravel yard</Cell><Cell>Gravel yard</Cell></Row>
+<Row><Cell>ui_nm_ground_mud</Cell><Cell>Muddy yard</Cell><Cell>Muddy yard</Cell></Row>
+<Row><Cell>ui_nm_ground_stone</Cell><Cell>Tiled yard</Cell><Cell>Tiled yard</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_basic</Cell><Cell>Ruined ground floor</Cell><Cell>Ruined ground floor</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_blue</Cell><Cell>Ground floor blue</Cell><Cell>Ground floor blue</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_brown</Cell><Cell>Ground floor ocre</Cell><Cell>Ground floor ocre</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_gray</Cell><Cell>Ground floor gray</Cell><Cell>Ground floor gray</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_orange</Cell><Cell>Ground floor auburn</Cell><Cell>Ground floor auburn</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_sand</Cell><Cell>Ground floor sandstone</Cell><Cell>Ground floor sandstone</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_white</Cell><Cell>Ground floor limestone</Cell><Cell>Ground floor limestone</Cell></Row>
+<Row><Cell>ui_nm_lowerFloor_yellow</Cell><Cell>Ground floor yellow</Cell><Cell>Ground floor yellow</Cell></Row>
+<Row><Cell>ui_nm_maiden_barrel</Cell><Cell>Wine barrel</Cell><Cell>Wine barrel</Cell></Row>
+<Row><Cell>ui_nm_maiden_kneeler</Cell><Cell>Kneeler</Cell><Cell>Kneeler</Cell></Row>
+<Row><Cell>ui_nm_maiden_maiden</Cell><Cell>Manequin</Cell><Cell>Manequin</Cell></Row>
+<Row><Cell>ui_nm_maiden_rubble</Cell><Cell>Leaky barrel</Cell><Cell>Leaky barrel</Cell></Row>
+<Row><Cell>ui_nm_path_gravel</Cell><Cell>Gravel path</Cell><Cell>Gravel path</Cell></Row>
+<Row><Cell>ui_nm_path_mud</Cell><Cell>Muddy path</Cell><Cell>Muddy path</Cell></Row>
+<Row><Cell>ui_nm_path_stone</Cell><Cell>Tiled path</Cell><Cell>Tiled path</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_rubble</Cell><Cell>Ruined roof</Cell><Cell>Ruined roof</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleBlue</Cell><Cell>Shingle roof blue</Cell><Cell>Shingle roof blue</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleBrown</Cell><Cell>Shingle roof ocre</Cell><Cell>Shingle roof ocre</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleDovetail</Cell><Cell>Shingle roof fishscale</Cell><Cell>Shingle roof fishscale</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleGray</Cell><Cell>Shingle roof gray</Cell><Cell>Shingle roof gray</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleOrange</Cell><Cell>Shingle roof auburn</Cell><Cell>Shingle roof auburn</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shinglePlanks</Cell><Cell>Shingle roof with wood panelling</Cell><Cell>Shingle roof with wood panelling</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleSand</Cell><Cell>Shingle roof sandstone</Cell><Cell>Shingle roof sandstone</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleWhite</Cell><Cell>Shingle roof limestone</Cell><Cell>Shingle roof limestone</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_shingleYellow</Cell><Cell>Shingle roof yellow</Cell><Cell>Shingle roof yellow</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchBlue</Cell><Cell>Thatched roof blue</Cell><Cell>Thatched roof blue</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchBrown</Cell><Cell>Thatched roof ocre</Cell><Cell>Thatched roof ocre</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchDovetail</Cell><Cell>Thatched roof fishscale</Cell><Cell>Thatched roof fishscale</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchGray</Cell><Cell>Thatched roof gray</Cell><Cell>Thatched roof gray</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchOrange</Cell><Cell>Thatched roof</Cell><Cell>Thatched roof</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchPlanks</Cell><Cell>Thatched roof</Cell><Cell>Thatched roof</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchSand</Cell><Cell>Thatched roof</Cell><Cell>Thatched roof</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchWhite</Cell><Cell>Thatched roof</Cell><Cell>Thatched roof</Cell></Row>
+<Row><Cell>ui_nm_roofAndGable_thatchYellow</Cell><Cell>Thatched roof</Cell><Cell>Thatched roof</Cell></Row>
+<Row><Cell>ui_nm_signBoard_01</Cell><Cell>Artisanal shop sign</Cell><Cell>Artisanal shop sign</Cell></Row>
+<Row><Cell>ui_nm_signBoard_02</Cell><Cell>Artisanal shop sign whitened</Cell><Cell>Artisanal shop sign whitened</Cell></Row>
+<Row><Cell>ui_nm_signBoard_03</Cell><Cell>Blacksmith's shop sign</Cell><Cell>Blacksmith's shop sign</Cell></Row>
+<Row><Cell>ui_nm_signBoard_04</Cell><Cell>Blacksmith's shop sign light</Cell><Cell>Blacksmith's shop sign light</Cell></Row>
+<Row><Cell>ui_nm_signBoard_05</Cell><Cell>Patron's shop sign</Cell><Cell>Patron's shop sign</Cell></Row>
+<Row><Cell>ui_nm_signBoard_06</Cell><Cell>Patron's shop sign dark</Cell><Cell>Patron's shop sign dark</Cell></Row>
+<Row><Cell>ui_nm_signBoard_07</Cell><Cell>Patron's shop sign red</Cell><Cell>Patron's shop sign red</Cell></Row>
+<Row><Cell>ui_nm_signBoard_08</Cell><Cell>Patron's shop sign black</Cell><Cell>Patron's shop sign black</Cell></Row>
+<Row><Cell>ui_nm_slot_armorer</Cell><Cell></Cell><Cell>Platnéřská dílna</Cell></Row>
+<Row><Cell>ui_nm_slot_bed</Cell><Cell></Cell><Cell>Postel</Cell></Row>
+<Row><Cell>ui_nm_slot_beehives</Cell><Cell></Cell><Cell>Úly</Cell></Row>
+<Row><Cell>ui_nm_slot_bookshelf</Cell><Cell></Cell><Cell>Knihovna</Cell></Row>
+<Row><Cell>ui_nm_slot_candTaxidermy</Cell><Cell></Cell><Cell>Místo v koutě 1</Cell></Row>
+<Row><Cell>ui_nm_slot_cellar</Cell><Cell></Cell><Cell>Sklep</Cell></Row>
+<Row><Cell>ui_nm_slot_chandelier</Cell><Cell></Cell><Cell>Lustr</Cell></Row>
+<Row><Cell>ui_nm_slot_chest</Cell><Cell></Cell><Cell>Truhla</Cell></Row>
+<Row><Cell>ui_nm_slot_doors</Cell><Cell></Cell><Cell>Dveře</Cell></Row>
+<Row><Cell>ui_nm_slot_foodShelf</Cell><Cell></Cell><Cell>Polička</Cell></Row>
+<Row><Cell>ui_nm_slot_fresco</Cell><Cell></Cell><Cell>Freska</Cell></Row>
+<Row><Cell>ui_nm_slot_gates</Cell><Cell></Cell><Cell>Brána</Cell></Row>
+<Row><Cell>ui_nm_slot_gazebo</Cell><Cell></Cell><Cell>Posezení</Cell></Row>
+<Row><Cell>ui_nm_slot_ground</Cell><Cell></Cell><Cell>Dvorek</Cell></Row>
+<Row><Cell>ui_nm_slot_loweFloor</Cell><Cell></Cell><Cell>Přízemí</Cell></Row>
+<Row><Cell>ui_nm_slot_maidBarrel</Cell><Cell></Cell><Cell>Místo v koutě 2</Cell></Row>
+<Row><Cell>ui_nm_slot_path</Cell><Cell></Cell><Cell>Cesta</Cell></Row>
+<Row><Cell>ui_nm_slot_roofGable</Cell><Cell></Cell><Cell>Střecha</Cell></Row>
+<Row><Cell>ui_nm_slot_signboard</Cell><Cell></Cell><Cell>Vývěsní štít</Cell></Row>
+<Row><Cell>ui_nm_slot_smelter</Cell><Cell></Cell><Cell>Slévárna</Cell></Row>
+<Row><Cell>ui_nm_slot_smokehouse</Cell><Cell></Cell><Cell>Místo pro udírnu</Cell></Row>
+<Row><Cell>ui_nm_slot_stables</Cell><Cell></Cell><Cell>Místo pro stodolu</Cell></Row>
+<Row><Cell>ui_nm_slot_stove</Cell><Cell></Cell><Cell>Kamna</Cell></Row>
+<Row><Cell>ui_nm_slot_table</Cell><Cell></Cell><Cell>Stůl</Cell></Row>
+<Row><Cell>ui_nm_slot_uppeFloor</Cell><Cell></Cell><Cell>Horní patro</Cell></Row>
+<Row><Cell>ui_nm_slot_wallPaintHouse</Cell><Cell></Cell><Cell>Malba omítky</Cell></Row>
+<Row><Cell>ui_nm_slot_wallPaintRoom</Cell><Cell></Cell><Cell>Výmalba</Cell></Row>
+<Row><Cell>ui_nm_slot_wallSlot1</Cell><Cell></Cell><Cell>Místo na zdi 1</Cell></Row>
+<Row><Cell>ui_nm_slot_wallSlot2</Cell><Cell></Cell><Cell>Místo na zdi 2</Cell></Row>
+<Row><Cell>ui_nm_slot_wallVine</Cell><Cell></Cell><Cell>Soška a rostlina</Cell></Row>
+<Row><Cell>ui_nm_slot_wardrobe</Cell><Cell></Cell><Cell>Skříň</Cell></Row>
+<Row><Cell>ui_nm_slot_watertub</Cell><Cell></Cell><Cell>Koryto</Cell></Row>
+<Row><Cell>ui_nm_slot_well</Cell><Cell></Cell><Cell>Studna</Cell></Row>
+<Row><Cell>ui_nm_slot_windows</Cell><Cell></Cell><Cell>Šambrána</Cell></Row>
+<Row><Cell>ui_nm_slot_workshop</Cell><Cell></Cell><Cell>Alchymistická dílna</Cell></Row>
+<Row><Cell>ui_nm_slot_writShelf</Cell><Cell></Cell><Cell>Skříňka</Cell></Row>
+<Row><Cell>ui_nm_smelterCheap</Cell><Cell>Foundry shelter</Cell><Cell>Foundry shelter</Cell></Row>
+<Row><Cell>ui_nm_smelterExpensive</Cell><Cell>Foundry workshop</Cell><Cell>Foundry workshop</Cell></Row>
+<Row><Cell>ui_nm_smelterRubble</Cell><Cell>Ruined shed</Cell><Cell>Ruined shed</Cell></Row>
+<Row><Cell>ui_nm_smokehouseFixed</Cell><Cell>Smokehouse</Cell><Cell>Smokehouse</Cell></Row>
+<Row><Cell>ui_nm_smokehouseRubble</Cell><Cell>Pile of leaves</Cell><Cell>Pile of leaves</Cell></Row>
+<Row><Cell>ui_nm_stables_dryingRack</Cell><Cell>Stable with drying rack</Cell><Cell>Stable with drying rack</Cell></Row>
+<Row><Cell>ui_nm_stables_rubble</Cell><Cell>Unkempt garden</Cell><Cell>Unkempt garden</Cell></Row>
+<Row><Cell>ui_nm_stables_sty</Cell><Cell>Stable with sty</Cell><Cell>Stable with sty</Cell></Row>
+<Row><Cell>ui_nm_statueVine_noStatuteHops</Cell><Cell>Creeping hop vine</Cell><Cell>Creeping hop vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_noStatuteWine</Cell><Cell>Creeping grape vine</Cell><Cell>Creeping grape vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute01Hops</Cell><Cell>Virgin Mary and hop vine</Cell><Cell>Virgin Mary and hop vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute01NoVine</Cell><Cell>Virgin Mary</Cell><Cell>Virgin Mary</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute01Wine</Cell><Cell>Virgin Mary and grape vine</Cell><Cell>Virgin Mary and grape vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute02Hops</Cell><Cell>Saint Magdalene and hop vine</Cell><Cell>Saint Magdalene and hop vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute02NoVine</Cell><Cell>Saint Magdalene</Cell><Cell>Saint Magdalene</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute02Wine</Cell><Cell>Saint magdalene and grape vine</Cell><Cell>Saint magdalene and grape vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute03Hops</Cell><Cell>Saint Peter and hop vine</Cell><Cell>Saint Peter and hop vine</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute03NoVine</Cell><Cell>Saint Peter</Cell><Cell>Saint Peter</Cell></Row>
+<Row><Cell>ui_nm_statueVine_statute03Wine</Cell><Cell>Saint Peter and grape vine</Cell><Cell>Saint Peter and grape vine</Cell></Row>
+<Row><Cell>ui_nm_stove_barrelBrick</Cell><Cell>Barrel-shaped stove brick</Cell><Cell>Barrel-shaped stove brick</Cell></Row>
+<Row><Cell>ui_nm_stove_barrelClay</Cell><Cell>Barrel-shaped stove clay</Cell><Cell>Barrel-shaped stove clay</Cell></Row>
+<Row><Cell>ui_nm_stove_knightGreen</Cell><Cell>Knight's stove green</Cell><Cell>Knight's stove green</Cell></Row>
+<Row><Cell>ui_nm_stove_knightRed</Cell><Cell>Knight's stove red</Cell><Cell>Knight's stove red</Cell></Row>
+<Row><Cell>ui_nm_stove_rubble</Cell><Cell>Ruined stove</Cell><Cell>Ruined stove</Cell></Row>
+<Row><Cell>ui_nm_stove_tileDark</Cell><Cell>Tiled stove brick</Cell><Cell>Tiled stove brick</Cell></Row>
+<Row><Cell>ui_nm_stove_tileLight</Cell><Cell>Tile stove light</Cell><Cell>Tile stove light</Cell></Row>
+<Row><Cell>ui_nm_table_bachelor01</Cell><Cell>Bachelor's table light</Cell><Cell>Bachelor's table light</Cell></Row>
+<Row><Cell>ui_nm_table_bachelor02</Cell><Cell>Bachelor's table dark</Cell><Cell>Bachelor's table dark</Cell></Row>
+<Row><Cell>ui_nm_table_basic</Cell><Cell>Dirty table</Cell><Cell>Dirty table</Cell></Row>
+<Row><Cell>ui_nm_table_fasting01</Cell><Cell>Lent table simple</Cell><Cell>Lent table simple</Cell></Row>
+<Row><Cell>ui_nm_table_fasting02</Cell><Cell>Lent table ornate</Cell><Cell>Lent table ornate</Cell></Row>
+<Row><Cell>ui_nm_table_herbalist01</Cell><Cell>Herbalist's table light</Cell><Cell>Herbalist's table light</Cell></Row>
+<Row><Cell>ui_nm_table_herbalist02</Cell><Cell>Herbalist's table dark</Cell><Cell>Herbalist's table dark</Cell></Row>
+<Row><Cell>ui_nm_table_marksman01</Cell><Cell>Archer's table light</Cell><Cell>Archer's table light</Cell></Row>
+<Row><Cell>ui_nm_table_marksman02</Cell><Cell>Archer's table dark</Cell><Cell>Archer's table dark</Cell></Row>
+<Row><Cell>ui_nm_table_merchant01</Cell><Cell>Merchant's table red</Cell><Cell>Merchant's table red</Cell></Row>
+<Row><Cell>ui_nm_table_merchant02</Cell><Cell>Merchant's table green</Cell><Cell>Merchant's table green</Cell></Row>
+<Row><Cell>ui_nm_table_padfoot01</Cell><Cell>Padfoot's table light</Cell><Cell>Padfoot's table light</Cell></Row>
+<Row><Cell>ui_nm_table_padfoot02</Cell><Cell>Padfoot's table dyed</Cell><Cell>Padfoot's table dyed</Cell></Row>
+<Row><Cell>ui_nm_table_sturdy01</Cell><Cell>Oak table light</Cell><Cell>Oak table light</Cell></Row>
+<Row><Cell>ui_nm_table_sturdy02</Cell><Cell>Oak table dark</Cell><Cell>Oak table dark</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_basic</Cell><Cell>Ruined upper floor</Cell><Cell>Ruined upper floor</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_blue</Cell><Cell>Upper floor blue</Cell><Cell>Upper floor blue</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_brown</Cell><Cell>Upper floor ocre</Cell><Cell>Upper floor ocre</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_gray</Cell><Cell>Upper floor gray</Cell><Cell>Upper floor gray</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_logsLimed</Cell><Cell>Upper floor log walls limestone</Cell><Cell>Upper floor log walls limestone</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_logsNatural</Cell><Cell>Upper floor log walls clay</Cell><Cell>Upper floor log walls clay</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_orange</Cell><Cell>Upper floor auburn</Cell><Cell>Upper floor auburn</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_sand</Cell><Cell>Upper floor sandstone</Cell><Cell>Upper floor sandstone</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_white</Cell><Cell>Upper floor limestone</Cell><Cell>Upper floor limestone</Cell></Row>
+<Row><Cell>ui_nm_upperFloor_yellow</Cell><Cell>Upper floor yellow</Cell><Cell>Upper floor yellow</Cell></Row>
+<Row><Cell>ui_nm_wallPaint01</Cell><Cell>Knight's wall painting yellow</Cell><Cell>Knight's wall painting yellow</Cell></Row>
+<Row><Cell>ui_nm_wallPaint02</Cell><Cell>Knight's wall painting green</Cell><Cell>Knight's wall painting green</Cell></Row>
+<Row><Cell>ui_nm_wallPaint03</Cell><Cell>Knight's wall painting red</Cell><Cell>Knight's wall painting red</Cell></Row>
+<Row><Cell>ui_nm_wallPaint04</Cell><Cell>Noble's wall painting yellow</Cell><Cell>Noble's wall painting yellow</Cell></Row>
+<Row><Cell>ui_nm_wallPaint05</Cell><Cell>Noble's wall painting green</Cell><Cell>Noble's wall painting green</Cell></Row>
+<Row><Cell>ui_nm_wallPaint06</Cell><Cell>Noble's wall painting red</Cell><Cell>Noble's wall painting red</Cell></Row>
+<Row><Cell>ui_nm_wallPaint07</Cell><Cell>Bailiff's wall painting yellow</Cell><Cell>Bailiff's wall painting yellow</Cell></Row>
+<Row><Cell>ui_nm_wallPaint08</Cell><Cell>Bailiff's wall painting green</Cell><Cell>Bailiff's wall painting green</Cell></Row>
+<Row><Cell>ui_nm_wallPaint09</Cell><Cell>Bailiff's wall painting red</Cell><Cell>Bailiff's wall painting red</Cell></Row>
+<Row><Cell>ui_nm_wallPaint10</Cell><Cell></Cell><Cell>Výmalba pokoje 10</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockDark_fillBlockDark</Cell><Cell>Silesian wall painting dark</Cell><Cell>Silesian wall painting dark</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockDark_fillBlockLight</Cell><Cell>Silesian wall painting mixed</Cell><Cell>Silesian wall painting mixed</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockDark_noFill</Cell><Cell></Cell><Cell>Malování slezské nároží </Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockLight_fillBlockDark</Cell><Cell>Silesian wall painting inverted</Cell><Cell>Silesian wall painting inverted</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockLight_fillBlockLight</Cell><Cell>Silesian wall painting light</Cell><Cell>Silesian wall painting light</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_BlockLight_noFill</Cell><Cell></Cell><Cell>Malování slezské rohové</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Diagonals_fillBlockDark</Cell><Cell></Cell><Cell>Malování saské tmavé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Diagonals_fillBlockLight</Cell><Cell></Cell><Cell>Malování saské světlé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Diagonals_noFill</Cell><Cell></Cell><Cell>Malování saské rohové</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Envelopes_fillBlockDark</Cell><Cell></Cell><Cell>Malování italské tmavé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Envelopes_fillBlockLight</Cell><Cell></Cell><Cell>Malování italské světlé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_Envelopes_noFill</Cell><Cell></Cell><Cell>Malování italské rohové</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_noCorner_fillBlockDark</Cell><Cell></Cell><Cell>Malování prosté tmavé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_noCorner_fillBlockLight</Cell><Cell></Cell><Cell>Malování prosté světlé</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_noCorner_fillDiamonds</Cell><Cell>Diamond wall painting</Cell><Cell>Diamond wall painting</Cell></Row>
+<Row><Cell>ui_nm_wallPaint_noCorner_noFill</Cell><Cell>Unpainted</Cell><Cell>Unpainted</Cell></Row>
+<Row><Cell>ui_nm_wallSlot01_antlers</Cell><Cell>Antlers</Cell><Cell>Antlers</Cell></Row>
+<Row><Cell>ui_nm_wallSlot01_banner</Cell><Cell>Deer skin</Cell><Cell>Deer skin</Cell></Row>
+<Row><Cell>ui_nm_wallSlot01_tapestry</Cell><Cell>Dishware shelf</Cell><Cell>Dishware shelf</Cell></Row>
+<Row><Cell>ui_nm_wallSlot02_antlers</Cell><Cell>Elk antlers</Cell><Cell>Elk antlers</Cell></Row>
+<Row><Cell>ui_nm_wallSlot02_banner</Cell><Cell>Boar skin</Cell><Cell>Boar skin</Cell></Row>
+<Row><Cell>ui_nm_wallSlot02_tapestry</Cell><Cell>Shelf with lantern</Cell><Cell>Shelf with lantern</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_alchemist01</Cell><Cell>Alchemy cabinet Vitriol</Cell><Cell>Alchemy cabinet Vitriol</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_alchemist02</Cell><Cell>Alchemy cabinet Rubedo</Cell><Cell>Alchemy cabinet Rubedo</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_alchemist03</Cell><Cell>Alchemy cabinet Albedo</Cell><Cell>Alchemy cabinet Albedo</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_basic</Cell><Cell>Old crates</Cell><Cell>Old crates</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_guild01</Cell><Cell>Guild cabinet light</Cell><Cell>Guild cabinet light</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_guild02</Cell><Cell>Guild cabinet red</Cell><Cell>Guild cabinet red</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_guild03</Cell><Cell>Guild cabinet green</Cell><Cell>Guild cabinet green</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_knight01</Cell><Cell>Patron knight's cabinet</Cell><Cell>Patron knight's cabinet</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_knight02</Cell><Cell>Prague knight's cabinet</Cell><Cell>Prague knight's cabinet</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_knight03</Cell><Cell>Armiger knight's cabinet</Cell><Cell>Armiger knight's cabinet</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_oak</Cell><Cell>Oak cabinet</Cell><Cell>Oak cabinet</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_stableboy01</Cell><Cell>Handler's cabinet light</Cell><Cell>Handler's cabinet light</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_stableboy02</Cell><Cell>Handler's cabinet red</Cell><Cell>Handler's cabinet red</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_stableboy03</Cell><Cell>Handler's cabinet green</Cell><Cell>Handler's cabinet green</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_thief01</Cell><Cell>Monk's cabinet light</Cell><Cell>Monk's cabinet light</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_thief02</Cell><Cell>Monk's cabinet red</Cell><Cell>Monk's cabinet red</Cell></Row>
+<Row><Cell>ui_nm_wardrobe_thief03</Cell><Cell>Monk's cabinet blue</Cell><Cell>Monk's cabinet blue</Cell></Row>
+<Row><Cell>ui_nm_watertubFixed</Cell><Cell>Laundry washtub</Cell><Cell>Laundry washtub</Cell></Row>
+<Row><Cell>ui_nm_watertubRubble</Cell><Cell>Leaky washtub</Cell><Cell>Leaky washtub</Cell></Row>
+<Row><Cell>ui_nm_wellFixed</Cell><Cell>Stone well</Cell><Cell>Stone well</Cell></Row>
+<Row><Cell>ui_nm_wellRubble</Cell><Cell>Collapsed shaft</Cell><Cell>Collapsed shaft</Cell></Row>
+<Row><Cell>ui_nm_windows01</Cell><Cell>Chambranle simple</Cell><Cell>Chambranle simple</Cell></Row>
+<Row><Cell>ui_nm_windows02</Cell><Cell>Chambranle wide</Cell><Cell>Chambranle wide</Cell></Row>
+<Row><Cell>ui_nm_windows03</Cell><Cell>Chambranle diamond</Cell><Cell>Chambranle diamond</Cell></Row>
+<Row><Cell>ui_nm_windows04</Cell><Cell>Chambranle square</Cell><Cell>Chambranle square</Cell></Row>
+<Row><Cell>ui_nm_windows05</Cell><Cell>Chambranle hourglass</Cell><Cell>Chambranle hourglass</Cell></Row>
+<Row><Cell>ui_nm_windows06</Cell><Cell>Chambranle checkerboard</Cell><Cell>Chambranle checkerboard</Cell></Row>
+<Row><Cell>ui_nm_windows07</Cell><Cell>Chambranle floral</Cell><Cell>Chambranle floral</Cell></Row>
+<Row><Cell>ui_nm_windows08</Cell><Cell>Chambranle lillies</Cell><Cell>Chambranle lillies</Cell></Row>
+<Row><Cell>ui_nm_workshop01</Cell><Cell>Alchemy cabin</Cell><Cell>Alchemy cabin</Cell></Row>
+<Row><Cell>ui_nm_workshop02</Cell><Cell>Alchemy workshop</Cell><Cell>Alchemy workshop</Cell></Row>
+<Row><Cell>ui_nm_workshopRubble</Cell><Cell>Remains of wall</Cell><Cell>Remains of wall</Cell></Row>
+<Row><Cell>ui_nm_writingShelf_dark</Cell><Cell>Noble's shelf dark</Cell><Cell>Noble's shelf dark</Cell></Row>
+<Row><Cell>ui_nm_writingShelf_light</Cell><Cell>Noble's shelf light</Cell><Cell>Noble's shelf light</Cell></Row>
+<Row><Cell>ui_nm_writingShelf_rustic</Cell><Cell>Noble's shelf larch</Cell><Cell>Noble's shelf larch</Cell></Row>
+<Row><Cell>ui_pickup_item</Cell><Cell>Pick up</Cell><Cell>Pick up</Cell></Row>
+<Row><Cell>ui_playerCantSkiptime_timePause</Cell><Cell>You can't delay - no time to lose!</Cell><Cell>You can't delay - no time to lose!</Cell></Row>
+<Row><Cell>ui_use_sit</Cell><Cell>Sit</Cell><Cell>Sit</Cell></Row>
+<Row><Cell>uklizeni__pohrbit_cuLX</Cell><Cell>Bury</Cell><Cell>Bury</Cell></Row>
+<Row><Cell>uklizeni__uklizis_zbyle_k_y7rR</Cell><Cell>You're tidying the remaining bones.</Cell><Cell>You're tidying the remaining bones.</Cell></Row>
+<Row><Cell>umucenymuz_prozkoumat_uRHv</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>unlucky_g_obvaz_aMhK</Cell><Cell>Bandage</Cell><Cell>Bandage</Cell></Row>
+<Row><Cell>use_ladder</Cell><Cell>Use ladder</Cell><Cell>Use ladder</Cell></Row>
+<Row><Cell>u_stavite_sekera_uff6</Cell><Cell>Axe</Cell><Cell>Axe</Cell></Row>
+<Row><Cell>utek_podivat_se_smerem_k__3XJZ</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>utek_z_do_sundat_helmu_oHaw</Cell><Cell>Take off the helmet.</Cell><Cell>Take off the helmet.</Cell></Row>
+<Row><Cell>utyrany_k_prohlednout_kone_vLDk</Cell><Cell>Examine the dead horse</Cell><Cell>Examine the dead horse</Cell></Row>
+<Row><Cell>utyrany_k_prohlednout_lZK1</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>uvezneny__jaromir_z_nebak_hpeH</Cell><Cell>Jaromier of Nebakov</Cell><Cell>Jaromier of Nebakov</Cell></Row>
+<Row><Cell>uvezneny__nahlednout_dovn_30uP</Cell><Cell>Look inside.</Cell><Cell>Look inside</Cell></Row>
+<Row><Cell>uvezneny__promluvit_s_vez_n0y2</Cell><Cell>Talk to the prisoner.</Cell><Cell>Talk to the prisoner</Cell></Row>
+<Row><Cell>uvodni_ba_podivat_na_majku_PSi3</Cell><Cell>Look at the maypole</Cell><Cell>Look at the maypole</Cell></Row>
+<Row><Cell>uvodni_po_straz_odvadi_za_WnE0</Cell><Cell>The guard will take you to an audience with the lord of the manor, Ruthard.</Cell><Cell>The guard will take you to an audience with the lord of the manor, Ruthard.</Cell></Row>
+<Row><Cell>vajdovo_u_vedes_vajdu_za__3XyH</Cell><Cell>You lead the Voivode to Marika.</Cell><Cell>You lead the Voivode to Marika.</Cell></Row>
+<Row><Cell>vavakuv_k_vylovit_klic_oLtv</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>v_dolech_hodit_soudek_do__OEkd</Cell><Cell>Throw the barrel into the fire</Cell><Cell>Throw the barrel into the fire</Cell></Row>
+<Row><Cell>venku_podivat_se_UBn9</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>vezninatr_jeste_nemuzes_o_F801</Cell><Cell>You can't leave yet.</Cell><Cell>You can't leave yet.</Cell></Row>
+<Row><Cell>vezninatr_prozkoumat_voYD</Cell><Cell>Explore</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>v_hospode_podivat_se_G4HO</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>viktorka__prohlednout_LdXj</Cell><Cell>Examine.</Cell><Cell>Examine.</Cell></Row>
+<Row><Cell>vkladani__vlozit_xZ6Y</Cell><Cell>Place the egg</Cell><Cell>Place the egg</Cell></Row>
+<Row><Cell>vnejsek_most_se_zveda__al_UuoL</Cell><Cell>Drawbridge!</Cell><Cell>Drawbridge!</Cell></Row>
+<Row><Cell>vojaci_po_neni_v_bezvedomi_Hxv1</Cell><Cell>Not unconscious.</Cell><Cell>Not unconscious.</Cell></Row>
+<Row><Cell>vojaci_po_proplesknout_ODvd</Cell><Cell>Wake Semine.</Cell><Cell>Wake Semine.</Cell></Row>
+<Row><Cell>vostatkov_prohlednou_mrtv_KdYd</Cell><Cell>Examine the corpse</Cell><Cell>Examine the corpse</Cell></Row>
+<Row><Cell>vostatkov_prohlednout_kos_YAIO</Cell><Cell>Examine the skeleton</Cell><Cell>Examine the skeleton</Cell></Row>
+<Row><Cell>v_podzemi_nakreslit_znacku_A8G7</Cell><Cell>Knock on the wall</Cell><Cell>Knock on the wall</Cell></Row>
+<Row><Cell>vraceni_k_kniha_farare_z__bJgS</Cell><Cell>The Wysoka Parish Priest's book.</Cell><Cell>The Wysoka Parish Priest's book.</Cell></Row>
+<Row><Cell>vraceni_k_kvalitni_boty_s_iraj</Cell><Cell>Quality shoes from Cobbler Vejmola</Cell><Cell>Quality shoes from Cobbler Vejmola</Cell></Row>
+<Row><Cell>vraceni_k_ruzenec_s_drahy_08ki</Cell><Cell>Rosary with a precious stone</Cell><Cell>Rosary with a precious stone</Cell></Row>
+<Row><Cell>vraceni_k_vejmoluv_medajl_z2ru</Cell><Cell>Vejmola's Medallion</Cell><Cell>Vejmola's Medallion</Cell></Row>
+<Row><Cell>vraceni_k_vraceny_predmet_A6lL</Cell><Cell>Returned item</Cell><Cell>Returned item</Cell></Row>
+<Row><Cell>vraceni_k_zlaty_buchtoprs_tmKC</Cell><Cell>Golden cake-ring</Cell><Cell>Gold ring from cake</Cell></Row>
+<Row><Cell>vraceni_v_dlouhy_mec_a_ob_d03w</Cell><Cell>Longsword and clothes</Cell><Cell>Longsword and clothes</Cell></Row>
+<Row><Cell>vraceni_v_mec_stit_a_oble_VOMo</Cell><Cell>Sword, shield and clothes</Cell><Cell>Sword, shield and clothes</Cell></Row>
+<Row><Cell>vranova_d_prohlednout_si__Zt9I</Cell><Cell>Examine the dagger</Cell><Cell>Examine the dagger</Cell></Row>
+<Row><Cell>v_tabore_cutscena_TY3W</Cell><Cell>A few hours later…</Cell><Cell>A few hours later…</Cell></Row>
+<Row><Cell>v_tabore_dat_zaludecni_od_sGdA</Cell><Cell>Give antidote</Cell><Cell>Give Digestive Potion</Cell></Row>
+<Row><Cell>v_tabore_zaludecni_odvar_EaaT</Cell><Cell>Antidote.</Cell><Cell>Digestive Potion</Cell></Row>
+<Row><Cell>vuz_s_mou_schovat_se_ve_v_btnC</Cell><Cell>Hide in the cart</Cell><Cell>Hide in the cart</Cell></Row>
+<Row><Cell>vyhlidka__prohlednout_si__mi3B</Cell><Cell>Look at Trosky</Cell><Cell>Look at Trosky</Cell></Row>
+<Row><Cell>vykopani__prohlednout_si__6I2K</Cell><Cell>Examine the skeleton</Cell><Cell>Examine the skeleton</Cell></Row>
+<Row><Cell>vykopnuti_vyrazit_dvere_Zqso</Cell><Cell>Break down the door</Cell><Cell>Break down the door</Cell></Row>
+<Row><Cell>vymena_do_vymenit_dokumen_JMP5</Cell><Cell>Switch papers</Cell><Cell>Switch papers</Cell></Row>
+<Row><Cell>vypaleny__prohlednout_obe_haxY</Cell><Cell>Examine the hanged man.</Cell><Cell>Examine the hanged man</Cell></Row>
+<Row><Cell>vypnuti_p_neni_cas_na_odp_7LFQ</Cell><Cell> You can't go to bed yet.</Cell><Cell> You can't go to bed yet.</Cell></Row>
+<Row><Cell>vypnuti_p_tohle_misto_nen_FFki</Cell><Cell>Your mate's sitting right here. Keep looking.</Cell><Cell>Your companion's sitting here. Keep looking.</Cell></Row>
+<Row><Cell>vyroba_ob_s_malirem_tvori_Gemz</Cell><Cell>You and Voyta are working on a devil costume.</Cell><Cell>You and Voyta are working on a devil costume.</Cell></Row>
+<Row><Cell>vyzva_k_t_vino_LWmz</Cell><Cell>Wine.</Cell><Cell>Wine.</Cell></Row>
+<Row><Cell>wallthrow_pohlednout_do_o_KHRJ</Cell><Cell>Look out the window.</Cell><Cell>Look at the window.</Cell></Row>
+<Row><Cell>whilefader_suchdol__o_nek_FFDZ</Cell><Cell>Suchdol - some time later</Cell><Cell>Suchdol - some time later</Cell></Row>
+<Row><Cell>zacatek_q_nasledujes_mali_Fvs4</Cell><Cell>The painter shows you his workshop.  </Cell><Cell>The painter shows you his workshop.  </Cell></Row>
+<Row><Cell>zacatek_q_predat_koralku_xui3</Cell><Cell>Hand over the liquor.</Cell><Cell>Hand over the liquor.</Cell></Row>
+<Row><Cell>zadani_qu_mesicky_6fBe</Cell><Cell>Marigolds.</Cell><Cell>Marigolds</Cell></Row>
+<Row><Cell>zadani_qu_podivat_se_p3D2</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>zahajeni__vykopnout_dvere_eijN</Cell><Cell>Kick the door open</Cell><Cell>Kick the door open</Cell></Row>
+<Row><Cell>zakazani__inventar_je_v_o_dtiI</Cell><Cell>Inventory access is blocked while in the pen.</Cell><Cell>Inventory access is blocked while in the pen.</Cell></Row>
+<Row><Cell>zakrvaven_zakrvaveny_pytel_rzs5</Cell><Cell>Bloodied sack</Cell><Cell>Bloodied sack</Cell></Row>
+<Row><Cell>zapaleni__polozit_a_zapal_GWOo</Cell><Cell>Place and set fire to the barrel</Cell><Cell>Place and set fire to the barrel</Cell></Row>
+<Row><Cell>zastaveni_nemuzes_se_zdrz_0z0L</Cell><Cell>You can't linger, there's no time to spare.</Cell><Cell>You can't linger, there's no time to spare.</Cell></Row>
+<Row><Cell>zatah_ve__prozkoumat_jPot</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>zatimcotu_spat_UQUn</Cell><Cell>Sleep</Cell><Cell>Sleep</Cell></Row>
+<Row><Cell>zavrazden_prohledat_mrtvo_WyYJ</Cell><Cell>Search the corpse</Cell><Cell>Search the corpse</Cell></Row>
+<Row><Cell>zbrane_a__prozkoumat_78lg</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>zbranepan_testovat_tN0f</Cell><Cell>  </Cell><Cell>  </Cell></Row>
+<Row><Cell>zebrackab_podivat_se_OXQA</Cell><Cell>Look</Cell><Cell>Look</Cell></Row>
+<Row><Cell>zenske_sa_saty_pro_marketu_LNgr</Cell><Cell>Dress for Margaret</Cell><Cell>Dress for Margaret</Cell></Row>
+<Row><Cell>zikmund_m_zabit_aoPp</Cell><Cell>Kill</Cell><Cell>Kill</Cell></Row>
+<Row><Cell>zizka_cek_talk_t15n</Cell><Cell>Talk</Cell><Cell>Talk</Cell></Row>
+<Row><Cell>zizkovyhl_rozhlednout_se_fxbu</Cell><Cell>Look around</Cell><Cell>Look around</Cell></Row>
+<Row><Cell>zlodej_ze_zeli_QYYA</Cell><Cell>Cabbage</Cell><Cell>Cabbage</Cell></Row>
+<Row><Cell>zmeny_ve__pohrbit_Z8sl</Cell><Cell>Bury</Cell><Cell>Bury</Cell></Row>
+<Row><Cell>zoufalaob_suchdol_o_neco__Y30J</Cell><Cell>Suchdol, a little earlier…</Cell><Cell>Suchdol, a little earlier…</Cell></Row>
+<Row><Cell>zraneny_c_prohlednout_PNvu</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>zraneny_k_prohlednout_VLlJ</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+<Row><Cell>zranenylo_prozkoumat_UZRj</Cell><Cell>Take a look</Cell><Cell>Take a look</Cell></Row>
+<Row><Cell>zraneny_m_prohlednout_5xbK</Cell><Cell>Examine</Cell><Cell>Examine</Cell></Row>
+</Table>
