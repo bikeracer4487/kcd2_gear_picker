@@ -232,6 +232,16 @@ local GearPicker = {
                 System.LogAlways("$4[GearPicker ERROR] Unable to load script: " .. script)
                 failedCount = failedCount + 1
             else
+                -- Add extra logging for the SimplifiedInventoryScan file
+                if script:find("SimplifiedInventoryScan.lua") then
+                    System.LogAlways("$2[GearPicker] Successfully loaded SimplifiedInventoryScan.lua")
+                    -- Check if it was properly registered
+                    if this.ClassRegistry and this.ClassRegistry.SimplifiedInventoryScan then
+                        System.LogAlways("$2[GearPicker] SimplifiedInventoryScan class properly registered")
+                    else
+                        System.LogAlways("$4[GearPicker ERROR] SimplifiedInventoryScan not registered after loading")
+                    end
+                end
                 loadedCount = loadedCount + 1
             end
         end
@@ -330,6 +340,30 @@ local GearPicker = {
             return this.__factories.simplifiedInventoryScan
         end
         
+        System.LogAlways("$7[GearPicker] Getting SimplifiedInventoryScan from ClassRegistry...")
+        
+        -- Do a full diagnostic to help debug the issue
+        if not this.ClassRegistry then
+            System.LogAlways("$4[GearPicker ERROR] ClassRegistry is nil!")
+            
+            -- Attempt to manually load the file
+            System.LogAlways("$7[GearPicker] Attempting to manually load SimplifiedInventoryScan.lua...")
+            local result = Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua")
+            if result == 1 then
+                System.LogAlways("$2[GearPicker] Manual load of SimplifiedInventoryScan.lua succeeded")
+            else
+                System.LogAlways("$4[GearPicker ERROR] Manual load of SimplifiedInventoryScan.lua failed")
+            end
+            
+            return nil
+        end
+        
+        -- List available classes in the registry
+        System.LogAlways("$7[GearPicker] Classes in registry:")
+        for className, _ in pairs(this.ClassRegistry) do
+            System.LogAlways("$7[GearPicker]   - " .. className)
+        end
+        
         --- @type SimplifiedInventoryScan
         local SimplifiedInventoryScan = this.ClassRegistry.SimplifiedInventoryScan
         if not SimplifiedInventoryScan then
@@ -337,12 +371,20 @@ local GearPicker = {
             return nil
         end
         
+        System.LogAlways("$2[GearPicker] Found SimplifiedInventoryScan class, creating instance...")
         this.__factories.simplifiedInventoryScan = SimplifiedInventoryScan:new(
             _G.player, 
             _G.Script, 
             _G.ItemManager,
             this:itemCategory()
         )
+        
+        if this.__factories.simplifiedInventoryScan then
+            System.LogAlways("$2[GearPicker] Successfully created SimplifiedInventoryScan instance")
+        else
+            System.LogAlways("$4[GearPicker ERROR] Failed to create SimplifiedInventoryScan instance")
+        end
+        
         return this.__factories.simplifiedInventoryScan
     end,
 }

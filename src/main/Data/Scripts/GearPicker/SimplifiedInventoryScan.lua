@@ -353,6 +353,13 @@ local SimplifiedInventoryScan = {
 }
 
 -- Register the class in the global registry
-_G.GearPicker.ClassRegistry.SimplifiedInventoryScan = SimplifiedInventoryScan
+if not _G.GearPicker then
+    System.LogAlways("$4[GearPicker ERROR] GearPicker global not found when registering SimplifiedInventoryScan")
+elseif not _G.GearPicker.ClassRegistry then
+    System.LogAlways("$4[GearPicker ERROR] GearPicker.ClassRegistry not found when registering SimplifiedInventoryScan")
+else
+    _G.GearPicker.ClassRegistry.SimplifiedInventoryScan = SimplifiedInventoryScan
+    System.LogAlways("$2[GearPicker] Successfully registered SimplifiedInventoryScan class")
+end
 
 return SimplifiedInventoryScan

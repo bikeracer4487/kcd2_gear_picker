@@ -413,15 +413,38 @@ local Commands = {
             System.LogAlways("$6[GearPicker] =========================================================")
         end
         
-        -- Use simplifiedInventoryScan - our new streamlined approach
+        -- Try to use simplifiedInventoryScan - our new streamlined approach
+        System.LogAlways("$7[GearPicker] Trying to use SimplifiedInventoryScan...")
         local scanner = GearPicker:simplifiedInventoryScan()
         
         if not scanner then
-            System.LogAlways("$4[GearPicker] ERROR: SimplifiedInventoryScan not available!")
-            return
+            System.LogAlways("$4[GearPicker] WARNING: SimplifiedInventoryScan not available, trying alternative approaches...")
+            
+            -- Try to reload the script
+            System.LogAlways("$7[GearPicker] Attempting to reload SimplifiedInventoryScan.lua...")
+            if Script.LoadScript("Scripts/GearPicker/SimplifiedInventoryScan.lua") == 1 then
+                System.LogAlways("$2[GearPicker] SimplifiedInventoryScan.lua loaded, trying again...")
+                scanner = GearPicker:simplifiedInventoryScan()
+            end
+            
+            -- If still not available, try GearScan as fallback
+            if not scanner and GearPicker.gearScan then
+                System.LogAlways("$7[GearPicker] Falling back to GearScan...")
+                scanner = GearPicker:gearScan()
+                if scanner then
+                    System.LogAlways("$7[GearPicker] Using GearScan as fallback...")
+                else
+                    System.LogAlways("$4[GearPicker] ERROR: No inventory scanner available!")
+                    return
+                end
+            else if not scanner then
+                System.LogAlways("$4[GearPicker] ERROR: All inventory scanning methods failed!")
+                return
+            end
+            end
         end
         
-        System.LogAlways("$7[GearPicker] Starting simplified inventory scan...")
+        System.LogAlways("$7[GearPicker] Starting inventory scan...")
         scanner:scanInventory(displayInventoryResults)
     end,
     
