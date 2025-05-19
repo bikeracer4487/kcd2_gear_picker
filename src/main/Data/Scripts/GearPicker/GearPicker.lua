@@ -200,6 +200,10 @@ local GearPicker = {
         this.__factories = {}
 
         local modName = "GearPicker"
+        -- Load class registry fix first to ensure all scanner classes are registered properly
+        System.LogAlways("$6[GearPicker] Pre-loading class registry fix...")
+        Script.LoadScript(string.format("Scripts/%s/ClassRegistryFix.lua", modName))
+        
         local scripts = {
             string.format("Scripts/%s/Utils/Log.lua", modName),
             string.format("Scripts/%s/Utils/Error.lua", modName),
@@ -216,6 +220,7 @@ local GearPicker = {
             string.format("Scripts/%s/AlternativeInventory.lua", modName),
             string.format("Scripts/%s/SimplifiedInventoryScan.lua", modName),
             string.format("Scripts/%s/EmbeddedScan.lua", modName),
+            string.format("Scripts/%s/ClassRegistryFix.lua", modName), -- Load again to ensure it's picked up
             string.format("Scripts/%s/Commands.lua", modName),
             string.format("Scripts/%s/GearScan.lua", modName),
             string.format("Scripts/%s/GearOptimizer.lua", modName),

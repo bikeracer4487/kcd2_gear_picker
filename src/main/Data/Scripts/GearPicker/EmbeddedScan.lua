@@ -236,14 +236,50 @@ local EmbeddedScan = {
     end
 }
 
--- Register as a fallback scanner
+-- Register as a fallback scanner with multiple attempts
 _G.GearPicker = _G.GearPicker or {}
 _G.GearPicker.ClassRegistry = _G.GearPicker.ClassRegistry or {}
+
+-- Register twice to ensure it works
 _G.GearPicker.ClassRegistry.EmbeddedScan = EmbeddedScan
 
 -- Also make it globally accessible for the emergency fallback in Commands.lua
 _G.EmbeddedScan = EmbeddedScan
 
-System.LogAlways("$2[GearPicker] Successfully registered EmbeddedScan class")
+-- Verify the registration
+if _G.GearPicker.ClassRegistry.EmbeddedScan then
+    System.LogAlways("$2[GearPicker] Successfully registered EmbeddedScan in ClassRegistry")
+else
+    System.LogAlways("$4[GearPicker] ERROR: Failed to register EmbeddedScan in ClassRegistry!")
+    
+    -- Try one more time
+    _G.GearPicker.ClassRegistry = _G.GearPicker.ClassRegistry or {}
+    _G.GearPicker.ClassRegistry.EmbeddedScan = EmbeddedScan
+    System.LogAlways("$2[GearPicker] Second attempt to register EmbeddedScan")
+end
+
+-- Register a function to check EmbeddedScan availability
+_G.VerifyEmbeddedScan = function()
+    System.LogAlways("$6[GearPicker] Verifying EmbeddedScan availability")
+    
+    if _G.EmbeddedScan then
+        System.LogAlways("$2[GearPicker] EmbeddedScan is available as global variable")
+    else
+        System.LogAlways("$4[GearPicker] EmbeddedScan is NOT available as global variable!")
+    end
+    
+    if _G.GearPicker and _G.GearPicker.ClassRegistry and _G.GearPicker.ClassRegistry.EmbeddedScan then
+        System.LogAlways("$2[GearPicker] EmbeddedScan is registered in ClassRegistry")
+    else
+        System.LogAlways("$4[GearPicker] EmbeddedScan is NOT registered in ClassRegistry!")
+    end
+    
+    return true
+end
+
+-- Verify immediately
+_G.VerifyEmbeddedScan()
+
+System.LogAlways("$2[GearPicker] Successfully registered EmbeddedScan class globally")
 
 return EmbeddedScan

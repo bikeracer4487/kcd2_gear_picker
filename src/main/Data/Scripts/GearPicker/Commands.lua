@@ -443,89 +443,145 @@ local Commands = {
                 end
             end
             
-            -- Ultimate fallback - direct inline emergency scanner
+            -- Ultimate fallback - use enhanced emergency scanner from ClassRegistryFix
             if not scanner then
                 System.LogAlways("$4[GearPicker] WARNING: Creating ultimate fallback scanner inline...")
                 
-                -- Create a minimal inline scanner as last resort
-                local EmergencyScanner = {
-                    new = function(self, player, script, itemManager)
-                        return {
-                            player = player,
-                            script = script, 
-                            itemManager = itemManager,
-                            inventoryItems = {},
-                            
-                            -- Minimal scan implementation
-                            scanInventory = function(this, callback)
-                                System.LogAlways("$5[GearPicker] Running last resort emergency scan...")
+                -- Try to use the EmergencyInventoryScanner from ClassRegistryFix
+                if _G.EmergencyInventoryScanner then
+                    System.LogAlways("$6[GearPicker] Using EmergencyInventoryScanner from ClassRegistryFix")
+                    scanner = _G.EmergencyInventoryScanner:new(_G.player, _G.Script, _G.ItemManager)
+                else
+                    -- Fallback to the fixed version inline
+                    System.LogAlways("$4[GearPicker] EmergencyInventoryScanner not found, using inline version")
+                    
+                    -- Create a minimal inline scanner as last resort
+                    local EmergencyScanner = {
+                        new = function(self, player, script, itemManager)
+                            return {
+                                player = player,
+                                script = script, 
+                                itemManager = itemManager,
+                                inventoryItems = {},
                                 
-                                -- Basic inventory access
-                                local inventoryItems = {}
-                                local count = 0
-                                pcall(function() count = this.player.inventory:GetCount() end)
-                                
-                                if count > 0 then
-                                    System.LogAlways("$5[GearPicker] Found " .. count .. " inventory items")
-                                    for i = 0, count - 1 do
-                                        local item = nil
-                                        pcall(function() item = this.player.inventory:GetItem(i) end)
-                                        if item and item.id then
-                                            local stats = { 
-                                                id = item.id, 
-                                                name = "Unknown Item", 
-                                                slot = "unknown",
-                                                stabDefense = 0, 
-                                                slashDefense = 0, 
-                                                bluntDefense = 0 
-                                            }
-                                            pcall(function() 
-                                                if item.class then
-                                                    stats.name = this.itemManager.GetItemName(item.class) or "Unknown" 
+                                -- Minimal scan implementation
+                                scanInventory = function(this, callback)
+                                    System.LogAlways("$5[GearPicker] Running last resort emergency scan...")
+                                    
+                                    -- Use multiple approaches to get inventory items
+                                    local inventoryItems = {}
+                                    
+                                    -- Approach 1: Try GetInventoryTable
+                                    pcall(function()
+                                        if this.player.inventory.GetInventoryTable then
+                                            local items = this.player.inventory:GetInventoryTable()
+                                            if items and type(items) == "table" then
+                                                inventoryItems = items
+                                            end
+                                        end
+                                    end)
+                                    
+                                    -- Approach 2: Try GetItems if first approach failed
+                                    if #inventoryItems == 0 then
+                                        pcall(function()
+                                            if this.player.inventory.GetItems then
+                                                local items = this.player.inventory:GetItems()
+                                                if items and type(items) == "table" then
+                                                    inventoryItems = items
                                                 end
-                                            end)
-                                            pcall(function() 
-                                                if item.GetSlot then
-                                                    stats.slot = item:GetSlot() or "unknown" 
-                                                end
-                                            end)
-                                            pcall(function() 
-                                                if item.GetStabDefense then
-                                                    stats.stabDefense = item:GetStabDefense() or 0 
-                                                end
-                                            end)
-                                            pcall(function() 
-                                                if item.GetSlashDefense then
-                                                    stats.slashDefense = item:GetSlashDefense() or 0 
-                                                end
-                                            end)
-                                            pcall(function() 
-                                                if item.GetBluntDefense then
-                                                    stats.bluntDefense = item:GetBluntDefense() or 0 
-                                                end
-                                            end)
-                                            
-                                            -- Only include items with defense stats
-                                            if (stats.stabDefense > 0 or stats.slashDefense > 0 or stats.bluntDefense > 0) then
-                                                table.insert(inventoryItems, stats)
-                                                System.LogAlways("$2[GearPicker] Found gear item: " .. stats.name)
+                                            end
+                                        end)
+                                    end
+                                    
+                                    -- Approach 3: Try direct access by index if other approaches failed
+                                    if #inventoryItems == 0 then
+                                        local count = 0
+                                        pcall(function() count = this.player.inventory:GetCount() end)
+                                        
+                                        if count > 0 then
+                                            for i = 0, count - 1 do
+                                                pcall(function()
+                                                    local item = this.player.inventory:GetItem(i)
+                                                    if item and item.id then
+                                                        table.insert(inventoryItems, item.id)
+                                                    end
+                                                end)
                                             end
                                         end
                                     end
+                                    
+                                    System.LogAlways("$5[GearPicker] Found " .. #inventoryItems .. " inventory items")
+                                    
+                                    -- Process each item
+                                    local gearItems = {}
+                                    for _, itemId in ipairs(inventoryItems) do
+                                        local item = nil
+                                        pcall(function() item = this.itemManager.GetItem(itemId) end)
+                                        
+                                        if not item then goto continue end
+                                        
+                                        -- Get basic item properties
+                                        local stats = {
+                                            id = itemId,
+                                            name = "Unknown Item",
+                                            slot = "unknown",
+                                            stabDefense = 0,
+                                            slashDefense = 0,
+                                            bluntDefense = 0
+                                        }
+                                        
+                                        -- Get item name
+                                        pcall(function() 
+                                            if item.class then
+                                                stats.name = this.itemManager.GetItemName(item.class) or "Unknown" 
+                                            end
+                                        end)
+                                        
+                                        -- Check if item can be equipped
+                                        local canEquip = false
+                                        pcall(function() 
+                                            if item.CanEquip then
+                                                canEquip = item:CanEquip()
+                                            end
+                                        end)
+                                        
+                                        if not canEquip then goto continue end
+                                        
+                                        -- Get defense stats
+                                        pcall(function() 
+                                            if item.GetStabDefense then 
+                                                stats.stabDefense = item:GetStabDefense() or 0 
+                                            end
+                                            if item.GetSlashDefense then 
+                                                stats.slashDefense = item:GetSlashDefense() or 0 
+                                            end
+                                            if item.GetBluntDefense then 
+                                                stats.bluntDefense = item:GetBluntDefense() or 0 
+                                            end
+                                        end)
+                                        
+                                        -- Only add items with some defensive stats
+                                        if stats.stabDefense > 0 or stats.slashDefense > 0 or stats.bluntDefense > 0 then
+                                            table.insert(gearItems, stats)
+                                            System.LogAlways("$2[GearPicker] Found gear item: " .. stats.name)
+                                        end
+                                        
+                                        ::continue::
+                                    end
+                                    
+                                    System.LogAlways("$5[GearPicker] Emergency scan found " .. #gearItems .. " gear items")
+                                    
+                                    if callback then
+                                        callback(gearItems, {})
+                                    end
                                 end
-                                
-                                System.LogAlways("$5[GearPicker] Emergency scan found " .. #inventoryItems .. " gear items")
-                                
-                                if callback then
-                                    callback(inventoryItems, {})
-                                end
-                            end
-                        }
-                    end
-                }
-                
-                -- Create the emergency scanner
-                scanner = EmergencyScanner:new(_G.player, _G.Script, _G.ItemManager)
+                            }
+                        end
+                    }
+                    
+                    -- Create the emergency scanner
+                    scanner = EmergencyScanner:new(_G.player, _G.Script, _G.ItemManager)
+                end
             end
             
             -- If all our attempts failed, give up

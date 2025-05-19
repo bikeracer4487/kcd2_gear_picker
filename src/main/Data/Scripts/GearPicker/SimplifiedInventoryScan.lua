@@ -352,13 +352,49 @@ local SimplifiedInventoryScan = {
     end
 }
 
--- Register the class in the global registry
+-- Register the class in the global registry with multiple attempts
 _G.GearPicker = _G.GearPicker or {}
 _G.GearPicker.ClassRegistry = _G.GearPicker.ClassRegistry or {}
+
+-- Register twice to ensure it works
 _G.GearPicker.ClassRegistry.SimplifiedInventoryScan = SimplifiedInventoryScan
 
 -- Also make it globally accessible for emergency fallback
 _G.SimplifiedInventoryScan = SimplifiedInventoryScan
+
+-- Verify the registration
+if _G.GearPicker.ClassRegistry.SimplifiedInventoryScan then
+    System.LogAlways("$2[GearPicker] Successfully registered SimplifiedInventoryScan in ClassRegistry")
+else
+    System.LogAlways("$4[GearPicker] ERROR: Failed to register SimplifiedInventoryScan in ClassRegistry!")
+    
+    -- Try one more time
+    _G.GearPicker.ClassRegistry = _G.GearPicker.ClassRegistry or {}
+    _G.GearPicker.ClassRegistry.SimplifiedInventoryScan = SimplifiedInventoryScan
+    System.LogAlways("$2[GearPicker] Second attempt to register SimplifiedInventoryScan")
+end
+
+-- Register a function to check SimplifiedInventoryScan availability
+_G.VerifySimplifiedInventoryScan = function()
+    System.LogAlways("$6[GearPicker] Verifying SimplifiedInventoryScan availability")
+    
+    if _G.SimplifiedInventoryScan then
+        System.LogAlways("$2[GearPicker] SimplifiedInventoryScan is available as global variable")
+    else
+        System.LogAlways("$4[GearPicker] SimplifiedInventoryScan is NOT available as global variable!")
+    end
+    
+    if _G.GearPicker and _G.GearPicker.ClassRegistry and _G.GearPicker.ClassRegistry.SimplifiedInventoryScan then
+        System.LogAlways("$2[GearPicker] SimplifiedInventoryScan is registered in ClassRegistry")
+    else
+        System.LogAlways("$4[GearPicker] SimplifiedInventoryScan is NOT registered in ClassRegistry!")
+    end
+    
+    return true
+end
+
+-- Verify immediately
+_G.VerifySimplifiedInventoryScan()
 
 System.LogAlways("$2[GearPicker] Successfully registered SimplifiedInventoryScan class globally")
 
