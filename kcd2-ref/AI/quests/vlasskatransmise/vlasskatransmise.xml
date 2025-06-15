@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BehaviorTrees>
+	<BehaviorTree name="vlaskaTransmise_schedulerBark" is_function="0">
+		<Variables>
+			<Variable name="isSuccessful" type="_bool" values="false" isPersistent="0" form="single" />
+		</Variables>
+		<Parameters>
+			<Variable name="alias" type="_string" values="" isPersistent="0" form="single" requirementType="In" />
+			<Variable name="lookAt" type="_wuid" values="" isPersistent="0" form="single" requirementType="In" optional="1" />
+			<Variable name="subtitlesDown" type="_bool" values="" isPersistent="0" form="single" requirementType="In" />
+		</Parameters>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<FuseBox StatusPropagation="Child" OneCleanup="true" saveVersion="2">
+					<Child canSkip="1">
+						<While doFail="false" propagateChildFail="false" condition="!$isSuccessful">
+							<SuppressFailure>
+								<Sequence>
+									<Function_speech_schedulerMonolog alias="$alias" animationApproach="$enum:animationApproach.dontPlayDialogAnimations" context="" lookAtId="" metarole="" skipInLod="false" subtitlesDown="$subtitlesDown" nodeLabel="83924121" />
+									<Expression expressions="$isSuccessful = true" />
+								</Sequence>
+							</SuppressFailure>
+						</While>
+					</Child>
+					<OnSuccess canSkip="1">
+						<Callback_empty EventName="&apos;OnFinished&apos;" />
+					</OnSuccess>
+				</FuseBox>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData Signature="aliasSchedulerMonolog" EventSet="endNotification">
+			<Variables>
+				<Variable name="isSuccessful" comment="" />
+				<Variable name="alias" comment="" />
+				<Variable name="lookAt" comment="" />
+				<Variable name="subtitlesDown" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<FuseBox hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+						<OutputBreakpoints />
+						<Child>
+							<While hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<SuppressFailure hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+									<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+										<OutputBreakpoints />
+										<Function_speech_schedulerMonolog hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+										</Function_speech_schedulerMonolog>
+										<Expression hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+										</Expression>
+									</Sequence>
+								</SuppressFailure>
+							</While>
+						</Child>
+						<OnSuccess>
+							<Callback_empty hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+							</Callback_empty>
+						</OnSuccess>
+					</FuseBox>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="vlasskaTransmise_chatOnPlayer" is_function="0">
+		<Variables />
+		<Parameters>
+			<Variable name="aliasChat" type="_string" values="" isPersistent="0" form="single" requirementType="In" />
+		</Parameters>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<FuseBox StatusPropagation="Child" OneCleanup="true" saveVersion="2">
+					<Child canSkip="1">
+						<Sequence>
+							<Function_turnToPlayer nodeLabel="29833056" />
+							<Function_speech_dialogInitiator alias="$aliasChat" animationApproach="$enum:animationApproach.dontPlayDialogAnimations" context="" customParameters="" metarole="" preset="$enum:dialogPreset.chat" recipient="$__player" recipientMetaroles="" nodeLabel="55787161" />
+						</Sequence>
+					</Child>
+					<OnSuccess canSkip="1">
+						<Callback_empty EventName="&apos;OnFinished&apos;" />
+					</OnSuccess>
+				</FuseBox>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData Signature="chatOnPlayer" EventSet="endNotification">
+			<Variables>
+				<Variable name="aliasChat" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<FuseBox hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+						<OutputBreakpoints />
+						<Child>
+							<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<Function_turnToPlayer hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+								</Function_turnToPlayer>
+								<Function_speech_dialogInitiator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+								</Function_speech_dialogInitiator>
+							</Sequence>
+						</Child>
+						<OnSuccess>
+							<Callback_empty hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+							</Callback_empty>
+						</OnSuccess>
+					</FuseBox>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="schedulerWait" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Sequence>
+					<WaitAction />
+					<Wait duration="&apos;10s&apos;" timeType="GameTime" doFail="false" variation="" />
+				</Sequence>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</WaitAction>
+						<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</Wait>
+					</Sequence>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="vlasskaTransmise_runaway" is_function="0">
+		<Variables>
+			<Variable name="pathParams" type="pathFindingParams" values="" isPersistent="0" form="single" />
+		</Variables>
+		<Parameters>
+			<Variable name="data" type="_wuid" values="" isPersistent="0" form="single" requirementType="In" />
+		</Parameters>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Parallel successMode="All" failureMode="Any">
+					<FuseBox StatusPropagation="Child" OneCleanup="true" saveVersion="2">
+						<Child canSkip="1">
+							<Function_speech_dialogInitiator alias="&apos;vlasskaTransmise_volfovyZajeciUmysly&apos;" animationApproach="$enum:animationApproach.dontPlayDialogAnimations" context="" customParameters="" metarole="" preset="$enum:dialogPreset.chat" recipient="$__player" recipientMetaroles="" nodeLabel="83676463" />
+						</Child>
+						<OnSuccess canSkip="1">
+							<Callback_empty EventName="&apos;OnFinished&apos;" />
+						</OnSuccess>
+					</FuseBox>
+					<Sequence>
+						<Wait duration="&apos;3s&apos;" timeType="GameTime" doFail="false" variation="" />
+						<Expression expressions="$pathParams.useGeneratedNSO = true" />
+						<Move stopWithinDistance="0.200000" stopDistanceVariation="0.100000" rayCasteFlee="false" successDistance="1.000000" changeNPCState="true" fastForwardIncludesMove="false" destinationSpecification="$data" destinationSpecification2="" destinationSpecification3="" speed="Sprint" additionalParams="" pathFindingParams="$pathParams" staminaPolicy="" pathInfo="" />
+						<StanceElement smartObject="" stance="crouch" allowAny="false" enabled="true">
+							<Sequence>
+								<WaitAction />
+								<Wait duration="&apos;-1&apos;" timeType="GameTime" doFail="false" variation="" />
+							</Sequence>
+						</StanceElement>
+					</Sequence>
+				</Parallel>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData Signature="wuidData" EventSet="endNotification">
+			<Variables>
+				<Variable name="pathParams" comment="" />
+				<Variable name="data" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Parallel hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<FuseBox hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+							<OutputBreakpoints />
+							<Child>
+								<Function_speech_dialogInitiator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+								</Function_speech_dialogInitiator>
+							</Child>
+							<OnSuccess>
+								<Callback_empty hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+								</Callback_empty>
+							</OnSuccess>
+						</FuseBox>
+						<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+							<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+							</Wait>
+							<Expression hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+							</Expression>
+							<Move hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+							</Move>
+							<StanceElement hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+									<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+										<OutputBreakpoints />
+									</WaitAction>
+									<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+										<OutputBreakpoints />
+									</Wait>
+								</Sequence>
+							</StanceElement>
+						</Sequence>
+					</Parallel>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+</BehaviorTrees>

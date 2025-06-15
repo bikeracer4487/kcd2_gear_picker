@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="player_mistreats_npc_trigger">
+			<Ports>
+				<Port Name="mistreat_happened" Direction="Out" Type="trigger">
+					<DesignName StringName="player_mi_mistreat_happen_x9Tn" Text="Mistreat happened" />
+				</Port>
+				<Port Name="isactive" Direction="In" Type="bool">
+					<DesignName StringName="player_mi_isactive_g9gC" Text="IsActive" />
+				</Port>
+				<Port Name="npc" Direction="In" Type="wh::rpgmodule::I_Soul*">
+					<DesignName StringName="player_mi_npc_yij1" Text="NPC" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Function Name="compare19" PositionY="50" PositionX="510" TypeT="crime_crimeLevel" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="property" />
+					<Edge From="informationdifftrigger14.CrimeLevel" To="ValueA" />
+				</Function>
+				<Function Name="compare19_1" PositionY="230" PositionX="510" TypeT="crime_crimeLevel" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="violent" />
+					<Edge From="informationdifftrigger14.CrimeLevel" To="ValueA" />
+				</Function>
+				<IfFunction Name="ifor21" PositionY="130" PositionX="830" MethodName="math::boolean::Or" DeclaringType="math::boolean">
+					<Edge From="compare19.bool" To="A" />
+					<Edge From="compare19_1.bool" To="B" />
+					<Edge From="informationdifftrigger14.OnNotification" To="Exec">
+						<Vertex>vNPA8o2j</Vertex>
+					</Edge>
+				</IfFunction>
+				<InformationDiffTrigger Name="informationdifftrigger14" PositionY="-70" PositionX="90">
+					<Constant Name="IsCrimeFilter" Value="true" />
+					<Constant Name="StatusFilter" Value="Created" />
+					<Edge From="npc" To="WhoFilter" />
+					<Edge From="isactive" To="IsActive" />
+				</InformationDiffTrigger>
+				<Output Name="Output">
+					<Edge From="ifor21.True" To="mistreat_happened" />
+				</Output>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="vNPA8o2j" PositionY="20" PositionX="760" />
+			</EdgeVertices>
+			<Text StringName="player_mistreats_npc_trig_wLBp" Text="Player Mistreats NPC Trigger" />
+		</Module>
+	</Skald>
+</Database>

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Dialog Name="mikolaj__chat__upoutani_pozornosti">
+			<Ports>
+				<Port Name="spust_dialog" Direction="Out" Type="trigger">
+					<DesignName StringName="mikolaj___spust_dialog_R1EH" Text="Spusť dialog" />
+				</Port>
+			</Ports>
+			<Text StringName="mikolaj__chat__upoutani_p_FEDF" Text="Mikolaj - Chat - Upoutání pozornosti" />
+			<Dialogue Type="chat" TechnicalStatus="Enabled" Initiator="NonPlayer" ForceMood="noScope" GesturesSetDate="2025-04-05T19:08:35.0140594+02:00" GesturesSetResponseCount="5">
+				<SelectedSouls>
+					<SelectedSoul Role="HANDLIR_MIKOLAJ" Voice="M26" Type="Wave" Language="ENG" />
+					<SelectedSoul Role="HENRY" Voice="tomMcKay" Type="Wave" Language="ENG" />
+				</SelectedSouls>
+				<Decision Name="dec1" Alias="hadkaKonaru_mikolajChatUpoutaniPozornosti">
+					<Sequences>
+						<Sequence EntryCondition="!ThisSequenceUsed()" EndType="GoTo" GoToDecision="dec2" Visibility="Internal" Name="mikolajchatujepoprve">
+							<DesignName StringName="mikolaj___mikolajchatujep_eFTb" Text="mikolajChatujePoprve" />
+							<Elements>
+								<Response Role="HANDLIR_MIKOLAJ" ReferenceLength="2.84">
+									<Parenthetical>
+										<Text StringName="miko_handlir_m_pokrikuje_p5tV" Text="pokřikuje" />
+									</Parenthetical>
+									<Text StringName="miko_handlir_m_hej_chlape_ZZ43" Text="Hele, nechceš si zazávodit na koních?" />
+									<Commands>
+										<FacialMoodCommand FacialMood="happy3" />
+										<AnimationCommand Delay="1.1" FragmentId="ADLG_Gesture" Guid="05cb510e-ec58-4891-91be-f1006f98dbd9" Variant="0" />
+									</Commands>
+								</Response>
+							</Elements>
+						</Sequence>
+						<Sequence EntryCondition="SequenceUsed('mikolajchatujepoprve')" EndType="Decision" Name="seq1">
+							<DesignName StringName="mikolaj___seq1_QHVy" Text="seq1" />
+							<Elements>
+								<Response Role="HANDLIR_MIKOLAJ" ReferenceLength="4.16">
+									<Parenthetical>
+										<Text StringName="miko_handlir_m_pokrikuje__bH8i" Text="pokřikuje, láká" />
+									</Parenthetical>
+									<Text StringName="miko_handlir_m_porad_hled_GprW" Text="Pořád sháním dostihový závodníky. Co ty na to?" />
+									<Commands>
+										<AnimationCommand Delay="2.86" FragmentId="ADLG_Confusion" Guid="ec846c58-e818-1511-aa2f-ca15ac4430af" Variant="2" />
+										<AnimationCommand Delay="0.48" FragmentId="ADLG_Gesture" Guid="5a97cf50-508f-4386-9bee-b2aa7a27d34f" Variant="5" />
+									</Commands>
+								</Response>
+							</Elements>
+							<Decision Name="dec2">
+								<Sequences>
+									<Sequence EndType="EndDialogue" ChatPosition="First" Visibility="Public" Name="hracprichazizchatu">
+										<DesignName StringName="mikolaj___hracprichazizch_zfT0" Text="hracPrichaziZChatu" />
+										<UiPrompt StringName="ui_mikolaj___hracprichazi_HemP" Text="To mě zajímá." />
+										<Triggers>
+											<Port Name="spust_dialog" />
+										</Triggers>
+										<Elements>
+											<Response Role="HENRY" />
+										</Elements>
+									</Sequence>
+									<Sequence EndType="EndDialogue" ChatPosition="Second" Name="seq5">
+										<DesignName StringName="mikolaj___seq5_O69x" Text="seq5" />
+										<UiPrompt StringName="ui_mikolaj___seq5_HhiJ" Text="Dej pokoj." />
+										<Elements>
+											<Response Role="HENRY">
+												<Parenthetical>
+													<Text StringName="miko_henry_nevrle_RKXx" Text="nevrle" />
+												</Parenthetical>
+												<Text StringName="miko_henry_nevotravuj_7o83" Text="Nech mě bejt..." />
+											</Response>
+										</Elements>
+									</Sequence>
+									<Sequence EndType="Decision" ChatPosition="Refusal" Name="seq6">
+										<DesignName StringName="mikolaj___seq6_y7Ym" Text="seq6" />
+										<Elements>
+											<Response Role="HANDLIR_MIKOLAJ" />
+										</Elements>
+										<Decision Name="dec3" Autoselect="true">
+											<Sequences>
+												<Sequence EndType="EndDialogue" Name="seq7">
+													<DesignName StringName="mikolaj___seq7_Yi9p" Text="seq7" />
+													<Elements>
+														<Response Role="HANDLIR_MIKOLAJ" ReferenceLength="2.01">
+															<Parenthetical>
+																<Text StringName="miko_handlir_m_odfrkne_si_9Aen" Text="odfrkne si" />
+															</Parenthetical>
+															<Text StringName="miko_handlir_m_asi_nezna__WDsm" Text="No jo, tvoje smůla..." />
+															<Commands>
+																<FacialMoodCommand FacialMood="angry2" />
+																<AnimationCommand Delay="0" FragmentId="ADLG_Confusion" Guid="647e95a8-0c52-89a2-8ae6-bf53333de678" Variant="1" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq8">
+													<DesignName StringName="mikolaj___seq8_eyFH" Text="seq8" />
+													<Elements>
+														<Response Role="HANDLIR_MIKOLAJ" ReferenceLength="1.85">
+															<Parenthetical>
+																<Text StringName="miko_handlir_m_laka_Xp2n" Text="láká" />
+															</Parenthetical>
+															<Text StringName="miko_handlir_m_divnej_chl_B5Pl" Text="Točej se v tom hezký peníze!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand FragmentId="ADLG_Gesture" Guid="4d82253c-11d3-41fa-a962-601a5cc5775a" Variant="3" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+											</Sequences>
+										</Decision>
+									</Sequence>
+								</Sequences>
+							</Decision>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</Dialog>
+	</Skald>
+</Database>

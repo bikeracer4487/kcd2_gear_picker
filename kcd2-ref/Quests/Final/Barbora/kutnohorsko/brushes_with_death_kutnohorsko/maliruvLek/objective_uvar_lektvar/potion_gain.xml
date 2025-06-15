@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="potion_gain">
+			<Ports>
+				<Port Name="objective_state" Direction="In" Type="VareniLektvaru">
+					<DesignName StringName="potion_ga_objective_state_JdSn" Text="Objective state" />
+				</Port>
+				<Port Name="lektvar_ziskan" Direction="Out" Type="trigger">
+					<DesignName StringName="potion_ga_lektvar_ziskan_spWl" Text="Lektvar získán" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<ItemDescriptorTrigger Name="itemdescriptortrigger5" PositionY="-50" PositionX="120">
+					<Edge From="konstanty_maliruv_lek_1.item_category_lektvar" To="ItemDescriptor" />
+					<Edge From="maliruv_lek_player_inventory.hracuv_inventar" To="Inventory" />
+					<Edge From="switch1.Value1" To="IsActive" />
+				</ItemDescriptorTrigger>
+				<konstanty_maliruv_lek Name="konstanty_maliruv_lek_1" PositionY="260" PositionX="-370" Namespace="library_maliruv_lek" />
+				<maliruv_lek_player_inventory Name="maliruv_lek_player_inventory" PositionY="140" PositionX="-410" Namespace="library_maliruv_lek" />
+				<Output Name="Output">
+					<Edge From="itemdescriptortrigger5.OnAcquire" To="lektvar_ziskan" />
+				</Output>
+				<Switch Name="switch1" PositionY="-50" PositionX="-340" TypeT="VareniLektvaru" ValueTypes="bool" SwitchValues="Active Retry">
+					<Constant Name="ActiveValue1" Value="true" />
+					<Constant Name="RetryValue1" Value="true" />
+					<Constant Name="DefaultValue1" Value="false" />
+					<Edge From="objective_state" To="Switch" />
+				</Switch>
+			</Nodes>
+			<Text StringName="potion_gain_vtBd" Text="Hlídání získání lektvaru" />
+		</Module>
+	</Skald>
+</Database>

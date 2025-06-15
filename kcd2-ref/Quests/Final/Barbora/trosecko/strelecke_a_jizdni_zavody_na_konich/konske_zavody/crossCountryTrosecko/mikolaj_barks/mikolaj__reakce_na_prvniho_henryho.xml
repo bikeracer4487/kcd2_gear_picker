@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Dialog Name="mikolaj__reakce_na_prvniho_henryho">
+			<Text StringName="mikolaj__reakce_na_prvnih_qeK2" Text="Mikolaj - Reakce na prvního Henryho" />
+			<Elements>
+				<GameplayActionElement>
+					<Text StringName="mikolaj___hotovo_editstru_za8j" Text="Milokaj reaguje na hráče, který přijel do cíle první a proto zvítězil." />
+				</GameplayActionElement>
+				<GameplayActionElement>
+					<Text StringName="mikolaj___hotovo_editstru_UhCX" Text="Hotovo. Edit+Struktura hotovo." />
+				</GameplayActionElement>
+				<GameplayActionElement>
+					<Text StringName="mikolaj___vysvetleni_etni_phs2" Text="Vysvětlení etnicity hotovo." />
+				</GameplayActionElement>
+			</Elements>
+			<Dialogue Type="ingame monolog" TechnicalStatus="Enabled" Initiator="NonPlayer" ForceMood="noScope" ClashPriority="Flavor" GesturesSetDate="2025-04-05T18:29:37.1297422+02:00" GesturesSetResponseCount="8">
+				<SelectedSouls>
+					<SelectedSoul Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" Voice="M26" Type="Wave" Language="ENG" />
+				</SelectedSouls>
+				<Decision Name="dec1" Priority="SideQuestSubmission">
+					<Sequences>
+						<Sequence EndType="Decision" Name="seq1">
+							<DesignName StringName="mikolaj___seq1_48fm" Text="seq1" />
+							<Elements>
+								<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" />
+							</Elements>
+							<Decision Name="dec2" Priority="SideQuestSubmission" DesignName="pool Mikolja na vítězného Jindru" Autoselect="true">
+								<Sequences>
+									<Sequence EndType="GoTo" GoToDecision="dec3" Cooldown="5m" Name="seq2">
+										<DesignName StringName="mikolaj___seq2_8ChV" Text="seq2" />
+										<Elements>
+											<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="0.92">
+												<Parenthetical>
+													<Text StringName="miko_showrunne_romsky_nah_qvOX" Text="hlasitě" />
+												</Parenthetical>
+												<Text StringName="miko_showrunne_hohoo_laso_cRSp" Text="Cha!">
+													<Note StringName="miko_showrunne_hohoo_laso_cRSp_note" Text="" />
+												</Text>
+												<Commands>
+													<FacialMoodCommand FacialMood="happy3" />
+												</Commands>
+											</Response>
+										</Elements>
+									</Sequence>
+									<Sequence EndType="GoTo" GoToDecision="dec3" Cooldown="5m" Name="seq4">
+										<DesignName StringName="mikolaj___seq4_x9kE" Text="seq4" />
+										<Elements>
+											<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="0.99">
+												<Parenthetical>
+													<Text StringName="miko_showrunne_nadsene_he_9rwV" Text="hlasitě" />
+												</Parenthetical>
+												<Text StringName="miko_showrunne_ho_ho_o_kh_nLu4" Text="Ano!">
+													<Note StringName="miko_showrunne_ho_ho_o_kh_nLu4_note" Text="" />
+												</Text>
+												<Commands>
+													<FacialMoodCommand FacialMood="happy3" />
+												</Commands>
+											</Response>
+										</Elements>
+									</Sequence>
+									<Sequence EndType="Decision" Cooldown="5m" Name="seq5">
+										<DesignName StringName="mikolaj___seq5_MNsT" Text="seq5" />
+										<Elements>
+											<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="1.71">
+												<Parenthetical>
+													<Text StringName="miko_showrunne_romsky_nad_loQG" Text="hlasitě" />
+												</Parenthetical>
+												<Text StringName="miko_showrunne_eja_ho_ho__fSak" Text="Ej!">
+													<Note StringName="miko_showrunne_eja_ho_ho__fSak_note" Text="" />
+												</Text>
+												<Commands>
+													<FacialMoodCommand FacialMood="happy3" />
+												</Commands>
+											</Response>
+										</Elements>
+										<Decision Name="dec3" Autoselect="true">
+											<Sequences>
+												<Sequence EndType="EndDialogue" Name="seq6">
+													<DesignName StringName="mikolaj___seq6_Pt5s" Text="seq6" />
+													<Elements>
+														<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="1.67">
+															<Parenthetical>
+																<Text StringName="miko_showrunne_oslavuje_Eoe2" Text="oslavuje" />
+															</Parenthetical>
+															<Text StringName="miko_showrunne_jindrich_j_zBNR" Text="Jindřich je první!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand Delay="0" FragmentId="ADLG_Surprised_light" Guid="09d7e8e4-c10b-6c16-6c1f-7c44f70413f4" Variant="0" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq7">
+													<DesignName StringName="mikolaj___seq7_Az2N" Text="seq7" />
+													<Elements>
+														<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="2.87">
+															<Text StringName="miko_showrunne_a_prvni_v__ywTT" Text="A první v cíli je Jindra!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand Delay="0.32" FragmentId="ADLG_Emphasis" Guid="91e22295-9b66-b415-d97f-282ec34b5f59" Variant="1" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq8">
+													<DesignName StringName="mikolaj___seq8_Byjs" Text="seq8" />
+													<Elements>
+														<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="3.02">
+															<Parenthetical>
+																<Text StringName="miko_showrunne_nemuze_si__2kRN" Text="romsky, nemůže si vzpomenout na jméno" />
+															</Parenthetical>
+															<Text StringName="miko_showrunne_zvitezil_t_q59t" Text="Zvítězil ten... Jindra!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy2" />
+																<AnimationCommand Delay="1.3" FragmentId="ADLG_Surprised_light" Guid="09d7e8e4-c10b-6c16-6c1f-7c44f70413f4" Variant="0" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq9">
+													<DesignName StringName="mikolaj___seq9_1oS1" Text="seq9" />
+													<Elements>
+														<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="2.12">
+															<Parenthetical>
+																<Text StringName="miko_showrunne_romsky_bSYw" Text="romsky" />
+															</Parenthetical>
+															<Text StringName="miko_showrunne_vitezem_je_u05l" Text="Vítězem je Jindřich." />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand Delay="0" FragmentId="ADLG_Surprised_light" Guid="716cab22-8d72-dd05-6011-17d78a96f760" Variant="1" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq10">
+													<DesignName StringName="mikolaj___seq10_sgAx" Text="seq10" />
+													<Elements>
+														<Response Role="SHOWRUNNER_REAKCE_NA_PRVNIHO_HRACE_MIKOLAJ" ReferenceLength="2.13">
+															<Parenthetical>
+																<Text StringName="miko_showrunne_romsky_ZGTa" Text="romsky" />
+															</Parenthetical>
+															<Text StringName="miko_showrunne_jindrich_p_UpOM" Text="Jindřich projíždí první!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand Delay="0.02" FragmentId="ADLG_Leave" Guid="5b189cb2-d655-16b0-b0fe-ee554e6c96be" Variant="0" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+											</Sequences>
+										</Decision>
+									</Sequence>
+								</Sequences>
+							</Decision>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</Dialog>
+	</Skald>
+</Database>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="streaming_envira">
+			<Ports>
+				<Port Name="otevrit_dvere" Direction="In" Type="trigger">
+					<DesignName StringName="dvere_k_l_otevrit_dvere_NRS2" Text="Otevřít dveře" />
+				</Port>
+				<Port Name="past_ceka" Direction="In" Type="trigger">
+					<DesignName StringName="streaming_past_ceka_Au3M" Text="Past čeká" />
+				</Port>
+				<Port Name="quest_completed" Direction="In" Type="trigger">
+					<DesignName StringName="streaming_quest_completed_NmqC" Text="&lt;quest completed&gt;" />
+				</Port>
+				<Port Name="gateclosed" Direction="In" Type="trigger">
+					<DesignName StringName="streaming_gateclosed_3Gxq" Text="gateclosed" />
+				</Port>
+				<Port Name="load_lights" Direction="In" Type="trigger">
+					<DesignName StringName="streaming_load_lights_7xFX" Text="&lt;load lights&gt;" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<HasteTrigger Name="Doors_Closed" PositionY="-340" PositionX="-540" />
+				<HasteTrigger Name="Doors_Open" PositionY="-150" PositionX="-540" />
+				<HasteTrigger Name="gateClosed" PositionY="920" PositionX="-570" />
+				<HasteTrigger Name="gateOpen" PositionY="660" PositionX="-580" />
+				<MakeArray Name="makearray17" PositionY="960" PositionX="-210" TypeT="wh::entitymodule::LayerProfiles">
+					<Asset Name="A" Alias="gateOpened" />
+					<Asset Name="B" Alias="courtTrap_navPaths" />
+				</MakeArray>
+				<Layer Name="profile11" PositionY="1160" PositionX="120">
+					<Asset Name="Profiles" Alias="light_profile" />
+					<Edge From="state10.State" To="IsActive" />
+				</Layer>
+				<Layer Name="profile12" PositionY="1350" PositionX="130">
+					<Asset Name="Profiles" Alias="light_profile" />
+					<Edge From="state10.State" To="IsActive" />
+				</Layer>
+				<Layer Name="profile2" PositionY="-88" PositionX="140">
+					<Asset Name="Profiles" Alias="DoorClosed" />
+					<Edge From="state1.Closed" To="IsActive" />
+				</Layer>
+				<Layer Name="profile3" PositionY="110" PositionX="140">
+					<Asset Name="Profiles" Alias="DoorOpen" />
+					<Edge From="state1.Open" To="IsActive" />
+				</Layer>
+				<Layer Name="profile6" PositionY="290" PositionX="180">
+					<Asset Name="Profiles" Alias="trapOpened" />
+					<Edge From="state5.Streamed" To="IsActive" />
+				</Layer>
+				<Layer Name="profile6_1" PositionY="460" PositionX="180">
+					<Asset Name="Profiles" Alias="trapClosed" />
+					<Edge From="state5.Unstreamed" To="IsActive" />
+				</Layer>
+				<Layer Name="profile8" PositionY="680" PositionX="130">
+					<Edge From="state7.Opened" To="IsActive" />
+					<Edge From="makearray17.Array" To="Profiles" />
+				</Layer>
+				<Layer Name="profile9" PositionY="830" PositionX="130">
+					<Asset Name="Profiles" Alias="gateClosed" />
+					<Edge From="state7.Closed" To="IsActive" />
+				</Layer>
+				<SchedulerLinkActivation Name="schedule18" PositionY="50" PositionX="460">
+					<Constant Name="LinkTag" Value="m33_doorOpen" />
+					<Edge From="state1.Open" To="IsActive">
+						<Vertex>Dr70ghpt</Vertex>
+						<Vertex>XAkneQ6R</Vertex>
+					</Edge>
+				</SchedulerLinkActivation>
+				<State Name="state1" PositionY="-110" PositionX="-130" TypeT="DvereKLichtovi">
+					<Edge From="otevrit_dvere" To="SetOpen" />
+					<Edge From="Doors_Closed.OnTrigger" To="SetClosed" />
+					<Edge From="Doors_Open.OnTrigger" To="SetOpen" />
+				</State>
+				<State Name="state10" PositionY="1180" PositionX="-200" TypeT="bool">
+					<Edge From="load_lights" To="SetTrue">
+						<Vertex>L9Bpbct9</Vertex>
+					</Edge>
+					<Edge From="streamDialogLights.OnTrigger" To="SetTrue" />
+					<Edge From="unstreamDialogLights.OnTrigger" To="SetFalse" />
+					<Edge From="quest_completed" To="SetFalse">
+						<Vertex>w8NccdHH</Vertex>
+					</Edge>
+				</State>
+				<State Name="state5" PositionY="260" PositionX="-160" TypeT="ZebrikKPasti">
+					<Edge From="past_ceka" To="SetUnstreamed" />
+					<Edge From="quest_completed" To="SetStreamed" />
+					<Edge From="zebrik_stream.OnTrigger" To="SetStreamed" />
+					<Edge From="zebrik_unstream.OnTrigger" To="SetUnstreamed" />
+				</State>
+				<State Name="state7" PositionY="680" PositionX="-190" TypeT="BranaKPasti">
+					<Edge From="gateClosed.OnTrigger" To="SetClosed" />
+					<Edge From="gateOpen.OnTrigger" To="SetOpened" />
+					<Edge From="quest_completed" To="SetOpened" />
+					<Edge From="gateclosed" To="SetClosed" />
+				</State>
+				<HasteTrigger Name="streamDialogLights" PositionY="1390" PositionX="-740" />
+				<HasteTrigger Name="unstreamDialogLights" PositionY="1580" PositionX="-740" />
+				<HasteTrigger Name="zebrik_stream" PositionY="140" PositionX="-610" />
+				<HasteTrigger Name="zebrik_unstream" PositionY="410" PositionX="-620" />
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="Dr70ghpt" PositionY="94" PositionX="143" />
+				<EdgeVertex Name="L9Bpbct9" PositionY="1340" PositionX="-660" />
+				<EdgeVertex Name="w8NccdHH" PositionY="1370" PositionX="-720" />
+				<EdgeVertex Name="XAkneQ6R" PositionY="95" PositionX="386" />
+			</EdgeVertices>
+			<Types>
+				<Type TypeName="DvereKLichtovi">
+					<StateTypeEnumeration Name="Closed" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Open" ObjectiveValueType="None" />
+				</Type>
+				<Type TypeName="ZebrikKPasti">
+					<StateTypeEnumeration Name="Streamed" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Unstreamed" ObjectiveValueType="None" />
+				</Type>
+				<Type TypeName="BranaKPasti">
+					<StateTypeEnumeration Name="Opened" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Closed" ObjectiveValueType="None" />
+				</Type>
+			</Types>
+			<Notes>
+				<Note Name="note16" PositionY="680" PositionX="340">
+					<Text StringName="streaming_note16_zvQ8" Text="@KCD2-499667&#xD;&#xA;Paths should be unstreamed during closed gates situation.&#xD;&#xA;-Damian" />
+				</Note>
+			</Notes>
+			<Text StringName="dvere_k_lichtovi_goG4" Text="Streaming envira" />
+		</Module>
+	</Skald>
+</Database>

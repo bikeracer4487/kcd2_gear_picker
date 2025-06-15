@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="questdeathfail">
+			<Ports>
+				<Port Name="active" Direction="In" Type="bool">
+					<DesignName StringName="questdeat_active_cO6F" Text="active" />
+				</Port>
+				<AssetPort Name="npcs" Direction="In" Type="wh::rpgmodule::Souls" Alias="importantPersons">
+					<DesignName StringName="questdeat_npcs_Cgm2" Text="npcs" />
+				</AssetPort>
+				<Port Name="fail" Direction="Out" Type="trigger">
+					<DesignName StringName="questdeat_fail_CUV7" Text="fail" />
+				</Port>
+				<Port Name="crime" Direction="Out" Type="trigger">
+					<DesignName StringName="questdeat_crime_SeQf" Text="crime" />
+				</Port>
+				<AssetPort Name="germen" Direction="In" Type="wh::rpgmodule::Souls" Alias="menhartAndArne">
+					<DesignName StringName="questdeat_germen_qQJj" Text="germen" />
+				</AssetPort>
+				<Port Name="lable" Direction="Out" Type="crime_crimeLevel">
+					<DesignName StringName="questdeat_lable_bSp8" Text="crimeLevel" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<crimealarm Name="crimealarm" PositionY="70" PositionX="-120" Namespace="utils.crime">
+					<Constant Name="timerduration" Value="1s" />
+					<Constant Name="timertype" Value="GameTime" />
+					<Constant Name="shouldincludecorpseascrime" Value="false" />
+					<Constant Name="questconditionbool" Value="false" />
+					<Edge From="active" To="isactive" />
+					<Edge From="germen" To="souls" />
+				</crimealarm>
+				<SoulDeathTrigger Name="deathtrigger1" PositionY="-150" PositionX="-30">
+					<Edge From="active" To="IsActive" />
+					<Edge From="npcs" To="Souls" />
+				</SoulDeathTrigger>
+				<InformationDiffTrigger Name="informationdifftrigger13" PositionY="560" PositionX="-1180">
+					<Asset Name="WhoFilter" Alias="menhart" />
+					<Constant Name="CrimeLevelFilter" Value="murder" />
+					<Edge From="active" To="IsActive" />
+				</InformationDiffTrigger>
+				<Output Name="Output">
+					<Edge From="deathtrigger1.OnDeath" To="fail" />
+					<Edge From="informationdifftrigger13.CrimeLevel" To="lable">
+						<Vertex>xobHqDkG</Vertex>
+					</Edge>
+					<Edge From="informationdifftrigger13.OnNotification" To="crime">
+						<Vertex>uf9hqhIc</Vertex>
+					</Edge>
+				</Output>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="uf9hqhIc" PositionY="653" PositionX="110" />
+				<EdgeVertex Name="xobHqDkG" PositionY="856" PositionX="21" />
+			</EdgeVertices>
+			<Text StringName="questdeathfail_5xIo" Text="QuestDeathFail" />
+		</Module>
+	</Skald>
+</Database>

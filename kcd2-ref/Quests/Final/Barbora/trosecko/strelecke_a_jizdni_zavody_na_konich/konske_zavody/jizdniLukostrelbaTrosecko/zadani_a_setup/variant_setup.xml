@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="variant_setup">
+			<Ports>
+				<Port Name="track_1" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_1_aq3b" Text="Track_A_1" />
+				</Port>
+				<Port Name="tracknumber" Direction="Out" Type="int">
+					<DesignName StringName="setups_tracknumber_qNE6" Text="Track index" />
+				</Port>
+				<Port Name="track_2" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_2_Q0YS" Text="Track_B_1" />
+				</Port>
+				<Port Name="track_3" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_3_Tw17" Text="Track_C_1" />
+				</Port>
+				<Port Name="track_4" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_4_nc9l" Text="Track_A_2" />
+				</Port>
+				<Port Name="track_5" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_5_X6Oe" Text="Track_B_2" />
+				</Port>
+				<Port Name="track_6" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_6_i91C" Text="Track_C_2" />
+				</Port>
+				<Port Name="track_a_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_a_3_LvwT" Text="Track_A_3" />
+				</Port>
+				<Port Name="track_b_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_b_3_88nf" Text="Track_B_3" />
+				</Port>
+				<Port Name="track_c_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_c_3_gRuF" Text="Track_C_3" />
+				</Port>
+				<Port Name="track_7" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_7_smXv" Text="Track_D_1" />
+				</Port>
+				<Port Name="track_8" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_8_1KRu" Text="Track_D_2" />
+				</Port>
+				<Port Name="track_9" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_9_R1ci" Text="Track_E_1" />
+				</Port>
+				<Port Name="track_10" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_10_Vp2Z" Text="Track_E_2" />
+				</Port>
+				<Port Name="track_f_1" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_f_1_gL6S" Text="Track_F_1" />
+				</Port>
+				<Port Name="track_f_2" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_f_2_uuWZ" Text="Track_F_2" />
+				</Port>
+				<Port Name="track_g_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_g_3_ngVa" Text="Track_G_3" />
+				</Port>
+				<Port Name="track_d_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_d_3_ipQt" Text="Track_D_3" />
+				</Port>
+				<Port Name="track_e_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_e_3_mXRh" Text="Track_E_3" />
+				</Port>
+				<Port Name="track_f_3" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_track_f_3_peOI" Text="Track_F_3" />
+				</Port>
+				<Port Name="set_default_track" Direction="In" Type="trigger">
+					<DesignName StringName="variant_s_set_default_tra_GEkZ" Text="Set default track" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Output Name="Output">
+					<Edge From="SelectedTrackNumber.State" To="tracknumber" />
+				</Output>
+				<Select Name="select41" PositionY="-620" PositionX="-890" InputPortGroups="20" ValueTypes="int">
+					<Constant Name="AValue1" Value="1" />
+					<Constant Name="BValue1" Value="2" />
+					<Constant Name="CValue1" Value="3" />
+					<Constant Name="DValue1" Value="4" />
+					<Constant Name="EValue1" Value="5" />
+					<Constant Name="FValue1" Value="6" />
+					<Constant Name="GValue1" Value="7" />
+					<Constant Name="HValue1" Value="8" />
+					<Constant Name="IValue1" Value="9" />
+					<Constant Name="JValue1" Value="10" />
+					<Constant Name="KValue1" Value="11" />
+					<Constant Name="LValue1" Value="12" />
+					<Constant Name="MValue1" Value="13" />
+					<Constant Name="NValue1" Value="0" />
+					<Constant Name="OValue1" Value="14" />
+					<Constant Name="PValue1" Value="15" />
+					<Constant Name="QValue1" Value="16" />
+					<Constant Name="RValue1" Value="17" />
+					<Constant Name="SValue1" Value="18" />
+					<Constant Name="TValue1" Value="19" />
+					<Edge From="track_1" To="SelectA" />
+					<Edge From="track_2" To="SelectB" />
+					<Edge From="track_3" To="SelectC" />
+					<Edge From="track_4" To="SelectD" />
+					<Edge From="track_5" To="SelectE" />
+					<Edge From="track_6" To="SelectF" />
+					<Edge From="track_7" To="SelectG" />
+					<Edge From="track_8" To="SelectH" />
+					<Edge From="track_9" To="SelectI" />
+					<Edge From="track_10" To="SelectJ" />
+					<Edge From="track_a_3" To="SelectK" />
+					<Edge From="track_b_3" To="SelectL" />
+					<Edge From="track_c_3" To="SelectM" />
+					<Edge From="set_default_track" To="SelectN" />
+					<Edge From="track_f_1" To="SelectO" />
+					<Edge From="track_f_2" To="SelectP" />
+					<Edge From="track_g_3" To="SelectQ" />
+					<Edge From="track_d_3" To="SelectR" />
+					<Edge From="track_e_3" To="SelectS" />
+					<Edge From="track_f_3" To="SelectT" />
+				</Select>
+				<State Name="SelectedTrackNumber" PositionY="-640" PositionX="-580" TypeT="int">
+					<Constant Name="DefaultValue" Value="1" />
+					<Edge From="select41.Value1" To="Value" />
+					<Edge From="select41.OnExec" To="Exec" />
+				</State>
+			</Nodes>
+			<Text StringName="setups_o7DC" Text="Variant setup" />
+		</Module>
+	</Skald>
+</Database>

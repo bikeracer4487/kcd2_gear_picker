@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="vokrak" HasteNamespace="true" Purpose="CharacterControl">
+			<Ports>
+				<Port Name="zacatek_questu_m34_kralovske_stribro" Direction="In" Type="trigger">
+					<DesignName StringName="vokrak_zacatek_questu_m34_anry" Text="začátek questu M34 Královské stříbro" />
+				</Port>
+				<Port Name="zacina_patrani_po_vokrakovi" Direction="In" Type="trigger">
+					<DesignName StringName="vokrak_zacina_patrani_v_h_K6kp" Text="začíná pátrání po Vokřákovi" />
+				</Port>
+				<Port Name="vokrak_migruje_do_kutne_hory" Direction="In" Type="trigger">
+					<DesignName StringName="vokrak_vokrak_migruje_do__xw4K" Text="Vokřák migruje do Kutné hory" />
+				</Port>
+				<Port Name="vokrak_se_prestehoval_do_kh" Direction="Out" Type="bool">
+					<DesignName StringName="vokrak_vokrak_se_presteho_Z0Xa" Text="Vokřák se přestěhoval do KH" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="vokrak/skillteacher.xml" />
+			</Definitions>
+			<Nodes>
+				<SoulDeathTrigger Name="deathtrigger51" PositionY="220" PositionX="1510">
+					<Edge From="makearray46.Array" To="Souls" />
+					<Edge From="state52.Updated" To="IsActive">
+						<Vertex>AQ7d2nfL</Vertex>
+						<Vertex>gjBF7t3b</Vertex>
+					</Edge>
+				</SoulDeathTrigger>
+				<ElementAt Name="elementat53" PositionY="410" PositionX="1200" TypeT="wh::rpgmodule::Souls">
+					<Edge From="tointuint54.int" To="Index" />
+					<Edge From="makearray38.Array" To="Array" />
+				</ElementAt>
+				<EnableBehavior Name="enablebehaviormoveonhorseendnotification36" PositionY="240" PositionX="2070" Signature="moveOnHorse" EventSet="endNotification">
+					<Constant Name="Behavior" Value="moveOnHorse_stables" />
+					<Asset Name="SmartEntity" Alias="qSO" />
+					<Asset Name="NPC" Alias="vokrak" />
+					<Constant Name="ForceKick" Value="true" />
+					<Asset Name="moveData" Alias="vokraksKHpoint" />
+					<Constant Name="speed" Value="sprint" />
+					<Edge From="elementat53.Value" To="horse" />
+					<Edge From="state52.Updated" To="IsActive" />
+				</EnableBehavior>
+				<ForEach Name="foreach37" PositionY="250" PositionX="420" TypeT="wh::rpgmodule::Souls">
+					<Edge From="ifdeathcheck47_1.False" To="Begin">
+						<Vertex>dXJeDvus</Vertex>
+						<Vertex>LuTvTK30</Vertex>
+					</Edge>
+					<Edge From="ifcompare57.True" To="Break">
+						<Vertex>SRYNPYGh</Vertex>
+						<Vertex>TJRWBkgb</Vertex>
+						<Vertex>WrwhIuTg</Vertex>
+					</Edge>
+					<Edge From="makearray38.Array" To="Array" />
+					<Edge From="ifcompare57.False" To="Break">
+						<Vertex>SRYNPYGh</Vertex>
+						<Vertex>TJRWBkgb</Vertex>
+						<Vertex>WrwhIuTg</Vertex>
+					</Edge>
+				</ForEach>
+				<MemberFunction Name="getprimarycompanion92" PositionY="690" PositionX="1190" MethodName="GetPrimaryCompanion" DeclaringType="wh::rpgmodule::CompanionManager">
+					<Constant Name="Type" Value="Horse" />
+					<Edge From="isoulproperties94.CompanionManager" To="Manager" />
+				</MemberFunction>
+				<IfFunction Name="ifcompare57" PositionY="450" PositionX="1500" TypeT="wh::rpgmodule::I_Soul*" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="NotEquals" />
+					<Edge From="getprimarycompanion92.Companion" To="ValueA" />
+					<Edge From="ifdeathcheck47.False" To="Exec" />
+					<Edge From="foreach37.Value" To="ValueB" />
+				</IfFunction>
+				<IfFunction Name="ifdeathcheck47" PositionY="220" PositionX="1200" MethodName="wh::rpgmodule::DeathCheck" DeclaringType="wh::rpgmodule">
+					<Edge From="foreach37.OnValue" To="Exec" />
+					<Edge From="makearray46_1.Array" To="Souls" />
+				</IfFunction>
+				<IfFunction Name="ifdeathcheck47_1" PositionY="510" PositionX="690" MethodName="wh::rpgmodule::DeathCheck" DeclaringType="wh::rpgmodule">
+					<Edge From="vokrakRunsToKH.OnActive" To="Exec" />
+					<Edge From="makearray38.Array" To="Souls" />
+				</IfFunction>
+				<ObjectProperties Name="isoulproperties94" PositionY="960" PositionX="670" DeclaringType="wh::rpgmodule::I_Soul">
+					<Asset Name="I_Soul" Alias="player" />
+				</ObjectProperties>
+				<MakeArray Name="makearray38" PositionY="520" PositionX="420" TypeT="wh::rpgmodule::Souls">
+					<Asset Name="A" Alias="vokraksHorse1" />
+					<Asset Name="B" Alias="vokraksHorse2" />
+					<Asset Name="C" Alias="vokraksHorse3" />
+					<Asset Name="D" Alias="vokraksHorse4" />
+					<Asset Name="E" Alias="vokraksHorse5" />
+					<Asset Name="F" Alias="vokraksHorse6" />
+				</MakeArray>
+				<MakeArray Name="makearray46" PositionY="560" PositionX="1200" TypeT="wh::rpgmodule::Souls">
+					<Edge From="elementat53.Value" To="A" />
+				</MakeArray>
+				<MakeArray Name="makearray46_1" PositionY="350" PositionX="950" TypeT="wh::rpgmodule::Souls">
+					<Edge From="foreach37.Value" To="A" />
+				</MakeArray>
+				<Migration_Simple_StreamingSafeguard Name="Migration_Simple_StreamingSafeguard" PositionY="-190" PositionX="430" Namespace="utils.general">
+					<Asset Name="profiles" Alias="streamVokrak" />
+					<Constant Name="linktag" Value="vokrak_inKutnaHora" />
+					<Asset Name="souls" Alias="vokrak" />
+					<Edge From="vokrakMigration.InKutnaHora" To="isactive" />
+					<Edge From="vokrakMigration.OnInKutnaHora" To="forgetcrime" />
+				</Migration_Simple_StreamingSafeguard>
+				<Move Name="Move" PositionY="240" PositionX="2560" Namespace="utils.move">
+					<Asset Name="soul" Alias="vokrak" />
+					<Asset Name="smartentity" Alias="qSO" />
+					<Asset Name="destination" Alias="vokraksKHpoint" />
+					<Constant Name="speed" Value="Sprint" />
+					<Constant Name="stealth" Value="false" />
+					<Constant Name="successdistance" Value="4" />
+					<Edge From="state52.Active" To="isactive" />
+				</Move>
+				<Function Name="or87_1" PositionY="-410" PositionX="470" MethodName="math::boolean::Or" DeclaringType="math::boolean">
+					<Edge From="vokrakStreaming.StreamedInitial" To="A" />
+					<Edge From="vokrakStreaming.Streamed" To="B" />
+				</Function>
+				<Output Name="Output">
+					<Edge From="vokrakMigration.InKutnaHora" To="vokrak_se_prestehoval_do_kh" />
+				</Output>
+				<Layer Name="profile85_1" PositionY="-410" PositionX="720">
+					<Asset Name="Profiles" Alias="streamVokrak" />
+					<Edge From="or87_1.bool" To="IsActive" />
+				</Layer>
+				<skillteacher Name="skillteacher" PositionY="90" PositionX="430">
+					<Edge From="vokrakRunsToKH.OnDone" To="enable" />
+					<Edge From="skillteacher_vokrak_enable.OnTrigger" To="enable">
+						<Vertex>5oDRAW27</Vertex>
+					</Edge>
+				</skillteacher>
+				<HasteTrigger Name="skillteacher_vokrak_enable" PositionY="690" PositionX="60" />
+				<State Name="state52" PositionY="220" PositionX="1770" TypeT="ProgressUpdated">
+					<Edge From="enablebehaviormoveonhorseendnotification36.OnFinished" To="SetDone">
+						<Vertex>X16JXqgt</Vertex>
+						<Vertex>SDBnugBk</Vertex>
+					</Edge>
+					<Edge From="Move.onfinished" To="SetDone">
+						<Vertex>QWnHMUrM</Vertex>
+						<Vertex>X16JXqgt</Vertex>
+						<Vertex>SDBnugBk</Vertex>
+					</Edge>
+					<Edge From="ifdeathcheck47_1.True" To="SetActive" />
+					<Edge From="deathtrigger51.OnDeath" To="SetActive" />
+					<Edge From="ifcompare57.True" To="SetUpdated" />
+					<Edge From="ifcompare57.False" To="SetActive" />
+				</State>
+				<State Name="state55" PositionY="700" PositionX="690" TypeT="uint">
+					<Edge From="foreach37.Index" To="Value" />
+					<Edge From="ifcompare57.True" To="Exec">
+						<Vertex>SRYNPYGh</Vertex>
+						<Vertex>TJRWBkgb</Vertex>
+					</Edge>
+					<Edge From="ifcompare57.False" To="Exec">
+						<Vertex>SRYNPYGh</Vertex>
+						<Vertex>TJRWBkgb</Vertex>
+					</Edge>
+				</State>
+				<Function Name="tointuint54" PositionY="480" PositionX="950" MethodName="math::conversion::ToInt(uint)" DeclaringType="math::conversion">
+					<Edge From="state55.State" To="uint" />
+				</Function>
+				<State Name="vokrakMigration" PositionY="-110" PositionX="60" RequiredForOutput="kutnohorsko" TypeT="vokrakMigration">
+					<Edge From="vokrak_migruje_do_kutne_hory" To="SetInKutnaHora" />
+					<Edge From="skillteacher_vokrak_enable.OnTrigger" To="SetInKutnaHora">
+						<Vertex>5oDRAW27</Vertex>
+						<Vertex>aWo0I05L</Vertex>
+					</Edge>
+				</State>
+				<State Name="vokrakRunsToKH" PositionY="310" PositionX="60" TypeT="Progress">
+					<Edge From="vokrak_migruje_do_kutne_hory" To="SetActive" />
+					<Edge From="enablebehaviormoveonhorseendnotification36.OnFinished" To="SetDone">
+						<Vertex>X16JXqgt</Vertex>
+						<Vertex>SDBnugBk</Vertex>
+						<Vertex>QP6owjE2</Vertex>
+					</Edge>
+					<Edge From="Move.onfinished" To="SetDone">
+						<Vertex>QWnHMUrM</Vertex>
+						<Vertex>X16JXqgt</Vertex>
+						<Vertex>SDBnugBk</Vertex>
+						<Vertex>QP6owjE2</Vertex>
+					</Edge>
+				</State>
+				<State Name="vokrakStreaming" PositionY="-540" PositionX="60" TypeT="vokrakStreaming">
+					<Edge From="zacina_patrani_po_vokrakovi" To="SetStreamed" />
+					<Edge From="zacatek_questu_m34_kralovske_stribro" To="SetUnstreamed" />
+				</State>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="5oDRAW27" PositionY="220" PositionX="350" />
+				<EdgeVertex Name="AQ7d2nfL" PositionY="190" PositionX="2060" />
+				<EdgeVertex Name="aWo0I05L" PositionY="220" PositionX="80" />
+				<EdgeVertex Name="dXJeDvus" PositionY="480" PositionX="870" />
+				<EdgeVertex Name="gjBF7t3b" PositionY="190" PositionX="1510" />
+				<EdgeVertex Name="LuTvTK30" PositionY="480" PositionX="420" />
+				<EdgeVertex Name="QP6owjE2" PositionY="930" PositionX="80" />
+				<EdgeVertex Name="QWnHMUrM" PositionY="940" PositionX="2670" />
+				<EdgeVertex Name="SDBnugBk" PositionY="940" PositionX="1810" />
+				<EdgeVertex Name="SRYNPYGh" PositionY="920" PositionX="1680" />
+				<EdgeVertex Name="TJRWBkgb" PositionY="910" PositionX="670" />
+				<EdgeVertex Name="WrwhIuTg" PositionY="910" PositionX="450" />
+				<EdgeVertex Name="X16JXqgt" PositionY="940" PositionX="2400" />
+			</EdgeVertices>
+			<Types>
+				<Type TypeName="vokrakMigration">
+					<StateTypeEnumeration Name="InGrunta" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="InKutnaHora" ObjectiveValueType="None" />
+				</Type>
+				<Type TypeName="vokrakStreaming">
+					<StateTypeEnumeration Name="StreamedInitial" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Unstreamed" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Streamed" ObjectiveValueType="None" />
+				</Type>
+			</Types>
+			<Assets>
+				<SoulAsset Name="vokrak" SharedSoulGuids="c2be2067-23b8-493c-b3d6-ff2870e49f08" />
+				<ProfileAsset Name="streamVokrak" AssetProfiles="kralovskeStribro_vokrak" />
+				<SmartObjectAsset Name="qSO" />
+				<TagPointAsset Name="vokraksKHpoint" />
+				<SoulAsset Name="vokraksHorse1" SharedSoulGuids="fcf0601f-2305-47ec-9ddd-97252cc28449" />
+				<SoulAsset Name="vokraksHorse2" SharedSoulGuids="66bbccb7-4f45-455a-8b47-b946b6bc1b72" />
+				<SoulAsset Name="vokraksHorse3" SharedSoulGuids="aafd240c-3d57-436d-a4f3-7a4afbe83319" />
+				<SoulAsset Name="vokraksHorse6" SharedSoulGuids="7c19f542-39d8-4d6d-ac1c-e7d948b5caa2" />
+				<SoulAsset Name="vokraksHorse5" SharedSoulGuids="22fa6644-17cc-4e52-9e94-39eb47c5e712" />
+				<SoulAsset Name="vokraksHorse4" SharedSoulGuids="fdb3bd79-a95c-471d-9e32-0f589bdc3638" />
+			</Assets>
+			<Text StringName="vokrak_uf4B" Text="Vokřák" />
+		</Module>
+	</Skald>
+</Database>

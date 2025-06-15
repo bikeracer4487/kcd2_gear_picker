@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Gameplay Name="barnabas_korenar">
+			<Ports>
+				<Port Name="isworldtimepaused" Direction="In" Type="bool">
+					<DesignName StringName="barnabas__isworldtimepaus_1DyW" Text="IsWorldTimePaused" />
+				</Port>
+				<Port Name="jindra_by_zemrel_pri_uceni" Direction="In" Type="bool">
+					<DesignName StringName="barnabas__jindra_by_zemre_f7A1" Text="Jindra by zemřel při učení" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="barnabas_korenar/special_barnabas_korenar.xml" />
+			</Definitions>
+			<Nodes>
+				<getlessoninfo Name="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1" PositionY="370" PositionX="330" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="alchemy" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="soul">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex2</Vertex>
+						<Vertex>vertex3</Vertex>
+					</Edge>
+				</getlessoninfo>
+				<getlessoninfo Name="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1_1" PositionY="550" PositionX="330" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="survival" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="soul">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex2</Vertex>
+						<Vertex>vertex3</Vertex>
+					</Edge>
+				</getlessoninfo>
+				<getlessoninfo Name="getlessoninfo_6_1_1_1_1_1_2_1_3_1" PositionY="740" PositionX="330" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="weapon_unarmed" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="soul">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex2</Vertex>
+						<Vertex>vertex3</Vertex>
+					</Edge>
+				</getlessoninfo>
+				<isitnight Name="isitnight" PositionY="-408" PositionX="361" Namespace="utils.time" />
+				<ObjectProperties Name="isoulproperties14_1_1_2_1_1" PositionY="1270" PositionX="1470" DeclaringType="wh::rpgmodule::I_Soul">
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="I_Soul">
+						<Vertex>vertex7</Vertex>
+					</Edge>
+				</ObjectProperties>
+				<learningskiptimemanager Name="learningskiptimemanager" PositionY="330" PositionX="1550" Namespace="utils.skillteachers">
+					<Asset Name="csholder" Alias="skillTeachers_skipTime" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="teacher" />
+					<Edge From="triggersequence1.A" To="runlearningcs">
+						<Vertex>J30pumfX</Vertex>
+					</Edge>
+					<Edge From="triggersequence1_1.A" To="runlearningcs">
+						<Vertex>J30pumfX</Vertex>
+					</Edge>
+					<Edge From="triggersequence1_1_1.A" To="runlearningcs">
+						<Vertex>J30pumfX</Vertex>
+					</Edge>
+				</learningskiptimemanager>
+				<learnskillfromteacher Name="learnskillfromteacher_3_2_1_1_2_1_1" PositionY="1020" PositionX="1580" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="survival" />
+					<Constant Name="paymentenabled" Value="true" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="teacher">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex9</Vertex>
+					</Edge>
+					<Edge From="triggersequence1_1_1.B" To="exec" />
+				</learnskillfromteacher>
+				<learnskillfromteacher Name="learnskillfromteacher_3_2_1_1_2_2" PositionY="810" PositionX="1570" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="alchemy" />
+					<Constant Name="paymentenabled" Value="true" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="teacher">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex9</Vertex>
+					</Edge>
+					<Edge From="triggersequence1_1.B" To="exec" />
+				</learnskillfromteacher>
+				<learnskillfromteacher Name="learnskillfromteacher_3_2_1_1_2_2_1" PositionY="600" PositionX="1580" Namespace="utils.skillteachers">
+					<Constant Name="skill" Value="weapon_unarmed" />
+					<Constant Name="paymentenabled" Value="true" />
+					<Edge From="special_barnabas_korenar.KORENAR_BARNABAS_BUKOVINA_SKILLTEACHER" To="teacher">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex9</Vertex>
+					</Edge>
+					<Edge From="triggersequence1.B" To="exec" />
+				</learnskillfromteacher>
+				<special_barnabas_korenar Name="special_barnabas_korenar" PositionY="360" PositionX="780">
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1.lessonlevel" To="level_alchemy" />
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1_1.lessonlevel" To="level_survival" />
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_3_1.lessonlevel" To="level_weapon_unarmed" />
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1_1.price" To="Payment_survival_payment" />
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_2_1_1.price" To="Payment_alchemy_payment" />
+					<Edge From="getlessoninfo_6_1_1_1_1_1_2_1_3_1.price" To="Payment_unarmed_payment" />
+					<Edge From="isworldtimepaused" To="je_zastaveny_cas">
+						<Vertex>vertex12</Vertex>
+					</Edge>
+					<Edge From="jindra_by_zemrel_pri_uceni" To="jindra_by_zemrel_pri_uceni">
+						<Vertex>vertex13</Vertex>
+					</Edge>
+					<Edge From="isitnight.itisnight" To="je_noc" />
+				</special_barnabas_korenar>
+				<TriggerSequence Name="triggersequence1" PositionY="420" PositionX="1190">
+					<Edge From="special_barnabas_korenar.learned_unarmed" To="Exec" />
+				</TriggerSequence>
+				<TriggerSequence Name="triggersequence1_1" PositionY="660" PositionX="1190">
+					<Edge From="special_barnabas_korenar.learned_alchemy" To="Exec" />
+				</TriggerSequence>
+				<TriggerSequence Name="triggersequence1_1_1" PositionY="860" PositionX="1230">
+					<Edge From="special_barnabas_korenar.learned_survival" To="Exec">
+						<Vertex>vertex10</Vertex>
+					</Edge>
+				</TriggerSequence>
+				<MemberFunction Name="visitskillteacher30_1_1_1_1" PositionY="1500" PositionX="1770" MethodName="VisitSkillTeacher" DeclaringType="wh::rpgmodule::SkillTeacherSoulComponent">
+					<Constant Name="Visited" Value="true" />
+					<Edge From="isoulproperties14_1_1_2_1_1.SkillTeacher" To="SkillTeacher" />
+					<Edge From="special_barnabas_korenar.mluvil_jsem_s_teacherem" To="Exec">
+						<Vertex>vertex8</Vertex>
+					</Edge>
+				</MemberFunction>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="J30pumfX" PositionY="481" PositionX="1463" />
+				<EdgeVertex Name="vertex1" PositionY="1007" PositionX="1024" />
+				<EdgeVertex Name="vertex10" PositionY="1000" PositionX="1150" />
+				<EdgeVertex Name="vertex12" PositionY="119" PositionX="657" />
+				<EdgeVertex Name="vertex13" PositionY="346" PositionX="644" />
+				<EdgeVertex Name="vertex2" PositionY="1010" PositionX="230" />
+				<EdgeVertex Name="vertex3" PositionY="660" PositionX="260" />
+				<EdgeVertex Name="vertex7" PositionY="1360" PositionX="1230" />
+				<EdgeVertex Name="vertex8" PositionY="1590" PositionX="1250" />
+				<EdgeVertex Name="vertex9" PositionY="930" PositionX="1430" />
+			</EdgeVertices>
+			<Text StringName="barnabas_korenar_uj6A" Text="Barnabáš kořenář" />
+		</Gameplay>
+	</Skald>
+</Database>

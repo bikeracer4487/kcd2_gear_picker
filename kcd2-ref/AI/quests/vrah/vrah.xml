@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BehaviorTrees>
+	<BehaviorTree name="leaveLevel" is_function="0">
+		<Variables />
+		<Parameters>
+			<Variable name="souls" type="_wuid" values="" isPersistent="0" form="array" requirementType="In" />
+			<Variable name="speed" type="enum:movementSpeed" values="$enum:movementSpeed.walk" isPersistent="0" form="single" requirementType="In" />
+		</Parameters>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<AnyDecorator preset="bothHands_changeEquipment" enabled="true">
+					<Function_leaveLevel souls="$souls" speed="$speed" nodeLabel="49175469" />
+				</AnyDecorator>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData Signature="leaveLevel" EventSet="leaveLevel">
+			<Variables>
+				<Variable name="souls" comment="" />
+				<Variable name="speed" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<AnyDecorator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<Function_leaveLevel hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</Function_leaveLevel>
+					</AnyDecorator>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+</BehaviorTrees>

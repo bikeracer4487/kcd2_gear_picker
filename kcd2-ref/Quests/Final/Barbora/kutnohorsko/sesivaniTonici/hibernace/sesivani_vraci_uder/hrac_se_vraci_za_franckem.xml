@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="hrac_se_vraci_za_franckem">
+			<Ports>
+				<Port Name="active__jdi_za_franckem" Direction="In" Type="bool">
+					<DesignName StringName="hrac_se_v_active__jdi_za__65L5" Text="active - jdi za Franckem" />
+				</Port>
+				<Port Name="spusteni_trialogu" Direction="Out" Type="trigger">
+					<DesignName StringName="hrac_se_v_spusteni_trialo_7hup" Text="spuštění trialogu" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<MakeArray Name="makearray6" PositionY="70" PositionX="-610" TypeT="wh::rpgmodule::Souls">
+					<Asset Name="A" Alias="anton" />
+					<Asset Name="B" Alias="francek" />
+				</MakeArray>
+				<Output Name="Output">
+					<Edge From="SpeakTrigger.onspoke" To="spusteni_trialogu" />
+				</Output>
+				<SpeakTrigger Name="SpeakTrigger" PositionY="0" PositionX="-310" Namespace="utils.speech">
+					<Edge From="makearray6.Array" To="speakers" />
+					<Edge From="active__jdi_za_franckem" To="isactive" />
+				</SpeakTrigger>
+			</Nodes>
+			<Text StringName="hrac_se_vraci_za_franckem_4x9j" Text="Hráč se vrací za Franckem" />
+		</Module>
+	</Skald>
+</Database>

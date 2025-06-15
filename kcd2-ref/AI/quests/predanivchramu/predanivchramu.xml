@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BehaviorTrees>
+	<BehaviorTree name="questWait" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Wait duration="&apos;-1&apos;" timeType="GameTime" doFail="false" variation="" />
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+					</Wait>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="albik_liesOnTheFloor" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Sequence>
+					<UnstanceAction unstance="QuestHunterInjuryIdleLie" locationObject="" slaveObject="" />
+					<Wait duration="&apos;-1&apos;" timeType="GameTime" doFail="false" variation="" />
+				</Sequence>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<UnstanceAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</UnstanceAction>
+						<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</Wait>
+					</Sequence>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="abbot_hidesBehindPillar" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Wait duration="&apos;-1&apos;" timeType="GameTime" doFail="false" variation="" />
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+					</Wait>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="enemy_waitForAmbush" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Sequence>
+					<IsWeaponDrawn who="$this.id" WeaponSet="Primary" saveVersion="2">
+						<Else canSkip="1">
+							<IsWeaponDrawn who="$this.id" WeaponSet="Secondary" saveVersion="2">
+								<Else canSkip="1">
+									<Selector>
+										<UrgencyDecorator Urgency="Instant">
+											<Sequence>
+												<GetWeaponsFromWeaponSet WeaponSet="Secondary" LeftHand="$leftHand" RightHand="$rightHand" UseTorchWhenAppropriate="true" />
+												<IfElseCondition failOnCondition="false" condition="$leftHand ~= $__null" saveVersion="2">
+													<Then canSkip="1">
+														<HandContentElement hand="Left" item="$leftHand" allowAny="false" allowHomeSlotAutoReturn="false" decisionLabel="battle_ranged" useDecision="true" enabled="true" saveVersion="2">
+															<Search canSkip="1">
+																<Success />
+															</Search>
+															<Exec canSkip="1">
+																<WaitAction />
+															</Exec>
+														</HandContentElement>
+													</Then>
+													<Else canSkip="1">
+														<HandContentElement hand="Right" item="$rightHand" allowAny="false" allowHomeSlotAutoReturn="false" decisionLabel="battle_ranged" useDecision="true" enabled="true" saveVersion="2">
+															<Search canSkip="1">
+																<Success />
+															</Search>
+															<Exec canSkip="1">
+																<WaitAction />
+															</Exec>
+														</HandContentElement>
+													</Else>
+												</IfElseCondition>
+											</Sequence>
+										</UrgencyDecorator>
+										<UrgencyDecorator Urgency="Instant">
+											<Sequence>
+												<GetWeaponsFromWeaponSet WeaponSet="Primary" LeftHand="$leftHand" RightHand="$rightHand" UseTorchWhenAppropriate="true" />
+												<IfElseCondition failOnCondition="false" condition="$leftHand == $__null" saveVersion="2">
+													<Then canSkip="1">
+														<HandContentElement hand="Right" item="$rightHand" allowAny="false" allowHomeSlotAutoReturn="false" decisionLabel="battle_weapon" useDecision="true" enabled="true" saveVersion="2">
+															<Search canSkip="1">
+																<Success />
+															</Search>
+															<Exec canSkip="1">
+																<WaitAction />
+															</Exec>
+														</HandContentElement>
+													</Then>
+													<Else canSkip="1">
+														<HandContentElement hand="Right" item="$rightHand" allowAny="false" allowHomeSlotAutoReturn="false" decisionLabel="battle_weapon" useDecision="true" enabled="true" saveVersion="2">
+															<Search canSkip="1">
+																<Success />
+															</Search>
+															<Exec canSkip="1">
+																<HandContentElement hand="Left" item="$leftHand" allowAny="false" allowHomeSlotAutoReturn="false" decisionLabel="battle_shield" useDecision="true" enabled="true" saveVersion="2">
+																	<Search canSkip="1">
+																		<Success />
+																	</Search>
+																	<Exec canSkip="1">
+																		<WaitAction />
+																	</Exec>
+																</HandContentElement>
+															</Exec>
+														</HandContentElement>
+													</Else>
+												</IfElseCondition>
+											</Sequence>
+										</UrgencyDecorator>
+										<Success />
+									</Selector>
+								</Else>
+							</IsWeaponDrawn>
+						</Else>
+					</IsWeaponDrawn>
+					<Wait duration="&apos;5s&apos;" timeType="GameTime" doFail="false" variation="" />
+				</Sequence>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<IsWeaponDrawn hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+							<OutputBreakpoints />
+							<Else>
+								<IsWeaponDrawn hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+									<OutputBreakpoints />
+									<Else>
+										<Selector hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+											<UrgencyDecorator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+												<OutputBreakpoints />
+												<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+													<OutputBreakpoints />
+													<GetWeaponsFromWeaponSet hasInputBreakpoint="0" comment="" breakpointFlags="0">
+														<OutputBreakpoints />
+													</GetWeaponsFromWeaponSet>
+													<IfElseCondition hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+														<OutputBreakpoints />
+														<Then>
+															<HandContentElement hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+																<OutputBreakpoints />
+																<Search>
+																	<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</Success>
+																</Search>
+																<Exec>
+																	<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</WaitAction>
+																</Exec>
+															</HandContentElement>
+														</Then>
+														<Else>
+															<HandContentElement hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+																<OutputBreakpoints />
+																<Search>
+																	<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</Success>
+																</Search>
+																<Exec>
+																	<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</WaitAction>
+																</Exec>
+															</HandContentElement>
+														</Else>
+													</IfElseCondition>
+												</Sequence>
+											</UrgencyDecorator>
+											<UrgencyDecorator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+												<OutputBreakpoints />
+												<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+													<OutputBreakpoints />
+													<GetWeaponsFromWeaponSet hasInputBreakpoint="0" comment="" breakpointFlags="0">
+														<OutputBreakpoints />
+													</GetWeaponsFromWeaponSet>
+													<IfElseCondition hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+														<OutputBreakpoints />
+														<Then>
+															<HandContentElement hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+																<OutputBreakpoints />
+																<Search>
+																	<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</Success>
+																</Search>
+																<Exec>
+																	<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</WaitAction>
+																</Exec>
+															</HandContentElement>
+														</Then>
+														<Else>
+															<HandContentElement hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+																<OutputBreakpoints />
+																<Search>
+																	<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																		<OutputBreakpoints />
+																	</Success>
+																</Search>
+																<Exec>
+																	<HandContentElement hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+																		<OutputBreakpoints />
+																		<Search>
+																			<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																				<OutputBreakpoints />
+																			</Success>
+																		</Search>
+																		<Exec>
+																			<WaitAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+																				<OutputBreakpoints />
+																			</WaitAction>
+																		</Exec>
+																	</HandContentElement>
+																</Exec>
+															</HandContentElement>
+														</Else>
+													</IfElseCondition>
+												</Sequence>
+											</UrgencyDecorator>
+											<Success hasInputBreakpoint="0" comment="" breakpointFlags="0">
+												<OutputBreakpoints />
+											</Success>
+										</Selector>
+									</Else>
+								</IsWeaponDrawn>
+							</Else>
+						</IsWeaponDrawn>
+						<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</Wait>
+					</Sequence>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+	<BehaviorTree name="zacharias_liesDying" is_function="0">
+		<Variables />
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Sequence>
+					<UnstanceAction unstance="QuestHunterInjuryIdleLie" locationObject="" slaveObject="" />
+					<Wait duration="&apos;-1&apos;" timeType="GameTime" doFail="false" variation="" />
+				</Sequence>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables />
+			<ForwardDeclarations />
+			<Root editorPosX="-30" editorPosY="50" hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<UnstanceAction hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</UnstanceAction>
+						<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</Wait>
+					</Sequence>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+</BehaviorTrees>

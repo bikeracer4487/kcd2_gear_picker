@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BehaviorTrees>
+	<BehaviorTree name="angryPatient_speakWithBodyguard" is_function="0">
+		<Variables />
+		<Parameters>
+			<Variable name="string" type="_string" values="" isPersistent="0" form="single" requirementType="In" />
+			<Variable name="wuid" type="_wuid" values="" isPersistent="0" form="single" requirementType="In" />
+			<Variable name="wuid_target" type="_wuid" values="" isPersistent="0" form="single" requirementType="In" />
+		</Parameters>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<Behavior canSkip="1">
+				<Sequence>
+					<ExactMove directionType="AlignWithEntity" directionSpecification="$wuid" animationTriggerDist="0.150000" precise="true" changeNPCState="true" fastForwardIncludesMove="false" destinationSpecification="$wuid" destinationSpecification2="" destinationSpecification3="" speed="Walk" additionalParams="" pathFindingParams="" staminaPolicy="" pathInfo="" />
+					<Parallel successMode="All" failureMode="Any">
+						<EntityContextBarrier context="navstevaLekare_angryPatientAndBodyguardCanTalk" target="$wuid_target" Negation="false" RunLogic="Halt">
+							<EntityContext context="navstevaLekare_angryPatientAndBodyguardCanTalk" target="">
+								<ForceLook LookTarget="$wuid_target" DisableVariations="true">
+									<Function_speech_polylogInitiator alias="$string" animationApproach="$enum:animationApproach.dontPlayDialogAnimations" context="$__null" customParameters="$__null" metarole="" participants="$wuid_target" participantsMetaroles="" preset="$enum:dialogPreset.ingame" nodeLabel="13610739" />
+								</ForceLook>
+							</EntityContext>
+						</EntityContextBarrier>
+						<EntityContextBarrier context="navstevaLekare_angryPatientAndBodyguardCanTalk" target="" Negation="true" RunLogic="Halt">
+							<Wait duration="&apos;10s&apos;" timeType="GameTime" doFail="false" variation="" />
+						</EntityContextBarrier>
+					</Parallel>
+				</Sequence>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData Signature="wuid_wuid_string" EventSet="">
+			<Variables>
+				<Variable name="string" comment="" />
+				<Variable name="wuid" comment="" />
+				<Variable name="wuid_target" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<Behavior>
+					<Sequence hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<ExactMove hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</ExactMove>
+						<Parallel hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+							<EntityContextBarrier hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<EntityContext hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+									<ForceLook hasInputBreakpoint="0" comment="" breakpointFlags="0">
+										<OutputBreakpoints />
+										<Function_speech_polylogInitiator hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+										</Function_speech_polylogInitiator>
+									</ForceLook>
+								</EntityContext>
+							</EntityContextBarrier>
+							<EntityContextBarrier hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<Wait hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+								</Wait>
+							</EntityContextBarrier>
+						</Parallel>
+					</Sequence>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+</BehaviorTrees>

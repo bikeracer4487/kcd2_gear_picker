@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="obj_done">
+			<Ports>
+				<Port Name="dokoncit_objective" Direction="In" Type="trigger">
+					<DesignName StringName="dokoncit__dokoncit_object_Ua3C" Text="Dokončit objective" />
+				</Port>
+				<Port Name="objective_state" Direction="In" Type="OdevzdaniLektvaru">
+					<DesignName StringName="dokoncit__objective_state_v8MV" Text="Objective state" />
+				</Port>
+				<Port Name="nastavit_dokonceny_stav_objectivu" Direction="Out" Type="trigger">
+					<DesignName StringName="dokoncit__nastavit_dokonc_K5jZ" Text="Nastavit dokončený stav objectivu" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<IfFunction Name="ifcompare1" PositionY="-70" PositionX="-20" TypeT="OdevzdaniLektvaru" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="Done" />
+					<Edge From="objective_state" To="ValueA" />
+					<Edge From="dokoncit_objective" To="Exec" />
+				</IfFunction>
+				<objectivename Name="objectivename" PositionY="120" PositionX="-20" Namespace="utils.commonstrings" />
+				<Output Name="Output">
+					<Edge From="ifcompare1.False" To="nastavit_dokonceny_stav_objectivu">
+						<Vertex>0MLQGy5e</Vertex>
+					</Edge>
+				</Output>
+				<SaveGame Name="savegame6" PositionY="20" PositionX="350">
+					<Edge From="objectivename.endquest" To="ObjectiveNameOverride" />
+					<Edge From="ifcompare1.False" To="EnqueueSave" />
+				</SaveGame>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="0MLQGy5e" PositionY="-40" PositionX="360" />
+			</EdgeVertices>
+			<Text StringName="dokoncit_objective_kc8L" Text="Dokončit objective" />
+		</Module>
+	</Skald>
+</Database>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Gameplay Name="tipovani_questu">
+			<Ports>
+				<Port Name="quest_jde_tipnout_start_levelu_init" Direction="In" Type="trigger">
+					<DesignName StringName="tipovani__quest_jde_tipno_rr2L" Text="quest jde tipnout (start levelu, init)" />
+				</Port>
+				<Port Name="quest_nejde_tipnout_active_no_longer_available" Direction="In" Type="trigger">
+					<DesignName StringName="tipovani__quest_je_started_mHDf" Text="quest nejde tipnout (active, no longer available)" />
+				</Port>
+				<Port Name="bylo_tipnuto" Direction="Out" Type="bool">
+					<DesignName StringName="tipovani__bylo_tipnuto_lVp5" Text="bylo tipnuto" />
+				</Port>
+				<Port Name="quest_state" Direction="In" Type="wh::questmodule::QuestProgress">
+					<DesignName StringName="tipovani__quest_state_1lYq" Text="Myši Quest state" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="tipovani_questu/quest_tipster_muz__in_quest.xml" />
+			</Definitions>
+			<Nodes>
+				<Function Name="and1" PositionY="260" PositionX="950" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="marklivingsoul_1.tipster_can_tip" To="B" />
+					<Edge From="tipstate.tipavailable" To="A">
+						<Vertex>vertex12</Vertex>
+						<Vertex>vertex13</Vertex>
+					</Edge>
+				</Function>
+				<Function Name="and5" PositionY="530" PositionX="430" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="compare4.bool" To="B" />
+					<Edge From="tipstate.tipgiven" To="A">
+						<Vertex>rc06rz9h</Vertex>
+					</Edge>
+				</Function>
+				<Function Name="compare4" PositionY="530" PositionX="150" TypeT="wh::questmodule::QuestProgress" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="NotEquals" />
+					<Constant Name="ValueB" Value="Active" />
+					<Edge From="quest_state" To="ValueA">
+						<Vertex>fggpgT2C</Vertex>
+					</Edge>
+				</Function>
+				<If Name="if3" PositionY="-170" PositionX="-890">
+					<Edge From="tipsterActive.None" To="Condition">
+						<Vertex>vertex18</Vertex>
+						<Vertex>vertex19</Vertex>
+					</Edge>
+					<Edge From="quest_jde_tipnout_start_levelu_init" To="Exec" />
+				</If>
+				<marklivingsoul Name="marklivingsoul" PositionY="60" PositionX="230" Namespace="utils.tipsters">
+					<Asset Name="soul" Alias="vavrinecTipster" />
+					<Constant Name="markertype" Value="QuestTipster" />
+					<Edge From="tipstate.tracksouls" To="tracktipsters">
+						<Vertex>vertex1</Vertex>
+					</Edge>
+					<Edge From="tipstate.tipavailable" To="markercanbeshown">
+						<Vertex>vertex12</Vertex>
+					</Edge>
+				</marklivingsoul>
+				<marklivingsoul Name="marklivingsoul_1" PositionY="420" PositionX="690" Namespace="utils.tipsters">
+					<Asset Name="soul" Alias="olbram" />
+					<Constant Name="markertype" Value="QuestGiver" />
+					<Edge From="tipstate.tracksouls" To="tracktipsters">
+						<Vertex>vertex1</Vertex>
+						<Vertex>bGSleQPn</Vertex>
+					</Edge>
+					<Edge From="and5.bool" To="markercanbeshown" />
+				</marklivingsoul>
+				<Output Name="Output">
+					<Edge From="tipstate.tipgiven" To="bylo_tipnuto">
+						<Vertex>vertex20</Vertex>
+					</Edge>
+				</Output>
+				<quest_tipster_muz__in_quest Name="quest_tipster_muz__in_quest" PositionY="380" PositionX="1230">
+					<Edge From="and1.bool" To="tipster_alive_and_tip_available" />
+				</quest_tipster_muz__in_quest>
+				<tipstate Name="tipstate" PositionY="-40" PositionX="-230" Namespace="utils.tipsters">
+					<Asset Name="allgivers" Alias="olbram" />
+					<Constant Name="has_generic_variation" Value="true" />
+					<Edge From="marklivingsoul_1.soul_died_or_came_back_to_life" To="questavailable_or_giver_died_or_came_back_to_life">
+						<Vertex>vertex4</Vertex>
+						<Vertex>vertex5</Vertex>
+					</Edge>
+					<Edge From="marklivingsoul.soul_died_or_came_back_to_life" To="questavailable_or_giver_died_or_came_back_to_life">
+						<Vertex>vertex10</Vertex>
+						<Vertex>vertex11</Vertex>
+					</Edge>
+					<Edge From="quest_tipster_muz__in_quest.tip_given" To="settipgiven">
+						<Vertex>vertex15</Vertex>
+						<Vertex>vertex16</Vertex>
+					</Edge>
+					<Edge From="tipsterActive.OnActive" To="questavailable_or_giver_died_or_came_back_to_life" />
+					<Edge From="tipsterActive.OnDone" To="setqueststarted_or_questnolongeravailable" />
+				</tipstate>
+				<State Name="tipsterActive" PositionY="-240" PositionX="-620" TypeT="Progress">
+					<Edge From="quest_nejde_tipnout_active_no_longer_available" To="SetDone" />
+					<Edge From="if3.True" To="SetActive" />
+				</State>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="bGSleQPn" PositionY="470" PositionX="240" />
+				<EdgeVertex Name="fggpgT2C" PositionY="610" PositionX="-810" />
+				<EdgeVertex Name="rc06rz9h" PositionY="500" PositionX="240" />
+				<EdgeVertex Name="vertex1" PositionY="110" PositionX="150" />
+				<EdgeVertex Name="vertex10" PositionY="-70" PositionX="390" />
+				<EdgeVertex Name="vertex11" PositionY="-60" PositionX="-210" />
+				<EdgeVertex Name="vertex12" PositionY="150" PositionX="140" />
+				<EdgeVertex Name="vertex13" PositionY="350" PositionX="210" />
+				<EdgeVertex Name="vertex15" PositionY="-100" PositionX="1410" />
+				<EdgeVertex Name="vertex16" PositionY="-90" PositionX="-230" />
+				<EdgeVertex Name="vertex18" PositionY="-260" PositionX="-410" />
+				<EdgeVertex Name="vertex19" PositionY="-260" PositionX="-850" />
+				<EdgeVertex Name="vertex20" PositionY="-30" PositionX="150" />
+				<EdgeVertex Name="vertex4" PositionY="720" PositionX="880" />
+				<EdgeVertex Name="vertex5" PositionY="710" PositionX="-210" />
+			</EdgeVertices>
+			<Text StringName="tipovani_questu_fZTg" Text="Tipování questu" />
+		</Gameplay>
+	</Skald>
+</Database>

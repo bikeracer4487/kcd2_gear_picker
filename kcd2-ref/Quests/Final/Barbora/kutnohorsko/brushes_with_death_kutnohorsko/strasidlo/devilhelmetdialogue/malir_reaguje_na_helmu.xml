@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<FaderDialog Name="malir_reaguje_na_helmu">
+			<Ports>
+				<Port Name="enabled" Direction="In" Type="bool">
+					<DesignName StringName="malir_rea_enabled_tYrV" Text="Enabled" />
+				</Port>
+			</Ports>
+			<Text StringName="malir_reaguje_na_helmu_2uT4" Text="Malir reaguje na helmu" />
+			<Dialogue TechnicalStatus="Enabled" Priority="1" Initiator="Player">
+				<Decision Name="dec1">
+					<Sequences>
+						<Sequence EntryCondition="!ThisSequenceUsed() AND Port('enabled')" Name="seq1">
+							<DesignName StringName="malir_rea_seq1_pSug" Text="seq1" />
+							<Elements>
+								<Response Role="MALIR">
+									<Parenthetical>
+										<Text StringName="mali_malir_trochu_se_lekn_uEfp" Text="trochu se lekne, ale pak pobaveně" />
+									</Parenthetical>
+									<Text StringName="mali_malir_fuj_tos_me_vyd_q2lP" Text="Fuj, tos mě vyděsil! Už jsem myslel, že si pro mě přišli." />
+									<Commands>
+										<CameraCommand />
+									</Commands>
+								</Response>
+								<Response Role="HENRY">
+									<Commands>
+										<CameraCommand />
+									</Commands>
+								</Response>
+							</Elements>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</FaderDialog>
+	</Skald>
+</Database>

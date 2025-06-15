@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Gameplay Name="semin__odevzdani_questu">
+			<Ports>
+				<Port Name="hrac_musi_vyrobit_podkovy" Direction="In" Type="trigger">
+					<DesignName StringName="semin__od_hrac_musi_vyrob_pznQ" Text="hrac musi vyrobit podkovy" />
+				</Port>
+				<Port Name="hrac_vyrobil_podkovy" Direction="In" Type="trigger">
+					<DesignName StringName="semin__od_hrac_vyrobil_po_ngUi" Text="hrac vyrobil podkovy" />
+				</Port>
+				<Port Name="jindra_si_promluvil_o_finalni_odmene" Direction="Out" Type="trigger">
+					<DesignName StringName="semin__od_jindra_si_proml_tDwF" Text="jindra si promluvil o finalni odmene" />
+				</Port>
+				<Port Name="podkovy_neodevzdany" Direction="Out" Type="bool">
+					<DesignName StringName="semin__od_podkovy_neodevz_dBbP" Text="podkovy neodevzdany" />
+				</Port>
+				<Port Name="jindra_nedostal_odmenu" Direction="Out" Type="bool">
+					<DesignName StringName="semin__od_jindra_nedostal_JgSq" Text="Jindra nedostal odměnu" />
+				</Port>
+				<Port Name="quest_fail" Direction="In" Type="trigger">
+					<DesignName StringName="semin__od_quest_fail_NoTZ" Text="quest fail" />
+				</Port>
+				<Port Name="pockej_na_odmenu" Direction="In" Type="trigger">
+					<DesignName StringName="semin__od_pockej_na_odmenu_Qhuk" Text="pockej na odmenu" />
+				</Port>
+				<Port Name="jindra_vyhral_zavod_misto_celedin" Direction="In" Type="bool">
+					<DesignName StringName="semin__od_jindra_vyhral_z_trmU" Text="Jindra vyhrál závod místo čeledín" />
+				</Port>
+				<Port Name="janek_vyhral_zavod" Direction="Out" Type="trigger">
+					<DesignName StringName="semin__od_janek_vyhral_za_beHa" Text="Janek vyhral zavod" />
+				</Port>
+				<Port Name="poslouchame_na_vysledek_zavodu_s_jankem" Direction="Out" Type="bool">
+					<DesignName StringName="semin__od_poslouchame_na__gir5" Text="Posloucháme na výsledek závodu s Jankem" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="semin__odevzdani_questu/dodatecna_odmena_po_3_dnech__celedin_sedlare.xml" />
+				<Definition File="semin__odevzdani_questu/odevdzani_ukolu__celedin_sedlare.xml" />
+			</Definitions>
+			<Nodes>
+				<dodatecna_odmena_po_3_dnech__celedin_sedlare Name="dodatecna_odmena_po_3_dnech__celedin_sedlare" PositionY="670" PositionX="1390">
+					<Edge From="odevzdanyKvalitniPodkovy.State" To="jindra_vyrobil_kvalitni_podkovy" />
+					<Edge From="pockejNaOdmenu.Promluvit" To="lze_mluvit_o_odmene" />
+					<Edge From="jindra_vyhral_zavod_misto_celedin" To="jindra_vyhral_zavod_misto_celedin">
+						<Vertex>vertex36</Vertex>
+					</Edge>
+					<Edge From="pockejNaOdmenu.Cekani" To="cekani_na_odmenu" />
+				</dodatecna_odmena_po_3_dnech__celedin_sedlare>
+				<State Name="donesPodkovy" PositionY="-10" PositionX="-650" RequiredForOutput="trosecko" TypeT="PodkovyOdevzdani">
+					<Edge From="ifand8.True" To="SetAborted" />
+					<Edge From="ifand8_1.True" To="SetFailed" />
+					<Edge From="odevdzani_ukolu__celedin_sedlare.pockej_dva_dny_na_odmenu" To="SetOdevzdano">
+						<Vertex>vertex3</Vertex>
+						<Vertex>vertex4</Vertex>
+					</Edge>
+					<Edge From="hrac_vyrobil_podkovy" To="SetLzeOdevzdat">
+						<Vertex>HtCM7V85</Vertex>
+					</Edge>
+					<Edge From="ifand12.True" To="SetLzeOdevzdat">
+						<Vertex>vertex32</Vertex>
+						<Vertex>vertex33</Vertex>
+					</Edge>
+					<Edge From="if27.True" To="SetOdevzdavanoIncludem" />
+				</State>
+				<expectedeffect Name="expectedeffect" PositionY="1200" PositionX="1560" Namespace="utils.crime.trespass">
+					<Asset Name="npcs" Alias="janek" />
+					<Constant Name="extenduntilplayerleavestrespass" Value="true" />
+					<Edge From="or25.bool" To="isactive" />
+				</expectedeffect>
+				<If Name="if27" PositionY="90" PositionX="-940">
+					<Edge From="pockej_na_odmenu" To="Exec" />
+					<Edge From="donesPodkovy.None" To="Condition">
+						<Vertex>2nVQ2WdK</Vertex>
+						<Vertex>XNlFUvLM</Vertex>
+					</Edge>
+				</If>
+				<IfFunction Name="ifand12" PositionY="60" PositionX="320" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="donesPodkovy.OdevzdavanoIncludem" To="A">
+						<Vertex>vertex31</Vertex>
+					</Edge>
+					<Edge From="odevdzani_ukolu__celedin_sedlare.reject" To="Exec" />
+				</IfFunction>
+				<IfFunction Name="ifand8" PositionY="240" PositionX="-940" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="hrac_musi_vyrobit_podkovy" To="Exec" />
+					<Edge From="donesPodkovy.LzeOdevzdat" To="A">
+						<Vertex>vertex1</Vertex>
+						<Vertex>vertex2</Vertex>
+					</Edge>
+				</IfFunction>
+				<IfFunction Name="ifand8_1" PositionY="400" PositionX="-940" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="quest_fail" To="Exec">
+						<Vertex>vertex16</Vertex>
+					</Edge>
+					<Edge From="donesPodkovy.LzeOdevzdat" To="A">
+						<Vertex>vertex14</Vertex>
+						<Vertex>vertex15</Vertex>
+					</Edge>
+				</IfFunction>
+				<IfFunction Name="ifor9" PositionY="400" PositionX="650" MethodName="math::boolean::Or" DeclaringType="math::boolean">
+					<Edge From="quest_fail" To="Exec">
+						<Vertex>vertex16</Vertex>
+						<Vertex>vertex17</Vertex>
+					</Edge>
+					<Edge From="pockejNaOdmenu.Cekani" To="A">
+						<Vertex>vertex18</Vertex>
+						<Vertex>vertex19</Vertex>
+					</Edge>
+					<Edge From="pockejNaOdmenu.Promluvit" To="B">
+						<Vertex>vertex20</Vertex>
+						<Vertex>vertex21</Vertex>
+					</Edge>
+				</IfFunction>
+				<konstanty Name="konstanty" PositionY="130" PositionX="1330" Namespace="zavodni_podkovy" />
+				<pockej_par_dni_a_vyzvedni_si_u_janka_odmenu Name="objectiveVisual10" PositionY="-40" PositionX="1250" RequiredForOutput="trosecko">
+					<Edge From="pockejNaOdmenu.State" To="Progress" />
+				</pockej_par_dni_a_vyzvedni_si_u_janka_odmenu>
+				<dones_jankovi_podkovy Name="objectiveVisual13" PositionY="-30" PositionX="-40" RequiredForOutput="trosecko">
+					<Edge From="donesPodkovy.State" To="Progress" />
+				</dones_jankovi_podkovy>
+				<odevdzani_ukolu__celedin_sedlare Name="odevdzani_ukolu__celedin_sedlare" PositionY="200" PositionX="-70">
+					<Edge From="donesPodkovy.LzeOdevzdat" To="odevzdej_podkovy_aktivni" />
+					<Edge From="donesPodkovy.OdevzdavanoIncludem" To="odevzdavano_incudem" />
+				</odevdzani_ukolu__celedin_sedlare>
+				<State Name="odevzdanyKvalitniPodkovy" PositionY="790" PositionX="390" TypeT="bool" />
+				<Function Name="or25" PositionY="1220" PositionX="1320" MethodName="math::boolean::Or" DeclaringType="math::boolean">
+					<Edge From="pockejNaOdmenu.Promluvit" To="A" />
+					<Edge From="donesPodkovy.LzeOdevzdat" To="B">
+						<Vertex>DMYs9xJy</Vertex>
+					</Edge>
+				</Function>
+				<Output Name="Output">
+					<Edge From="donesPodkovy.LzeOdevzdat" To="podkovy_neodevzdany">
+						<Vertex>vertex12</Vertex>
+					</Edge>
+					<Edge From="switch26.Value1" To="poslouchame_na_vysledek_zavodu_s_jankem" />
+					<Edge From="pockejNaOdmenu.BezOdmeny" To="jindra_nedostal_odmenu">
+						<Vertex>5Nf028qV</Vertex>
+					</Edge>
+					<Edge From="triggersequence28.A" To="janek_vyhral_zavod" />
+					<Edge From="triggersequence28.B" To="jindra_si_promluvil_o_finalni_odmene" />
+					<Edge From="triggersequence29.B" To="jindra_si_promluvil_o_finalni_odmene" />
+				</Output>
+				<State Name="pockejNaOdmenu" PositionY="20" PositionX="930" RequiredForOutput="trosecko" TypeT="DoubleSuccessPodkovy">
+					<Edge From="ifor9.True" To="SetCanceled" />
+					<Edge From="timer2.OnFinished" To="SetPromluvit">
+						<Vertex>vertex6</Vertex>
+						<Vertex>vertex7</Vertex>
+					</Edge>
+					<Edge From="donesPodkovy.OnOdevzdano" To="SetCekani" />
+					<Edge From="triggersequence28.A" To="SetOdmena">
+						<Vertex>vertex24</Vertex>
+						<Vertex>vertex25</Vertex>
+					</Edge>
+					<Edge From="triggersequence29.A" To="SetBezOdmeny">
+						<Vertex>vertex22</Vertex>
+						<Vertex>vertex23</Vertex>
+					</Edge>
+				</State>
+				<SaveGame Name="savegame24" PositionY="1000" PositionX="1320">
+					<Constant Name="Objective" Value="pockej_par_dni_a_vyzvedni_si_u_janka_odmenu" />
+					<Edge From="pockejNaOdmenu.OnCekani" To="EnqueueSave" />
+				</SaveGame>
+				<Switch Name="switch26" PositionY="-450" PositionX="1260" TypeT="DoubleSuccessPodkovy" ValueTypes="bool" SwitchValues="Cekani Promluvit">
+					<Constant Name="CekaniValue1" Value="true" />
+					<Constant Name="PromluvitValue1" Value="true" />
+					<Constant Name="DefaultValue1" Value="false" />
+					<Edge From="pockejNaOdmenu.State" To="Switch" />
+				</Switch>
+				<Timer Name="timer2" PositionY="-30" PositionX="1610">
+					<Constant Name="TimeType" Value="WorldTime" />
+					<Edge From="konstanty.jak_dlouho_cekat_na_odmenu" To="Duration" />
+					<Edge From="pockejNaOdmenu.OnCekani" To="SetRunning" />
+				</Timer>
+				<TriggerSequence Name="triggersequence28" PositionY="590" PositionX="2000">
+					<Edge From="dodatecna_odmena_po_3_dnech__celedin_sedlare.jindra_dostal_grose_navic" To="Exec" />
+				</TriggerSequence>
+				<TriggerSequence Name="triggersequence29" PositionY="740" PositionX="2000">
+					<Edge From="dodatecna_odmena_po_3_dnech__celedin_sedlare.jindra_nedostal_nic" To="Exec" />
+				</TriggerSequence>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="2nVQ2WdK" PositionY="-57" PositionX="-340" />
+				<EdgeVertex Name="5Nf028qV" PositionY="471" PositionX="1987" />
+				<EdgeVertex Name="DMYs9xJy" PositionY="1330" PositionX="-29" />
+				<EdgeVertex Name="HtCM7V85" PositionY="20" PositionX="-810" />
+				<EdgeVertex Name="vertex1" PositionY="-70" PositionX="-340" />
+				<EdgeVertex Name="vertex12" PositionY="-80" PositionX="-130" />
+				<EdgeVertex Name="vertex14" PositionY="590" PositionX="-300" />
+				<EdgeVertex Name="vertex15" PositionY="590" PositionX="-920" />
+				<EdgeVertex Name="vertex16" PositionY="500" PositionX="-1090" />
+				<EdgeVertex Name="vertex17" PositionY="560" PositionX="-1020" />
+				<EdgeVertex Name="vertex18" PositionY="680" PositionX="1150" />
+				<EdgeVertex Name="vertex19" PositionY="670" PositionX="710" />
+				<EdgeVertex Name="vertex2" PositionY="-70" PositionX="-810" />
+				<EdgeVertex Name="vertex20" PositionY="650" PositionX="1140" />
+				<EdgeVertex Name="vertex21" PositionY="650" PositionX="740" />
+				<EdgeVertex Name="vertex22" PositionY="960" PositionX="2190" />
+				<EdgeVertex Name="vertex23" PositionY="960" PositionX="960" />
+				<EdgeVertex Name="vertex24" PositionY="990" PositionX="2190" />
+				<EdgeVertex Name="vertex25" PositionY="986" PositionX="950" />
+				<EdgeVertex Name="vertex3" PositionY="660" PositionX="230" />
+				<EdgeVertex Name="vertex31" PositionY="175" PositionX="-140" />
+				<EdgeVertex Name="vertex32" PositionY="-53" PositionX="404" />
+				<EdgeVertex Name="vertex33" PositionY="-49" PositionX="-690" />
+				<EdgeVertex Name="vertex36" PositionY="778" PositionX="-1154" />
+				<EdgeVertex Name="vertex4" PositionY="660" PositionX="-600" />
+				<EdgeVertex Name="vertex6" PositionY="600" PositionX="1740" />
+				<EdgeVertex Name="vertex7" PositionY="610" PositionX="930" />
+				<EdgeVertex Name="XNlFUvLM" PositionY="-56" PositionX="-809" />
+			</EdgeVertices>
+			<Notes>
+				<Note Name="note30" PositionY="810" PositionX="500">
+					<Text StringName="semin__od_note30_RtU0" Text="nemazat kvoli savom" />
+				</Note>
+			</Notes>
+			<Text StringName="semin__odevzdani_questu_tYkn" Text="Semín - odevzdání questu" />
+			<Elements>
+				<ActionPromptElement>
+					<Text StringName="semin__od_predat_podkovy__64QO" Text="Předat podkovy s ozuby." />
+				</ActionPromptElement>
+				<GameplayActionElement>
+					<Text Text="" />
+				</GameplayActionElement>
+				<GameplayActionElement>
+					<Text StringName="semin__od_po_ziskani_rece_tqJ9" Text="Po získání receptu v cikánském táboře a vykování podkov s ozuby se Jindra vrací za čeledínem a odevdává mu hotové podkovy." />
+				</GameplayActionElement>
+				<GameplayActionElement>
+					<Text StringName="semin__od_po_trech_dnech__VWos" Text="Po třech dnech se Jindra vrací a vyzvedává si případnou odměnu, pokud vykoval dostatečně kvalitní podkovy." />
+				</GameplayActionElement>
+			</Elements>
+		</Gameplay>
+	</Skald>
+</Database>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Dialog Name="bibrek__chat__upoutani_pozornosti">
+			<Ports>
+				<Port Name="start_dialog" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__c_start_dialog_nFWp" Text="Start dialog" />
+				</Port>
+			</Ports>
+			<Text StringName="bibrek__chat__upoutani_po_Gt8m" Text="Bibrek - Chat - Upoutání pozornosti" />
+			<Dialogue Type="chat" TechnicalStatus="Enabled" Initiator="NonPlayer" ForceMood="noScope" GesturesSetDate="2025-04-05T19:06:42.8524116+02:00" GesturesSetResponseCount="5">
+				<SelectedSouls>
+					<SelectedSoul Role="KUMAN_BIBREK" Voice="M31" Type="Wave" Language="ENG" />
+					<SelectedSoul Role="HENRY" Voice="tomMcKay" Type="Wave" Language="ENG" />
+				</SelectedSouls>
+				<Decision Name="dec1" Alias="hadkaKonaru_bibrekChatUpoutaniPozornosti">
+					<Sequences>
+						<Sequence EntryCondition="!ThisSequenceUsed()" EndType="GoTo" GoToDecision="dec2" Visibility="Internal" Name="bibrekchatujepoprve">
+							<DesignName StringName="bibrek__c_bibrekchatujepo_S3Ni" Text="bibrekChatujePoprve" />
+							<Elements>
+								<Response Role="KUMAN_BIBREK" ReferenceLength="5.53">
+									<Parenthetical>
+										<Text StringName="bibr_kuman_bib_pokrikuje_GFgp" Text="pokřikuje" />
+									</Parenthetical>
+									<Text StringName="bibr_kuman_bib_hej_chlape_3DD6" Text="Hej chlape, zkoušel už střílet ze sedla? Je to lepší než jenom jezdit sem a tam." />
+									<Commands>
+										<FacialMoodCommand FacialMood="happy2" />
+										<AnimationCommand Delay="1.07" FragmentId="ADLG_Gesture" Guid="05cb510e-ec58-4891-91be-f1006f98dbd9" Variant="0" />
+										<AnimationCommand Delay="3.83" FragmentId="ADLG_Gesture" Guid="22f8b7f8-02df-4e21-a4d5-f2c5264ceb7c" Variant="1" />
+									</Commands>
+								</Response>
+							</Elements>
+						</Sequence>
+						<Sequence EntryCondition="SequenceUsed('bibrekchatujepoprve')" EndType="Decision" Name="seq1">
+							<DesignName StringName="bibrek__c_seq1_YBBk" Text="seq1" />
+							<Elements>
+								<Response Role="KUMAN_BIBREK" ReferenceLength="4.79">
+									<Parenthetical>
+										<Text StringName="bibr_kuman_bib_pokrikuje__RzIn" Text="pokřikuje, láká" />
+									</Parenthetical>
+									<Text StringName="bibr_kuman_bib_porad_hled_gHfl" Text="Pořád hledám někoho, kdo by si chtěl zkusit střelbu z koně. Co ty na to?" />
+									<Commands>
+										<FacialMoodCommand FacialMood="happy2" />
+										<AnimationCommand Delay="0.99" FragmentId="ADLG_Gesture" Guid="325ed9cf-90d6-454b-8e27-f8eac8e3df73" Variant="2" />
+										<AnimationCommand Delay="3.89" FragmentId="ADLG_Confusion" Guid="0f3a193c-1160-3bd2-65cc-2b868cb9e3d2" Variant="0" />
+									</Commands>
+								</Response>
+							</Elements>
+							<Decision Name="dec2">
+								<Sequences>
+									<Sequence EndType="EndDialogue" ChatPosition="First" Visibility="Public" Name="hracprichazizchatu">
+										<DesignName StringName="bibrek__c_hracprichazizch_Rgoi" Text="hracPrichaziZChatu" />
+										<UiPrompt StringName="ui_bibrek__c_hracprichazi_nhjx" Text="To mě zajímá." />
+										<Triggers>
+											<Port Name="start_dialog" />
+										</Triggers>
+										<Elements>
+											<Response Role="HENRY" />
+										</Elements>
+									</Sequence>
+									<Sequence EndType="EndDialogue" ChatPosition="Second" Name="seq5">
+										<DesignName StringName="bibrek__c_seq5_6XGK" Text="seq5" />
+										<UiPrompt StringName="ui_bibrek__c_seq5_TqeE" Text="Dej pokoj." />
+										<Elements>
+											<Response Role="HENRY">
+												<Parenthetical>
+													<Text StringName="bibr_henry_nevrle_hipo" Text="nevrle" />
+												</Parenthetical>
+												<Text StringName="bibr_henry_nevotravuj_TXkO" Text="Nevotravuj..." />
+											</Response>
+										</Elements>
+									</Sequence>
+									<Sequence EndType="Decision" ChatPosition="Refusal" Name="seq6">
+										<DesignName StringName="bibrek__c_seq6_FOGB" Text="seq6" />
+										<Elements>
+											<Response Role="KUMAN_BIBREK" />
+										</Elements>
+										<Decision Name="dec3" Autoselect="true">
+											<Sequences>
+												<Sequence EndType="EndDialogue" Name="seq7">
+													<DesignName StringName="bibrek__c_seq7_ICRh" Text="seq7" />
+													<Elements>
+														<Response Role="KUMAN_BIBREK" ReferenceLength="1.91">
+															<Parenthetical>
+																<Text StringName="bibr_kuman_bib_zamumla_sB9L" Text="zamumlá" />
+															</Parenthetical>
+															<Text StringName="bibr_kuman_bib_asi_nezna__QWTg" Text="Asi mi nerozuměl..." />
+															<Commands>
+																<FacialMoodCommand FacialMood="angry1" />
+																<AnimationCommand Delay="0.02" FragmentId="ADLG_Confusion" Guid="647e95a8-0c52-89a2-8ae6-bf53333de678" Variant="1" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+												<Sequence EndType="EndDialogue" Name="seq8">
+													<DesignName StringName="bibrek__c_seq8_8xLF" Text="seq8" />
+													<Elements>
+														<Response Role="KUMAN_BIBREK" StartDelay="0.27" ReferenceLength="1.77">
+															<Parenthetical>
+																<Text StringName="bibr_kuman_bib_laka_3zQH" Text="láká" />
+															</Parenthetical>
+															<Text StringName="bibr_kuman_bib_divnej_chl_Iq7P" Text="Sázíme se o hezký peníze!" />
+															<Commands>
+																<FacialMoodCommand FacialMood="happy3" />
+																<AnimationCommand Delay="-0.27" FragmentId="ADLG_Agree" Guid="d3cd78e7-e21f-616e-5809-9af2836ad5d4" Variant="2" />
+															</Commands>
+														</Response>
+													</Elements>
+												</Sequence>
+											</Sequences>
+										</Decision>
+									</Sequence>
+								</Sequences>
+							</Decision>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</Dialog>
+	</Skald>
+</Database>

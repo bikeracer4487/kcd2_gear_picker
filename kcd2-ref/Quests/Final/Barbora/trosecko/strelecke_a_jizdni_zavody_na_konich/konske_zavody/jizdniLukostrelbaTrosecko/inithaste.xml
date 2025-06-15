@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="inithaste">
+			<Ports>
+				<Port Name="oninit" Direction="Out" Type="trigger">
+					<DesignName StringName="inithaste_oninit_SuEU" Text="OnInit" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<equip_debug_bow Name="debug_equiptestbow" PositionY="10" PositionX="670" Namespace="utils.KonskeZavody_utils">
+					<Edge From="init_withHorseBowAndMoney.OnTrigger" To="go_brrr" />
+				</equip_debug_bow>
+				<State Name="ForStartTrackHasteConvenienceOnlyShootOnce" PositionY="-340" PositionX="780" TypeT="bool">
+					<Constant Name="DefaultValue" Value="false" />
+					<Edge From="init_noTeleport.OnTrigger" To="SetTrue" />
+					<Edge From="init.OnTrigger" To="SetTrue" />
+					<Edge From="init_withHorseBowAndMoney.OnTrigger" To="SetTrue" />
+				</State>
+				<HasteTrigger Name="init" PositionY="-280" PositionX="300">
+					<Edge From="makearray35_1.Array" To="ConsoleCommands" />
+					<Edge From="makearray1_1.Array" To="Prerequisites" />
+				</HasteTrigger>
+				<HasteTrigger Name="init_noTeleport" PositionY="-510" PositionX="300">
+					<Edge From="makearray1_1.Array" To="Prerequisites" />
+				</HasteTrigger>
+				<HasteTrigger Name="init_withHorseBowAndMoney" PositionY="-50" PositionX="300">
+					<Edge From="joinarrays37.Array" To="Prerequisites" />
+				</HasteTrigger>
+				<Function Name="joinarrays37" PositionY="10" PositionX="10" TypeT="wh::conceptmodule::ConceptPaths" MethodName="utilities::array::JoinArrays" DeclaringType="utilities::array">
+					<Edge From="makearray1_1.Array" To="A" />
+					<Edge From="makearray66.Array" To="B" />
+				</Function>
+				<MakeArray Name="makearray1_1" PositionY="-450" PositionX="-300" TypeT="wh::conceptmodule::ConceptPaths">
+					<Constant Name="A" Value="socky.endQuest" />
+				</MakeArray>
+				<MakeArray Name="makearray35_1" PositionY="-240" PositionX="-270" TypeT="Strings">
+					<Constant Name="A" Value="goto tvez_bibrek" />
+				</MakeArray>
+				<MakeArray Name="makearray66" PositionY="40" PositionX="-310" TypeT="wh::conceptmodule::ConceptPaths">
+					<Constant Name="A" Value="horse.horse_streamOnly" />
+					<Constant Name="B" Value="02_items.04_money_50gr" />
+				</MakeArray>
+				<Output Name="Output">
+					<Edge From="ForStartTrackHasteConvenienceOnlyShootOnce.OnTrue" To="oninit" />
+				</Output>
+			</Nodes>
+			<Text StringName="inithaste_t4hs" Text="InitHaste" />
+		</Module>
+	</Skald>
+</Database>

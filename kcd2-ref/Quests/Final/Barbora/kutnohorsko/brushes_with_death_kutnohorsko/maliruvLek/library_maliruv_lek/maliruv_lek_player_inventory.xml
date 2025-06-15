@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="maliruv_lek_player_inventory">
+			<Ports>
+				<Port Name="hracuv_inventar" Direction="Out" Type="wh::entitymodule::Inventory*">
+					<DesignName StringName="maliruv_l_hracuv_inventar_xQr7" Text="Hráčův inventář" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<ObjectProperties Name="isoulproperties1" PositionY="-380" PositionX="-40" DeclaringType="wh::rpgmodule::I_Soul">
+					<Asset Name="I_Soul" Alias="player" />
+				</ObjectProperties>
+				<Output Name="Output">
+					<Edge From="isoulproperties1.Inventory" To="hracuv_inventar" />
+				</Output>
+			</Nodes>
+			<Text StringName="maliruv_lek_player_invent_3lQp" Text="Malířův Lék Player inventory" />
+		</Module>
+	</Skald>
+</Database>

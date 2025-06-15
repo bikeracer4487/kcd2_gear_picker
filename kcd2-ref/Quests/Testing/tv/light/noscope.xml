@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="noscope">
+			<Definitions>
+				<Definition File="noscope/ptacka_zpevacka.xml" />
+			</Definitions>
+			<Nodes>
+				<HasteTrigger Name="noScope_female" PositionY="-100" PositionX="-1020" />
+				<ptacka_zpevacka Name="ptacka_zpevacka" PositionY="0" PositionX="-70" />
+				<State Name="state3" PositionY="190" PositionX="-720" TypeT="bool">
+					<Edge From="noScope_female.OnTrigger" To="SetTrue" />
+				</State>
+			</Nodes>
+			<Assets>
+				<SoulAsset Name="roza" SharedSoulGuids="92e0e532-d0ca-4d76-bf98-eb4f099dac7b" />
+			</Assets>
+			<Text Text="noScope" />
+		</Module>
+	</Skald>
+</Database>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Dialog Name="bark_krasek_omdleva">
+			<Text StringName="bark_krasek_omdleva_54k9" Text="Bark Krasek omdleva" />
+			<Dialogue Type="ingame monolog" TechnicalStatus="Enabled" Initiator="NonPlayer" ClashPriority="Flavor">
+				<Decision Name="dec1" Priority="SideQuestSubmission" Alias="strasidlo_barkKrasekOmdleva">
+					<Sequences>
+						<Sequence EndType="EndDialogue" Name="seq1">
+							<DesignName StringName="bark_kras_seq1_KFV4" Text="seq1" />
+							<Elements>
+								<Response Role="KRASEK">
+									<Parenthetical>
+										<Text StringName="bark_krasek_opily_omdleva_cdzo" Text="opilý, omdlévá" />
+									</Parenthetical>
+									<Text StringName="bark_krasek_sakra_ta_zem__7HrX" Text="Kurva, ta zem je pořád blíž a blíž..." />
+								</Response>
+							</Elements>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</Dialog>
+	</Skald>
+</Database>

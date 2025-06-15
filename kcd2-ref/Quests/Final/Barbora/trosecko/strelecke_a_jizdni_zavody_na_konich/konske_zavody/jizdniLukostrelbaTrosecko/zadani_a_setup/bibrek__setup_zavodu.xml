@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<DialogWrapper Name="bibrek__setup_zavodu" HibernateMode="Script">
+			<Ports>
+				<Port Name="start_race" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_odstartuj_zavod_X5Nz" Text="Start race" />
+				</Port>
+				<Port Name="track_A_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_1_fDv7" Text="Track_A_1" />
+				</Port>
+				<Port Name="track_B_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_2_glHV" Text="Track_B_1" />
+				</Port>
+				<Port Name="track_C_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_3_MVVi" Text="Track_C_1" />
+				</Port>
+				<Port Name="track_A_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_4_3VER" Text="Track_A_2" />
+				</Port>
+				<Port Name="track_B_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_5_1MJW" Text="Track_B_2" />
+				</Port>
+				<Port Name="track_C_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_trat_6_MRCg" Text="Track_C_2" />
+				</Port>
+				<Port Name="track_a_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_a_3_qAJr" Text="Track_A_3" />
+				</Port>
+				<Port Name="forceQuestContest" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_forcequestconte_6nq1" Text="Micro quest is active" />
+				</Port>
+				<Port Name="on_crime_cooldown" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_on_crime_cooldo_3rJi" Text="On crime cooldown" />
+				</Port>
+				<Port Name="forced_track1_done" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_trat_1_zajeta_BVHI" Text="Forced track1 done" />
+				</Port>
+				<Port Name="forced_track2_done" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_trat_2_zajeta_TG9L" Text="Forced track2 done" />
+				</Port>
+				<Port Name="forced_track3_done" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_trat_3_zajeta_EKCm" Text="Forced track3 done" />
+				</Port>
+				<Port Name="hrac_vybral_lukostrelbu" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_hrac_vybral_luk_p9j0" Text="Hráč vybral lukostřelbu" />
+				</Port>
+				<Port Name="hrac_vybral_dostihy" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_hrac_vybral_dos_6VjP" Text="hráč vybral dostihy" />
+				</Port>
+				<Port Name="hrac_vyresil_smirem" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_hrac_vyresil_sm_nlFv" Text="Hráč vyřešil smírem" />
+				</Port>
+				<Port Name="hrac_neuspel_v_reseni_smiru" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_hrac_neuspel_v__q3cc" Text="Hráč neuspěl v řešení smíru" />
+				</Port>
+				<Port Name="jizdnilukostrelba_tutorialendbibrek" Direction="In" Type="bool">
+					<DesignName StringName="bibrek__s_jizdnilukostrel_pT2T" Text="jizdniLukostrelba_tutorialEndBibrek" />
+				</Port>
+				<Port Name="track_b_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_b_3_Ivw9" Text="Track_B_3" />
+				</Port>
+				<Port Name="track_c_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_c_3_06db" Text="Track_C_3" />
+				</Port>
+				<Port Name="track_d_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_7_1JAN" Text="Track_D_1" />
+				</Port>
+				<Port Name="track_d_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_8_xk52" Text="Track_D_2" />
+				</Port>
+				<Port Name="track_e_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_9_Ey27" Text="Track_E_1" />
+				</Port>
+				<Port Name="track_e_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_10_7oOb" Text="Track_E_2" />
+				</Port>
+				<Port Name="track_f_1" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_f_1_XmMj" Text="Track_F_1" />
+				</Port>
+				<Port Name="track_f_2" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_f_2_FE9y" Text="Track_F_2" />
+				</Port>
+				<Port Name="track_g_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_g_3_hsgB" Text="Track_G_3" />
+				</Port>
+				<Port Name="track_d_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_d_3_FNnn" Text="Track_D_3" />
+				</Port>
+				<Port Name="track_e_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_e_3_7gkh" Text="Track_E_3" />
+				</Port>
+				<Port Name="track_f_3" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_track_f_3_9YtI" Text="Track_F_3" />
+				</Port>
+				<Port Name="playersbet" Direction="Out" Type="float">
+					<DesignName StringName="bibrek__s_playersbet_JEEf" Text="PlayersBet" />
+				</Port>
+				<Port Name="setbet" Direction="Out" Type="trigger">
+					<DesignName StringName="bibrek__s_setbet_27dE" Text="SetBet" />
+				</Port>
+				<Port Name="last_contest_player_score_result" Direction="In" Type="HorseArchery_Result">
+					<DesignName StringName="bibrek__s_last_contest_pl_fRON" Text="Last contest player score result" />
+				</Port>
+				<Port Name="vybrana_trat" Direction="In" Type="int">
+					<DesignName StringName="bibrek__s_vybrana_trat_166y" Text="Vybraná trať" />
+				</Port>
+				<Port Name="includujeme_dialog" Direction="Out" Type="bool">
+					<DesignName StringName="bibrek__s_includujeme_dia_onL5" Text="Includujeme dialog" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="bibrek__setup_zavodu/bibrek__setup_zavodu.xml" />
+			</Definitions>
+			<Nodes>
+				<State Name="betMemory" PositionY="630" PositionX="1110" TypeT="float">
+					<Constant Name="DefaultValue" Value="2" />
+					<Edge From="triggersequence5.A" To="Exec" />
+					<Edge From="Bets.Value1" To="Value" />
+				</State>
+				<Select Name="Bets" PositionY="660" PositionX="540" InputPortGroups="2" ValueTypes="float">
+					<Edge From="bibrek__setup_zavodu.bet_min" To="SelectA" />
+					<Edge From="bibrek__setup_zavodu.bet_2" To="SelectB" />
+					<Edge From="horse_archery_track_info.real_bet" To="BValue1">
+						<Vertex>C6BCYboo</Vertex>
+					</Edge>
+					<Edge From="horse_archery_track_info.practice_bet" To="AValue1">
+						<Vertex>4qv1nkKr</Vertex>
+					</Edge>
+				</Select>
+				<bibrek__setup_zavodu Name="bibrek__setup_zavodu" PositionY="-820" PositionX="-20">
+					<Edge From="hrac_vyresil_smirem" To="hrac_vyresil_smirem" />
+					<Edge From="hrac_vybral_dostihy" To="hrac_vybral_dostihy" />
+					<Edge From="hrac_vybral_lukostrelbu" To="hrac_vybral_lukostrelbu" />
+					<Edge From="forced_track3_done" To="forced_track3_done" />
+					<Edge From="forced_track2_done" To="forced_track2_done" />
+					<Edge From="forced_track1_done" To="forced_track1_done" />
+					<Edge From="forceQuestContest" To="micro_quest_is_active" />
+					<Edge From="vybrana_trat" To="selectedTrackNumber" />
+					<Edge From="jizdnilukostrelba_tutorialendbibrek" To="jizdnilukostrelba_tutorialendbibrek" />
+					<Edge From="on_crime_cooldown" To="on_crime_cooldown" />
+					<Edge From="hrac_neuspel_v_reseni_smiru" To="hrac_neuspel_v_reseni_smiru" />
+					<Edge From="compare6.bool" To="hrac_naposledy_lukostrelbu_vyhral" />
+					<Edge From="horsearchery_conditions.is_daytime" To="je_den" />
+					<Edge From="horsearchery_conditions.player_has_horse" To="player_has_horse" />
+					<Edge From="horsearchery_conditions.player_has_weapon_equipped" To="player_has_weapon_equipped" />
+					<Edge From="horse_archery_track_info.practice_bet" To="Payment_seq11">
+						<Vertex>4qv1nkKr</Vertex>
+					</Edge>
+					<Edge From="horse_archery_track_info.real_bet" To="Payment_seq12">
+						<Vertex>C6BCYboo</Vertex>
+					</Edge>
+					<Edge From="HasMoney_Soul.hasmoney" To="showrunner_has_money_for_practice_bet" />
+					<Edge From="HasMoney_Soul_1.hasmoney" To="showrunner_has_money_for_real_bet" />
+					<Edge From="HasMoney_Soul_2.hasmoney" To="player_has_money_for_real_bet" />
+					<Edge From="HasMoney_Soul_2_1.hasmoney" To="player_has_money_for_practice_bet" />
+				</bibrek__setup_zavodu>
+				<Function Name="compare6" PositionY="-800" PositionX="-870" TypeT="HorseArchery_Result" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="NotEquals" />
+					<Constant Name="ValueB" Value="Lost" />
+					<Edge From="last_contest_player_score_result" To="ValueA" />
+				</Function>
+				<EventFunction Name="createplayerreward7" PositionY="1190" PositionX="520" MethodName="wh::entitymodule::CreatePlayerReward" DeclaringType="wh::entitymodule">
+					<Constant Name="ItemClass" Value="459b1484-7758-4bde-a326-4ebd17493c60" />
+					<Edge From="bibrek__setup_zavodu.map" To="Exec" />
+				</EventFunction>
+				<HasMoney_Soul Name="HasMoney_Soul" PositionY="-120" PositionX="-410" Namespace="utils.money">
+					<Asset Name="soul" Alias="bibrek" />
+					<Edge From="horse_archery_track_info.practice_bet" To="amount" />
+				</HasMoney_Soul>
+				<HasMoney_Soul Name="HasMoney_Soul_1" PositionY="70" PositionX="-410" Namespace="utils.money">
+					<Asset Name="soul" Alias="bibrek" />
+					<Edge From="horse_archery_track_info.real_bet" To="amount" />
+				</HasMoney_Soul>
+				<HasMoney_Soul Name="HasMoney_Soul_2" PositionY="510" PositionX="-410" Namespace="utils.money">
+					<Asset Name="soul" Alias="player" />
+					<Edge From="horse_archery_track_info.real_bet" To="amount" />
+				</HasMoney_Soul>
+				<HasMoney_Soul Name="HasMoney_Soul_2_1" PositionY="280" PositionX="-410" Namespace="utils.money">
+					<Asset Name="soul" Alias="player" />
+					<Edge From="horse_archery_track_info.practice_bet" To="amount" />
+				</HasMoney_Soul>
+				<horse_archery_track_info Name="horse_archery_track_info" PositionY="660" PositionX="-870" Namespace="utils.KonskeZavody_utils">
+					<Edge From="vybrana_trat" To="track_index" />
+				</horse_archery_track_info>
+				<horsearchery_conditions Name="horsearchery_conditions" PositionY="-1050" PositionX="-590" Namespace="utils.KonskeZavody_utils">
+					<Asset Name="showrunner" Alias="bibrek" />
+				</horsearchery_conditions>
+				<State Name="isIncludingDialog" PositionY="940" PositionX="530" TypeT="bool">
+					<Edge From="bibrek__setup_zavodu.includujeme_dialog" To="SetTrue" />
+					<Edge From="bibrek__setup_zavodu.konec_inludu" To="SetFalse" />
+				</State>
+				<Output Name="Output">
+					<Edge From="bibrek__setup_zavodu.track_B_1" To="track_B_1" />
+					<Edge From="bibrek__setup_zavodu.track_C_1" To="track_C_1" />
+					<Edge From="bibrek__setup_zavodu.start_race" To="start_race" />
+					<Edge From="bibrek__setup_zavodu.track_A_2" To="track_A_2" />
+					<Edge From="bibrek__setup_zavodu.track_B_2" To="track_B_2" />
+					<Edge From="bibrek__setup_zavodu.track_C_2" To="track_C_2" />
+					<Edge From="triggersequence5.B" To="setbet">
+						<Vertex>vertex70</Vertex>
+						<Vertex>TuRaIX1l</Vertex>
+					</Edge>
+					<Edge From="betMemory.State" To="playersbet" />
+					<Edge From="bibrek__setup_zavodu.track_d_1" To="track_d_1" />
+					<Edge From="bibrek__setup_zavodu.track_d_2" To="track_d_2" />
+					<Edge From="bibrek__setup_zavodu.track_e_1" To="track_e_1" />
+					<Edge From="bibrek__setup_zavodu.track_e_2" To="track_e_2" />
+					<Edge From="bibrek__setup_zavodu.track_A_1" To="track_A_1" />
+					<Edge From="bibrek__setup_zavodu.track_a_3" To="track_a_3" />
+					<Edge From="bibrek__setup_zavodu.track_b_3" To="track_b_3" />
+					<Edge From="bibrek__setup_zavodu.track_c_3" To="track_c_3" />
+					<Edge From="bibrek__setup_zavodu.track_f_1" To="track_f_1" />
+					<Edge From="bibrek__setup_zavodu.track_f_2" To="track_f_2" />
+					<Edge From="bibrek__setup_zavodu.track_g_3" To="track_g_3" />
+					<Edge From="bibrek__setup_zavodu.track_d_3" To="track_d_3" />
+					<Edge From="bibrek__setup_zavodu.track_e_3" To="track_e_3" />
+					<Edge From="bibrek__setup_zavodu.track_f_3" To="track_f_3" />
+					<Edge From="isIncludingDialog.State" To="includujeme_dialog">
+						<Vertex>UV498By3</Vertex>
+					</Edge>
+				</Output>
+				<TriggerSequence Name="triggersequence5" PositionY="630" PositionX="820">
+					<Edge From="Bets.OnExec" To="Exec" />
+				</TriggerSequence>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="4qv1nkKr" PositionY="900" PositionX="-90" />
+				<EdgeVertex Name="C6BCYboo" PositionY="930" PositionX="-50" />
+				<EdgeVertex Name="TuRaIX1l" PositionY="840" PositionX="1340" />
+				<EdgeVertex Name="UV498By3" PositionY="1065" PositionX="1431" />
+				<EdgeVertex Name="vertex70" PositionY="840" PositionX="1130" />
+			</EdgeVertices>
+		</DialogWrapper>
+	</Skald>
+</Database>

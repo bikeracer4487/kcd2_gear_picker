@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="malirovy_veci">
+			<Ports>
+				<Port Name="nastreamovat" Direction="In" Type="trigger">
+					<DesignName StringName="malirovy__nastreamovat_C4r4" Text="Nastreamovat" />
+				</Port>
+				<Port Name="odstreamovat" Direction="In" Type="trigger">
+					<DesignName StringName="malirovy__odstreamovat_88xR" Text="Odstreamovat" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Layer Name="profilePaintersBelongingsProfile" PositionY="-30" PositionX="360">
+					<Asset Name="Profiles" Alias="paintersBelongingsProfile" />
+					<Edge From="statePaintersBelongings.OnGround" To="IsActive" />
+				</Layer>
+				<State Name="statePaintersBelongings" PositionY="-190" PositionX="0" TypeT="PaintersBelongingsStream">
+					<Edge From="nastreamovat" To="SetOnGround" />
+					<Edge From="odstreamovat" To="SetGone" />
+				</State>
+			</Nodes>
+			<Types>
+				<Type TypeName="PaintersBelongingsStream">
+					<StateTypeEnumeration Name="None" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="OnGround" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="Gone" ObjectiveValueType="None" />
+				</Type>
+			</Types>
+			<Text StringName="malirovy_veci_msG0" Text="Malířovy věci" />
+		</Module>
+	</Skald>
+</Database>

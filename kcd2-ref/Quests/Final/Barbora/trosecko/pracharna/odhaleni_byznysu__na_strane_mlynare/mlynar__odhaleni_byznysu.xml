@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<DialogWrapper Name="mlynar__odhaleni_byznysu">
+			<Ports>
+				<Port Name="konec_linie" Direction="Out" Type="trigger">
+					<DesignName StringName="mlynar__o_konec_linie_CGGN" Text="Konec linie" />
+				</Port>
+				<Port Name="force_dialog" Direction="In" Type="trigger">
+					<DesignName StringName="mlynar__o_force_dialog_UHpo" Text="force dialog" />
+				</Port>
+				<Port Name="jindra_odhalil_cerny_prach_na_nebakove" Direction="In" Type="bool">
+					<DesignName StringName="mlynar__o_jindra_odhalil__tq24" Text="Jindra odhalil černý prach na Nebákově" />
+				</Port>
+				<Port Name="jindra_je_na_kutnohorsku" Direction="In" Type="bool">
+					<DesignName StringName="mlynar__o_jindra_je_na_ku_onAk" Text="Jindra je na Kutnohorsku" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="mlynar__odhaleni_byznysu/mlynar__odhaleni_byznysu.xml" />
+			</Definitions>
+			<Nodes>
+				<State Name="bonkaZije" PositionY="480" PositionX="-1090" TypeT="bool">
+					<Edge From="triggersequence29.A" To="SetTrue" />
+				</State>
+				<Function Name="createdialogparams15" PositionY="150" PositionX="-10" MethodName="wh::dialogmodule::CreateDialogParams" DeclaringType="wh::dialogmodule">
+					<Constant Name="MovePlayer" Value="true" />
+					<Constant Name="RotateParticipants" Value="true" />
+					<Edge From="makearray22.Array" To="Participants" />
+				</Function>
+				<IfFunction Name="ifdeathcheck29" PositionY="150" PositionX="-1620" MethodName="wh::rpgmodule::DeathCheck" DeclaringType="wh::rpgmodule">
+					<Asset Name="Souls" Alias="bonka" />
+					<Edge From="force_dialog" To="Exec" />
+				</IfFunction>
+				<IfFunction Name="ifdeathcheck30" PositionY="100" PositionX="-900" MethodName="wh::rpgmodule::DeathCheck" DeclaringType="wh::rpgmodule">
+					<Asset Name="Souls" Alias="zink" />
+					<Edge From="select28.OnExec" To="Exec" />
+				</IfFunction>
+				<MakeArray Name="makearray22" PositionY="160" PositionX="-290" TypeT="wh::rpgmodule::Souls">
+					<Asset Name="A" Alias="krejzl" />
+					<Edge From="select28.Value1" To="B" />
+					<Edge From="select28_1.Value1" To="C" />
+				</MakeArray>
+				<mlynar__odhaleni_byznysu Name="mlynar__odhaleni_byznysu" PositionY="-80" PositionX="550">
+					<Asset Name="DialogueHolder" Alias="revelationKrejzlOnlyDH" />
+					<Edge From="createdialogparams15.DialogParams" To="DialogParams" />
+					<Edge From="jindra_odhalil_cerny_prach_na_nebakove" To="jindra_odhalil_cerny_prach_na_nebakove" />
+					<Edge From="jindra_je_na_kutnohorsku" To="jindra_je_na_kutnohorsku" />
+					<Edge From="select28_1.OnExec" To="EnqueueDialogue">
+						<Vertex>lvqNA4PF</Vertex>
+					</Edge>
+					<Edge From="zinkZije.State" To="zink_zije" />
+					<Edge From="bonkaZije.State" To="bonka_zije" />
+				</mlynar__odhaleni_byznysu>
+				<Output Name="Output">
+					<Edge From="mlynar__odhaleni_byznysu.konec_linie" To="konec_linie" />
+				</Output>
+				<Select Name="select28" PositionY="100" PositionX="-1260" InputPortGroups="2" ValueTypes="wh::rpgmodule::I_Soul*">
+					<Asset Name="AValue1" Alias="bonkaStandIn" />
+					<Asset Name="BValue1" Alias="bonka" />
+					<Edge From="ifdeathcheck29.True" To="SelectA" />
+					<Edge From="ifdeathcheck29.False" To="SelectB" />
+					<Edge From="triggersequence29.B" To="SelectB" />
+				</Select>
+				<Select Name="select28_1" PositionY="90" PositionX="-610" InputPortGroups="2" ValueTypes="wh::rpgmodule::I_Soul*">
+					<Asset Name="AValue1" Alias="zinkStandIn" />
+					<Asset Name="BValue1" Alias="zink" />
+					<Edge From="ifdeathcheck30.True" To="SelectA" />
+					<Edge From="triggersequence29_1.B" To="SelectB" />
+				</Select>
+				<TriggerSequence Name="triggersequence29" PositionY="390" PositionX="-1420">
+					<Edge From="ifdeathcheck29.False" To="Exec" />
+				</TriggerSequence>
+				<TriggerSequence Name="triggersequence29_1" PositionY="400" PositionX="-800">
+					<Edge From="ifdeathcheck30.False" To="Exec" />
+				</TriggerSequence>
+				<State Name="zinkZije" PositionY="390" PositionX="-520" TypeT="bool">
+					<Edge From="triggersequence29_1.A" To="SetTrue" />
+				</State>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="lvqNA4PF" PositionY="-40" PositionX="-190" />
+			</EdgeVertices>
+			<Assets>
+				<DialogueHolderAsset Name="revelationKrejzlOnlyDH" />
+				<ProfileAsset Name="bonkaProfile" />
+				<ProfileAsset Name="zinkProfile" />
+			</Assets>
+		</DialogWrapper>
+	</Skald>
+</Database>

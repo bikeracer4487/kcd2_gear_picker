@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="setups">
+			<Ports>
+				<Port Name="track1" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track1_eTW9" Text="Track1" />
+				</Port>
+				<Port Name="track2" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track2_sziP" Text="Track2" />
+				</Port>
+				<Port Name="track3" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track3_LLNs" Text="Track3" />
+				</Port>
+				<Port Name="track4" Direction="In" Type="trigger">
+					<DesignName StringName="setups_trat_4_ePMh" Text="Track4" />
+				</Port>
+				<Port Name="track5" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track5_JKNH" Text="Track5" />
+				</Port>
+				<Port Name="track6" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track6_b4Rp" Text="Track6" />
+				</Port>
+				<Port Name="difficulty_modifier" Direction="Out" Type="int">
+					<DesignName StringName="setups_difficultymodifier_Z7aI" Text="Difficulty modifier" />
+				</Port>
+				<Port Name="track_number" Direction="Out" Type="int">
+					<DesignName StringName="setups_tracknumber13_K3zJ" Text="Track number" />
+				</Port>
+				<Port Name="track7" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track7_BA0V" Text="Track7" />
+				</Port>
+				<Port Name="track8" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track8_tE8i" Text="Track8" />
+				</Port>
+				<Port Name="track9" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track9_fTnH" Text="Track9" />
+				</Port>
+				<Port Name="track10" Direction="In" Type="trigger">
+					<DesignName StringName="setups_track10_Z1gT" Text="Track10" />
+				</Port>
+				<Port Name="difficulty1" Direction="In" Type="trigger">
+					<DesignName StringName="setups_difficulty1_FKbc" Text="Difficulty1" />
+				</Port>
+				<Port Name="difficulty2" Direction="In" Type="trigger">
+					<DesignName StringName="setups_difficulty2_b1ti" Text="Difficulty2" />
+				</Port>
+				<Port Name="difficulty3" Direction="In" Type="trigger">
+					<DesignName StringName="setups_difficulty3_odZ8" Text="Difficulty3" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Select Name="Difficulties" PositionY="180" PositionX="-110" InputPortGroups="3" ValueTypes="int">
+					<Constant Name="AValue1" Value="1" />
+					<Constant Name="BValue1" Value="2" />
+					<Constant Name="CValue1" Value="3" />
+					<Edge From="difficulty1" To="SelectA" />
+					<Edge From="difficulty2" To="SelectB" />
+					<Edge From="difficulty3" To="SelectC" />
+				</Select>
+				<State Name="Difficulty" PositionY="180" PositionX="190" TypeT="int">
+					<Constant Name="DefaultValue" Value="1" />
+					<Edge From="Difficulties.OnExec" To="Exec" />
+					<Edge From="Difficulties.Value1" To="Value" />
+				</State>
+				<Output Name="Output">
+					<Edge From="Difficulty.State" To="difficulty_modifier" />
+					<Edge From="trackNumber.State" To="track_number" />
+				</Output>
+				<State Name="trackNumber" PositionY="-580" PositionX="290" TypeT="int">
+					<Constant Name="DefaultValue" Value="1" />
+					<Edge From="trackNumbers.OnExec" To="Exec" />
+					<Edge From="trackNumbers.Value1" To="Value" />
+				</State>
+				<Select Name="trackNumbers" PositionY="-560" PositionX="-110" InputPortGroups="10" ValueTypes="int">
+					<Constant Name="AValue1" Value="1" />
+					<Constant Name="BValue1" Value="2" />
+					<Constant Name="CValue1" Value="3" />
+					<Constant Name="DValue1" Value="4" />
+					<Constant Name="EValue1" Value="5" />
+					<Constant Name="FValue1" Value="6" />
+					<Constant Name="GValue1" Value="7" />
+					<Constant Name="HValue1" Value="8" />
+					<Constant Name="IValue1" Value="9" />
+					<Constant Name="JValue1" Value="10" />
+					<Edge From="track1" To="SelectA" />
+					<Edge From="track2" To="SelectB" />
+					<Edge From="track3" To="SelectC" />
+					<Edge From="track4" To="SelectD" />
+					<Edge From="track5" To="SelectE" />
+					<Edge From="track6" To="SelectF" />
+					<Edge From="track7" To="SelectG" />
+					<Edge From="track8" To="SelectH" />
+					<Edge From="track9" To="SelectI" />
+					<Edge From="track10" To="SelectJ" />
+				</Select>
+			</Nodes>
+			<Text StringName="setups_6TkE" Text="Setups" />
+		</Module>
+	</Skald>
+</Database>

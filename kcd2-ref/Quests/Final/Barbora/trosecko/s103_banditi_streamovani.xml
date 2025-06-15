@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="s103_banditi_streamovani" Purpose="CharacterControl">
+			<Ports>
+				<Port Name="pribehove_prepnuti_do_levelu" Direction="In" Type="trigger">
+					<DesignName StringName="s103_band_pribehove_prepn_9NRU" Text="příběhové přepnutí do levelu" />
+				</Port>
+				<Port Name="s103_banditi_odchod" Direction="In" Type="trigger">
+					<DesignName StringName="s103_band_s103_banditi_od_YEhg" Text="S103 Banditi odchod" />
+				</Port>
+				<Port Name="s103_banditi_utek" Direction="In" Type="trigger">
+					<DesignName StringName="s103_band_s103_banditi_ut_W4q3" Text="S103 Banditi útěk" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<leavelevelhandling_v2 Name="leavelevelhandling_v2" PositionY="-20" PositionX="90" Namespace="utils.streaming">
+					<Asset Name="profiles" Alias="poskociProfile" />
+					<Asset Name="smartentity" Alias="vrahQuestSmartObject" />
+					<Asset Name="souls" Alias="poskociSouls" />
+					<Edge From="pribehove_prepnuti_do_levelu" To="streamprofiles" />
+					<Edge From="vrah_leaveLevelSpeed_state.Onwalk" To="leavelevel" />
+					<Edge From="vrah_leaveLevelSpeed_state.Onsprint" To="leavelevel" />
+					<Edge From="vrah_leaveLevelSpeed_state.State" To="speed" />
+					<Edge From="S103PoskociUnstream.OnTrigger" To="unstreamprofiles" />
+				</leavelevelhandling_v2>
+				<HasteTrigger Name="S103PoskociUnstream" PositionY="-210" PositionX="-330">
+					<Constant Name="IsHidden" Value="true" />
+				</HasteTrigger>
+				<State Name="vrah_leaveLevelSpeed_state" PositionY="30" PositionX="-330" TypeT="movementSpeed">
+					<Edge From="s103_banditi_odchod" To="Setwalk" />
+					<Edge From="s103_banditi_utek" To="Setsprint" />
+				</State>
+			</Nodes>
+			<Assets>
+				<ProfileAsset Name="poskociProfile" AssetProfiles="vrah_bandits" />
+				<SoulAsset Name="poskociSouls" SharedSoulGuids="7324b714-b57f-4c2b-a3d6-4d43894a3c37 f3f327b9-f87d-431f-9ff4-0bead6b955bc ce548f6b-c280-420d-ad8d-a3c216b470a8 5e022312-4e8a-478e-96d8-158c85ad683f b0d9fba4-2b1b-44c8-bb58-9484d383359e 932ffb86-b9c1-4609-beb0-ea5a8685e000" />
+				<SmartObjectAsset Name="vrahQuestSmartObject" />
+			</Assets>
+			<Text StringName="s103_banditi_streamovani_iu5n" Text="S103 Banditi streamovani" />
+		</Module>
+	</Skald>
+</Database>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="retry_done_obj">
+			<Ports>
+				<Port Name="retry_after_successful_fight" Direction="Out" Type="trigger">
+					<DesignName StringName="retry_don_retry_after_suc_wPqE" Text="Retry after successful fight" />
+				</Port>
+				<Port Name="retry_dokonceny_objective" Direction="In" Type="trigger">
+					<DesignName StringName="retry_don_retry_dokonceny_QyB6" Text="Retry dokončený objective" />
+				</Port>
+				<Port Name="obj_state" Direction="In" Type="Mandragora">
+					<DesignName StringName="retry_don_s133_quest_state_bvce" Text="Objective state" />
+				</Port>
+				<Port Name="retry_after_unsuccessful_fight" Direction="Out" Type="trigger">
+					<DesignName StringName="retry_don_retry_after_uns_B3Xj" Text="Retry after unsuccessful fight" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<IfFunction Name="ifcompare2_2" PositionY="-190" PositionX="40" TypeT="Mandragora" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="DoneTalkAndGet" />
+					<Edge From="obj_state" To="ValueA" />
+					<Edge From="retry_dokonceny_objective" To="Exec" />
+				</IfFunction>
+				<IfFunction Name="ifcompare2_3" PositionY="20" PositionX="40" TypeT="Mandragora" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="DoneTalkAndSteal" />
+					<Edge From="ifcompare2_2.False" To="Exec" />
+					<Edge From="obj_state" To="ValueA" />
+				</IfFunction>
+				<Output Name="Output">
+					<Edge From="ifcompare2_3.True" To="retry_after_unsuccessful_fight" />
+					<Edge From="ifcompare2_2.True" To="retry_after_successful_fight" />
+				</Output>
+			</Nodes>
+			<Text StringName="retry_done_obj_Hw9O" Text="Retry dokončený objective" />
+		</Module>
+	</Skald>
+</Database>

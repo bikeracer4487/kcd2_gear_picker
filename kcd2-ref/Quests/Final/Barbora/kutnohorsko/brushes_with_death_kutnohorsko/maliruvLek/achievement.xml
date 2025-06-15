@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="achievement">
+			<Ports>
+				<Port Name="s133_quest_progress" Direction="In" Type="wh::questmodule::QuestProgress">
+					<DesignName StringName="achieveme_s133_quest_prog_hlGQ" Text="S133 Quest progress" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Function Name="compare5" PositionY="-50" PositionX="-380" TypeT="wh::questmodule::QuestProgress" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="NotEquals" />
+					<Constant Name="ValueB" Value="None" />
+					<Edge From="s133_quest_progress" To="ValueA" />
+				</Function>
+				<Function Name="createitemclassdescriptor2" PositionY="170" PositionX="-520" MethodName="wh::entitymodule::CreateItemClassDescriptor" DeclaringType="wh::entitymodule">
+					<Edge From="konstanty_maliruv_lek_1.item_lektvar_best" To="ItemClass" />
+				</Function>
+				<ItemDescriptorTrigger Name="itemdescriptortrigger1" PositionY="-50" PositionX="-30">
+					<Edge From="createitemclassdescriptor2.ItemDescriptor" To="ItemDescriptor" />
+					<Edge From="maliruv_lek_player_inventory.hracuv_inventar" To="Inventory">
+						<Vertex>NlCahtDJ</Vertex>
+					</Edge>
+					<Edge From="compare5.bool" To="IsActive" />
+				</ItemDescriptorTrigger>
+				<konstanty_maliruv_lek Name="konstanty_maliruv_lek_1" PositionY="30" PositionX="-980" Namespace="library_maliruv_lek" />
+				<maliruv_lek_player_inventory Name="maliruv_lek_player_inventory" PositionY="30" PositionX="-700" Namespace="library_maliruv_lek" />
+				<AddReward Name="reward6" PositionY="-20" PositionX="440">
+					<Edge From="itemdescriptortrigger1.OnAcquire" To="AddReward" />
+					<Rewards>
+						<AchievementReward Achievement="HenrysPaintersRemedy" />
+					</Rewards>
+				</AddReward>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="NlCahtDJ" PositionY="140" PositionX="-190" />
+			</EdgeVertices>
+			<Text StringName="achievement_MLXl" Text="Achievement" />
+		</Module>
+	</Skald>
+</Database>

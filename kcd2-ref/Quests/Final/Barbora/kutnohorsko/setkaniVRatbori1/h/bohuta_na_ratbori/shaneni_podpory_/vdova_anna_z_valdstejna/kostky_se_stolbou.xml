@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Gameplay Name="kostky_se_stolbou">
+			<Ports>
+				<Port Name="start" Direction="In" Type="trigger">
+					<DesignName StringName="kostky_se_start_F1Zl" Text="Start" />
+				</Port>
+				<Port Name="kostky_uz_nejdou_hrat" Direction="Out" Type="bool">
+					<DesignName StringName="kostky_se_bohuta_nehral_k_Cgzd" Text="Kostky už nejdou hrát" />
+				</Port>
+				<Port Name="stolba_ceka_u_kostek" Direction="Out" Type="bool">
+					<DesignName StringName="kostky_se_stolba_ceka_u_k_rOyk" Text="Štolba čeká u kostek" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="kostky_se_stolbou/podkoni__chat_po_ignoru_kostek.xml" />
+			</Definitions>
+			<Nodes>
+				<AfterSeeingPlayer_UrgeADialog_Advanced Name="AfterSeeingPlayer_UrgeADialog_Advanced" PositionY="680" PositionX="3050" Namespace="utils.speech">
+					<Constant Name="behaviorname" Value="urgeDialog" />
+					<Asset Name="smartentity" Alias="qso" />
+					<Asset Name="soul" Alias="stolbaRatbor" />
+					<Constant Name="urgemovementtype" Value="FollowPlayer" />
+					<Constant Name="urgeischatorbark" Value="Chat" />
+					<Constant Name="urgealiasormetarole" Value="setkaniVRatbori1_podkoniChatPoIgnoruKostek" />
+					<Constant Name="usemetarole" Value="false" />
+					<Constant Name="drawweaponifplayerdoes" Value="false" />
+					<Constant Name="waveatplayer" Value="false" />
+					<Constant Name="secondsafterurgebeforereaction" Value="0" />
+					<Constant Name="playerfleedistancebeforereaction" Value="0" />
+					<Constant Name="supressurgewhennpchasdenialreputation" Value="false" />
+					<Constant Name="crimemode" Value="Default" />
+					<Edge From="if7.True" To="enable" />
+					<Edge From="podkoni__chat_po_ignoru_kostek.kostky_uz_nejdou_hrat" To="disable">
+						<Vertex>vertex5</Vertex>
+						<Vertex>vertex6</Vertex>
+					</Edge>
+				</AfterSeeingPlayer_UrgeADialog_Advanced>
+				<Function Name="and13" PositionY="20" PositionX="250" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="timer1.Running" To="A" />
+					<Edge From="stolbaAtDice.State" To="B" />
+				</Function>
+				<Function Name="and8" PositionY="-50" PositionX="1830" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="nehralKostky.bool" To="B" />
+					<Edge From="timer1.Running" To="A">
+						<Vertex>gU80MxWV</Vertex>
+					</Edge>
+				</Function>
+				<Function Name="compare14" PositionY="710" PositionX="2140" TypeT="DiceGameState" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Equals" />
+					<Constant Name="ValueB" Value="Inactive" />
+					<Edge From="questDice.kibitzerfast" To="ValueA">
+						<Vertex>FjnukL61</Vertex>
+					</Edge>
+				</Function>
+				<EntityContextTrigger Name="entitycontexttrigger16" PositionY="550" PositionX="-580">
+					<Constant Name="Context" Value="dice_readyToPlayMinigame" />
+					<Asset Name="Souls" Alias="stolbaRatbor" />
+					<Edge From="timer1.Running" To="IsActive" />
+				</EntityContextTrigger>
+				<State Name="hracHralKosky" PositionY="210" PositionX="1280" TypeT="bool">
+					<Edge From="start" To="SetFalse">
+						<Vertex>VKY8XBwj</Vertex>
+					</Edge>
+					<Edge From="questDice.gameinterrupted" To="SetTrue" />
+					<Edge From="questDice.playerleft" To="SetTrue" />
+					<Edge From="questDice.playerlost" To="SetTrue" />
+					<Edge From="questDice.playerwon" To="SetTrue" />
+					<Edge From="questDice.gamecouldnotbestarted" To="SetTrue" />
+				</State>
+				<Function Name="hracNehrajeAniNehralKostky" PositionY="490" PositionX="2430" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="nehralKostky.bool" To="A" />
+					<Edge From="compare14.bool" To="B" />
+				</Function>
+				<If Name="if7" PositionY="520" PositionX="2730">
+					<Edge From="timer1.OnFinished" To="Exec">
+						<Vertex>vertex4</Vertex>
+					</Edge>
+					<Edge From="hracNehrajeAniNehralKostky.bool" To="Condition" />
+				</If>
+				<InteractorOverride Name="interactoroverride15" PositionY="-20" PositionX="490">
+					<Asset Name="Object" Alias="stolbaRatbor" />
+					<Constant Name="Type" Value="Press" />
+					<Constant Name="ActionPrompt" Value="kostky_se_hraj_kostky_tH50" />
+					<Constant Name="Priority" Value="2" />
+					<Edge From="and13.bool" To="IsActive" />
+				</InteractorOverride>
+				<State Name="kostkyNejdouHrat" PositionY="80" PositionX="3910" TypeT="bool">
+					<Edge From="podkoni__chat_po_ignoru_kostek.kostky_uz_nejdou_hrat" To="SetTrue" />
+				</State>
+				<LinkEffectNoData Name="linkeffectnodata3" PositionY="-670" PositionX="520">
+					<Asset Name="From" Alias="DiceTableStolba" />
+					<Asset Name="To" Alias="DiceTableStolba" />
+					<Constant Name="Tag" Value="dice_disabledMinigame" />
+					<Edge From="timer1.Running" To="IsActive" />
+				</LinkEffectNoData>
+				<Function Name="nehralKostky" PositionY="170" PositionX="1580" MethodName="math::boolean::Not" DeclaringType="math::boolean">
+					<Edge From="hracHralKosky.State" To="Value" />
+				</Function>
+				<Output Name="Output">
+					<Edge From="kostkyNejdouHrat.State" To="kostky_uz_nejdou_hrat" />
+					<Edge From="and8.bool" To="stolba_ceka_u_kostek">
+						<Vertex>P6x23hAz</Vertex>
+					</Edge>
+				</Output>
+				<podkoni__chat_po_ignoru_kostek Name="podkoni__chat_po_ignoru_kostek" PositionY="410" PositionX="3470">
+					<Edge From="nehralKostky.bool" To="bohuta_nehral_kostky">
+						<Vertex>vertex1</Vertex>
+					</Edge>
+					<Edge From="timer1.Finished" To="probehla_vyzva_na_kostky">
+						<Vertex>hCR8mMPf</Vertex>
+					</Edge>
+				</podkoni__chat_po_ignoru_kostek>
+				<questDice Name="questDice" PositionY="-120" PositionX="850" Namespace="open_world.minihry.kostky.dicebrary">
+					<Asset Name="npc" Alias="stolbaRatbor" />
+					<Asset Name="dicetable" Alias="DiceTableStolba" />
+					<Constant Name="gamepreset" Value="beggar" />
+					<Constant Name="forcebadge" Value="false" />
+					<Constant Name="forcedbadgeeffect" Value="headstart" />
+					<Edge From="interactoroverride15.OnInteraction" To="startminigame" />
+				</questDice>
+				<SchedulerLinkActivation Name="schedule2" PositionY="20" PositionX="2140">
+					<Constant Name="LinkTag" Value="setkaniVRatbori1_stolbaKostky" />
+					<Edge From="and8.bool" To="IsActive" />
+				</SchedulerLinkActivation>
+				<State Name="stolbaAtDice" PositionY="480" PositionX="-110" TypeT="bool">
+					<Edge From="entitycontexttrigger16.OnContextAdded" To="SetTrue" />
+					<Edge From="entitycontexttrigger16.OnContextRemoved" To="SetFalse" />
+				</State>
+				<Timer Name="timer1" PositionY="-380" PositionX="-1030">
+					<Constant Name="Duration" Value="1m" />
+					<Constant Name="TimeType" Value="GameTime" />
+					<Edge From="start" To="SetRunning" />
+				</Timer>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="FjnukL61" PositionY="780" PositionX="1170" />
+				<EdgeVertex Name="gU80MxWV" PositionY="-170" PositionX="1730" />
+				<EdgeVertex Name="hCR8mMPf" PositionY="-130" PositionX="3210" />
+				<EdgeVertex Name="P6x23hAz" PositionY="-10" PositionX="2140" />
+				<EdgeVertex Name="vertex1" PositionY="260" PositionX="3210" />
+				<EdgeVertex Name="vertex4" PositionY="-230" PositionX="2540" />
+				<EdgeVertex Name="vertex5" PositionY="650" PositionX="3780" />
+				<EdgeVertex Name="vertex6" PositionY="640" PositionX="3050" />
+				<EdgeVertex Name="VKY8XBwj" PositionY="400" PositionX="-190" />
+			</EdgeVertices>
+			<Assets>
+				<SmartObjectAsset Name="DiceTableStolba" />
+			</Assets>
+			<Text StringName="kostky_se_stolbou_jUBJ" Text="Kostky se štolbou" />
+			<Elements>
+				<ActionPromptElement>
+					<Text StringName="kostky_se_hraj_kostky_tH50" Text="Hraj kostky" />
+				</ActionPromptElement>
+			</Elements>
+		</Gameplay>
+	</Skald>
+</Database>

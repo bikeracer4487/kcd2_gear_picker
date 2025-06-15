@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="armormaterialdescriptor">
+			<Ports>
+				<Port Name="descriptorarray" Direction="Out" Type="wh::entitymodule::ItemDescriptors">
+					<DesignName StringName="armordesc_descriptorarray_0c2H" Text="ItemDescriptors" />
+				</Port>
+				<Port Name="homogenousitemdescriptors" Direction="Out" Type="wh::entitymodule::HomogenousItemDescriptors">
+					<DesignName StringName="armordesc_homogenousitemd_PRMA" Text="HomogenousItemDescriptors" />
+				</Port>
+				<Port Name="helmetdescriptor" Direction="Out" Type="wh::entitymodule::ItemCategoryDescriptor*">
+					<DesignName StringName="armormate_helmetdescriptor_428e" Text="HelmetDescriptor" />
+				</Port>
+				<Port Name="torchdescriptor" Direction="Out" Type="wh::entitymodule::ItemClassDescriptor*">
+					<DesignName StringName="armormate_torchdescriptor_8QtE" Text="TorchDescriptor" />
+				</Port>
+				<Port Name="eggedescriptor" Direction="Out" Type="wh::entitymodule::ItemClassDescriptor*">
+					<DesignName StringName="armormate_eggedescriptor_m4M3" Text="EggeDescriptor" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Function Name="createitemcategorydescriptor8" PositionY="420" PositionX="-620" MethodName="wh::entitymodule::CreateItemCategoryDescriptor" DeclaringType="wh::entitymodule">
+					<Constant Name="Category" Value="Helmet" />
+					<Constant Name="Type" Value="21" />
+					<Constant Name="Amount" Value="1" />
+				</Function>
+				<Function Name="createitemclassdescriptor9" PositionY="1110" PositionX="-610" MethodName="wh::entitymodule::CreateItemClassDescriptor" DeclaringType="wh::entitymodule">
+					<Constant Name="ItemClass" Value="4cea28a0-0814-405a-bf24-4fd711f7eb63" />
+					<Constant Name="Amount" Value="3" />
+				</Function>
+				<Function Name="createitemclassdescriptor9_1" PositionY="1610" PositionX="-620" MethodName="wh::entitymodule::CreateItemClassDescriptor" DeclaringType="wh::entitymodule">
+					<Constant Name="ItemClass" Value="7ae2e77b-bdae-46cb-b6ac-f532cf225748" />
+					<Constant Name="Amount" Value="5" />
+				</Function>
+				<MakeArray Name="makearray2" PositionY="-180" PositionX="230" TypeT="wh::entitymodule::ItemDescriptors">
+					<Edge From="createitemcategorydescriptor8.ItemDescriptor" To="A" />
+					<Edge From="createitemclassdescriptor9.ItemDescriptor" To="B" />
+					<Edge From="createitemclassdescriptor9_1.ItemDescriptor" To="C" />
+				</MakeArray>
+				<MakeArray Name="makearray3" PositionY="10" PositionX="230" TypeT="wh::entitymodule::HomogenousItemDescriptors">
+					<Edge From="createitemcategorydescriptor8.ItemDescriptor" To="A" />
+					<Edge From="createitemclassdescriptor9.ItemDescriptor" To="B" />
+					<Edge From="createitemclassdescriptor9_1.ItemDescriptor" To="C" />
+				</MakeArray>
+				<Output Name="Output">
+					<Edge From="makearray2.Array" To="descriptorarray" />
+					<Edge From="makearray3.Array" To="homogenousitemdescriptors" />
+					<Edge From="createitemcategorydescriptor8.ItemDescriptor" To="helmetdescriptor">
+						<Vertex>m1LRvdVv</Vertex>
+					</Edge>
+					<Edge From="createitemclassdescriptor9.ItemDescriptor" To="torchdescriptor">
+						<Vertex>otSbdBAu</Vertex>
+					</Edge>
+					<Edge From="createitemclassdescriptor9_1.ItemDescriptor" To="eggedescriptor">
+						<Vertex>u82CI5gV</Vertex>
+					</Edge>
+				</Output>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="m1LRvdVv" PositionY="710" PositionX="490" />
+				<EdgeVertex Name="otSbdBAu" PositionY="1212" PositionX="482" />
+				<EdgeVertex Name="u82CI5gV" PositionY="1700" PositionX="636" />
+			</EdgeVertices>
+			<Text StringName="armordescriptor_yG5a" Text="ArmorMaterialDescriptor" />
+		</Module>
+	</Skald>
+</Database>

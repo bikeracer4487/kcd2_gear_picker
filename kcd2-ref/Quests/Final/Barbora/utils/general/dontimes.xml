@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="dontimes">
+			<Ports>
+				<Port Name="in" Direction="In" Type="trigger">
+					<DesignName StringName="dontimes_in_0T6X" Text="In" />
+				</Port>
+				<Port Name="out" Direction="Out" Type="trigger">
+					<DesignName StringName="dontimes_out_lx2s" Text="Out" />
+				</Port>
+				<Port Name="n" Direction="In" Type="int">
+					<DesignName StringName="dontimes_n_KxxD" Text="N" />
+				</Port>
+				<Port Name="reset" Direction="In" Type="trigger">
+					<DesignName StringName="dontimes_reset_oW2p" Text="Reset" />
+				</Port>
+				<Port Name="counter" Direction="Out" Type="int">
+					<DesignName StringName="dontimes_counter_8Ebt" Text="Counter" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<Function Name="compare8" PositionY="50" PositionX="-540" TypeT="int" MethodName="Control::Compare" DeclaringType="Control">
+					<Constant Name="Op" Value="Less" />
+					<Edge From="n" To="ValueB">
+						<Vertex>qqt1sK9V</Vertex>
+					</Edge>
+					<Edge From="counter.State" To="ValueA">
+						<Vertex>1KB1zewv</Vertex>
+					</Edge>
+				</Function>
+				<State Name="counter" PositionY="170" PositionX="-900" TypeT="int">
+					<Constant Name="DefaultValue" Value="0" />
+					<Constant Name="Value" Value="0" />
+					<Edge From="reset" To="Exec" />
+					<Edge From="triggersequence5.B" To="Increment">
+						<Vertex>vertex8</Vertex>
+						<Vertex>vertex9</Vertex>
+					</Edge>
+				</State>
+				<If Name="if4" PositionY="-70" PositionX="-290">
+					<Edge From="in" To="Exec">
+						<Vertex>PQCEg7Pf</Vertex>
+					</Edge>
+					<Edge From="compare8.bool" To="Condition" />
+					<Edge From="triggersequence5.C" To="Exec">
+						<Vertex>yRRXRa8g</Vertex>
+						<Vertex>jw6Wmvlu</Vertex>
+						<Vertex>PQCEg7Pf</Vertex>
+					</Edge>
+				</If>
+				<Output Name="Output">
+					<Edge From="counter.State" To="counter">
+						<Vertex>1KB1zewv</Vertex>
+						<Vertex>vertex10</Vertex>
+					</Edge>
+					<Edge From="triggersequence5.A" To="out" />
+				</Output>
+				<TriggerSequence Name="triggersequence5" PositionY="-70" PositionX="0">
+					<Edge From="if4.True" To="Exec" />
+				</TriggerSequence>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="1KB1zewv" PositionY="296" PositionX="-637" />
+				<EdgeVertex Name="jw6Wmvlu" PositionY="-130" PositionX="-360" />
+				<EdgeVertex Name="PQCEg7Pf" PositionY="21" PositionX="-350" />
+				<EdgeVertex Name="qqt1sK9V" PositionY="50" PositionX="-680" />
+				<EdgeVertex Name="vertex10" PositionY="300" PositionX="305" />
+				<EdgeVertex Name="vertex8" PositionY="446" PositionX="172" />
+				<EdgeVertex Name="vertex9" PositionY="440" PositionX="-890" />
+				<EdgeVertex Name="yRRXRa8g" PositionY="-130" PositionX="180" />
+			</EdgeVertices>
+			<Text StringName="dontimes_hHFv" Text="DoN-Times" />
+			<Elements>
+				<GameplayActionElement>
+					<Text StringName="dontimes_output_exec_trig_y7fR" Text="Output exec triggers only N times." />
+				</GameplayActionElement>
+			</Elements>
+		</Module>
+	</Skald>
+</Database>

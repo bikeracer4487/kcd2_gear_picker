@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<DialogWrapper Name="cross_country__odevzdani">
+			<Ports>
+				<Port Name="dialog_is_enabled" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_dialog_is_enabl_QtSO" Text="Dialog is enabled" />
+				</Port>
+				<Port Name="force_dialog" Direction="In" Type="trigger">
+					<DesignName StringName="cross_cou_force_dialog_0ePS" Text="Force dialog" />
+				</Port>
+				<Port Name="player_hasnt_finished_in_time" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_player_hasnt_fi_S2hg" Text="Player hasnt finished in time" />
+				</Port>
+				<Port Name="ShowrunnerIsPissed" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_showrunnerispis_0eeQ" Text="Player broke the rules" />
+				</Port>
+				<Port Name="PlayerFinishPosition" Direction="In" Type="int">
+					<DesignName StringName="cross_cou_playerfinishpos_utVO" Text="Umístění hráče" />
+				</Port>
+				<Port Name="EnoughMoneyInBetStash" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_enoughmoneyinbe_tWxl" Text="Odevzdavatel má dost peněz v truhle" />
+				</Port>
+				<Port Name="activity_is_on_cooldown" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_activity_is_on__LRZH" Text="Activity is on cooldown" />
+				</Port>
+				<Port Name="micro_quest_is_active" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_microquestactive_xXEL" Text="Micro quest is active" />
+				</Port>
+				<Port Name="track1done" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_track1done_TVch" Text="Forcnutá trať 1 vyhrána" />
+				</Port>
+				<Port Name="track2done" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_track2done_wY28" Text="Forcnutá trať 2 vyhrána" />
+				</Port>
+				<Port Name="track3done" Direction="In" Type="bool">
+					<DesignName StringName="cross_cou_track3done_GZuE" Text="Forcnutá trať 3 vyhrána" />
+				</Port>
+				<Port Name="all_forced_tracks_are_done" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_vsechny_crossco_NQp0" Text="All forced tracks are done" />
+				</Port>
+				<Port Name="complete_final_objective" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_ondialogstarted_JYGF" Text="Complete final objective" />
+				</Port>
+				<Port Name="spoke_about_broken_rules" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_reset_activity__iJhO" Text="Spoke about broken rules" />
+				</Port>
+				<Port Name="process_rewards" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_givereward_kQQd" Text="Process rewards" />
+				</Port>
+				<Port Name="reset_cooldown" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_reset_cooldown_YzsO" Text="Reset cooldown" />
+				</Port>
+				<Port Name="dialog_beforeplay" Direction="Out" Type="trigger">
+					<DesignName StringName="cross_cou_dialog_beforepl_qTFD" Text="On dialog started" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="cross_country__odevzdani/cross_country__odevzdani.xml" />
+			</Definitions>
+			<Nodes>
+				<Function Name="createdialogparams6" PositionY="-550" PositionX="-360" MethodName="wh::dialogmodule::CreateDialogParams" DeclaringType="wh::dialogmodule">
+					<Asset Name="Participants" Alias="mikolaj" />
+				</Function>
+				<cross_country__odevzdani Name="cross_country__odevzdani" PositionY="-130" PositionX="170">
+					<Edge From="micro_quest_is_active" To="micro_quest_is_active" />
+					<Edge From="PlayerFinishPosition" To="PlayerFinishPosition" />
+					<Edge From="EnoughMoneyInBetStash" To="EnoughMoneyInBetStash" />
+					<Edge From="track1done" To="track1done" />
+					<Edge From="track2done" To="track2done" />
+					<Edge From="track3done" To="track3done" />
+					<Edge From="ShowrunnerIsPissed" To="player_broke_the_rules" />
+					<Edge From="player_hasnt_finished_in_time" To="player_hasnt_finished_in_time" />
+					<Edge From="activity_is_on_cooldown" To="activity_is_on_cooldown" />
+					<Edge From="force_dialog" To="EnqueueDialogue">
+						<Vertex>yabvnoxX</Vertex>
+						<Vertex>PSVySqV4</Vertex>
+					</Edge>
+					<Edge From="createdialogparams6.DialogParams" To="DialogParams" />
+					<Edge From="dialogIsForced.State" To="dialog_is_forced" />
+					<Edge From="dialog_is_enabled" To="dialog_is_enabled">
+						<Vertex>2G4sXJjx</Vertex>
+					</Edge>
+				</cross_country__odevzdani>
+				<State Name="dialogIsForced" PositionY="210" PositionX="-90" TypeT="bool">
+					<Edge From="force_dialog" To="SetTrue">
+						<Vertex>yabvnoxX</Vertex>
+						<Vertex>PSVySqV4</Vertex>
+					</Edge>
+					<Edge From="cross_country__odevzdani.reset_dialogisforced" To="SetFalse">
+						<Vertex>qdHbQBaD</Vertex>
+						<Vertex>K8hppeGX</Vertex>
+					</Edge>
+				</State>
+				<Output Name="Output">
+					<Edge From="cross_country__odevzdani.process_rewards" To="process_rewards" />
+					<Edge From="cross_country__odevzdani.reset_cooldown" To="reset_cooldown" />
+					<Edge From="cross_country__odevzdani.all_forced_tracks_are_done" To="all_forced_tracks_are_done" />
+					<Edge From="cross_country__odevzdani.spoke_about_broken_rules" To="spoke_about_broken_rules" />
+					<Edge From="cross_country__odevzdani.on_dialog_started" To="dialog_beforeplay" />
+					<Edge From="cross_country__odevzdani.complete_final_objective" To="complete_final_objective" />
+				</Output>
+				<AddReward Name="rewardAllThreeChallenges" PositionY="390" PositionX="740">
+					<Edge From="cross_country__odevzdani.all_forced_tracks_are_done" To="AddReward" />
+					<Rewards>
+						<SoulReputationReward ReputationChange="quest_reward_5_notable" Target="mikolaj" />
+						<FactionReputationReward ReputationChange="quest_reward_4_normal" Target="trosecko_outskirts_romaniCamp_commonFolk" />
+						<SkillReward Type="horse_riding" ExperienceChange="3-small" />
+						<SkillReward Type="survival" ExperienceChange="3-small" />
+						<StatReward Type="agility" ExperienceChange="3-small" />
+					</Rewards>
+				</AddReward>
+				<AddReward Name="rewardFirstPlaceInRace" PositionY="560" PositionX="730">
+					<Edge From="cross_country__odevzdani.first_place_in_activity" To="AddReward" />
+					<Rewards>
+						<SkillReward Type="horse_riding" ExperienceChange="3-small" />
+						<SkillReward Type="survival" ExperienceChange="3-small" />
+					</Rewards>
+				</AddReward>
+				<AddReward Name="rewardSecondPlaceInRace" PositionY="710" PositionX="730">
+					<Edge From="cross_country__odevzdani.second_place_in_activity" To="AddReward" />
+					<Rewards>
+						<SkillReward Type="horse_riding" ExperienceChange="2-minor" />
+						<SkillReward Type="survival" ExperienceChange="2-minor" />
+					</Rewards>
+				</AddReward>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="2G4sXJjx" PositionY="-50" PositionX="-350" />
+				<EdgeVertex Name="K8hppeGX" PositionY="650" PositionX="-20" />
+				<EdgeVertex Name="PSVySqV4" PositionY="-90" PositionX="-180" />
+				<EdgeVertex Name="qdHbQBaD" PositionY="650" PositionX="420" />
+				<EdgeVertex Name="yabvnoxX" PositionY="-90" PositionX="-350" />
+			</EdgeVertices>
+		</DialogWrapper>
+	</Skald>
+</Database>

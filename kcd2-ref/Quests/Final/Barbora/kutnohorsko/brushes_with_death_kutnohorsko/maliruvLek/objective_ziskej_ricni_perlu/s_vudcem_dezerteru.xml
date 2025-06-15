@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<DialogWrapper Name="s_vudcem_dezerteru">
+			<Ports>
+				<Port Name="dezerteri_jsou_kamaradi" Direction="Out" Type="bool">
+					<DesignName StringName="s_vudcem__dezerteri_jsou__00Ky" Text="Dezertéři jsou kamarádi" />
+				</Port>
+				<Port Name="dialog_je_dostupny" Direction="In" Type="bool">
+					<DesignName StringName="s_vudcem__dialog_je_dostu_yqIR" Text="Dialog je dostupný" />
+				</Port>
+			</Ports>
+			<Definitions>
+				<Definition File="s_vudcem_dezerteru/s_vudcem_dezerteru.xml" />
+			</Definitions>
+			<Nodes>
+				<Function Name="addreputationchange1" PositionY="100" PositionX="470" MethodName="wh::rpgmodule::AddReputationChange" DeclaringType="wh::rpgmodule">
+					<Constant Name="ReputationChange" Value="sworn_enemy" />
+					<Edge From="isoulproperties2.FactionNode" To="Faction" />
+					<Edge From="s_vudcem_dezerteru.znepratelit_dezertery" To="Exec" />
+				</Function>
+				<ObjectProperties Name="isoulproperties2" PositionY="220" PositionX="0" DeclaringType="wh::rpgmodule::I_Soul">
+					<Asset Name="I_Soul" Alias="deserterLeaderSoul" />
+				</ObjectProperties>
+				<Output Name="Output">
+					<Edge From="s_vudcem_dezerteru.seq13" To="dezerteri_jsou_kamaradi">
+						<Vertex>WGAVt0EY</Vertex>
+					</Edge>
+				</Output>
+				<s_vudcem_dezerteru Name="s_vudcem_dezerteru" PositionY="10" PositionX="0">
+					<Edge From="dialog_je_dostupny" To="dialog_je_dostupny" />
+				</s_vudcem_dezerteru>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="WGAVt0EY" PositionY="-50" PositionX="480" />
+			</EdgeVertices>
+		</DialogWrapper>
+	</Skald>
+</Database>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="fistfights__opponent_surrender_fight_finish">
+			<Ports>
+				<Port Name="enable" Direction="In" Type="trigger">
+					<DesignName StringName="fistfight_enable_cklX" Text="Enable" />
+				</Port>
+				<Port Name="disable" Direction="In" Type="trigger">
+					<DesignName StringName="fistfight_disable_bnGk" Text="Disable" />
+				</Port>
+				<Port Name="ismoduleused" Direction="In" Type="bool">
+					<DesignName StringName="fistfight_ismoduleused_fvD2" Text="IsModuleUsed" />
+				</Port>
+				<Port Name="opponent" Direction="In" Type="wh::rpgmodule::I_Soul*">
+					<DesignName StringName="fistfight_opponent_3oit" Text="Opponent" />
+				</Port>
+				<Port Name="jindrich_vyhral" Direction="In" Type="bool">
+					<DesignName StringName="fistfight_jindrich_vyhral_XULT" Text="Jindřich vyhrál" />
+				</Port>
+				<Port Name="jindrich_mluvil_s_oponentem_po_boji" Direction="In" Type="bool">
+					<DesignName StringName="fistfight_jindrich_mluvil_B4VB" Text="Jindřich mluvil s oponentem po boji" />
+				</Port>
+				<Port Name="arena_area" Direction="In" Type="wh::xgenaimodule::Areas">
+					<DesignName StringName="fistfight_arena_area_ZZXq" Text="Arena area" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<AreaTrigger Name="areatrigger" PositionY="50" PositionX="900">
+					<Asset Name="Souls" Alias="player" />
+					<Edge From="henryWonAndDidntTalkToTheFighterYet.bool" To="IsActive" />
+					<Edge From="arena_area" To="Areas">
+						<Vertex>vertex4</Vertex>
+					</Edge>
+				</AreaTrigger>
+				<Function Name="henryWonAndDidntTalkToTheFighterYet" PositionY="50" PositionX="560" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="notTalkedToTheFighterYet.bool" To="B" />
+					<Edge From="jindrich_vyhral" To="A">
+						<Vertex>vertex3</Vertex>
+					</Edge>
+				</Function>
+				<If Name="if5" PositionY="230" PositionX="2030">
+					<Edge From="questsurrenderprotection.isactive" To="Condition" />
+					<Edge From="patchtrigger4.OnPatch" To="Exec" />
+				</If>
+				<If Name="if7" PositionY="-310" PositionX="210">
+					<Edge From="ismoduleused" To="Condition" />
+					<Edge From="enable" To="Exec" />
+				</If>
+				<Function Name="notTalkedToTheFighterYet" PositionY="80" PositionX="240" MethodName="math::boolean::Not" DeclaringType="math::boolean">
+					<Edge From="jindrich_mluvil_s_oponentem_po_boji" To="Value" />
+				</Function>
+				<PatchTrigger Name="patchtrigger4" PositionY="230" PositionX="1570">
+					<Constant Name="TransitionToVersion" Value="ver_01_03" />
+				</PatchTrigger>
+				<questsurrenderprotection Name="questsurrenderprotection" PositionY="-50" PositionX="1590" Namespace="utils.combat">
+					<Constant Name="calm_down_after_surrender" Value="false" />
+					<Edge From="opponent" To="soul">
+						<Vertex>1bKySXoj</Vertex>
+					</Edge>
+					<Edge From="disable" To="disable">
+						<Vertex>E6a7PcYg</Vertex>
+					</Edge>
+					<Edge From="if5.True" To="disable">
+						<Vertex>tE1UKYNV</Vertex>
+						<Vertex>bGv3f7cH</Vertex>
+						<Vertex>E6a7PcYg</Vertex>
+					</Edge>
+					<Edge From="if7.True" To="enable" />
+					<Edge From="areatrigger.OnLeave" To="disable">
+						<Vertex>E6a7PcYg</Vertex>
+					</Edge>
+				</questsurrenderprotection>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="1bKySXoj" PositionY="34" PositionX="1069" />
+				<EdgeVertex Name="bGv3f7cH" PositionY="-160" PositionX="1210" />
+				<EdgeVertex Name="E6a7PcYg" PositionY="10" PositionX="1240" />
+				<EdgeVertex Name="tE1UKYNV" PositionY="-160" PositionX="2140" />
+				<EdgeVertex Name="vertex3" PositionY="50" PositionX="460" />
+				<EdgeVertex Name="vertex4" PositionY="210" PositionX="210" />
+			</EdgeVertices>
+			<Notes>
+				<Note Name="note6" PositionY="-260" PositionX="1580">
+					<Text StringName="fistfight_note6_CMrh" Text="NOTE(Andy): Patch because of &#xD;&#xA;KCD2-539127 A08 - fightClubVelmistrTrosecka: The user is unable to attack tpod_jan during the fight in the A08 quest" />
+				</Note>
+				<Note Name="note6_1" PositionY="-410" PositionX="180">
+					<Text StringName="fistfight_note6_1_2FWO" Text="NOTE(Andy): Since the module is used on one place by its intended use, we filter the triggers instead of gutting the module." />
+				</Note>
+			</Notes>
+			<Text StringName="fistfights__opponent_surr_NTEJ" Text="Fistfights - Opponent Surrender Fight Finish" />
+		</Module>
+	</Skald>
+</Database>

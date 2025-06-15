@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="barber_v_laznich_bety" Purpose="CharacterControl">
+			<Ports>
+				<Port Name="nastreamovat__lazne_otevrene" Direction="In" Type="trigger">
+					<DesignName StringName="barber_v__nastreamovat__l_2bUr" Text="Nastreamovat - lázne otevřené" />
+				</Port>
+				<Port Name="s41__quest_competed" Direction="In" Type="bool">
+					<DesignName StringName="barber_v__s41__quest_comp_5u9R" Text="S41 Budování lázní - Quest competed" />
+				</Port>
+				<Port Name="lazebnice_nastreamovana" Direction="In" Type="bool">
+					<DesignName StringName="barber_v__lazebnice_nastr_8AiN" Text="Nahradní lazebnice nastreamovaná" />
+				</Port>
+				<Port Name="beta_vlastni_lazne" Direction="In" Type="bool">
+					<DesignName StringName="barber_v__beta_vlastni_la_Ne0i" Text="Běta vlastní lázne" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<State Name="barberInBetasSpa" PositionY="-130" PositionX="-40" TypeT="BarberInBetasSpa">
+					<Edge From="nastreamovat__lazne_otevrene" To="SetSpaOpen_Streamed" />
+					<Edge From="ifand4.True" To="SetSpaOpen_Streamed" />
+				</State>
+				<IfFunction Name="ifand4" PositionY="160" PositionX="-300" MethodName="math::boolean::And" DeclaringType="math::boolean">
+					<Edge From="patchtrigger3.OnPatch" To="Exec" />
+					<Edge From="barberInBetasSpa.Initial_Unstreamed" To="B">
+						<Vertex>pBTJUllC</Vertex>
+						<Vertex>H5UMUzbg</Vertex>
+					</Edge>
+					<Edge From="or5.bool" To="A" />
+				</IfFunction>
+				<Function Name="or5" PositionY="170" PositionX="-620" MethodName="math::boolean::Or" DeclaringType="math::boolean">
+					<Edge From="s41__quest_competed" To="A" />
+					<Edge From="lazebnice_nastreamovana" To="B" />
+					<Edge From="beta_vlastni_lazne" To="C" />
+				</Function>
+				<PatchTrigger Name="patchtrigger3" PositionY="360" PositionX="-700">
+					<Constant Name="TransitionToVersion" Value="ver_01_03" />
+				</PatchTrigger>
+				<Layer Name="profile2" PositionY="-10" PositionX="400">
+					<Asset Name="Profiles" Alias="profile_betaBarber" />
+					<Edge From="barberInBetasSpa.SpaOpen_Streamed" To="IsActive" />
+				</Layer>
+			</Nodes>
+			<EdgeVertices>
+				<EdgeVertex Name="H5UMUzbg" PositionY="397" PositionX="-259" />
+				<EdgeVertex Name="pBTJUllC" PositionY="396" PositionX="310" />
+			</EdgeVertices>
+			<Types>
+				<Type TypeName="BarberInBetasSpa">
+					<StateTypeEnumeration Name="Initial_Unstreamed" ObjectiveValueType="None" />
+					<StateTypeEnumeration Name="SpaOpen_Streamed" ObjectiveValueType="None" />
+				</Type>
+			</Types>
+			<Assets>
+				<ProfileAsset Name="profile_betaBarber" AssetProfiles="barber_betaBathhouse" />
+			</Assets>
+			<Text StringName="barber_v_laznich_bety_t0QE" Text="Barber v lázních Běty" />
+		</Module>
+	</Skald>
+</Database>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<BehaviorTrees>
+	<BehaviorTree name="artefakt_scaredOfPlayer" is_function="0">
+		<Variables>
+			<Variable name="libraryArea" type="_wuid" values="" isPersistent="0" form="single" />
+		</Variables>
+		<Root OneTimeOnly="false" FailState="Recoverable" saveVersion="2">
+			<OnInit canSkip="1">
+				<GraphSearch Origin="$__object.id" Borders="" depth="1" selection="true" SearchPattern="Depth" EdgePruning="&apos;parent,inventory&apos;" AllowedEdges="" SubGraph="" AllowSubtraph="false" includeOrigin="false" excludeOrigin="false" failOnEmpty="true" SetOperationChoice="Intersection|And" errorOnEmpty="false" shortCircuit="false" skipTraversed="true">
+					<LinkTagFilter tag="&apos;libraryArea&apos;" prune="true" negprune="unknown" Parent="" Child="$libraryArea" Data="" />
+				</GraphSearch>
+			</OnInit>
+			<Behavior canSkip="1">
+				<EntityContext context="speech_readyForSwitchDialog" target="$this.id">
+					<Parallel successMode="Any" failureMode="Any">
+						<While doFail="false" propagateChildFail="false" condition="true">
+							<IsInsideArea Origin="$this.id" Area="$libraryArea" FailSubtMissing="false" saveVersion="2">
+								<Then canSkip="1">
+									<DistanceGate Origin="$this.id" ReferencePt="$__player" Low="2.000000" High="4000.000000" Negation="false" OpenInMiddle="false" RunLogic="Halt">
+										<CrimeFollower Target="$__player" Mode="Default" Role="Observer" RelativeSpeedLimit="Dash" DisableGhosting="false" />
+									</DistanceGate>
+								</Then>
+								<Else canSkip="1">
+									<CrimeFollower Target="$__player" Mode="NoMoveOnlyTurn" Role="Observer" RelativeSpeedLimit="Dash" DisableGhosting="false" />
+								</Else>
+							</IsInsideArea>
+						</While>
+						<While doFail="false" propagateChildFail="false" condition="true">
+							<DistanceGate Origin="$this.id" ReferencePt="$__player" Low="0.000000" High="2.000000" Negation="true" OpenInMiddle="false" RunLogic="Halt">
+								<CrimeFollower Target="$__player" Mode="NoMoveOnlyTurn" Role="Observer" RelativeSpeedLimit="Dash" DisableGhosting="false" />
+							</DistanceGate>
+						</While>
+					</Parallel>
+				</EntityContext>
+			</Behavior>
+		</Root>
+		<ForestContainer />
+		<EditorData EventSet="">
+			<Variables>
+				<Variable name="libraryArea" comment="" />
+			</Variables>
+			<ForwardDeclarations />
+			<Root hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+				<OutputBreakpoints />
+				<OnInit>
+					<GraphSearch hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<LinkTagFilter hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+						</LinkTagFilter>
+					</GraphSearch>
+				</OnInit>
+				<Behavior>
+					<EntityContext hasInputBreakpoint="0" comment="" breakpointFlags="0">
+						<OutputBreakpoints />
+						<Parallel hasInputBreakpoint="0" comment="" breakpointFlags="0">
+							<OutputBreakpoints />
+							<While hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<IsInsideArea hasInputBreakpoint="0" comment="" breakpointFlags="0" saveVersion="2">
+									<OutputBreakpoints />
+									<Then>
+										<DistanceGate hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+											<CrimeFollower hasInputBreakpoint="0" comment="" breakpointFlags="0">
+												<OutputBreakpoints />
+											</CrimeFollower>
+										</DistanceGate>
+									</Then>
+									<Else>
+										<CrimeFollower hasInputBreakpoint="0" comment="" breakpointFlags="0">
+											<OutputBreakpoints />
+										</CrimeFollower>
+									</Else>
+								</IsInsideArea>
+							</While>
+							<While hasInputBreakpoint="0" comment="" breakpointFlags="0">
+								<OutputBreakpoints />
+								<DistanceGate hasInputBreakpoint="0" comment="" breakpointFlags="0">
+									<OutputBreakpoints />
+									<CrimeFollower hasInputBreakpoint="0" comment="" breakpointFlags="0">
+										<OutputBreakpoints />
+									</CrimeFollower>
+								</DistanceGate>
+							</While>
+						</Parallel>
+					</EntityContext>
+				</Behavior>
+			</Root>
+			<Forest />
+			<Comments />
+		</EditorData>
+	</BehaviorTree>
+</BehaviorTrees>

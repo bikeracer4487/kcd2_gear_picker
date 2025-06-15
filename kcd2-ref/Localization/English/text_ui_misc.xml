@@ -118,7 +118,7 @@
 <Row><Cell>ach_technicalAdvance_desc</Cell><Cell>You killed an enemy with a crossbow shot to the head at long range.</Cell><Cell>You killed an enemy with a crossbow shot to the head at long range.</Cell></Row>
 <Row><Cell>ach_technicalAdvance_name</Cell><Cell>Progress</Cell><Cell>Bohemian Sniper</Cell></Row>
 <Row><Cell>ach_technicalAdvance_not_achieved_desc</Cell><Cell>Kill an enemy with a crossbow shot to the head at long range!</Cell><Cell>Kill an enemy with a crossbow shot to the head at long range!</Cell></Row>
-<Row><Cell>ach_thatWasMyFavouritePair_desc</Cell><Cell>While you were lying around unconscious, someone pinched your shoes.</Cell><Cell>While you were passed out, somebody nicked your shoes.</Cell></Row>
+<Row><Cell>ach_thatWasMyFavouritePair_desc</Cell><Cell>While you were passed out drunk, someone pinched your shoes.</Cell><Cell>While you were passed out drunk, somebody nicked your shoes.</Cell></Row>
 <Row><Cell>ach_thatWasMyFavouritePair_name</Cell><Cell>My shoes!</Cell><Cell>My Shoes!</Cell></Row>
 <Row><Cell>ach_theKuttenbergTales_desc</Cell><Cell>You helped Rosa finish her book.</Cell><Cell>You helped Rosa finish her book.</Cell></Row>
 <Row><Cell>ach_theKuttenbergTales_name</Cell><Cell>Tales from Kutná Hora</Cell><Cell>Tales of Kuttenberg</Cell></Row>
@@ -835,9 +835,9 @@
 <Row><Cell>ui_de_bed_fir01</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
 <Row><Cell>ui_de_bed_fir02</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
 <Row><Cell>ui_de_bed_fir03</Cell><Cell></Cell><Cell>Dobré lůžko z jedlového dřeva s poctivě nacpaným slamníkem a čistým prostěradlem. Základ toho, aby se poctivý řemeslník dobře vyspal.</Cell></Row>
-<Row><Cell>ui_de_bed_hunter01</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
-<Row><Cell>ui_de_bed_hunter02</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
-<Row><Cell>ui_de_bed_hunter03</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázka je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter01</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázkou je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter02</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázkou je, co se jednomu zdá v takové posteli.</Cell></Row>
+<Row><Cell>ui_de_bed_hunter03</Cell><Cell></Cell><Cell>Tady je majitel hodně nadšeným lovcem. Otázkou je, co se jednomu zdá v takové posteli.</Cell></Row>
 <Row><Cell>ui_de_bed_penitent01</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
 <Row><Cell>ui_de_bed_penitent02</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
 <Row><Cell>ui_de_bed_penitent03</Cell><Cell></Cell><Cell>Zatraceně nepohodlné lůžko je určená všem kajícníkům, kteří chtějí vlastním utrpením ulevit své duši a svědomí. Hříchů vás tahle postel nezbaví, ale na upřímnou lítost není nikdy pozdě.</Cell></Row>
@@ -857,10 +857,10 @@
 <Row><Cell>ui_de_bookshelf03</Cell><Cell></Cell><Cell>Mezi bohatými měšťany se v poslední době objevila nová móda. Čtení knih běžnými laiky je pro mnohé kněží hříchem. Otázkou je, zda není hříchem spíš to, co se v těch knihách někdy píše.</Cell></Row>
 <Row><Cell>ui_de_candles_candles</Cell><Cell></Cell><Cell>Nezdá se to, ale svícen je symbolem luxusu. Včelí vosk ani železné pruty nejsou právě nejlevnější věc na trhu. Naštěstí jako kovář si aspoň s tím železem nemusíš lámat hlavu.</Cell></Row>
 <Row><Cell>ui_de_candles_rubble</Cell><Cell></Cell><Cell>Všechno to jsou naprosto nezbytné věci denní potřeby, akorát nejmíň už deset let je nikdo nepotřeboval.</Cell></Row>
-<Row><Cell>ui_de_candles_sink</Cell><Cell></Cell><Cell>Když se po ránu umyješ, je to malý krok pro tebe, ale velký pro lidi ve tvém okolí.</Cell></Row>
+<Row><Cell>ui_de_candles_sink</Cell><Cell></Cell><Cell>Pěkný kus nábytku, ale když se chce člověk pořádně umýt, musí stejně ke kádi s vodou.</Cell></Row>
 <Row><Cell>ui_de_candles_taxidermy</Cell><Cell></Cell><Cell>Co si můžeš pořídit, když už opravdu už všechno máš? Není nad dalšího věrného přítele, co se nebojí říct pravdu do očí.</Cell></Row>
 <Row><Cell>ui_de_cellarFixed</Cell><Cell></Cell><Cell>Nejlepší pivo je ze sedmého schodu, to je léty prověřená pravda, na které není potřeba nic měnit. Tedy pokud nejste spíš přes víno.</Cell></Row>
-<Row><Cell>ui_de_cellarRubble</Cell><Cell></Cell><Cell>Tahle díra v zemi je zralá tak na zasypání. Opravit ji bude stát jistě hodně úsilí, ale zase natočit si vlastní pivo a uzenky, to se neomrzí.</Cell></Row>
+<Row><Cell>ui_de_cellarRubble</Cell><Cell></Cell><Cell>Tahle díra v zemi je zralá tak na zasypání. Opravit ji bude stát jistě hodně úsilí, ale zase natočit si vlastní pivo a zakrojit k tomu uzenku, to se neomrzí.</Cell></Row>
 <Row><Cell>ui_de_chandelier_candles</Cell><Cell></Cell><Cell>Osvětlení tvořené soustavou drobných svícnů zavěšených pod sebou.</Cell></Row>
 <Row><Cell>ui_de_chandelier_smith</Cell><Cell></Cell><Cell>Osvětlení z kovaných pásů železa osazených drahými svícemi.</Cell></Row>
 <Row><Cell>ui_de_chandelier_townsman</Cell><Cell></Cell><Cell>Osvětlení z kovaných pásů železa osazených drahými svícemi.</Cell></Row>
@@ -879,20 +879,20 @@
 <Row><Cell>ui_de_floorSlot_basic</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
 <Row><Cell>ui_de_floorSlot_carpets</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
 <Row><Cell>ui_de_floorSlot_furs</Cell><Cell></Cell><Cell>PL: A nebude.</Cell></Row>
-<Row><Cell>ui_de_foodShelf_dark</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
-<Row><Cell>ui_de_foodShelf_light</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
-<Row><Cell>ui_de_foodShelf_rustic</Cell><Cell></Cell><Cell>PL: Až to bude tak to popíšu podle vizuálu.</Cell></Row>
-<Row><Cell>ui_de_fresco01</Cell><Cell></Cell><Cell>PL: Malba 1 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
-<Row><Cell>ui_de_fresco02</Cell><Cell></Cell><Cell>PL: Malba 2 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_dark</Cell><Cell></Cell><Cell>Kdo má pořád chodit dolů a nahoru, když si chce večer zakousnout kus klobásky nebo šťavnaté jablíčko.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_light</Cell><Cell></Cell><Cell>Kdo má pořád chodit dolů a nahoru, když si chce večer zakousnout kus klobásky nebo šťavnaté jablíčko.</Cell></Row>
+<Row><Cell>ui_de_foodShelf_rustic</Cell><Cell></Cell><Cell>Kdo má pořád chodit dolů a nahoru, když si chce večer zakousnout kus klobásky nebo šťavnaté jablíčko.</Cell></Row>
+<Row><Cell>ui_de_fresco01</Cell><Cell></Cell><Cell>Malba na omítce domu zachycuje významného patrona všech kovářů apoštola Petra, který přijímá velký klíč od Ježíše Krista.</Cell></Row>
+<Row><Cell>ui_de_fresco02</Cell><Cell></Cell><Cell>Malba na omítce domu zachycuje významného patrona všech kovářů apoštola Petra, který přijímá velký klíč od Ježíše Krista.</Cell></Row>
 <Row><Cell>ui_de_fresco03</Cell><Cell></Cell><Cell>PL: Malba 3 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
 <Row><Cell>ui_de_fresco04</Cell><Cell></Cell><Cell>PL: Malba 4 na průčelí domu je velice nákladnou záležitostí a hlásá do okolí, že majitel je bohatým měšťanem a mecenášem k tomu.</Cell></Row>
-<Row><Cell>ui_de_gateColored</Cell><Cell></Cell><Cell>PL: Brána z malovaných a mořených dubových fošen pobitá železem, jak se na kovářského mistra sluší.</Cell></Row>
-<Row><Cell>ui_de_gateRubble</Cell><Cell></Cell><Cell>PL: Brána vedoucí z ulice na dvůr má svá nejlepší léta dávno za sebou. Měla by se vyměnit za nějakou z poctivých dubových fošen.</Cell></Row>
+<Row><Cell>ui_de_gateColored</Cell><Cell></Cell><Cell>Brána z jilmových fošen pobitých železnými hřeby.</Cell></Row>
+<Row><Cell>ui_de_gateRubble</Cell><Cell></Cell><Cell>Brána vedoucí z ulice na dvůr má svá nejlepší léta dávno za sebou. Měla by se brzy vyměnit, aby zbytečně nedělala ostudu.</Cell></Row>
 <Row><Cell>ui_de_gazeboFixed</Cell><Cell></Cell><Cell>Zkrátka není nad to, sednout si po práci na vlastní zahradu a vychutnávat klidný podvečer.</Cell></Row>
 <Row><Cell>ui_de_gazeboRubble</Cell><Cell></Cell><Cell>Tady měl kdysi někdo jistě jasnou myšlenku, proč sem nanosil hromadu kamení.</Cell></Row>
 <Row><Cell>ui_de_ground_gravel</Cell><Cell></Cell><Cell>Vyštěrkovat dvorek před kovárnou úplně postačí, aby se tady kola vozu nebořila a člověk se neušpinil hned jak vyjde z domu.</Cell></Row>
 <Row><Cell>ui_de_ground_mud</Cell><Cell></Cell><Cell>Mezi kovárnou a dílnami leží blátivý kus země, který ti sice říká pane, ale po každém dešti se změní v bahenní lázeň plnou hnusné břečky.</Cell></Row>
-<Row><Cell>ui_de_ground_stone</Cell><Cell></Cell><Cell>Bahnitá louže před kovárnou může být minulostí, když se vydlážděný poctivými kameny. Někdy prostě člověku udělá radost i takových pár šutrů vedle sebe.</Cell></Row>
+<Row><Cell>ui_de_ground_stone</Cell><Cell></Cell><Cell>Bahnitá louže před kovárnou může být minulostí, když se vydláždí poctivými kameny. Někdy prostě člověku udělá radost i takových pár šutrů vedle sebe.</Cell></Row>
 <Row><Cell>ui_de_lowerFloor_basic</Cell><Cell></Cell><Cell>Neopravené přízemí staré kovárny.</Cell></Row>
 <Row><Cell>ui_de_lowerFloor_blue</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v barvě malachitu.</Cell></Row>
 <Row><Cell>ui_de_lowerFloor_brown</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu s omítkou v okrové barvě.</Cell></Row>
@@ -905,7 +905,7 @@
 <Row><Cell>ui_de_maiden_kneeler</Cell><Cell></Cell><Cell>Zbožnost vždy až na prvním místě jak se říká. Myslet na svoji nesmrtelnou duši by měl každý dobrý křesťan, protože smrtí to rozhodně nekončí.</Cell></Row>
 <Row><Cell>ui_de_maiden_maiden</Cell><Cell></Cell><Cell>Někdo by mohl říct, že je lepší všechno cenné dát pod zámek, ale jaký zloděj by se tahal s kusy plechu. To by musel mít pytel nekonečného objemu.</Cell></Row>
 <Row><Cell>ui_de_maiden_rubble</Cell><Cell></Cell><Cell>Tenhle starý sud je opravdu neskutečně plný pavučin.</Cell></Row>
-<Row><Cell>ui_de_path_gravel</Cell><Cell></Cell><Cell>Vyštěrkovat cestu je nejlepší způsob jak ji zpevnit, aby po každém menším dešti nebyla hned plná bláta.</Cell></Row>
+<Row><Cell>ui_de_path_gravel</Cell><Cell></Cell><Cell>Vyštěrkovat cestu je nejlepší způsob jak zajistit aby po každém menším dešti nebyla hned plná bláta.</Cell></Row>
 <Row><Cell>ui_de_path_mud</Cell><Cell></Cell><Cell>Ze dvorku vede blátivá cestička dozadu na zahradu.</Cell></Row>
 <Row><Cell>ui_de_path_stone</Cell><Cell></Cell><Cell>Blátivá cesta ze dvorku na zahradu může být minulostí, když se vyskládá pořádnými říčními kameny. Dřina, ale když ji může udělat někdo jinej, tak čirá radost.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_rubble</Cell><Cell></Cell><Cell>Zničená střecha staré kovárny. Střecha je základem každého domu a tahle je bohužel z poloviny rozpadlá.</Cell></Row>
@@ -914,7 +914,7 @@
 <Row><Cell>ui_de_roofAndGable_shingleDovetailFormwork</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem s bedněným štítem zaklopeným do tvaru rybího ocasu.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_shingleGray</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v šedé barvě.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_shingleOrange</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v barvě pálené cihly.</Cell></Row>
-<Row><Cell>ui_de_roofAndGable_shinglePlanks</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem s bedněným štítem zaklopeným poctivými prkny.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_shinglePlanks</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem s bedněným štítem zaklopeným poctivými štípanými fošnami.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_shingleSand</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v barvě říčního písku.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_shingleWhite</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým v bílé barvě vápna.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_shingleYellow</Cell><Cell></Cell><Cell>Střecha pokrytá štípaným šindelem se štítem omítnutým ve žluté barvě</Cell></Row>
@@ -923,7 +923,7 @@
 <Row><Cell>ui_de_roofAndGable_thatchDovetailFormwork</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky s bedněným štítem zaklopeným do tvaru rybího ocasu.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_thatchGray</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v šedé barvě.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_thatchOrange</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v barvě pálené cihly.</Cell></Row>
-<Row><Cell>ui_de_roofAndGable_thatchPlanks</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky s bedněným štítem zaklopeným poctivými prkny.</Cell></Row>
+<Row><Cell>ui_de_roofAndGable_thatchPlanks</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky s bedněným štítem zaklopeným poctivými štípanými fošnami.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_thatchSand</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v barvě říčního písku.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_thatchWhite</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým v bílé barvě vápna.</Cell></Row>
 <Row><Cell>ui_de_roofAndGable_thatchYellow</Cell><Cell></Cell><Cell>Střecha pokrytá slámovými došky se štítem omítnutým ve žluté barvě.</Cell></Row>
@@ -938,7 +938,7 @@
 <Row><Cell>ui_de_smelterCheap</Cell><Cell></Cell><Cell>Pro klidnou práci v dílně je potřeba hlavně, aby na vás nepršelo, to ostatní může klidně počkat.</Cell></Row>
 <Row><Cell>ui_de_smelterExpensive</Cell><Cell></Cell><Cell>Konečně pořádná zděná dílna, kde lze slévat v dešti i zimě a nelezou  sem slepice ani jiná havěť.</Cell></Row>
 <Row><Cell>ui_de_smelterRubble</Cell><Cell></Cell><Cell>Na tomto místě dřív stála nějaká kůlna, ale moc z ní nezbylo. Nyní by se tohle místo dalo využít pro nějakou novou dílnu.</Cell></Row>
-<Row><Cell>ui_de_smokehouseFixed</Cell><Cell></Cell><Cell>Není nad dobře vyuzenou klobásu nebo vepřový bůček. Nic neudělá člověku lepší den, než k dobrému pivu zakrojit domácí uzené.</Cell></Row>
+<Row><Cell>ui_de_smokehouseFixed</Cell><Cell></Cell><Cell>Není nad dobře vyuzenou klobásu nebo vepřový bůček. Nic neudělá člověku lepší den, než sednout si do zahrady a k dobrému pivu zakrojit domácí uzené.</Cell></Row>
 <Row><Cell>ui_de_smokehouseRubble</Cell><Cell></Cell><Cell>Tak tady je jasné, co to bylo a už není.</Cell></Row>
 <Row><Cell>ui_de_stables_dryingRack</Cell><Cell></Cell><Cell>Tohle místo je vynikající pro větší stodolu, kam lze ustájit koně, uložit seno a v komoře vedle mít pěknou sušárnu na bylinky pro alchymistické pokusy.</Cell></Row>
 <Row><Cell>ui_de_stables_rubble</Cell><Cell></Cell><Cell>Tenhle pozemek stojí přímo nad starými šachtami. Tohle je jistě hlušina vytěžená z dolů.</Cell></Row>
@@ -974,10 +974,10 @@
 <Row><Cell>ui_de_upperFloor_gray</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v šedé barvě.</Cell></Row>
 <Row><Cell>ui_de_upperFloor_logsLimed</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Zdi sroubené z poctivých klád a omazané vápennou omítkou.</Cell></Row>
 <Row><Cell>ui_de_upperFloor_logsNatural</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Zdi sroubené z poctivých klád a omazané hliněnnou omítkou.</Cell></Row>
-<Row><Cell>ui_de_upperFloor_orange</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v barvě pálené cihly.</Cell></Row>
-<Row><Cell>ui_de_upperFloor_sand</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v barvě říčního písku.</Cell></Row>
-<Row><Cell>ui_de_upperFloor_white</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou v bílé barvě vápna.</Cell></Row>
-<Row><Cell>ui_de_upperFloor_yellow</Cell><Cell></Cell><Cell>Opravené přízemí měšťanského domu. Kamenné zdi s omítkou ve žluté barvě.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_orange</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v barvě pálené cihly.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_sand</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v barvě říčního písku.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_white</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou v bílé barvě vápna.</Cell></Row>
+<Row><Cell>ui_de_upperFloor_yellow</Cell><Cell></Cell><Cell>Opravené horní patro měšťanského domu. Kamenné zdi s omítkou ve žluté barvě.</Cell></Row>
 <Row><Cell>ui_de_wallPaint01</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem ve žlutém odstínu.</Cell></Row>
 <Row><Cell>ui_de_wallPaint02</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem v zeleném odstínu.</Cell></Row>
 <Row><Cell>ui_de_wallPaint03</Cell><Cell></Cell><Cell>Výmalba pokoje závěsy s velice krásným rostliným vzorem v červeném odstínu.</Cell></Row>

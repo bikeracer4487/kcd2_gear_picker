@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Dialog Name="robber_selftalk">
+			<Ports>
+				<Port Name="vykradac_zrovna_lootuje" Direction="In" Type="bool">
+					<DesignName StringName="vykradac__vykradac_zrovna_p8Y0" Text="vykradac zrovna lootuje" />
+				</Port>
+			</Ports>
+			<Text StringName="vykradac_si_povida_pro_se_vkRB" Text="vykradač si povídá pro sebe" />
+			<Elements>
+				<GameplayActionElement>
+					<Text StringName="vykradac__zatimco_jindra__MOPm" Text="zatímco Jindra čeká v úkrytu, vykradač si mumlá pro sebe při okrádání mrtvoly. Poté, co dialog dokončí, tak odchází. Jindra na něj může zaútočit, nebo s ním jít do dialogu." />
+				</GameplayActionElement>
+			</Elements>
+			<Dialogue Type="ingame monolog" TechnicalStatus="Enabled" Initiator="NonPlayer" ForceMood="noScope" ClashPriority="Flavor" GesturesSetDate="2025-04-08T14:36:34.7213031+02:00" GesturesSetResponseCount="10">
+				<SelectedSouls>
+					<SelectedSoul Role="ZLODEJ" Voice="danielZappi" Type="Wave" Language="ENG" />
+				</SelectedSouls>
+				<Decision Name="dec1" Priority="SideQuestAdditionals" Alias="katuvSleh_vykradacSiPovidaProSebe">
+					<Sequences>
+						<Sequence EntryCondition="Port('vykradac_zrovna_lootuje')" EndType="EndDialogue" Name="seq1">
+							<DesignName StringName="vykradac__seq1_65ir" Text="seq1" />
+							<Elements>
+								<Response Role="ZLODEJ" ReferenceLength="2.62">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_OsPj" Text="tiše, nervózně, mluví s mrtvolou" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_ted_mluvim_o__RzpI" Text="No tak, ty všiváku, kam jsi ho dal?" />
+									<Commands>
+										<FacialMoodCommand FacialMood="angry1" />
+										<AnimationCommand Delay="1.33" FragmentId="ADLG_Frustration" Guid="861e355a-2940-9d5b-25c8-7ffb13e04506" Variant="1" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_fnbt" Text="tiše, nervózně, mluví s mrtvolou" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_a_porad_v_tom_BLpC" Text="To mě vážně musíš srát i po smrti? " />
+								</Response>
+								<Response Role="ZLODEJ" ReferenceLength="4.54">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_xAnR" Text="tiše, nervózně, mluví s mrtvolou" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_doufam_ze_me__ZpxD" Text="Neříkej, že ti ho sebrali. Na tos byl moc chytrej, ty bastarde..." />
+									<Commands>
+										<FacialMoodCommand FacialMood="angry2" />
+										<AnimationCommand Delay="1.83" FragmentId="ADLG_You" Guid="8eca162b-a836-41e8-93b1-efd752291293" Variant="0" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_xtnp" Text="tiše, mluví s mrtvolou, naštvaně" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_hlavne_doufam_gmPT" Text="Tak mysli aspoň na Dorku, sakra. Copak už netrpěla dost?" />
+								</Response>
+								<Response Role="ZLODEJ" ReferenceLength="5.1">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_9fhA" Text="tiše, mluví s mrtvolou, naštvaně" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_to_by_bylo_va_K8Xo" Text="Ty sráči jeden. Vsadím se, že se teď na mě tam zespoda díváš a chechtáš se mi! Podělanej zkurvysyne..." />
+									<Commands>
+										<AnimationCommand Delay="0.19" FragmentId="ADLG_Disagree_light" Guid="64f57625-bf5d-e5fd-c4d0-407e66f32194" Variant="0" />
+										<AnimationCommand Delay="4" FragmentId="ADLG_Nod" Guid="00347a7f-558f-4fe3-9580-0e715f69dc66" Variant="0" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ" StartDelay="0.44" ReferenceLength="6.56">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_vJzr" Text="tiše, zklesle, nemá už sílu" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej__eDbK" Text="Ale já nechtěl, aby to takhle dopadlo... Myslel jsem, že tě jenom seřežou rákoskou, nebo na pár dní zavřou." />
+									<Commands>
+										<FacialMoodCommand FacialMood="sad2" />
+										<AnimationCommand Delay="5.16" FragmentId="ADLG_Gesture" Guid="22f8b7f8-02df-4e21-a4d5-f2c5264ceb7c" Variant="1" />
+										<AnimationCommand Delay="-0.06" FragmentId="ADLG_Disagree_light" Guid="64f57625-bf5d-e5fd-c4d0-407e66f32194" Variant="0" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ" ReferenceLength="5.2">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_pro_sebe_dnZl" Text="tiše, zklesle, nemá už sílu" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_nic_atPq" Text="Můžeš mi to odpustit? Dora o ničem nevěděla, přísahám. Všechno je to moje vina..." />
+									<Commands>
+										<AnimationCommand Delay="1.68" FragmentId="ADLG_Disagree" Guid="4d177964-b54a-d919-9459-ebcec124645f" Variant="0" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ" StartDelay="0.32" ReferenceLength="1.83">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_mluvi_s__SvF9" Text="tiše, mluví s mrtvolou, nasraně" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_tak_kams_ho_k_1cjE" Text="Tak kams ho kurva dal?" />
+									<Commands>
+										<FacialMoodCommand FacialMood="angry2" />
+										<AnimationCommand Delay="0.06" FragmentId="ADLG_Frustration" Guid="dfed6f21-b3de-9dde-8a1c-40efbf206448" Variant="4" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ" ReferenceLength="3.63">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_zklesle__u0ss" Text="tiše, zklesle, nemá už sílu" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_jak_chces_kli_iDib" Text="Jak chceš. Klidně si ji vezmu i bez něj, ty hajzle." />
+									<Commands>
+										<AnimationCommand Delay="1.24" FragmentId="ADLG_Discard" Guid="8795ff76-a4e6-6b43-1b68-21d53f7bf938" Variant="0" />
+									</Commands>
+								</Response>
+								<Response Role="ZLODEJ" StartDelay="0.57" ReferenceLength="2.41">
+									<Parenthetical>
+										<Text StringName="vykr_zlodej_tise_skoro_br_3WdG" Text="tiše, skoro brečí, nemá už sílu" />
+									</Parenthetical>
+									<Text StringName="vykr_zlodej_nikdo_me_nepr_qkrH" Text="Slibuju, že se o ní budu dobře starat..." />
+									<Commands>
+										<FacialMoodCommand FacialMood="sad3" />
+										<AnimationCommand Delay="0.35" FragmentId="ADLG_Gesture" Guid="afe88ebd-2cdf-4e0d-ba9c-8f32cfd3fe8c" Variant="12" />
+									</Commands>
+								</Response>
+							</Elements>
+						</Sequence>
+					</Sequences>
+				</Decision>
+			</Dialogue>
+		</Dialog>
+	</Skald>
+</Database>

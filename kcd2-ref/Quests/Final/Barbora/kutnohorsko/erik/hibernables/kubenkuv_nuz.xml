@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="brambora">
+	<Skald>
+		<Module Name="kubenkuv_nuz">
+			<Ports>
+				<Port Name="hrac_se_rozloucil" Direction="In" Type="trigger">
+					<DesignName StringName="kubenkuv__hrac_se_rozlouc_dogr" Text="hráč se rozloučil" />
+				</Port>
+				<Port Name="dialog_s_kubenkou_after_play" Direction="In" Type="trigger">
+					<DesignName StringName="kubenkuv__dialog_s_kubenk_uavF" Text="dialog s Kuběnkou after play" />
+				</Port>
+			</Ports>
+			<Nodes>
+				<MemberFunction Name="addblood28" PositionY="130" PositionX="720" MethodName="AddBlood" DeclaringType="wh::rpgmodule::I_Soul">
+					<Asset Name="Soul" Alias="kubenka" />
+					<Edge From="makearray29.Array" To="BodyParts" />
+					<Edge From="makearray30.Array" To="Values" />
+					<Edge From="adddirt4.OnExec" To="Exec" />
+				</MemberFunction>
+				<MemberFunction Name="adddirt4" PositionY="131" PositionX="328" MethodName="AddDirt" DeclaringType="wh::rpgmodule::I_Soul">
+					<Asset Name="Soul" Alias="kubenka" />
+					<Constant Name="Value" Value="0.8" />
+					<Constant Name="Absolute" Value="true" />
+					<Edge From="triggersequence3.B" To="Exec" />
+				</MemberFunction>
+				<ClothingPresetOverride Name="clothingpresetoverride2" PositionY="-210" PositionX="260">
+					<Asset Name="Souls" Alias="kubenka" />
+					<Constant Name="ClothingPreset" Value="e3749eb1-e725-4183-82bd-0258ffdf3cee" />
+					<Edge From="kubenkaPresetOverride.Active" To="IsActive" />
+				</ClothingPresetOverride>
+				<State Name="kubenkaPresetOverride" PositionY="-210" PositionX="-20" TypeT="Progress">
+					<Edge From="hrac_se_rozloucil" To="SetActive" />
+					<Edge From="triggersequence3.A" To="SetDone" />
+				</State>
+				<MakeArray Name="makearray29" PositionY="350" PositionX="390" TypeT="wh::entitymodule::BodyParts">
+					<Constant Name="A" Value="head" />
+				</MakeArray>
+				<MakeArray Name="makearray30" PositionY="480" PositionX="390" TypeT="wh::conceptmodule::Floats">
+					<Constant Name="A" Value="1" />
+				</MakeArray>
+				<TriggerSequence Name="triggersequence3" PositionY="120" PositionX="-280">
+					<Edge From="dialog_s_kubenkou_after_play" To="Exec" />
+				</TriggerSequence>
+			</Nodes>
+			<Text StringName="kubenkuv_nuz_A1PZ" Text="Kuběnkův nůž" />
+		</Module>
+	</Skald>
+</Database>
