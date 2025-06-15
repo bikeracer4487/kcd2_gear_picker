@@ -108,6 +108,7 @@
 <Row><Cell>cr2_agoldflam</Cell><Cell>Arnošt Goldflam</Cell><Cell>Arnošt Goldflam</Cell></Row>
 <Row><Cell>cr2_agracia</Cell><Cell>Ángel de Gracia</Cell><Cell>Ángel de Gracia</Cell></Row>
 <Row><Cell>cr2_agregor</Cell><Cell>Alexandr Gregor</Cell><Cell>Alexandr Gregor</Cell></Row>
+<Row><Cell>cr2_aguedes</Cell><Cell>Alexandre B. Guedes</Cell><Cell>Alexandre B. Guedes</Cell></Row>
 <Row><Cell>cr2_aguichardlepetit</Cell><Cell>Adeline Guichard-Lepetit</Cell><Cell>Adeline Guichard-Lepetit</Cell></Row>
 <Row><Cell>cr2_ahande</Cell><Cell>Anurag Hande</Cell><Cell>Anurag Hande</Cell></Row>
 <Row><Cell>cr2_ahejtmankova</Cell><Cell>Alena Mouchová (Hejtmánková)</Cell><Cell>Alena Mouchová (Hejtmánková)</Cell></Row>
@@ -138,10 +139,12 @@
 <Row><Cell>cr2_amarinescu</Cell><Cell>Alexandra Marinescu</Cell><Cell>Alexandra Marinescu</Cell></Row>
 <Row><Cell>cr2_amase</Cell><Cell>Aiki Mase</Cell><Cell>Aiki Mase</Cell></Row>
 <Row><Cell>cr2_amasia</Cell><Cell>Arnau Masiá</Cell><Cell>Arnau Masiá</Cell></Row>
+<Row><Cell>cr2_amastroianni</Cell><Cell>Angelo Mastroianni</Cell><Cell>Angelo Mastroianni</Cell></Row>
 <Row><Cell>cr2_amikesova</Cell><Cell>Amélie Mikešová</Cell><Cell>Amélie Mikešová</Cell></Row>
 <Row><Cell>cr2_amiltnerova</Cell><Cell>Andrea Miltnerová</Cell><Cell>Andrea Miltnerová</Cell></Row>
 <Row><Cell>cr2_aminuz</Cell><Cell>Alessandra Minuz</Cell><Cell>Alessandra Minuz</Cell></Row>
 <Row><Cell>cr2_amiret</Cell><Cell>Alain Miret</Cell><Cell>Alain Miret</Cell></Row>
+<Row><Cell>cr2_amokretsov</Cell><Cell>Artem Mokretsov</Cell><Cell>Artem Mokretsov</Cell></Row>
 <Row><Cell>cr2_amonhartova</Cell><Cell>Anna Monhartová</Cell><Cell>Anna Monhartová</Cell></Row>
 <Row><Cell>cr2_amontyro</Cell><Cell>Alex Montyro</Cell><Cell>Alex Montyro</Cell></Row>
 <Row><Cell>cr2_amoreno</Cell><Cell>Asier Arellano Moreno</Cell><Cell>Asier Arellano Moreno</Cell></Row>
@@ -163,6 +166,7 @@
 <Row><Cell>cr2_anovotny</Cell><Cell>Alan Novotný</Cell><Cell>Alan Novotný</Cell></Row>
 <Row><Cell>cr2_anzavodina</Cell><Cell>Anna Zavodina</Cell><Cell>Anna Zavodina</Cell></Row>
 <Row><Cell>cr2_aobune</Cell><Cell>Akito Obune</Cell><Cell>Akito Obune</Cell></Row>
+<Row><Cell>cr2_aoca</Cell><Cell>Aaron Montes de Oca</Cell><Cell>Aaron Montes de Oca</Cell></Row>
 <Row><Cell>cr2_apal</Cell><Cell>Abhishek Pal</Cell><Cell>Abhishek Pal</Cell></Row>
 <Row><Cell>cr2_apardo</Cell><Cell>Ana Sánchez-Reig Pardo</Cell><Cell>Ana Sánchez-Reig Pardo</Cell></Row>
 <Row><Cell>cr2_apastor</Cell><Cell>Adolfo Pastor</Cell><Cell>Adolfo Pastor</Cell></Row>
@@ -222,12 +226,15 @@
 <Row><Cell>cr2_aurbancova</Cell><Cell>Antonie Urbancová</Cell><Cell>Antonie Urbancová</Cell></Row>
 <Row><Cell>cr2_avachova</Cell><Cell>Alena Váchová</Cell><Cell>Alena Váchová</Cell></Row>
 <Row><Cell>cr2_avarga</Cell><Cell>Adrian Gabriel Varga</Cell><Cell>Adrian Gabriel Varga</Cell></Row>
+<Row><Cell>cr2_averlaine</Cell><Cell>Alexandre Verlaine</Cell><Cell>Alexandre Verlaine</Cell></Row>
 <Row><Cell>cr2_avetrovova</Cell><Cell>Adéla Větrovcová</Cell><Cell>Adéla Větrovcová</Cell></Row>
 <Row><Cell>cr2_aveverkova</Cell><Cell>Anna Veverková</Cell><Cell>Anna Veverková</Cell></Row>
 <Row><Cell>cr2_avicikova</Cell><Cell>Anna Vičíková</Cell><Cell>Anna Vičíková</Cell></Row>
 <Row><Cell>cr2_avinader</Cell><Cell>Adrien Vinader</Cell><Cell>Adrien Vinader</Cell></Row>
 <Row><Cell>cr2_avolhejnova</Cell><Cell>Alžběta Volhejnová</Cell><Cell>Alžběta Volhejnová</Cell></Row>
+<Row><Cell>cr2_awenceslau</Cell><Cell>Alana Wenceslau</Cell><Cell>Alana Wenceslau</Cell></Row>
 <Row><Cell>cr2_awinters</Cell><Cell>Adam Winters</Cell><Cell>Adam Winters</Cell></Row>
+<Row><Cell>cr2_ayuen</Cell><Cell>Anthony Brian Yuen</Cell><Cell>Anthony Brian Yuen</Cell></Row>
 <Row><Cell>cr2_azdunek</Cell><Cell>Aleksander Zdunek</Cell><Cell>Aleksander Zdunek</Cell></Row>
 <Row><Cell>cr2_azemanova</Cell><Cell>Alžběta Zemanová</Cell><Cell>Alžběta Zemanová</Cell></Row>
 <Row><Cell>cr2_azemkova</Cell><Cell>Amálie Zemková</Cell><Cell>Amálie Zemková</Cell></Row>
@@ -298,6 +305,7 @@
 <Row><Cell>cr2_cdee</Cell><Cell>Csongor Olah Dee</Cell><Cell>Csongor Olah Dee</Cell></Row>
 <Row><Cell>cr2_cdiaz</Cell><Cell>César Díaz</Cell><Cell>César Díaz</Cell></Row>
 <Row><Cell>cr2_celesta</Cell><Cell>Celesta</Cell><Cell>Celesta</Cell></Row>
+<Row><Cell>cr2_ceskakrajina</Cell><Cell>Česká krajina</Cell><Cell>Česká krajina</Cell></Row>
 <Row><Cell>cr2_cesmein</Cell><Cell>Claude Esmein</Cell><Cell>Claude Esmein</Cell></Row>
 <Row><Cell>cr2_cfoe</Cell><Cell>Calvin Foe</Cell><Cell>Calvin Foe</Cell></Row>
 <Row><Cell>cr2_cgambin</Cell><Cell>Carmen Gambín</Cell><Cell>Carmen Gambín</Cell></Row>
@@ -308,6 +316,7 @@
 <Row><Cell>cr2_chi_global_trans</Cell><Cell>Global Localization, Assistant Manager</Cell><Cell>Global Localization, Assistant Manager</Cell></Row>
 <Row><Cell>cr2_chi_loca</Cell><Cell>Chinese Localization</Cell><Cell>Chinese Localization</Cell></Row>
 <Row><Cell>cr2_chi_markt_trans</Cell><Cell>Sales &amp; Marketing</Cell><Cell>Sales &amp; Marketing</Cell></Row>
+<Row><Cell>cr2_chin</Cell><Cell>Chow Tsun Hin</Cell><Cell>Chow Tsun Hin</Cell></Row>
 <Row><Cell>cr2_chi_simp_editor</Cell><Cell>Chinese (Simplified) Lead Editor</Cell><Cell>Chinese (Simplified) Editor</Cell></Row>
 <Row><Cell>cr2_chi_simp_lead_editor</Cell><Cell>Chinese (Simplified) Lead Editor</Cell><Cell>Chinese (Simplified) Lead Editor</Cell></Row>
 <Row><Cell>cr2_chi_simp_trans</Cell><Cell>Chinese (Simplified) Translators</Cell><Cell>Chinese (Simplified) Translators</Cell></Row>
@@ -317,6 +326,7 @@
 <Row><Cell>cr2_ckammermeier</Cell><Cell>Christoph Kammermeier</Cell><Cell>Christoph Kammermeier</Cell></Row>
 <Row><Cell>cr2_cklade</Cell><Cell>Christopher Klade</Cell><Cell>Christopher Klade</Cell></Row>
 <Row><Cell>cr2_clemaire</Cell><Cell>Caroline Lemaire</Cell><Cell>Caroline Lemaire</Cell></Row>
+<Row><Cell>cr2_cleonardis</Cell><Cell>Camilla De Leonardis</Cell><Cell>Camilla De Leonardis</Cell></Row>
 <Row><Cell>cr2_clohlein</Cell><Cell>Christian Löhlein</Cell><Cell>Christian Löhlein</Cell></Row>
 <Row><Cell>cr2_cmayer</Cell><Cell>Carla Mayer</Cell><Cell>Carla Mayer</Cell></Row>
 <Row><Cell>cr2_cmccarthy</Cell><Cell>Colm McCarthy</Cell><Cell>Colm McCarthy</Cell></Row>
@@ -369,6 +379,7 @@
 <Row><Cell>cr2_dbeneditto</Cell><Cell>Dani Beneditto</Cell><Cell>Dani Beneditto</Cell></Row>
 <Row><Cell>cr2_dblichova</Cell><Cell>Dana Blichová</Cell><Cell>Dana Blichová</Cell></Row>
 <Row><Cell>cr2_dbobek</Cell><Cell>David Bobek</Cell><Cell>David Bobek</Cell></Row>
+<Row><Cell>cr2_dborn</Cell><Cell>Dennis Born</Cell><Cell>Dennis Born</Cell></Row>
 <Row><Cell>cr2_dbredenberg</Cell><Cell>Diana Bredenberg</Cell><Cell>Diana Bredenberg</Cell></Row>
 <Row><Cell>cr2_dchiu</Cell><Cell>David Chiu</Cell><Cell>David Chiu</Cell></Row>
 <Row><Cell>cr2_dcollins</Cell><Cell>Dan Collins</Cell><Cell>Dan Collins</Cell></Row>
@@ -377,6 +388,7 @@
 <Row><Cell>cr2_ddonelly36</Cell><Cell>Donelly36</Cell><Cell>Donelly36</Cell></Row>
 <Row><Cell>cr2_ddonhart</Cell><Cell>DonHart</Cell><Cell>DonHart</Cell></Row>
 <Row><Cell>cr2_ddonmez</Cell><Cell>Derya Dönmez</Cell><Cell>Derya Dönmez</Cell></Row>
+<Row><Cell>cr2_ddostal</Cell><Cell>Mgr. Dalibor Dostál</Cell><Cell>Mgr. Dalibor Dostál</Cell></Row>
 <Row><Cell>cr2_ddusek</Cell><Cell>David Dušek</Cell><Cell>David Dušek</Cell></Row>
 <Row><Cell>cr2_delaraby</Cell><Cell>Dina Elaraby</Cell><Cell>Dina Elaraby</Cell></Row>
 <Row><Cell>cr2_de_lead_trans</Cell><Cell>Head of Localization</Cell><Cell>Head of Localization</Cell></Row>
@@ -455,6 +467,7 @@
 <Row><Cell>cr2_dnuckowski</Cell><Cell>Dominic Nuckowski</Cell><Cell>Dominic Nuckowski</Cell></Row>
 <Row><Cell>cr2_dnulty</Cell><Cell>Daniel Nulty</Cell><Cell>Daniel Nulty</Cell></Row>
 <Row><Cell>cr2_doba_karlova</Cell><Cell>Doba Karlova, z. s. </Cell><Cell>Doba Karlova, z. s. </Cell></Row>
+<Row><Cell>cr2_doliveira</Cell><Cell>Daniel Oliveira</Cell><Cell>Daniel Oliveira</Cell></Row>
 <Row><Cell>cr2_domalley</Cell><Cell>Daragh O'Malley</Cell><Cell>Daragh O'Malley</Cell></Row>
 <Row><Cell>cr2_dosgerby</Cell><Cell>Daniel Osgerby</Cell><Cell>Daniel Osgerby</Cell></Row>
 <Row><Cell>cr2_dpacurariu</Cell><Cell>Dragos Cristian Pacurariu</Cell><Cell>Dragos Cristian Pacurariu</Cell></Row>
@@ -469,12 +482,14 @@
 <Row><Cell>cr2_driedel</Cell><Cell>David Riedel</Cell><Cell>David Riedel</Cell></Row>
 <Row><Cell>cr2_driedelbrederlow</Cell><Cell>David Riedel-Brederlow</Cell><Cell>David Riedel-Brederlow</Cell></Row>
 <Row><Cell>cr2_drieger</Cell><Cell>Daniel Rieger</Cell><Cell>Daniel Rieger</Cell></Row>
+<Row><Cell>cr2_dromero</Cell><Cell>David Carmona Romero</Cell><Cell>David Carmona Romero</Cell></Row>
 <Row><Cell>cr2_drussel</Cell><Cell>Douglas Russel</Cell><Cell>Douglas Russel</Cell></Row>
 <Row><Cell>cr2_drussell</Cell><Cell>Douglas Russell</Cell><Cell>Douglas Russell</Cell></Row>
 <Row><Cell>cr2_dsalvo</Cell><Cell>Daniele Salvo</Cell><Cell>Daniele Salvo</Cell></Row>
 <Row><Cell>cr2_dsandmann</Cell><Cell>Dennis Sandmann</Cell><Cell>Dennis Sandmann</Cell></Row>
 <Row><Cell>cr2_dsengupta</Cell><Cell>Debasmita Sengupta</Cell><Cell>Debasmita Sengupta</Cell></Row>
 <Row><Cell>cr2_dsharma</Cell><Cell>Deepak Sharma</Cell><Cell>Deepak Sharma</Cell></Row>
+<Row><Cell>cr2_dsiarheyeu</Cell><Cell>Davyd Siarheyeu</Cell><Cell>Davyd Siarheyeu</Cell></Row>
 <Row><Cell>cr2_dsimon</Cell><Cell>David Simon</Cell><Cell>David Simon</Cell></Row>
 <Row><Cell>cr2_dsoukup</Cell><Cell>David Soukup</Cell><Cell>David Soukup</Cell></Row>
 <Row><Cell>cr2_dstansbury</Cell><Cell>Dalton Stansbury</Cell><Cell>Dalton Stansbury</Cell></Row>
@@ -529,6 +544,7 @@
 <Row><Cell>cr2_ekilic</Cell><Cell>Efe Özgür Kılıç</Cell><Cell>Efe Özgür Kılıç</Cell></Row>
 <Row><Cell>cr2_ekonrad</Cell><Cell>Eleryk Konrad</Cell><Cell>Eleryk Konrad</Cell></Row>
 <Row><Cell>cr2_ekrajhanzlova</Cell><Cell>Eva Krajhanzlová</Cell><Cell>Eva Krajhanzlová</Cell></Row>
+<Row><Cell>cr2_ekul</Cell><Cell>Elif Cansin Kul</Cell><Cell>Elif Cansin Kul</Cell></Row>
 <Row><Cell>cr2_elee</Cell><Cell>Eunyoung Lee</Cell><Cell>Eunyoung Lee</Cell></Row>
 <Row><Cell>cr2_eli</Cell><Cell>Eric Li</Cell><Cell>Eric Li</Cell></Row>
 <Row><Cell>cr2_eliechtenstein</Cell><Cell>Ephraim Liechtenstein</Cell><Cell>Ephraim Liechtenstein</Cell></Row>
@@ -538,6 +554,7 @@
 <Row><Cell>cr2_ematenova</Cell><Cell>Eva Matěnová</Cell><Cell>Eva Matěnová</Cell></Row>
 <Row><Cell>cr2_emazarova</Cell><Cell>Eva Mazárová</Cell><Cell>Eva Mazárová</Cell></Row>
 <Row><Cell>cr2_empty80</Cell><Cell>…</Cell><Cell>…</Cell></Row>
+<Row><Cell>cr2_enabal</Cell><Cell>Elodie Nabal</Cell><Cell>Elodie Nabal</Cell></Row>
 <Row><Cell>cr2_enaprstkova</Cell><Cell>Emma Náprstková</Cell><Cell>Emma Náprstková</Cell></Row>
 <Row><Cell>cr2_eng_agen_trans</Cell><Cell>Translation Agency</Cell><Cell>Translation Agency</Cell></Row>
 <Row><Cell>cr2_eng_assist_trans</Cell><Cell>Assistant Translators</Cell><Cell>Assistant Translators</Cell></Row>
@@ -545,6 +562,7 @@
 <Row><Cell>cr2_enordhausen</Cell><Cell>Engelbert von Nordhausen</Cell><Cell>Engelbert von Nordhausen</Cell></Row>
 <Row><Cell>cr2_enovotna</Cell><Cell>Eva Novotná</Cell><Cell>Eva Novotná</Cell></Row>
 <Row><Cell>cr2_enviro_dept</Cell><Cell>Environment Art</Cell><Cell>Environment Art</Cell></Row>
+<Row><Cell>cr2_eoliveira</Cell><Cell>Erika Karina de Oliveira</Cell><Cell>Erika Karina de Oliveira</Cell></Row>
 <Row><Cell>cr2_epekarkova</Cell><Cell>Erika Pekárková</Cell><Cell>Erika Pekárková</Cell></Row>
 <Row><Cell>cr2_epettigrew</Cell><Cell>Elise Pettigrew</Cell><Cell>Elise Pettigrew</Cell></Row>
 <Row><Cell>cr2_epribylova</Cell><Cell>Eva Přibylová</Cell><Cell>Eva Přibylová</Cell></Row>
@@ -590,6 +608,7 @@
 <Row><Cell>cr2_fcancellada</Cell><Cell>Fernando Cancellada</Cell><Cell>Fernando Cancellada</Cell></Row>
 <Row><Cell>cr2_fcarosio</Cell><Cell>Fabrizio Carosio</Cell><Cell>Fabrizio Carosio</Cell></Row>
 <Row><Cell>cr2_fcimrova</Cell><Cell>Filipína Cimrová</Cell><Cell>Filipína Cimrová</Cell></Row>
+<Row><Cell>cr2_fcipolla</Cell><Cell>Fabio Cipolla</Cell><Cell>Fabio Cipolla</Cell></Row>
 <Row><Cell>cr2_fcordero</Cell><Cell>Fernando Cordero</Cell><Cell>Fernando Cordero</Cell></Row>
 <Row><Cell>cr2_fdreissche</Cell><Cell>Frédéric Van Den Dreissche</Cell><Cell>Frédéric Van Den Dreissche</Cell></Row>
 <Row><Cell>cr2_ffalconiacz</Cell><Cell>Falconia.cz</Cell><Cell>Falconia.cz</Cell></Row>
@@ -702,10 +721,12 @@
 <Row><Cell>cr2_hgrull</Cell><Cell>Hervé Grull</Cell><Cell>Hervé Grull</Cell></Row>
 <Row><Cell>cr2_hhanada</Cell><Cell>Hinano Hanada</Cell><Cell>Hinano Hanada</Cell></Row>
 <Row><Cell>cr2_hhavlat</Cell><Cell>Harry Hugo Havlát</Cell><Cell>Harry Hugo Havlát</Cell></Row>
+<Row><Cell>cr2_hhetzel</Cell><Cell>Hendrik Hetzel</Cell><Cell>Hendrik Hetzel</Cell></Row>
 <Row><Cell>cr2_hhromer</Cell><Cell>Hromer</Cell><Cell>Hromer</Cell></Row>
 <Row><Cell>cr2_hichinomiya</Cell><Cell>Hiroki Ichinomiya</Cell><Cell>Hiroki Ichinomiya</Cell></Row>
 <Row><Cell>cr2_hkim</Cell><Cell>Hyunsuk Kim</Cell><Cell>Hyunsuk Kim</Cell></Row>
 <Row><Cell>cr2_hkrumpholz</Cell><Cell>Hanns Jörg Krumpholz</Cell><Cell>Hanns Jörg Krumpholz</Cell></Row>
+<Row><Cell>cr2_hlevene</Cell><Cell>Hannah Levene</Cell><Cell>Hannah Levene</Cell></Row>
 <Row><Cell>cr2_hlim</Cell><Cell>Hyungeol Lim</Cell><Cell>Hyungeol Lim</Cell></Row>
 <Row><Cell>cr2_hlucaciu</Cell><Cell>Horatiu Lucaciu</Cell><Cell>Horatiu Lucaciu</Cell></Row>
 <Row><Cell>cr2_hnakada</Cell><Cell>Hiroe Nakada</Cell><Cell>Hiroe Nakada</Cell></Row>
@@ -725,6 +746,7 @@
 <Row><Cell>cr2_hzelenkova</Cell><Cell>Helena Zelenková</Cell><Cell>Helena Zelenková</Cell></Row>
 <Row><Cell>cr2_ialdag</Cell><Cell>Imme Aldag</Cell><Cell>Imme Aldag</Cell></Row>
 <Row><Cell>cr2_iborisov</Cell><Cell>Ivan Borisov</Cell><Cell>Ivan Borisov</Cell></Row>
+<Row><Cell>cr2_icalvo</Cell><Cell>Ines Calvo</Cell><Cell>Ines Calvo</Cell></Row>
 <Row><Cell>cr2_ichampion</Cell><Cell>Ian Champion</Cell><Cell>Ian Champion</Cell></Row>
 <Row><Cell>cr2_ichytrova</Cell><Cell>Ivana Chytrová</Cell><Cell>Ivana Chytrová</Cell></Row>
 <Row><Cell>cr2_icy</Cell><Cell>Ian Cy</Cell><Cell>Ian Cy</Cell></Row>
@@ -833,6 +855,7 @@
 <Row><Cell>cr2_jgutzeit</Cell><Cell>Johanna von Gutzeit</Cell><Cell>Johanna von Gutzeit</Cell></Row>
 <Row><Cell>cr2_jhamann</Cell><Cell>Joshua Hamann</Cell><Cell>Joshua Hamann</Cell></Row>
 <Row><Cell>cr2_jhamari</Cell><Cell>Jakub Hamari</Cell><Cell>Jakub Hamari</Cell></Row>
+<Row><Cell>cr2_jhasebrink</Cell><Cell>Jana Maria Hasebrink</Cell><Cell>Jana Maria Hasebrink</Cell></Row>
 <Row><Cell>cr2_jhegarty</Cell><Cell>John Hegarty</Cell><Cell>John Hegarty</Cell></Row>
 <Row><Cell>cr2_jheinemannschwanz</Cell><Cell>Julian Heinemann-Schwanz</Cell><Cell>Julian Heinemann-Schwanz</Cell></Row>
 <Row><Cell>cr2_jholzel</Cell><Cell>Jiří Hölzel</Cell><Cell>Jiří Hölzel</Cell></Row>
@@ -876,6 +899,7 @@
 <Row><Cell>cr2_jlopez</Cell><Cell>Jesús Fernández López</Cell><Cell>Jesús Fernández López</Cell></Row>
 <Row><Cell>cr2_jlowenberg</Cell><Cell>Jaron Löwenberg</Cell><Cell>Jaron Löwenberg</Cell></Row>
 <Row><Cell>cr2_jlukas</Cell><Cell>Jakub Lukáš</Cell><Cell>Jakub Lukáš</Cell></Row>
+<Row><Cell>cr2_jluo</Cell><Cell>Jiaxu Luo</Cell><Cell>Jiaxu Luo</Cell></Row>
 <Row><Cell>cr2_jmacek</Cell><Cell>Jakub Macek</Cell><Cell>Jakub Macek</Cell></Row>
 <Row><Cell>cr2_jmach</Cell><Cell>Jan Mach</Cell><Cell>Jan Mach</Cell></Row>
 <Row><Cell>cr2_jmachander</Cell><Cell>Jonathan-Antonín Machander</Cell><Cell>Jonathan-Antonín Machander</Cell></Row>
@@ -981,6 +1005,7 @@
 <Row><Cell>cr2_jwillmann</Cell><Cell>Jonathan Willmann</Cell><Cell>Jonathan Willmann</Cell></Row>
 <Row><Cell>cr2_jwinward</Cell><Cell>Josh Winward</Cell><Cell>Josh Winward</Cell></Row>
 <Row><Cell>cr2_jwisniewski</Cell><Cell>Jakub Wiśniewski</Cell><Cell>Jakub Wiśniewski</Cell></Row>
+<Row><Cell>cr2_jyan</Cell><Cell>Jinrong Yan</Cell><Cell>Jinrong Yan</Cell></Row>
 <Row><Cell>cr2_jyu</Cell><Cell>Jonathan Yu</Cell><Cell>Jonathan Yu</Cell></Row>
 <Row><Cell>cr2_jzavacky</Cell><Cell>Jonáš Zavacký</Cell><Cell>Jonáš Zavacký</Cell></Row>
 <Row><Cell>cr2_jzeman</Cell><Cell>Jan Zeman</Cell><Cell>Jan Zeman</Cell></Row>
@@ -992,12 +1017,14 @@
 <Row><Cell>cr2_kblanc</Cell><Cell>Keylian Blanc</Cell><Cell>Keylian Blanc</Cell></Row>
 <Row><Cell>cr2_kchandrahas</Cell><Cell>Kartikeya Chandrahas</Cell><Cell>Kartikeya Chandrahas</Cell></Row>
 <Row><Cell>cr2_kchen</Cell><Cell>Kuan-Ling Chen</Cell><Cell>Kuan-Ling Chen</Cell></Row>
+<Row><Cell>cr2_kcheung</Cell><Cell>Kwan Ting Dicky Cheung</Cell><Cell>Kwan Ting Dicky Cheung</Cell></Row>
 <Row><Cell>cr2_kchristensen</Cell><Cell>Kenneth Christensen</Cell><Cell>Kenneth Christensen</Cell></Row>
 <Row><Cell>cr2_kchtenelis</Cell><Cell>Konstantinos Chtenelis</Cell><Cell>Konstantinos Chtenelis</Cell></Row>
 <Row><Cell>cr2_kchudy</Cell><Cell>Karel Chudy</Cell><Cell>Karel Chudy</Cell></Row>
 <Row><Cell>cr2_kdabrowska</Cell><Cell>Kateřina Dabrowská</Cell><Cell>Kateřina Dabrowská</Cell></Row>
 <Row><Cell>cr2_kdavidova</Cell><Cell>Klára Davidová</Cell><Cell>Klára Davidová</Cell></Row>
 <Row><Cell>cr2_kdobry</Cell><Cell>Karel Dobrý</Cell><Cell>Karel Dobrý</Cell></Row>
+<Row><Cell>cr2_kdudek</Cell><Cell>Klaudia Dudek</Cell><Cell>Klaudia Dudek</Cell></Row>
 <Row><Cell>cr2_kdurich</Cell><Cell>Kamila Dürich</Cell><Cell>Kamila Dürich</Cell></Row>
 <Row><Cell>cr2_keleryk</Cell><Cell>Konrad Eleryk</Cell><Cell>Konrad Eleryk</Cell></Row>
 <Row><Cell>cr2_kelite</Cell><Cell>King Blue of Elite</Cell><Cell>King Blue of Elite</Cell></Row>
@@ -1026,6 +1053,7 @@
 <Row><Cell>cr2_kkrakorova</Cell><Cell>Kateřina Krakorová</Cell><Cell>Kateřina Krakorová</Cell></Row>
 <Row><Cell>cr2_kkristyna</Cell><Cell>Kristýna</Cell><Cell>Kristýna</Cell></Row>
 <Row><Cell>cr2_kkucera</Cell><Cell>Karel Kučera</Cell><Cell>Karel Kučera</Cell></Row>
+<Row><Cell>cr2_kkuscu</Cell><Cell>Kaan Kuscu</Cell><Cell>Kaan Kuscu</Cell></Row>
 <Row><Cell>cr2_kkylat</Cell><Cell>Kylat</Cell><Cell>Kylat</Cell></Row>
 <Row><Cell>cr2_kleichtova</Cell><Cell>Kristýna Leichtová</Cell><Cell>Kristýna Leichtová</Cell></Row>
 <Row><Cell>cr2_klinha</Cell><Cell>Karel Linha</Cell><Cell>Karel Linha</Cell></Row>
@@ -1122,6 +1150,7 @@
 <Row><Cell>cr2_lkrsova</Cell><Cell>Lenka Krsová</Cell><Cell>Lenka Krsová</Cell></Row>
 <Row><Cell>cr2_lkrutak</Cell><Cell>Leonard Kruták</Cell><Cell>Leonard Kruták</Cell></Row>
 <Row><Cell>cr2_lkuhn</Cell><Cell>Lea Kuhn</Cell><Cell>Lea Kuhn</Cell></Row>
+<Row><Cell>cr2_lkwok</Cell><Cell>Lok Yan Kwok</Cell><Cell>Lok Yan Kwok</Cell></Row>
 <Row><Cell>cr2_llargezo112</Cell><Cell>Largezo112</Cell><Cell>Largezo112</Cell></Row>
 <Row><Cell>cr2_llatinak</Cell><Cell>Lukáš Latiňák</Cell><Cell>Lukáš Latiňák</Cell></Row>
 <Row><Cell>cr2_llego</Cell><Cell>Lego</Cell><Cell>Lego</Cell></Row>
@@ -1204,9 +1233,12 @@
 <Row><Cell>cr2_mblaha</Cell><Cell>Marek Blaha</Cell><Cell>Marek Blaha</Cell></Row>
 <Row><Cell>cr2_mblazevic</Cell><Cell>Martin Blaževič</Cell><Cell>Martin Blaževič</Cell></Row>
 <Row><Cell>cr2_mbloch</Cell><Cell>Mgr. Jiři Bloch</Cell><Cell>Mgr. Jiři Bloch</Cell></Row>
+<Row><Cell>cr2_mborgia</Cell><Cell>Mario Borgia</Cell><Cell>Mario Borgia</Cell></Row>
 <Row><Cell>cr2_mborikova</Cell><Cell>Markéta Bóriková</Cell><Cell>Markéta Bóriková</Cell></Row>
 <Row><Cell>cr2_mbouskova</Cell><Cell>Monika Fürbach Boušková</Cell><Cell>Monika Fürbach Boušková</Cell></Row>
 <Row><Cell>cr2_mboxleitner</Cell><Cell>Mathias Boxleitner</Cell><Cell>Mathias Boxleitner</Cell></Row>
+<Row><Cell>cr2_mbravo</Cell><Cell>Manuel Alejandro Castro Bravo</Cell><Cell>Manuel Alejandro Castro Bravo</Cell></Row>
+<Row><Cell>cr2_mbrenher</Cell><Cell>Matthew Brenher</Cell><Cell>Matthew Brenher</Cell></Row>
 <Row><Cell>cr2_mbrousil</Cell><Cell>Miloslav Brousil</Cell><Cell>Miloslav Brousil</Cell></Row>
 <Row><Cell>cr2_mbrynychova</Cell><Cell>Mária Brynychová</Cell><Cell>Mária Brynychová</Cell></Row>
 <Row><Cell>cr2_mburcakova</Cell><Cell>Michaela Burcaková</Cell><Cell>Michaela Burcaková</Cell></Row>
@@ -1218,6 +1250,7 @@
 <Row><Cell>cr2_mchettle</Cell><Cell>Marianne Chettle</Cell><Cell>Marianne Chettle</Cell></Row>
 <Row><Cell>cr2_mchmatalova</Cell><Cell>Malvína Chmátalová</Cell><Cell>Malvína Chmátalová</Cell></Row>
 <Row><Cell>cr2_mcizek</Cell><Cell>Mikuláš Čížek</Cell><Cell>Mikuláš Čížek</Cell></Row>
+<Row><Cell>cr2_mcolinm</Cell><Cell>Miguel Angel Colin M.</Cell><Cell>Miguel Angel Colin M.</Cell></Row>
 <Row><Cell>cr2_mcorporales</Cell><Cell>Marta Corporales</Cell><Cell>Marta Corporales</Cell></Row>
 <Row><Cell>cr2_mcosta</Cell><Cell>Mercia Costa</Cell><Cell>Mercia Costa</Cell></Row>
 <Row><Cell>cr2_mcoupek</Cell><Cell>Martin Čoupek</Cell><Cell>Martin Čoupek</Cell></Row>
@@ -1252,6 +1285,7 @@
 <Row><Cell>cr2_mgarvia</Cell><Cell>Marina Garvía</Cell><Cell>Marina Garvía</Cell></Row>
 <Row><Cell>cr2_mgeymonat</Cell><Cell>Marcos Geymonat</Cell><Cell>Marcos Geymonat</Cell></Row>
 <Row><Cell>cr2_mglantschnig</Cell><Cell>Michael Glantschnig</Cell><Cell>Michael Glantschnig</Cell></Row>
+<Row><Cell>cr2_mgonzalez</Cell><Cell>Miguel Vidal Gonzalez</Cell><Cell>Miguel Vidal Gonzalez</Cell></Row>
 <Row><Cell>cr2_mgoodrich</Cell><Cell>Mark Goodrich</Cell><Cell>Mark Goodrich</Cell></Row>
 <Row><Cell>cr2_mgregor</Cell><Cell>Martin "Tilion" Gregor</Cell><Cell>Martin "Tilion" Gregor</Cell></Row>
 <Row><Cell>cr2_mguerra</Cell><Cell>Mercedes Guerra</Cell><Cell>Mercedes Guerra</Cell></Row>
@@ -1295,6 +1329,7 @@
 <Row><Cell>cr2_mkeisow</Cell><Cell>Martin Dean Keisow</Cell><Cell>Martin Dean Keisow</Cell></Row>
 <Row><Cell>cr2_mkejmar</Cell><Cell>Miroslav Kejmar</Cell><Cell>Miroslav Kejmar</Cell></Row>
 <Row><Cell>cr2_mkhandoga</Cell><Cell>Mykola Khandoga</Cell><Cell>Vitalii Khrystiuk</Cell></Row>
+<Row><Cell>cr2_mkim</Cell><Cell>Mikyung Kim</Cell><Cell>Mikyung Kim</Cell></Row>
 <Row><Cell>cr2_mkinovic</Cell><Cell>Matěj Kinovič</Cell><Cell>Matěj Kinovič</Cell></Row>
 <Row><Cell>cr2_mklier</Cell><Cell>Martina Klier</Cell><Cell>Martina Klier</Cell></Row>
 <Row><Cell>cr2_mklischies</Cell><Cell>Mario Klischies</Cell><Cell>Mario Klischies</Cell></Row>
@@ -1324,6 +1359,7 @@
 <Row><Cell>cr2_mlugli</Cell><Cell>Mark Lugli</Cell><Cell>Mark Lugli</Cell></Row>
 <Row><Cell>cr2_mmaciaszek</Cell><Cell>Mikołaj Maciaszek</Cell><Cell>Mikołaj Maciaszek</Cell></Row>
 <Row><Cell>cr2_mmakarova</Cell><Cell>Marina Makarova</Cell><Cell>Marina Makarova</Cell></Row>
+<Row><Cell>cr2_mmaliarchuk</Cell><Cell>Mykyta Maliarchuk</Cell><Cell>Mykyta Maliarchuk</Cell></Row>
 <Row><Cell>cr2_mmarcos</Cell><Cell>Miguel Ángel Cordero Marcos</Cell><Cell>Miguel Ángel Cordero Marcos</Cell></Row>
 <Row><Cell>cr2_mmastalir</Cell><Cell>Martin Maštalíř</Cell><Cell>Martin Maštalíř</Cell></Row>
 <Row><Cell>cr2_mmatejkova</Cell><Cell>Marie Matějková</Cell><Cell>Marie Matějková</Cell></Row>
@@ -1345,6 +1381,7 @@
 <Row><Cell>cr2_mnejezchleba</Cell><Cell>Milan Nejezchleba</Cell><Cell>Milan Nejezchleba</Cell></Row>
 <Row><Cell>cr2_mnemeckova</Cell><Cell>Michaela Šafaříková Němečková</Cell><Cell>Michaela Šafaříková Němečková</Cell></Row>
 <Row><Cell>cr2_mnic</Cell><Cell>Matyáš Nič</Cell><Cell>Matyáš Nič</Cell></Row>
+<Row><Cell>cr2_mnikolajevic</Cell><Cell>Mihajlo Nikolajevic</Cell><Cell>Mihajlo Nikolajevic</Cell></Row>
 <Row><Cell>cr2_mnova</Cell><Cell>Matylda Nová</Cell><Cell>Matylda Nová</Cell></Row>
 <Row><Cell>cr2_mnovotny</Cell><Cell>Milan Novotný</Cell><Cell>Milan Novotný</Cell></Row>
 <Row><Cell>cr2_mocap_ass</Cell><Cell>MoCap Assistants</Cell><Cell>MoCap Assistants</Cell></Row>
@@ -1410,8 +1447,10 @@
 <Row><Cell>cr2_mscott</Cell><Cell>Madison Scott</Cell><Cell>Madison Scott</Cell></Row>
 <Row><Cell>cr2_msedlacek</Cell><Cell>Michal Sedláček</Cell><Cell>Michal Sedláček</Cell></Row>
 <Row><Cell>cr2_msedlak</Cell><Cell>Martin Sedlák</Cell><Cell>Martin Sedlák</Cell></Row>
+<Row><Cell>cr2_mserantes</Cell><Cell>Mariano Gabriel Serantes</Cell><Cell>Mariano Gabriel Serantes</Cell></Row>
 <Row><Cell>cr2_mserbouskova</Cell><Cell>Markéta "Gill" Serbousková</Cell><Cell>Markéta "Gill" Serbousková</Cell></Row>
 <Row><Cell>cr2_msibalova</Cell><Cell>Marcela Šíbalová</Cell><Cell>Marcela Šíbalová</Cell></Row>
+<Row><Cell>cr2_msinkulova</Cell><Cell>Michaela Sinkulová</Cell><Cell>Michaela Sinkulová</Cell></Row>
 <Row><Cell>cr2_msiudak</Cell><Cell>Marcin Siudak</Cell><Cell>Marcin Siudak</Cell></Row>
 <Row><Cell>cr2_mskanderberg</Cell><Cell>Marc Skanderberg</Cell><Cell>Marc Skanderberg</Cell></Row>
 <Row><Cell>cr2_mslama</Cell><Cell>Martin Sláma</Cell><Cell>Martin Sláma</Cell></Row>
@@ -1493,6 +1532,7 @@
 <Row><Cell>cr2_nkaratasakis</Cell><Cell>Nikolaos Karatasakis</Cell><Cell>Nikolaos Karatasakis</Cell></Row>
 <Row><Cell>cr2_nkrantz</Cell><Cell>Nils Emil Tobias Krantz</Cell><Cell>Nils Emil Tobias Krantz</Cell></Row>
 <Row><Cell>cr2_nkroger</Cell><Cell>Nora Kröger</Cell><Cell>Nora Kröger</Cell></Row>
+<Row><Cell>cr2_nkulik</Cell><Cell>Nadzeya Kulik</Cell><Cell>Nadzeya Kulik</Cell></Row>
 <Row><Cell>cr2_nkunzendorf</Cell><Cell>Nora Kunzendorf</Cell><Cell>Nora Kunzendorf</Cell></Row>
 <Row><Cell>cr2_nladkany</Cell><Cell>Nadia Ladkany</Cell><Cell>Nadia Ladkany</Cell></Row>
 <Row><Cell>cr2_nlindner</Cell><Cell>Nikke Lindner</Cell><Cell>Nikke Lindner</Cell></Row>
@@ -1555,6 +1595,7 @@
 <Row><Cell>cr2_ostuchl</Cell><Cell>Ondřej Stuchl</Cell><Cell>Ondřej Stuchl</Cell></Row>
 <Row><Cell>cr2_osuk</Cell><Cell>Ondřej Suk</Cell><Cell>Ondřej Suk</Cell></Row>
 <Row><Cell>cr2_oszlauer</Cell><Cell>Ondřej Szlauer</Cell><Cell>Ondřej Szlauer</Cell></Row>
+<Row><Cell>cr2_otaouti</Cell><Cell>Othman Taouti</Cell><Cell>Othman Taouti</Cell></Row>
 <Row><Cell>cr2_oubran</Cell><Cell>Ondřej Ubran</Cell><Cell>Ondřej Ubran</Cell></Row>
 <Row><Cell>cr2_ovaliente</Cell><Cell>Olivier Valiente</Cell><Cell>Olivier Valiente</Cell></Row>
 <Row><Cell>cr2_ovatansever</Cell><Cell>Osman Berk Vatansever</Cell><Cell>Osman Berk Vatansever</Cell></Row>
@@ -1909,6 +1950,7 @@
 <Row><Cell>cr2_pstatkevich</Cell><Cell>Pavel Statkevich</Cell><Cell>Pavel Statkevich</Cell></Row>
 <Row><Cell>cr2_pstepan</Cell><Cell>Pavel Štěpán</Cell><Cell>Pavel Štěpán</Cell></Row>
 <Row><Cell>cr2_psuchan</Cell><Cell>Paul Suchan</Cell><Cell>Paul Suchan</Cell></Row>
+<Row><Cell>cr2_psukhobrus</Cell><Cell>Pavlo Sukhobrus</Cell><Cell>Pavlo Sukhobrus</Cell></Row>
 <Row><Cell>cr2_psura</Cell><Cell>Peter Sura</Cell><Cell>Peter Sura</Cell></Row>
 <Row><Cell>cr2_psusanka</Cell><Cell>Petr Sušanka</Cell><Cell>Petr Sušanka</Cell></Row>
 <Row><Cell>cr2_ptoplis</Cell><Cell>Peter Toplis</Cell><Cell>Peter Toplis</Cell></Row>
@@ -2038,6 +2080,7 @@
 <Row><Cell>cr2_sbrush</Cell><Cell>Stephanie Brush</Cell><Cell>Stephanie Brush</Cell></Row>
 <Row><Cell>cr2_sbrytchenko</Cell><Cell>Serhii Brytchenko</Cell><Cell>Serhii Brytchenko</Cell></Row>
 <Row><Cell>cr2_scano</Cell><Cell>Susanna Rodríguez Cano</Cell><Cell>Susanna Rodríguez Cano</Cell></Row>
+<Row><Cell>cr2_scarlo</Cell><Cell>Silvio De Carlo</Cell><Cell>Silvio De Carlo</Cell></Row>
 <Row><Cell>cr2_scenek</Cell><Cell>Štěpán "Kat" Cenek</Cell><Cell>Štěpán "Kat" Cenek</Cell></Row>
 <Row><Cell>cr2_scervinkova</Cell><Cell>Štěpánka Červinková</Cell><Cell>Štěpánka Červinková</Cell></Row>
 <Row><Cell>cr2_schneider</Cell><Cell>Sandra Maren Schneider</Cell><Cell>Sandra Maren Schneider</Cell></Row>
@@ -2051,6 +2094,7 @@
 <Row><Cell>cr2_sfitzner</Cell><Cell>Sebastian Fitzner</Cell><Cell>Sebastian Fitzner</Cell></Row>
 <Row><Cell>cr2_sfons</Cell><Cell>Sarah Fons</Cell><Cell>Sarah Fons</Cell></Row>
 <Row><Cell>cr2_sgarcia</Cell><Cell>Sara Cobo García</Cell><Cell>Sara Cobo García</Cell></Row>
+<Row><Cell>cr2_sgerber</Cell><Cell>Sophie Louise Gerber</Cell><Cell>Sophie Louise Gerber</Cell></Row>
 <Row><Cell>cr2_sghosh</Cell><Cell>Soumini Ghosh</Cell><Cell>Soumini Ghosh</Cell></Row>
 <Row><Cell>cr2_sgrzebalski</Cell><Cell>Stefan Grzebalski</Cell><Cell>Stefan Grzebalski</Cell></Row>
 <Row><Cell>cr2_shabu</Cell><Cell>Shuhei Habu</Cell><Cell>Shuhei Habu</Cell></Row>
@@ -2078,12 +2122,15 @@
 <Row><Cell>cr2_skrausova</Cell><Cell>Sandra Krausová</Cell><Cell>Sandra Krausová</Cell></Row>
 <Row><Cell>cr2_slasokova</Cell><Cell>Sandra Lasoková</Cell><Cell>Sandra Lasoková</Cell></Row>
 <Row><Cell>cr2_slau</Cell><Cell>Shuk Yee Lau</Cell><Cell>Shuk Yee Lau</Cell></Row>
+<Row><Cell>cr2_slee</Cell><Cell>Seojin Lee</Cell><Cell>Seojin Lee</Cell></Row>
 <Row><Cell>cr2_sliu</Cell><Cell>Sanna Liu</Cell><Cell>Sanna Liu</Cell></Row>
 <Row><Cell>cr2_slu</Cell><Cell>Sherry Lu</Cell><Cell>Sherry Lu</Cell></Row>
 <Row><Cell>cr2_slustyk</Cell><Cell>Štěpán Lustyk</Cell><Cell>Štěpán Lustyk</Cell></Row>
 <Row><Cell>cr2_sluz</Cell><Cell>Sérgio Luz</Cell><Cell>Sérgio Luz</Cell></Row>
 <Row><Cell>cr2_smadarova</Cell><Cell>Sára Maďarová</Cell><Cell>Sára Maďarová</Cell></Row>
 <Row><Cell>cr2_smajer</Cell><Cell>Stanislav Majer</Cell><Cell>Stanislav Majer</Cell></Row>
+<Row><Cell>cr2_smakarov</Cell><Cell>Stanislav Makarov</Cell><Cell>Stanislav Makarov</Cell></Row>
+<Row><Cell>cr2_smalarz</Cell><Cell>Sandra Malarz</Cell><Cell>Sandra Malarz</Cell></Row>
 <Row><Cell>cr2_smamula</Cell><Cell>Štěpán Mamula</Cell><Cell>Štěpán Mamula</Cell></Row>
 <Row><Cell>cr2_sman</Cell><Cell>Sebastian Man</Cell><Cell>Sebastian Man</Cell></Row>
 <Row><Cell>cr2_smandapaka</Cell><Cell>Swarnabala Mandapaka</Cell><Cell>Swarnabala Mandapaka</Cell></Row>
@@ -2452,12 +2499,14 @@
 <Row><Cell>cr2_whs_memory</Cell><Cell>In Loving Memory</Cell><Cell>In Loving Memory</Cell></Row>
 <Row><Cell>cr2_whs_thanks</Cell><Cell>Special Thanks</Cell><Cell>Special Thanks</Cell></Row>
 <Row><Cell>cr2_whsu</Cell><Cell>Will Hsu</Cell><Cell>Will Hsu</Cell></Row>
+<Row><Cell>cr2_wpoltorak</Cell><Cell>Wiktoria Poltorak</Cell><Cell>Wiktoria Poltorak</Cell></Row>
 <Row><Cell>cr2_wto</Cell><Cell>Wing Hei To</Cell><Cell>Wing Hei To</Cell></Row>
 <Row><Cell>cr2_wus</Cell><Cell>We would also like to thank the Czech Museum of Silver in Kutná Hora, the Hussite Museum in Tábor, the owners of the Malešov Fortress, the National Monuments Institute and the owners and castellans of all the historical buildings that were made available to us.</Cell><Cell>We would also like to thank the Czech Museum of Silver in Kutná Hora, the Hussite Museum in Tábor, the owners of the Malešov Fortress, the National Monuments Institute and the owners and castellans of all the historical buildings that were made available to us.</Cell></Row>
 <Row><Cell>cr2_wwiech</Cell><Cell>Weronika Więch</Cell><Cell>Weronika Więch</Cell></Row>
 <Row><Cell>cr2_wwtcjedimaster</Cell><Cell>wTc[JediMaster]</Cell><Cell>wTc[JediMaster]</Cell></Row>
 <Row><Cell>cr2_wzalewski</Cell><Cell>Wojciech Zalewski</Cell><Cell>Wojciech Zalewski</Cell></Row>
 <Row><Cell>cr2_Xcerevko</Cell><Cell>3D.SK, Artzenal, Fanatic Games, More.is.More s.r.o., Ivan Čerevko</Cell><Cell>3D.SK, Artzenal, Fanatic Games, More.is.More s.r.o., Ivan Čerevko</Cell></Row>
+<Row><Cell>cr2_xlu</Cell><Cell>Xinyu Lu</Cell><Cell>Xinyu Lu</Cell></Row>
 <Row><Cell>cr2_Xmoral</Cell><Cell>Óscar del Moral</Cell><Cell>Óscar del Moral</Cell></Row>
 <Row><Cell>cr2_xvibert</Cell><Cell>Xavier Vibert</Cell><Cell>Xavier Vibert</Cell></Row>
 <Row><Cell>cr2_xwen</Cell><Cell>Xin Wen</Cell><Cell>Xin Wen</Cell></Row>
@@ -2466,11 +2515,13 @@
 <Row><Cell>cr2_yarita</Cell><Cell>Yasutaka Arita</Cell><Cell>Yasutaka Arita</Cell></Row>
 <Row><Cell>cr2_ychen</Cell><Cell>Yi Chen</Cell><Cell>Yi Chen</Cell></Row>
 <Row><Cell>cr2_ychu</Cell><Cell>Yuehan Chu</Cell><Cell>Yuehan Chu</Cell></Row>
+<Row><Cell>cr2_ydeng</Cell><Cell>Yu Deng</Cell><Cell>Yu Deng</Cell></Row>
 <Row><Cell>cr2_yha</Cell><Cell>Yunji Hailey Ha</Cell><Cell>Yunji Hailey Ha</Cell></Row>
 <Row><Cell>cr2_yhayashi</Cell><Cell>Yoshiyuki Hayashi</Cell><Cell>Yoshiyuki Hayashi</Cell></Row>
 <Row><Cell>cr2_yhe</Cell><Cell>Yen-Chieh He</Cell><Cell>Yen-Chieh He</Cell></Row>
 <Row><Cell>cr2_yhirozawa</Cell><Cell>Yuki Hirozawa</Cell><Cell>Yuki Hirozawa</Cell></Row>
 <Row><Cell>cr2_yhotta</Cell><Cell>Yusuke Hotta</Cell><Cell>Yusuke Hotta</Cell></Row>
+<Row><Cell>cr2_yhu</Cell><Cell>Yueyue Hu</Cell><Cell>Yueyue Hu</Cell></Row>
 <Row><Cell>cr2_yjurcikova</Cell><Cell>Yvona Jurčíková</Cell><Cell>Yvona Jurčíková</Cell></Row>
 <Row><Cell>cr2_ykatsuhiro</Cell><Cell>Yokoi Katsuhiro</Cell><Cell>Yokoi Katsuhiro</Cell></Row>
 <Row><Cell>cr2_ykubo</Cell><Cell>Yuki Kubo</Cell><Cell>Yuki Kubo</Cell></Row>
@@ -2482,6 +2533,7 @@
 <Row><Cell>cr2_ymiao</Cell><Cell>Ye Miao</Cell><Cell>Ye Miao</Cell></Row>
 <Row><Cell>cr2_ypatil</Cell><Cell>Yogesh Supadu Patil</Cell><Cell>Yogesh Supadu Patil</Cell></Row>
 <Row><Cell>cr2_yrajendraprasad</Cell><Cell>Yadav Saurabhkumar Rajendraprasad</Cell><Cell>Yadav Saurabhkumar Rajendraprasad</Cell></Row>
+<Row><Cell>cr2_ysi</Cell><Cell>Yidan Si</Cell><Cell>Yidan Si</Cell></Row>
 <Row><Cell>cr2_yslesarchuk</Cell><Cell>Yana Slesarchuk</Cell><Cell>Yana Slesarchuk</Cell></Row>
 <Row><Cell>cr2_ysunil</Cell><Cell>Yerramsetti Sunil</Cell><Cell>Yerramsetti Sunil</Cell></Row>
 <Row><Cell>cr2_ytaguchi</Cell><Cell>Yoshiharu Taguchi</Cell><Cell>Yoshiharu Taguchi</Cell></Row>
@@ -3323,7 +3375,7 @@ Some customs have kept their original form, e.g. folk superstition and rhymes. O
 <Row><Cell>ui_codex_cont_praporce_korouhve</Cell><Cell>&lt;paragraph&gt;In the heat of battle in the Middle Ages, where most of the combatants had the same or similar equipment, the pennant or banner was often the only sign differentiating friend from foe. Pennants also helped lift morale and to organize the various units during troop movements.&lt;/paragraph&gt;&lt;paragraph&gt;At the turn of the 14th and 15th centuries, pennants and banners were the shape of extended triangles, upright rectangles or squares. Flags were fashioned from coloured canvas or silk and the depictions or emblems were painted onto them, most often the coats of arms of the respective feudal lords.&lt;/paragraph&gt;&lt;paragraph&gt;Cavalry carried small pennants on their spears and craftsmen who were members of the guilds also had their own banners. The &lt;accent&gt;guild banner&lt;/accent&gt; was emblematic of the profession and was shown at public ceremonies and at army and other ostentatious events.&lt;/paragraph&gt;&lt;paragraph&gt;The &lt;accent&gt;banner of the Bohemian lands&lt;/accent&gt; dates back to the 13th century and depicts ‘gules, a lion rampant queue forchée argent' i.e. a two-tailed silver lion raised on its hind legs, on a red background.&lt;/paragraph&gt;&lt;paragraph&gt;If the banner is topped with a triangular point, we speak of a &lt;italic&gt;standard&lt;italic&gt;.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;In the heat of battle in the Middle Ages, where most of the combatants had the same or similar equipment, the standard, banner or pennant was often the only way to differentiate friend from foe. Standards also helped lift morale and organize the various units during troop movements.&lt;/paragraph&gt;&lt;paragraph&gt;At the turn of the 14th and 15th centuries, standards and banners were the shape of extended triangles, upright rectangles or squares. Flags were fashioned from coloured canvas or silk and the depictions or emblems were painted onto them, most often the coats of arms of the respective feudal lords.&lt;/paragraph&gt;&lt;paragraph&gt;Cavalry carried small standards on their spears and craftsmen who were members of the guilds also had their own banners. The &lt;accent&gt;guild banner&lt;/accent&gt; was emblematic of the profession and was shown at public ceremonies and at army and other ostentatious events.&lt;/paragraph&gt;&lt;paragraph&gt;The &lt;accent&gt;banner of the Bohemian lands&lt;/accent&gt; dates back to the 13th century and depicts ‘gules, a lion rampant queue forchée argent' i.e. a two-tailed silver lion raised on its hind legs, on a red background.&lt;/paragraph&gt;&lt;paragraph&gt;If the banner is topped with a triangular point, it is reffered to as a &lt;italic&gt;pennant&lt;italic&gt;.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_priest</Cell><Cell>&lt;paragraph&gt;The priests were among the elite in medieval society, and among the few who had any education.&lt;/paragraph&gt;&lt;paragraph&gt;Village priests were less educated than those of the larger parishes. They could barely read or write, had no library, and learned the liturgy by heart. They were none too well-off, typically working in the fields or raising livestock, like lay farmers. They were not celibate, enjoyed folk entertainment and games, dancing and going to the tavern.&lt;/paragraph&gt;&lt;paragraph&gt;As time went on, looser morals and educational decline spread to the towns and monasteries. By contrast, the priests in the larger parishes and towns owned more property, and with the exception of service to God, did not have to resort to any manual work. &lt;/paragraph&gt;&lt;paragraph&gt;&lt;accent&gt;The duties of the priest&lt;/accent&gt; encompassed preparation and serving of mass, hearing confessions, taking care of the church (its operation and decoration), visiting the poor and the sick, arranging charity collections, collecting dues, conducting baptisms, weddings, last rites and funerals.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;Priests in medieval society were part of the elite and among the few who had some education.&lt;/paragraph&gt;&lt;paragraph&gt;Village priests were not as educated as those from larger parishes. They were not good at reading or writing and did not maintain a library; instead, they memorised liturgical texts. They were also not very wealthy, often working in the fields or raising livestock like other peasants. They did not observe celibacy, engaged in folk entertainment and games, danced, and frequented taverns.&lt;/paragraph&gt;&lt;paragraph&gt;Lax morals and declining education later appeared in towns and monasteries. In contrast, priests in large parishes and towns possessed more wealth and did not need to do manual labour except for serving God.&lt;/paragraph&gt;&lt;paragraph&gt;The &lt;accent&gt;duties of a priest&lt;/accent&gt; included preparing and conducting mass, hearing confessions, taking care of the church (its operation and decoration), visiting the poor and sick, organising collections for charity, collecting taxes, baptisms, weddings, last rites, and funerals.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_prijmy_davky</Cell><Cell>&lt;paragraph&gt;Towns and cities always had to look after their budgets, so they collected taxes, customs duties, tolls and 'ungelt' goods tariffs. The most common form of tax was paid twice a year, in an amount dependent on the assets of each respective citizen. Fees and taxes were paid by the city residents based on their business, levied on products sold or services provided.&lt;/paragraph&gt;&lt;paragraph&gt;Another source of civic revenue money were monies made by the City Council or the City Court for the making of contracts, documents, records, and other ongoing activities. The treasury also collected money for interest payments, fines, building funds, loans and various forms of letting and rentals to serfs. Written records were maintained of all revenues.&lt;/paragraph&gt;&lt;paragraph&gt;The City Council paid out some of the money for the purchase of real estate, paid the nobility for defence and security, invested in schools, civic cultural development, churches, administration and the salaries of city officials, construction, operation and maintenance and the upkeep of municipal buildings.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;Towns and cities always had to look after their budgets, so they collected taxes, customs duties, tolls and 'ungelt' goods tariffs. The most common form of tax was paid twice a year, in an amount dependent on the assets of each respective citizen. Fees and taxes were levied on the economic activities, sales of goods, or services provided by the city's inhabitants.&lt;/paragraph&gt;&lt;paragraph&gt;Another source of civic revenue was money made by the City Council or the City Court for the making of contracts, documents, records, and other routine activities. The treasury also collected money from interest payments, fines, building funds, loans and various rents and feudal dues. Written records were maintained of all revenues.&lt;/paragraph&gt;&lt;paragraph&gt;The City Council allocated funds for the purchase of real estate, paid the nobility for defence and security, invested in schools, civic cultural development, churches, administration, salaries of city officials, construction, operation and maintenance of municipal buildings.&lt;/paragraph&gt;</Cell></Row>
-<Row><Cell>ui_codex_cont_pritoky</Cell><Cell>&lt;paragraph&gt;The first written mention of the village Pschitoky dates back to 1141, according to which it was in possession of the Olomouc archbishopric. In 1249, Pschitoky was briefly held by Havel of Löwenberk, and a year later the Olomouc bishop Bruno of Schauenberk ceded the village to the Sedletz Monastery.&lt;/paragraph&gt;&lt;paragraph&gt;In the 14th century, the farmstead with a part of the village belonged to various patrician families from Kuttenberg, such as Ondřej Puša, under which a Gothic fortress was added to the village and the farmstead. In 1397, Wenceslas Bartosch (Václav Bartoš) became the owner, and pledged to paying a permanent fee to the Kuttenberg almshouse from the farmstead.&lt;/paragraph&gt;&lt;paragraph&gt;After the Hussite Wars, Hanush Ferydan held Pschitoky, burdening the farmstead and keep with many debts that he refused to pay, so in 1443 the highest mint master decided that Hanush and his descendants 'from now and for all time' had to pay 50 dozen groschen to the Kuttenberg almshouse every year. The last burgher owner of Pschitoky was Voršila Cihelníková, who sold the estate to Václav Materna of Květnice in 1501. The Maternas rebuilt the Gothic fortress in the Renaissance style.&lt;/paragraph&gt;&lt;paragraph&gt;To this day, only the Gothic vaulted cellar has remained, though in a very poor condition.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;The first written mention of the village Pschitoky dates back to 1141, according to which it was in possession of the Olomouc archdiocese. In 1249, Pschitoky was briefly held by Havel of Löwenberk, and a year later the Olomouc bishop Bruno of Schauenberk ceded the village to the Sedletz Monastery.&lt;/paragraph&gt;&lt;paragraph&gt;In the 14th century, the farmstead and part of the village belonged to various patrician families from Kuttenberg, such as Ondřej Puša, under whom a Gothic fortress was added. In 1397, Wenceslas Bartosch (Václav Bartoš) became the owner, and pledged to pay a permanent fee to the Kuttenberg almshouse from the farmstead.&lt;/paragraph&gt;&lt;paragraph&gt;After the Hussite Wars, Hanush Ferydan held Pschitoky, burdening the farmstead and fortress with many debts which he refused to pay, so in 1443 the chief Mint Master decided that Hanush and his descendants 'from now and for all time' had to pay 50 dozen groschen to the Kuttenberg almshouse every year. The last burgher to own Pschitoky was Voršila Cihelníková, who sold the estate to Václav Materna of Květnice in 1501. The Maternas rebuilt the Gothic fortress in the Renaissance style.&lt;/paragraph&gt;&lt;paragraph&gt;To this day, only the Gothic vaulted cellar remains, though in a very poor condition.&lt;/paragraph&gt;</Cell></Row>
+<Row><Cell>ui_codex_cont_pritoky</Cell><Cell>&lt;paragraph&gt;The first written mention of the village Pschitoky dates back to 1141, according to which it was in possession of the Olomouc archbishopric. In 1249, Pschitoky was briefly held by Havel of Löwenberk, and a year later the Olomouc bishop Bruno of Schauenberk ceded the village to the Sedletz Monastery.&lt;/paragraph&gt;&lt;paragraph&gt;In the 14th century, the farmstead with a part of the village belonged to various patrician families from Kuttenberg, such as Ondřej Puša, under which a Gothic fortress was added to the village and the farmstead. In 1397, Wenceslas Bartosch (Václav Bartoš) became the owner, and pledged to paying a permanent fee to the Kuttenberg almshouse from the farmstead.&lt;/paragraph&gt;&lt;paragraph&gt;After the Hussite Wars, Hanush Ferydan held Pschitoky, burdening the farmstead and keep with many debts that he refused to pay, so in 1443 the highest mint master decided that Hanush and his descendants 'from now and for all time' had to pay 50 dozen groschen to the Kuttenberg almshouse every year. The last burgher owner of Pschitoky was Voršila Cihelníková, who sold the estate to Václav Materna of Květnice in 1501. The Maternas rebuilt the Gothic fortress in the Renaissance style.&lt;/paragraph&gt;&lt;paragraph&gt;To this day, only the Gothic vaulted cellar has remained, though in a very poor condition.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;The first written mention of the village Pschitoky dates back to 1141, according to which it was in possession of the Olomouc archdiocese. In 1249, Pschitoky was briefly held by Havel of Löwenberk, and a year later the Olomouc bishop Bruno of Schauenberk ceded the village to the Sedletz Monastery.&lt;/paragraph&gt;&lt;paragraph&gt;In the 14th century, the farmstead and part of the village belonged to various patrician families from Kuttenberg, such as Ondřej Puš, under whom a Gothic fortress was added. In 1397, Wenceslas Bartosch (Václav Bartoš) became the owner, and pledged to pay a permanent fee to the Kuttenberg almshouse from the farmstead.&lt;/paragraph&gt;&lt;paragraph&gt;After the Hussite Wars, Hanush Ferydan held Pschitoky, burdening the farmstead and fortress with many debts which he refused to pay, so in 1443 the chief Mint Master decided that Hanush and his descendants 'from now and for all time' had to pay 50 dozen groschen to the Kuttenberg almshouse every year. The last burgher to own Pschitoky was Voršila Cihelníková, who sold the estate to Václav Materna of Květnice in 1501. The Maternas rebuilt the Gothic fortress in the Renaissance style.&lt;/paragraph&gt;&lt;paragraph&gt;To this day, only the Gothic vaulted cellar remains, though in a very poor condition.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_prostituce</Cell><Cell>&lt;paragraph&gt;In Bohemia, brothels were called a &lt;italic&gt;“hampejz”&lt;/italic&gt;, &lt;italic&gt;‘whorehouse'&lt;/italic&gt; or &lt;italic&gt;‘house of shame'&lt;/italic&gt;, but not a &lt;italic&gt;‘brothel'&lt;/italic&gt;. Prostitutes were simply &lt;italic&gt;‘whores'&lt;/italic&gt;.&lt;/paragraph&gt;&lt;paragraph&gt;The profession encompassed several categories. The most deprived prostitutes were homeless and provide services in the streets. Others visited their customers in their homes disguised as bread sellers, yet others were ‘to hand' at a given court. Then were those who proffered their services in brothels of various price categories, whose clients were townsmen, officials and nobles (or conversely, the most menial clientèle, in the most down-market dives).&lt;/paragraph&gt;&lt;paragraph&gt;Brothels were run not only by the townspeople, but often even by the spiritual leaders, or prelates (for example, the Parish Priest of the Church of St Giles under Vyšehrad). Often a brothel was directly connected to the bath-house.&lt;/paragraph&gt;&lt;paragraph&gt;During the Hussite wars many brothels were abolished, but boomed at once afterwards. Their legalization was also helped the Church of Rome, which considered prostitution a lesser evil than adultery. It speaks volumes to note that prostitutes accounted for almost 10% of the population of Papal Rome.&lt;/paragraph&gt;&lt;paragraph&gt;
 There were numerous regulations and laws covering brothels and the ‘oldest profession', as well as a special tax. Laws also covered considerate treatment of prostitutes and protected them from violence.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;In Bohemia, brothels were called &lt;italic&gt;“hampejz”&lt;/italic&gt;, &lt;italic&gt;‘whorehouse'&lt;/italic&gt; or &lt;italic&gt;‘house of shame'&lt;/italic&gt;, but not &lt;italic&gt;‘brothel'&lt;/italic&gt;. Prostitutes were simply called &lt;italic&gt;‘whores'&lt;/italic&gt;.&lt;/paragraph&gt;&lt;paragraph&gt;The profession encompassed several categories. The most deprived prostitutes were homeless and provided services in the streets. Others visited their customers in their homes disguised as bread sellers, while others were ‘at hand' at a given court. Then were those who offered their services in brothels of various price categories, whose clients were townsmen, officials and nobles (or conversely, the most vulgar clientèle, in the cheapest brothels).&lt;/paragraph&gt;&lt;paragraph&gt;Brothels were run not only by townspeople, but often by clergy (for example, the Parish Priest of the Church of St Giles under Vyšehrad). Often a brothel was directly connected to a bath-house.&lt;/paragraph&gt;&lt;paragraph&gt;During the Hussite wars many brothels were abolished, but flourished again afterwards. Legalization was aided by the Roman Catholic Church, which considered prostitution a lesser evil than adultery. It's telling that prostitutes made up nearly 10% of the population in Papal Rome.&lt;/paragraph&gt;&lt;paragraph&gt;
 There were numerous regulations and laws covering brothels and the ‘oldest profession', as well as a special tax. Laws also covered considerate treatment of prostitutes and protected them from violence.&lt;/paragraph&gt;</Cell></Row>
@@ -3351,7 +3403,7 @@ Similarly, burghers practised combat with different types of weapons, which came
 Sometimes they were also required to labour for the nobility, i.e. to work unpaid on farmlands belonging to the liege Lord.&lt;/paragraph&gt;&lt;paragraph&gt;
 The Territorial Diets (councils) of the 15th and 16th centuries decreed that the common country folk could not bear arms or engage in hunting. With special permission from the liege Lord, they were allowed to hunt hares or small birds.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;In medieval times, about 90% of the population lived in villages, most of whom were engaged in agriculture and animal husbandry.&lt;/paragraph&gt;&lt;paragraph&gt;Although peasants were free and had owned their farms from time immemorial, the land beneath them was only leased from the sovereign or, respectively, from the nobleman who had received it as a fief from the king. For the lease of the land, they had to pay part of their annual yields – whether in money, honey, grain, or other crops.&lt;/paragraph&gt;&lt;paragraph&gt;Sometimes they were also required to perform corvée labour for the lord, that is, to work without pay on the fields belonging to the feudal noble.&lt;/paragraph&gt;&lt;paragraph&gt;The Land Diets in the 15th and 16th centuries voted that the village folk were not allowed to carry weapons or practice hunting. With the special permission of the lord, the peasants were allowed to hunt hares or small birds.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_sedlecka_kostnice</Cell><Cell>&lt;paragraph&gt;The ossuary is an underground chapel of the All Saints cemetery church, built in the second half of the 14th century, which originally belonged to the Cistercian abbey in Sedletz. It bears an uncanny resemblance to the underground chapels of Jerusalem where pilgrims were buried.&lt;/paragraph&gt;&lt;paragraph&gt;During the Hussite wars, the monastery was burnt down and abandoned together with the ossuary. It was not rebuilt until the second half of the 15th century. In 1511, the bones from the cemetery were exhumed and moved to the underground of the ossuary, where a half-blind monk put them together into famous pyramids and bone buildings. In our game, however, we decided to attribute their creation to Henry.&lt;/paragraph&gt;&lt;paragraph&gt;In its later history, the Sedletz ossuary underwent baroque modifications and today it is one of the most popular tourist sites in the Czech Republic. The bone buildings, made from the remains of more than 60,000 people, have undergone extensive renovation and, as a &lt;italic&gt;memento mori&lt;/italic&gt;, are still a reminder that: dust you are and dust you shall turn to...&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;The ossuary is an underground chapel of the All Saints cemetery church, built in the second half of the 14th century, which originally belonged to the Cistercian abbey in Sedletz. It bears an uncanny resemblance to the underground chapels of Jerusalem where pilgrims were buried.&lt;/paragraph&gt;&lt;paragraph&gt;During the Hussite wars, the monastery was burnt down and abandoned together with the ossuary. It was not rebuilt until the second half of the 15th century. In 1511, the bones from the cemetery were exhumed and moved to the ossuary's underground , where a half-blind monk put them together into famous pyramids and bone structures. In our game, however, we decided to attribute their creation to Henry.&lt;/paragraph&gt;&lt;paragraph&gt;In its later history, the Sedletz ossuary underwent Baroque modifications and today it is one of the most popular tourist sites in the Czech Republic. The bone structures, made from the remains of more than 60,000 people, have undergone extensive renovation and, as a &lt;italic&gt;memento mori&lt;/italic&gt;, are still a reminder that: dust thou art, and unto dust shalt thou return...&lt;/paragraph&gt;</Cell></Row>
-<Row><Cell>ui_codex_cont_sedlecky_klaster</Cell><Cell>&lt;paragraph&gt;The Sedlec Monastery used to be the oldest Cistercian abbey in the Czech Kingdom. Founded in 1142 by the Bavarian Abbot Gerlach, it was later abandoned and reoccupied many times in its history, either due to wars or a poor financial situation.&lt;/paragraph&gt;&lt;paragraph&gt;In 1421, it was burnt down by the Hussites, only the Church of the Assumption and St. John the Baptist survived. After the end of the war, only a few monks returned and it remained in this dismal state until the 17th century. In 1783, the monastery was completely dissolved by an imperial decree.&lt;/paragraph&gt;&lt;paragraph&gt;The cemetery church of All Saints with the adjacent burial ground was originally part of the monastery, but later it began to serve as the town cemetery for Kutná Hora, because according to surviving records, burials were still taking place here long before the arrival of the monks.  The cemetery was at its busiest during the wars and plague epidemics. In 1318 alone, 30,000 dead were buried here, and another 10,000 during the Hussite wars.&lt;/paragraph&gt;&lt;paragraph&gt;The place is shrouded in many legends. The most famous one says that the abbot of the Heidenreich monastery brought a handful of dirt from Jerusalem on his pilgrimage to the Holy Land, which he then scattered around the cemetery and the ossuary.  Thus, the cemetery ground became holy and highly sought after not only by the people of Kutná Hora, but even by pilgrims and those interested in burial from all over Bohemia and neighbouring countries. Who wouldn't want to rest in the ground where Jesus Christ himself once walked?&lt;/paragraph&gt;&lt;paragraph&gt;Today, a cigarette factory is located on the site of the former monastery.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;The Sedletz Monastery used to be the oldest Cistercian abbey in the Czech Kingdom. Founded by the Bavarian Abbot Gerlach in 1142 , it was later abandoned and reoccupied many times in its history, either due to wars or poor financial situations.&lt;/paragraph&gt;&lt;paragraph&gt;In 1421, it was burnt down by the Hussites, only the Church of the Assumption of the Blessed Virgin Mary and St. John the Baptist survived. After the end of the war, only a few monks returned and it remained in this dismal state until the 17th century. In 1783, the monastery was completely abolished by an imperial decree.&lt;/paragraph&gt;&lt;paragraph&gt;The cemetery church of All Saints with the adjacent burial ground was originally part of the monastery, but later it began to serve as the municipal cemetery for Kuttenberg, because as records showed, burials were taking place there long before the arrival of the monks. The cemetery was at its busiest during wars and plague epidemics. In 1318 alone, 30,000 dead were buried there, and another 10,000 during the Hussite wars.&lt;/paragraph&gt;&lt;paragraph&gt;The site is shrouded in many legends. The most famous one states that the abbot of the Heidenreich Monastery brought a handful of dirt from Jerusalem on his pilgrimage to the Holy Land, which he then scattered around the cemetery and the ossuary. Thus, the cemetery ground became sacred and highly sought after, not only by the people of Kuttenberg, but also by pilgrims and those wishing to be buried there from all over Bohemia and neighbouring regions. Who wouldn't want to rest in the ground where Jesus Christ himself once walked?&lt;/paragraph&gt;&lt;paragraph&gt;Today, a cigarette factory is located on the site of the former monastery.&lt;/paragraph&gt;</Cell></Row>
+<Row><Cell>ui_codex_cont_sedlecky_klaster</Cell><Cell>&lt;paragraph&gt;The Sedlec Monastery used to be the oldest Cistercian abbey in the Czech Kingdom. Founded in 1142 by the Bavarian Abbot Gerlach, it was later abandoned and reoccupied many times in its history, either due to wars or a poor financial situation.&lt;/paragraph&gt;&lt;paragraph&gt;In 1421, it was burnt down by the Hussites, only the Church of the Assumption and St. John the Baptist survived. After the end of the war, only a few monks returned and it remained in this dismal state until the 17th century. In 1783, the monastery was completely dissolved by an imperial decree.&lt;/paragraph&gt;&lt;paragraph&gt;The cemetery church of All Saints with the adjacent burial ground was originally part of the monastery, but later it began to serve as the town cemetery for Kutná Hora, because according to surviving records, burials were still taking place here long before the arrival of the monks.  The cemetery was at its busiest during the wars and plague epidemics. In 1318 alone, 30,000 dead were buried here, and another 10,000 during the Hussite wars.&lt;/paragraph&gt;&lt;paragraph&gt;The place is shrouded in many legends. The most famous one says that the abbot of the Heidenreich monastery brought a handful of dirt from Jerusalem on his pilgrimage to the Holy Land, which he then scattered around the cemetery and the ossuary.  Thus, the cemetery ground became holy and highly sought after not only by the people of Kutná Hora, but even by pilgrims and those interested in burial from all over Bohemia and neighbouring countries. Who wouldn't want to rest in the ground where Jesus Christ himself once walked?&lt;/paragraph&gt;&lt;paragraph&gt;Today, a cigarette factory is located on the site of the former monastery.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;The Sedletz Monastery used to be the oldest Cistercian abbey in the Czech Kingdom. Founded by the Bavarian Abbot Gerlach in 1142, it was later abandoned and reoccupied many times in its history, either due to wars or poor financial situations.&lt;/paragraph&gt;&lt;paragraph&gt;In 1421, it was burnt down by the Hussites, only the Church of the Assumption of the Blessed Virgin Mary and St. John the Baptist survived. After the end of the war, only a few monks returned and it remained in this dismal state until the 17th century. In 1783, the monastery was completely abolished by an imperial decree.&lt;/paragraph&gt;&lt;paragraph&gt;The cemetery church of All Saints with the adjacent burial ground was originally part of the monastery, but later it began to serve as the municipal cemetery for Kuttenberg, because as records showed, burials were taking place there long before the arrival of the monks. The cemetery was at its busiest during wars and plague epidemics. In 1318 alone, 30,000 dead were buried there, and another 10,000 during the Hussite wars.&lt;/paragraph&gt;&lt;paragraph&gt;The site is shrouded in many legends. The most famous one states that the abbot of the Heidenreich Monastery brought a handful of dirt from Jerusalem on his pilgrimage to the Holy Land, which he then scattered around the cemetery and the ossuary. Thus, the cemetery ground became sacred and highly sought after, not only by the people of Kuttenberg, but also by pilgrims and those wishing to be buried there from all over Bohemia and neighbouring regions. Who wouldn't want to rest in the ground where Jesus Christ himself once walked?&lt;/paragraph&gt;&lt;paragraph&gt;Today, a cigarette factory is located on the site of the former monastery.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_semin</Cell><Cell>&lt;paragraph&gt;Semín (Semine) is a small village lying to the west of Troskowitz. In earlier times, it included a fortress that no longer exists today, which, according to surviving records, belonged to Jan and Oldřich of Semín in the year 1365. These two brothers, and later their children, owned the fortress until 1416, but did not reside there much because they chose other places for their seats. In 1375, Oldřich’s son Jan therefore assumed administration of Semín, and after him it passed to his sons Petr and Přibík.&lt;/paragraph&gt;&lt;paragraph&gt;Whether these Semín men were ancestors or relatives of the Semín of Semín line – an old Bohemian minor noble family – unfortunately can no longer be definitively proven or disproven. So far, the only discovery is that the first to bear that name was Jakub the Younger Semín of Semín, as late as 1422.&lt;/paragraph&gt;&lt;paragraph&gt;Even so, we decided to present the owner of the Semín fortress in our game as a representative example of impoverished nobility dwelling in pleasant countryside.&lt;/paragraph&gt;&lt;paragraph&gt;As for the place where the fortress is situated, the terrain bordered by steep rocky slopes, lakes, marshes and fishponds became an ideal settlement area as early as the middle of the first century BC. Remains of massive ramparts can be found here, the most prominent part being a ten-metre-high frontal rampart with a moat, which archaeological research indicates was built by the Celts.&lt;/paragraph&gt;&lt;paragraph&gt;In Kingdom Come: Deliverance 2, one also finds the Semín mill, which belonged to the lords of Semín for centuries, and it remains an important part of the picturesque landscape to this day.&lt;/paragraph&gt;</Cell><Cell>&lt;paragraph&gt;Semín (Semine) is a small village lying to the west of Troskowitz. In earlier times, it included a fortress that no longer exists today, which, according to surviving records, belonged to Jan and Oldřich of Semín in the year 1365. These two brothers, and later their children, owned the fortress until 1416, but did not reside there much because they chose other places for their seats. In 1375, Oldřich’s son Jan therefore assumed administration of Semín, and after him it passed to his sons Petr and Přibík.&lt;/paragraph&gt;&lt;paragraph&gt;Whether these Semín men were ancestors or relatives of the Semín of Semín line – an old Bohemian minor noble family – unfortunately can no longer be definitively proven or disproven. So far, the only discovery is that the first to bear that name was Jakub the Younger Semín of Semín, as late as 1422.&lt;/paragraph&gt;&lt;paragraph&gt;Even so, we decided to present the owner of the Semín fortress in our game as a representative example of impoverished nobility dwelling in pleasant countryside.&lt;/paragraph&gt;&lt;paragraph&gt;As for the place where the fortress is situated, the terrain bordered by steep rocky slopes, lakes, marshes and fishponds became an ideal settlement area as early as the middle of the first century BC. Remains of massive ramparts can be found here, the most prominent part being a ten-metre-high frontal rampart with a moat, which archaeological research indicates was built by the Celts.&lt;/paragraph&gt;&lt;paragraph&gt;In Kingdom Come: Deliverance 2, one also finds the Semín mill, which belonged to the lords of Semín for centuries, and it remains an important part of the picturesque landscape to this day.&lt;/paragraph&gt;</Cell></Row>
 <Row><Cell>ui_codex_cont_shepard</Cell><Cell>&lt;paragraph&gt;A herder's job depended on the weather, most commonly starting in April and ending in the autumn. The entrusted herd or flock (it was rarely their own, more commonly they were hired to supervise the grazing of others' livestock, for a fee) taking them from pasture to pasture, sleeping in rudimentary huts or shelters. Over the summer they stayed out at the pastures, returning to the village when the first frosts set in.&lt;/paragraph&gt;&lt;paragraph&gt;Life far away from other people forced the herders to become adept at healing themselves and their animals, so when there was no apothecary to hand, folk would turn to the shepherd.&lt;/paragraph&gt;
 </Cell><Cell>&lt;paragraph&gt;A herder's job depended on the weather, most commonly starting in April and ending in the autumn. They took the entrusted herd or flock (it was rarely their own, more commonly they were hired to graze others' livestock for a fee) from pasture to pasture, sleeping in rudimentary huts or shelters. Over the summer they stayed out in the pastures, returning to the village when the first frosts set in.&lt;/paragraph&gt;&lt;paragraph&gt;Life far away from other people forced the herders to become adept at healing themselves and their animals, so when there was no apothecary to hand, folk would turn to shepherds.&lt;/paragraph&gt;
@@ -3786,6 +3838,7 @@ In 1410 he fought on the Polish side in the well known battle of Grunwald.&lt;/p
 <Row><Cell>ui_extra_in_alluring_wreath</Cell><Cell>Alluring on young women and Henry alike.</Cell><Cell>Alluring on young women and Henry alike.</Cell></Row>
 <Row><Cell>ui_extra_in_artemis_crossbow</Cell><Cell>The beautiful and deadly crossbow of the ancient goddess Artemis. The only one of its kind.</Cell><Cell>The beautiful and deadly crossbow of the ancient goddess Artemis. The only one of its kind.</Cell></Row>
 <Row><Cell>ui_extra_in_autumn_shield</Cell><Cell>A unique shield celebrating the beauty and bounty of autumn.</Cell><Cell>A unique shield celebrating the beauty and bounty of autumn.</Cell></Row>
+<Row><Cell>ui_extra_in_coat_patron</Cell><Cell>Every patron wants to show their generosity, whatever it takes.</Cell><Cell>Every patron wants to show their generosity, whatever it takes.</Cell></Row>
 <Row><Cell>ui_extra_in_cutpurse_gambeson</Cell><Cell>An ornate pourpoint - inconspicuous in the daytime, invisible at night.</Cell><Cell>An ornate pourpoint - inconspicuous in the daytime, invisible at night.</Cell></Row>
 <Row><Cell>ui_extra_in_cutpurse_gloves</Cell><Cell>A pair of gloves made for manual labour. Silent manual labour.</Cell><Cell>A pair of gloves made for manual labour. Silent manual labour.</Cell></Row>
 <Row><Cell>ui_extra_in_cutpurse_hood</Cell><Cell>An inconspicious hood, perfect for hiding your face when need be.</Cell><Cell>An inconspicious hood, perfect for hiding your face when need be.</Cell></Row>
@@ -3814,6 +3867,7 @@ In 1410 he fought on the Polish side in the well known battle of Grunwald.&lt;/p
 <Row><Cell>ui_extra_nm_alluring_wreath</Cell><Cell>Alluring wreath</Cell><Cell>Alluring wreath</Cell></Row>
 <Row><Cell>ui_extra_nm_artemis_crossbow</Cell><Cell>Artemis' crossbow</Cell><Cell>Artemis' crossbow</Cell></Row>
 <Row><Cell>ui_extra_nm_autumn_shield</Cell><Cell>Shield of Autumn</Cell><Cell>Shield of Autumn</Cell></Row>
+<Row><Cell>ui_extra_nm_coat_patron</Cell><Cell>Patron's coat</Cell><Cell>Patron's coat</Cell></Row>
 <Row><Cell>ui_extra_nm_cutpurse_gambeson</Cell><Cell>Cutpurse's pourpoint</Cell><Cell>Cutpurse's gambeson</Cell></Row>
 <Row><Cell>ui_extra_nm_cutpurse_gloves</Cell><Cell>Cutpurse's gloves</Cell><Cell>Cutpurse's gloves</Cell></Row>
 <Row><Cell>ui_extra_nm_cutpurse_hood</Cell><Cell>Cutpurse's hood</Cell><Cell>Cutpurse's hood</Cell></Row>
@@ -3886,7 +3940,7 @@ In 1410 he fought on the Polish side in the well known battle of Grunwald.&lt;/p
 <Row><Cell>ui_fight</Cell><Cell>Fight</Cell><Cell>Fight</Cell></Row>
 <Row><Cell>ui_firsttime_eula_confirm</Cell><Cell>$first_time_overlay_confirm; Accept</Cell><Cell>$first_time_overlay_confirm; Accept</Cell></Row>
 <Row><Cell>ui_firsttime_eula_header</Cell><Cell>EULA</Cell><Cell>EULA</Cell></Row>
-<Row><Cell>ui_firsttime_eula_text</Cell><Cell>By selecting "Accept" you agree to Plaion's End-User License Agreement (EULA). You can find full text in the provided QR code or at the displayed address.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;The ESRB rating information has been updated to include the interactive element: In-Game Purchases.</Cell><Cell>By selecting "Accept" you agree to Plaion's End-User License Agreement (EULA). You can find the full text in the provided QR code or at the displayed address.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;The ESRB rating information has been updated to include the interactive element: In-Game Purchases.</Cell></Row>
+<Row><Cell>ui_firsttime_eula_text</Cell><Cell>By selecting "Accept" you agree to Plaion's End-User License Agreement (EULA). You can find the full text in the provided QR code or at the displayed address.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;&lt;br/&gt;The ESRB rating information has been updated to include the interactive element:&lt;br/&gt;&lt;br/&gt;In-Game Purchases.</Cell><Cell>By selecting "Accept" you agree to Plaion's End-User License Agreement (EULA). You can find the full text in the provided QR code or at the displayed address.&lt;br/&gt;&amp;nbsp;&lt;br/&gt;&lt;br/&gt;The ESRB rating information has been updated to include the interactive element:&lt;br/&gt;&lt;br/&gt;In-Game Purchases.</Cell></Row>
 <Row><Cell>ui_firsttime_eula_url</Cell><Cell>https://legal.kingdomcomerpg.com/eula</Cell><Cell>https://legal.kingdomcomerpg.com/eula/KCD2_EULA_ENG.html</Cell></Row>
 <Row><Cell>ui_firsttime_eula_web</Cell><Cell>$open_web; Visit URL</Cell><Cell>$open_web; Visit URL</Cell></Row>
 <Row><Cell>ui_firsttime_telemetry_confirm</Cell><Cell>$first_time_overlay_confirm; Accept</Cell><Cell>$first_time_overlay_confirm; Accept</Cell></Row>
