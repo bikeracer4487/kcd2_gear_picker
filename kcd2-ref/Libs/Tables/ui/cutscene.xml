@@ -948,6 +948,7 @@
 		<TextCutscene Name="papezskyLegat_pointOfNoReturn" StringName="italstina_cirkevni_rada_s_viZM" Duration="3s"/>
 		<FaderCutscene Name="papezskyLegat_rozaOpensDoor" />
 		<SkipTimeCutscene Name="papezskyLegat_timeskipDoLorce" />
+		<FaderCutscene Name="papezskyLegat_teleportToRuthardka" />
 
 		<!-- pogrom -->
 		<FastTravelCutscene Name="pogrom_fastTravelToKutnaHora" />

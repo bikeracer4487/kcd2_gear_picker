@@ -719,5 +719,6 @@
 		<credit_role credit_layout_id="12" credit_role_id="1405" credit_role_name="cr2_ashGames_prod" order_by="6635" role_group="ashborneGames" />
 		<credit_role credit_layout_id="7" credit_role_id="1406" credit_role_name="cr2_ashGames_prod_lead" order_by="6640" role_group="ashborneGames" />
 		<credit_role credit_layout_id="7" credit_role_id="1407" credit_role_name="cr2_ashGames_producer" order_by="6645" role_group="ashborneGames" />
+		<credit_role credit_layout_id="7" credit_role_id="1408" credit_role_name="cr2_ceskakrajina" order_by="3955" role_group="historians" />
 	</credit_roles>
 </database>
