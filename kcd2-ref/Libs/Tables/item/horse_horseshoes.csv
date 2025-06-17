@@ -1,0 +1,6 @@
+Category,LocalizedName,Name,DefenseStab,DefenseSlash,DefenseSmash,MaxStatus,RPGBuffWeight,Weight,Price,Id
+Horseshoes,ui_nm_horseshoeFarmer,horseshoeFarmer,0,0,0,16,0.2,0.5,200,549ab26e-df73-43d6-ac9b-f4f74afec67f
+Horseshoes,ui_nm_horseshoeMilitary,horseshoeMilitary,0,0,0,16,0.4,0.5,400,0faf833f-8e88-40a0-87b8-2669c0e64c03
+Horseshoes,ui_nm_horseshoeNoble,horseshoeNoble,0,0,0,16,0.6,0.5,500,5ded1ff4-9f81-4179-bb65-f786e6e80560
+Horseshoes,ui_nm_horseshoeNomad,horseshoeNomad,0,0,0,16,0.8,0.5,800,1dd2863e-0793-49ba-bb82-125af6b31ddc
+Horseshoes,ui_nm_horseshoeRacing,horseshoeRacing,0,0,0,16,1.0,0.5,1500,4934fb15-73c4-4b71-912a-9bab78a53f66
